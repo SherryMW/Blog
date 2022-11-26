@@ -14,9 +14,11 @@ export default hopeTheme({
 
     logo: "/logo.svg", //网站Logo
 
-    repo: "", //仓库配置，默认为 GitHub 同时也可以是一个完整的 URL
+    repo: "SherryMW/Blog",//仓库配置，默认为 GitHub 同时也可以是一个完整的 URL
 
-    repoDisplay: false, //是否在导航栏内显示仓库链接入口，默认为 `true`
+    repoDisplay: true,//是否在导航栏内显示仓库链接入口，默认为 `true`
+
+    docsDir: "docs/src", //文档在仓库中的目录
 
     /**
      * 文章内容中展示的文章信息
@@ -39,9 +41,11 @@ export default hopeTheme({
 
     breadcrumb: false, //是否全局启用路径导航
 
-    contributors: false, //是否显示页面贡献者
+    contributors: true, //是否显示页面贡献者
 
-    editLink: false, //是否展示编辑此页链接
+    lastUpdated: true, //是否显示页面最后更新时间
+
+    editLink: true, //是否展示编辑此页链接
 
     blog: {
         avatar: "/avatar.jpg", //头像
