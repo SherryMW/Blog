@@ -1,7 +1,6 @@
 import {defineUserConfig} from "vuepress";
 import theme from "./theme.js";
 import {searchProPlugin} from "vuepress-plugin-search-pro";
-import {seoPlugin} from "vuepress-plugin-seo2";
 
 export default defineUserConfig({
     base: "/",
@@ -20,10 +19,6 @@ export default defineUserConfig({
         })();`]
     ],
     plugins: [
-        seoPlugin({
-            hostname: "https://blog.sherry4869.com",
-            autoDescription: false,
-        }),
         searchProPlugin({})
     ],
 
