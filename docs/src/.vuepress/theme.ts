@@ -5,18 +5,18 @@ import {Sidebar} from "./bar/sidebar";
 export default hopeTheme({
     hostname: "https://blog.sherry4869.com", //当前网站部署到的域名
 
-    author: { //文章显示的默认作者
-        name: "MW",
-        url: "https://blog.sherry4869.com",
+    author: {
+        name: "MW", //全局默认作者
+        url: "https://blog.sherry4869.com", //网站部署域名
     },
 
     iconAssets: "iconfont", //字体图标资源链接 https://www.iconfont.cn/
 
     logo: "/logo.svg", //网站Logo
 
-    repo: "SherryMW/Blog",//仓库配置，默认为 GitHub 同时也可以是一个完整的 URL
+    repo: "SherryMW/Blog", //仓库配置，默认为 GitHub 同时也可以是一个完整的 URL
 
-    repoDisplay: true,//是否在导航栏内显示仓库链接入口，默认为 `true`
+    repoDisplay: true, //是否在导航栏内显示仓库链接入口，默认为 `true`
 
     docsDir: "docs/src", //文档在仓库中的目录
 
@@ -50,10 +50,10 @@ export default hopeTheme({
     blog: {
         avatar: "/avatar.jpg", //头像
         roundAvatar: true, //是否剪裁头像为圆形形状
-        description: "过往不恋 未来不迎",//口号、座右铭或介绍语
+        description: "过往不恋 未来不迎", //口号、座右铭或介绍语
         intro: "", //填写后将可以点击“博主信息”中的头像或姓名进入个人介绍页
         medias: { //媒体链接配置
-            QQ: "https://wpa.qq.com/msgrd?v=3&uin=1341139503&site=qq&menu=yes",
+            // QQ: "https://wpa.qq.com/msgrd?v=3&uin=1341139503&site=qq&menu=yes",
             Wechat: "/wechat.jpg"
         },
         timeline: "点点滴滴", //时间轴自定义文字
@@ -70,9 +70,7 @@ export default hopeTheme({
     },
 
     plugins: {
-        blog: { //博客配置
-            autoExcerpt: false, //是否为每个页面自动生成摘录
-        },
+        blog: true, //博客插件选项配置
         comment: { //评论插件配置
             provider: "Waline",
             serverURL: "https://waline.sherry4869.com",
@@ -80,7 +78,7 @@ export default hopeTheme({
         copyright: { //版权信息插件配置
             hostname: "https://blog.sherry4869.com",
             author: "MW",
-            triggerWords: 100,
+            triggerWords: 10,
             global: true
         },
         components: ["Badge", "BiliBili", "PDF", "VideoPlayer"], //注册一些可以在 Markdown 文件中使用的组件

@@ -1,5 +1,7 @@
 import {defineUserConfig} from "vuepress";
 import theme from "./theme.js";
+import {searchProPlugin} from "vuepress-plugin-search-pro";
+import {seoPlugin} from "vuepress-plugin-seo2";
 
 export default defineUserConfig({
     base: "/",
@@ -7,7 +9,7 @@ export default defineUserConfig({
     title: "MW Blog",
     description: "MW Blog",
     head: [
-        ['meta', {name: 'keywords', content: 'sherry4869,MW,Sherry,MWSherry'}],
+        ['meta', {name: 'keywords', content: 'sherry4869,MW,Sherry'}],
         ['script', {}, `
         var _hmt = _hmt || [];
         (function() {
@@ -16,6 +18,13 @@ export default defineUserConfig({
             var s = document.getElementsByTagName('script')[0]; 
             s.parentNode.insertBefore(hm, s);
         })();`]
+    ],
+    plugins: [
+        seoPlugin({
+            hostname: "https://blog.sherry4869.com",
+            autoDescription: false,
+        }),
+        searchProPlugin({})
     ],
 
     theme,
