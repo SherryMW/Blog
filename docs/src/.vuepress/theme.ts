@@ -47,8 +47,6 @@ export default hopeTheme({
 
     editLink: true, //是否展示编辑此页链接
 
-    hotReload: true, //是否为需要重启整个 app 的功能启用热更新
-
     blog: {
         avatar: "/avatar.jpg", //头像
         roundAvatar: true, //是否剪裁头像为圆形形状
