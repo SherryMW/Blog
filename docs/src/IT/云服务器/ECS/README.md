@@ -133,5 +133,7 @@ Linux面板7.9.6在线安装示例
 ![img_23.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/ECS/img_23.png)
 ![img_24.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/ECS/img_24.png)
 ![img_25.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/ECS/img_25.png)
-如果使用Alibaba Cloud Linux操作系统安装宝塔面板＋LNMP环境套件后访问宝塔面板发现只安装了Nginx和宝塔SSH终端，其余的软件需要在软件商店中自行搜索安装  
 ![img_26.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/ECS/img_26.png)
+::: tip
+如果使用Alibaba Cloud Linux操作系统安装宝塔面板＋LNMP环境套件后访问宝塔面板发现只安装了Nginx和宝塔SSH终端，其余的软件需要在软件商店中自行搜索安装
+:::
