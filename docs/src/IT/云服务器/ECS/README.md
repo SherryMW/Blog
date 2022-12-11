@@ -37,6 +37,7 @@ CentOS官方已计划停止维护CentOS 7、CentOS 8等Linux项目，如果您�
 ![img_6.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/ECS/img_6.png)
 
 ## 域名注册
+
 ::: info
 在域名没有被发明之前，人们访问网站都是通过IP地址，也就是类似1.1.1.1这样的一串字符，但是IP地址不直观，而且用户记忆十分不方便，于是人们又发明了另一套字符型的地址方案，即所谓的域名地址
 :::
@@ -46,7 +47,7 @@ CentOS官方已计划停止维护CentOS 7、CentOS 8等Linux项目，如果您�
 支付前可以通过输入优惠口令获得减免 [优惠口令获取方式](https://help.aliyun.com/document_detail/44007.html)  
 ![img_8.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/ECS/img_8.png)
 :::
-访问 [域名控制台](https://dc.console.aliyun.com/) 管理已注册的域名  
+访问 [域名控制台](https://dc.console.aliyun.com/) 管理已注册的域名
 
 ### 域名解析
 
@@ -66,14 +67,16 @@ CentOS官方已计划停止维护CentOS 7、CentOS 8等Linux项目，如果您�
 [添加解析记录配置详解](https://help.aliyun.com/document_detail/29725.htm?spm=a2c4g.11186623.0.0.47a55b8e8icKvj#topic-2035899)
 
 ## 网站备案
+
 ::: info
 网站托管在中国内地的服务器上，您需根据所在省市的管局规则进行ICP备案申请。当您使用阿里云中国内地节点服务器时，您可以在PC端或移动端的阿里云ICP代备案系统中提交ICP备案申请，审核通过便可开通网站访问服务
 :::
 [ICP备案流程](https://help.aliyun.com/document_detail/116625.html)  
 [ICP备案操作指导（PC端）](https://help.aliyun.com/document_detail/117418.html)  
-[ICP备案查询](https://beian.miit.gov.cn/#/Integrated/recordQuery)  
+[ICP备案查询](https://beian.miit.gov.cn/#/Integrated/recordQuery)
 
 ### 公网备案
+
 ::: info
 公安备案的目的就是为了防止在网上从事非法的网站经营活动，打击不良互联网信息的传播，营造一个良好的互联网环境  
 公安备案审核完成后公安联网会下发一个当地省份开头的公网安备xxxxx号，同时还会为网站生成一个网站HTML代码
@@ -92,9 +95,11 @@ CentOS官方已计划停止维护CentOS 7、CentOS 8等Linux项目，如果您�
 :::
 
 ## SSL免费证书申请
+
 ::: info
 安全套接字层(SSL) 技术通过加密信息和提供鉴权，保护您的网站安全。一份 SSL 证书包括一个公共密钥和一个私用密钥。公共密钥用于加密信息，私用密钥用于解译加密的信息。浏览器指向一个安全域时，SSL 同步确认服务器和客户端，并创建一种加密方式和一个唯一的会话密钥。它们可以启动一个保证消息的隐私性和完整性的安全会话
 :::
+
 - 阿里云个人账号和企业账号均可申请，多个域名可以申请多个免费证书
 - 免费证书只能保护一个域名（带www和不带www可以通用）
 - 一个账户限制申请20个免费证书
@@ -114,12 +119,14 @@ CentOS官方已计划停止维护CentOS 7、CentOS 8等Linux项目，如果您�
 :::
 
 ## LNMP开发环境搭建
+
 ::: info
 LNMP是指一组通常一起使用来运行动态网站或者服务器的自由软件名称首字母缩写。L指Linux，N指Nginx，M一般指MySQL，也可以指MariaDB，P一般指PHP，也可以指Perl或Python
+
 - Linux是一类Unix计算机操作系统的统称，是目前最流行的免费操作系统。代表版本有：debian、centos、ubuntu、fedora、gentoo等
 - Nginx是一个高性能的HTTP和反向代理服务器，也是一个IMAP/POP3/SMTP代理服务器
 - Mysql是一个小型关系型数据库管理系统
-- PHP是一种在服务器端执行的嵌入HTML文档的脚本语言  
+- PHP是一种在服务器端执行的嵌入HTML文档的脚本语言
 
 这四种软件均为免费开源软件，组合到一起，成为一个免费、高效、扩展性强的网站服务系统
 :::

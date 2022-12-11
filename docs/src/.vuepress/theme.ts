@@ -76,12 +76,13 @@ export default hopeTheme({
             serverURL: "https://waline.sherry4869.com",
         },
         copyright: { //版权信息插件配置
-            hostname: "https://blog.sherry4869.com",
             author: "MW",
             triggerWords: 10,
             global: true
         },
-        components: ["Badge", "BiliBili", "PDF", "VideoPlayer"], //注册一些可以在 Markdown 文件中使用的组件
+        components: {
+            components: ["Badge", "BiliBili", "PDF", "VideoPlayer"] //注册一些可以在 Markdown 文件中使用的组件
+        },
         mdEnhance: { //Markdown 增强功能
         }
     },
