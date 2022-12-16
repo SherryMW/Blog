@@ -81,7 +81,7 @@ TablePrefix =
 Nginx配置大文件上传  
 ![img.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/Cloudreve/img_18.png)
 
-## 常见错误
+## 常见问题
 当上传超过10M的文件时提示以下错误  
 ![img_16.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/Cloudreve/img_16.png)
 ![img_17.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/Cloudreve/img_17.png)

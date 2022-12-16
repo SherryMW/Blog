@@ -9,10 +9,10 @@ permalink: /it/ecs
 
 分享购买云服务器ESC、域名注册、 网站备案、SSL证书申请、LNMP开发环境搭建的流程步骤
 <!-- more -->
+[云服务器ECS文档](https://help.aliyun.com/product/25365.html)  
 
 ## 购买云服务器ECS
 
-[云服务器ECS文档](https://help.aliyun.com/product/25365.html)
 登录访问 [阿里云官网](https://www.aliyun.com/)  
 ![img.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/ECS/img.png)
 导航栏中依次选择【产品】->【计算】->【云服务器】->【云服务器ESC】  
