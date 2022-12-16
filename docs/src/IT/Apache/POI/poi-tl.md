@@ -12,7 +12,7 @@ permalink: /it/poi-tl
 poi-tl（poi template language）是Word模板引擎，使用Word模板和数据创建很棒的Word文档
 <!-- more -->
 
-## 文档导出效果
+## 文档渲染效果
 ![img.png](https://img.sherry4869.com/Blog/IT/Apache/POI/poi-tl/img.png)
 
 ## 准备工作
