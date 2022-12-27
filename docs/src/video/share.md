@@ -1,7 +1,6 @@
 ---
 date: 2022-04-17
 category: 影视
-permalink: /video/share
 ---
 
 # 影视资源网站分享
@@ -13,8 +12,7 @@ permalink: /video/share
 
 ### 低端影视
 
-网址：[https://ddys.tv](https://ddys.tv)  
-备用网址：[https://ddys2.me](https://ddys2.me)  
+导航页地址：[https://ddys.site](https://ddys.site)  
 站内广告：1  
 片源水印广告：无   
 片源画质：蓝光1080p  
