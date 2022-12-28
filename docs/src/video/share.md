@@ -6,6 +6,7 @@ category: 影视
 # 影视资源网站分享
 
 一个字来形容：包罗万象 应有尽有（掂）
+
 <!-- more -->
 
 ## 在线观影
@@ -30,9 +31,9 @@ category: 影视
 电影的话，会优先选择导演剪辑版，老片如果存在数字修复之类的画质提升版本也会优先选择。音频，优先选择原始语种  
 字幕的话，有时候可能为了快，会先使用不那么完美地翻译，但是如果有更好的翻译出现，我会更换字幕
 :::
-![img.png](https://img.sherry4869.com/Blog/%E5%BD%B1%E8%A7%86/%E8%B5%84%E6%BA%90%E7%BD%91%E7%AB%99%E5%88%86%E4%BA%AB/img.png)
-![img_1.png](https://img.sherry4869.com/Blog/%E5%BD%B1%E8%A7%86/%E8%B5%84%E6%BA%90%E7%BD%91%E7%AB%99%E5%88%86%E4%BA%AB/img_1.png)
-![img_2.png](https://img.sherry4869.com/Blog/%E5%BD%B1%E8%A7%86/%E8%B5%84%E6%BA%90%E7%BD%91%E7%AB%99%E5%88%86%E4%BA%AB/img_2.png)
+![img.png](https://img.sherry4869.com/Blog/video/share/img.png)
+![img_1.png](https://img.sherry4869.com/Blog/video/share/img_1.png)
+![img_2.png](https://img.sherry4869.com/Blog/video/share/img_2.png)
 
 ### NoTV
 
@@ -43,8 +44,8 @@ category: 影视
 片源画质：蓝光1080p  
 片库量：<el-rate model-value="1" disabled />  
 观影流畅度：<el-rate model-value="5" disabled />  
-![img_3.png](https://img.sherry4869.com/Blog/%E5%BD%B1%E8%A7%86/%E8%B5%84%E6%BA%90%E7%BD%91%E7%AB%99%E5%88%86%E4%BA%AB/img_3.png)
-![img_4.png](https://img.sherry4869.com/Blog/%E5%BD%B1%E8%A7%86/%E8%B5%84%E6%BA%90%E7%BD%91%E7%AB%99%E5%88%86%E4%BA%AB/img_4.png)
+![img_3.png](https://img.sherry4869.com/Blog/video/share/img_3.png)
+![img_4.png](https://img.sherry4869.com/Blog/video/share/img_4.png)
 
 ### HDmoli
 
@@ -54,8 +55,8 @@ category: 影视
 片源画质：1080p  
 片库量：<el-rate model-value="3" disabled />  
 观影流畅度：<el-rate model-value="5" disabled />  
-![img_10.png](https://img.sherry4869.com/Blog/%E5%BD%B1%E8%A7%86/%E8%B5%84%E6%BA%90%E7%BD%91%E7%AB%99%E5%88%86%E4%BA%AB/img_10.png)
-![img_11.png](https://img.sherry4869.com/Blog/%E5%BD%B1%E8%A7%86/%E8%B5%84%E6%BA%90%E7%BD%91%E7%AB%99%E5%88%86%E4%BA%AB/img_11.png)
+![img_10.png](https://img.sherry4869.com/Blog/video/share/img_10.png)
+![img_11.png](https://img.sherry4869.com/Blog/video/share/img_11.png)
 
 ### 无名小站
 
@@ -65,7 +66,7 @@ category: 影视
 片源画质：720p  
 片库量：<el-rate model-value="5" disabled />  
 观影流畅度：<el-rate model-value="3" disabled />  
-![img_12.png](https://img.sherry4869.com/Blog/%E5%BD%B1%E8%A7%86/%E8%B5%84%E6%BA%90%E7%BD%91%E7%AB%99%E5%88%86%E4%BA%AB/img_12.png)
+![img_12.png](https://img.sherry4869.com/Blog/video/share/img_12.png)
 
 ## 影视下载
 
@@ -79,8 +80,8 @@ category: 影视
 收藏级音画原片+部分顶级在线预告片！  
 仅供电影爱好者交流，无广告！不盈利！
 :::
-![img_16.png](https://img.sherry4869.com/Blog/%E5%BD%B1%E8%A7%86/%E8%B5%84%E6%BA%90%E7%BD%91%E7%AB%99%E5%88%86%E4%BA%AB/img_16.png)
-![img_17.png](https://img.sherry4869.com/Blog/%E5%BD%B1%E8%A7%86/%E8%B5%84%E6%BA%90%E7%BD%91%E7%AB%99%E5%88%86%E4%BA%AB/img_17.png)
+![img_16.png](https://img.sherry4869.com/Blog/video/share/img_16.png)
+![img_17.png](https://img.sherry4869.com/Blog/video/share/img_17.png)
 
 ### MINI4K迷客电影
 
@@ -89,8 +90,8 @@ category: 影视
 ::: info 会员说明
 永久会员：60元
 :::
-![img_15.png](https://img.sherry4869.com/Blog/%E5%BD%B1%E8%A7%86/%E8%B5%84%E6%BA%90%E7%BD%91%E7%AB%99%E5%88%86%E4%BA%AB/img_15.png)
-![img_14.png](https://img.sherry4869.com/Blog/%E5%BD%B1%E8%A7%86/%E8%B5%84%E6%BA%90%E7%BD%91%E7%AB%99%E5%88%86%E4%BA%AB/img_14.png)
+![img_15.png](https://img.sherry4869.com/Blog/video/share/img_15.png)
+![img_14.png](https://img.sherry4869.com/Blog/video/share/img_14.png)
 
 ### Grab4K
 
@@ -99,9 +100,9 @@ category: 影视
 ::: info 会员说明
 年费会员：119元/年
 :::
-![img_7.png](https://img.sherry4869.com/Blog/%E5%BD%B1%E8%A7%86/%E8%B5%84%E6%BA%90%E7%BD%91%E7%AB%99%E5%88%86%E4%BA%AB/img_7.png)
-![img_8.png](https://img.sherry4869.com/Blog/%E5%BD%B1%E8%A7%86/%E8%B5%84%E6%BA%90%E7%BD%91%E7%AB%99%E5%88%86%E4%BA%AB/img_8.png)
-![img_9.png](https://img.sherry4869.com/Blog/%E5%BD%B1%E8%A7%86/%E8%B5%84%E6%BA%90%E7%BD%91%E7%AB%99%E5%88%86%E4%BA%AB/img_9.png)
+![img_7.png](https://img.sherry4869.com/Blog/video/share/img_7.png)
+![img_8.png](https://img.sherry4869.com/Blog/video/share/img_8.png)
+![img_9.png](https://img.sherry4869.com/Blog/video/share/img_9.png)
 
 ### 布谷TV
 
@@ -112,8 +113,8 @@ category: 影视
 年度VIP：60元  
 永久VIP：99元
 :::
-![img_6.png](https://img.sherry4869.com/Blog/%E5%BD%B1%E8%A7%86/%E8%B5%84%E6%BA%90%E7%BD%91%E7%AB%99%E5%88%86%E4%BA%AB/img_5.png)
-![img_6.png](https://img.sherry4869.com/Blog/%E5%BD%B1%E8%A7%86/%E8%B5%84%E6%BA%90%E7%BD%91%E7%AB%99%E5%88%86%E4%BA%AB/img_6.png)
+![img_6.png](https://img.sherry4869.com/Blog/video/share/img_5.png)
+![img_6.png](https://img.sherry4869.com/Blog/video/share/img_6.png)
 
 ## 字幕下载
 
@@ -121,4 +122,4 @@ category: 影视
 
 网址：[https://subhd.tv](https://subhd.tv)  
 会员制：无  
-![img_13.png](https://img.sherry4869.com/Blog/%E5%BD%B1%E8%A7%86/%E8%B5%84%E6%BA%90%E7%BD%91%E7%AB%99%E5%88%86%E4%BA%AB/img_13.png)
+![img_13.png](https://img.sherry4869.com/Blog/video/share/img_13.png)
