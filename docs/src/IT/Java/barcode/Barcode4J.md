@@ -3,18 +3,20 @@ date: 2022-12-17
 category: IT
 tag:
   - Java
-permalink: /it/barcode4j
 ---
 
 # 条形码生成技术-Barcode4J
 
 <!-- more -->
-预览 Barcode4J 支持的条形码符号  
-![img_3.png](https://img.sherry4869.com/Blog/IT/Java/%E6%9D%A1%E5%BD%A2%E7%A0%81/Barcode4J/img_3.png)
+
+预览 Barcode4J 支持的条形码符号
+
+![img_3.png](https://img.sherry4869.com/Blog/IT/Java/barcode/barcode4J/img_3.png)
 
 ## 准备工作
 
 ### 相关依赖
+
 ```xml
 <dependencies>
     <dependency>
@@ -30,6 +32,7 @@ barcode4j-light：此库仅包含核心功能，属于轻量级版本，最新2.
 :::
 
 ## 编码
+
 ```java
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -37,7 +40,7 @@ public class Main {
         int resolution = 150; //设置条形码的分辨率，数值越大分辨率越高
         bean.setModuleWidth(0.3); //设置模块的宽度（单位：mm）
         bean.doQuietZone(true); //设置条形码两侧是否加空白
-        /**
+        /*
          * 位图画布提供器
          * out - 要写入的输出流
          * mime - 所需输出格式的MIME类型（例如“image/png”）
@@ -54,18 +57,28 @@ public class Main {
 ```
 
 ## 参数配置
+
 ### setModuleWidth
-setModuleWidth(0.3)效果图  
-![img.png](https://img.sherry4869.com/Blog/IT/Java/%E6%9D%A1%E5%BD%A2%E7%A0%81/Barcode4J/img.png)  
-setModuleWidth(0.9)效果图  
-![img_1.png](https://img.sherry4869.com/Blog/IT/Java/%E6%9D%A1%E5%BD%A2%E7%A0%81/Barcode4J/img_1.png)
+
+setModuleWidth(0.3)效果图
+
+![img.png](https://img.sherry4869.com/Blog/IT/Java/barcode/barcode4J/img.png)
+
+setModuleWidth(0.9)效果图
+
+![img_1.png](https://img.sherry4869.com/Blog/IT/Java/barcode/barcode4J/img_1.png)
 
 ### doQuietZone
-doQuietZone(true)效果图  
-![img.png](https://img.sherry4869.com/Blog/IT/Java/%E6%9D%A1%E5%BD%A2%E7%A0%81/Barcode4J/img.png)  
-doQuietZone(false)效果图  
-![img_2.png](https://img.sherry4869.com/Blog/IT/Java/%E6%9D%A1%E5%BD%A2%E7%A0%81/Barcode4J/img_2.png)
+
+doQuietZone(true)效果图
+
+![img.png](https://img.sherry4869.com/Blog/IT/Java/barcode/barcode4J/img.png)
+
+doQuietZone(false)效果图
+
+![img_2.png](https://img.sherry4869.com/Blog/IT/Java/barcode/barcode4J/img_2.png)
 
 ## 参考资料
+
 [官方文档](https://barcode4j.sourceforge.net/)  
 [接口文档](https://barcode4j.sourceforge.net/trunk/javadocs/index.html)
