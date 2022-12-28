@@ -2,7 +2,6 @@
 date: 2022-03-27
 category: IT
 tag: 云服务器
-permalink: /it/cloudreve
 ---
 
 # 搭建网盘系统 Cloudreve
@@ -19,19 +18,19 @@ Cloudreve 可以让您快速搭建起公私兼备的网盘系统<!-- more -->。
 x86_64
 ```
 
-![img.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/Cloudreve/img.png)
+![img.png](https://img.sherry4869.com/Blog/IT/server/cloudreve/img.png)
 下载解压后得到 cloudreve 可执行文件
 
 ## 使用宝塔部署
 
 1. 登录宝塔面板点击侧边栏中的 **网站** 添加站点  
-![img_2.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/Cloudreve/img_2.png)
+![img_2.png](https://img.sherry4869.com/Blog/IT/server/cloudreve/img_2.png)
 2. 登录云服务商控制台面板配置域名解析 [阿里云DNS控制台](https://dns.console.aliyun.com)   
-![img_3.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/Cloudreve/img_3.png)
+![img_3.png](https://img.sherry4869.com/Blog/IT/server/cloudreve/img_3.png)
 3. 访问站点检查是否创建成功  
-![img_4.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/Cloudreve/img_4.png)
+![img_4.png](https://img.sherry4869.com/Blog/IT/server/cloudreve/img_4.png)
 在网站控制台中配置SSL证书（可选）    
-![img_5.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/Cloudreve/img_5.png)
+![img_5.png](https://img.sherry4869.com/Blog/IT/server/cloudreve/img_5.png)
 ::: tip
 - 配置好SSL证书后使用 HTTPS 协议访问站点时提示  
 {"msg":"unknown error","code":"5030200","id":"5f6d0eef9c541729427b4d967932b4147"}  
@@ -39,18 +38,18 @@ x86_64
 - 访问站点出现其他非正常界面，有可能是浏览器Cookie导致，需要打开浏览器设置->Cookie和网站数据->所有Cookie和站点数据，清除对应站点Cookie
 :::
 4. 在网站目录下创建 cloudreve 目录，并上传之前解压后的 cloudreve 可执行文件  
-![img_6.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/Cloudreve/img_6.png)
-![img_7.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/Cloudreve/img_7.png)  
+![img_6.png](https://img.sherry4869.com/Blog/IT/server/cloudreve/img_6.png)
+![img_7.png](https://img.sherry4869.com/Blog/IT/server/cloudreve/img_7.png)  
 5. 在宝塔面板点击软件商店下载 **堡塔应用管理器** 插件  
-![img_1.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/Cloudreve/img_1.png)  
+![img_1.png](https://img.sherry4869.com/Blog/IT/server/cloudreve/img_1.png)  
 6. 添加 cloudreve 应用  
-![img_8.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/Cloudreve/img_8.png)  
+![img_8.png](https://img.sherry4869.com/Blog/IT/server/cloudreve/img_8.png)  
 启动应用成功后打开应用日志，请务必记住账号密码  
-![img_10.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/Cloudreve/img_10.png)  
+![img_10.png](https://img.sherry4869.com/Blog/IT/server/cloudreve/img_10.png)  
 此时网站目录中会新增 cloudreve.db 以及 conf.ini 文件，接着暂停应用进入下一步配置  
-![img_9.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/Cloudreve/img_9.png)  
+![img_9.png](https://img.sherry4869.com/Blog/IT/server/cloudreve/img_9.png)  
 添加 cloudreve 数据库（可选）  
-![img_11.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/Cloudreve/img_11.png)  
+![img_11.png](https://img.sherry4869.com/Blog/IT/server/cloudreve/img_11.png)  
 ::: tip
 创建数据库时提示 **数据库管理密码错误** 可以先修改root密码后再重新创建
 :::
@@ -71,20 +70,21 @@ Name = cloudreve
 TablePrefix = 
 ```
 7. 配置网站反向代理  
-![img_12.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/Cloudreve/img_12.png)
+![img_12.png](https://img.sherry4869.com/Blog/IT/server/cloudreve/img_12.png)
 8. 在宝塔应用管理器中重新启动 cloudreve 应用（每重启一次应用都会更新登陆密码）  
-![img_13.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/Cloudreve/img_13.png)
+![img_13.png](https://img.sherry4869.com/Blog/IT/server/cloudreve/img_13.png)
 9. 访问网站地址  
-![img_14.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/Cloudreve/img_14.png)
+![img_14.png](https://img.sherry4869.com/Blog/IT/server/cloudreve/img_14.png)
 可以在 Cloudreve 仪表盘中的用户组选择对应角色修改初始容量  
-![img_15.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/Cloudreve/img_15.png)
+![img_15.png](https://img.sherry4869.com/Blog/IT/server/cloudreve/img_15.png)
 Nginx配置大文件上传  
-![img.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/Cloudreve/img_18.png)
+![img.png](https://img.sherry4869.com/Blog/IT/server/cloudreve/img_18.png)
 
 ## 常见问题
+
 当上传超过10M的文件时提示以下错误  
-![img_16.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/Cloudreve/img_16.png)
-![img_17.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/Cloudreve/img_17.png)
+![img_16.png](https://img.sherry4869.com/Blog/IT/server/cloudreve/img_16.png)
+![img_17.png](https://img.sherry4869.com/Blog/IT/server/cloudreve/img_17.png)
 首先访问服务器IP:5212测试是否还会有该错误提示，如果一切正常则是反向代理配置有误，检查反向代理目标URL是否配置成127.0.0.1:5212，而不是服务器IP:5212
 
 ## 参考资料

@@ -2,7 +2,6 @@
 date: 2022-03-03
 category: IT
 tag: 云服务器
-permalink: /it/ecs
 ---
 
 # 云服务器ECS
@@ -14,12 +13,12 @@ permalink: /it/ecs
 ## 购买云服务器ECS
 
 登录访问 [阿里云官网](https://www.aliyun.com/)  
-![img.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/ECS/img.png)
+![img.png](https://img.sherry4869.com/Blog/IT/server/ECS/img.png)
 导航栏中依次选择【产品】->【计算】->【云服务器】->【云服务器ESC】  
-![img_1.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/ECS/img_1.png)
+![img_1.png](https://img.sherry4869.com/Blog/IT/server/ECS/img_1.png)
 访问购买界面后根据个人需求购买合适的云服务器ESC（下图为参考配置，可点击放大查看）  
 [Alibaba Cloud Linux镜像概述](https://help.aliyun.com/document_detail/111881.html)  
-![img_2.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/ECS/img_2.png)
+![img_2.png](https://img.sherry4869.com/Blog/IT/server/ECS/img_2.png)
 
 ### 相关配置
 
@@ -31,10 +30,10 @@ CentOS官方已计划停止维护CentOS 7、CentOS 8等Linux项目，如果您�
 [创建一个快照](https://help.aliyun.com/document_detail/25455.html) 在回滚云盘、修改关键系统文件、更换操作系统前为了数据安全，您可以提前创建快照备份，提高操作容错率    
 [更换操作系统（系统盘）](https://help.aliyun.com/document_detail/25436.html) 如果您在创建ECS实例时选择了错误的操作系统，或者在使用过程中需要改用其他操作系统，您可以为ECS实例更换新的操作系统  
 访问云服务器ECS控制台->选择指定服务器实例ID访问实例详情界面->点击更换操作系统  
-![img_5.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/ECS/img_5.png)
-![img_3.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/ECS/img_3.png)
-![img_4.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/ECS/img_4.png)
-![img_6.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/ECS/img_6.png)
+![img_5.png](https://img.sherry4869.com/Blog/IT/server/ECS/img_5.png)
+![img_3.png](https://img.sherry4869.com/Blog/IT/server/ECS/img_3.png)
+![img_4.png](https://img.sherry4869.com/Blog/IT/server/ECS/img_4.png)
+![img_6.png](https://img.sherry4869.com/Blog/IT/server/ECS/img_6.png)
 
 ## 域名注册
 
@@ -42,10 +41,10 @@ CentOS官方已计划停止维护CentOS 7、CentOS 8等Linux项目，如果您�
 在域名没有被发明之前，人们访问网站都是通过IP地址，也就是类似1.1.1.1这样的一串字符，但是IP地址不直观，而且用户记忆十分不方便，于是人们又发明了另一套字符型的地址方案，即所谓的域名地址
 :::
 访问 [阿里云域名注册](https://wanwang.aliyun.com/domain/searchresult/) 中查询自己想要注册的域名下单购买  
-![img_7.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/ECS/img_7.png)
+![img_7.png](https://img.sherry4869.com/Blog/IT/server/ECS/img_7.png)
 ::: tip
 支付前可以通过输入优惠口令获得减免 [优惠口令获取方式](https://help.aliyun.com/document_detail/44007.html)  
-![img_8.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/ECS/img_8.png)
+![img_8.png](https://img.sherry4869.com/Blog/IT/server/ECS/img_8.png)
 :::
 访问 [域名控制台](https://dc.console.aliyun.com/) 管理已注册的域名
 
@@ -59,11 +58,11 @@ CentOS官方已计划停止维护CentOS 7、CentOS 8等Linux项目，如果您�
 :::
 访问 [云解析DNS](https://dns.console.aliyun.com/) 配置界面  
 在选项卡中选择权威域名点击 **添加域名**  
-![img_18.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/ECS/img_18.png)  
+![img_18.png](https://img.sherry4869.com/Blog/IT/server/ECS/img_18.png)  
 域名添加后点击 **解析设置** 进行DNS配置  
-![img_16.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/ECS/img_16.png)
+![img_16.png](https://img.sherry4869.com/Blog/IT/server/ECS/img_16.png)
 配置二级域名的DNS解析（示例）  
-![img_17.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/ECS/img_17.png)
+![img_17.png](https://img.sherry4869.com/Blog/IT/server/ECS/img_17.png)
 [添加解析记录配置详解](https://help.aliyun.com/document_detail/29725.htm?spm=a2c4g.11186623.0.0.47a55b8e8icKvj#topic-2035899)
 
 ## 网站备案
@@ -83,12 +82,12 @@ CentOS官方已计划停止维护CentOS 7、CentOS 8等Linux项目，如果您�
 :::
 访问 [公安机关互联网站安全管理服务平台](https://www.beian.gov.cn/portal/index) 完成注册登录  
 访问个人主页点击新办网站申请  
-![img_9.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/ECS/img_9.png)
+![img_9.png](https://img.sherry4869.com/Blog/IT/server/ECS/img_9.png)
 按照实际情况填写  
-![img_19.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/ECS/img_19.png)
-![img_20.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/ECS/img_20.png)
+![img_19.png](https://img.sherry4869.com/Blog/IT/server/ECS/img_19.png)
+![img_20.png](https://img.sherry4869.com/Blog/IT/server/ECS/img_20.png)
 网站基本信息填写参考示例  
-![img_21.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/ECS/img_21.png)
+![img_21.png](https://img.sherry4869.com/Blog/IT/server/ECS/img_21.png)
 ::: tip
 如网站提供互联网交互服务需要发送 **博客个人空间服务企业基础信息登记表** 以及 **交互式服务安全检查表** 邮件到指定邮箱进行审核  
 提交审核后预计等待两周审核时间，如有审核失败疑问可以拨打当地公网备案客户咨询电话进行咨询
@@ -106,13 +105,13 @@ CentOS官方已计划停止维护CentOS 7、CentOS 8等Linux项目，如果您�
 - 免费证书有效期为1年
 
 访问 [阿里云数字证书管理服务](https://www.aliyun.com/product/cas) 界面中点击SSL证书申请免费证书    
-![img_10.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/ECS/img_10.png)
+![img_10.png](https://img.sherry4869.com/Blog/IT/server/ECS/img_10.png)
 按照实际情况填写    
-![img_11.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/ECS/img_11.png)
+![img_11.png](https://img.sherry4869.com/Blog/IT/server/ECS/img_11.png)
 访问 [阿里云DNS控制台](https://dns.console.aliyun.com/) 添加DNS解析配置完成验证  
-![img_12.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/ECS/img_12.png)  
-![img_13.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/ECS/img_13.png)  
-![img_14.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/ECS/img_14.png)  
+![img_12.png](https://img.sherry4869.com/Blog/IT/server/ECS/img_12.png)  
+![img_13.png](https://img.sherry4869.com/Blog/IT/server/ECS/img_13.png)  
+![img_14.png](https://img.sherry4869.com/Blog/IT/server/ECS/img_14.png)  
 验证成功后阿里云账号绑定的手机号码会收到SSL证书已签发成功的短信
 ::: info
 [安装SSL证书到服务器](https://help.aliyun.com/document_detail/198938.html)
@@ -135,12 +134,12 @@ LNMP是指一组通常一起使用来运行动态网站或者服务器的自由�
 ::: tip
 系统兼容性推荐：Centos7.x > Debian10 > Ubuntu 20.04 > Centos8 stream > Ubuntu 18.04 > 其它系统
 :::
-![img_22.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/ECS/img_22.png)
+![img_22.png](https://img.sherry4869.com/Blog/IT/server/ECS/img_22.png)
 Linux面板7.9.6在线安装示例  
-![img_23.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/ECS/img_23.png)
-![img_24.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/ECS/img_24.png)
-![img_25.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/ECS/img_25.png)
-![img_26.png](https://img.sherry4869.com/Blog/IT/%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/ECS/img_26.png)
+![img_23.png](https://img.sherry4869.com/Blog/IT/server/ECS/img_23.png)
+![img_24.png](https://img.sherry4869.com/Blog/IT/server/ECS/img_24.png)
+![img_25.png](https://img.sherry4869.com/Blog/IT/server/ECS/img_25.png)
+![img_26.png](https://img.sherry4869.com/Blog/IT/server/ECS/img_26.png)
 ::: tip
 如果使用Alibaba Cloud Linux操作系统安装宝塔面板＋LNMP环境套件后访问宝塔面板发现只安装了Nginx和宝塔SSH终端，其余的软件需要在软件商店中自行搜索安装
 :::
