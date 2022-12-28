@@ -5,7 +5,6 @@ tag:
   - Java
   - Apache
   - POI
-permalink: /it/poi-tl
 ---
 
 # 在文档的任何地方做任何事情
@@ -14,11 +13,13 @@ poi-tl（poi template language）是Word模板引擎，使用Word模板和数据
 <!-- more -->
 
 ## 文档渲染效果
+
 ![img.png](https://img.sherry4869.com/Blog/IT/Apache/POI/poi-tl/img.png)
 
 ## 准备工作
 
 ### 实现思路
+
 ::: tip
 根据上图导出效果分析出该模板文档需要渲染出一个顶部的文档标题 `{{activityName}}`  
 以及下方区块对 `{{?sections}}` `{{/sections}}`  
@@ -40,10 +41,12 @@ poi-tl（poi template language）是Word模板引擎，使用Word模板和数据
 :::
 
 ### 创建工程
+
 1. 新建一个Spirng Boot 2.2.x工程
 2. 把 [poi-tl-template.docx模板文档](https://img.sherry4869.com/Blog/IT/Apache/POI/poi-tl/poi-tl-template.docx) 下载到工程 src/main/resources/template 目录下
 
 ### 相关依赖
+
 ```xml
 <dependencies>
     <dependency>
@@ -68,6 +71,7 @@ poi-tl（poi template language）是Word模板引擎，使用Word模板和数据
 ## 编码
 
 ### 网络流输出
+
 ```java
 @RestController
 @RequestMapping("/wordController")
@@ -127,6 +131,7 @@ public class WordController {
 ```
 
 ### 输出到本地
+
 ```text
 XWPFTemplate.compile("src/test/resources/template/poi-tl-template.docx").render(renderingData).writeToFile("src/test/resources/doc/Questionnaire.docx");
 ```
@@ -134,11 +139,13 @@ XWPFTemplate.compile("src/test/resources/template/poi-tl-template.docx").render(
 ## 常见问题
 
 ### 下载文件中文名被忽略
+
 ```text
 response.setHeader("Content-disposition", "attachment;filename=\"" + new String("问卷调查.docx".getBytes(),"ISO-8859-1") + "\""); //下载的文件名称
 ```
 
 ### 运行异常
+
 ```java
 @RestController
 @RequestMapping("/wordController")
@@ -162,4 +169,5 @@ org.apache.poi.openxml4j.exceptions.InvalidFormatException: A part name shall no
 :::
 
 ## 参考资料
+
 [官方文档](http://deepoove.com/poi-tl/)
