@@ -21,9 +21,9 @@ category: 影视
 
 片源画质：蓝光1080p
 
-<p>片库量：<el-rate model-value="3" disabled /></p>
+<div><p>片库量：<el-rate model-value="3" disabled /></p></div>
 
-<p>观影流畅度：<el-rate model-value="5" disabled /></p>
+<div><p>观影流畅度：<el-rate model-value="5" disabled /></p></div>
 
 ::: info 站长自述
 我们的目标是提供最便捷的，同时支持电脑和移动设备的超清画质在线观看影视剧体验  
@@ -56,9 +56,9 @@ category: 影视
 
 片源画质：蓝光1080p
 
-<p>片库量：<el-rate model-value="1" disabled /></p>
+<div><p>片库量：<el-rate model-value="1" disabled /></p></div>
 
-<p>观影流畅度：<el-rate model-value="5" disabled /></p>
+<div><p>观影流畅度：<el-rate model-value="5" disabled /></p></div>
 
 ![img_3.png](https://img.sherry4869.com/Blog/video/share/img_3.png)
 
@@ -74,9 +74,9 @@ category: 影视
 
 片源画质：1080p
 
-<p>片库量：<el-rate model-value="3" disabled /></p>
+<div><p>片库量：<el-rate model-value="3" disabled /></p></div>
 
-<p>观影流畅度：<el-rate model-value="5" disabled /></p>
+<div><p>观影流畅度：<el-rate model-value="5" disabled /></p></div>
 
 ![img_10.png](https://img.sherry4869.com/Blog/video/share/img_10.png)
 
@@ -92,9 +92,9 @@ category: 影视
 
 片源画质：720p
 
-<p>片库量：<el-rate model-value="5" disabled /></p>
+<div><p>片库量：<el-rate model-value="5" disabled /></p></div>
 
-<p>观影流畅度：<el-rate model-value="3" disabled /></p>
+<div><p>观影流畅度：<el-rate model-value="3" disabled /></p></div>
 
 ![img_12.png](https://img.sherry4869.com/Blog/video/share/img_12.png)
 
