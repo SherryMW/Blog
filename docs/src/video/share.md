@@ -19,6 +19,13 @@ category: 影视
 片源画质：蓝光1080p  
 片库量：<el-rate model-value="3" disabled />  
 观影流畅度：<el-rate model-value="5" disabled />
+
+![img.png](https://img.sherry4869.com/Blog/video/share/img.png)
+
+![img_1.png](https://img.sherry4869.com/Blog/video/share/img_1.png)
+
+![img_2.png](https://img.sherry4869.com/Blog/video/share/img_2.png)
+
 ::: info 站长自述
 我们的目标是提供最便捷的，同时支持电脑和移动设备的超清画质在线观看影视剧体验  
 域名是站长自嘲，不是指访问本站的您，请勿对号入座  
@@ -31,9 +38,6 @@ category: 影视
 电影的话，会优先选择导演剪辑版，老片如果存在数字修复之类的画质提升版本也会优先选择。音频，优先选择原始语种  
 字幕的话，有时候可能为了快，会先使用不那么完美地翻译，但是如果有更好的翻译出现，我会更换字幕
 :::
-![img.png](https://img.sherry4869.com/Blog/video/share/img.png)
-![img_1.png](https://img.sherry4869.com/Blog/video/share/img_1.png)
-![img_2.png](https://img.sherry4869.com/Blog/video/share/img_2.png)
 
 ### NoTV
 
@@ -43,8 +47,10 @@ category: 影视
 片源水印广告：无  
 片源画质：蓝光1080p  
 片库量：<el-rate model-value="1" disabled />  
-观影流畅度：<el-rate model-value="5" disabled />  
+观影流畅度：<el-rate model-value="5" disabled />
+
 ![img_3.png](https://img.sherry4869.com/Blog/video/share/img_3.png)
+
 ![img_4.png](https://img.sherry4869.com/Blog/video/share/img_4.png)
 
 ### HDmoli
@@ -54,8 +60,10 @@ category: 影视
 片源水印广告：无   
 片源画质：1080p  
 片库量：<el-rate model-value="3" disabled />  
-观影流畅度：<el-rate model-value="5" disabled />  
+观影流畅度：<el-rate model-value="5" disabled />
+
 ![img_10.png](https://img.sherry4869.com/Blog/video/share/img_10.png)
+
 ![img_11.png](https://img.sherry4869.com/Blog/video/share/img_11.png)
 
 ### 无名小站
@@ -65,7 +73,8 @@ category: 影视
 片源水印广告：有  
 片源画质：720p  
 片库量：<el-rate model-value="5" disabled />  
-观影流畅度：<el-rate model-value="3" disabled />  
+观影流畅度：<el-rate model-value="3" disabled />
+
 ![img_12.png](https://img.sherry4869.com/Blog/video/share/img_12.png)
 
 ## 影视下载
@@ -74,46 +83,50 @@ category: 影视
 
 网址：[https://www.yinfans.me](https://www.yinfans.me)  
 会员制：无  
+
+![img_16.png](https://img.sherry4869.com/Blog/video/share/img_16.png)
+
+![img_17.png](https://img.sherry4869.com/Blog/video/share/img_17.png)
+
 ::: info 站长自述
 精选高分影片，拒绝烂片！  
 顶级蓝光电影，发烧级品质！  
 收藏级音画原片+部分顶级在线预告片！  
 仅供电影爱好者交流，无广告！不盈利！
 :::
-![img_16.png](https://img.sherry4869.com/Blog/video/share/img_16.png)
-![img_17.png](https://img.sherry4869.com/Blog/video/share/img_17.png)
 
 ### MINI4K迷客电影
 
 网址：[https://www.mini4k.com](https://www.mini4k.com)  
-会员制：有（会员才可以下载所有资源）  
-::: info 会员说明
-永久会员：60元
-:::
+会员制：有（会员才可以下载所有资源）
+- 永久会员：60元
+
 ![img_15.png](https://img.sherry4869.com/Blog/video/share/img_15.png)
+
 ![img_14.png](https://img.sherry4869.com/Blog/video/share/img_14.png)
 
 ### Grab4K
 
 网址：[https://www.grab4k.com](https://www.grab4k.com)  
 会员制：有（会员才可以下载所有资源）
-::: info 会员说明
-年费会员：119元/年
-:::
+- 会员：119元/年
+
 ![img_7.png](https://img.sherry4869.com/Blog/video/share/img_7.png)
+
 ![img_8.png](https://img.sherry4869.com/Blog/video/share/img_8.png)
+
 ![img_9.png](https://img.sherry4869.com/Blog/video/share/img_9.png)
 
 ### 布谷TV
 
 网址：[https://www.bugutv.net](https://www.bugutv.net)  
 会员制：有（会员可以下载杜比视界影像画质的资源）
-::: info 会员说明
-季度VIP：30元  
-年度VIP：60元  
-永久VIP：99元
-:::
+- 季度VIP：30元
+- 年度VIP：60元
+- 永久VIP：99元
+
 ![img_6.png](https://img.sherry4869.com/Blog/video/share/img_5.png)
+
 ![img_6.png](https://img.sherry4869.com/Blog/video/share/img_6.png)
 
 ## 字幕下载
@@ -121,5 +134,6 @@ category: 影视
 ### SubHD
 
 网址：[https://subhd.tv](https://subhd.tv)  
-会员制：无  
+会员制：无
+
 ![img_13.png](https://img.sherry4869.com/Blog/video/share/img_13.png)
