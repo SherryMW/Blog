@@ -15,10 +15,10 @@ category: 影视
 
 导航页地址：[https://ddys.site](https://ddys.site)  
 站内广告：1  
-片源水印广告：无   
-片源画质：蓝光1080p  
-片库量：<el-rate model-value="3" disabled />  
-观影流畅度：<el-rate model-value="5" disabled />
+片源水印广告：无
+片源画质：蓝光1080p
+<div>片库量：<el-rate model-value="3" disabled /></div>  
+<div>观影流畅度：<el-rate model-value="5" disabled /></div>
 
 ![img.png](https://img.sherry4869.com/Blog/video/share/img.png)
 
@@ -46,8 +46,8 @@ category: 影视
 站内广告：无  
 片源水印广告：无  
 片源画质：蓝光1080p  
-片库量：<el-rate model-value="1" disabled />  
-观影流畅度：<el-rate model-value="5" disabled />
+<div>片库量：<el-rate model-value="1" disabled /></div>
+<div>观影流畅度：<el-rate model-value="5" disabled /></div>
 
 ![img_3.png](https://img.sherry4869.com/Blog/video/share/img_3.png)
 
@@ -59,8 +59,8 @@ category: 影视
 站内广告：1  
 片源水印广告：无   
 片源画质：1080p  
-片库量：<el-rate model-value="3" disabled />  
-观影流畅度：<el-rate model-value="5" disabled />
+<div>片库量：<el-rate model-value="3" disabled /></div>  
+<div>观影流畅度：<el-rate model-value="5" disabled /></div>
 
 ![img_10.png](https://img.sherry4869.com/Blog/video/share/img_10.png)
 
@@ -72,8 +72,8 @@ category: 影视
 站内广告：2  
 片源水印广告：有  
 片源画质：720p  
-片库量：<el-rate model-value="5" disabled />  
-观影流畅度：<el-rate model-value="3" disabled />
+<div>片库量：<el-rate model-value="5" disabled /></div>
+<div>观影流畅度：<el-rate model-value="3" disabled /></div>
 
 ![img_12.png](https://img.sherry4869.com/Blog/video/share/img_12.png)
 
