@@ -1,4 +1,5 @@
 import {defineUserConfig} from "vuepress";
+import {seoPlugin} from "vuepress-plugin-seo2";
 import theme from "./theme.js";
 
 export default defineUserConfig({
@@ -7,7 +8,7 @@ export default defineUserConfig({
     title: "MW Blog",
     description: "MW Blog",
     head: [
-        ['meta', {name: 'keywords', content: 'sherry4869,MW,Sherry'}],
+        ['meta', {name: 'keywords', content: 'MW,Sherry,Sherry4869'}],
         ['script', {}, `
         var _hmt = _hmt || [];
         (function() {
@@ -17,7 +18,11 @@ export default defineUserConfig({
             s.parentNode.insertBefore(hm, s);
         })();`]
     ],
-    plugins: [],
+    plugins: [
+        seoPlugin({
+            hostname: "https://blog.sherry4869.com"
+        })
+    ],
 
     theme,
 

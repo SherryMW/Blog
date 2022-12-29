@@ -84,6 +84,7 @@ export default hopeTheme({
             components: ["Badge", "BiliBili", "PDF", "VideoPlayer"] //注册一些可以在 Markdown 文件中使用的组件
         },
         mdEnhance: { //Markdown 增强功能
-        }
+            tasklist: true, //启动任务列表
+        },
     },
 });
