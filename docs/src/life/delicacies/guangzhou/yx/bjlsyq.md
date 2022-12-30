@@ -33,3 +33,16 @@ article: false
 - [x] 传统鲍汁叉烧包
 - [x] 明炉香滑靓葡挞（推荐）
 - [x] 木瓜炖雪蛤（推荐）
+
+## 摩打食堂（北京路城壹汇店）
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFLMYA6N" target="_blank">中山四路395号城壹汇F4层</a>
+
+- [x] 明太子烤土豆（招牌 推荐）
+- [x] 摩摩超级爆汁炸鸡（招牌 推荐）
+- [x] 澳洲铺天盖地火牛大满贯
+- [x] 火焰牛肉寿司
+- [x] 火炙牛舌
+- [x] 北极贝
+- [x] 一口肥鹅肝
+- [x] 芥末八爪鱼
