@@ -11,8 +11,16 @@ export const Navbar = navbar([
         icon: 'emoji',
         children: [
             {
+                text: "健康",
+                link: "/life/healthy/"
+            },
+            {
                 text: "美食",
-                link: "/life/delicacies/",
+                link: "/life/delicacies/"
+            },
+            {
+                text: "娱乐",
+                link: "/life/play/guangzhou/RoomEscape/"
             }
         ]
     }
