@@ -13,7 +13,7 @@ article: false
 
 ### 三更
 
-<div><p>场景：<el-rate model-value="4" disabled /></p></div>
+<div><p>场景：<el-rate model-value="5" disabled /></p></div>
 
 <div><p>剧情：<el-rate model-value="4" disabled /></p></div>
 
@@ -23,13 +23,13 @@ article: false
 
 <div><p>恐怖：<el-rate model-value="5" disabled /></p></div>
 
-<div><p>运动量：<el-rate model-value="5" disabled /></p></div>
+<div><p>运动量：<el-rate model-value="4" disabled /></p></div>
 
 冲就完事了！
 
-有三种模式：人间，天堂，地狱
+有三种挑战模式：一更阳！二更阴！三更魂归来兮！
 
-一刷选的天堂模式，瞳灵人通关后只感觉到累，三更通关后却是神清气爽！
+一刷选的天堂模式：瞳灵人通关后只感觉到累，三更通关后却是神清气爽！
 
 我可真是幸运儿 :ok_hand:
 

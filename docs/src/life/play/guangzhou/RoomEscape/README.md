@@ -1,5 +1,4 @@
 ---
-date:
 category: 娱乐
 tag:
   - 密室逃脱

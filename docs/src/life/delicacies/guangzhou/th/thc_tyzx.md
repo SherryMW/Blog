@@ -36,3 +36,13 @@ article: false
 - [x] 南乳粉藕焖猪手
 - [x] 驰名煎酿尖椒
 - [x] 开胃五柳蛋
+
+## 秘密旅行Vintage（体育西店）
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFG63HJJ" target="_blank">体育西横街144号104</a>
+
+- [x] 招牌吞拿鱼薯仔头（招牌 推荐）
+- [x] 黄金酱烤鸡翅
+- [x] 甜蜜派对蜜糖草莓吐司（招牌 推荐）
+- [x] 满杯新鲜水果茶
+- [x] 桃桃乌龙鲜奶茶

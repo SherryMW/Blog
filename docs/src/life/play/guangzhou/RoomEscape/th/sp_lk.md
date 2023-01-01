@@ -19,7 +19,7 @@ article: false
 
 <div><p>机关道具：<el-rate model-value="4" disabled /></p></div>
 
-<div><p>谜题：<el-rate model-value="4" disabled /></p></div>
+<div><p>谜题：<el-rate model-value="3.5" disabled /></p></div>
 
 <div><p>恐怖：<el-rate model-value="0.5" disabled /></p></div>
 
@@ -33,11 +33,11 @@ article: false
 
 <div><p>剧情：<el-rate model-value="3" disabled /></p></div>
 
-<div><p>机关道具：<el-rate model-value="2.5" disabled /></p></div>
+<div><p>机关道具：<el-rate model-value="3" disabled /></p></div>
 
 <div><p>谜题：<el-rate model-value="3" disabled /></p></div>
 
-<div><p>温情：<el-rate model-value="4" disabled /></p></div>
+<div><p>温情：<el-rate model-value="3.5" disabled /></p></div>
 
 ### 找到你了
 
@@ -81,6 +81,8 @@ MRX中恐怖氛围最足的一个主题，最后结尾有声光电演绎（又�
 
 <div><p>恐怖：<el-rate model-value="0" disabled /></p></div>
 
+<div><p>温情：<el-rate model-value="3.5" disabled /></p></div>
+
 场景搭建的特别还原，点赞！
 
 ### 胭脂扣
@@ -101,7 +103,7 @@ MRX中恐怖氛围最足的一个主题，最后结尾有声光电演绎（又�
 
 <div><p>剧情：<el-rate model-value="1.5" disabled /></p></div>
 
-<div><p>机关道具：<el-rate model-value="0" disabled /></p></div>
+<div><p>机关道具：<el-rate model-value="1" disabled /></p></div>
 
 <div><p>谜题：<el-rate model-value="1" disabled /></p></div>
 
@@ -139,7 +141,7 @@ MRX中恐怖氛围最足的一个主题，最后结尾有声光电演绎（又�
 
 <div><p>剧情：<el-rate model-value="4" disabled /></p></div>
 
-<div><p>机关道具：<el-rate model-value="3.5" disabled /></p></div>
+<div><p>机关道具：<el-rate model-value="3" disabled /></p></div>
 
 <div><p>谜题：<el-rate model-value="2" disabled /></p></div>
 

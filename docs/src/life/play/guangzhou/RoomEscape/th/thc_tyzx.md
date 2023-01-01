@@ -39,7 +39,7 @@ article: false
 
 ### 拐卖
 
-<div><p>场景：<el-rate model-value="1" disabled /></p></div>
+<div><p>场景：<el-rate model-value="2" disabled /></p></div>
 
 <div><p>剧情：<el-rate model-value="1" disabled /></p></div>
 
@@ -93,9 +93,9 @@ article: false
 
 ### Hush
 
-<div><p>场景：<el-rate model-value="3" disabled /></p></div>
+<div><p>场景：<el-rate model-value="3.5" disabled /></p></div>
 
-<div><p>剧情：<el-rate model-value="3.5" disabled /></p></div>
+<div><p>剧情：<el-rate model-value="3" disabled /></p></div>
 
 <div><p>机关道具：<el-rate model-value="3.5" disabled /></p></div>
 

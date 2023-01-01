@@ -19,12 +19,12 @@ article: false
 
 <div><p>机关道具：<el-rate model-value="2" disabled /></p></div>
 
-<div><p>谜题：<el-rate model-value="2" disabled /></p></div>
+<div><p>谜题：<el-rate model-value="1" disabled /></p></div>
 
 <div><p>恐怖：<el-rate model-value="0" disabled /></p></div>
 
-因为店家赶着下一场主题，NPC演绎过程中有点敷衍了事，结尾结束的太过突然，造成了不太好的游戏体验感，经过沟通后店家老板给车队的每位玩家退款票价的20%
+因为店家赶着下一场主题，NPC演绎过程中有点敷衍了事，故事结尾结束的太过突然，造成了不太好的游戏体验感，经过沟通后店家老板给每位玩家退款票价的20%
 
-每个场景都设计的华丽且占地面积都非常夸张，但可惜剧情太拉跨，让玩家通关后一头雾水
+看得出来每个场景都是精心设计搭建的且占地面积都非常大，只可惜剧情太拉跨，玩家通关后一头雾水
 
 ![img_jpg](https://img.sherry4869.com/Blog/life/play/guangzhou/RoomEscape/py/yylm/img.jpg)
