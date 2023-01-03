@@ -23,7 +23,7 @@ article: false
 
 <div><p>恐怖：<el-rate model-value="0.5" disabled /></p></div>
 
-第一次体验的大型密室主题就是此主题，让我至今都印象深刻记忆犹新，彻底给我打开了密室逃（不）脱的大门
+第一次体验的大型密室主题就是该主题，让我至今都印象深刻地沉浸式逃脱解密主题，彻底给我打开了密室逃（不）脱的大门
 
 唯一恐怖的那段场景里有“惊喜”！
 
@@ -37,7 +37,7 @@ article: false
 
 <div><p>谜题：<el-rate model-value="3" disabled /></p></div>
 
-<div><p>温情：<el-rate model-value="3.5" disabled /></p></div>
+<div><p>温情：<el-rate model-value="3" disabled /></p></div>
 
 ### 找到你了
 
@@ -51,7 +51,7 @@ article: false
 
 <div><p>恐怖：<el-rate model-value="1" disabled /></p></div>
 
-内有巨型机关！
+期待已久的巨型机关转场并未让我感到震撼（期待一手深圳MRX的《镇灵村》）
 
 七巧板那关拼老久了 :watch:
 
@@ -65,9 +65,9 @@ article: false
 
 <div><p>谜题：<el-rate model-value="2" disabled /></p></div>
 
-<div><p>恐怖：<el-rate model-value="1.5" disabled /></p></div>
+<div><p>恐怖：<el-rate model-value="2" disabled /></p></div>
 
-MRX中恐怖氛围最足的一个主题，最后结尾有声光电演绎（又开启另一扇声光电主题的门了）
+MRX中恐怖氛围最足的一个主题，最后结尾有声光电演绎（又开启另一扇声光电类型主题密室的门了）
 
 ### 烟雨楼
 
@@ -83,7 +83,21 @@ MRX中恐怖氛围最足的一个主题，最后结尾有声光电演绎（又�
 
 <div><p>温情：<el-rate model-value="3.5" disabled /></p></div>
 
-场景搭建的特别还原，点赞！
+场景搭建的特别贴合主题，点赞！
+
+### 绝爱
+
+<div><p>场景：<el-rate model-value="1.5" disabled /></p></div>
+
+<div><p>剧情：<el-rate model-value="1.5" disabled /></p></div>
+
+<div><p>机关道具：<el-rate model-value="1.5" disabled /></p></div>
+
+<div><p>谜题：<el-rate model-value="1.5" disabled /></p></div>
+
+<div><p>恐怖：<el-rate model-value="0.5" disabled /></p></div>
+
+<div><p>运动量：<el-rate model-value="2" disabled /></p></div>
 
 ### 胭脂扣
 
@@ -96,20 +110,6 @@ MRX中恐怖氛围最足的一个主题，最后结尾有声光电演绎（又�
 <div><p>谜题：<el-rate model-value="2" disabled /></p></div>
 
 <div><p>恐怖：<el-rate model-value="0" disabled /></p></div>
-
-### 绝爱
-
-<div><p>场景：<el-rate model-value="1.5" disabled /></p></div>
-
-<div><p>剧情：<el-rate model-value="1.5" disabled /></p></div>
-
-<div><p>机关道具：<el-rate model-value="1" disabled /></p></div>
-
-<div><p>谜题：<el-rate model-value="1" disabled /></p></div>
-
-<div><p>恐怖：<el-rate model-value="0.5" disabled /></p></div>
-
-<div><p>运动量：<el-rate model-value="2" disabled /></p></div>
 
 ## 大迷局实景原创密室
 
@@ -131,9 +131,9 @@ MRX中恐怖氛围最足的一个主题，最后结尾有声光电演绎（又�
 
 <div><p>运动量：<el-rate model-value="1" disabled /></p></div>
 
-最后一个场景有“惊喜”！
-
 吹爆NPC朱迪演技！！！
+
+最后一个场景有“惊喜”！
 
 ### 三花物语
 

@@ -9,7 +9,7 @@ article: false
 
 ## 头号玩家剧情密室（时尚天河店）
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0GKJ9ZC0W" target="_blank">天河路时尚天河东区负2层停车场F3（7号门左手边那条通道走到负2层开门转右）</a>
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0GKJ9ZC0W" target="_blank">天河路时尚天河东区负2层停车场F3（7号门左手边那条地下通道走到负2楼开门转右）</a>
 
 ### 【剧情金奖】瞳灵人
 
@@ -27,7 +27,7 @@ article: false
 
 正如工作人员描述的那样：黑追电主题的鼻祖
 
-在保安大哥奋力踹门时随口调戏了一句：“晚上是不是没吃饱阿” 。后果有点严重 :frowning:
+在保安大哥奋力踹门时顺口调戏了一句：“晚上是不是没吃饱阿” 后果有点严重 :frowning:
 
 一刷抽到了雪莉的身份牌（中大奖了）
 
@@ -35,11 +35,11 @@ article: false
 
 ## 关你鬼室大型密室逃脱（时尚天河店）
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0G3JY24KV" target="_blank">天河路时尚天河东区负2层停车场F5（7号门左手边那条通道下到负2层开门转左）</a>
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0G3JY24KV" target="_blank">天河路时尚天河东区负2层停车场F5（7号门左手边那条地下通道下到负2楼开门转左）</a>
 
 ### 拐卖
 
-<div><p>场景：<el-rate model-value="2" disabled /></p></div>
+<div><p>场景：<el-rate model-value="1.5" disabled /></p></div>
 
 <div><p>剧情：<el-rate model-value="1" disabled /></p></div>
 
@@ -51,7 +51,7 @@ article: false
 
 <div><p>运动量：<el-rate model-value="2" disabled /></p></div>
 
-打雷音效蛮令人触不及防的，只不过到后面都被“劈”麻痹了
+打雷音效还蛮令人触不及防的，只不过到后面都被“劈”麻痹了
 
 当天因为是9员满人车队，因此NPC在后面没有追的太紧，4~5人车队体验可能会更刺激
 

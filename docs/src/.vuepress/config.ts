@@ -1,5 +1,4 @@
 import {defineUserConfig} from "vuepress";
-import {seoPlugin} from "vuepress-plugin-seo2";
 import theme from "./theme.js";
 
 export default defineUserConfig({
@@ -18,11 +17,7 @@ export default defineUserConfig({
             s.parentNode.insertBefore(hm, s);
         })();`]
     ],
-    plugins: [
-        seoPlugin({
-            hostname: "https://blog.sherry4869.com"
-        })
-    ],
+    plugins: [],
 
     theme,
 

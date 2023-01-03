@@ -31,7 +31,7 @@ export default hopeTheme({
      * Word 字数
      * PageView 页面浏览量(仅 Waline 可用)
      */
-    pageInfo: ["Author", "Date", "Category", "Tag", "Word"],
+    pageInfo: ["Author", "Category", "Tag", "Word"],
 
     navbar: Navbar, //导航栏
 
@@ -84,7 +84,9 @@ export default hopeTheme({
             components: ["Badge", "BiliBili", "PDF", "VideoPlayer"] //注册一些可以在 Markdown 文件中使用的组件
         },
         mdEnhance: { //Markdown 增强功能
+            imgLazyload: true, //启用图片懒加载
             tasklist: true, //启动任务列表
+            echarts: true, //启动ECharts图表配置
         },
     },
 });

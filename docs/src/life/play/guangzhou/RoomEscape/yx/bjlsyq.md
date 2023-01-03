@@ -15,7 +15,7 @@ article: false
 
 <div><p>互动：<el-rate model-value="4" disabled /></p></div>
 
-<div><p>场景：<el-rate model-value="3" disabled /></p></div>
+<div><p>场景：<el-rate model-value="2.5" disabled /></p></div>
 
 <div><p>剧情：<el-rate model-value="2" disabled /></p></div>
 
