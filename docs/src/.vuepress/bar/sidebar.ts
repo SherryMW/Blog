@@ -1,18 +1,40 @@
 import {sidebar} from "vuepress-theme-hope";
 
 export const Sidebar = sidebar({
-    "/IT/Apache/ShardingSphere/": [
+    // "/IT/Apache/ShardingSphere/": [
+    //     {
+    //         text: "高性能架构模式",
+    //         link: "高性能架构模式/",
+    //         collapsible: false
+    //     },
+    //     {
+    //         text: "学习资料",
+    //         link: "学习资料/",
+    //     }
+    // ],
+    "/IT/Java/pay/": [
         {
-            text: "高性能架构模式",
-            link: "高性能架构模式/",
-            collapsible: false
+            text: "微信",
+            prefix: "weixin/",
+            children: "structure"
         },
         {
-            text: "学习资料",
-            link: "学习资料/",
+            text: "支付宝",
+            prefix: "alipay/",
+            children: "structure"
         }
     ],
     "/life/healthy/": [
+        {
+            text: "休息",
+            prefix: "sleep/",
+            children: "structure"
+        },
+        {
+            text: "健身",
+            prefix: "gym/",
+            children: "structure"
+        },
         {
             text: "呼吸科",
             prefix: "respiratory/",

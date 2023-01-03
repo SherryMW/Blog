@@ -7,6 +7,8 @@ article: false
 
 # 新型冠状病毒肺炎
 
+- [x] 2022年12月28日~2023年1月?日
+
 ## 2022年12月28日
 
 <div><p>咽痛：<el-rate model-value="2" disabled /></p></div>
@@ -39,7 +41,7 @@ article: false
 
 早上起床后喉咙有点痒，吞口水没有疼痛感，有轻微咳嗽并开始有打喷嚏症状，自我感觉声线变沉闷了，中午去客厅装水碰见室友，在唠嗑时问声线是否变的明显，室友给与肯定答复并提议测一下抗原
 
-不测不知道，一测就 :scream:
+不测不知道，一测吓一跳 :scream:
 
 ![img_jpg](https://img.sherry4869.com/Blog/life/healthy/respiratory/img.jpg)
 
@@ -54,3 +56,19 @@ article: false
 打喷嚏的症状没有了，但咳嗽症状比昨天严重一点，并不是前两天的干咳，而是能咳出些许痰
 
 喝了一包养阴清肺膏以及干了一勺蛇胆川贝枇杷膏
+
+## 2023年1月2日
+
+<div><p>咳嗽：<el-rate model-value="2" disabled /></p></div>
+
+中午测了两次核酸
+
+![img_2.jpg](https://img.sherry4869.com/Blog/life/healthy/respiratory/img_2.jpg)
+
+## 2023年1月3日
+
+<div><p>咳嗽：<el-rate model-value="2" disabled /></p></div>
+
+晚上测了一次核酸
+
+![img_3.jpg](https://img.sherry4869.com/Blog/life/healthy/respiratory/img_3.jpg)
