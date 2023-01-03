@@ -8,6 +8,6 @@ article: false
 
 ## 呼吸科
 
-[感冒](respiratory/cold)
+[感冒](respiratory/cold.md)
 
-[新型冠状病毒肺炎](respiratory/CoronaVirusDisease)
+[新型冠状病毒肺炎](respiratory/CoronaVirusDisease.md)
