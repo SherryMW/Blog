@@ -72,11 +72,12 @@ H5支付是指商户在微信客户端外的移动端网页展示商品或服务
 ## 获取开发中需要的秘钥和证书
 
 商户平台密码安全：[https://kf.qq.com/faq/161222RNRFFN161222VVb6ba.html](https://kf.qq.com/faq/161222RNRFFN161222VVb6ba.html)  
-获取商户API证书：[https://kf.qq.com/faq/161222NneAJf161222U7fARv.html](https://kf.qq.com/faq/161222NneAJf161222U7fARv.html)
+获取商户API证书：[https://kf.qq.com/faq/161222NneAJf161222U7fARv.html](https://kf.qq.com/faq/161222NneAJf161222U7fARv.html)  
+设置APIv3秘钥：[https://kf.qq.com/faq/180830E36vyQ180830AZFZvu.html](https://kf.qq.com/faq/180830E36vyQ180830AZFZvu.html)
+
+管理员的操作密码就是在申请商户平台账号时设置的密码
 
 APIv3版本的所有接口都需要证书；APIv2版本的高级接口需要证书 如：退款、企业红包、企业付款等
-
-管理员的操作密码就是在申请商户平台账号时设置的
 
 ![img_8.png](https://img.sherry4869.com/Blog/IT/Java/pay/weixin/paymentGuidelines/img_8.png)
 
@@ -84,7 +85,7 @@ APIv3版本的所有接口都需要证书；APIv2版本的高级接口需要证�
 
 ![img_9.png](https://img.sherry4869.com/Blog/IT/Java/pay/weixin/paymentGuidelines/img_9.png)
 
-设置APIv3秘钥：[https://kf.qq.com/faq/180830E36vyQ180830AZFZvu.html](https://kf.qq.com/faq/180830E36vyQ180830AZFZvu.html)
+> 注意：以上所有API密钥和证书需妥善保管防止泄露
 
 ## 申请支付产品
 

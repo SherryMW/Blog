@@ -72,3 +72,11 @@ article: false
 晚上测了一次核酸
 
 ![img_3.jpg](https://img.sherry4869.com/Blog/life/healthy/respiratory/img_3.jpg)
+
+## 2023年1月4号
+
+<div><p>咳嗽：<el-rate model-value="0.5" disabled /></p></div>
+
+晚上测了一次核酸，彻底转阴了
+
+![img_4.jpg](https://img.sherry4869.com/Blog/life/healthy/respiratory/img_4.jpg)
