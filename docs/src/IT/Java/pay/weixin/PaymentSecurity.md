@@ -1,6 +1,8 @@
 ---
 category: IT
-tag: 支付
+tag:
+  - Java
+  - 支付
 order: 2
 article: false
 ---
