@@ -187,7 +187,3 @@ API接口下载：通过程序的方式进行下载，避免工具下载下来�
 都是对称加密需要使用的加密和解密密钥，一定要保管好，不能泄露  
 API密钥对应V2版本的API  
 APIv3密钥对应V3版本的API  
-
-## 参考资料
-
-<BiliBili bvid="BV1US4y1D77m" :danmaku="false"/>
