@@ -20,22 +20,35 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0I1VMXOCO" target="_blank">林和东路121号中怡商务港二层自编201</a>
 
+香煎手打墨鱼饼：正！
+
+![img_jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thc_tyzx/cldpd/img_4.jpg)
+
+鸿运烧香猪：没有完全去骨，皮脆但肉有点肥腻
+
+![img_jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thc_tyzx/cldpd/img_3.jpg)
+
+大排档炒牛河：炒出风味
+
+![img_jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thc_tyzx/cldpd/img_2.jpg)
+
 ![img_jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thc_tyzx/cldpd/img.jpg)
 
-- [ ] 鸿运烧香猪
-- [x] 常来豉油鸡（招牌）
 - [ ] 荔枝木招牌烧鹅（招牌）
+- [x] 常来豉油鸡（招牌）
 - [x] 特色脆皮乳鸽（推荐）
+- [x] 鸿运烧香猪
 - [ ] 清蒸龙趸
 - [ ] 生焗多宝鱼
 - [ ] 招牌手抓烧排骨（招牌）
-- [x] 香煎手打墨鱼饼（推荐）
 - [x] 蒜蓉粉丝蒸北海元贝（推荐）
+- [x] 香煎手打墨鱼饼（推荐）
 - [x] 生啫田鸡黄鳝
 - [x] 盐焗北海元贝
 - [x] 南乳粉藕焖猪手
 - [x] 驰名煎酿尖椒
 - [x] 开胃五柳蛋
+- [x] 大排档炒牛河（推荐）
 
 ## 秘密旅行Vintage（体育西店）
 

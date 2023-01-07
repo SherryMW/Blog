@@ -17,7 +17,7 @@ article: false
 
 ![img_2.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thb_gzdz/79FishingBoats/img_2.jpg)
 
-清蒸蟹脚原汁原味，鲜甜肉嫩
+清蒸蟹脚：原汁原味，鲜甜肉嫩
 
 ![img_3.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thb_gzdz/79FishingBoats/img_3.jpg)
 
