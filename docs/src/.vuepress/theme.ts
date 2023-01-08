@@ -2,6 +2,7 @@ import {hopeTheme} from "vuepress-theme-hope";
 import {Navbar} from "./bar/navbar";
 import {Sidebar} from "./bar/sidebar";
 
+process.env.TZ = "GMT+8";
 const data = await fetch("https://api.github.com/repos/SherryMW/Blog?token=ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGZrbd1zYgX7b4FYXUpAxWEjDOIJAYsuyjIuAEhKeove sherry_mw@163.com").then(response => response.json());
 const lastUpdate = new Date(data['pushed_at']).getFullYear().toString() + "年" + (new Date(data['pushed_at']).getMonth() + 1).toString() + "月" + new Date(data['pushed_at']).getDate().toString() + "日 " + new Date(data['pushed_at']).getHours() + ":" + new Date(data['pushed_at']).getMinutes();
 
