@@ -159,31 +159,24 @@ HTTP协议主要用于网页加密，首先一个网站需要使用HTTPS协议�
 
 ![img_12.png](https://img.sherry4869.com/Blog/IT/Java/pay/weixin/paymentSecurity/img_12.png)
 
-## 微信APIv3证书
+## 名词解释
 
-对接微信支付，信息交换的双方是商户端与微信支付系统，信息交换的双方想要进行加密数据传输的话，两方都要申请各自的数字证书，都要有各自的公钥私钥
+对接微信支付，信息交换的双方是商户端与微信支付系统，信息交换的双方想要进行加密数据传输的话，双方都要申请各自的数字证书，都要有各自的公钥私钥
 
-商户证书：  
-商户API证书是指由商户申请的，包含商户的商户号、公司名称、公私钥信息的证书  
-商户证书在商户后台申请：[https://pay.weixin.qq.com/index.php/core/cert/api_cert#/](https://pay.weixin.qq.com/index.php/core/cert/api_cert#/)
+商户API证书：是用来证实商户身份的。证书中包含商户号、证书序列号、证书有效期等信息，由证书授权机构(Certificate Authority ，简称CA)签发，以防证书被伪造或篡改。如何获取请见[商户API证书](https://wechatpay-api.gitbook.io/wechatpay-api-v3/ren-zheng/zheng-shu#shang-hu-api-zheng-shu)    
 
 ![img_15.png](https://img.sherry4869.com/Blog/IT/Java/pay/weixin/paymentSecurity/img_15.png)
 
+商户API私钥：商户申请商户API证书时，会生成商户私钥，并保存在本地证书文件夹的文件apiclient_key.pem中。注：不要把私钥文件暴露在公共场合，如上传到Github，写在客户端代码等  
 apiclient_cert.pem：商户证书公钥  
 apiclient_key.pem：商户证书私钥
 
 ![img_17.png](https://img.sherry4869.com/Blog/IT/Java/pay/weixin/paymentSecurity/img_17.png)
 
-平台证书（微信支付平台）:  
-微信支付平台证书是指由微信支付负责申请的，包含微信支付平台标识、公钥信息的证书。商户可以使 用平台证书中的公钥进行验签  
-平台证书的获取：[https://pay.weixin.qq.com/wiki/doc/apiv3/apis/wechatpay5_1.shtml](https://pay.weixin.qq.com/wiki/doc/apiv3/apis/wechatpay5_1.shtml)
+微信支付平台证书：平台证书是指由微信支付负责申请的，包含微信支付平台标识、公钥信息的证书。商户可以使用平台证书中的公钥进行应答签名的验证。微信支付平台证书请调用[获取平台证书接口](https://wechatpay-api.gitbook.io/wechatpay-api-v3/ren-zheng/zheng-shu#ping-tai-zheng-shu)  
 
-![img_16.png](https://img.sherry4869.com/Blog/IT/Java/pay/weixin/paymentSecurity/img_16.png)
+证书序列号：每个证书都有一个由CA颁发的唯一编号，即证书序列号。如何查看证书序列号请看[这里](https://wechatpay-api.gitbook.io/wechatpay-api-v3/chang-jian-wen-ti/zheng-shu-xiang-guan#ru-he-cha-kan-zheng-shu-xu-lie-hao)
 
-API接口下载：通过程序的方式进行下载，避免工具下载下来的证书过期
-
-### API密钥和APIv3密钥
-
-都是对称加密需要使用的加密和解密密钥，一定要保管好，不能泄露  
+APIv3密钥：为了保证安全性，微信支付在回调通知和平台证书下载接口中，对关键信息进行了 AES-256-GCM 加密。APIv3 密钥是加密时使用的对称密钥，商户可以在【商户平台】->【API安全】的页面设置该密钥。一定要保管好，不能泄露  
 API密钥对应V2版本的API  
 APIv3密钥对应V3版本的API  

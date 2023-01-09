@@ -90,6 +90,7 @@ export default hopeTheme({
         mdEnhance: { //Markdown 增强功能
             imgLazyload: true, //启用图片懒加载
             tasklist: true, //启动任务列表
+            container: true, //启动自定义容器
             echarts: true, //启动ECharts图表配置
         },
     },
