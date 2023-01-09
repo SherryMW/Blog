@@ -4,7 +4,7 @@ category: IT
 tag:
   - Java
   - 支付
-order: 1
+order: 2
 ---
 
 # 微信支付接入指引
