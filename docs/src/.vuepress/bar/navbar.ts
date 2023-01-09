@@ -9,18 +9,19 @@ export const Navbar = navbar([
     {
         text: '生活',
         icon: 'emoji',
+        prefix: "/life",
         children: [
             {
                 text: "健康",
-                link: "/life/healthy/"
+                link: "/healthy/"
             },
             {
                 text: "美食",
-                link: "/life/delicacies/"
+                link: "/delicacies/"
             },
             {
                 text: "娱乐",
-                link: "/life/play/guangzhou/RoomEscape/"
+                link: "/play/guangzhou/RoomEscape/"
             }
         ]
     }
