@@ -2,9 +2,9 @@ import {hopeTheme} from "vuepress-theme-hope";
 import {Navbar} from "./bar/navbar";
 import {Sidebar} from "./bar/sidebar";
 
-process.env.TZ = "Asia/Shanghai";
-const data = await fetch("https://api.github.com/repos/SherryMW/Blog?token=ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGZrbd1zYgX7b4FYXUpAxWEjDOIJAYsuyjIuAEhKeove sherry_mw@163.com").then(response => response.json());
-const lastUpdate = new Date(data['pushed_at']).getFullYear().toString() + "年" + (new Date(data['pushed_at']).getMonth() + 1).toString() + "月" + new Date(data['pushed_at']).getDate().toString() + "日 " + new Date(data['pushed_at']).getHours() + ":" + ("0" + new Date(data['pushed_at']).getMinutes()).slice(-2);
+// process.env.TZ = "Asia/Shanghai";
+// const data = await fetch("https://api.github.com/repos/SherryMW/Blog?token=ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGZrbd1zYgX7b4FYXUpAxWEjDOIJAYsuyjIuAEhKeove sherry_mw@163.com").then(response => response.json());
+// const lastUpdate = new Date(data['pushed_at']).getFullYear().toString() + "年" + (new Date(data['pushed_at']).getMonth() + 1).toString() + "月" + new Date(data['pushed_at']).getDate().toString() + "日 " + new Date(data['pushed_at']).getHours() + ":" + ("0" + new Date(data['pushed_at']).getMinutes()).slice(-2);
 
 export default hopeTheme({
     hostname: "https://blog.sherry4869.com", //当前网站部署到的域名
@@ -54,7 +54,7 @@ export default hopeTheme({
     blog: {
         avatar: "/avatar.jpg", //头像
         roundAvatar: true, //是否剪裁头像为圆形形状
-        description: "过往不恋 未来不迎 <br/><br/> 上次更新：" + lastUpdate, //口号、座右铭或介绍语
+        description: "过往不恋 未来不迎 <br/><br/> 上次更新：" , //口号、座右铭或介绍语
         intro: "", //填写后将可以点击“博主信息”中的头像或姓名进入个人介绍页
         medias: { //媒体链接配置
             // QQ: "https://wpa.qq.com/msgrd?v=3&uin=1341139503&site=qq&menu=yes",
