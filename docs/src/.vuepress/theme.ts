@@ -54,7 +54,7 @@ export default hopeTheme({
     blog: {
         avatar: "/avatar.jpg", //头像
         roundAvatar: true, //是否剪裁头像为圆形形状
-        description: "过往不恋 未来不迎 <br/><br/> 上次更新：" , //口号、座右铭或介绍语
+        description: "过往不恋 未来不迎 <br/><br/> 上次更新：" + lastUpdate, //口号、座右铭或介绍语
         intro: "", //填写后将可以点击“博主信息”中的头像或姓名进入个人介绍页
         medias: { //媒体链接配置
             // QQ: "https://wpa.qq.com/msgrd?v=3&uin=1341139503&site=qq&menu=yes",
