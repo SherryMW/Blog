@@ -177,6 +177,7 @@ apiclient_key.pem：商户证书私钥
 
 证书序列号：每个证书都有一个由CA颁发的唯一编号，即证书序列号。如何查看证书序列号请看[这里](https://wechatpay-api.gitbook.io/wechatpay-api-v3/chang-jian-wen-ti/zheng-shu-xiang-guan#ru-he-cha-kan-zheng-shu-xu-lie-hao)
 
-APIv3密钥：为了保证安全性，微信支付在回调通知和平台证书下载接口中，对关键信息进行了 AES-256-GCM 加密。APIv3 密钥是加密时使用的对称密钥，商户可以在【商户平台】->【API安全】的页面设置该密钥。一定要保管好，不能泄露  
+APIv3密钥：为了保证安全性，微信支付在回调通知和平台证书下载接口中，对关键信息进行了 AES-256-GCM 加密。
+APIv3密钥是加密时使用的对称密钥，商户可以在【商户平台】->【API安全】的页面设置该密钥。一定要保管好，不能泄露  
 API密钥对应V2版本的API  
 APIv3密钥对应V3版本的API  

@@ -51,6 +51,8 @@ export default hopeTheme({
 
     editLink: true, //是否展示编辑此页链接
 
+    hotReload: true,
+
     blog: {
         avatar: "/avatar.jpg", //头像
         roundAvatar: true, //是否剪裁头像为圆形形状
@@ -91,7 +93,7 @@ export default hopeTheme({
             imgLazyload: true, //启用图片懒加载
             tasklist: true, //启动任务列表
             container: true, //启动自定义容器
-            echarts: true, //启动ECharts图表配置
+            echarts: true //启动ECharts图表配置
         },
     },
 });
