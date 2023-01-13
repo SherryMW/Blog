@@ -47,11 +47,9 @@ export default hopeTheme({
 
     contributors: true, //是否显示页面贡献者
 
-    lastUpdated: true, //是否显示页面最后更新时间
+    lastUpdated: false, //是否显示页面最后更新时间
 
     editLink: true, //是否展示编辑此页链接
-
-    hotReload: true,
 
     blog: {
         avatar: "/avatar.jpg", //头像

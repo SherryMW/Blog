@@ -7,7 +7,7 @@ export default defineUserConfig({
     title: "MW Blog",
     description: "MW Blog",
     head: [
-        ['meta', {name: 'keywords', content: 'MW,Sherry,Sherry4869'}],
+        ["meta", {name: "google-site-verification", content: "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"}],
         ['script', {}, `
         var _hmt = _hmt || [];
         (function() {

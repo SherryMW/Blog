@@ -69,6 +69,10 @@ export const Sidebar = sidebar({
                     prefix: "by/",
                     collapsible: true,
                     children: "structure"
+                },
+                {
+                    text: "待打卡",
+                    link: "gogogo.md"
                 }
             ]
         }
