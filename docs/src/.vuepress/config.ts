@@ -7,7 +7,15 @@ export default defineUserConfig({
     title: "MW Blog",
     description: "MW Blog",
     head: [
-        ["meta", {name: "google-site-verification", content: "bqJ9p_CBwVm2NILF0O4wil3tvCMGYwHdmDUYU6QQNwA"}]
+        ["meta", {name: "keywords", content: "MW,Sherry,Sherry4869"}],
+        ["script", {}, `
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement('script');
+            hm.src = 'https://hm.baidu.com/hm.js?f920f2b7a642efd7744e052f2c9b7152';
+            var s = document.getElementsByTagName('script')[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();`]
     ],
     plugins: [],
 
