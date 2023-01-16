@@ -24,7 +24,7 @@ article: false
 
 ![img_jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thc_tyzx/cldpd/img_4.jpg)
 
-鸿运烧香猪：没有完全去骨，皮脆但肉有点肥腻
+鸿运烧香猪：这半只乳猪不是现烤的，没有完全去骨，皮脆但肉有点肥腻
 
 ![img_jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thc_tyzx/cldpd/img_3.jpg)
 
@@ -54,8 +54,23 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFG63HJJ" target="_blank">体育西横街144号104</a>
 
+- [x] 黑松露温泉蛋奶油意大利扁面
 - [x] 招牌吞拿鱼薯仔头（招牌 推荐）
 - [x] 黄金酱烤鸡翅
+- [x] 欢乐炸薯条
 - [x] 甜蜜派对蜜糖草莓吐司（招牌 推荐）
 - [x] 满杯新鲜水果茶
-- [x] 桃桃乌龙鲜奶茶
+- [x] 桃桃乌龙清香茶
+
+## 虾饺妹富竹一生（天河东路店）
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFK0NJBQ" target="_blank">天河东路163号2层</a>
+
+- [x] 招牌虾饺妹（招牌）
+- [x] 鲍汁蒸腐皮卷
+- [x] 泰国榴莲酥
+- [x] 炭烧蜜汁叉烧酥
+- [x] 鲜虾红米肠
+- [x] 鲜虾炸春卷
+- [x] 港式菠萝包
+- [x] 不一样的双皮奶

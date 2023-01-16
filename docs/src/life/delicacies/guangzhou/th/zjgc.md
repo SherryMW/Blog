@@ -23,8 +23,6 @@ article: false
 
 ![img_3.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/zjgc/FreshpoolSteamStonePotFish/img_3.jpg)
 
-![img_4.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/zjgc/FreshpoolSteamStonePotFish/img_4.jpg)
-
 - [x] 养生菌菇锅（推荐）
 - [x] 江团鱼（招牌 推荐）
 - [ ] 桂鱼仔
@@ -35,7 +33,7 @@ article: false
 - [x] 牛肉丸
 - [x] 小海参
 
-## 肥韬茶餐厅（天河店）
+## 肥韬茶餐厅（天河店） <Badge text="常来" type="tip" />
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0IA9MLZIL" target="_blank">体育东路39号</a>
 

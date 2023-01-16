@@ -59,6 +59,12 @@ export const Sidebar = sidebar({
                     children: "structure"
                 },
                 {
+                    text: "番禺",
+                    prefix: "py/",
+                    collapsible: true,
+                    children: "structure"
+                },
+                {
                     text: "荔湾",
                     prefix: "lw/",
                     collapsible: true,
@@ -67,6 +73,12 @@ export const Sidebar = sidebar({
                 {
                     text: "白云",
                     prefix: "by/",
+                    collapsible: true,
+                    children: "structure"
+                },
+                {
+                    text: "海珠",
+                    prefix: "hz/",
                     collapsible: true,
                     children: "structure"
                 },

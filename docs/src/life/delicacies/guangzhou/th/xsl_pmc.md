@@ -12,8 +12,10 @@ article: false
 ![img_jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/xsl_pmc/toku/img.jpg)
 
 - [x] 炸猪扒（招牌 推荐）
+- [x] 芝士猪扒
 - [x] 豚平烧
 - [x] 炸鸡块
+- [x] 板烧牛舌
 - [x] 烧汁鳗鱼
 - [x] 土佐豆腐
 - [x] 玉子烧

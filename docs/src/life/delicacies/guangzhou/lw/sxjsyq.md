@@ -5,7 +5,7 @@ article: false
 
 # 上下九商业区
 
-## 文记壹心鸡（宝华路店）
+## 文记壹心鸡（宝华路店） <Badge text="老广味" type="tip" />
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00140UXW3" target="_blank">宝华路旋源桥10号</a>
 

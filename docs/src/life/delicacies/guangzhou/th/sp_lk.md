@@ -26,3 +26,13 @@ article: false
 - [x] 芝麻糊汤圆（推荐）
 - [x] 杏仁茶汤圆
 - [ ] 原味冰镇奶茶（招牌）
+
+## 点都德（汇胜楼店）
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFGHE53M" target="_blank">天河路598号百脑汇大厦4层(岗顶地铁站C出口)</a>
+
+- [x] 招牌虾饺皇
+- [x] 沙爹蒸金钱肚
+- [x] 豉油皇砂锅猪肠粉
+- [x] 韭菜扒猪红
+- [x] 凤爪排骨蒸饭

@@ -51,7 +51,7 @@ article: false
 
 <div><p>恐怖：<el-rate model-value="1" disabled /></p></div>
 
-期待已久的巨型机关转场并未让我感到震撼（期待一手深圳MRX的《镇灵村》）
+期待已久的巨型机关转场并未让我感到震撼（期待一手深圳 MRX《镇灵村》）
 
 七巧板那关拼老久了 :watch:
 

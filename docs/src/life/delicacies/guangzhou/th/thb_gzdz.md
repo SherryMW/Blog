@@ -21,7 +21,7 @@ article: false
 
 ![img_3.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thb_gzdz/79FishingBoats/img_3.jpg)
 
-一蟹三吃里最喜欢干焗蟹肉，一定要趁热吃，如果凉了可以让服务员拿给后厨加热一下
+一蟹三吃里最中意干焗蟹肉，一定要趁热吃，如果凉了可以让服务员拿给后厨加热一下
 
 ![img_4.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thb_gzdz/79FishingBoats/img_4.jpg)
 
@@ -36,7 +36,7 @@ article: false
 - [x] 三叔烤罗虾（招牌）
 - [ ] 蒜蓉烧生蚝
 
-## MR•ROCKY洛奇先生餐吧（时代广场店） <Badge text="常来" type="tip" />
+## MR•ROCKY 洛奇先生餐吧（时代广场店） <Badge text="常来" type="tip" />
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFFW7PUF" target="_blank">天河北路28号时代广场首层115-117-121</a>
 
@@ -59,7 +59,7 @@ article: false
 - [x] 牛仔至尊海鲜披萨
 - [x] 特色洛奇小吃拼盘
 - [x] 美国纽约克长条鲜虾卷（推荐）
-- [x] 芝士焗阿拉斯加蟹柳法包（推荐）
+- [x] 芝士焗阿拉斯加蟹柳法包
 - [x] 芝士拼薯条
 - [x] 橙香麦芽（推荐）
 - [ ] 德式小麦王

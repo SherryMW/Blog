@@ -9,14 +9,14 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFIMXLSX" target="_blank">北京路168号仰忠汇7层A707-A708</a>
 
-冰镇咕噜肉
+招牌冰镇咕噜肉：好味
 
-![img_jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/yx/ttjjj/img.jpg)
+![img_jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/yx/bjlsyq/ttjjj/img.jpg)
 
-- [x] 冰镇咕噜肉（招牌 推荐）
-- [x] 陶陶居百年烧鹅（推荐）
+- [x] 陶陶居百年烧鹅（招牌 推荐）
 - [x] 经典白切鸡（推荐）
-- [x] 广府豉油鸡（推荐）
+- [x] 广府豉油鸡
+- [x] 冰镇咕噜肉（招牌 推荐）
 - [x] 金牌蜜汁叉烧
 - [x] 海皇粉丝煲
 - [x] 蟹黄豆腐
