@@ -11,7 +11,7 @@ article: false
 
 ![img.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/yx/zsesldsk/clx/img.jpg)
 
-秃黄油拌饭
+秃黄油拌饭（需要等待20分钟）
 
 ![img.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/yx/zsesldsk/clx/img_2.jpg)
 
@@ -21,5 +21,5 @@ article: false
 
 ![img.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/yx/zsesldsk/clx/img_4.jpg)
 
-- [x] 秃黄油拌饭（推荐）
-- [x] 蟹粉小笼包（推荐）
+- [x] 秃黄油拌饭（招牌 推荐）
+- [x] 蟹粉小笼包（招牌 推荐）

@@ -5,7 +5,7 @@ article: false
 
 # 天河客运站
 
-## 谢小匠 <Badge text="常来" type="tip" />
+## 谢小匠 <Badge text="宝藏小店" type="tip" />
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFKPHPIY" target="_blank">下元岗西大街11巷1号102铺</a>
 
@@ -25,14 +25,23 @@ article: false
 
 - [x] 大盘鸡盖面（招牌 推荐）
 - [x] 卤水猪手盖面（推荐）
-- [x] 板栗烧鸡盖面（推荐）
 - [x] 大盘鸡砂锅粉煲（招牌 推荐）
 
-## 三两粉（天河新天地）<Badge text="常来" type="tip" />
+## 二次方空间小吃 <Badge text="宝藏小店" type="tip" />
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFKTDTCX" target="_blank">下元岗西街三巷2号</a>
+
+石磨肠粉的出品 :+1:
+
+- [x] 鸡蛋瘦肉肠（招牌 推荐）
+- [x] 豆花（推荐）
+- [x] 豆浆（推荐）
+
+## 三两粉（天河新天地）
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H1U90B35" target="_blank">天源路5号天河新天地B1</a>
 
-去店里基本点的都是 老长沙肉沫拌面 + 卤猪手
+老长沙肉沫拌面 + 卤猪手
 
 ![img_jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thkyz/slf/img.jpg)
 
@@ -66,7 +75,7 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFKQOQ0T" target="_blank">天源路5号天河新天地四楼</a>
 
-- [x] 青椒紫苏牛蛙
+- [x] 青椒紫苏牛蛙（推荐）
 - [x] 蒜香牛蛙
 - [x] 香辣牛蛙
 - [x] 相思双皮奶

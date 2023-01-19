@@ -5,18 +5,34 @@ article: false
 
 # 待打卡
 
-## 蚝不一样
+## 永利饭店
 
-<span class="icon iconfont icon-locate"></span> 位置：天河区龙步西路黄村路120号海裴酒店东行60米
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFJCP3CA" target="_blank">越秀区沿江中路259号蚬建大厦2层-3层</a>
+
+- [ ] 雪花糖沙翁（招牌）
+- [ ] 蜂巢炸芋角
+- [ ] 岭南鸡蛋挞
+- [ ] 羊城鲜虾饺
+- [ ] 酥皮叉烧包
+- [ ] 啫啫牛腩猪肠粉
+- [ ] 沙爹金钱肚
+- [ ] 失传江南百花鸡（招牌）
+- [ ] 传统八宝鸭（招牌）
+- [ ] 贵妃白切鸡
+- [ ] 姜酒啫猪润
+
+## 蚝不一样 <Badge text="宝藏小店" type="tip" />
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFIZKPWU" target="_blank">天河区龙步北商业街3号66之三</a>
 
 - [ ] 烤台山生蚝
 - [ ] 烤全翅
 
-## 美食店 <Badge text="老广味" type="tip" />
+## 美食店 <Badge text="宝藏小店" type="tip" />
 
 <span class="icon iconfont icon-locate"></span> 位置：荔湾区华贵路83号
 
-炒死白头佬
+“炒死”白头佬
 
 - [ ] 炒牛河
 - [ ] 炒猪大肠
@@ -26,7 +42,7 @@ article: false
 
 ## 华哥新鲜猪精品美食（总店）
 
-<span class="icon iconfont icon-locate"></span> 位置：荔湾区翠园道东朗沙洛新村七巷7号后门
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00140UY3L" target="_blank">荔湾区东朗沙洛新村427号后门</a>
 
 - [ ] 猪柳筋（猪板筋，跟猪柳相连的一层筋膜）
 - [ ] 天衣（猪嘴唇两侧）
@@ -38,6 +54,6 @@ article: false
 
 ## 四知乾鸿猪脚饭
 
-<span class="icon iconfont icon-locate"></span> 位置：越秀区瑶台瑶池大街9巷8号首层
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H3ZUG6L0" target="_blank">越秀区瑶池瑶台大街9巷8号首层</a>
 
 - [ ] 四点金猪脚

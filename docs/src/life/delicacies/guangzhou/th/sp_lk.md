@@ -27,6 +27,15 @@ article: false
 - [x] 杏仁茶汤圆
 - [ ] 原味冰镇奶茶（招牌）
 
+## 大鸽饭（岗顶店）
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFIS13WN" target="_blank">天河路633号桔子酒店3层</a>
+
+- [x] 大鸽饭（招牌）
+- [x] 红烧鸽（招牌 推荐）
+- [x] 盐焗鸽（招牌）
+- [x] 原只椰子乌鸡炖老鸽
+
 ## 点都德（汇胜楼店）
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFGHE53M" target="_blank">天河路598号百脑汇大厦4层(岗顶地铁站C出口)</a>

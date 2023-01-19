@@ -11,11 +11,11 @@ article: false
 
 ![img.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/py/xdm/img.jpg)
 
-小北极贝刺身
+小北极贝刺身（3只）
 
 ![img_2.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/py/xdm/img_2.jpg)
 
-蒜蓉蒸生蚝
+蒜蓉蒸湛江生蚝（半打）
 
 ![img_3.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/py/xdm/img_3.jpg)
 
@@ -31,11 +31,11 @@ article: false
 
 ![img_6.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/py/xdm/img_6.jpg)
 
-蒜蓉粉丝蒸元贝
+蒜蓉粉丝蒸元贝（6只）
 
 ![img_7.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/py/xdm/img_7.jpg)
 
-椒盐濑尿虾
+椒盐濑尿虾（1斤）
 
 ![img_8.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/py/xdm/img_8.jpg)
 

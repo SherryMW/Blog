@@ -36,7 +36,7 @@ article: false
 - [x] 三叔烤罗虾（招牌）
 - [ ] 蒜蓉烧生蚝
 
-## MR•ROCKY 洛奇先生餐吧（时代广场店） <Badge text="常来" type="tip" />
+## MR•ROCKY 洛奇先生餐吧（时代广场店）
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFFW7PUF" target="_blank">天河北路28号时代广场首层115-117-121</a>
 
@@ -64,7 +64,7 @@ article: false
 - [x] 橙香麦芽（推荐）
 - [ ] 德式小麦王
 - [ ] 哈雷焦香黑啤
-- [x] 潘多拉魔盒（招牌）
+- [x] 潘多拉魔盒（招牌 推荐）
 - [x] 尼格罗尼（中年男人的无奈与心酸）
 - [ ] 野格猎人
 - [ ] 维密•天使之吻

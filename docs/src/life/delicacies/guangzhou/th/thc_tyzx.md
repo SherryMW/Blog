@@ -16,7 +16,7 @@ article: false
 - [x] 鱼香肉汁蒸山水豆腐
 - [x] 西洋参炖老鸡汤
 
-## 常来大牌档（天河北店） <Badge text="常来" type="tip" />
+## 常来大牌档（天河北店）
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0I1VMXOCO" target="_blank">林和东路121号中怡商务港二层自编201</a>
 
@@ -35,7 +35,7 @@ article: false
 ![img_jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thc_tyzx/cldpd/img.jpg)
 
 - [ ] 荔枝木招牌烧鹅（招牌）
-- [x] 常来豉油鸡（招牌）
+- [x] 常来豉油鸡（招牌 推荐）
 - [x] 特色脆皮乳鸽（推荐）
 - [x] 鸿运烧香猪
 - [ ] 清蒸龙趸
@@ -73,4 +73,5 @@ article: false
 - [x] 鲜虾红米肠
 - [x] 鲜虾炸春卷
 - [x] 港式菠萝包
+- [x] 冷水猪肚（有很浓的芥末味吃不惯）
 - [x] 不一样的双皮奶

@@ -5,7 +5,7 @@ article: false
 
 # 北京路商业区
 
-## 陶陶居酒家（北京路店） <Badge text="常来" type="tip" />
+## 陶陶居酒家（北京路店）
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFIMXLSX" target="_blank">北京路168号仰忠汇7层A707-A708</a>
 
@@ -23,8 +23,8 @@ article: false
 - [x] 陶陶居大虾饺（招牌 推荐）
 - [x] 鲜果榴莲天鹅酥（推荐）
 - [x] 菜谱金钩咸水角（推荐）
-- [x] 陈皮红豆马蹄糕
 - [x] 惹味金钱肚（推荐）
+- [x] 陈皮红豆马蹄糕
 - [x] 百搭酱皇蒸凤爪
 - [x] 山竹陈皮牛肉球
 - [x] 豉汁蒸排骨

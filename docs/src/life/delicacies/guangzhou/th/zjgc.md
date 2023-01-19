@@ -5,7 +5,7 @@ article: false
 
 # 正佳广场
 
-## 陶陶居酒家 <Badge text="常来" type="tip" />
+## 陶陶居酒家
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFG2O3RL" target="_blank">天河路228号正佳广场6层C059铺</a>
 
@@ -28,17 +28,17 @@ article: false
 - [ ] 桂鱼仔
 - [x] 鱼籽福袋
 - [x] 鲜潭手打虾滑
-- [x] 鲜奶浸羔羊肉（会影响汤底味道，留到最后才下锅）
+- [x] 鲜奶浸羔羊肉（会影响汤底味道，点的话留到最后才下锅）
 - [x] 手工蛋饺
 - [x] 牛肉丸
 - [x] 小海参
 
-## 肥韬茶餐厅（天河店） <Badge text="常来" type="tip" />
+## 肥韬茶餐厅（天河店）
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0IA9MLZIL" target="_blank">体育东路39号</a>
 
 - [x] 招牌黯然销魂饭（招牌 推荐）
-- [x] 黑松露虾仁滑蛋饭（吃不惯）
+- [x] 黑松露虾仁滑蛋饭（吃不惯 :see_no_evil:）
 - [x] 滑蛋牛肉炒牛河
 - [x] 漏奶华（招牌 推荐）
 - [ ] 法兰西多士
