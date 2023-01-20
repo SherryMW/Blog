@@ -23,9 +23,9 @@ article: false
 
 ![img_4.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thkyz/xxj/img_4.jpg)
 
-- [x] 大盘鸡盖面（招牌 推荐）
+- [x] 大盘鸡盖面（推荐）
 - [x] 卤水猪手盖面（推荐）
-- [x] 大盘鸡砂锅粉煲（招牌 推荐）
+- [x] 大盘鸡砂锅粉煲（推荐）
 
 ## 二次方空间小吃 <Badge text="宝藏小店" type="tip" />
 
@@ -33,7 +33,7 @@ article: false
 
 石磨肠粉的出品 :+1:
 
-- [x] 鸡蛋瘦肉肠（招牌 推荐）
+- [x] 鸡蛋瘦肉肠（推荐）
 - [x] 豆花（推荐）
 - [x] 豆浆（推荐）
 
@@ -45,7 +45,7 @@ article: false
 
 ![img_jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thkyz/slf/img.jpg)
 
-- [x] 老长沙土猪肉粉（招牌）
+- [x] 老长沙土猪肉粉
 - [x] 农家杀猪粉
 - [x] 西红柿鸡蛋粉
 - [x] 老长沙肉沫拌面（推荐）
@@ -58,11 +58,11 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0HUV94AUX" target="_blank">长兴路13号长兴购物中心卜蜂莲花超市出口处</a>
 
-- [x] 美式经典肉酱意面（招牌 推荐）
+- [x] 美式经典肉酱意面（推荐）
 - [x] 经典牛腩饭（推荐）
-- [x] 泡菜肥牛粉丝煲（招牌）
+- [x] 泡菜肥牛粉丝煲
 - [x] 香菇滑鸡粉丝煲（推荐）
-- [x] 孜然烤鸡翅（招牌）
+- [x] 孜然烤鸡翅
 - [x] 唐人街煎饺
 - [x] 紫薯于你
 - [x] 芝士肉酱薯茸

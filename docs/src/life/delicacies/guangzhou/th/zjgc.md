@@ -5,7 +5,7 @@ article: false
 
 # 正佳广场
 
-## 陶陶居酒家
+## 陶陶居酒家（正佳店） <Badge text="传统粤菜" type="tip" />
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFG2O3RL" target="_blank">天河路228号正佳广场6层C059铺</a>
 
@@ -24,7 +24,7 @@ article: false
 ![img_3.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/zjgc/FreshpoolSteamStonePotFish/img_3.jpg)
 
 - [x] 养生菌菇锅（推荐）
-- [x] 江团鱼（招牌 推荐）
+- [x] 江团鱼（推荐）
 - [ ] 桂鱼仔
 - [x] 鱼籽福袋
 - [x] 鲜潭手打虾滑
@@ -37,10 +37,10 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0IA9MLZIL" target="_blank">体育东路39号</a>
 
-- [x] 招牌黯然销魂饭（招牌 推荐）
+- [x] 招牌黯然销魂饭（推荐）
 - [x] 黑松露虾仁滑蛋饭（吃不惯 :see_no_evil:）
 - [x] 滑蛋牛肉炒牛河
-- [x] 漏奶华（招牌 推荐）
+- [x] 漏奶华（推荐）
 - [ ] 法兰西多士
 - [x] 惠灵顿牛排
 - [x] 白灼生菜
@@ -51,7 +51,7 @@ article: false
 - [ ] 老婆饼
 - [ ] 港式蛋挞
 - [ ] 甜甜圈
-- [x] 招牌熊仔奶茶（招牌 推荐）
+- [x] 招牌熊仔奶茶（推荐）
 - [x] 港式鸳鸯
 - [x] 恐龙美禄脆脆冰
 - [ ] 杨枝甘露熊仔冰

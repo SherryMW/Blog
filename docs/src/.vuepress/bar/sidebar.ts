@@ -1,17 +1,6 @@
 import {sidebar} from "vuepress-theme-hope";
 
 export const Sidebar = sidebar({
-    // "/IT/Apache/ShardingSphere/": [
-    //     {
-    //         text: "高性能架构模式",
-    //         link: "高性能架构模式/",
-    //         collapsible: false
-    //     },
-    //     {
-    //         text: "学习资料",
-    //         link: "学习资料/",
-    //     }
-    // ],
     "/IT/Java/pay/": [
         {
             text: "微信",
@@ -24,6 +13,17 @@ export const Sidebar = sidebar({
             children: "structure"
         }
     ],
+    // "/IT/Apache/ShardingSphere/": [
+    //     {
+    //         text: "高性能架构模式",
+    //         link: "高性能架构模式/",
+    //         collapsible: false
+    //     },
+    //     {
+    //         text: "学习资料",
+    //         link: "学习资料/",
+    //     }
+    // ],
     "/life/healthy/": [
         {
             text: "休息",
@@ -36,8 +36,15 @@ export const Sidebar = sidebar({
             children: "structure"
         },
         {
-            text: "呼吸科",
+            text: "呼吸内科",
             prefix: "respiratory/",
+            collapsible: true,
+            children: "structure"
+        },
+        {
+            text: "口腔科",
+            prefix: "dental/",
+            collapsible: true,
             children: "structure"
         }
     ],

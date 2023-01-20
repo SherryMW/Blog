@@ -9,10 +9,10 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFJ5LK6U" target="_blank">广州大道北1811号嘉裕太阳城2楼2053/2058号铺</a>
 
-- [x] 绿茶烤鸡（招牌）
+- [x] 绿茶烤鸡
 - [x] 白玉金汤煨羊肉（推荐）
-- [x] 东坡草扎肉（招牌 推荐）
-- [x] 招牌粉丝裹虾（招牌 推荐）
+- [x] 东坡草扎肉（推荐）
+- [x] 招牌粉丝裹虾（推荐）
 - [x] 石锅鸡汤豆腐
 - [x] 蒜蓉粉丝蒸凤尾虾
 - [x] 脆皮冰川茄子
@@ -24,7 +24,7 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H2MS3VO5" target="_blank">广州大道北1811号嘉裕太阳城广场F1层</a>
 
-- [x] 唐扬爆浆炸鸡（招牌 推荐）
+- [x] 唐扬爆浆炸鸡（推荐）
 - [x] 金针菇牛肉卷（推荐）
 - [x] 香酥比目鱼
 - [x] 鹅肝三明治

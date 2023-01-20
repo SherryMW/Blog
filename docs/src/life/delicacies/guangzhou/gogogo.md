@@ -5,21 +5,33 @@ article: false
 
 # 待打卡
 
-## 永利饭店
+## 永利饭店 <Badge text="传统粤菜" type="tip" />
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFJCP3CA" target="_blank">越秀区沿江中路259号蚬建大厦2层-3层</a>
 
-- [ ] 雪花糖沙翁（招牌）
+- [ ] 雪花糖沙翁
 - [ ] 蜂巢炸芋角
 - [ ] 岭南鸡蛋挞
 - [ ] 羊城鲜虾饺
 - [ ] 酥皮叉烧包
 - [ ] 啫啫牛腩猪肠粉
 - [ ] 沙爹金钱肚
-- [ ] 失传江南百花鸡（招牌）
-- [ ] 传统八宝鸭（招牌）
+- [ ] 失传江南百花鸡
+- [ ] 传统八宝鸭
 - [ ] 贵妃白切鸡
 - [ ] 姜酒啫猪润
+
+## 北园酒家（小北路店） <Badge text="传统粤菜" type="tip" />
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00140UBT8" target="_blank">越秀区小北路202号</a>
+
+## 新兴饭店（前进路总店） <Badge text="传统粤菜" type="tip" />
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00140BENW" target="_blank">海珠区前进路92-94号</a>
+
+## 大同酒家（体育中心店） <Badge text="传统粤菜" type="tip" />
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0IGTZEJMY" target="_blank">天河区体育东路138号5楼全层</a>
 
 ## 蚝不一样 <Badge text="宝藏小店" type="tip" />
 

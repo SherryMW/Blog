@@ -5,22 +5,22 @@ article: false
 
 # 北京路商业区
 
-## 陶陶居酒家（北京路店）
+## 陶陶居酒家（北京路店） <Badge text="传统粤菜" type="tip" />
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFIMXLSX" target="_blank">北京路168号仰忠汇7层A707-A708</a>
 
-招牌冰镇咕噜肉：好味
+招牌冰镇咕噜肉
 
 ![img_jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/yx/bjlsyq/ttjjj/img.jpg)
 
-- [x] 陶陶居百年烧鹅（招牌 推荐）
+- [x] 陶陶居百年烧鹅（推荐）
 - [x] 经典白切鸡（推荐）
 - [x] 广府豉油鸡
-- [x] 冰镇咕噜肉（招牌 推荐）
+- [x] 冰镇咕噜肉（推荐）
 - [x] 金牌蜜汁叉烧
 - [x] 海皇粉丝煲
 - [x] 蟹黄豆腐
-- [x] 陶陶居大虾饺（招牌 推荐）
+- [x] 陶陶居大虾饺（推荐）
 - [x] 鲜果榴莲天鹅酥（推荐）
 - [x] 菜谱金钩咸水角（推荐）
 - [x] 惹味金钱肚（推荐）
@@ -38,8 +38,8 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFLMYA6N" target="_blank">中山四路395号城壹汇F4层</a>
 
-- [x] 明太子烤土豆（招牌 推荐）
-- [x] 摩摩超级爆汁炸鸡（招牌 推荐）
+- [x] 摩摩超级爆汁炸鸡（推荐）
+- [x] 明太子烤土豆（推荐）
 - [x] 澳洲铺天盖地火牛大满贯
 - [x] 火焰牛肉寿司
 - [x] 火炙牛舌

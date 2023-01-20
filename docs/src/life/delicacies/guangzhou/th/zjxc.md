@@ -9,12 +9,12 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00140UVX2" target="_blank">冼村路2号首府大厦1-4层</a>
 
-- [ ] 首创灌汤烧鹅（招牌）
+- [ ] 首创灌汤烧鹅
 - [ ] 水晶鸡
-- [x] 秘制黑叉烧（招牌）
+- [x] 秘制黑叉烧
 - [x] 和味猪手-伊比利亚黑猪（考验牙口）
 - [x] 蟹黄豆腐
-- [x] 招牌菠萝包（招牌 推荐）
+- [x] 招牌菠萝包（推荐）
 
 ## The Eating Table（高德置地冬店）
 
@@ -24,12 +24,12 @@ article: false
 
 ![img_jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/zjxc/TheEatingTable/img.jpg)
 
-- [x] 烤新西兰臻藏级小战斧牛扒（招牌）
-- [ ] 招牌迷迭香金桔风味烤全鸡（招牌）
-- [x] 招牌三文鱼子海胆汁烩意面（招牌 推荐）
-- [x] 招牌松露酱薯条（招牌）
-- [x] 树莓车厘子梳乎厘（招牌 推荐）
-- [x] 海盐芝士梳乎厘（个人更喜欢海盐芝士口味）
+- [x] 烤新西兰臻藏级小战斧牛扒
+- [ ] 招牌迷迭香金桔风味烤全鸡
+- [x] 招牌三文鱼子海胆汁烩意面（推荐）
+- [x] 招牌松露酱薯条
+- [x] 树莓车厘子梳乎厘（推荐）
+- [x] 海盐芝士梳乎厘（推荐）
 - [ ] 季节鲜果梳乎厘松饼
 - [ ] 南瓜汤
 
@@ -41,12 +41,12 @@ article: false
 
 ![img_jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/zjxc/mmzx/img.jpg)
 
-- [ ] 龙井烟熏太爷鸡（招牌）
-- [x] 初恋咕噜肉（招牌）
+- [ ] 龙井烟熏太爷鸡
+- [x] 初恋咕噜肉
 - [ ] 北极贝刺身
 - [x] 龙眼蜜叉烧
 - [ ] 威士忌无骨猪手
-- [x] 香蒜炒肉蟹（一言难尽 :see_no_evil:）
+- [x] 香蒜炒肉蟹（炒了个寂寞 :see_no_evil:）
 - [ ] 清蒸老虎斑
 - [x] 菜胆炖花胶
 - [x] 桃胶节瓜炖螺头
@@ -57,7 +57,7 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFLM2917" target="_blank">金穗路28号华忆丽晶广场F1层</a>
 
-菜品不多，几乎每桌点的菜都是那几样
+菜品不多，几乎每桌上的菜都是那几道
 
 17点开始就要排队，晚上等位基本要40分钟以上
 
@@ -77,7 +77,7 @@ article: false
 
 ![img.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/zjxc/dwssm/img_4.jpg)
 
-- [x] 招牌爆膏奶油虾（招牌）
+- [x] 招牌爆膏奶油虾
 - [x] 紫苏炒圣子（推荐）
 - [x] 爆炒厚鱿鱼筒
 - [x] 复古菠萝冰（童年回忆）
