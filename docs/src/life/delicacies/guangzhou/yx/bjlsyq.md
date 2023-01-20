@@ -34,6 +34,12 @@ article: false
 - [x] 明炉香滑靓葡挞（推荐）
 - [x] 木瓜炖雪蛤（推荐）
 
+## 仁信老铺甜品（北京路店）
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFFPAIUH" target="_blank">北京路362号</a>
+
+- [x] 双皮奶（推荐）
+
 ## 摩打食堂（北京路城壹汇店）
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFLMYA6N" target="_blank">中山四路395号城壹汇F4层</a>

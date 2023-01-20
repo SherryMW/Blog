@@ -41,12 +41,12 @@ export const Sidebar = sidebar({
             collapsible: true,
             children: "structure"
         },
-        {
-            text: "口腔科",
-            prefix: "dental/",
-            collapsible: true,
-            children: "structure"
-        }
+        // {
+        //     text: "口腔科",
+        //     prefix: "dental/",
+        //     collapsible: true,
+        //     children: "structure"
+        // }
     ],
     "/life/delicacies/": [
         {
