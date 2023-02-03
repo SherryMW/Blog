@@ -28,7 +28,7 @@ x86_64
 
 ![img_2.png](https://img.sherry4869.com/Blog/IT/server/cloudreve/img_2.png)
 
-2. 登录云服务商控制台面板配置域名解析 [阿里云DNS控制台](https://dns.console.aliyun.com)
+2. 登录云服务商控制台面板配置域名解析 [阿里云DNS控制台](https://dns.console.aliyun.com/)
 
 ![img_3.png](https://img.sherry4869.com/Blog/IT/server/cloudreve/img_3.png)
 

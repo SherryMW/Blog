@@ -1,7 +1,7 @@
 ---
 category: 娱乐
 tag:
-  - 密室逃脱 
+  - 密室/沉浸 
 article: false
 ---
 
@@ -35,4 +35,4 @@ article: false
 
 我可真是幸运儿 :ok_hand:
 
-![img_jpg](https://img.sherry4869.com/Blog/life/play/guangzhou/RoomEscape/th/ld_cc/ydm/img.jpg)
+![img_jpg](https://img.sherry4869.com/Blog/life/play/guangzhou/chamber/th/ld_cc/ydm/img.jpg)

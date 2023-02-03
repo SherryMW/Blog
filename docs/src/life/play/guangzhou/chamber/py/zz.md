@@ -1,7 +1,7 @@
 ---
 category: 娱乐
 tag:
-  - 密室逃脱
+  - 密室/沉浸
 article: false
 ---
 
@@ -21,10 +21,8 @@ article: false
 
 <div><p>谜题：<el-rate model-value="1.5" disabled /></p></div>
 
-<div><p>恐怖：<el-rate model-value="0" disabled /></p></div>
-
 因为店家赶着下一场主题，NPC演绎过程中有点敷衍了事，故事结尾结束的太过突然，造成了不太好的游戏体验感，经过沟通后店家老板给每位玩家退款票价的20%
 
-看得出来每个场景都是精心设计搭建的且占地面积都非常大，只可惜剧情太拉跨，NPC可有可无
+看得出来每个场景都是精心设计搭建的且占地面积都非常大，只可惜剧情太拉跨，以至于NPC的存在可有可无
 
-![img_jpg](https://img.sherry4869.com/Blog/life/play/guangzhou/RoomEscape/py/yylm/img.jpg)
+![img_jpg](https://img.sherry4869.com/Blog/life/play/guangzhou/chamber/py/yylm/img.jpg)

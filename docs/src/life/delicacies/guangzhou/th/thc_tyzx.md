@@ -20,17 +20,27 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0I1VMXOCO" target="_blank">林和东路121号中怡商务港二层自编201</a>
 
-香煎手打墨鱼饼：正！
+::: tabs
+
+@tab 香煎手打墨鱼饼
+
+正！
 
 ![img_jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thc_tyzx/cldpd/img_4.jpg)
 
-鸿运烧香猪：这半只乳猪不是现烤的，没有完全去骨，皮脆但肉有点肥腻
+@tab 鸿运烧香猪
+
+这半只乳猪不是现烤的，没有完全去骨，皮脆但肉有点肥腻
 
 ![img_jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thc_tyzx/cldpd/img_3.jpg)
 
-大排档炒牛河：炒出风味
+@tab 大排档炒牛河
+
+炒出风味
 
 ![img_jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thc_tyzx/cldpd/img_2.jpg)
+
+:::
 
 ![img_jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thc_tyzx/cldpd/img.jpg)
 
@@ -49,6 +59,13 @@ article: false
 - [x] 驰名煎酿尖椒
 - [x] 开胃五柳蛋
 - [x] 大排档炒牛河（推荐）
+
+## 努尔博斯坦•新疆餐饮研究（时代广场店）
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFFZD6Z2" target="_blank">天河直街160号北七铺</a>
+
+- [x] 碳烤羊肉串（推荐）
+- [x] 和田玫瑰花酱馕
 
 ## 秘密旅行Vintage（体育西店）
 
@@ -73,5 +90,5 @@ article: false
 - [x] 鲜虾红米肠
 - [x] 鲜虾炸春卷
 - [x] 港式菠萝包
-- [x] 冷水猪肚（有很浓的芥末味吃不惯）
+- [x] 冷水猪肚（吃不惯用芥末汁浸泡的猪肚 :see_no_evil:）
 - [x] 不一样的双皮奶

@@ -7,22 +7,27 @@ export const Navbar = navbar([
         link: "/",
     },
     {
-        text: '生活',
-        icon: 'emoji',
-        prefix: "/life",
+        text: "生活",
+        icon: "emoji",
+        prefix: "/life/",
         children: [
             {
                 text: "健康",
-                link: "/healthy/"
+                link: "healthy/"
             },
             {
-                text: "美食",
-                link: "/delicacies/"
+                text: "饮食",
+                link: "delicacies/"
             },
             {
                 text: "娱乐",
-                link: "/play/guangzhou/RoomEscape/"
+                link: "play/guangzhou/"
             }
         ]
+    },
+    {
+        text: "链接",
+        icon: "link",
+        link: "/link/development"
     }
 ]);

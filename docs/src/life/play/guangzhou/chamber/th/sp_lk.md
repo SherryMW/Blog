@@ -1,7 +1,7 @@
 ---
 category: 娱乐
 tag:
-  - 密室逃脱
+  - 密室/沉浸
 article: false
 ---
 
@@ -23,11 +23,13 @@ article: false
 
 <div><p>恐怖：<el-rate model-value="0.5" disabled /></p></div>
 
-第一次体验的大型密室主题就是该主题，让我至今都印象深刻地沉浸式逃脱解密主题，彻底给我打开了密室逃（不）脱的大门
+第一次体验大型沉浸式真人NPC密室的主题，彻底给我打开了密室逃（不）脱的大门
 
 唯一恐怖的那段场景里有“惊喜”！
 
 ### 【招牌系列】弥生贰
+
+<div><p>互动：<el-rate model-value="2" disabled /></p></div>
 
 <div><p>场景：<el-rate model-value="3.5" disabled /></p></div>
 
@@ -79,17 +81,15 @@ MRX中恐怖氛围最足的一个主题，最后结尾有声光电演绎（又�
 
 <div><p>谜题：<el-rate model-value="1.5" disabled /></p></div>
 
-<div><p>恐怖：<el-rate model-value="0" disabled /></p></div>
+<div><p>温情：<el-rate model-value="2.5" disabled /></p></div>
 
-<div><p>温情：<el-rate model-value="3.5" disabled /></p></div>
-
-场景搭建的特别贴合主题，点赞！
+点赞场景搭建
 
 ### 绝爱
 
 <div><p>场景：<el-rate model-value="1.5" disabled /></p></div>
 
-<div><p>剧情：<el-rate model-value="1.5" disabled /></p></div>
+<div><p>剧情：<el-rate model-value="2" disabled /></p></div>
 
 <div><p>机关道具：<el-rate model-value="1.5" disabled /></p></div>
 
@@ -109,7 +109,7 @@ MRX中恐怖氛围最足的一个主题，最后结尾有声光电演绎（又�
 
 <div><p>谜题：<el-rate model-value="2" disabled /></p></div>
 
-<div><p>恐怖：<el-rate model-value="0" disabled /></p></div>
+<div><p>恐怖：<el-rate model-value="0.5" disabled /></p></div>
 
 ## 大迷局实景原创密室
 
@@ -129,13 +129,13 @@ MRX中恐怖氛围最足的一个主题，最后结尾有声光电演绎（又�
 
 <div><p>恐怖：<el-rate model-value="2" disabled /></p></div>
 
-<div><p>运动量：<el-rate model-value="1" disabled /></p></div>
-
 吹爆NPC朱迪演技！！！
 
 最后一个场景有“惊喜”！
 
 ### 三花物语
+
+<div><p>互动：<el-rate model-value="4" disabled /></p></div>
 
 <div><p>场景：<el-rate model-value="3.5" disabled /></p></div>
 
@@ -147,8 +147,8 @@ MRX中恐怖氛围最足的一个主题，最后结尾有声光电演绎（又�
 
 <div><p>温情：<el-rate model-value="5" disabled /></p></div>
 
-温情 :cat2: 主题
+温情 :cat2: :cat2: 主题
 
 下班后的花花
 
-![img_jpg](https://img.sherry4869.com/Blog/life/play/guangzhou/RoomEscape/th/sp_lk/dmj/img.jpg)
+![img_jpg](https://img.sherry4869.com/Blog/life/play/guangzhou/chamber/th/sp_lk/dmj/img.jpg)

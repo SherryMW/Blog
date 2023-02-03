@@ -1,6 +1,6 @@
 import {hopeTheme} from "vuepress-theme-hope";
-import {Navbar} from "./bar/navbar";
-import {Sidebar} from "./bar/sidebar";
+import {Navbar} from "./config/navbar";
+import {Sidebar} from "./config/sidebar";
 
 process.env.TZ = "Asia/Shanghai";
 const data = await fetch("https://api.github.com/repos/SherryMW/Blog?token=ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGZrbd1zYgX7b4FYXUpAxWEjDOIJAYsuyjIuAEhKeove sherry_mw@163.com").then(response => response.json());
@@ -41,7 +41,7 @@ export default hopeTheme({
 
     sidebar: Sidebar, //侧边栏
 
-    headerDepth: 2, //侧边栏嵌套的标题深度，默认为2
+    headerDepth: 3, //侧边栏嵌套的标题深度，默认为2
 
     breadcrumb: false, //是否全局启用路径导航
 
@@ -58,19 +58,10 @@ export default hopeTheme({
         intro: "", //填写后将可以点击“博主信息”中的头像或姓名进入个人介绍页
         medias: { //媒体链接配置
             // QQ: "https://wpa.qq.com/msgrd?v=3&uin=1341139503&site=qq&menu=yes",
-            Wechat: "/wechat.jpg"
+            Wechat: "https://img.sherry4869.com/Blog/public/wechat.jpg"
         },
         timeline: "点点滴滴", //时间轴自定义文字
         articleInfo: ["Author", "Date", "Category", "Tag", "Word"] //文章列表中展示的文章信息
-    },
-
-    encrypt: {
-        // global:true, //是否全局加密
-        // admin: "password", //最高权限密码，可以以数组的形式设置多个
-        // config: {
-        //     "/guide/": ["1234", "5678"], //这会加密整个 guide 目录，并且两个密码都是可用的
-        //     "/guide/page.html": "1234" //这只会加密 guide/page.html
-        // },
     },
 
     plugins: {
@@ -85,13 +76,14 @@ export default hopeTheme({
             global: true
         },
         components: {
-            components: ["Badge", "BiliBili", "PDF", "VideoPlayer"] //注册一些可以在 Markdown 文件中使用的组件
+            components: ["Badge", "BiliBili", "SiteInfo", "PDF", "VideoPlayer"] //注册一些可以在 Markdown 文件中使用的组件
         },
         mdEnhance: { //Markdown 增强功能
-            imgLazyload: true, //启用图片懒加载
-            tasklist: true, //启动任务列表
-            container: true, //启动自定义容器
-            echarts: true //启动ECharts图表配置
+            imgLazyload: true, //图片懒加载
+            tasklist: true, //任务列表
+            container: true, //自定义容器
+            echarts: true, //ECharts图表配置
+            tabs: true, //选项卡
         },
     },
 });

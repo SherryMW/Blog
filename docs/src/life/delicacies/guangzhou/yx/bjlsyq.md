@@ -5,7 +5,7 @@ article: false
 
 # 北京路商业区
 
-## 陶陶居酒家（北京路店） <Badge text="传统粤菜" type="tip" />
+## 陶陶居酒家（北京路店）
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFIMXLSX" target="_blank">北京路168号仰忠汇7层A707-A708</a>
 

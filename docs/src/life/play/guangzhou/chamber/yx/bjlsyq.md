@@ -1,7 +1,7 @@
 ---
 category: 娱乐
 tag:
-  - 密室逃脱
+  - 密室/沉浸
 article: false
 ---
 
@@ -19,10 +19,4 @@ article: false
 
 <div><p>剧情：<el-rate model-value="2" disabled /></p></div>
 
-<div><p>机关道具：<el-rate model-value="0" disabled /></p></div>
-
-<div><p>谜题：<el-rate model-value="0" disabled /></p></div>
-
-<div><p>恐怖：<el-rate model-value="0" disabled /></p></div>
-
-沉浸式体验演绎，可以在密室里吃烤鸡、唱K、打麻将，比较适合刚接触密室逃脱不久的玩家
+沉浸式体验NPC演绎，还可以在密室里吃烤鸡、唱K、打麻将等

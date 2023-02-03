@@ -9,13 +9,15 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00141J13M" target="_blank">天河东路75号汇坊负一楼</a>
 
-南乳猪手
+::: tabs
 
+@tab 南乳猪手
 ![img_jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/sp_lk/wuxicafe/img.jpg)
 
-芝麻糊汤圆
-
+@tab 芝麻糊汤圆
 ![img_2.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/sp_lk/wuxicafe/img_1.jpg)
+
+:::
 
 - [ ] 玫瑰露豉油鸡
 - [ ] 烤乳猪
@@ -38,7 +40,7 @@ article: false
 
 ## 点都德（汇胜楼店）
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFGHE53M" target="_blank">天河路598号百脑汇大厦4层(岗顶地铁站C出口)</a>
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFGHE53M" target="_blank">天河路598号百脑汇大厦4层</a>
 
 - [x] 招牌虾饺皇
 - [x] 沙爹蒸金钱肚

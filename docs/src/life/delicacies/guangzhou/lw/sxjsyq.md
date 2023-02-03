@@ -9,15 +9,19 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00140UXW3" target="_blank">宝华路旋源桥10号</a>
 
-招牌壹心鸡
+::: tabs
+
+@tab 招牌壹心鸡
 
 ![img.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/lw/sxjsyq/wjyxj/img.jpg)
 
-五柳炸蛋
+@tab 五柳炸蛋
 
 ![img_2.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/lw/sxjsyq/wjyxj/img_2.jpg)
 
-![img_3.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/lw/sxjsyq/wjyxj/img_3.jpg)
+:::
+
+几多老街坊过嚟帮衬
 
 ![img_4.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/lw/sxjsyq/wjyxj/img_4.jpg)
 

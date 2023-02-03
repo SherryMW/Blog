@@ -1,5 +1,6 @@
 import {defineUserConfig} from "vuepress";
 import theme from "./theme.js";
+import {configPlugins} from "./config/plugins";
 
 export default defineUserConfig({
     base: "/",
@@ -17,7 +18,7 @@ export default defineUserConfig({
             s.parentNode.insertBefore(hm, s);
         })();`]
     ],
-    plugins: [],
+    plugins: configPlugins,
 
     theme,
 

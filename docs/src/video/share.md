@@ -11,7 +11,7 @@ category: 影视
 
 ### 低端影视
 
-导航页地址：[https://ddys.site](https://ddys.site)
+网址：[https://ddys.art](https://ddys.art)
 
 站内广告：1
 
@@ -84,7 +84,7 @@ category: 影视
 
 网址：[https://www.btnull.org](https://www.btnull.org)
 
-站内广告：2
+站内广告：> 1
 
 片源水印广告：有
 
@@ -96,7 +96,7 @@ category: 影视
 
 ![img_12.png](https://img.sherry4869.com/Blog/video/share/img_12.png)
 
-## 影视下载
+## 资源下载
 
 ### 音范丝
 
@@ -160,8 +160,6 @@ category: 影视
 ![img_6.png](https://img.sherry4869.com/Blog/video/share/img_5.png)
 
 ![img_6.png](https://img.sherry4869.com/Blog/video/share/img_6.png)
-
-## 字幕下载
 
 ### SubHD
 

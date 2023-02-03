@@ -9,11 +9,15 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFJ92IYH" target="_blank">林和西路9号耀中广场3层全层</a>
 
+::: tabs
+
+@tab 北岛长脚蟹
+
 海鲜海鲜，就得吃的新鲜
 
 ![img.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thb_gzdz/79FishingBoats/img.jpg)
 
-北岛长脚蟹 399/斤，超罗虾90/斤
+399/斤
 
 ![img_2.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thb_gzdz/79FishingBoats/img_2.jpg)
 
@@ -25,7 +29,11 @@ article: false
 
 ![img_4.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thb_gzdz/79FishingBoats/img_4.jpg)
 
+@tab 账单
+
 ![img_5.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thb_gzdz/79FishingBoats/img_5.jpg)
+
+:::
 
 - [x] 北岛长脚蟹（推荐）
   - [x] 蟹脚清蒸
@@ -44,6 +52,10 @@ article: false
 
 晚上 19:30 20:13 21:30 22:30 23:30 有驻场乐队演出
 
+::: tabs
+
+@tab 乐队演出
+
 ![img_jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thb_gzdz/MrRocky/img.jpg)
 
 ![img_2.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thb_gzdz/MrRocky/img_2.jpg)
@@ -52,11 +64,13 @@ article: false
 
 ![img_4.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thb_gzdz/MrRocky/img_4.jpg)
 
+:::
+
 - [x] 果木烤安格斯谷饲牛扒
 - [x] 果木烤纽西兰SFF珍藏级战斧牛扒
 - [ ] 西部牛仔烤全鸡
 - [x] 洛奇榴莲披萨
-- [x] 牛仔至尊海鲜披萨
+- [x] 牛仔至尊海鲜披萨（推荐）
 - [x] 特色洛奇小吃拼盘
 - [x] 美国纽约克长条鲜虾卷（推荐）
 - [x] 芝士焗阿拉斯加蟹柳法包

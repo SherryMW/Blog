@@ -24,15 +24,18 @@ export const Sidebar = sidebar({
     //         link: "学习资料/",
     //     }
     // ],
+
     "/life/healthy/": [
         {
-            text: "休息",
+            text: "作息",
             prefix: "sleep/",
+            collapsible: true,
             children: "structure"
         },
         {
             text: "健身",
             prefix: "gym/",
+            collapsible: true,
             children: "structure"
         },
         {
@@ -41,13 +44,14 @@ export const Sidebar = sidebar({
             collapsible: true,
             children: "structure"
         },
-        // {
-        //     text: "口腔科",
-        //     prefix: "dental/",
-        //     collapsible: true,
-        //     children: "structure"
-        // }
+        {
+            text: "口腔科",
+            prefix: "dental/",
+            collapsible: true,
+            children: "structure"
+        }
     ],
+
     "/life/delicacies/": [
         {
             text: "广州",
@@ -89,21 +93,19 @@ export const Sidebar = sidebar({
                     collapsible: true,
                     children: "structure"
                 },
-                {
-                    text: "待打卡",
-                    link: "gogogo.md"
-                }
+                "gogogo"
             ]
         }
     ],
+
     "/life/play/": [
         {
             text: "广州",
             prefix: "guangzhou/",
             children: [
                 {
-                    text: "密室逃脱",
-                    prefix: "RoomEscape/",
+                    text: "密室/沉浸",
+                    prefix: "chamber/",
                     collapsible: true,
                     children: [
                         {
@@ -131,8 +133,12 @@ export const Sidebar = sidebar({
                             children: "structure"
                         }
                     ]
-                }
+                },
+                "theatres"
             ]
         }
-    ]
+    ],
+
+    "/link/": ["development", "design", "count", "friend"]
+
 });

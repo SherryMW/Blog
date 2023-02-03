@@ -12,13 +12,13 @@ article: false
 - [ ] 首创灌汤烧鹅
 - [ ] 水晶鸡
 - [x] 秘制黑叉烧
-- [x] 和味猪手-伊比利亚黑猪（考验牙口）
+- [x] 和味猪手-伊比利亚黑猪（考验牙口 :see_no_evil:）
 - [x] 蟹黄豆腐
 - [x] 招牌菠萝包（推荐）
 
 ## The Eating Table（高德置地冬店）
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFGZI7W1" target="_blank">珠江东路16号高德置地广场·冬F4层401</a>
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFGZI7W1" target="_blank">珠江东路16号高德置地广场•冬F4层401</a>
 
 树莓车厘子梳乎厘
 
@@ -35,7 +35,7 @@ article: false
 
 ## 木棉•醉心粤味（高德置地冬店）
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0GROY2454" target="_blank">珠江东路16号高德置地广场·冬F4层407</a>
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0GROY2454" target="_blank">珠江东路16号高德置地广场•冬F4层407</a>
 
 海报与实物对比 :see_no_evil:
 
@@ -43,7 +43,6 @@ article: false
 
 - [ ] 龙井烟熏太爷鸡
 - [x] 初恋咕噜肉
-- [ ] 北极贝刺身
 - [x] 龙眼蜜叉烧
 - [ ] 威士忌无骨猪手
 - [x] 香蒜炒肉蟹（炒了个寂寞 :see_no_evil:）
@@ -51,7 +50,6 @@ article: false
 - [x] 菜胆炖花胶
 - [x] 桃胶节瓜炖螺头
 - [ ] 一颗柠檬
-- [ ] 杨枝金露冻挞
 
 ## 等我送上门（珠江新城店）
 
@@ -61,30 +59,36 @@ article: false
 
 17点开始就要排队，晚上等位基本要40分钟以上
 
-紫苏炒圣子
+::: tabs
+
+@tab 紫苏炒圣子
 
 ![img.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/zjxc/dwssm/img.jpg)
 
-招牌爆膏奶油虾
+@tab 招牌爆膏奶油虾
 
 ![img.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/zjxc/dwssm/img_2.jpg)
 
-爆炒厚鱿鱼筒
+@tab 爆炒厚鱿鱼筒
 
 ![img.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/zjxc/dwssm/img_3.jpg)
 
-复古菠萝冰
+@tab 复古菠萝冰
+
+童年回忆
 
 ![img.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/zjxc/dwssm/img_4.jpg)
+
+:::
 
 - [x] 招牌爆膏奶油虾
 - [x] 紫苏炒圣子（推荐）
 - [x] 爆炒厚鱿鱼筒
-- [x] 复古菠萝冰（童年回忆）
+- [x] 复古菠萝冰（推荐）
 
 ## BRASSTON
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFJNAY1S" target="_blank">珠江新城花城大道南天广场D01铺(靠近室外停车场)</a>
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFJNAY1S" target="_blank">花城大道南天广场D01铺</a>
 
 - [ ] 披萨
 
