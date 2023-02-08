@@ -40,13 +40,19 @@ export const Sidebar = sidebar({
         },
         {
             text: "呼吸内科",
-            prefix: "respiratory/",
+            prefix: "ill/respiratory/",
             collapsible: true,
             children: "structure"
         },
         {
             text: "口腔科",
-            prefix: "dental/",
+            prefix: "ill/dental/",
+            collapsible: true,
+            children: "structure"
+        },
+        {
+            text: "皮肤科",
+            prefix: "ill/skin/",
             collapsible: true,
             children: "structure"
         }
@@ -139,6 +145,6 @@ export const Sidebar = sidebar({
         }
     ],
 
-    "/link/": ["development", "design", "count", "friend"]
+    "/link/": ["development", "design", "movies", "count", "friend"]
 
 });

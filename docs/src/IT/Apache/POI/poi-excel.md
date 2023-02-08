@@ -45,13 +45,14 @@ HSSF 是我们对 Microsoft Excel 97 (-2003) 文件格式 (BIFF8) 的纯 Java �
 ## 图像
 
 ::: info
-图片是绘图支持的一部分。要添加一个图像，只需在绘图元老中调用 `createPicture()` 在写这篇文章的时候，支持 PNG JPG DIB 类型  
+图片是绘图支持的一部分。要添加一个图像，只需在绘图元老中调用 `createPicture()` 在写这篇文章的时候，支持 PNG JPG DIB 类型
+
 应该注意的是，一旦你在工作表上添加图像，任何现有的图纸都可能被擦除
 :::
 
 ### 表格渲染效果
 
-![img.png](https://img.sherry4869.com/Blog/IT/Apache/POI/poi-excel/img.png)
+![](https://img.sherry4869.com/Blog/IT/Apache/POI/poi-excel/img.png)
 
 ### 准备工作
 
@@ -63,6 +64,7 @@ HSSF 是我们对 Microsoft Excel 97 (-2003) 文件格式 (BIFF8) 的纯 Java �
 
 ```java
 public class Main {
+    
     public static void main(String[] args) throws Exception {
         Workbook workbook = new XSSFWorkbook("src/main/resources/static/报销单.xlsx"); //新建工作薄
         CreationHelper creationHelper = workbook.getCreationHelper(); //一个处理实例化具体类的对象，它是HSSF和XSSF所需的各种实例。绕过Java中的一个限制，即我们不能在接口或抽象类上有静态方法。这允许你为一个给定的接口获得适当的类，而不必担心你是否在处理HSSF或XSSF
@@ -100,7 +102,8 @@ scaleY- 图像高度相对于原始高度相乘的量
 
 ### 常见问题
 
-如果在使用 org.apache.poi 4.1.2版本的小伙伴会发现程序中会提示 `IOUtils` 类无法找到，需要引入
+如果在使用 org.apache.poi 4.1.2版本的小伙伴会发现程序中会提示 `IOUtils` 类无法找到，需要引入以下依赖
+
 ```xml
 <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
 <dependency>
@@ -109,11 +112,13 @@ scaleY- 图像高度相对于原始高度相乘的量
     <version>2.11.0</version>
 </dependency>
 ```
-此时修改配置 `picture.resize(1.0);` 查看表格渲染出来的效果图片是显示在单元格居中位置
 
-![img_1.png](https://img.sherry4869.com/Blog/IT/Apache/POI/poi-excel/img_1.png)
+4.1.2版本配置 `picture.resize(1.0);` 渲染出来的图片是显示在单元格居中位置
+
+![](https://img.sherry4869.com/Blog/IT/Apache/POI/poi-excel/img_1.png)
 
 ## 参考资料
 
-[Apache POI 官网](https://poi.apache.org/index.html)  
+[Apache POI 官网](https://poi.apache.org/index.html)
+
 [Apache POI Javadocs](https://poi.apache.org/apidocs/index.html)

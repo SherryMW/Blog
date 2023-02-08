@@ -53,7 +53,7 @@ article: false
 
 <div><p>恐怖：<el-rate model-value="1" disabled /></p></div>
 
-期待已久的巨型机关转场并未让我感到震撼（期待一手深圳 MRX《镇灵村》）
+期待已久的巨型转场机关并未让我感到震撼（期待一手深圳 MRX《镇灵村》）
 
 七巧板那关拼老久了 :watch:
 
@@ -83,7 +83,7 @@ MRX中恐怖氛围最足的一个主题，最后结尾有声光电演绎（又�
 
 <div><p>温情：<el-rate model-value="2.5" disabled /></p></div>
 
-点赞场景搭建
+还蛮喜欢烟雨楼的场景搭建
 
 ### 绝爱
 
@@ -129,7 +129,7 @@ MRX中恐怖氛围最足的一个主题，最后结尾有声光电演绎（又�
 
 <div><p>恐怖：<el-rate model-value="2" disabled /></p></div>
 
-吹爆NPC朱迪演技！！！
+吹爆NPC朱迪的演绎！！！
 
 最后一个场景有“惊喜”！
 
@@ -149,6 +149,4 @@ MRX中恐怖氛围最足的一个主题，最后结尾有声光电演绎（又�
 
 温情 :cat2: :cat2: 主题
 
-下班后的花花
-
-![img_jpg](https://img.sherry4869.com/Blog/life/play/guangzhou/chamber/th/sp_lk/dmj/img.jpg)
+![下班后的花花](https://img.sherry4869.com/Blog/life/play/guangzhou/chamber/th/sp_lk/dmj/img.jpg =x500)

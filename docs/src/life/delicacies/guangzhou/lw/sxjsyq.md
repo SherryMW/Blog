@@ -13,17 +13,15 @@ article: false
 
 @tab 招牌壹心鸡
 
-![img.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/lw/sxjsyq/wjyxj/img.jpg)
+![](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/lw/sxjsyq/wjyxj/img.jpg)
 
 @tab 五柳炸蛋
 
-![img_2.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/lw/sxjsyq/wjyxj/img_2.jpg)
+![](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/lw/sxjsyq/wjyxj/img_2.jpg)
 
 :::
 
-几多老街坊过嚟帮衬
-
-![img_4.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/lw/sxjsyq/wjyxj/img_4.jpg)
+![几多老街坊过嚟帮衬](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/lw/sxjsyq/wjyxj/img_4.jpg)
 
 - [x] 壹心鸡（推荐）
 - [x] 五柳炸蛋

@@ -27,12 +27,8 @@ article: false
 
 冲就完事了！
 
-给沈家姐妹点赞！
-
-有三种挑战模式：一更阳！二更阴！三更魂归来兮！
+给沈家姐妹的精彩演绎点赞！
 
 一刷选的天堂模式：瞳灵人通关后只感觉到累，三更通关后却是神清气爽！
 
-我可真是幸运儿 :ok_hand:
-
-![img_jpg](https://img.sherry4869.com/Blog/life/play/guangzhou/chamber/th/ld_cc/ydm/img.jpg)
+![我可真是幸运儿 :ok_hand:](https://img.sherry4869.com/Blog/life/play/guangzhou/chamber/th/ld_cc/ydm/img.jpg =x500)

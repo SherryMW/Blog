@@ -16,7 +16,7 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFIG9VK4" target="_blank">马场路珠光新城国际商务中心B座首层104</a>
 
-![img_jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/xsl_pmc/toku/img.jpg)
+![](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/xsl_pmc/toku/img.jpg)
 
 - [x] 炸猪扒（推荐）
 - [x] 芝士猪扒

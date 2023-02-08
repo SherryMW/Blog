@@ -23,6 +23,6 @@ article: false
 
 因为店家赶着下一场主题，NPC演绎过程中有点敷衍了事，故事结尾结束的太过突然，造成了不太好的游戏体验感，经过沟通后店家老板给每位玩家退款票价的20%
 
-看得出来每个场景都是精心设计搭建的且占地面积都非常大，只可惜剧情太拉跨，以至于NPC的存在可有可无
+看得出来每个场景都是精心设计搭建的且占地面积都非常大，只可惜剧情有点拉跨，以至于给玩家的体验是NPC的存在变得可有可无，存机械解密密室
 
-![img_jpg](https://img.sherry4869.com/Blog/life/play/guangzhou/chamber/py/yylm/img.jpg)
+![](https://img.sherry4869.com/Blog/life/play/guangzhou/chamber/py/yylm/img.jpg =x500)

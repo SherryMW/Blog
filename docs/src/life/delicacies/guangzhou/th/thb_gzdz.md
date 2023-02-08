@@ -13,25 +13,17 @@ article: false
 
 @tab 北岛长脚蟹
 
-海鲜海鲜，就得吃的新鲜
+![海鲜海鲜，就得吃的新鲜](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thb_gzdz/79FishingBoats/img.jpg)
 
-![img.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thb_gzdz/79FishingBoats/img.jpg)
+![399/斤](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thb_gzdz/79FishingBoats/img_2.jpg)
 
-399/斤
+![清蒸蟹脚：原汁原味，鲜甜肉嫩](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thb_gzdz/79FishingBoats/img_3.jpg)
 
-![img_2.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thb_gzdz/79FishingBoats/img_2.jpg)
-
-清蒸蟹脚：原汁原味，鲜甜肉嫩
-
-![img_3.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thb_gzdz/79FishingBoats/img_3.jpg)
-
-一蟹三吃里最中意干焗蟹肉，一定要趁热吃，如果凉了可以让服务员拿给后厨加热一下
-
-![img_4.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thb_gzdz/79FishingBoats/img_4.jpg)
+![一蟹三吃里最中意干焗蟹肉，一定要趁热吃，如果凉了可以让服务员拿给后厨加热一下](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thb_gzdz/79FishingBoats/img_4.jpg)
 
 @tab 账单
 
-![img_5.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thb_gzdz/79FishingBoats/img_5.jpg)
+![](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thb_gzdz/79FishingBoats/img_5.jpg)
 
 :::
 
@@ -56,13 +48,11 @@ article: false
 
 @tab 乐队演出
 
-![img_jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thb_gzdz/MrRocky/img.jpg)
+![](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thb_gzdz/MrRocky/img.jpg)
 
-![img_2.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thb_gzdz/MrRocky/img_2.jpg)
+![](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thb_gzdz/MrRocky/img_3.jpg)
 
-![img_3.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thb_gzdz/MrRocky/img_3.jpg)
-
-![img_4.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thb_gzdz/MrRocky/img_4.jpg)
+![](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thb_gzdz/MrRocky/img_4.jpg)
 
 :::
 

@@ -11,7 +11,7 @@ tag:
 
 预览 Barcode4J 支持的条形码符号
 
-![img_3.png](https://img.sherry4869.com/Blog/IT/Java/barcode/barcode4J/img_3.png)
+![](https://img.sherry4869.com/Blog/IT/Java/barcode/barcode4J/img_3.png)
 
 ## 准备工作
 
@@ -26,8 +26,10 @@ tag:
     </dependency>
 </dependencies>
 ```
+
 ::: info
-barcode4j：此库包含完整功能，最新2.1版本  
+barcode4j：此库包含完整功能，最新2.1版本
+
 barcode4j-light：此库仅包含核心功能，属于轻量级版本，最新2.0版本
 :::
 
@@ -62,23 +64,24 @@ public class Main {
 
 setModuleWidth(0.3)效果图
 
-![img.png](https://img.sherry4869.com/Blog/IT/Java/barcode/barcode4J/img.png)
+![](https://img.sherry4869.com/Blog/IT/Java/barcode/barcode4J/img.png)
 
 setModuleWidth(0.9)效果图
 
-![img_1.png](https://img.sherry4869.com/Blog/IT/Java/barcode/barcode4J/img_1.png)
+![](https://img.sherry4869.com/Blog/IT/Java/barcode/barcode4J/img_1.png)
 
 ### doQuietZone
 
 doQuietZone(true)效果图
 
-![img.png](https://img.sherry4869.com/Blog/IT/Java/barcode/barcode4J/img.png)
+![](https://img.sherry4869.com/Blog/IT/Java/barcode/barcode4J/img.png)
 
 doQuietZone(false)效果图
 
-![img_2.png](https://img.sherry4869.com/Blog/IT/Java/barcode/barcode4J/img_2.png)
+![](https://img.sherry4869.com/Blog/IT/Java/barcode/barcode4J/img_2.png)
 
 ## 参考资料
 
-[官方文档](https://barcode4j.sourceforge.net/)  
+[官方文档](https://barcode4j.sourceforge.net/)
+
 [接口文档](https://barcode4j.sourceforge.net/trunk/javadocs/index.html)

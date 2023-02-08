@@ -11,7 +11,7 @@ export default hopeTheme({
 
     author: {
         name: "MW", //全局默认作者
-        url: "https://blog.sherry4869.com", //网站部署域名
+        // url: "https://blog.sherry4869.com"
     },
 
     iconAssets: "iconfont", //字体图标资源链接 https://www.iconfont.cn/
@@ -79,7 +79,9 @@ export default hopeTheme({
             components: ["Badge", "BiliBili", "SiteInfo", "PDF", "VideoPlayer"] //注册一些可以在 Markdown 文件中使用的组件
         },
         mdEnhance: { //Markdown 增强功能
-            imgLazyload: true, //图片懒加载
+            // imgLazyload: true, //图片懒加载
+            imgSize: true, //图片尺寸
+            figure: true, //图片描述
             tasklist: true, //任务列表
             container: true, //自定义容器
             echarts: true, //ECharts图表配置

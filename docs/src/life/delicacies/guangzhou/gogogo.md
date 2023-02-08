@@ -117,11 +117,49 @@ article: false
 - [ ] 煎饺
 - [ ] 烤生蚝
 
+### 创发餐厅
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00140H8QF" target="_blank">光复北路512号之2、之4号</a>
+
+- [ ] 招牌好味肉
+- [ ] 创发真味鸡
+
+### 海鲜街菜馆（海珠南路店）
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B001402CB1" target="_blank">海珠南路152-2号</a>
+
+- [ ] 炖汤
+- [ ] 啫鱼泡
+- [ ] 水豆腐焖花腩蹄筋
+
+### 吹水夜宵站
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFK1UXM0" target="_blank">泮塘路新都里北三巷1号</a>
+
+- [ ] 蛋炒面
+
 ### 四哥家常菜
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0IAFOBKKV" target="_blank">光复北路591号</a>
 
 - [ ] 香爆膏蟹
+
+### 大档
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFLADYDS" target="_blank">西华路长寿坊22号</a>
+
+广式烧烤
+
+### 大眼强五杯鹅饭店
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFLLNG9Q" target="_blank">墩头西街39号</a>
+
+需要提前预约，1日限量10只鹅
+
+13570063693
+
+- [ ] 桑拿鸡
+- [ ] 五杯鹅
 
 ### 蛋卷王
 
@@ -234,6 +272,16 @@ article: false
 - [ ] 虾辣膏
 - [ ] 泥虾酱蒸花肉
 - [ ] 牛乳蒸鲚鱼
+
+### 沙湾水牛王福怡轩
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFKKHW0J" target="_blank">西村农贸市场桃源路5号路口进</a>
+
+需要提前预约，一日限量8只牛蹄
+
+13699722022 13926049877
+
+- [ ] 牛蹄
 
 ## 白云
 

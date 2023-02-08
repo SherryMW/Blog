@@ -19,15 +19,15 @@ article: false
 
 不管当天心情是否愉悦，吃碗盖面感觉充满了电
 
-![img_2.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thkyz/xxj/img_2.jpg)
+![](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thkyz/xxj/img_2.jpg)
 
-![img_3.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thkyz/xxj/img_3.jpg)
+![](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thkyz/xxj/img_3.jpg)
 
-![img_4.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thkyz/xxj/img_4.jpg)
+![](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thkyz/xxj/img_4.jpg)
 
 @tab 菜单
 
-![img_jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thkyz/xxj/img.jpg)
+![](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thkyz/xxj/img.jpg)
 
 :::
 
@@ -47,9 +47,7 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H1U90B35" target="_blank">天源路5号天河新天地B1</a>
 
-卤猪手 + 老长沙肉沫拌面 
-
-![img_jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thkyz/slf/img.jpg)
+![卤猪手 + 老长沙肉沫拌面 ](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thkyz/slf/img.jpg)
 
 - [x] 老长沙土猪肉粉
 - [x] 农家杀猪粉
@@ -77,7 +75,27 @@ article: false
 - [x] 百香果青柠
 - [x] 黑糖珍奶
 
-## 江渔儿酸菜鱼(天河客运站店)
+## 喜炙郎
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0HA7PYK76" target="_blank">元岗横路16号</a>
+
+- [x] 大满贯肥牛饭（推荐）
+- [x] 特色鳗鱼炒饭
+- [x] 番茄牛肉拉面
+- [x] 猪豚骨汤拉面
+- [x] 京都爆汁炸鸡
+- [x] 喜炙郎招牌土豆泥
+- [x] 章鱼小丸子
+- [x] 焦糖凤梨鹅肝烧
+- [x] 明太子玉子烧
+- [x] 特色火炙寿司拼盘
+- [x] 超级鳗鱼粉丝脆脆卷
+- [x] 牛郎爱寿司
+- [x] 蟹棒寿司
+- [x] 喜炙郎奶冻布丁
+- [x] 雪米糍
+
+## 江渔儿酸菜鱼(天河新天地店)
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H36HYRHC" target="_blank">天源路5号天河新天地4楼</a>
 

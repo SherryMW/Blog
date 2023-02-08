@@ -14,7 +14,7 @@ poi-tl（poi template language）是Word模板引擎，使用Word模板和数据
 
 ## 文档渲染效果
 
-![img.png](https://img.sherry4869.com/Blog/IT/Apache/POI/poi-tl/img.png)
+![](https://img.sherry4869.com/Blog/IT/Apache/POI/poi-tl/img.png)
 
 ## 准备工作
 
@@ -25,25 +25,31 @@ poi-tl（poi template language）是Word模板引擎，使用Word模板和数据
 以及下方区块对 `{{?sections}}` `{{/sections}}`  
 区块对中包含：题号文本 `{{titleNumber}}` ，题目文本 `{{title}}`，表格 `{{table}}`，单系列图表 `{{pieChart}}`
 :::
+
 ::: info 区块对
+[区块对](http://deepoove.com/poi-tl/#_%E5%8C%BA%E5%9D%97%E5%AF%B9)
+
 区块对由前后两个标签组成，开始标签以?标识，结束标签以/标识：`{{?sections}}` `{{/sections}}`  
 区块对开始和结束标签中间可以包含多个图片，表格、段落、列表、图表等，开始和结束标签可以跨多个段落，也可以在同一个段落，但是如果在表格中使用区块对，开始和结束标签必须在同一个单元格内，因为跨多个单元格的渲染行为是未知的  
 区块对在处理一系列文档元素的时候非常有用，位于区块对中的文档元素可以被渲染零次，一次或N次，这取决于区块对的取值  
-[区块对](http://deepoove.com/poi-tl/#_%E5%8C%BA%E5%9D%97%E5%AF%B9)
 :::
+
 ::: info 表格
-表格标签以#开始：`{{#var}}`  
 [表格](http://deepoove.com/poi-tl/#_%E8%A1%A8%E6%A0%BC)
+
+表格标签以#开始：`{{#var}}`  
 :::
+
 ::: info 单系列图表
-单系列图表的标签是一个文本：`{{var}}`，标签位置在：图表区格式—可选文字—标题（新版本Microsoft Office标签位置在：编辑替换文字-替换文字）  
 [单系列图表](http://deepoove.com/poi-tl/#_%E5%8D%95%E7%B3%BB%E5%88%97%E5%9B%BE%E8%A1%A8)
+
+单系列图表的标签是一个文本：`{{var}}`，标签位置在：图表区格式—可选文字—标题（新版本Microsoft Office标签位置在：编辑替换文字-替换文字）  
 :::
 
 ### 创建工程
 
 1. 新建一个Spirng Boot 2.2.x工程
-2. 把 [poi-tl-template.docx模板文档](https://img.sherry4869.com/Blog/IT/Apache/POI/poi-tl/poi-tl-template.docx) 下载到工程 src/main/resources/template 目录下
+2. 把 [poi-tl-template.docx模板文档](https://img.sherry4869.com/Blog/IT/Apache/POI/poi-tl/poi-tl-template.docx) 下载到工程里 src/main/resources/template 目录下
 
 ### 相关依赖
 
@@ -141,31 +147,21 @@ XWPFTemplate.compile("src/test/resources/template/poi-tl-template.docx").render(
 ### 下载文件中文名被忽略
 
 ```text
-response.setHeader("Content-disposition", "attachment;filename=\"" + new String("问卷调查.docx".getBytes(),"ISO-8859-1") + "\""); //下载的文件名称
+response.setHeader("Content-disposition", "attachment;filename=\"" + new String("问卷调查.docx".getBytes(),"ISO-8859-1") + "\"");
 ```
 
 ### 运行异常
 
-```java
-@RestController
-@RequestMapping("/wordController")
-public class wordController {
-    
-    @RequestMapping("/download")
-    public void download(HttpServletResponse response) throws Exception {
-        // 文档导出不成功，程序执行到这步时报java.lang.NoSuchMethodError: org.apache.logging.log4j.Logger.atDebug()Lorg/apache/logging/log4j/LogBuilder;
-        XWPFTemplate template = XWPFTemplate.compile("src/main/resources/template/poi-tl-template.docx").render(renderingData);
-    }
-}
-```
 ```text
+文档导出不成功，程序执行到这步时报java.lang.NoSuchMethodError: org.apache.logging.log4j.Logger.atDebug()Lorg/apache/logging/log4j/LogBuilder;
+XWPFTemplate template = XWPFTemplate.compile("src/main/resources/template/poi-tl-template.docx").render(renderingData);
+
 文档导出成功，但控制台提示
 org.apache.poi.openxml4j.exceptions.InvalidFormatException: A part name shall not have a forward slash as the last character [M1.5]: /word/_rels/
 org.apache.poi.openxml4j.exceptions.InvalidFormatException: A part name shall not have a forward slash as the last character [M1.5]: /word/theme/
 ```
 ::: tip
-如果要使用 poi-tl 1.11.x 以上的版本，spring-boot-starter 的版本要在 2.3.x 以上  
-否则使用 poi-tl 1.11.x 以下的版本，例如 poi-tl 1.10.4 / poi-tl 1.9.1
+如要使用 poi-tl 1.11.x 以上的版本，spring-boot-starter 的版本要在 2.3.x 以上 ，否则使用 poi-tl 1.11.x 以下的版本，例如 poi-tl poi-tl 1.9.1 ~ 1.10.4
 :::
 
 ## 参考资料

@@ -15,10 +15,14 @@ article: false
 
 ## 呼吸内科
 
-[感冒](respiratory/cold.md)
+[感冒](ill/respiratory/cold.md)
 
-[新型冠状病毒肺炎](respiratory/CoronaVirusDisease.md)
+[新型冠状病毒肺炎](ill/respiratory/CoronaVirusDisease.md)
 
 ## 口腔科
 
-[牙齿](dental/tooth.md)
+[牙齿](ill/dental/tooth.md)
+
+## 皮肤科
+
+[皮肤内科](ill/skin/AtopicEczema.md)

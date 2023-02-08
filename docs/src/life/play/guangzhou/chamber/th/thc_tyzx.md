@@ -27,9 +27,7 @@ article: false
 
 在保安大哥奋力踹门时顺口调戏了一句：“晚上是不是没吃饱阿” 后果有点严重 :scream:
 
-一刷抽到了雪莉的身份牌（中大奖了）
-
-![img_jpg](https://img.sherry4869.com/Blog/life/play/guangzhou/chamber/th/thc_tyzx/thwj/img.jpg)
+![一刷抽到了雪莉的身份牌（中大奖了）](https://img.sherry4869.com/Blog/life/play/guangzhou/chamber/th/thc_tyzx/thwj/img.jpg =x500)
 
 ## 关你鬼室大型密室逃脱（时尚天河店）
 
@@ -95,4 +93,4 @@ article: false
 
 <div><p>恐怖：<el-rate model-value="0.5" disabled /></p></div>
 
-内含魔术表演：火焰、换装、人体切割等
+内含火焰、换装、人体切割等魔术表演

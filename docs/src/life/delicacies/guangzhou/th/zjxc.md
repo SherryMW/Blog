@@ -20,9 +20,7 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFGZI7W1" target="_blank">珠江东路16号高德置地广场•冬F4层401</a>
 
-树莓车厘子梳乎厘
-
-![img_jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/zjxc/TheEatingTable/img.jpg)
+![树莓车厘子梳乎厘](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/zjxc/TheEatingTable/img.jpg)
 
 - [x] 烤新西兰臻藏级小战斧牛扒
 - [ ] 招牌迷迭香金桔风味烤全鸡
@@ -37,9 +35,7 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0GROY2454" target="_blank">珠江东路16号高德置地广场•冬F4层407</a>
 
-海报与实物对比 :see_no_evil:
-
-![img_jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/zjxc/mmzx/img.jpg)
+![海报与实物对比 :see_no_evil:](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/zjxc/mmzx/img.jpg)
 
 - [ ] 龙井烟熏太爷鸡
 - [x] 初恋咕噜肉
@@ -63,21 +59,19 @@ article: false
 
 @tab 紫苏炒圣子
 
-![img.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/zjxc/dwssm/img.jpg)
+![](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/zjxc/dwssm/img.jpg)
 
 @tab 招牌爆膏奶油虾
 
-![img.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/zjxc/dwssm/img_2.jpg)
+![](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/zjxc/dwssm/img_2.jpg)
 
 @tab 爆炒厚鱿鱼筒
 
-![img.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/zjxc/dwssm/img_3.jpg)
+![](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/zjxc/dwssm/img_3.jpg)
 
 @tab 复古菠萝冰
 
-童年回忆
-
-![img.jpg](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/zjxc/dwssm/img_4.jpg)
+![童年回忆](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/zjxc/dwssm/img_4.jpg)
 
 :::
 
