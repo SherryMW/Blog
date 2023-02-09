@@ -11,7 +11,7 @@ tag:
 
 预览 Barcode4J 支持的条形码符号
 
-![](https://img.sherry4869.com/Blog/IT/Java/barcode/barcode4J/img_3.png)
+![](https://img.sherry4869.com/blog/it/java/barcode/barcode4j/img_3.png)
 
 ## 准备工作
 
@@ -64,21 +64,21 @@ public class Main {
 
 setModuleWidth(0.3)效果图
 
-![](https://img.sherry4869.com/Blog/IT/Java/barcode/barcode4J/img.png)
+![](https://img.sherry4869.com/blog/it/java/barcode/barcode4j/img.png)
 
 setModuleWidth(0.9)效果图
 
-![](https://img.sherry4869.com/Blog/IT/Java/barcode/barcode4J/img_1.png)
+![](https://img.sherry4869.com/blog/it/java/barcode/barcode4j/img_1.png)
 
 ### doQuietZone
 
 doQuietZone(true)效果图
 
-![](https://img.sherry4869.com/Blog/IT/Java/barcode/barcode4J/img.png)
+![](https://img.sherry4869.com/blog/it/java/barcode/barcode4j/img.png)
 
 doQuietZone(false)效果图
 
-![](https://img.sherry4869.com/Blog/IT/Java/barcode/barcode4J/img_2.png)
+![](https://img.sherry4869.com/blog/it/java/barcode/barcode4j/img_2.png)
 
 ## 参考资料
 

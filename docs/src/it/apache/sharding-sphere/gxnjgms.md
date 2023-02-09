@@ -1,9 +1,9 @@
 ---
 date: 2022-11-10
 category: IT
-tag: apache
-icon: Apache
-article: false
+tag:
+  - Java
+  - Apache
 ---
 
 # ShardingSphere 5
@@ -19,6 +19,6 @@ article: false
 
 ## 读写分离架构
 
-读写分离原理：将数据库读写操作分散到不同的节点上，下面是其基本架构图：  
-![读写分离架构](https://img.sherry4869.com/IT/Apache/ShardingSphere/07B2375D-A7BA-9867-ED52-051D52F2ABBE.jpg)  
+读写分离原理：将数据库读写操作分散到不同的节点上，下面是其基本架构图：
+
 写操作会路由到主机，从机会复制主机的数据，读操作就会被路由到从机

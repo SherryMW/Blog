@@ -25,11 +25,11 @@ article: false
 字幕的话，有时候可能为了快，会先使用不那么完美地翻译，但是如果有更好的翻译出现，我会更换字幕
 :::
 
-![](https://img.sherry4869.com/Blog/link/movies/share/img.png)
+![](https://img.sherry4869.com/blog/link/movies/share/img.png)
 
-![](https://img.sherry4869.com/Blog/link/movies/share/img_1.png)
+![](https://img.sherry4869.com/blog/link/movies/share/img_1.png)
 
-![](https://img.sherry4869.com/Blog/link/movies/share/img_2.png)
+![](https://img.sherry4869.com/blog/link/movies/share/img_2.png)
 
 ### NoTV
 
@@ -37,21 +37,21 @@ article: false
 
 备用网址：[https://www.2x1.cc](https://www.2x1.cc)
 
-![](https://img.sherry4869.com/Blog/link/movies/share/img_3.png)
+![](https://img.sherry4869.com/blog/link/movies/share/img_3.png)
 
 ### HDmoli
 
 网址：[https://www.hdmoli.com](https://www.hdmoli.com)
 
-![](https://img.sherry4869.com/Blog/link/movies/share/img_10.png)
+![](https://img.sherry4869.com/blog/link/movies/share/img_10.png)
 
-![](https://img.sherry4869.com/Blog/link/movies/share/img_11.png)
+![](https://img.sherry4869.com/blog/link/movies/share/img_11.png)
 
 ### 无名小站
 
 网址：[https://www.btnull.org](https://www.btnull.org)
 
-![](https://img.sherry4869.com/Blog/link/movies/share/img_12.png)
+![](https://img.sherry4869.com/blog/link/movies/share/img_12.png)
 
 ## 资源下载
 
@@ -68,9 +68,9 @@ article: false
 仅供电影爱好者交流，无广告！不盈利！
 :::
 
-![](https://img.sherry4869.com/Blog/link/movies/share/img_16.png)
+![](https://img.sherry4869.com/blog/link/movies/share/img_16.png)
 
-![](https://img.sherry4869.com/Blog/link/movies/share/img_17.png)
+![](https://img.sherry4869.com/blog/link/movies/share/img_17.png)
 
 ### MINI4K迷客电影
 
@@ -82,9 +82,9 @@ article: false
 永久会员：60元
 :::
 
-![](https://img.sherry4869.com/Blog/link/movies/share/img_15.png)
+![](https://img.sherry4869.com/blog/link/movies/share/img_15.png)
 
-![](https://img.sherry4869.com/Blog/link/movies/share/img_14.png)
+![](https://img.sherry4869.com/blog/link/movies/share/img_14.png)
 
 ### Grab4K
 
@@ -96,11 +96,11 @@ article: false
 年费会员：119元/年
 :::
 
-![](https://img.sherry4869.com/Blog/link/movies/share/img_7.png)
+![](https://img.sherry4869.com/blog/link/movies/share/img_7.png)
 
-![](https://img.sherry4869.com/Blog/link/movies/share/img_8.png)
+![](https://img.sherry4869.com/blog/link/movies/share/img_8.png)
 
-![](https://img.sherry4869.com/Blog/link/movies/share/img_9.png)
+![](https://img.sherry4869.com/blog/link/movies/share/img_9.png)
 
 ### 布谷TV
 
@@ -114,9 +114,9 @@ article: false
 永久VIP：99元
 :::
 
-![](https://img.sherry4869.com/Blog/link/movies/share/img_5.png)
+![](https://img.sherry4869.com/blog/link/movies/share/img_5.png)
 
-![](https://img.sherry4869.com/Blog/link/movies/share/img_6.png)
+![](https://img.sherry4869.com/blog/link/movies/share/img_6.png)
 
 ### SubHD
 
@@ -124,4 +124,4 @@ article: false
 
 会员制：无
 
-![](https://img.sherry4869.com/Blog/link/movies/share/img_13.png)
+![](https://img.sherry4869.com/blog/link/movies/share/img_13.png)

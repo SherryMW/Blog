@@ -28,7 +28,7 @@ article: false
 
 - 本站名称：MW Blog
 - 本站地址：https://blog.sherry4869.com
-- 本站图标：https://img.sherry4869.com/Blog/public/logo.svg
+- 本站图标：https://img.sherry4869.com/blog/public/logo.svg
 
 ---
 

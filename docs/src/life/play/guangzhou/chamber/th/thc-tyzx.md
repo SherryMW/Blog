@@ -27,7 +27,7 @@ article: false
 
 在保安大哥奋力踹门时顺口调戏了一句：“晚上是不是没吃饱阿” 后果有点严重 :scream:
 
-![一刷抽到了雪莉的身份牌（中大奖了）](https://img.sherry4869.com/Blog/life/play/guangzhou/chamber/th/thc_tyzx/thwj/img.jpg =x500)
+![一刷抽到了雪莉的身份牌（中大奖了）](https://img.sherry4869.com/blog/life/play/guangzhou/chamber/th/thc-tyzx/thwj/img.jpg =x500)
 
 ## 关你鬼室大型密室逃脱（时尚天河店）
 

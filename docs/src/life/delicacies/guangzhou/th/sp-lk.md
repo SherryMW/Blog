@@ -12,10 +12,10 @@ article: false
 ::: tabs
 
 @tab 南乳猪手
-![](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/sp_lk/wuxicafe/img.jpg)
+![](https://img.sherry4869.com/blog/life/delicacies/guangzhou/th/sp-lk/wuxicafe/img.jpg)
 
 @tab 芝麻糊汤圆
-![](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/sp_lk/wuxicafe/img_1.jpg)
+![](https://img.sherry4869.com/blog/life/delicacies/guangzhou/th/sp-lk/wuxicafe/img_1.jpg)
 
 :::
 

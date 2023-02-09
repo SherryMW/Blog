@@ -1,7 +1,7 @@
 import {sidebar} from "vuepress-theme-hope";
 
 export const Sidebar = sidebar({
-    "/IT/Java/pay/": [
+    "/it/java/pay/": [
         {
             text: "微信",
             prefix: "weixin/",
@@ -13,17 +13,16 @@ export const Sidebar = sidebar({
             children: "structure"
         }
     ],
-    // "/IT/Apache/ShardingSphere/": [
-    //     {
-    //         text: "高性能架构模式",
-    //         link: "高性能架构模式/",
-    //         collapsible: false
-    //     },
-    //     {
-    //         text: "学习资料",
-    //         link: "学习资料/",
-    //     }
-    // ],
+    "/it/apache/sharding-sphere/": [
+        {
+            text: "高性能架构模式",
+            link: "gxnjgms/",
+        },
+        {
+            text: "学习资料",
+            link: "references/",
+        }
+    ],
 
     "/life/healthy/": [
         {

@@ -45,7 +45,7 @@ article: false
 
 早上起床后喉咙有点痒，吞口水没有疼痛感，有轻微咳嗽并开始有打喷嚏症状，自我感觉声线变沉闷了，中午去客厅装水碰见室友，在唠嗑期间询问声线是否变的明显，室友给予肯定答复并提议测一下抗原（两位室友已经阳康了）
 
-![不测不知道，一测 :scream:](https://img.sherry4869.com/Blog/life/healthy/respiratory/img.jpg =x500)
+![不测不知道，一测 :scream:](https://img.sherry4869.com/blog/life/healthy/respiratory/img.jpg =x500)
 
 感觉症状非常像几个月前得的风寒感冒，虽然打喷嚏不像风寒感冒那么严重，但症状持续时间比风寒感冒要久的多
 
@@ -65,7 +65,7 @@ article: false
 
 中午测了两次核酸
 
-![](https://img.sherry4869.com/Blog/life/healthy/respiratory/img_2.jpg =x500)
+![](https://img.sherry4869.com/blog/life/healthy/respiratory/img_2.jpg =x500)
 
 ## 2023年1月3日
 
@@ -73,7 +73,7 @@ article: false
 
 晚上测了一次核酸
 
-![](https://img.sherry4869.com/Blog/life/healthy/respiratory/img_3.jpg =x500)
+![](https://img.sherry4869.com/blog/life/healthy/respiratory/img_3.jpg =x500)
 
 ## 2023年1月4号
 
@@ -81,6 +81,6 @@ article: false
 
 晚上测了一次核酸，彻底转阴了
 
-![](https://img.sherry4869.com/Blog/life/healthy/respiratory/img_4.jpg =x500)
+![](https://img.sherry4869.com/blog/life/healthy/respiratory/img_4.jpg =x500)
 
 转阴后持续一周有轻微干咳症状

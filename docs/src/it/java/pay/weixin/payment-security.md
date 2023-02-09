@@ -33,7 +33,7 @@ AES加密算法：密钥长度128、192或256，安全强度很高，性能也�
 
 加密分组模式：先将明文分组，再对每个分组用密钥进行加密，微信支付中使用的对称加密算法就是分组模式中的一种，名为AEAD_AES_256_GCM
 
-![](https://img.sherry4869.com/Blog/IT/Java/pay/weixin/paymentSecurity/img.png)
+![](https://img.sherry4869.com/blog/it/java/pay/weixin/payment-security/img.png)
 
 ### 非对称加密
 
@@ -44,7 +44,7 @@ AES加密算法：密钥长度128、192或256，安全强度很高，性能也�
 
 RSA加密算法：最著名的非对称加密算法，微信支付中的非对称加密算法使用的就是RSA
 
-![](https://img.sherry4869.com/Blog/IT/Java/pay/weixin/paymentSecurity/img_1.png)
+![](https://img.sherry4869.com/blog/it/java/pay/weixin/payment-security/img_1.png)
 
 ### 混合加密
 
@@ -54,13 +54,13 @@ RSA加密算法：最著名的非对称加密算法，微信支付中的非对�
 
 Bob有一把公钥和私钥，公钥给了三个朋友，私钥自己保留
 
-![](https://img.sherry4869.com/Blog/IT/Java/pay/weixin/paymentSecurity/img_2.png)
+![](https://img.sherry4869.com/blog/it/java/pay/weixin/payment-security/img_2.png)
 
 Susan想给Bob写信，信件内容需要保密，那么他可以使用Bob的公钥将信件内容加密后发送给Bob，Bob收到信件后使用私钥解密看到信件内容，只要Bob的私钥不泄露这封信就是安全的
 
 如果Bob想给Susan回信的话，Susan也需要有自己的公钥私钥，把公钥分发给Bob。Bob使用Susan的公钥将信件加密后发送给Susan，Susan收到信后用自己的私钥解密后进行阅读
 
-![](https://img.sherry4869.com/Blog/IT/Java/pay/weixin/paymentSecurity/img_3.png)
+![](https://img.sherry4869.com/blog/it/java/pay/weixin/payment-security/img_3.png)
 
 如果把用法反过来的话，使用私钥加密，公钥解密？
 
@@ -68,11 +68,11 @@ Bob使用自己的私钥加密了一份信件发送给Susan，可是Bob所有的
 
 我们发现私钥加密公钥解密其实并不是为了加密
 
-![](https://img.sherry4869.com/Blog/IT/Java/pay/weixin/paymentSecurity/img_4.png)
+![](https://img.sherry4869.com/blog/it/java/pay/weixin/payment-security/img_4.png)
 
 Bob使用自己的私钥对信件原文进行加密，Susan必须使用Bob的公钥才能对信件进行解密，因此Susan能够确认的是这封信确实是Bob发出的，因为Susan使用的是Bob的公钥对信件进行解密，那么加密方一定是使用了Bob的私钥对信件进行加密。因此私钥加密公钥解密其实并不是为了加密，而是身份认证
 
-![](https://img.sherry4869.com/Blog/IT/Java/pay/weixin/paymentSecurity/img_5.png)
+![](https://img.sherry4869.com/blog/it/java/pay/weixin/payment-security/img_5.png)
 
 - 公钥加密，私钥解密的作用是加密信息
 - 私钥加密，公钥解密的作用是身份认证
@@ -97,11 +97,11 @@ MD5和SHA1被证明不具有强的抗碰撞性，目前用的比较多的是SHA2
 
 Bob决定给Pat写一封信，信件的内容不需要加密，但是要保证Pat收到信之后能够确认这封信是没有被篡改过的
 
-![](https://img.sherry4869.com/Blog/IT/Java/pay/weixin/paymentSecurity/img_6.png)
+![](https://img.sherry4869.com/blog/it/java/pay/weixin/payment-security/img_6.png)
 
 Bob先用摘要算法生成信件原文的摘要（MessageDigest），接着将摘要附在信件原文的下面一起发送给Pat，Pat收到信件后使用和Bob一样的摘要算法加密信件的原文得到信件的摘要，接着将加密后的摘要和Bob在原文中附加的摘要做一下对比，如果一致说明信件没有被篡改过
 
-![](https://img.sherry4869.com/Blog/IT/Java/pay/weixin/paymentSecurity/img_8.png)
+![](https://img.sherry4869.com/blog/it/java/pay/weixin/payment-security/img_8.png)
 
 这种方式看似好像解决了我们数据完整性的问题，但还是有一个致命的漏洞，如果信件被黑客截获，假如信件内容是明文传输，且黑客知晓是哪种摘要算法后修改了原文并根据原文使用对应的摘要算法生成了新的摘要附加在原文下面伪装成Bob将信件发送给Pat，这样Pat就收到黑客的信件还误以为是Bob给他发送的信件，所以说摘要算法不具有机密性，因此一定要加入密钥来确保信息的机密性
 
@@ -111,7 +111,7 @@ Bob写完信件之后先用摘要算法生成信件的摘要，接着使用自�
 
 Pat收到信件之后取下数字签名，使用Bob的公钥解密得到信件的摘要，接着使用和Bob一样的摘要算法加密信件的原文得到信件的摘要与用公钥解密后得到的摘要进行比对，如果一致说明信件就是Bob发的，且没有经过篡改的，这个过程我们称之为验签（验证数字签名）
 
-![](https://img.sherry4869.com/Blog/IT/Java/pay/weixin/paymentSecurity/img_9.png)
+![](https://img.sherry4869.com/blog/it/java/pay/weixin/payment-security/img_9.png)
 
 我们发现，即使黑客修改了信件的原文内容，即使黑客能够通过摘要算法生成新的摘要，但是因为他没有Bob的私钥，因此无法对摘要进行加密，无法生成只有Bob才能生成的数字签名，所以这个信也就无法被篡改了，微信支付中的签名和验签的过程就是这个原理
 
@@ -121,7 +121,7 @@ Pat收到信件之后取下数字签名，使用Bob的公钥解密得到信件�
 
 Doug想欺骗Pat，他把自己的公钥发送给Pat并谎称这是Bob的公钥。此时Pat拥有的实际上是Doug的公钥，因此Doug可以冒充Bob用自己的私钥做成数字签名写信给Pat，Pat用Doug的公钥进行验签，验签是可以通过的，Pat误以为是在和Bob通信，但其实对方是Doug
 
-![](https://img.sherry4869.com/Blog/IT/Java/pay/weixin/paymentSecurity/img_10.png)
+![](https://img.sherry4869.com/blog/it/java/pay/weixin/payment-security/img_10.png)
 
 解决该问题的办法就是使用数字证书
 
@@ -139,11 +139,11 @@ Doug想欺骗Pat，他把自己的公钥发送给Pat并谎称这是Bob的公钥�
 
 CA颁发数字证书的流程：CA使用证书信息中指定的哈希算法生成摘要（证书的指纹），然后CA根据证书中的签名算法用CA的私钥对摘要进行加密生成证书签名，最后把签名和证书的基本信息一起发布，这样Bob就得到了一个数字证书
 
-![](https://img.sherry4869.com/Blog/IT/Java/pay/weixin/paymentSecurity/img_7.png)
+![](https://img.sherry4869.com/blog/it/java/pay/weixin/payment-security/img_7.png)
 
 Bob拿到数字证书后就可以放心的给Pat发送信件了，只要在签名的同时附上数字证书即可
 
-![](https://img.sherry4869.com/Blog/IT/Java/pay/weixin/paymentSecurity/img_11.png)
+![](https://img.sherry4869.com/blog/it/java/pay/weixin/payment-security/img_11.png)
 
 Pat收到信件后，首先把数字证书从信件中取出来，对数字证书当中的数字签名进行验签：
 1. Pat使用证书信息当中指定的哈希算法根据证书信息计算出证书的摘要
@@ -154,7 +154,7 @@ Pat收到信件后，首先把数字证书从信件中取出来，对数字证�
 
 此时需要用Bob的公钥对信件的数字签名进行验证，需要先用相同的哈希算法计算出信件的摘要，然后用刚刚从数字证书中获取到的Bob公钥对信件的签名进行解密，得到信件加密后的摘要，将两个摘要进行比对，如果一致则验签通过，最终确定和Pat通信的一定是Bob且信件内容也没有被篡改
 
-![](https://img.sherry4869.com/Blog/IT/Java/pay/weixin/paymentSecurity/img_13.png)
+![](https://img.sherry4869.com/blog/it/java/pay/weixin/payment-security/img_13.png)
 
 ### 数字证书应用场景-HTTP协议
 
@@ -166,4 +166,4 @@ HTTP协议主要用于网页加密，首先一个网站需要使用HTTPS协议�
 
 与此同时客户端也会判断当前访问的网址和数字证书信息中证书持有者是否一致，如果不一致说明这个网站是伪装的，如果数字证书过期/数字证书被吊销/颁发数字证书的CA机构不是特别正规，浏览器都会发出一些网站不安全的警告信息，如果数字证书是可靠的，客户端就可以顺利从证书中获取到网站的公钥了，接下来客户端就可以使用网站的公钥对信息进行加密后与网站进行通信了
 
-![](https://img.sherry4869.com/Blog/IT/Java/pay/weixin/paymentSecurity/img_12.png)
+![](https://img.sherry4869.com/blog/it/java/pay/weixin/payment-security/img_12.png)

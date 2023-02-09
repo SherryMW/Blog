@@ -19,15 +19,15 @@ article: false
 
 不管当天心情是否愉悦，吃碗盖面感觉充满了电
 
-![](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thkyz/xxj/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/delicacies/guangzhou/th/thkyz/xxj/img_2.jpg)
 
-![](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thkyz/xxj/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/delicacies/guangzhou/th/thkyz/xxj/img_3.jpg)
 
-![](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thkyz/xxj/img_4.jpg)
+![](https://img.sherry4869.com/blog/life/delicacies/guangzhou/th/thkyz/xxj/img_4.jpg)
 
 @tab 菜单
 
-![](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thkyz/xxj/img.jpg)
+![](https://img.sherry4869.com/blog/life/delicacies/guangzhou/th/thkyz/xxj/img.jpg)
 
 :::
 
@@ -47,7 +47,7 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H1U90B35" target="_blank">天源路5号天河新天地B1</a>
 
-![卤猪手 + 老长沙肉沫拌面 ](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thkyz/slf/img.jpg)
+![卤猪手 + 老长沙肉沫拌面 ](https://img.sherry4869.com/blog/life/delicacies/guangzhou/th/thkyz/slf/img.jpg)
 
 - [x] 老长沙土猪肉粉
 - [x] 农家杀猪粉

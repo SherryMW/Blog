@@ -14,7 +14,7 @@ poi-tl（poi template language）是Word模板引擎，使用Word模板和数据
 
 ## 文档渲染效果
 
-![](https://img.sherry4869.com/Blog/IT/Apache/POI/poi-tl/img.png)
+![](https://img.sherry4869.com/blog/it/apache/poi/poi-tl/img.png)
 
 ## 准备工作
 
@@ -49,7 +49,7 @@ poi-tl（poi template language）是Word模板引擎，使用Word模板和数据
 ### 创建工程
 
 1. 新建一个Spirng Boot 2.2.x工程
-2. 把 [poi-tl-template.docx模板文档](https://img.sherry4869.com/Blog/IT/Apache/POI/poi-tl/poi-tl-template.docx) 下载到工程里 src/main/resources/template 目录下
+2. 把 [poi-tl-template.docx模板文档](https://img.sherry4869.com/blog/it/apache/poi/poi-tl/poi-tl-template.docx) 下载到工程里 src/main/resources/template 目录下
 
 ### 相关依赖
 

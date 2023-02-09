@@ -13,15 +13,15 @@ article: false
 
 @tab 秃黄油拌饭
 
-![需要等待20分钟制作时间](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/yx/zsesldsk/clx/img_2.jpg)
+![需要等待20分钟制作时间](https://img.sherry4869.com/blog/life/delicacies/guangzhou/yx/zsesldsk/clx/img_2.jpg)
 
 @tab 蟹粉小笼包
 
-![别被小笼包给咬了哦](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/yx/zsesldsk/clx/img_4.jpg)
+![别被小笼包给咬了哦](https://img.sherry4869.com/blog/life/delicacies/guangzhou/yx/zsesldsk/clx/img_4.jpg)
 
 @tab 菜单
 
-![](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/yx/zsesldsk/clx/img.jpg)
+![](https://img.sherry4869.com/blog/life/delicacies/guangzhou/yx/zsesldsk/clx/img.jpg)
 
 :::
 

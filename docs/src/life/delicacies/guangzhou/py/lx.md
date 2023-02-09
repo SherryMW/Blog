@@ -13,37 +13,37 @@ article: false
 
 @tab 小北极贝刺身
 
-![3只](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/py/lx/xdm/img_2.jpg)
+![3只](https://img.sherry4869.com/blog/life/delicacies/guangzhou/py/lx/xdm/img_2.jpg)
 
 @tab 湛江生蚝
 
-![蒜蓉蒸湛江生蚝（半打）鲜甜肥美](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/py/lx/xdm/img_3.jpg)
+![蒜蓉蒸湛江生蚝（半打）鲜甜肥美](https://img.sherry4869.com/blog/life/delicacies/guangzhou/py/lx/xdm/img_3.jpg)
 
 @tab 元贝
 
-![蒜蓉粉丝蒸元贝（6只）](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/py/lx/xdm/img_7.jpg)
+![蒜蓉粉丝蒸元贝（6只）](https://img.sherry4869.com/blog/life/delicacies/guangzhou/py/lx/xdm/img_7.jpg)
 
 @tab 台山五味鹅
 
-![](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/py/lx/xdm/img_4.jpg)
+![](https://img.sherry4869.com/blog/life/delicacies/guangzhou/py/lx/xdm/img_4.jpg)
 
 @tab 腐竹焖羊肉
 
-![](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/py/lx/xdm/img_5.jpg)
+![](https://img.sherry4869.com/blog/life/delicacies/guangzhou/py/lx/xdm/img_5.jpg)
 
 @tab 姜葱炒圣子
 
-![](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/py/lx/xdm/img_6.jpg)
+![](https://img.sherry4869.com/blog/life/delicacies/guangzhou/py/lx/xdm/img_6.jpg)
 
 @tab 濑尿虾
 
-![椒盐濑尿虾1斤](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/py/lx/xdm/img_8.jpg)
+![椒盐濑尿虾1斤](https://img.sherry4869.com/blog/life/delicacies/guangzhou/py/lx/xdm/img_8.jpg)
 
 @tab 海鲜单
 
-![](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/py/lx/xdm/img.jpg)
+![](https://img.sherry4869.com/blog/life/delicacies/guangzhou/py/lx/xdm/img.jpg)
 
-![](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/py/lx/xdm/img_9.jpg)
+![](https://img.sherry4869.com/blog/life/delicacies/guangzhou/py/lx/xdm/img_9.jpg)
 
 :::
 

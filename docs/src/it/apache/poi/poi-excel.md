@@ -52,12 +52,12 @@ HSSF 是我们对 Microsoft Excel 97 (-2003) 文件格式 (BIFF8) 的纯 Java �
 
 ### 表格渲染效果
 
-![](https://img.sherry4869.com/Blog/IT/Apache/POI/poi-excel/img.png)
+![](https://img.sherry4869.com/blog/it/apache/poi/poi-excel/img.png)
 
 ### 准备工作
 
 1. 创建一个基于Maven构建的Java工程
-2. 把 [报销单](https://img.sherry4869.com/Blog/IT/Apache/POI/poi-excel/%E6%8A%A5%E9%94%80%E5%8D%95.xlsx) 下载到工程 src/main/resources/static 目录下
+2. 把 [报销单](https://img.sherry4869.com/blog/it/apache/poi/poi-excel/%E6%8A%A5%E9%94%80%E5%8D%95.xlsx) 下载到工程 src/main/resources/static 目录下
 3. 可以参考 [条形码生成技术-Barcode4J](/IT/Java/barcode/Barcode4J) 把生成出来的条形码下载到工程 src/main/resources/static 目录下
 
 ### 编码
@@ -115,7 +115,7 @@ scaleY- 图像高度相对于原始高度相乘的量
 
 4.1.2版本配置 `picture.resize(1.0);` 渲染出来的图片是显示在单元格居中位置
 
-![](https://img.sherry4869.com/Blog/IT/Apache/POI/poi-excel/img_1.png)
+![](https://img.sherry4869.com/blog/it/apache/poi/poi-excel/img_1.png)
 
 ## 参考资料
 

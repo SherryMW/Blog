@@ -58,7 +58,7 @@ export default hopeTheme({
         intro: "", //填写后将可以点击“博主信息”中的头像或姓名进入个人介绍页
         medias: { //媒体链接配置
             // QQ: "https://wpa.qq.com/msgrd?v=3&uin=1341139503&site=qq&menu=yes",
-            Wechat: "https://img.sherry4869.com/Blog/public/wechat.jpg"
+            Wechat: "https://img.sherry4869.com/blog/public/wechat.jpg"
         },
         timeline: "点点滴滴", //时间轴自定义文字
         articleInfo: ["Author", "Date", "Category", "Tag", "Word"] //文章列表中展示的文章信息

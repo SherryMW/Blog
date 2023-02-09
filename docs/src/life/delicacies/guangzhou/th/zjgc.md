@@ -15,9 +15,9 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0I6B1025W" target="_blank">天河路228号正佳广场6层C058铺</a>
 
-![](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/zjgc/FreshpoolSteamStonePotFish/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/delicacies/guangzhou/th/zjgc/xtzqsgy/img_2.jpg)
 
-![养生菌菇锅 + 两斤几嘅江团鱼](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/zjgc/FreshpoolSteamStonePotFish/img_3.jpg)
+![养生菌菇锅 + 两斤几嘅江团鱼](https://img.sherry4869.com/blog/life/delicacies/guangzhou/th/zjgc/xtzqsgy/img_3.jpg)
 
 - [x] 养生菌菇锅（推荐）
 - [x] 江团鱼（推荐）
@@ -60,19 +60,19 @@ article: false
 
 @tab 腰内猪排套餐
 
-![](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/zjgc/fsxPorkChop/img.jpg)
+![](https://img.sherry4869.com/blog/life/delicacies/guangzhou/th/zjgc/fsx-pork-chop/img.jpg)
 
 @tab 里脊猪排套餐
 
-![](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/zjgc/fsxPorkChop/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/delicacies/guangzhou/th/zjgc/fsx-pork-chop/img_2.jpg)
 
 @tab 炸虾
 
-![这个炸虾好吃的一批](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/zjgc/fsxPorkChop/img_3.jpg)
+![这个炸虾好吃的一批](https://img.sherry4869.com/blog/life/delicacies/guangzhou/th/zjgc/fsx-pork-chop/img_3.jpg)
 
 @tab 炸红薯
 
-![](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/zjgc/fsxPorkChop/img_4.jpg)
+![](https://img.sherry4869.com/blog/life/delicacies/guangzhou/th/zjgc/fsx-pork-chop/img_4.jpg)
 
 :::
 

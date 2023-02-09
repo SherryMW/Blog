@@ -24,19 +24,19 @@ article: false
 
 @tab 香煎手打墨鱼饼
 
-![正！](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thc_tyzx/cldpd/img_4.jpg)
+![正！](https://img.sherry4869.com/blog/life/delicacies/guangzhou/th/thc-tyzx/cldpd/img_4.jpg)
 
 @tab 鸿运烧香猪
 
-![这半只乳猪不是现烤的，没有完全去骨，皮脆但肉有点肥腻](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thc_tyzx/cldpd/img_3.jpg)
+![这半只乳猪不是现烤的，没有完全去骨，皮脆但肉有点肥腻](https://img.sherry4869.com/blog/life/delicacies/guangzhou/th/thc-tyzx/cldpd/img_3.jpg)
 
 @tab 大排档炒牛河
 
-![炒出风味](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thc_tyzx/cldpd/img_2.jpg)
+![炒出风味](https://img.sherry4869.com/blog/life/delicacies/guangzhou/th/thc-tyzx/cldpd/img_2.jpg)
 
 :::
 
-![](https://img.sherry4869.com/Blog/life/delicacies/guangzhou/th/thc_tyzx/cldpd/img.jpg)
+![](https://img.sherry4869.com/blog/life/delicacies/guangzhou/th/thc-tyzx/cldpd/img.jpg)
 
 - [x] 常来豉油鸡（推荐）
 - [ ] 荔枝木招牌烧鹅
