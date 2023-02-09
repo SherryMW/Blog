@@ -19,7 +19,7 @@ export const Sidebar = sidebar({
             link: "gxnjgms/",
         },
         {
-            text: "学习资料",
+            text: "参考资料",
             link: "references/",
         }
     ],
