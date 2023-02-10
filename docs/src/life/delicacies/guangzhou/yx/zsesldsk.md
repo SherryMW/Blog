@@ -1,5 +1,5 @@
 ---
-category: 美食
+category: 饮食
 article: false
 ---
 
