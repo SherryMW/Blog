@@ -17,7 +17,7 @@ article: false
 
 [感冒](ill/respiratory/cold.md)
 
-[新型冠状病毒肺炎](ill/respiratory/CoronaVirusDisease.md)
+[新型冠状病毒肺炎](ill/respiratory/corona-virus-disease.md)
 
 ## 口腔科
 
@@ -25,4 +25,4 @@ article: false
 
 ## 皮肤科
 
-[皮肤内科](ill/skin/AtopicEczema.md)
+[皮肤内科](ill/skin/atopic-eczema.md)
