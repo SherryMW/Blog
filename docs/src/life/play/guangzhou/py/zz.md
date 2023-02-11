@@ -25,4 +25,4 @@ article: false
 
 看得出来每个场景都是精心设计搭建的且占地面积都非常大，只可惜剧情有点拉跨，以至于给玩家的体验是NPC的存在变得可有可无，存机械解密密室
 
-![](https://img.sherry4869.com/blog/life/play/guangzhou/chamber/py/yylm/img.jpg =x500)
+![](https://img.sherry4869.com/blog/life/play/guangzhou/py/yylm/img.jpg =x500)

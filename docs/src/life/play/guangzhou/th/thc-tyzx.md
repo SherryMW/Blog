@@ -27,7 +27,7 @@ article: false
 
 在保安大哥奋力踹门时顺口调戏了一句：“晚上是不是没吃饱阿” 后果有点严重 :scream:
 
-![一刷抽到了雪莉的身份牌（中大奖了）](https://img.sherry4869.com/blog/life/play/guangzhou/chamber/th/thc-tyzx/thwj/img.jpg =x500)
+![一刷抽到了雪莉的身份牌（中大奖了）](https://img.sherry4869.com/blog/life/play/guangzhou/th/thc-tyzx/thwj/img.jpg =x500)
 
 ## 关你鬼室大型密室逃脱（时尚天河店）
 
@@ -94,3 +94,17 @@ article: false
 <div><p>恐怖：<el-rate model-value="0.5" disabled /></p></div>
 
 内含火焰、换装、人体切割等魔术表演
+
+## 速马赫卡丁车（天河店）
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0G1KA1NWT" target="_blank">天河区时尚天河中五街026(A区停车场)</a>
+
+## 天弓社•射箭•CAFE（天河店）
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFKUT6NL" target="_blank">天河区时尚天河东一街负二层F6</a>
+
+## 沉浸世界大空间VR游戏体验馆（天河店）
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H2F1LL6O" target="_blank">天河区时尚天河中区中二街（夜上海）011号</a>
+
+- [x] 丧尸围攻VR

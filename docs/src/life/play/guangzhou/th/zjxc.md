@@ -1,11 +1,9 @@
 ---
 category: 娱乐
-tag:
-  - 剧场/剧院
 article: false
 ---
 
-# 剧场/剧院
+# 珠江新城
 
 ## 莲城剧场
 

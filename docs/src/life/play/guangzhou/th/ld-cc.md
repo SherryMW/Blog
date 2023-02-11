@@ -31,4 +31,4 @@ article: false
 
 一刷选的天堂模式：瞳灵人通关后只感觉到累，三更通关后却是神清气爽！
 
-![我可真是幸运儿 :ok_hand:](https://img.sherry4869.com/blog/life/play/guangzhou/chamber/th/ld-cc/ydm/img.jpg =x500)
+![我可真是幸运儿 :ok_hand:](https://img.sherry4869.com/blog/life/play/guangzhou/th/ld-cc/ydm/img.jpg =x500)

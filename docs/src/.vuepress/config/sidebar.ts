@@ -75,14 +75,14 @@ export const Sidebar = sidebar({
                     children: "structure"
                 },
                 {
-                    text: "番禺",
-                    prefix: "py/",
+                    text: "荔湾",
+                    prefix: "lw/",
                     collapsible: true,
                     children: "structure"
                 },
                 {
-                    text: "荔湾",
-                    prefix: "lw/",
+                    text: "番禺",
+                    prefix: "py/",
                     collapsible: true,
                     children: "structure"
                 },
@@ -109,37 +109,29 @@ export const Sidebar = sidebar({
             prefix: "guangzhou/",
             children: [
                 {
-                    text: "密室/沉浸",
-                    prefix: "chamber/",
+                    text: "天河",
+                    prefix: "th/",
                     collapsible: true,
-                    children: [
-                        {
-                            text: "天河",
-                            prefix: "th/",
-                            collapsible: true,
-                            children: "structure"
-                        },
-                        {
-                            text: "越秀",
-                            prefix: "yx/",
-                            collapsible: true,
-                            children: "structure"
-                        },
-                        {
-                            text: "荔湾",
-                            prefix: "lw/",
-                            collapsible: true,
-                            children: "structure"
-                        },
-                        {
-                            text: "番禺",
-                            prefix: "py/",
-                            collapsible: true,
-                            children: "structure"
-                        }
-                    ]
+                    children: "structure"
                 },
-                "theatres"
+                {
+                    text: "越秀",
+                    prefix: "yx/",
+                    collapsible: true,
+                    children: "structure"
+                },
+                {
+                    text: "荔湾",
+                    prefix: "lw/",
+                    collapsible: true,
+                    children: "structure"
+                },
+                {
+                    text: "番禺",
+                    prefix: "py/",
+                    collapsible: true,
+                    children: "structure"
+                },
             ]
         }
     ],

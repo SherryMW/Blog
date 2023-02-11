@@ -144,12 +144,6 @@ article: false
 
 - [ ] 香爆膏蟹
 
-### 大档
-
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFLADYDS" target="_blank">西华路长寿坊22号</a>
-
-广式烧烤
-
 ### 大眼强五杯鹅饭店
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFLLNG9Q" target="_blank">墩头西街39号</a>
@@ -223,6 +217,12 @@ article: false
 
 - [ ] 肠粉
 
+### 食丰收
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFK8YFHU" target="_blank">西华路金花直街34号</a>
+
+- [ ] 糯米饭
+
 ## 海珠
 
 ### 岭南海晏楼(滨江东总店)
@@ -256,6 +256,8 @@ article: false
 ### 德记粉面店
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0IAGM17H5" target="_blank">长安西街18号</a>
+
+广州喝粥天花板
 
 逢周四五六日 05:00 ~ 09:00
 
