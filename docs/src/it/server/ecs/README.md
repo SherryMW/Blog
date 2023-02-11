@@ -163,6 +163,8 @@ CentOS官方已计划停止维护CentOS 7、CentOS 8等Linux项目，如果您�
 
 验证成功后阿里云账号绑定的手机号码会收到SSL证书已签发成功的短信
 
+使用免费SLL证书在通过手机端访问网站时会出现类似“该链接经检测无法确定其安全性，请谨慎输入敏感信息”的提示
+
 ::: info
 [安装SSL证书到服务器](https://help.aliyun.com/document_detail/198938.html)
 :::

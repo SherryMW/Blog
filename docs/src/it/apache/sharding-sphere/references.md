@@ -8,4 +8,4 @@ article: false
 
 [Apache ShardingSphere 官网](https://shardingsphere.apache.org/index_zh.html)
 
-<BiliBili bvid="BV1ta411g7Jf" :danmaku="false"/>
+<BiliBili bvid="BV1ta411g7Jf" no-danmaku />

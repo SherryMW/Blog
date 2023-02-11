@@ -1,6 +1,8 @@
 import {defineUserConfig} from "vuepress";
 import theme from "./theme.js";
-import {configPlugins} from "./config/plugins";
+import {docsearchPlugin} from "@vuepress/plugin-docsearch";
+import {containerPlugin} from "@vuepress/plugin-container";
+import {renderProjects} from "./config/projects";
 
 export default defineUserConfig({
     base: "/",
@@ -18,7 +20,19 @@ export default defineUserConfig({
             s.parentNode.insertBefore(hm, s);
         })();`]
     ],
-    plugins: configPlugins,
+    plugins: [
+        containerPlugin({
+            type: 'projects',
+            render: (tokens, idx) => {
+                return renderProjects(tokens, idx)
+            }
+        }),
+        docsearchPlugin({
+            appId: "3BWRIKCJ5K",
+            apiKey: "4b42c4343798b415e1e9275050b53d72",
+            indexName: "sherry4869"
+        }),
+    ],
 
     theme,
 
