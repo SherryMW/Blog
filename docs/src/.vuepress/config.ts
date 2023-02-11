@@ -29,7 +29,7 @@ export default defineUserConfig({
         }),
         docsearchPlugin({
             appId: "3BWRIKCJ5K",
-            apiKey: "4b42c4343798b415e1e9275050b53d72",
+            apiKey: "69ab740886a5bcb9703dfa42349119f0",
             indexName: "sherry4869"
         }),
     ],
