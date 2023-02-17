@@ -47,4 +47,4 @@ order: 1
 
 [沙箱应用](https://open.alipay.com/develop/sandbox/app)
 
-支付宝客户端沙箱版仅提供Android版本，下载完成后使用买家账号登录
+支付宝客户端沙箱版仅提供Android版本，安装下载完成后使用买家账号登录

@@ -1,7 +1,5 @@
 ---
 category: 娱乐
-tag:
-  - 密室/沉浸 
 article: false
 ---
 

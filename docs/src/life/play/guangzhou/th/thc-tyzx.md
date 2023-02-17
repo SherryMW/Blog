@@ -1,7 +1,5 @@
 ---
 category: 娱乐
-tag:
-  - 密室/沉浸
 article: false
 ---
 
@@ -25,7 +23,7 @@ article: false
 
 正如工作人员描述的那样：黑追电主题的鼻祖
 
-在保安大哥奋力踹门时顺口调戏了一句：“晚上是不是没吃饱阿” 后果有点严重 :scream:
+在保安大哥奋力踹门时调戏了一句：“晚饭是不是没吃饱阿” 后果有点严重 :scream:
 
 ![一刷抽到了雪莉的身份牌（中大奖了）](https://img.sherry4869.com/blog/life/play/guangzhou/th/thc-tyzx/thwj/img.jpg =x500)
 

@@ -13,16 +13,16 @@ export const Sidebar = sidebar({
             children: "structure"
         }
     ],
-    "/it/apache/sharding-sphere/": [
-        {
-            text: "高性能架构模式",
-            link: "gxnjgms/",
-        },
-        {
-            text: "参考资料",
-            link: "references/",
-        }
-    ],
+    // "/it/apache/sharding-sphere/": [
+    //     {
+    //         text: "高性能架构模式",
+    //         link: "gxnjgms/",
+    //     },
+    //     {
+    //         text: "参考资料",
+    //         link: "references/",
+    //     }
+    // ],
 
     "/life/healthy/": [
         {

@@ -10,7 +10,7 @@ article: false
 
 网站地址：[https://ddys.art](https://ddys.art)
 
-网站发布页：[https://ddys.site](https://ddys.site)
+[//]: # (网站发布页：[https://ddys.site]&#40;https://ddys.site&#41;)
 
 ::: info 站长自述
 我们的目标是提供最便捷的，同时支持电脑和移动设备的超清画质在线观看影视剧体验  
@@ -44,8 +44,6 @@ article: false
 网址：[https://www.hdmoli.com](https://www.hdmoli.com)
 
 ![](https://img.sherry4869.com/blog/link/movies/share/img_10.png)
-
-![](https://img.sherry4869.com/blog/link/movies/share/img_11.png)
 
 ### 无名小站
 

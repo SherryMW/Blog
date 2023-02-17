@@ -285,7 +285,7 @@ public class WxPayServiceImpl implements WxPayService {
     
     @Override
     public Map<String, Object> nativePay(Long productId) throws Exception {
-        log.info("生成订单");
+        log.info("Native生成订单");
         //TODO: 创建订单按生产业务逻辑来写
         OrderInfo orderInfo = new OrderInfo();
         orderInfo.setTitle("支付测试");
@@ -568,7 +568,7 @@ public class WxPayController {
         try {
             //处理通知参数
             String jsonBody = HttpUtils.readData(request);
-            log.info("支付通知的完整请求参数===>jsonBody{}", jsonBody);
+            log.info("支付通知的完整请求参数 ===> jsonBody{}", jsonBody);
             Map<String, Object> mapBody = new ObjectMapper().readValue(jsonBody, HashMap.class);
             String id = (String) mapBody.get("id");
             log.info("支付通知id===>{}", id);
@@ -747,10 +747,10 @@ public class WxPayServiceImpl implements WxPayService {
         String nonce = resourceMap.get("nonce");
         //附加数据
         String associatedData = resourceMap.get("associated_data");
-        log.info("支付通知密文===>{}", ciphertext);
+        log.info("支付通知密文 ===> {}", ciphertext);
         AesUtil aesUtil = new AesUtil(wxPayConfig.getApiV3Key().getBytes());
         String plainText = aesUtil.decryptToString(associatedData.getBytes(StandardCharsets.UTF_8), nonce.getBytes(StandardCharsets.UTF_8), ciphertext);
-        log.info("支付通知密文解密===>{}", plainText);
+        log.info("支付通知密文解密 ===> {}", plainText);
         return plainText;
     }
 }
@@ -784,10 +784,10 @@ public class WxPayController {
         try {
             //处理通知参数
             String jsonBody = HttpUtils.readData(request);
-            log.info("支付通知的完整请求参数===>jsonBody{}", jsonBody);
+            log.info("支付通知的完整请求参数 ===> jsonBody {}", jsonBody);
             Map<String, Object> mapBody = new ObjectMapper().readValue(jsonBody, HashMap.class);
             String id = (String) mapBody.get("id");
-            log.info("支付通知id===>{}", id);
+            log.info("支付通知id ===> {}", id);
             //构建request，传入必要参数
             NotificationRequest notificationRequest = new NotificationRequest.Builder().withSerialNumber(request.getHeader(WECHAT_PAY_SERIAL))
                     .withNonce(request.getHeader(WECHAT_PAY_NONCE))
@@ -840,7 +840,7 @@ public class WxPayServiceImpl implements WxPayService {
     
     @Override
     public String queryOrder(String orderNo) throws IOException {
-        log.info("查单接口调用===>{}", orderNo);
+        log.info("查单接口调用 ===> {}", orderNo);
         HttpGet httpGet = new HttpGet("https://api.mch.weixin.qq.com".concat(String.format("/v3/pay/transactions/out-trade-no/%s", orderNo)).concat("?mchid=").concat(wxPayConfig.getMerchantId()));
         httpGet.setHeader("Accept", "application/json");
         //完成签名并执行请求
@@ -884,7 +884,7 @@ public class WxPayServiceImpl implements WxPayService {
     }
     
     private void closeOrder(String orderNo) throws IOException {
-        log.info("调用关单接口，订单号===>{}", orderNo);
+        log.info("调用关单接口，订单号 ===> {}", orderNo);
         //创建远程请求对象
         String url = "https://api.mch.weixin.qq.com".concat(String.format("/v3/pay/transactions/out-trade-no/%s/close", orderNo));
         HttpPost httpPost = new HttpPost(url);
@@ -892,7 +892,7 @@ public class WxPayServiceImpl implements WxPayService {
         Map<String, Object> paramsMap = new HashMap<>();
         paramsMap.put("mchid", wxPayConfig.getMerchantId());
         String jsonParams = new ObjectMapper().writeValueAsString(paramsMap);
-        log.info("调用关单接口，请求参数===>{}", jsonParams);
+        log.info("调用关单接口，请求参数 ===> {}", jsonParams);
         //将请求体参数设置到请求对象中
         StringEntity entity = new StringEntity(jsonParams, "utf-8");
         entity.setContentType("application/json");
@@ -1008,7 +1008,7 @@ public class WxPayServiceImpl implements WxPayService {
     
     @Override
     public String queryRefund(String refundNo) throws IOException {
-        log.info("调用查询退款接口，退款单号===>{}", refundNo);
+        log.info("调用查询退款接口，退款单号 ===> {}", refundNo);
         //创建远程请求对象
         String url = "https://api.mch.weixin.qq.com".concat(String.format("/v3/refund/domestic/refunds/%s", refundNo));
         HttpGet httpGet = new HttpGet(url);
@@ -1058,10 +1058,10 @@ public class WxPayController {
         try {
             //处理通知参数
             String jsonBody = HttpUtils.readData(request);
-            log.info("退款结果通知的完整请求参数===>jsonBody{}", jsonBody);
+            log.info("退款结果通知的完整请求参数 ===> jsonBody{}", jsonBody);
             Map<String, Object> mapBody = new ObjectMapper().readValue(jsonBody, HashMap.class);
             String id = (String) mapBody.get("id");
-            log.info("退款结果通知id===>{}", id);
+            log.info("退款结果通知id ===> {}", id);
             //构建request，传入必要参数
             NotificationRequest notificationRequest = new NotificationRequest.Builder().withSerialNumber(request.getHeader(WECHAT_PAY_SERIAL))
                     .withNonce(request.getHeader(WECHAT_PAY_NONCE))

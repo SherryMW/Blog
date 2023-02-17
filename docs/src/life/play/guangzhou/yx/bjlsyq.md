@@ -1,7 +1,5 @@
 ---
 category: 娱乐
-tag:
-  - 密室/沉浸
 article: false
 ---
 
@@ -19,7 +17,7 @@ article: false
 
 <div><p>剧情：<el-rate model-value="2" disabled /></p></div>
 
-沉浸式体验NPC演绎，还可以在密室里吃烤鸡、唱K、打麻将等
+沉浸式体验NPC演绎，可以在密室里吃烤鸡、唱K、打麻将
 
 ## THE ONE CLUB
 
