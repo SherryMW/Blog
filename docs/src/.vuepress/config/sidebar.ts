@@ -98,9 +98,9 @@ export const Sidebar = sidebar({
                     collapsible: true,
                     children: "structure"
                 },
-                "gogogo"
             ]
-        }
+        },
+        "gogogo"
     ],
 
     "/life/play/": [
@@ -133,9 +133,10 @@ export const Sidebar = sidebar({
                     children: "structure"
                 },
             ]
-        }
+        },
+        "gogogo"
     ],
 
-    "/link/": ["development", "design", "movies", "count", "friend"]
+    "/link/": ["tool", "movies", "count", "friend"]
 
 });

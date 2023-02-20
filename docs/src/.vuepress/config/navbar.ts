@@ -28,6 +28,6 @@ export const Navbar = navbar([
     {
         text: "链接",
         icon: "link",
-        link: "/link/development"
+        link: "/link/tool"
     }
 ]);
