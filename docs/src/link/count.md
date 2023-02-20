@@ -4,6 +4,10 @@ article: false
 
 # 统计
 
+## 影片
+
+![漫威电影宇宙所有电影&剧集烂番茄新鲜度](https://img.sherry4869.com/blog/link/count/tomatoes-mcu.jpg)
+
 ## 影厅
 
 |      | 一代激光<br/>IMAX GT | 二代激光<br/>IMAX CoLa | 三代激光<br/>IMAX XT | 数字IMAX<br/>Xenon |  杜比影院  | CINITY | 中国巨幕<br/>4K激光 | 中国巨幕<br/>氙灯 |
