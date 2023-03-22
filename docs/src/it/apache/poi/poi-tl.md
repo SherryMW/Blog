@@ -4,12 +4,11 @@ category: IT
 tag: 
   - Java
   - Apache
-  - POI
 ---
 
 # 在文档的任何地方做任何事情
 
-poi-tl（poi template language）是Word模板引擎，使用Word模板和数据创建很棒的Word文档
+poi-tl（poi template language）是 Word 模板引擎，使用 Word 模板和数据创建很棒的 Word 文档
 <!-- more -->
 
 ## 文档渲染效果
@@ -20,38 +19,37 @@ poi-tl（poi template language）是Word模板引擎，使用Word模板和数据
 
 ### 实现思路
 
-::: tip
-根据上图导出效果分析出该模板文档需要渲染出一个顶部的文档标题 `{{activityName}}`  
-以及下方区块对 `{{?sections}}` `{{/sections}}`  
-区块对中包含：题号文本 `{{titleNumber}}` ，题目文本 `{{title}}`，表格 `{{table}}`，单系列图表 `{{pieChart}}`
-:::
+根据上图导出效果分析出该模板文档需要渲染出一个顶部的文档标题 `{{activityName}}`
 
-::: info 区块对
+以及下方区块对 `{{?sections}}` `{{/sections}}`
+
+区块对中包含：题号文本 `{{titleNumber}}` ，题目文本 `{{title}}`，表格 `{{table}}`，单系列图表 `{{pieChart}}`
+
+::: info 相关信息
 [区块对](http://deepoove.com/poi-tl/#_%E5%8C%BA%E5%9D%97%E5%AF%B9)
 
-区块对由前后两个标签组成，开始标签以?标识，结束标签以/标识：`{{?sections}}` `{{/sections}}`  
-区块对开始和结束标签中间可以包含多个图片，表格、段落、列表、图表等，开始和结束标签可以跨多个段落，也可以在同一个段落，但是如果在表格中使用区块对，开始和结束标签必须在同一个单元格内，因为跨多个单元格的渲染行为是未知的  
-区块对在处理一系列文档元素的时候非常有用，位于区块对中的文档元素可以被渲染零次，一次或N次，这取决于区块对的取值  
-:::
+区块对由前后两个标签组成，开始标签以?标识，结束标签以/标识：`{{?sections}}` `{{/sections}}`
 
-::: info 表格
+区块对开始和结束标签中间可以包含多个图片，表格、段落、列表、图表等，开始和结束标签可以跨多个段落，也可以在同一个段落，但是如果在表格中使用区块对，开始和结束标签必须在同一个单元格内，因为跨多个单元格的渲染行为是未知的
+
+区块对在处理一系列文档元素的时候非常有用，位于区块对中的文档元素可以被渲染零次，一次或N次，这取决于区块对的取值  
+
 [表格](http://deepoove.com/poi-tl/#_%E8%A1%A8%E6%A0%BC)
 
-表格标签以#开始：`{{#var}}`  
-:::
+表格标签以#开始：`{{#var}}`
 
-::: info 单系列图表
 [单系列图表](http://deepoove.com/poi-tl/#_%E5%8D%95%E7%B3%BB%E5%88%97%E5%9B%BE%E8%A1%A8)
 
-单系列图表的标签是一个文本：`{{var}}`，标签位置在：图表区格式—可选文字—标题（新版本Microsoft Office标签位置在：编辑替换文字-替换文字）  
+单系列图表的标签是一个文本：`{{var}}`，标签位置在：图表区格式—可选文字—标题（新版本Microsoft Office标签位置在：编辑替换文字-替换文字）
 :::
 
 ### 创建工程
 
 1. 新建一个Spirng Boot 2.2.x工程
-2. 把 [poi-tl-template.docx模板文档](https://img.sherry4869.com/blog/it/apache/poi/poi-tl/poi-tl-template.docx) 下载到工程里 src/main/resources/template 目录下
 
-### 相关依赖
+2. 把 [poi-tl-template.docx 模板文档](https://img.sherry4869.com/blog/it/apache/poi/poi-tl/poi-tl-template.docx) 下载到工程中的 src/main/resources/template 目录下
+
+3. 引入相关依赖
 
 ```xml
 <dependencies>
@@ -74,7 +72,7 @@ poi-tl（poi template language）是Word模板引擎，使用Word模板和数据
 </dependencies>
 ```
 
-## 编码
+## 代码实现
 
 ### 网络流输出
 
@@ -144,7 +142,7 @@ XWPFTemplate.compile("src/test/resources/template/poi-tl-template.docx").render(
 
 ## 常见问题
 
-### 下载文件中文名被忽略
+### 下载文件中的文名被忽略
 
 ```text
 response.setHeader("Content-disposition", "attachment;filename=\"" + new String("问卷调查.docx".getBytes(),"ISO-8859-1") + "\"");
@@ -160,10 +158,9 @@ XWPFTemplate template = XWPFTemplate.compile("src/main/resources/template/poi-tl
 org.apache.poi.openxml4j.exceptions.InvalidFormatException: A part name shall not have a forward slash as the last character [M1.5]: /word/_rels/
 org.apache.poi.openxml4j.exceptions.InvalidFormatException: A part name shall not have a forward slash as the last character [M1.5]: /word/theme/
 ```
-::: tip
+
 如要使用 poi-tl 1.11.x 以上的版本，spring-boot-starter 的版本要在 2.3.x 以上 ，否则使用 poi-tl 1.11.x 以下的版本，例如 poi-tl poi-tl 1.9.1 ~ 1.10.4
-:::
 
 ## 参考资料
 
-[官方文档](http://deepoove.com/poi-tl/)
+[poi-tl 官方文档](http://deepoove.com/poi-tl/)

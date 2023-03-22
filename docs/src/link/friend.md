@@ -7,7 +7,6 @@ article: false
 **友情链接 排名按添加顺序**
 
 ::: projects
-
 ```yaml
 - icon: https://img.katck.com/images/2019/02/25/avatar.png
   name: Kataick
@@ -19,7 +18,6 @@ article: false
   desc: 基于VuePress的个人博客，记录日常开发问题
   link: https://liubing.me
 ```
-
 :::
 
 ---

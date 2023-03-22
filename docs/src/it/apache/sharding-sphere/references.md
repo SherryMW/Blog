@@ -1,6 +1,4 @@
 ---
-category: IT
-tag: apache
 article: false
 ---
 

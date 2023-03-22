@@ -60,7 +60,7 @@ export const renderProjects = (tokens: Token[], idx: number) => {
                 <img src="${withBase(project.icon)}"
                   alt="${project.name}" class="image" />
                 <div class="name">${project.name}</div>
-                <div class="desc">${project.desc}</div>
+                <div class="desc">${project.desc ? project.desc : ''}</div>
               </a>
             `
                 }

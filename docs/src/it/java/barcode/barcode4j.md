@@ -9,13 +9,9 @@ tag:
 
 <!-- more -->
 
-预览 Barcode4J 支持的条形码符号
+![预览 Barcode4J 支持的条形码符号](https://img.sherry4869.com/blog/it/java/barcode/barcode4j/img_3.png)
 
-![](https://img.sherry4869.com/blog/it/java/barcode/barcode4j/img_3.png)
-
-## 准备工作
-
-### 相关依赖
+## 依赖配置
 
 ```xml
 <dependencies>
@@ -33,7 +29,7 @@ barcode4j：此库包含完整功能，最新2.1版本
 barcode4j-light：此库仅包含核心功能，属于轻量级版本，最新2.0版本
 :::
 
-## 编码
+## 代码实现
 
 ```java
 public class Main {
@@ -60,28 +56,30 @@ public class Main {
 
 ## 参数配置
 
-### setModuleWidth
+### Code128Bean
 
-setModuleWidth(0.3)效果图
+#### setModuleWidth(double width)
 
-![](https://img.sherry4869.com/blog/it/java/barcode/barcode4j/img.png)
+设置窄模块的宽度
 
-setModuleWidth(0.9)效果图
+![setModuleWidth(0.3)效果图](https://img.sherry4869.com/blog/it/java/barcode/barcode4j/img.png)
 
-![](https://img.sherry4869.com/blog/it/java/barcode/barcode4j/img_1.png)
+![setModuleWidth(0.9)效果图](https://img.sherry4869.com/blog/it/java/barcode/barcode4j/img_1.png)
 
-### doQuietZone
+---
 
-doQuietZone(true)效果图
+#### doQuietZone(boolean value)
 
-![](https://img.sherry4869.com/blog/it/java/barcode/barcode4j/img.png)
+控制条形码两侧是否留有空白区域
 
-doQuietZone(false)效果图
+![doQuietZone(true)效果图](https://img.sherry4869.com/blog/it/java/barcode/barcode4j/img.png)
 
-![](https://img.sherry4869.com/blog/it/java/barcode/barcode4j/img_2.png)
+![doQuietZone(false)效果图](https://img.sherry4869.com/blog/it/java/barcode/barcode4j/img_2.png)
+
+---
 
 ## 参考资料
 
-[官方文档](https://barcode4j.sourceforge.net/)
+[Barcode4J 官方文档](https://barcode4j.sourceforge.net/)
 
-[接口文档](https://barcode4j.sourceforge.net/trunk/javadocs/index.html)
+[Barcode4J 接口文档](https://barcode4j.sourceforge.net/trunk/javadocs/index.html)

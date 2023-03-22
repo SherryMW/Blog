@@ -1,6 +1,6 @@
 import {sidebar} from "vuepress-theme-hope";
 
-export const Sidebar = sidebar({
+export const SidebarConfig = sidebar({
     "/it/java/pay/": [
         {
             text: "微信",
@@ -13,16 +13,17 @@ export const Sidebar = sidebar({
             children: "structure"
         }
     ],
-    // "/it/apache/sharding-sphere/": [
-    //     {
-    //         text: "高性能架构模式",
-    //         link: "gxnjgms/",
-    //     },
-    //     {
-    //         text: "参考资料",
-    //         link: "references/",
-    //     }
-    // ],
+    "/it/apache/sharding-sphere/": [
+        {
+            text: "高性能架构模式",
+            link: "architecture/",
+        },
+        "mysql-zctb",
+        "jdbc",
+        "proxy",
+        "distributed",
+        "references"
+    ],
 
     "/life/healthy/": [
         {
@@ -137,6 +138,6 @@ export const Sidebar = sidebar({
         "gogogo"
     ],
 
-    "/link/": ["tool", "movies", "count", "friend"]
+    "/link/": ["developers", "tool", "movies", "friend"]
 
 });

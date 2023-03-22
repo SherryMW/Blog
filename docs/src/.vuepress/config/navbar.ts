@@ -1,6 +1,6 @@
 import {navbar} from "vuepress-theme-hope";
 
-export const Navbar = navbar([
+export const NavbarConfig = navbar([
     {
         text: "主页",
         icon: "home",
@@ -28,6 +28,6 @@ export const Navbar = navbar([
     {
         text: "链接",
         icon: "link",
-        link: "/link/tool"
+        link: "/link/developers"
     }
 ]);

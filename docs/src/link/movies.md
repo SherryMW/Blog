@@ -4,13 +4,39 @@ article: false
 
 # 影视
 
+## 影片评分
+
+烂番茄：[https://movie.douban.com](https://movie.douban.com/)
+
+IMDB：[https://www.imdb.com](https://www.imdb.com/)
+
+豆瓣电影：[https://movie.douban.com](https://movie.douban.com/)
+
+![漫威电影宇宙所有电影&剧集烂番茄新鲜度（2008-2023）](https://img.sherry4869.com/blog/link/movies/tomatoes-mcu.jpg)
+
+## 影厅
+
+|      | 一代激光<br/>IMAX GT | 二代激光<br/>IMAX CoLa | 三代激光<br/>IMAX XT | 数字IMAX<br/>Xenon |  杜比影院  | CINITY | 中国巨幕<br/>4K激光 | 中国巨幕<br/>氙灯 |
+|:----:|:----------------:|:------------------:|:----------------:|:----------------:|:------:|:------:|:-------------:|:-----------:|
+| 银幕长度 |       28m        |        22m         |       22m        |       22m        |  18m   |  16m   |      22m      |     22m     |
+| 2D亮度 |       22FL       |        22FL        |      <22FL       |       14FL       |  31FL  |  36FL  |     20FL      |    14FL     |
+| 3D亮度 |       14FL       |        12FL        |      <12FL       |       4FL        |  14FL  |  28FL  |     10FL      |     6FL     |
+| 分辨率  |        4K        |         4K         |        4k        |        2K        |   4K   |   4K   |      4K       |     2K      |
+| 对比度  |      8000:1      |       4000:1       |        /         |      2000:1      | 100万:1 | 6000:1 |       /       |      /      |
+| 3D技术 |        分色        |        圆偏振         |       圆偏振        |       线偏振        |   分色   |  圆偏振   |      圆偏振      |     线偏振     |
+|  音频  |      12.0声道      |       12.0声道       |      5.0声道       |      5.0声道       | 杜比全景声  | 5.0声道  |    12.0声道     |    5.0声道    |
+
+杜比影院 = 杜比全景声 + 杜比视界 + 杜比3D + 影院设计
+
+<SiteInfo name="全球影厅分布数据" url="https://docs.qq.com/sheet/DQ3FEUUZJdklNSWJP" preview="https://img.sherry4869.com/blog/link/movies/cinema.jpg" />
+
 ## 在线观影
 
 ### 低端影视
 
-网站地址：[https://ddys.art](https://ddys.art)
+网站地址：[https://ddys.art](https://ddys.art/)
 
-[//]: # (网站发布页：[https://ddys.site]&#40;https://ddys.site&#41;)
+网站发布页：[https://ddys.site](https://ddys.site/)
 
 ::: info 站长自述
 我们的目标是提供最便捷的，同时支持电脑和移动设备的超清画质在线观看影视剧体验  
@@ -31,23 +57,15 @@ article: false
 
 ![](https://img.sherry4869.com/blog/link/movies/share/img_2.png)
 
-### NoTV
-
-网址：[http://www.notv.cc](http://www.notv.cc)
-
-备用网址：[https://www.2x1.cc](https://www.2x1.cc)
-
-![](https://img.sherry4869.com/blog/link/movies/share/img_3.png)
-
 ### HDmoli
 
-网址：[https://www.hdmoli.com](https://www.hdmoli.com)
+网址：[https://www.hdmoli.com](https://www.hdmoli.com/)
 
 ![](https://img.sherry4869.com/blog/link/movies/share/img_10.png)
 
 ### 无名小站
 
-网址：[https://www.btnull.org](https://www.btnull.org)
+网址：[https://www.btnull.org](https://www.btnull.org/)
 
 ![](https://img.sherry4869.com/blog/link/movies/share/img_12.png)
 
@@ -55,7 +73,7 @@ article: false
 
 ### 音范丝
 
-网址：[https://www.yinfans.me](https://www.yinfans.me)
+网址：[https://www.yinfans.me](https://www.yinfans.me/)
 
 会员制：无
 
@@ -72,9 +90,9 @@ article: false
 
 ### MINI4K迷客电影
 
-网址：[https://www.mini4k.com](https://www.mini4k.com)
+网址：[https://www.mini4k.com](https://www.mini4k.com/)
 
-会员制：会员可以下载所有资源
+会员制：会员才可以下载资源
 
 ::: info 会员说明
 永久会员：60元
@@ -86,9 +104,9 @@ article: false
 
 ### Grab4K
 
-网址：[https://www.grab4k.com](https://www.grab4k.com)
+网址：[https://www.grab4k.net](https://www.grab4k.net/)
 
-会员制：会员可以下载所有资源
+会员制：会员才可以下载资源
 
 ::: info 会员说明
 年费会员：119元/年
@@ -118,7 +136,9 @@ article: false
 
 ### SubHD
 
-网址：[https://subhd.tv](https://subhd.tv)
+字幕下载平台
+
+网址：[https://subhd.tv](https://subhd.tv/)
 
 会员制：无
 

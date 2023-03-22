@@ -4,7 +4,6 @@ category: IT
 tag:
   - Java
   - Apache
-  - POI
 ---
 
 # Apache POI 读写电子表格
@@ -12,12 +11,10 @@ tag:
 <!-- more -->
 
 ::: info 官方文献
-HSSF 是我们对 Microsoft Excel 97 (-2003) 文件格式 (BIFF8) 的纯 Java 移植。XSSF是我们对Microsoft Excel XML (2007+)文件格式（OOXML）的纯Java移植。SS是一个包，用一个共同的API为这两种格式提供共同的支持。它们都支持读和写的能力
+HSSF 是我们对 Microsoft Excel 97 (-2003) 文件格式 (BIFF8) 的纯 Java 移植。XSSF 是我们对 Microsoft Excel XML (2007+)文件格式（OOXML）的纯 Java 移植。SS 是一个包，用一个共同的 API 为这两种格式提供共同的支持。它们都支持读和写的能力
 :::
 
-## 准备工作
-
-### 相关依赖
+## 依赖配置
 
 ```xml
 <dependencies>
@@ -56,11 +53,13 @@ HSSF 是我们对 Microsoft Excel 97 (-2003) 文件格式 (BIFF8) 的纯 Java �
 
 ### 准备工作
 
-1. 创建一个基于Maven构建的Java工程
-2. 把 [报销单](https://img.sherry4869.com/blog/it/apache/poi/poi-excel/%E6%8A%A5%E9%94%80%E5%8D%95.xlsx) 下载到工程 src/main/resources/static 目录下
-3. 可以参考 [条形码生成技术-Barcode4J](/IT/Java/barcode/Barcode4J) 把生成出来的条形码下载到工程 src/main/resources/static 目录下
+1. 创建一个基于 Maven 构建的 Java 工程
 
-### 编码
+2. 把 [报销单](https://img.sherry4869.com/blog/it/apache/poi/poi-excel/%E6%8A%A5%E9%94%80%E5%8D%95.xlsx) 下载到工程 src/main/resources/static 目录下
+
+3. 可以参考 [条形码生成技术-Barcode4J](/it/java/barcode/barcode4j/) 把生成出来的条形码下载到工程中的 src/main/resources/static 目录下
+
+### 代码实现
 
 ```java
 public class Main {
@@ -83,22 +82,31 @@ public class Main {
 
 ### 参数配置
 
-::: info void resize()
+#### void resize()
+
 将图像重置为嵌入图像的尺寸
-:::
-::: info void resize(double scale)
+
+#### void resize(double scale)
+
 按比例调整图像大小
-:::
-::: info void resize(double scaleX, double scaleY)
-调整图像大小，请注意，此方法仅适用于工作簿 使用默认字体大小（Arial 10pt 表示.xls，Calibri 11pt 表示.xlsx）。 如果更改默认字体，调整大小的图像可以垂直或水平划线  
-resize(1.0,1.0)保留原始大小  
-调整为原始大小的 50%  
-调整为原始大小的 200%  
-调整为嵌入图像的尺寸。resize(0.5,0.5) resize(2.0,2.0) resize(Double.MAX_VALUE,Double.MAX_VALUE)  
-参数：  
-scaleX- 图像宽度相对于原始宽度相乘的量  
+
+#### void resize(double scaleX, double scaleY)
+
+调整图像大小，请注意，此方法仅适用于工作簿使用默认字体大小（Arial 10pt 表示.xls，Calibri 11pt 表示.xlsx）。如果更改默认字体，调整大小的图像可以垂直或水平划线
+
+resize(1.0,1.0) 保留原始大小
+
+resize(0.5,0.5) 调整为原始大小的 50%
+
+resize(2.0,2.0) 调整为原始大小的 200%
+
+resize(Double.MAX_VALUE,Double.MAX_VALUE) 调整为嵌入图像的尺寸
+
+参数：
+
+scaleX- 图像宽度相对于原始宽度相乘的量
+
 scaleY- 图像高度相对于原始高度相乘的量
-:::
 
 ### 常见问题
 
