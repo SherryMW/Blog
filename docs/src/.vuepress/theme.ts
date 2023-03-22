@@ -5,7 +5,7 @@ import {SidebarConfig} from "./config/sidebar";
 process.env.TZ = "Asia/Shanghai";
 let data = await fetch("https://api.github.com/repos/SherryMW/Blog?token=ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGZrbd1zYgX7b4FYXUpAxWEjDOIJAYsuyjIuAEhKeove sherry_mw@163.com").then(response => response.json());
 let pushedAt = new Date(data['pushed_at']);
-let lastUpdate = pushedAt.getFullYear().toString() + "年" + (pushedAt.getMonth() + 1).toString() + "月" + pushedAt.getDate().toString() + "日 " + pushedAt.getHours() + ":" + pushedAt.getMinutes();
+let lastUpdate = pushedAt.getFullYear().toString() + "年" + (pushedAt.getMonth() + 1).toString() + "月" + pushedAt.getDate().toString() + "日 " + pushedAt.getHours() + ":" + ("0" + pushedAt.getMinutes()).slice(-2);
 
 export default hopeTheme({
     hostname: "https://blog.sherry4869.com", // 当前网站部署到的域名
