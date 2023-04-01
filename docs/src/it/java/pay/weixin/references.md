@@ -13,4 +13,4 @@ article: false
 
 [H5支付开发指引](https://pay.weixin.qq.com/wiki/doc/api/H5.php?chapter=15_4)
 
-<BiliBili bvid="BV1US4y1D77m" no-danmaku />
+[尚硅谷在线支付实战](https://www.bilibili.com/video/BV1US4y1D77m)

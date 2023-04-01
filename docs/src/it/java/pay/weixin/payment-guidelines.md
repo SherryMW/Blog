@@ -5,6 +5,7 @@ tag:
   - Java
   - 支付
 order: 1
+article: false
 ---
 
 # 微信支付接入指引

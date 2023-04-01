@@ -4,6 +4,7 @@ category: IT
 tag:
   - Java
   - Apache
+article: false
 ---
 
 # ShardingSphere 5

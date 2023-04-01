@@ -25,9 +25,9 @@ export const NavbarConfig = navbar([
     //         }
     //     ]
     // },
-    {
-        text: "链接",
-        icon: "link",
-        link: "/link/developers"
-    }
+    // {
+    //     text: "链接",
+    //     icon: "link",
+    //     link: "/link/developers"
+    // }
 ]);

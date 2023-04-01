@@ -5,6 +5,7 @@ tag:
  - Java
  - 支付
 order: 1
+article: false
 ---
 
 # 支付宝支付接入指引

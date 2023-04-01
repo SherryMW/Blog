@@ -7,4 +7,4 @@ article: false
 
 [支付宝开放平台文档中心](https://opendocs.alipay.com/common/02fwvj)
 
-<BiliBili bvid="BV1US4y1D77m" page="71" no-danmaku />
+[尚硅谷在线支付实战](https://www.bilibili.com/video/BV1US4y1D77m?p=71)

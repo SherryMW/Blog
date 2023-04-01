@@ -1,6 +1,7 @@
 ---
 date: 2023-02-28
 category: IT
+article: false
 ---
 
 # MinIO
