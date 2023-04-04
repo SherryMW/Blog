@@ -36,7 +36,7 @@ article: false
 ```
 :::
 
-## 测速
+## 测试
 
 ::: projects
 ```yaml
@@ -56,14 +56,14 @@ article: false
 
 ::: projects
 ```yaml
+- icon: https://squoosh.app/c/icon-demo-logo-326ed9b6.png
+  name: Squoosh
+  link: https://squoosh.app
+  
 - icon: https://tinypng.com/images/panda-chewing.png
   name: TinyPNG
   desc: 智能 WebP、PNG 和 JPEG 压缩
   link: https://tinypng.com
-  
-- icon: https://squoosh.app/c/icon-demo-logo-326ed9b6.png
-  name: Squoosh
-  link: https://squoosh.app
 ```
 :::
 
