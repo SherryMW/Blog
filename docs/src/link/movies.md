@@ -4448,7 +4448,7 @@ Best Music, Scoring Original Song Score and/or Adaptation：《歌厅》 Cabaret
 
 最佳导演：朴赞郁 박찬욱 《分手的决心》
 
-最佳剧本奖：朴赞郁、郑瑞景 《分手的决心》
+最佳剧本奖：朴赞郁 박찬욱、郑瑞景 정서경 《分手的决心》
 
 最佳男主角：朴海日 박해일 《分手的决心》
 
