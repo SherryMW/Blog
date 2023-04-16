@@ -1,5 +1,6 @@
 ---
 article: false
+comment: true
 ---
 
 # 开发

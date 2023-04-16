@@ -38,24 +38,7 @@ export const SidebarConfig = sidebar({
             collapsible: true,
             children: "structure"
         },
-        {
-            text: "呼吸内科",
-            prefix: "ill/respiratory/",
-            collapsible: true,
-            children: "structure"
-        },
-        {
-            text: "口腔科",
-            prefix: "ill/dental/",
-            collapsible: true,
-            children: "structure"
-        },
-        {
-            text: "皮肤科",
-            prefix: "ill/skin/",
-            collapsible: true,
-            children: "structure"
-        }
+        "ill"
     ],
 
     "/life/delicacies/": [
@@ -138,6 +121,6 @@ export const SidebarConfig = sidebar({
         "gogogo"
     ],
 
-    "/link/": ["developers", "tool", "movies", "friend"]
+    "/collection/": ["developers", "tool", "movies"]
 
 });

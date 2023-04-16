@@ -1,5 +1,6 @@
 ---
 article: false
+comment: true
 ---
 
 # 影视
@@ -5772,6 +5773,48 @@ Best Music, Scoring Original Song Score and/or Adaptation：《歌厅》 Cabaret
 
 ::: tabs
 
+@tab 2023
+
+最佳电影：《给十九岁的我》
+
+最佳导演：韦家辉《神探大战》
+
+最佳编剧：《神探大战》
+
+最佳男主角：刘青云 《神探大战》
+
+最佳女主角：郑秀文 《流水落花》
+
+最佳男配角：许冠文 《风再起时》
+
+最佳女配角：王菀之 《还是觉得你最好》
+
+最佳新演员：林诺 《白日青春》
+
+最佳摄影：《神探大战》
+
+最佳剪接：《正义回廊》
+
+最佳美术指导：《风再起时》
+
+最佳服装造型设计：《风再起时》
+
+最佳动作设计：《明日战记》
+
+最佳原创电影音乐：《窄路微尘》
+
+最佳原创电影歌曲：《流水落花》
+
+最佳音响效果：《明日战记》
+
+最佳视觉效果：《明日战记》
+
+新晋导演：何爵天《正义回廊》
+
+最佳亚洲电影：《海的尽头是草原》
+
+终身成就奖：胡枫
+
 @tab 2022
 
 最佳电影：《怒火·重案》
@@ -7278,7 +7321,7 @@ Best Music, Scoring Original Song Score and/or Adaptation：《歌厅》 Cabaret
 
 网址：[https://www.rottentomatoes.com](https://www.rottentomatoes.com/)
 
-![漫威电影宇宙所有电影&剧集烂番茄新鲜度（2008-2023）](https://img.sherry4869.com/blog/link/movies/tomatoes-mcu.jpg)
+![漫威电影宇宙所有电影&剧集烂番茄新鲜度（2008-2023）](https://img.sherry4869.com/blog/movies/tomatoes-mcu.jpg)
 
 ## 影厅
 
@@ -7294,7 +7337,7 @@ Best Music, Scoring Original Song Score and/or Adaptation：《歌厅》 Cabaret
 
 杜比影院 = 杜比全景声 + 杜比视界 + 杜比3D + 影院设计
 
-<SiteInfo name="全球影厅分布数据" url="https://docs.qq.com/sheet/DQ3FEUUZJdklNSWJP" preview="https://img.sherry4869.com/blog/link/movies/cinema.jpg" />
+<SiteInfo name="全球影厅分布数据" url="https://docs.qq.com/sheet/DQ3FEUUZJdklNSWJP" preview="https://img.sherry4869.com/blog/movies/cinema.jpg" />
 
 ## 在线观影
 
@@ -7302,13 +7345,13 @@ Best Music, Scoring Original Song Score and/or Adaptation：《歌厅》 Cabaret
 
 网址：[https://ddys.art](https://ddys.art/)
 
-![](https://img.sherry4869.com/blog/link/movies/share/img.png)
+![](https://img.sherry4869.com/blog/movies/share/img.png)
 
 ### HDmoli
 
 网址：[https://www.hdmoli.com](https://www.hdmoli.com/)
 
-![](https://img.sherry4869.com/blog/link/movies/share/img_1.png)
+![](https://img.sherry4869.com/blog/movies/share/img_1.png)
 
 ## 资源下载
 
@@ -7318,7 +7361,7 @@ Best Music, Scoring Original Song Score and/or Adaptation：《歌厅》 Cabaret
 
 会员制：无
 
-![](https://img.sherry4869.com/blog/link/movies/share/img_2.png)
+![](https://img.sherry4869.com/blog/movies/share/img_2.png)
 
 ### MINI4K迷客电影
 
@@ -7330,7 +7373,7 @@ Best Music, Scoring Original Song Score and/or Adaptation：《歌厅》 Cabaret
 永久 VIP：60元
 :::
 
-![](https://img.sherry4869.com/blog/link/movies/share/img_3.jpg)
+![](https://img.sherry4869.com/blog/movies/share/img_3.jpg)
 
 ### Grab4K
 
@@ -7342,9 +7385,9 @@ Best Music, Scoring Original Song Score and/or Adaptation：《歌厅》 Cabaret
 年度 VIP：119元/年
 :::
 
-![](https://img.sherry4869.com/blog/link/movies/share/img_4.jpg)
+![](https://img.sherry4869.com/blog/movies/share/img_4.jpg)
 
-![](https://img.sherry4869.com/blog/link/movies/share/img_5.jpg)
+![](https://img.sherry4869.com/blog/movies/share/img_5.jpg)
 
 ### 布谷TV
 
@@ -7360,7 +7403,7 @@ Best Music, Scoring Original Song Score and/or Adaptation：《歌厅》 Cabaret
 永久 VIP：99元
 :::
 
-![](https://img.sherry4869.com/blog/link/movies/share/img_6.jpg)
+![](https://img.sherry4869.com/blog/movies/share/img_6.jpg)
 
 ### SubHD
 
@@ -7370,4 +7413,4 @@ Best Music, Scoring Original Song Score and/or Adaptation：《歌厅》 Cabaret
 
 会员制：无
 
-![](https://img.sherry4869.com/blog/link/movies/share/img_7.png)
+![](https://img.sherry4869.com/blog/movies/share/img_7.png)

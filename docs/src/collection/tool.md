@@ -1,5 +1,6 @@
 ---
 article: false
+comment: true
 ---
 
 # 工具
@@ -17,6 +18,17 @@ article: false
   name: UNIT helper
   desc: 在线单位换算器
   link: https://cn.unithelper.com
+```
+:::
+
+## 语言
+
+::: projects
+```yaml
+- icon: https://d35aaqx5ub95lt.cloudfront.net/vendor/70a4be81077a8037698067f583816ff9.svg
+  name: 多邻国
+  desc: 好玩高效的英语学习途径
+  link: https://www.duolingo.cn/
 ```
 :::
 

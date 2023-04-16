@@ -1,4 +1,4 @@
-import {hopeTheme} from "vuepress-theme-hope/perf";
+import {hopeTheme} from "vuepress-theme-hope";
 import {NavbarConfig} from "./config/navbar";
 import {SidebarConfig} from "./config/sidebar";
 
@@ -11,9 +11,9 @@ export default hopeTheme({
     hostname: "https://blog.sherry4869.com",// 当前网站部署到的域名
     author: {
         name: "MW",// 作者名称
-        // url: "https://blog.sherry4869.com"
+        url: "https://blog.sherry4869.com"
     },
-    iconAssets: "iconfont",// 字体图标资源链接 https://www.iconfont.cn/
+    iconAssets: "//at.alicdn.com/t/c/font_3855310_p3z6ugbxr7a.css",
     logo: "/logo.svg",// 网站 Logo
     repo: "SherryMW/Blog",// 仓库配置，默认为 GitHub 同时也可以是一个完整的 URL
     repoDisplay: false,// 是否在导航栏内显示仓库链接入口，默认为 true
@@ -30,7 +30,7 @@ export default hopeTheme({
     blog: {
         avatar: "/avatar.jpg",// 头像
         roundAvatar: true,// 是否剪裁头像为圆形形状
-        description: "上次更新：" + lastUpdate,// 主页口号、座右铭或介绍语 过往不恋 未来不迎
+        description: "过往不恋 未来不迎 <br/> <br/> 上次更新：" + lastUpdate,// 主页口号、座右铭或介绍语
         intro: "",// 填写后点击头像或作者名称进入个人介绍页的界面地址
         // 主页媒体链接配置
         medias: {

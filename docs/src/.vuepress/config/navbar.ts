@@ -8,12 +8,12 @@ export const NavbarConfig = navbar([
     },
     // {
     //     text: "生活",
-    //     icon: "emoji",
+    //     icon: "creative",
     //     prefix: "/life/",
     //     children: [
     //         {
     //             text: "健康",
-    //             link: "healthy/"
+    //             link: "healthy/sleep/2023"
     //         },
     //         {
     //             text: "饮食",
@@ -26,8 +26,18 @@ export const NavbarConfig = navbar([
     //     ]
     // },
     {
-        text: "链接",
+        text: "收藏",
+        icon: "start",
+        link: "/collection/developers"
+    },
+    {
+        text: "友情链接",
         icon: "link",
-        link: "/link/developers"
+        link: "/friends"
+    },
+    {
+        text: "关于",
+        icon: "info",
+        link: "/intro"
     }
 ]);
