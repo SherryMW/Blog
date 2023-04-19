@@ -9,7 +9,7 @@ comment: true
 
 ### 奥斯卡金像奖
 
-[奥斯卡官网](https://www.oscars.org/)
+[官方网站](https://www.oscars.org/)
 
 ::: tabs
 
@@ -4441,6 +4441,8 @@ Best Music, Scoring Original Song Score and/or Adaptation：《歌厅》 Cabaret
 
 ### 韩国青龙电影奖
 
+[官方网站](http://www.blueaward.co.kr/)
+
 ::: tabs
 
 @tab 2022
@@ -5771,6 +5773,8 @@ Best Music, Scoring Original Song Score and/or Adaptation：《歌厅》 Cabaret
 
 ### 香港电影金像奖
 
+[官方网站](https://hkfaa.com/)
+
 ::: tabs
 
 @tab 2023
@@ -5787,7 +5791,7 @@ Best Music, Scoring Original Song Score and/or Adaptation：《歌厅》 Cabaret
 
 最佳男配角：许冠文 《风再起时》
 
-最佳女配角：王菀之 《还是觉得你最好》
+最佳女配角：王菀之 《饭戏攻心》
 
 最佳新演员：林诺 《白日青春》
 

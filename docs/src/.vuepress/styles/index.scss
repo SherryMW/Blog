@@ -1,5 +1,6 @@
 // place your custom styles here
 
+//卡片样式
 .project-panel {
   a {
     &:hover {
@@ -16,4 +17,9 @@
   .language-yaml {
     display: none;
   }
+}
+
+//取消博客首页Banner灰度
+.blog-hero .mask::after {
+  background: var(--light);
 }

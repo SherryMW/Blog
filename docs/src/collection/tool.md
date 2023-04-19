@@ -32,6 +32,17 @@ comment: true
 ```
 :::
 
+## 翻译
+
+::: projects
+```yaml
+- icon: https://static.deepl.com/img/logo/DeepL_Logo_darkBlue_v2.svg
+  name: DeepL 翻译器
+  desc: 全世界最准的翻译
+  link: https://www.deepl.com/translator
+```
+:::
+
 ## 开发
 
 ::: projects
@@ -70,22 +81,12 @@ comment: true
 ```yaml
 - icon: https://squoosh.app/c/icon-demo-logo-326ed9b6.png
   name: Squoosh
+  desc: Small Simple Secure
   link: https://squoosh.app
   
 - icon: https://tinypng.com/images/panda-chewing.png
   name: TinyPNG
   desc: 智能 WebP、PNG 和 JPEG 压缩
   link: https://tinypng.com
-```
-:::
-
-## 翻译
-
-::: projects
-```yaml
-- icon: https://static.deepl.com/img/logo/DeepL_Logo_darkBlue_v2.svg
-  name: DeepL 翻译器
-  desc: 全世界最准的翻译
-  link: https://www.deepl.com/translator
 ```
 :::

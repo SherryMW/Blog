@@ -15,7 +15,7 @@ comment: true
 
 ## 关于博客
 
-主题：[vuepress-theme-hope](https://theme-hope.vuejs.press/zh/)
+主题：[VuePress-Theme-Hope](https://theme-hope.vuejs.press/zh/)
 
 部署：[Vercel](http://vercel.com/)
 
