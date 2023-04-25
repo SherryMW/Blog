@@ -14,7 +14,7 @@ comment: true
   desc: 工欲善其事，必先利其器
   link: https://uutool.cn
   
-- icon: https://cn.unithelper.com/static/logo.svg
+- icon: https://cn.unithelper.com/favicon.ico
   name: UNIT helper
   desc: 在线单位换算器
   link: https://cn.unithelper.com
@@ -25,7 +25,7 @@ comment: true
 
 ::: projects
 ```yaml
-- icon: https://d35aaqx5ub95lt.cloudfront.net/vendor/70a4be81077a8037698067f583816ff9.svg
+- icon: https://d35aaqx5ub95lt.cloudfront.net/favicon.ico
   name: 多邻国
   desc: 好玩高效的英语学习途径
   link: https://www.duolingo.cn/
@@ -43,19 +43,34 @@ comment: true
 ```
 :::
 
-## 开发
+## 编程
 
 ::: projects
 ```yaml
+- icon: https://leetcode.cn/favicon.ico
+  name: LeetCode
+  desc: 全球极客挚爱的技术成长平台
+  link: https://leetcode.cn/
+  
+- icon: https://jsn.lintcode.com/static/img/favicon.ico
+  name: LintCode
+  desc: 通过在线实操的方式，提升编程能力
+  link: https://www.lintcode.com/
+
+- icon: https://regexlearn.com/favicon.svg
+  name: RegexLearn
+  desc: 逐步学习正则表达式，从零基础到高阶
+  link: https://regexlearn.com/zh-cn
+
 - icon: https://goregex.cn/favicon.ico
   name: GoRegex.Cn
   desc: Regex正则表达式在线测试、生成、解析工具
   link: https://goregex.cn
-  
-- icon: https://regexlearn.com/logo.svg
-  name: RegexLearn
-  desc: 逐步学习正则表达式，从零基础到高阶
-  link: https://regexlearn.com/zh-cn
+
+- icon: https://code.org/images/logo.svg
+  name: CODE
+  desc: 学习计算机科学，改变世界
+  link: https://code.org/
 ```
 :::
 

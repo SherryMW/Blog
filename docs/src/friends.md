@@ -3,9 +3,9 @@ article: false
 comment: true
 ---
 
-# 友链
+# 友情链接
 
-**友情链接 排名按添加顺序**
+**排名按添加顺序**
 
 ::: projects
 ```yaml

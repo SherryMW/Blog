@@ -11,7 +11,7 @@ comment: true
 
 ::: projects
 ```yaml
-- icon: https://element-plus.org/images/element-plus-logo.svg
+- icon: https://element-plus.org//images/element-plus-logo-small.svg
   name: Element Plus
   desc: 基于 Vue 3 面向设计师和开发者的组件库
   link: https://element-plus.org/

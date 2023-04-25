@@ -21,7 +21,7 @@ export const NavbarConfig = navbar([
     //         },
     //         {
     //             text: "娱乐",
-    //             link: "play/guangzhou/"
+    //             link: "play/"
     //         }
     //     ]
     // },
