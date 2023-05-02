@@ -9,5 +9,5 @@ export const CollectionSidebar = arraySidebar([
         collapsible: true,
         children: "structure"
     },
-    "game"
+    "games"
 ])
