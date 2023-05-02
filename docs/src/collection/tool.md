@@ -5,19 +5,22 @@ comment: true
 
 # 工具
 
-## 工具箱
-
 ::: projects
 ```yaml
 - icon: https://uutool.cn/favicon.ico
   name: UU在线工具
   desc: 工欲善其事，必先利其器
-  link: https://uutool.cn
+  link: https://uutool.cn/
   
 - icon: https://cn.unithelper.com/favicon.ico
   name: UNIT helper
   desc: 在线单位换算器
-  link: https://cn.unithelper.com
+  link: https://cn.unithelper.com/
+
+- icon: https://global-uploads.webflow.com/5a5de2c1a0eb5000019e4dc0/5d9b02fbeaeaab4acd4f95fb_favicon-256x256.png
+  name: Be My Eyes
+  desc: 帮助盲人
+  link: https://www.bemyeyes.com/
 ```
 :::
 
@@ -29,13 +32,7 @@ comment: true
   name: 多邻国
   desc: 好玩高效的英语学习途径
   link: https://www.duolingo.cn/
-```
-:::
 
-## 翻译
-
-::: projects
-```yaml
 - icon: https://static.deepl.com/img/logo/DeepL_Logo_darkBlue_v2.svg
   name: DeepL 翻译器
   desc: 全世界最准的翻译
@@ -65,7 +62,7 @@ comment: true
 - icon: https://goregex.cn/favicon.ico
   name: GoRegex.Cn
   desc: Regex正则表达式在线测试、生成、解析工具
-  link: https://goregex.cn
+  link: https://goregex.cn/
 
 - icon: https://code.org/images/logo.svg
   name: CODE
@@ -86,22 +83,22 @@ comment: true
 - icon: https://fast.com/assets/new-logo-vert-37861c.svg
   name: FAST
   desc: Internet Speed Test
-  link: https://fast.com
+  link: https://fast.com/
 ```
 :::
 
-## 图片压缩
+## 压缩
 
 ::: projects
 ```yaml
 - icon: https://squoosh.app/c/icon-demo-logo-326ed9b6.png
   name: Squoosh
   desc: Small Simple Secure
-  link: https://squoosh.app
+  link: https://squoosh.app/
   
 - icon: https://tinypng.com/images/panda-chewing.png
   name: TinyPNG
   desc: 智能 WebP、PNG 和 JPEG 压缩
-  link: https://tinypng.com
+  link: https://tinypng.com/
 ```
 :::

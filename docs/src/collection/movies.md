@@ -7311,19 +7311,19 @@ Best Music, Scoring Original Song Score and/or Adaptation：《歌厅》 Cabaret
 
 ### 豆瓣电影
 
-网址：[https://movie.douban.com](https://movie.douban.com/)
+官网：[https://movie.douban.com](https://movie.douban.com/)
 
 [豆瓣电影 Top 250](https://movie.douban.com/top250)
 
 ### IMDB
 
-网址：[https://www.imdb.com](https://www.imdb.com/)
+官网：[https://www.imdb.com](https://www.imdb.com/)
 
 [IMDb Top 250 Movies](https://www.imdb.com/chart/top/?ref_=nv_mv_250)
 
 ### 烂番茄
 
-网址：[https://www.rottentomatoes.com](https://www.rottentomatoes.com/)
+官网：[https://www.rottentomatoes.com](https://www.rottentomatoes.com/)
 
 ![漫威电影宇宙所有电影&剧集烂番茄新鲜度（2008-2023）](https://img.sherry4869.com/blog/movies/tomatoes-mcu.jpg)
 
@@ -7339,9 +7339,9 @@ Best Music, Scoring Original Song Score and/or Adaptation：《歌厅》 Cabaret
 | 3D技术 |        分色        |        圆偏振         |       圆偏振        |       线偏振        |   分色   |  圆偏振   |      圆偏振      |     线偏振     |
 |  音频  |      12.0声道      |       12.0声道       |      5.0声道       |      5.0声道       | 杜比全景声  | 5.0声道  |    12.0声道     |    5.0声道    |
 
-IMAX 网址：[http://www.imax.cn/](http://www.imax.cn/)
+IMAX 官网：[http://www.imax.cn](http://www.imax.cn/)
 
-Dolby 网址：[https://www.dolby.com/zh-cn/](https://www.dolby.com/zh-cn/)
+Dolby 官网：[https://www.dolby.com/zh-cn](https://www.dolby.com/zh-cn/)
 
 杜比影院 = 杜比全景声 + 杜比视界 + 杜比3D + 影院设计
 
@@ -7349,15 +7349,35 @@ Dolby 网址：[https://www.dolby.com/zh-cn/](https://www.dolby.com/zh-cn/)
 
 ## 在线观影
 
+### Netflix
+
+官网：[https://www.netflix.com/hk](https://www.netflix.com/hk/)
+
+套餐和定价：[https://help.netflix.com/zh-cn/node/24926/hk](https://help.netflix.com/zh-cn/node/24926/hk)
+
+![](https://img.sherry4869.com/blog/movies/share/img_8.jpg)
+
+### Apple TV+
+
+官网：[https://tv.apple.com/hk](https://tv.apple.com/hk)
+
+![](https://img.sherry4869.com/blog/movies/share/img_9.jpg)
+
+### Prime Video
+
+官网：[https://www.primevideo.com](https://www.primevideo.com/)
+
+![](https://img.sherry4869.com/blog/movies/share/img_10.jpg)
+
 ### 低端影视
 
-网址：[https://ddys.art](https://ddys.art/)
+官网：[https://ddys.art](https://ddys.art/)
 
 ![](https://img.sherry4869.com/blog/movies/share/img.png)
 
 ### HDmoli
 
-网址：[https://www.hdmoli.com](https://www.hdmoli.com/)
+官网：[https://www.hdmoli.com](https://www.hdmoli.com/)
 
 ![](https://img.sherry4869.com/blog/movies/share/img_1.png)
 
@@ -7365,15 +7385,13 @@ Dolby 网址：[https://www.dolby.com/zh-cn/](https://www.dolby.com/zh-cn/)
 
 ### 音范丝
 
-网址：[https://www.yinfans.me](https://www.yinfans.me/)
-
-会员制：无
+官网：[https://www.yinfans.me](https://www.yinfans.me/)
 
 ![](https://img.sherry4869.com/blog/movies/share/img_2.png)
 
 ### MINI4K迷客电影
 
-网址：[https://www.mini4k.com](https://www.mini4k.com/)
+官网：[https://www.mini4k.com](https://www.mini4k.com/)
 
 ::: info 会员说明
 会员才可以下载资源
@@ -7385,7 +7403,7 @@ Dolby 网址：[https://www.dolby.com/zh-cn/](https://www.dolby.com/zh-cn/)
 
 ### Grab4K
 
-网址：[https://www.grab4k.net](https://www.grab4k.net/)
+官网：[https://www.grab4k.net](https://www.grab4k.net/)
 
 ::: info 会员说明
 会员才可以下载资源
@@ -7399,7 +7417,7 @@ Dolby 网址：[https://www.dolby.com/zh-cn/](https://www.dolby.com/zh-cn/)
 
 ### 布谷TV
 
-网址：[https://www.bugutv.net](https://www.bugutv.net)
+官网：[https://www.bugutv.net](https://www.bugutv.net)
 
 ::: info 会员说明
 会员可以下载杜比视界影像的资源
@@ -7417,8 +7435,6 @@ Dolby 网址：[https://www.dolby.com/zh-cn/](https://www.dolby.com/zh-cn/)
 
 字幕组平台
 
-网址：[https://subhd.tv](https://subhd.tv/)
-
-会员制：无
+官网：[https://subhd.tv](https://subhd.tv/)
 
 ![](https://img.sherry4869.com/blog/movies/share/img_7.png)
