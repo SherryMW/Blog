@@ -1,11 +1,12 @@
 import {sidebar} from "vuepress-theme-hope";
 import {PostgreSQLSidebar} from "../../it/database/postgresql/sidebar"
+import {CollectionSidebar} from "../../collection/sidebar"
 
 export const SidebarConfig = sidebar({
 
     "/it/database/postgresql": PostgreSQLSidebar,
 
-    "/collection/": ["developers", "tool", "movies"]
+    "/collection/": CollectionSidebar,
 
     // "/it/java/pay/": [
     //     {
@@ -126,6 +127,5 @@ export const SidebarConfig = sidebar({
     //     },
     //     "gogogo"
     // ],
-
 
 });
