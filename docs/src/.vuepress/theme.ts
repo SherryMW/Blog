@@ -3,6 +3,7 @@ import {NavbarConfig} from "./config/navbar";
 import {SidebarConfig} from "./config/sidebar";
 
 process.env.TZ = "Asia/Shanghai";
+// @ts-ignore
 let data = await fetch("https://api.github.com/repos/SherryMW/Blog?token=ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGZrbd1zYgX7b4FYXUpAxWEjDOIJAYsuyjIuAEhKeove sherry_mw@163.com").then(response => response.json());
 let pushedAt = new Date(data['pushed_at']);
 let lastUpdate = pushedAt.getFullYear() + "年" + (pushedAt.getMonth() + 1) + "月" + pushedAt.getDate() + "日 " + pushedAt.getHours() + ":" + ("0" + pushedAt.getMinutes()).slice(-2);
