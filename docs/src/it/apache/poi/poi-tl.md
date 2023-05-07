@@ -4,7 +4,6 @@ category: IT
 tag: 
   - Java
   - Apache
-article: false
 ---
 
 # 在文档的任何地方做任何事情
@@ -12,7 +11,7 @@ article: false
 poi-tl（poi template language）是 Word 模板引擎，使用 Word 模板和数据创建很棒的 Word 文档
 <!-- more -->
 
-## 文档渲染效果
+本示例实现以下的文档渲染效果
 
 ![](https://img.sherry4869.com/blog/it/apache/poi/poi-tl/img.png)
 
@@ -50,7 +49,7 @@ poi-tl（poi template language）是 Word 模板引擎，使用 Word 模板和�
 
 2. 把 [poi-tl-template.docx 模板文档](https://img.sherry4869.com/blog/it/apache/poi/poi-tl/poi-tl-template.docx) 下载到工程中的 src/main/resources/template 目录下
 
-3. 引入相关依赖
+3. 在 pom 文件中引入相关依赖
 
 ```xml
 <dependencies>
@@ -164,4 +163,4 @@ org.apache.poi.openxml4j.exceptions.InvalidFormatException: A part name shall no
 
 ## 参考资料
 
-[poi-tl 官方文档](http://deepoove.com/poi-tl/)
+[Poi-tl Documentation](http://deepoove.com/poi-tl/)

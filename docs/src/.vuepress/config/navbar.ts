@@ -35,9 +35,9 @@ export const NavbarConfig = navbar([
         icon: "link",
         link: "/friends"
     },
-    // {
-    //     text: "关于",
-    //     icon: "info",
-    //     link: "/intro"
-    // }
+    {
+        text: "关于",
+        icon: "info",
+        link: "/intro"
+    }
 ]);

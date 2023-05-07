@@ -3,14 +3,13 @@ date: 2022-12-17
 category: IT
 tag:
   - Java
-article: false
 ---
 
 # 条形码生成技术-Barcode4J
 
 <!-- more -->
 
-![预览 Barcode4J 支持的条形码符号](https://img.sherry4869.com/blog/it/java/barcode/barcode4j/img_3.png)
+![Barcode4J 支持的条形码符号](https://img.sherry4869.com/blog/it/java/barcode/barcode4j/img_3.png)
 
 ## 依赖配置
 
@@ -24,11 +23,9 @@ article: false
 </dependencies>
 ```
 
-::: info
-barcode4j：此库包含完整功能，最新2.1版本
+barcode4j：此库包含完整功能，最新 2.1 版本
 
-barcode4j-light：此库仅包含核心功能，属于轻量级版本，最新2.0版本
-:::
+barcode4j-light：此库仅包含核心功能，属于轻量级版本，最新 2.0 版本
 
 ## 代码实现
 
@@ -59,7 +56,9 @@ public class Main {
 
 ### Code128Bean
 
-#### setModuleWidth(double width)
+::: tabs
+
+@tab setModuleWidth(double width)
 
 设置窄模块的宽度
 
@@ -67,9 +66,8 @@ public class Main {
 
 ![setModuleWidth(0.9)效果图](https://img.sherry4869.com/blog/it/java/barcode/barcode4j/img_1.png)
 
----
 
-#### doQuietZone(boolean value)
+@tab doQuietZone(boolean value)
 
 控制条形码两侧是否留有空白区域
 
@@ -77,10 +75,10 @@ public class Main {
 
 ![doQuietZone(false)效果图](https://img.sherry4869.com/blog/it/java/barcode/barcode4j/img_2.png)
 
----
+:::
 
 ## 参考资料
 
 [Barcode4J 官方文档](https://barcode4j.sourceforge.net/)
 
-[Barcode4J 接口文档](https://barcode4j.sourceforge.net/trunk/javadocs/index.html)
+[Barcode4J Javadocs](https://barcode4j.sourceforge.net/trunk/javadocs/index.html)

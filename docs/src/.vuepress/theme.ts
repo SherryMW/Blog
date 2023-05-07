@@ -48,7 +48,7 @@ export default hopeTheme({
         blog: true,
         // 评论插件配置
         comment: {
-            comment: false,// 是否默认启用评论功能
+            // comment: false,// 是否默认启用评论功能
             provider: "Waline",
             serverURL: "https://waline.sherry4869.com",
         },

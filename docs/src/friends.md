@@ -1,6 +1,5 @@
 ---
 article: false
-comment: true
 ---
 
 # 友情链接

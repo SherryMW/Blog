@@ -1,6 +1,5 @@
 ---
 article: false
-comment: true
 ---
 
 # 关于
