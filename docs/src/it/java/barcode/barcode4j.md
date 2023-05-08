@@ -1,8 +1,7 @@
 ---
 date: 2022-12-17
 category: IT
-tag:
-  - Java
+tag: Java
 ---
 
 # 条形码生成技术-Barcode4J
