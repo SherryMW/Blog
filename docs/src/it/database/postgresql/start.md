@@ -1,8 +1,10 @@
 ---
-date: 2023-04-19
+date: 2023-04-25
 category: IT
 tag:
   - 数据库
+headerDepth: 1
+article: false
 ---
 
 # PostgreSQL
@@ -23,7 +25,7 @@ The best way of learning any database is by getting your hands dirty by pretty m
 
 ![](https://img.sherry4869.com/blog/it/database/postgresql/img.png)
 
-关系型数据库是由多张能互相连接的表组成的数据库。你可能有一张 person 表和一张 car 表。一个人可能有也可能没有汽车，因此这两张表之间是有关联关系的。可以看到 Anne 和 Andrew 没有车，因此两人对应的 car_id 字段的值是空白的。Jake 和 Julia 有对应的 car_id 从而指向 car 表。这就让两张表建立起了关联关系
+关系型数据库是由多张能互相连接的表组成的数据库。你可能有一张 person 表和一张 car 表。实际上一个人可能有也可能没有汽车，因此这两张表之间是有关联关系的。可以看到 Anne 和 Andrew 没有车，因此两人对应的 car_id 字段的值是空白的。Jake 和 Julia 有对应的 car_id 从而指向 car 表。这就让两张表建立起了关联关系
 
 ![](https://img.sherry4869.com/blog/it/database/postgresql/img_1.png)
 
@@ -81,7 +83,7 @@ Postgre 是数据库引擎，而 SQL 是结构化查询语言，是一种数据�
 
    ![](https://img.sherry4869.com/blog/it/database/postgresql/img_5.png =x500)
 
-   需要用到 pgAdmin 4 图形用户界面客户端和 SQL Shell(psql)
+   我们需要用到 pgAdmin 4 图形用户界面客户端和 SQL Shell(psql)
 
 4. **添加环境变量**
 
@@ -289,10 +291,10 @@ Sakila 数据库为 DVD 租赁商店业务建模，其中包含影片、演员�
 
 访问 [https://github.com/jOOQ/sakila/tree/main/postgres-sakila-db](https://github.com/jOOQ/sakila/tree/main/postgres-sakila-db) 下载以下两个文件：
 
-1. postgres-sakila-schema.sql - 此文件包含了创建数据库结构的 sql 脚本，包含数据表，视图、函数，存储过程，触发器
-2. postgres-sakila-insert-data.sql - 此文件包含了导入数据的 sql 脚本
+1. postgres-sakila-schema.sql：此文件包含了创建数据库结构的 sql 脚本，包含数据表，视图、函数，存储过程，触发器
+2. postgres-sakila-insert-data.sql：此文件包含了导入数据的 sql 脚本
 
-在这两个脚本文件都下载完成后，您要做的就是把这两个文件导入到数据库中。您可以使用以下两种工具中的任意一个将 sql 文件导入到数据库：
+当这两个脚本文件都下载完成后，您要做的就是把这两个脚本文件导入到数据库中。您可以使用以下两种工具中的任意一个将 sql 文件导入到数据库：
 
 1. psql 工具
 2. pgAdmin 工具
