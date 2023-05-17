@@ -6,4 +6,6 @@ article: false
 
 [PostgreSQL 官网](https://www.postgresql.org/)
 
-[数据库教程](https://www.sjkjc.com/)
+[PostgreSQL 教程](https://www.sjkjc.com/postgresql/)
+
+[PostgreSQL 函数](https://www.sjkjc.com/postgresql-ref/)

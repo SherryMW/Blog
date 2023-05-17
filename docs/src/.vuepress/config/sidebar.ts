@@ -4,7 +4,7 @@ import {CollectionSidebar} from "../../collection/sidebar"
 
 export const SidebarConfig = sidebar({
 
-    "/it/database/postgresql": PostgreSQLSidebar,
+    "/it/database/postgresql/": PostgreSQLSidebar,
 
     "/collection/": CollectionSidebar,
 
