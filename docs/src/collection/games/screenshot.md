@@ -1,8 +1,9 @@
 ---
+order: 2
 article: false
 ---
 
-# 游戏
+# 截图
 
 ## 双人成行
 

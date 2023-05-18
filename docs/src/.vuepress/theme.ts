@@ -37,7 +37,7 @@ export default hopeTheme({
         medias: {
             // QQ: "https://wpa.qq.com/msgrd?v=3&uin=1341139503&site=qq&menu=yes",
             Wechat: "https://img.sherry4869.com/blog/public/wechat.jpg",
-            Steam: "https://s.team/p/hkgn-rwkh/kkbnhpgn"
+            Steam: "https://steamcommunity.com/profiles/76561199424720757/"
         },
         timeline: "点点滴滴",// 时间轴顶部描述文字
         articleInfo: ["Author", "Date", "Category", "Tag"] // 主页列表中展示的文章相关标识信息
