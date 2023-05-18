@@ -206,7 +206,7 @@ car_id           |
 
 要获取 SQL 命令的说明，请使用 `\h` 命令
 
-比如，要获取 TRUNCATE 的帮助说明，请使用如下的命令：
+比如，要获取 `TRUNCATE` 的帮助说明，请使用如下的命令：
 
 ```postgresql
 \h TRUNCATE

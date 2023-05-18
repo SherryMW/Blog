@@ -11,7 +11,7 @@ PostgreSQL 允许您使用 `HSTORE` 类型存储键值对数据类型，类似�
 
 PostgreSQL `HSTORE` 数据类型很适合存储无规则的字典值，比如电子产品的属性，服装的规格等
 
-PostgreSQL `HSTORE` 数据类型在 hstore 模块中实现。要使用 PostgreSQL `HSTORE` 类型，请使用如下语句启用 PostgreSQL hstore 扩展：
+PostgreSQL `HSTORE` 数据类型在 hstore 模块中实现。要使用 PostgreSQL `HSTORE` 类型，请使用如下语句启用 PostgreSQL `HSTORE` 扩展：
 
 ```sql
 CREATE EXTENSION hstore;

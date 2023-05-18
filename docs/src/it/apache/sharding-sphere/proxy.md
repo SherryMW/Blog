@@ -11,7 +11,9 @@ article: false
 ShardingSphere-Proxy 定位为透明化的数据库代理端，通过实现数据库二进制协议，对异构语言提供支持。 目前提供 MySQL 和 PostgreSQL 协议，透明化数据库操作，对 DBA 更加友好
 
 - 向应用程序完全透明，可直接当做 MySQL/PostgreSQL 使用
+
 - 兼容 MariaDB 等基于 MySQL 协议的数据库，以及 openGauss 等基于 PostgreSQL 协议的数据库
+
 - 适用于任何兼容 MySQL/PostgreSQL 协议的的客户端，如：MySQL Command Client, MySQL Workbench, Navicat 等
 
 ![](https://img.sherry4869.com/blog/it/apache/sharding-sphere/proxy/img.png)
@@ -21,7 +23,9 @@ ShardingSphere-Proxy 定位为透明化的数据库代理端，通过实现数�
 目前 ShardingSphere-Proxy 提供了 3 种获取方式
 
 - [ShardingSphere-Proxy 5.1.2 二进制发布包](https://shardingsphere.apache.org/document/5.1.2/cn/user-manual/shardingsphere-proxy/startup/bin/)
+
 - [ShardingSphere-Proxy 5.1.2 Docker](https://shardingsphere.apache.org/document/5.1.2/cn/user-manual/shardingsphere-proxy/startup/docker/)
+
 - [ShardingSphere-Proxy 5.1.2 Helm](https://shardingsphere.apache.org/document/5.1.2/cn/user-manual/shardingsphere-proxy/startup/helm/)
 
 ### Windows
@@ -36,7 +40,7 @@ ShardingSphere-Proxy 定位为透明化的数据库代理端，通过实现数�
 
 2. 添加 MySQL 驱动
 
-   打开 CMD 指令行窗口输入 `mysql -V` 查看本机驱动版本，如提示【'mysql'不是内部或外部指令，也不是可运行的程序】，请检查本机的系统环境 PATH 变量中是否添加 MySQL 可运行程序路径，如：C:\Program Files\MySQL\MySQL Server 8.0\bin
+   打开命令提示符 CMD 输入 `mysql -V` 查看本机驱动版本，如提示【'mysql'不是内部或外部指令，也不是可运行的程序】，请检查本机的系统环境 PATH 变量中是否添加 MySQL 可运行程序路径，如：C:\Program Files\MySQL\MySQL Server 8.0\bin
 
    访问 [MySQL 驱动下载界面](https://dev.mysql.com/downloads/connector/j/)：Archives -> 选择和本机相同的 MySQL 版本 -> Platform Independent -> Platform Independent (Architecture Independent), ZIP Archive 下载。下载完毕并解压后打开就能看到 mysql-connector-j-8.0.x.jar 驱动文件
 
@@ -61,11 +65,11 @@ ShardingSphere-Proxy 定位为透明化的数据库代理端，通过实现数�
 
 4. 启动 ShardingSphere-Proxy
 
-   进入 D:\software\Apache\apache-shardingsphere-5.1.2-shardingsphere-proxy-bin\bin 目录中打开 CMD 指令行窗口输入 `start.bat` 指令启动，默认启动端口是 3307 ，修改默认端口的启动指令为：`start.bat ${port}`
+   进入 D:\software\Apache\apache-shardingsphere-5.1.2-shardingsphere-proxy-bin\bin 目录中打开命令提示符 CMD 输入 `start.bat` 指令启动，默认启动端口是 3307 ，修改默认端口的启动指令为：`start.bat ${port}`
 
 5. 远程连接
 
-   打开一个新的 CMD 指令行窗口输入 `mysql -h${ip} -P${port} -uroot -proot` 指令
+   打开一个新的命令提示符 CMD 输入 `mysql -h${ip} -P${port} -uroot -proot` 指令
 
 ### Linux
 
@@ -236,7 +240,7 @@ apache/shardingsphere-proxy:5.1.2
 
 4. 远程访问测试
 
-   在本地打开 CMD 指令行窗口远程连接，可以使用客户端工具（MySQL Workbench，Navicat，SQLyog，phpMyAdmin，dbeaver）连接 MySQL
+   在本地打开命令提示符 CMD 远程连接，可以使用客户端工具（MySQL Workbench，Navicat，SQLyog，phpMyAdmin，dbeaver）连接 MySQL
 
    ```shell
    mysql -h${ip} -P3321 -uroot -proot
@@ -314,7 +318,7 @@ Caused by: java.net.ConnectException: Connection refused
 	... 21 common frames omitted
 ```
 
-检查读写分离配置文件 config-readwrite-splitting.yaml 中数据源的 ${ip}、${port} 是否填写正确。如果 ${ip} 写成 127.0.0.1 或者 localhost 的话，改成你的服务器公网 IP
+检查读写分离配置文件 config-readwrite-splitting.yaml 中数据源的 ${ip}、${port} 是否填写正确。如果 ${ip} 写成 127.0.0.1 或者 localhost 的话，请改为你的服务器公网 IP
 
 :::
 
@@ -540,7 +544,7 @@ INFO ShardingSphere-SQL - Actual SQL: read_ds_1 ::: SELECT  id,uname  FROM t_use
 
 4. 远程访问测试
 
-   在本地打开 CMD 指令行窗口远程连接，可以使用客户端工具（MySQL Workbench，Navicat，SQLyog，phpMyAdmin，dbeaver）连接 MySQL
+   在本地打开命令提示符 CMD 远程连接，可以使用客户端工具（MySQL Workbench，Navicat，SQLyog，phpMyAdmin，dbeaver）连接 MySQL
 
    ```shell
    mysql -h${ip} -P3321 -uroot -proot
@@ -689,7 +693,7 @@ INFO ShardingSphere-SQL - Actual SQL: read_ds_1 ::: SELECT  id,uname  FROM t_use
 
 4. 远程访问测试
 
-   在本地打开 CMD 指令行窗口远程连接，可以使用客户端工具（MySQL Workbench，Navicat，SQLyog，phpMyAdmin，dbeaver）连接 MySQL
+   在本地打开命令提示符 CMD 远程连接，可以使用客户端工具（MySQL Workbench，Navicat，SQLyog，phpMyAdmin，dbeaver）连接 MySQL
 
    ```shell
    mysql -h${ip} -P3321 -uroot -proot

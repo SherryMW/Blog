@@ -104,15 +104,15 @@ CREATE TABLE [IF NOT EXISTS] table_name (
 
     这里创建的 users 表有 5 个字段：
 
-   - user_id 列的数据类型是 INTEGER，它不能为 NULL，并且它是主键
+   - user_id 列的数据类型是 `INTEGER`，它不能为 NULL，并且它是主键
 
-   - name 列的数据类型是 VARCHAR，它最多为 45 个字符。它不能为 NULL
+   - name 列的数据类型是 `VARCHAR`，它最多为 45 个字符。它不能为 NULL
 
-   - age 列的数据类型是 INTEGER。它可以是 NULL
+   - age 列的数据类型是 `INTEGER`。它可以是 NULL
 
-   - locked 列的数据类型是 BOOLEAN。它不能为 NULL，但是它有默认值 false
+   - locked 列的数据类型是 `BOOLEAN`。它不能为 NULL，但是它有默认值 false
 
-   - created_at 列的数据类型是 TIMESTAMP。它不能为 NULL
+   - created_at 列的数据类型是 `TIMESTAMP`。它不能为 NULL
 
 4. 使用以下语句创建 user_hobbies 表：
 
@@ -132,13 +132,13 @@ CREATE TABLE [IF NOT EXISTS] table_name (
 
     这里创建的 user_hobbies 表有 4 个字段：
 
-   - hobby_id 列的数据类型是 INTEGER。它不能为 NULL，并且它是一个自增序列 
+   - hobby_id 列的数据类型是 `INTEGER`。它不能为 NULL，并且它是一个自增序列 
 
-   - user_id 列的数据类型是 INTEGER。它不能为 NULL。它通过外键指向了 users 表的 user_id 列
+   - user_id 列的数据类型是 `INTEGER`。它不能为 NULL。它通过外键指向了 users 表的 user_id 列
 
-   - hobby 列的数据类型是 VARCHAR，它最多为 45 个字符。 它不能为 NULL
+   - hobby 列的数据类型是 `VARCHAR`，它最多为 45 个字符。 它不能为 NULL
 
-   - created_at 列的数据类型是 TIMESTAMP。它不能为 NULL
+   - created_at 列的数据类型是 `TIMESTAMP`。它不能为 NULL
 
     user_hobbies 表的约束有：
 

@@ -7,7 +7,7 @@ article: false
 
 # EXCEPT
 
-在 PostgreSQL 中，EXCEPT 是一个集合运算符，它用于从一个集合中减去出现在另外一个集合中的行
+在 PostgreSQL 中，`EXCEPT` 是一个集合运算符，它用于从一个集合中减去出现在另外一个集合中的行
 
 其他的集合操作运算符还有：[UNION](./union.md) 和 [INTERSECT](./intersect.md)
 

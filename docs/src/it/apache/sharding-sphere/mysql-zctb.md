@@ -1,5 +1,7 @@
 ---
 category: IT
+tag:
+  - 数据库
 article: false
 ---
 
@@ -19,6 +21,7 @@ MySQL 的主从同步和复制是一个异步的过程，底层是基于 MySQL �
 查看 MySQL 版本：
 
 - 在终端下执行 mysql -V
+
 - 在 MySQL 指令行里执行 SELECT VERSION();
 
 Linux 下 MySQL 默认的数据文档存储目录在 /var/lib/mysql，宝塔 Linux 版的 MySQL 默认的数据文档存储目录在 /www/server/data
@@ -60,7 +63,7 @@ netstat -tunlp | grep 3307
 
 ### 准备主服务器
 
-1. **在 Docker 中创建并启动 MySQL 主服务器**
+1. 在 Docker 中创建并启动 MySQL 主服务器
 
     ```shell
     docker run -d -p 3307:3306 \
@@ -87,27 +90,37 @@ netstat -tunlp | grep 3307
 
     ::: tip 常见错误
     docker: Error response from daemon: driver failed programming external connectivity on endpoint mw-mysql-master (2a317de61e601c3c0864199ba12953f26e0552357b42045bac660481e39bfcb4):  (iptables failed: iptables --wait -t nat -A DOCKER -p tcp -d 0/0 --dport 3307 -j DNAT --to-destination {ip}:{port} ! -i docker0: iptables: No chain/target/match by that name
+
     - 检查是否有其他容器正在使用相同的端口，如果有，停止或删除它们
+   
     - 检查防火墙是否开启了，并且是否允许了相应的端口访问
+   
     - 重启 Docker 服务，并重新创建容器
+   
       ```shell
       systemctl restart docker
       ```
+      
     - 查看 docker 的日志文件，看是否有更多的错误信息
+   
       ```shell
       docker logs mw-mysql-master
       ```
+      
     - 查看容器的状态和配置
+   
       ```shell
       docker inspect mw-mysql-master
       ```
+      
     - 使用 iptables -L 指令，查看防火墙的所有连接以及规则
+   
       ```shell
       iptables -L
       ```
     :::
 
-2. **创建 MySQL 主服务器配置文件**
+2. 创建 MySQL 主服务器配置文件
 
     默认情况下 MySQL 的 binlog 日志是自动开启的，创建一个 my.cnf 配置文件，可以通过如下配置定义一些可选配置项
 
@@ -140,24 +153,33 @@ netstat -tunlp | grep 3307
    
    ::: info binlog_format
    binlog_format 是 MySQL 配置文件中的一个选项，它用于设置 binlog 的格式。binlog_format 有三种可选配置项：
+
    - STATEMENT：binlog 中记录的是执行的 SQL 语句，而不是具体的数据变化。这种模式下，binlog 文件较小，但可能会出现一些问题，比如函数调用、触发器、隐式类型转换等导致主从不一致的情况
+   
    - ROW：binlog 中记录的是每一行数据被更新后的数据，而不是 SQL 语句。这种模式下，binlog 文件较大，但可以保证主从数据的一致性，并且避免了一些隐含的逻辑错误
+   
    - MIXED：binlog 中根据不同的情况，自动选择 STATEMENT 或 ROW 模式。默认情况下为 STATEMENT，遇到特殊的 SQL 语句时转换为 ROW 格式。这种模式下，binlog 文件大小介于前两者之间，并且尽量保证了主从数据的一致性和效率
 
    根据不同的场景和需求，可以选择合适的 binlog_format：
+
    - 如果对数据安全性要求不高，并且有大量查询操作或者对磁盘空间敏感，则建议使用 STATEMENT 模式
+   
    - 如果对数据安全性要求高，并且有大量更新操作或者使用了触发器、存储过程等功能，则建议使用 ROW 模式
+   
    - 如果对数据安全性和磁盘空间都有一定要求，并且想让 MySQL 自动选择最优化方案，则建议使用 MIXED 模式
 
    **如果需要在线修改 binlog 格式，注意以下几点：**
+
    - 在修改前，需要停止从库的复制线程，并确保主从同步
+   
    - 在修改后，需要重新启动从库的复制线程，并检查 binlog 文件是否正确变化
+   
    - 如果想让新的 binlog 格式永久生效，还需要在 my.cnf 文件中设置 binlog_format 参数，并重启 MySQL 服务
    :::
    
    ![binlog-ignore-db 和 binlog-do-db 的优先级](https://img.sherry4869.com/blog/it/apache/sharding-sphere/zctb/img_1.png)
 
-3. **连接 MySQL 主服务器 Master**
+3. 连接 MySQL 主服务器 Master
 
     ```shell
     # 使用交互式指令进入 MySQL 容器中：env LANG=C.UTF-8 避免容器中显示中文乱码
@@ -178,15 +200,22 @@ netstat -tunlp | grep 3307
     密码：123456
 
     ::: tip 常见错误
-    **2002 -  Can't connect to server on 'ip'(10061)**  
+    **2002 -  Can't connect to server on 'ip'(10061)**
+
     **2013 - Lost connection to server at 'handshake: reading initial communication packet', system error: 0**
+
     - MySQL 服务器没有正常运行
+   
     - MySQL 服务器没有允许远程连接
+   
        - MySQL 数据库默认只支持本地访问，不支持远程访问权限。要想让 MySQL 数据库支持远程访问，需要手动修改配置用户 root 的访问权限。可以使用以下指令检查用户是否有远程连接权限
+      
          ```sql
          select user,host from mysql.user;
          ```
+         
          如果显示有两个 root 用户，一个是 %，一个是 localhost，表示已经可以远程连接。如果没有 %，表示不允许远程连接，需要授权
+      
          ```sql
          -- MySQL 5 指令
          grant all privileges on *.* to 'root'@'%' identified by '123456';
@@ -195,9 +224,13 @@ netstat -tunlp | grep 3307
          -- 刷新权限
          flush privileges;
          ```
+         
     - 防火墙或网络设置阻止了连接
+   
        - 检查安全组有没有开放相应的端口
+      
        - 检查防火墙是否关闭或者是否开通相应的端口
+      
          ```shell
          # 查看防火墙运行状态
          systemctl status firewalld
@@ -208,7 +241,9 @@ netstat -tunlp | grep 3307
          ```shell
          iptables -A INPUT -p tcp --dport 端口号 -j ACCEPT
          ```
+         
        - 测试远程主机的端口是否开放
+      
          ```shell
          # 列出 telnet 相关的安装包，查看是否安装 telnet 包
          yum list telnet*
@@ -220,12 +255,15 @@ netstat -tunlp | grep 3307
          # 输入 st 指令（status 缩写）打印状态信息
          telnet> st
          ```
+
     - 检查 Navicat 是否支持 MySQL 8 的认证插件 caching_sha2_password，如果不支持就需要升级 Navicat（推荐）或者修改 MySQL 用户的认证插件为 mysql_native_password（不推荐）
+   
       ```sql
       -- mysql 5.7 的密码校验方式是 mysql_native_password
       -- mysql 8.0 的密码校验方式是 caching_sha2_password
       alter user 'user' @ '%' identified with mysql_native_password by '123456';
       ```
+      
     - 创建容器时的配置参数问题
       
       如果在创建 MySQL 容器时配置的容器端口映射并不是 MySQL 默认的 3306 端口，例如：-p 3307:3307，则需要在 my.cnf 配置文件里指定相应端口
@@ -238,7 +276,7 @@ netstat -tunlp | grep 3307
       ```
     :::
 
-4. **主服务器给从服务器开通一个访问账号**
+4. 主服务器给从服务器开通一个访问账号
 
     从服务器去同步复制主服务器数据时需要的访问账号
 
@@ -253,7 +291,7 @@ netstat -tunlp | grep 3307
     flush privileges;
     ```
 
-5. **查看主机状态**
+5. 查看主机状态
     
     ```sql
     -- 查看主数据库的二进制日志和复制状态
@@ -278,7 +316,7 @@ netstat -tunlp | grep 3307
 
 #### slave1
 
-1. **在 Docker 中创建并启动 MySQL 从服务器 slave1**
+1. 在 Docker 中创建并启动 MySQL 从服务器 slave1
 
     ```shell
     docker run -d -p 3308:3306 \
@@ -289,7 +327,7 @@ netstat -tunlp | grep 3307
     mysql:8.0.31
     ```
    
-2. **创建从服务器配置文件**
+2. 创建从服务器配置文件
     
     ```shell
     vim /mw/mysql/slave1/conf/my.cnf
@@ -311,7 +349,7 @@ netstat -tunlp | grep 3307
     docker restart mw-mysql-slave1
     ```
    
-3. **连接 MySQL 从服务器 slave1**
+3. 连接 MySQL 从服务器 slave1
 
     ```shell
     # 使用交互式指令进入 MySQL 容器中：env LANG=C.UTF-8 避免容器中显示中文乱码
@@ -331,7 +369,7 @@ netstat -tunlp | grep 3307
    用户名：root  
    密码：123456
 
-4. **在从服务器上配置主从关系（重要）**
+4. 在从服务器上配置主从关系（重要）
 
     在从机 Slave1 的 MySQL 行中执行基于 binlog 文件名和位置的复制协议
 
@@ -346,7 +384,7 @@ netstat -tunlp | grep 3307
 
 #### slave2
 
-1. **在 Docker 中创建并启动 MySQL 从服务器 slave2**
+1. 在 Docker 中创建并启动 MySQL 从服务器 slave2
 
     ```shell
     docker run -d -p 3309:3306 \
@@ -357,7 +395,7 @@ netstat -tunlp | grep 3307
     mysql:8.0.31
     ```
 
-2. **创建从服务器配置文件**
+2. 创建从服务器配置文件
 
     ```shell
     vim /mw/mysql/slave2/conf/my.cnf
@@ -379,7 +417,7 @@ netstat -tunlp | grep 3307
     docker restart mw-mysql-slave2
     ```
 
-3. **连接 MySQL 从服务器 Slave2**
+3. 连接 MySQL 从服务器 Slave2
 
     ```shell
     # 使用交互式指令进入 MySQL 容器中：env LANG=C.UTF-8 避免容器中显示中文乱码
@@ -399,7 +437,7 @@ netstat -tunlp | grep 3307
    用户名：root  
    密码：123456
 
-4. **在从服务器上配置主从关系（重要）**
+4. 在从服务器上配置主从关系（重要）
 
    在从机 Slave2 的 MySQL 行中执行基于 binlog 文件名和位置的复制协议
 
@@ -432,8 +470,11 @@ show slave status \G
     
     可能有以下几种原因：
     - 检查 MASTER_PORT，MASTER_LOG_FILE，MASTER_LOG_POS 是否配置错误
+  
     - 账户密码错误或权限不足
+  
     - 网络不通或端口被阻止
+  
     - 主服务器的二进制日志文件不存在或损坏
 
 - **Last_IO_Error: Got fatal error 1236 from master when reading data from binary log: 'Client requested master to start replication from position > file size**
@@ -474,8 +515,11 @@ show slave status \G
 
     可能有以下几种原因：
     - 主从服务器的 server_id 相同或重复。可以检查主从服务器的 my.cnf 文件，确保 server_id 是唯一的，然后重新启动 MySQL 服务
+  
     - 主从服务器的 UUID 相同。检查主从服务器的 auto.cnf 文件，确保 UUID 是唯一的，然后重新启动 MySQL 服务
+  
     - 主从服务器之间的网络连接不稳定或阻塞。可以测试主从服务器之间的 ping 和 telnet 连接，确保没有防火墙或其他因素影响通讯
+  
     - 主从服务器之间的数据不一致或出现错误。可以使用 `show slave status` 指令查看错误日志，并根据错误代码和信息进行修正
 :::
 

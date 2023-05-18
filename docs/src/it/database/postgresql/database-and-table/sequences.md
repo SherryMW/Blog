@@ -29,27 +29,27 @@ CREATE [ TEMPORARY | TEMP ] SEQUENCE [ IF NOT EXISTS ] seq_name
     [ OWNED BY { table_name.column_name | NONE } ]
 ```
 
-- TEMPORARY | TEMP：指定当前序列是一个临时序列。您只能在当前会话中使用。它会在会话结束时被自动删除。 它是可选的
+- `TEMPORARY | TEMP`：指定当前序列是一个临时序列。您只能在当前会话中使用。它会在会话结束时被自动删除。 它是可选的
 
-- IF NOT EXISTS：如果指定，如果存在同名的序列，则不会引发错误
+- `IF NOT EXISTS`：如果指定，如果存在同名的序列，则不会引发错误
 
 - seq_name：要创建的序列的名称
 
 - data_type：它指示了这个序列的数据类型。可用值：smallint，integer 和 bigint，并且 bigint 是默认值
 
-- INCREMENT [ BY ] increment：序列增长的步幅，可以是整数或者负数。正值将产生一个升序序列，负值将产生一个降序序列。默认是值 1
+- `INCREMENT [ BY ] increment`：序列增长的步幅，可以是整数或者负数。正值将产生一个升序序列，负值将产生一个降序序列。默认是值 1
 
-- MINVALUE minvalue | NO MINVALUE：minvalue 是序列的最小值。`NO MINVALUE` 意味着使用数据类型的最小值。升序序列的默认值是 1, 降序序列的默认值是数据类型的最小值
+- `MINVALUE minvalue | NO MINVALUE：minvalue`：是序列的最小值。`NO MINVALUE` 意味着使用数据类型的最小值。升序序列的默认值是 1, 降序序列的默认值是数据类型的最小值
 
-- MAXVALUE maxvalue | NO MAXVALUE：maxvalue 是序列的最大值。`NO MAXVALUE` 意味着使用数据类型的最大值。降序序列的默认值是 1, 升序序列的默认值是数据类型的最大值
+- `MAXVALUE maxvalue | NO MAXVALUE：maxvalue`：是序列的最大值。`NO MAXVALUE` 意味着使用数据类型的最大值。降序序列的默认值是 1, 升序序列的默认值是数据类型的最大值
 
-- START [ WITH ] start：start 是此序列的起始值。升序序列的默认值是 minvalue，降序序列的默认值是 maxvalue
+- `START [ WITH ] start：start`：是此序列的起始值。升序序列的默认值是 minvalue，降序序列的默认值是 maxvalue
 
-- CACHE cache：cache 是缓存在内存中的序列值的数量，以便可以快速访问。默认值是 1，1 也是可接受的最小值
+- `CACHE cache`：cache 是缓存在内存中的序列值的数量，以便可以快速访问。默认值是 1，1 也是可接受的最小值
 
-- [ NO ] CYCLE：指示序列是否可循环的。 如果指定 `NO CYCLE`，那么序列到结尾的时候，再取值则会发生错误
+- `[ NO ] CYCLE`：指示序列是否可循环的。 如果指定 `NO CYCLE`，那么序列到结尾的时候，再取值则会发生错误
 
-- OWNED BY { table_name.column_name | NONE }：将此序列与指定表的列关联起来。如果此列被删除，此序列会被自动删除将此序列与指定表的列关联起来。如果此列被删除，此序列会被自动删除
+- `OWNED BY { table_name.column_name | NONE }`：将此序列与指定表的列关联起来。如果此列被删除，此序列会被自动删除将此序列与指定表的列关联起来。如果此列被删除，此序列会被自动删除
 
 ## DROP SEQUENCE 语法
 
@@ -60,13 +60,13 @@ DROP SEQUENCE [ IF EXISTS ] seq_name [, ...]
 [ CASCADE | RESTRICT ];
 ```
 
-- IF EXISTS：如果指定的序列不存在不会抛出一个错误
+- `IF EXISTS`：如果指定的序列不存在不会抛出一个错误
 
 - seq_name：要删除的序列的名称
 
-- CASCADE：自动删除依赖于此序列的对象，并依次删除依赖这些对象的对象
+- `CASCADE`：自动删除依赖于此序列的对象，并依次删除依赖这些对象的对象
 
-- RESTRICT：如果任何对象依赖此序列，则拒绝删除它。这是默认值
+- `RESTRICT`：如果任何对象依赖此序列，则拒绝删除它。这是默认值
 
 ## 访问序列
 

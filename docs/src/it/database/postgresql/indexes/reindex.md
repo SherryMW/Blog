@@ -29,15 +29,15 @@ REINDEX
 
 - `{ INDEX | TABLE | SCHEMA | DATABASE | SYSTEM }` 用来指定重建的索引对象
 
-    - INDEX：重建指定的索引
+    - `INDEX`：重建指定的索引
 
-    - TABLE：重建指定的表中的所有的索引
+    - `TABLE`：重建指定的表中的所有的索引
 
-    - SCHEMA：重建指定的 Schema 中的所有的索引
+    - `SCHEMA`：重建指定的 Schema 中的所有的索引
 
-    - DATABASE：重建指定的数据库中的所有的索引
+    - `DATABASE`：重建指定的数据库中的所有的索引
 
-    - SYSTEM：重建指定的数据库的系统目录中的所有的索引
+    - `SYSTEM`：重建指定的数据库的系统目录中的所有的索引
 
 - name 指定对象的名字
 

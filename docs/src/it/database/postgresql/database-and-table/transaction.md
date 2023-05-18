@@ -39,13 +39,13 @@ PostgreSQL 提供了一些 SQL 命令用来控制事务，包括：开启一个�
 
 要开启一个 PostgreSQL 数据库事务，您可以使用以下命令中的一个：
 
-- START TRANSACTION
+- `START TRANSACTION`
 
-- BEGIN TRANSACTION
+- `BEGIN TRANSACTION`
 
-- BEGIN WORK
+- `BEGIN WORK`
 
-- BEGIN
+- `BEGIN`
 
 开启一个事务后，后续的所有操作都属于该事务，直到事务被提交或者被回滚
 
@@ -53,11 +53,11 @@ PostgreSQL 提供了一些 SQL 命令用来控制事务，包括：开启一个�
 
 要提交该事务内的所有操作，您可以使用以下命令中的一个：
 
-- COMMIT TRANSACTION
+- `COMMIT TRANSACTION`
 
-- COMMIT WORK
+- `COMMIT WORK`
 
-- COMMIT
+- `COMMIT`
 
 提交事务将当前事务内的所有操作写入数据库，并结束当前事务
 
@@ -65,11 +65,11 @@ PostgreSQL 提供了一些 SQL 命令用来控制事务，包括：开启一个�
 
 要回滚该事务内的所有操作，您可以使用以下命令中的一个：
 
-- ROLLBACK TRANSACTION
+- `ROLLBACK TRANSACTION`
 
-- ROLLBACK WORK
+- `ROLLBACK WORK`
 
-- ROLLBACK
+- `ROLLBACK`
 
 回滚事务将撤销当前事务内的所有的操作，并结束当前事务
 

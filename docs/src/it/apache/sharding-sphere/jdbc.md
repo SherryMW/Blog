@@ -11,7 +11,9 @@ article: false
 ShardingSphere-JDBC 定位为轻量级 Java 框架，在 Java 的 JDBC 层提供的额外服务。 它使用客户端直连数据库，以 JAR 包形式提供服务，无需额外部署和依赖，可理解为增强版的 JDBC 驱动，完全兼容 JDBC 和各种 ORM 框架
 
 - 适用于任何基于 JDBC 的 ORM 框架，如：JPA，Hibernate，Mybatis，Spring JDBC Template 或直接使用 JDBC
+
 - 支持任何第三方的数据库连接池，如：DBCP，C3P0，BoneCP，HikariCP 等
+
 - 支持任意实现 JDBC 规范的数据库，目前支持 MySQL，PostgreSQL，Oracle，SQLServer 以及任何可使用 JDBC 访问的数据库
 
 ![](https://img.sherry4869.com/blog/it/apache/sharding-sphere/jdbc/img.png)
@@ -547,9 +549,9 @@ Actual SQL: master ::: SELECT  id,uname  FROM t_user
 Rolled back transaction for test
 ```
 
-@Transactional 注解的作用是定义一个数据库事务的范围，它可以控制事务的传播行为、隔离级别、超时时间等属性。在 Spring Boot 测试中，如果使用了 @Transactional 注解，那么测试方法结束后，默认会回滚事务，以避免对数据库造成污染。如果想要提交事务，可以使用 @Commit 或 @Rollback(false) 注解
+`@Transactional` 注解的作用是定义一个数据库事务的范围，它可以控制事务的传播行为、隔离级别、超时时间等属性。在 Spring Boot 测试中，如果使用了 `@Transactional` 注解，那么测试方法结束后，默认会回滚事务，以避免对数据库造成污染。如果想要提交事务，可以使用 @Commit 或 @Rollback(false) 注解
 
-ShardingSphere-JDBC 在主从模型中如果使用了 @Transactional 注解，那么默认会选择主库进行操作，并且不会切换到从库。这是为了保证主从库间的事务一致性和完整性，避免跨服务的分布式事务
+ShardingSphere-JDBC 在主从模型中如果使用了 `@Transactional` 注解，那么默认会选择主库进行操作，并且不会切换到从库。这是为了保证主从库间的事务一致性和完整性，避免跨服务的分布式事务
 
 :::
 
@@ -585,9 +587,10 @@ Actual SQL: slave2 ::: SELECT  id,uname  FROM t_user
 ![服务器规划：使用 Docker 创建容器](https://img.sherry4869.com/blog/it/apache/sharding-sphere/jdbc/img.png)
 
 - 服务器：容器名 mw-server-user，端口 3301
+
 - 服务器：容器名 mw-server-order，端口 3302
 
-1. **创建 mw-server-user 容器**
+1. 创建 mw-server-user 容器
 
     ```shell
     docker run -d -p 3301:3306 \
@@ -598,7 +601,7 @@ Actual SQL: slave2 ::: SELECT  id,uname  FROM t_user
     mysql:8.0.31
     ```
    
-2. **进入 MySQL 容器并登录账户**
+2. 进入 MySQL 容器并登录账户
 
     ```shell
     # 使用交互式指令进入 MySQL 容器中：env LANG=C.UTF-8 避免容器中显示中文乱码
@@ -607,7 +610,7 @@ Actual SQL: slave2 ::: SELECT  id,uname  FROM t_user
     mysql -u root -p
     ```
 
-3. **创建 db_user 数据库**
+3. 创建 db_user 数据库
 
     ```sql
     create database db_user;
@@ -621,7 +624,7 @@ Actual SQL: slave2 ::: SELECT  id,uname  FROM t_user
 
 ---
    
-1. **创建 mw-server-order 容器**
+1. 创建 mw-server-order 容器
 
     ````shell
     docker run -d -p 3302:3306 \
@@ -632,7 +635,7 @@ Actual SQL: slave2 ::: SELECT  id,uname  FROM t_user
     mysql:8.0.31
     ````
 
-2. **进入 MySQL 容器并登录账户**
+2. 进入 MySQL 容器并登录账户
 
     ```shell
     # 使用交互式指令进入 MySQL 容器中：env LANG=C.UTF-8 避免容器中显示中文乱码
@@ -641,7 +644,7 @@ Actual SQL: slave2 ::: SELECT  id,uname  FROM t_user
     mysql -u root -p
     ```
    
-3. **创建 db_order 数据库**
+3. 创建 db_order 数据库
 
     ```sql
     create database db_order;
@@ -887,9 +890,10 @@ Rolled back transaction for test
 ![服务器规划：使用 docker 创建容器](https://img.sherry4869.com/blog/it/apache/sharding-sphere/jdbc/img_1.png)
 
 - 服务器：容器名 mw-server-order0，端口 3310
+
 - 服务器：容器名 mw-server-order1，端口 3311
 
-1. **创建 mw-server-order0 容器**
+1. 创建 mw-server-order0 容器
 
     ```shell
     docker run -d -p 3310:3306 \
@@ -900,7 +904,7 @@ Rolled back transaction for test
     mysql:8.0.31
     ```
 
-2. **进入 MySQL 容器并登录账户**
+2. 进入 MySQL 容器并登录账户
 
     ```shell
     # 使用交互式指令进入 MySQL 容器中：env LANG=C.UTF-8 避免容器中显示中文乱码
@@ -909,7 +913,7 @@ Rolled back transaction for test
     mysql -u root -p
     ```
    
-3. **创建 db_order 数据库**
+3. 创建 db_order 数据库
 
     注意：水平分片的 ID 需要在业务层实现，不能依赖数据库的主键自增
 
@@ -934,7 +938,7 @@ Rolled back transaction for test
 
 ---
 
-1. **创建 mw-server-order1 容器**
+1. 创建 mw-server-order1 容器
 
     ```shell
     docker run -d -p 3311:3306 \
@@ -945,7 +949,7 @@ Rolled back transaction for test
     mysql:8.0.31
     ```
 
-2. **进入 MySQL 容器并登录账户**
+2. 进入 MySQL 容器并登录账户
 
     ```shell
     # 使用交互式指令进入 MySQL 容器中：env LANG=C.UTF-8 避免容器中显示中文乱码
@@ -954,7 +958,7 @@ Rolled back transaction for test
     mysql -u root -p
     ```
 
-3. **创建 db_order 数据库**
+3. 创建 db_order 数据库
 
    注意：水平分片的 ID 需要在业务层实现，不能依赖数据库的主键自增
 
@@ -1376,13 +1380,15 @@ class ShardingSphereJdbcApplicationTests {
 }
 ```
 
-`spring.shardingsphere.rules.sharding.tables.t_order_item.table-strategy.standard.sharding-column=order_no`
+```properties
+spring.shardingsphere.rules.sharding.tables.t_order_item.table-strategy.standard.sharding-column=order_no
 
-`spring.shardingsphere.rules.sharding.tables.t_order_item.table-strategy.standard.sharding-algorithm-name=alg_hash_mod`
+spring.shardingsphere.rules.sharding.tables.t_order_item.table-strategy.standard.sharding-algorithm-name=alg_hash_mod
 
-`spring.shardingsphere.rules.sharding.sharding-algorithms.alg_hash_mod.type=HASH_MOD`
+spring.shardingsphere.rules.sharding.sharding-algorithms.alg_hash_mod.type=HASH_MOD
 
-`spring.shardingsphere.rules.sharding.sharding-algorithms.alg_hash_mod.props.sharding-count=2`
+spring.shardingsphere.rules.sharding.sharding-algorithms.alg_hash_mod.props.sharding-count=2
+```
 
 再次运行测试用例：
 
@@ -1757,7 +1763,7 @@ Order8	120.00
 spring.shardingsphere.rules.sharding.binding-tables[0]=t_order,t_order_item
 ```
 
-把测试 SQL 语句复制到 @Select 注解里面，把实际表名改成逻辑表名。以数组形式来写 SQL 的话 @Select 会自动把字符串数组里的元素结尾补上空格并拼接成 SQL 语句
+把测试 SQL 语句复制到 `@Select` 注解里面，把实际表名改成逻辑表名。以数组形式来写 SQL 的话 `@Select` 会自动把字符串数组里的元素结尾补上空格并拼接成 SQL 语句
 
 ```java
 @Mapper

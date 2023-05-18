@@ -11,7 +11,7 @@ article: false
 
 外键相对于主键而言，用来引用其他表。外键在子表中定义，它将子表的一个或多个列对应到父表的主键或唯一键值，将子表的行和父表行建立起关联关系
 
-让我们看一下 [PostgreSQL Sakila 示例数据库](../start.md#sakila)中的 country 表和 city 表。下面是它们的关系图：
+让我们看一下 [PostgreSQL Sakila 示例数据库](../start.md#sakila) 中的 country 表和 city 表。下面是它们的关系图：
 
 ![](https://img.sherry4869.com/blog/it/database/postgresql/img_12.svg)
 
@@ -84,15 +84,15 @@ CREATE TABLE table_name (
 
 - `ON DELETE` 和 `ON UPDATE` 指定了删除或更新父表中的行时要采取的约束策略。你可以使用以下 5 个策略中的一个：
 
-    - NO ACTION: 这是默认的策略
+    - `NO ACTION`：这是默认的策略
 
-    - RESTRICT: 如果父表中的一行在该表中有匹配的行，试图删除或更新父表中行时会引发 PostgreSQL 错误
+    - `RESTRICT`：如果父表中的一行在该表中有匹配的行，试图删除或更新父表中行时会引发 PostgreSQL 错误
 
-    - CASCADE：如果父表中的一行被删除或更新，该表中匹配行的值会自动删除或更新
+    - `CASCADE`：如果父表中的一行被删除或更新，该表中匹配行的值会自动删除或更新
 
-    - SET NULL：如果父表中的一行被删除或更新，该表中匹配行的值设置为 NULL
+    - `SET NULL`：如果父表中的一行被删除或更新，该表中匹配行的值设置为 NULL
 
-    - SET DEFAULT: 如果父表中的一行被删除或更新，该表中匹配行的值设置为默认值
+    - `SET DEFAULT`：如果父表中的一行被删除或更新，该表中匹配行的值设置为默认值
 
 让我们看一下 city 表定义的外键约束：
 

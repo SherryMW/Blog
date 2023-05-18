@@ -166,7 +166,7 @@ DETAIL:  Failing row contains (3, Tim, timisgood, timisgood).
 
 由于上面语句中给出的登录名和密码都是 timisgood，因此 PostgreSQL 给出了上面的错误
 
-使用下面的语句插入一个完全符合 CHECK 约束的行
+使用下面的语句插入一个完全符合 `CHECK` 约束的行
 
 ```sql
 INSERT INTO users (name, login_name, password)

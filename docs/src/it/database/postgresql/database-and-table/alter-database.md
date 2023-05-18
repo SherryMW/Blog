@@ -96,7 +96,7 @@ CREATE DATABASE test_db;
 
 当您打算修改一个数据库名的时候，您需要首先从整体上进行评估。然后，再决定是否进行重命名数据库。一旦您决定了要重命名一个数据库，您需要把需要同步修改的地方整理清楚
 
-要重命名一个数据库，请按照下面的语法使用 ALTER DATABASE ... RENAME 语句：
+要重命名一个数据库，请按照下面的语法使用 `ALTER DATABASE ... RENAME` 语句：
 
 ```sql
 ALTER DATABASE name RENAME TO new_name;

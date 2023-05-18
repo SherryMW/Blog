@@ -1,14 +1,14 @@
 ---
 date: 2022-03-03
 category: IT
-tag: 云服务器
-article: false
 ---
 
 # 云服务器 ECS
 
-分享购买云服务器 ESC、域名注册、 网站备案、SSL 证书申请、LNMP 开发环境搭建的经验
+记录购买云服务器 ESC、域名注册、 网站备案、SSL 证书申请、LNMP 开发环境搭建过程
+
 <!-- more -->
+
 [云服务器ECS文档](https://help.aliyun.com/product/25365.html)  
 
 ## 购买云服务器 ECS
@@ -27,7 +27,7 @@ article: false
 
 ![](https://img.sherry4869.com/blog/it/server/ecs/img_2.png)
 
-### 相关配置
+---
 
 [升降配方式](https://help.aliyun.com/document_detail/25437.html) 创建实例后，如果当前实例配置无法满足你的业务需求，你可以修改实例规格（vCPU和内存）、公网带宽配置和数据盘计费方式  
 
@@ -35,11 +35,11 @@ article: false
 CentOS 官方已计划停止维护 CentOS 7、CentOS 8 等 Linux 项目，如果你的操作系统后续想得到维护和技术支持，需要将 CentOS 操作系统迁移到其他Linux LTS（长期支持）发行版
 :::
 
-[迁移操作系统](https://help.aliyun.com/document_detail/438217.html) 通过SMC将CentOS 7/8操作系统平滑迁移至Alibaba Cloud Linux和龙蜥操作系统（Anolis OS）  
+[迁移操作系统](https://help.aliyun.com/document_detail/438217.html) 通过 SMC 将 CentOS 7/8 操作系统平滑迁移至 Alibaba Cloud Linux 和龙蜥操作系统（Anolis OS）  
 
 [创建一个快照](https://help.aliyun.com/document_detail/25455.html) 在回滚云盘、修改关键系统文件、更换操作系统前为了数据安全，你可以提前创建快照备份，提高操作容错率    
 
-[更换操作系统（系统盘）](https://help.aliyun.com/document_detail/25436.html) 如果你在创建ECS实例时选择了错误的操作系统，或者在使用过程中需要改用其他操作系统，你可以为ECS实例更换新的操作系统  
+[更换操作系统（系统盘）](https://help.aliyun.com/document_detail/25436.html) 如果你在创建ECS实例时选择了错误的操作系统，或者在使用过程中需要改用其他操作系统，你可以为 ECS 实例更换新的操作系统  
 
 访问云服务器ECS控制台->选择指定服务器实例ID访问实例详情界面->点击更换操作系统
 
@@ -99,20 +99,17 @@ CentOS 官方已计划停止维护 CentOS 7、CentOS 8 等 Linux 项目，如果
 
 ::: info
 网站托管在中国内地的服务器上，你需根据所在省市的管局规则进行ICP备案申请。当你使用阿里云中国内地节点服务器时，你可以在PC端或移动端的阿里云ICP代备案系统中提交ICP备案申请，审核通过便可开通网站访问服务
-:::
 
-[ICP备案流程](https://help.aliyun.com/document_detail/116625.html)
+公安备案的目的就是为了防止在网上从事非法的网站经营活动，打击不良互联网信息的传播，营造一个良好的互联网环境
 
-[ICP备案操作指导（PC端）](https://help.aliyun.com/document_detail/117418.html)
-
-[ICP备案查询](https://beian.miit.gov.cn/#/Integrated/recordQuery)
-
-### 公网备案
-
-::: info
-公安备案的目的就是为了防止在网上从事非法的网站经营活动，打击不良互联网信息的传播，营造一个良好的互联网环境  
 公安备案审核完成后公安联网会下发一个当地省份开头的公网安备 xxxxx 号，同时还会为网站生成一个网站HTML代码
 :::
+
+[ICP 备案流程](https://help.aliyun.com/document_detail/116625.html)
+
+[ICP 备案操作指导（PC端）](https://help.aliyun.com/document_detail/117418.html)
+
+[ICP 备案查询](https://beian.miit.gov.cn/#/Integrated/recordQuery)
 
 访问 [公安机关互联网站安全管理服务平台](https://www.beian.gov.cn/portal/index) 完成注册登录
 
@@ -142,11 +139,14 @@ CentOS 官方已计划停止维护 CentOS 7、CentOS 8 等 Linux 项目，如果
 :::
 
 - 阿里云个人账号和企业账号均可申请，多个域名可以申请多个免费证书
-- 免费证书只能保护一个域名（带www和不带www可以通用）
+
+- 免费证书只能保护一个域名（带 www 和不带 www 可以通用）
+
 - 一个账户限制申请20个免费证书
+
 - 免费证书有效期为1年
 
-访问 [阿里云数字证书管理服务](https://www.aliyun.com/product/cas) 界面中点击SSL证书申请免费证书
+访问 [阿里云数字证书管理服务](https://www.aliyun.com/product/cas) 界面中点击 SSL 证书申请免费证书
 
 ![](https://img.sherry4869.com/blog/it/server/ecs/img_10.png)
 
@@ -162,9 +162,11 @@ CentOS 官方已计划停止维护 CentOS 7、CentOS 8 等 Linux 项目，如果
 
 ![](https://img.sherry4869.com/blog/it/server/ecs/img_14.png)
 
-验证成功后阿里云账号绑定的手机号码会收到SSL证书已签发成功的短信
+验证成功后阿里云账号绑定的手机号码会收到 SSL 证书已签发成功的短信
 
-使用免费SLL证书在通过手机端访问网站时会出现类似“该链接经检测无法确定其安全性，请谨慎输入敏感信息”的提示
+::: tip
+使用免费 SLL 证书在通过手机端访问网站时会出现类似“该链接经检测无法确定其安全性，请谨慎输入敏感信息”的提示
+:::
 
 [安装SSL证书到服务器](https://help.aliyun.com/document_detail/198938.html)
 
@@ -173,15 +175,18 @@ CentOS 官方已计划停止维护 CentOS 7、CentOS 8 等 Linux 项目，如果
 ::: info
 LNMP 是指一组通常一起使用来运行动态网站或者服务器的自由软件名称首字母缩写。L 指 Linux，N 指 Nginx，M 一般指 MySQL，也可以指 MariaDB，P 一般指 PHP，也可以指 Perl 或 Python
 
-- Linux 是一类Unix计算机操作系统的统称，是目前最流行的免费操作系统。代表版本有：debian、centos、ubuntu、fedora、gentoo等
-- Nginx 是一个高性能的HTTP和反向代理服务器，也是一个IMAP/POP3/SMTP代理服务器
+- Linux 是一类Unix计算机操作系统的统称，是目前最流行的免费操作系统。代表版本有：debian、centos、ubuntu、fedora、gentoo 等
+
+- Nginx 是一个高性能的HTTP和反向代理服务器，也是一个 IMAP/POP3/SMTP 代理服务器
+
 - Mysql 是一个小型关系型数据库管理系统
-- PHP 是一种在服务器端执行的嵌入HTML文档的脚本语言
+
+- PHP 是一种在服务器端执行的嵌入 HTML 文档的脚本语言
 
 这四种软件均为免费开源软件，组合到一起，成为一个免费、高效、扩展性强的网站服务系统
 :::
 
-访问 [宝塔官网](https://www.bt.cn/new/download.html) 2分钟装好面板，一键管理服务器，集成LAMP/LNMP环境安装，网站、FTP、数据库、文件管理、软件安装等功能
+访问 [宝塔官网](https://www.bt.cn/new/download.html)：2 分钟装好面板，一键管理服务器，集成 LAMP/LNMP 环境安装，网站、FTP、数据库、文件管理、软件安装等功能
 
 [查看详细安装教程](https://www.bt.cn/bbs/thread-79460-1-1.html)
 
@@ -191,7 +196,7 @@ LNMP 是指一组通常一起使用来运行动态网站或者服务器的自由
 
 ![](https://img.sherry4869.com/blog/it/server/ecs/img_22.png)
 
-Linux面板7.9.6在线安装示例
+Linux面板 7.9.6 在线安装示例
 
 ![](https://img.sherry4869.com/blog/it/server/ecs/img_23.png)
 
@@ -214,10 +219,13 @@ Linux面板7.9.6在线安装示例
 - vnc 无法正常进入系统，无法执行指令操作，这种情况只能先重启服务器处理
 
 - 如果涉及到生产环境，可以先用旧主机镜像创建一台临时服务器过度使用，新主机会和旧主机数据一致
+
   - 先通过旧实例创建自定义镜像 [参考文档](https://help.aliyun.com/document_detail/35109.html)
+  
   - 然后通过这个自定义镜像创建一个新的实例 [参考文档](https://help.aliyun.com/document_detail/25465.html)
+  
   - 新服务器就和旧主机数据一样，业务方面先访问新主机的 ip 过度使用
 
 - 如果业务涉及到域名访问的话，会涉及到各地域名解析缓存，需要一定时间生效
 
-- 为避免这种情况，后续域名解析到负载均衡ip，然后给后端主机配置健康检查，识别到某台主机异常时，自动切换到正常主机上
+- 为避免这种情况，后续域名解析到负载均衡 ip，然后给后端主机配置健康检查，识别到某台主机异常时，自动切换到正常主机上

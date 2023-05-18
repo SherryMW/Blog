@@ -19,7 +19,7 @@ EXPLAIN [ ( option [, ...] ) ] statement;
 
 其中 option 可以是以下之一：
 
-- ANALYZE [ boolean ]：执行该命令并显示实际运行时间和其他统计信息
+- `ANALYZE [ boolean ]`：执行该命令并显示实际运行时间和其他统计信息
 
     ```sql
     EXPLAIN ANALYZE SELECT * FROM address WHERE postal_code = 'x';
@@ -34,7 +34,7 @@ EXPLAIN [ ( option [, ...] ) ] statement;
     Execution Time: 43.612 ms
     ```
 
-- **VERBOSE [ boolean ]:** 显示有关计划的其他信息
+- `VERBOSE [ boolean ]`：显示有关计划的其他信息
 
     ```sql
     EXPLAIN VERBOSE SELECT * FROM address WHERE postal_code = 'x';
@@ -48,7 +48,7 @@ EXPLAIN [ ( option [, ...] ) ] statement;
     Index Cond: ((address.postal_code)::text = 'x'::text)
     ```
 
-- **COSTS [ boolean ]:** 包括有关每个计划节点的估计启动和总成本的信息，以及估计的行数和每行的估计宽度
+- `COSTS [ boolean ]`：包括有关每个计划节点的估计启动和总成本的信息，以及估计的行数和每行的估计宽度
 
   ```sql
   EXPLAIN (COSTS) SELECT * FROM address WHERE postal_code = 'x';
@@ -61,7 +61,7 @@ EXPLAIN [ ( option [, ...] ) ] statement;
   Index Cond: ((postal_code)::text = 'x'::text)
   ```
 
-- **SETTINGS [ boolean ]:** 包括有关配置参数的信息
+- `SETTINGS [ boolean ]`：包括有关配置参数的信息
 
   ```sql
   EXPLAIN (SETTINGS) SELECT * FROM address WHERE postal_code = 'x';
@@ -74,7 +74,7 @@ EXPLAIN [ ( option [, ...] ) ] statement;
   Index Cond: ((postal_code)::text = 'x'::text)
   ```
 
-- **BUFFERS [ boolean ]:** 包括有关缓冲区使用情况的信息
+- `BUFFERS [ boolean ]`：包括有关缓冲区使用情况的信息
 
   ```sql
   EXPLAIN (BUFFERS) SELECT * FROM address WHERE postal_code = 'x';
@@ -87,7 +87,7 @@ EXPLAIN [ ( option [, ...] ) ] statement;
   Index Cond: ((postal_code)::text = 'x'::text)
   ```
 
-- **WAL [ boolean ]:** 包括有关 WAL 记录生成的信息。它必须和 ANALYZE 同时使用
+- `WAL [ boolean ]`：包括有关 WAL 记录生成的信息。它必须和 ANALYZE 同时使用
 
   ```sql
   EXPLAIN (ANALYZE, WAL) SELECT * FROM address WHERE postal_code = 'x';
@@ -102,7 +102,7 @@ EXPLAIN [ ( option [, ...] ) ] statement;
   Execution Time: 0.043 ms
   ```
 
-- **TIMING [ boolean ]:** 在输出中包括实际启动时间和在每个节点中花费的时间。它必须和 ANALYZE 同时使用
+- `TIMING [ boolean ]`：在输出中包括实际启动时间和在每个节点中花费的时间。它必须和 ANALYZE 同时使用
 
   ```sql
   EXPLAIN (ANALYZE, TIMING) SELECT * FROM address WHERE postal_code = 'x';
@@ -117,7 +117,7 @@ EXPLAIN [ ( option [, ...] ) ] statement;
   Execution Time: 0.030 ms
   ```
 
-- **SUMMARY [ boolean ]:** 在查询计划之后包括摘要信息
+- `SUMMARY [ boolean ]`：在查询计划之后包括摘要信息
 
   ```sql
   EXPLAIN (SUMMARY) SELECT * FROM address WHERE postal_code = 'x';
@@ -131,7 +131,7 @@ EXPLAIN [ ( option [, ...] ) ] statement;
   Planning Time: 0.096 ms
   ```
 
-- **FORMAT { TEXT | XML | JSON | YAML }:** 指定输出格式，可以是文本、XML、JSON 或 YAML
+- `FORMAT { TEXT | XML | JSON | YAML }`：指定输出格式，可以是文本、XML、JSON 或 YAML
 
   ```sql
   EXPLAIN (FORMAT YAML) SELECT * FROM address WHERE postal_code = 'x';

@@ -125,12 +125,12 @@ arch
 
 ![](https://img.sherry4869.com/blog/it/server/cloudreve/img_17.png)
 
-首先访问服务器 ${ip}:5212 测试是否还会有该错误提示，如果一切正常则是反向代理配置有误，检查反向代理目标 URL 是否配置成 127.0.0.1:5212，而不是服务器 ${ip}:5212
+首先访问服务器 `${ip}:5212` 测试是否还会有该错误提示，如果一切正常则是反向代理配置有误，检查反向代理目标 URL 是否配置成 `127.0.0.1:5212`，如果是的话需要修改成 `${ip}:5212`
 
 ## 参考资料
 
-[Cloudreve 官方网站](https://docs.cloudreve.org/)
+[Cloudreve 官网](https://docs.cloudreve.org/)
 
-[Cloudreve 官方论坛](https://forum.cloudreve.org/)
+[Cloudreve 论坛](https://forum.cloudreve.org/)
 
 [Cloudreve GitHub](https://github.com/cloudreve/Cloudreve)

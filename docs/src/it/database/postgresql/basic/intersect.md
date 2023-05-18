@@ -43,7 +43,7 @@ INTERSECT
 
 ## INTERSECT 示例
 
-在本示例中，我们将使用 generate_series() 函数用来生成结果集
+在本示例中，我们将使用 `generate_series()` 函数用来生成结果集
 
 我们需要用到两个结果集，先看第一个结果集：
 

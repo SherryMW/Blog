@@ -1,10 +1,13 @@
 import {sidebar} from "vuepress-theme-hope";
 import {PostgreSQLSidebar} from "../../it/database/postgresql/sidebar"
+import {ShardingSphereSidebar} from "../../it/apache/sharding-sphere/sidebar";
 import {CollectionSidebar} from "../../collection/sidebar"
 
 export const SidebarConfig = sidebar({
 
     "/it/database/postgresql/": PostgreSQLSidebar,
+
+    "/it/apache/sharding-sphere/": ShardingSphereSidebar,
 
     "/collection/": CollectionSidebar,
 
@@ -19,17 +22,6 @@ export const SidebarConfig = sidebar({
     //         prefix: "alipay/",
     //         children: "structure"
     //     }
-    // ],
-    // "/it/apache/sharding-sphere/": [
-    //     {
-    //         text: "高性能架构模式",
-    //         link: "architecture/",
-    //     },
-    //     "mysql-zctb",
-    //     "jdbc",
-    //     "proxy",
-    //     "distributed",
-    //     "references"
     // ],
     //
     // "/life/healthy/": [
