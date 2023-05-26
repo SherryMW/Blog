@@ -35,7 +35,6 @@ export default hopeTheme({
         intro: "", // 填写后点击头像或作者名称进入个人介绍页的界面地址
         // 主页媒体链接配置
         medias: {
-            // QQ: "https://wpa.qq.com/msgrd?v=3&uin=1341139503&site=qq&menu=yes",
             Wechat: "https://img.sherry4869.com/blog/public/wechat.jpg",
             Steam: "https://steamcommunity.com/profiles/76561199424720757/"
         },
