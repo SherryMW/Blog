@@ -83,13 +83,15 @@ public class SwaggerConfig {
                 .termsOfServiceUrl("https://example.com/terms") // 服务条款的 URL
                 .license("Apache License 2.0") // API 的许可证信息
                 .licenseUrl("https://example.com/license") // 许可证的 URL
-                .contact("John Doe", "john.doe@example.com") // API 负责人的联系方式，通常包括名称和邮箱
+                .contact(contact(new Contact("John Doe", "https://example.com", "john.doe@example.com"))) // API 负责人的联系方式，通常包括联系人名称、URL 和电子邮件地址
                 .build();
     }
 }
 ```
 
-`new Docket(DocumentationType.SWAGGER_2).apis()` 方法可以接受一个 `Predicate<RequestHandler>` 类型的参数，该参数用于筛选出要包含在API文档中的接口。你可以使用不同的条件和过滤器来定义所需的接口
+::: info new Docket(DocumentationType.SWAGGER_2).apis()
+
+该方法可以接受一个 `Predicate<RequestHandler>` 类型的参数，该参数用于筛选出要包含在API文档中的接口。你可以使用不同的条件和过滤器来定义所需的接口
 
 1. `apis(RequestHandlerSelectors.any())`：包括所有的接口
 
@@ -99,9 +101,37 @@ public class SwaggerConfig {
 
 4. `apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))`：包括带有特定注解（例如 `@ApiOperation`）的接口方法
 
+:::
+
 启动项目后访问 `http://ip:port/swagger-ui.html` 来查看 Swagger UI 界面
 
 ![](https://img.sherry4869.com/blog/it/swagger/img_2.png)
+
+## 常见问题
+
+![](https://img.sherry4869.com/blog/it/swagger/img_3.png)
+
+它指示在使用动态 servlet 注册或 API 位于 API 网关后时无法自动推断 Swagger 资源的基本 URL。基本 URL 是指 Swagger 资源所服务的根路径。例如，如果 API 的访问地址是 http://example.org/api/v2/api-docs，那么基本 URL 应为 http://example.org/api/
+
+检测项目中是否配置了一个实现了 `ResponseBodyAdvice` 接口的实现类。该类用于对响应体进行全局处理，如有该类，请查看类中重写的 `supports()` 方法是否返回 `true` 且没有过滤 Swagger 的接口，因为如果 `supports()` 返回 true，就会执行重写的 `beforeBodyWrite()` 方法，方法里返回的数据封装格式与 Swagger 的 `springfox.documentation.swagger.web.ApiResourceController` 接口里返回的数据格式不匹配导致获取不了 Swagger 资源的基本 URL
+
+此时我们就需要在实现类中的 `supports()` 方法里过滤 Swagger 接口
+
+```java
+@RestControllerAdvice
+public class RestResponseBodyAdvice implements ResponseBodyAdvice {
+
+    @Override
+    public boolean supports(MethodParameter returnType, Class converterType) {
+        return !returnType.getDeclaringClass().getName().contains("springfox");
+    }
+
+    @Override
+    public Object beforeBodyWrite(Object body, MethodParameter returnType, MediaType selectedContentType, Class selectedConverterType, ServerHttpRequest request, ServerHttpResponse response) {
+        // ...
+    }
+}
+```
 
 ## 常用注解
 

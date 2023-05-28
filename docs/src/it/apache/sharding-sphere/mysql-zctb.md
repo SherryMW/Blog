@@ -88,7 +88,7 @@ netstat -tunlp | grep 3307
 
     mysql:8.0.31：当前容器镜像的名字及版本号
 
-    ::: tip 常见错误
+    ::: tip 常见问题
     docker: Error response from daemon: driver failed programming external connectivity on endpoint mw-mysql-master (2a317de61e601c3c0864199ba12953f26e0552357b42045bac660481e39bfcb4):  (iptables failed: iptables --wait -t nat -A DOCKER -p tcp -d 0/0 --dport 3307 -j DNAT --to-destination {ip}:{port} ! -i docker0: iptables: No chain/target/match by that name
 
     - 检查是否有其他容器正在使用相同的端口，如果有，停止或删除它们
@@ -199,7 +199,7 @@ netstat -tunlp | grep 3307
     用户名：root  
     密码：123456
 
-    ::: tip 常见错误
+    ::: tip 常见问题
     **2002 -  Can't connect to server on 'ip'(10061)**
 
     **2013 - Lost connection to server at 'handshake: reading initial communication packet', system error: 0**
@@ -463,7 +463,7 @@ show slave status \G
 
 检查 Slave_IO_Running 以及 Slave_SQL_Running 是否为 Yes
 
-::: tip 常见错误
+::: tip 常见问题
 - **Slave_IO_Running:Connecting/NO 表示 I/O 线程正在尝试连接主服务器，但还没有成功**
 
     运行 `show slave status` 指令查看 Last_IO_Errno，Last_IO_Error 错误信息

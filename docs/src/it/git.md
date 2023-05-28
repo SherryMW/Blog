@@ -66,7 +66,7 @@ Git 是一个分布式版本控制系统，用于管理和跟踪软件开发项�
 
 ---
 
-常见错误：
+常见问题：
 
 ```text
 error: the following files have changes staged in the index:
