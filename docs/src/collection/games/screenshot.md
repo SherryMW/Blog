@@ -7,17 +7,35 @@ article: false
 
 ## 双人成行
 
-![](https://img.sherry4869.com/blog/game/takestwo/img_1.jpg)
+游戏所表达的爱与浪漫终归是现实世界美好一面的映射
 
-![](https://img.sherry4869.com/blog/game/takestwo/img_2.jpg)
+![](https://img.sherry4869.com/blog/game/ittakestwo/img_1.jpg)
 
-![](https://img.sherry4869.com/blog/game/takestwo/img_3.jpg)
+![](https://img.sherry4869.com/blog/game/ittakestwo/img_2.jpg)
 
-![](https://img.sherry4869.com/blog/game/takestwo/img_4.jpg)
+![](https://img.sherry4869.com/blog/game/ittakestwo/img_3.jpg)
 
-![](https://img.sherry4869.com/blog/game/takestwo/img_5.jpg)
+![](https://img.sherry4869.com/blog/game/ittakestwo/img_4.jpg)
 
-![](https://img.sherry4869.com/blog/game/takestwo/img_6.jpg)
+![](https://img.sherry4869.com/blog/game/ittakestwo/img_5.jpg)
+
+![](https://img.sherry4869.com/blog/game/ittakestwo/img_6.jpg)
+
+## 逃出生天
+
+对唔住，我系差人
+
+![](https://img.sherry4869.com/blog/game/awayout/img.jpg)
+
+![](https://img.sherry4869.com/blog/game/awayout/img_2.jpg)
+
+![](https://img.sherry4869.com/blog/game/awayout/img_3.jpg)
+
+![](https://img.sherry4869.com/blog/game/awayout/img_4.jpg)
+
+![](https://img.sherry4869.com/blog/game/awayout/img_5.jpg)
+
+![](https://img.sherry4869.com/blog/game/awayout/img_6.jpg)
 
 ## 英雄联盟
 

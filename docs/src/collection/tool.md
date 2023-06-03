@@ -10,6 +10,11 @@ article: false
   name: UU在线工具
   desc: 工欲善其事，必先利其器
   link: https://uutool.cn/
+
+- icon: https://tools.pdf24.org//static/img/pdf24.png?v=5cf19973
+  name: PDF24 Tools
+  desc: 免费且易于使用的在线PDF工具
+  link: https://tools.pdf24.org/zh/
   
 - icon: https://cn.unithelper.com/favicon.ico
   name: UNIT helper

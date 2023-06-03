@@ -11,7 +11,7 @@ category: IT
 
 ## Swagger V3
 
-引入相关依赖
+### 引入相关依赖
 
 ```xml
 <dependencies>
@@ -35,13 +35,47 @@ category: IT
 </dependencies>
 ```
 
-在 Swagger V3 中，你只需要引入相应的 Swagger 依赖，无需显式创建一个配置类，就可以启动项目后通过访问 `http://ip:port/swagger-ui/index.html` 来查看 Swagger UI 界面
+### 新增配置项
+
+```properties
+spring.mvc.pathmatch.matching-strategy=ant_path_matcher
+```
+
+默认情况下，Spring MVC 使用 URI 模板（uri_template）匹配策略来匹配请求路径，这种策略对大多数情况下都适用。然而，当引入 Swagger 框架时，由于 Swagger 会解析请求路径和参数，使用 URI 模板匹配策略可能会导致路径解析错误或路径重复
+
+为了解决这个问题，需要将路径匹配策略设置为 Ant 路径匹配，即 `spring.mvc.pathmatch.matching-strategy=ant_path_matcher`。Ant 路径匹配更灵活，可以处理带有通配符和占位符的路径模式，能够更准确地匹配和映射请求路径，确保 Swagger 能够正确解析 API 的路径和参数
+
+---
+
+在 Swagger V3 中，无需显式创建一个配置类，就可以在启动项目后访问 `http://${ip}:${port}/swagger-ui/index.html` Swagger UI 界面
 
 ![](https://img.sherry4869.com/blog/it/swagger/img.png)
 
+### 创建配置类
+
+虽说无需显式配置类，但如有相关配置需求也可以创建配置类
+
+```java
+@Configuration
+@EnableOpenApi
+public class SwaggerConfig {
+
+    @Bean
+    public OpenAPI customOpenAPI() {
+        return new OpenAPI()
+                .info(new Info()
+                        .title("Your API Title") // API 文档的标题
+                        .version("1.0.0") // API 的版本号
+                        .description("Your API Description") // API 文档的描述
+                        .license(new License().name("Apache 2.0").url("http://springdoc.org")) // 许可证的 URL
+                );
+    }
+}
+```
+
 ## Swagger V2
 
-引入相关依赖
+### 引入相关依赖
 
 ```xml
 <dependencies>
@@ -59,7 +93,17 @@ category: IT
 </dependencies>
 ```
 
-创建配置类
+### 新增配置项
+
+```properties
+spring.mvc.pathmatch.matching-strategy=ant_path_matcher
+```
+
+默认情况下，Spring MVC 使用 URI 模板（uri_template）匹配策略来匹配请求路径，这种策略对大多数情况下都适用。然而，当引入 Swagger 框架时，由于 Swagger 会解析请求路径和参数，使用 URI 模板匹配策略可能会导致路径解析错误或路径重复
+
+为了解决这个问题，需要将路径匹配策略设置为 Ant 路径匹配，即 `spring.mvc.pathmatch.matching-strategy=ant_path_matcher`。Ant 路径匹配更灵活，可以处理带有通配符和占位符的路径模式，能够更准确地匹配和映射请求路径，确保 Swagger 能够正确解析 API 的路径和参数
+
+### 创建配置类
 
 ```java
 @Configuration
@@ -103,9 +147,35 @@ public class SwaggerConfig {
 
 :::
 
-启动项目后访问 `http://ip:port/swagger-ui.html` 来查看 Swagger UI 界面
+启动项目后访问 `http://${ip}:${port}/swagger-ui.html` Swagger UI 界面
 
 ![](https://img.sherry4869.com/blog/it/swagger/img_2.png)
+
+## 注意事项
+
+在生产环境中，关闭 Swagger 是一种常见的做法，以防止未经授权的访问和减少潜在的安全风险。以下是一些常用的方法来关闭 Swagger：
+
+1. 使用配置文件：
+
+    在你的应用程序的配置文件中，可以通过设置来禁用 Swagger 相关的功能。具体的设置方式可能因使用的框架和配置文件格式而有所不同。对于 Spring Boot，可以在 application-prod.properties 或 application-prod.yml 文件中添加以下配置来禁用 Swagger：
+    
+    ```properties
+    springfox.documentation.enabled=false
+    ```
+
+2. 使用条件注解：
+
+在 Swagger 配置类上使用条件注解，根据环境或配置的条件来决定是否加载 Swagger 相关的配置。对于 Spring Boot，可以使用 `@Profile` 注解或自定义的条件注解来控制 Swagger 配置类的加载。例如，只在非生产环境下加载 Swagger：
+
+```java
+@Configuration
+@Profile("!prod")
+@EnableOpenApi
+//@EnableSwagger2
+public class SwaggerConfig {
+    // 配置 Swagger
+}
+```
 
 ## 常见问题
 
@@ -113,7 +183,7 @@ public class SwaggerConfig {
 
 它指示在使用动态 servlet 注册或 API 位于 API 网关后时无法自动推断 Swagger 资源的基本 URL。基本 URL 是指 Swagger 资源所服务的根路径。例如，如果 API 的访问地址是 http://example.org/api/v2/api-docs，那么基本 URL 应为 http://example.org/api/
 
-检测项目中是否配置了一个实现了 `ResponseBodyAdvice` 接口的实现类。该类用于对响应体进行全局处理，如有该类，请查看类中重写的 `supports()` 方法是否返回 `true` 且没有过滤 Swagger 的接口，因为如果 `supports()` 返回 true，就会执行重写的 `beforeBodyWrite()` 方法，方法里返回的数据封装格式与 Swagger 的 `springfox.documentation.swagger.web.ApiResourceController` 接口里返回的数据格式不匹配导致获取不了 Swagger 资源的基本 URL
+检测项目中是否配置了一个实现了 `ResponseBodyAdvice` 接口的实现类。该类用于对响应体进行全局处理，如有该类，请查看类中重写的 `supports()` 方法是否返回 true 且没有过滤 Swagger 的接口，因为如果 `supports()` 返回 true，就会执行重写的 `beforeBodyWrite()` 方法，方法里返回的数据封装格式与 Swagger `springfox.documentation.swagger.web.ApiResourceController` 接口里返回的数据格式不匹配导致获取不了 Swagger 资源的基本 URL
 
 此时我们就需要在实现类中的 `supports()` 方法里过滤 Swagger 接口
 
