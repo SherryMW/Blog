@@ -6,7 +6,14 @@ article: false
 
 ## 前端
 
-### 桌面端 UI 组件库
+::: projects
+```yaml
+- icon: https://cn.vitejs.dev/logo.svg
+  name: Vite
+  desc: 下一代的前端工具链
+  link: https://cn.vitejs.dev/
+```
+:::
 
 ::: projects
 ```yaml
@@ -26,8 +33,6 @@ article: false
   link: https://ng-alain.com/zh
 ```
 :::
-
-### 移动端 UI 组件库
 
 ::: projects
 ```yaml
