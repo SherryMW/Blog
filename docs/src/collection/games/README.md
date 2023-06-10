@@ -3,7 +3,7 @@ order: 2
 article: false
 ---
 
-# 截图
+# Games
 
 ## 双人成行
 
@@ -42,9 +42,9 @@ article: false
 
 [点击下载汉化包](https://img.sherry4869.com/blog/game/awayout/3DMGAME-A.Way.Out.CHS.Patch.v1.1-3DM.rar)
 
-Windows 10 或者 Windows 11 打开浏览器点击下载时可能会出现【无法下载-检测到病毒】的提示，需要打开电脑的 Windows 安全中心 -> 病毒和威胁防护 -> 病毒和威胁防护设置 -> 管理设置 -> 实时保护 点击关闭。如果电脑安装了 McAfee 迈克菲的话直接打开该软件，选择 -> 我的保护产品 -> 实时扫描 -> 关闭。待汉化包下载成功后再打开实时保护设置
+Windows 10 或者 Windows 11 点击下载时可能会出现【无法下载-检测到病毒】的提示，需要打开电脑设置里的 Windows 安全中心 -> 病毒和威胁防护 -> 病毒和威胁防护设置 -> 管理设置 -> 实时保护 点击关闭。如果电脑安装了 McAfee 迈克菲的话直接打开该软件，选择 -> 我的保护产品 -> 实时扫描 -> 点击关闭。待汉化包下载成功后再打开实时保护设置
 
-下载成功后把汉化包放在游戏安装目录下，如果是在 Steam 平台里下载的话游戏默认存放在磁盘:\steam\steamapps\common\AWayOut 目录下，解压汉化包到当前目录下，并双击运行 3DMGAME-A.Way.Out.CHS.Patch.v1.1-3DM.exe，点击汉化游戏即可
+如果是在 Steam 平台里下载的话游戏默认存放在 \steam\steamapps\common\AWayOut 目录下，把汉化包到游戏安装目录下，双击运行 3DMGAME-A.Way.Out.CHS.Patch.v1.1-3DM.exe，点击汉化游戏即可
 
 **闪退问题：**
 
@@ -56,6 +56,16 @@ Windows 10 或者 Windows 11 打开浏览器点击下载时可能会出现【无
 :::
 
 ## 英雄联盟
+
+团一波
+
+打反手
+
+拉扯下
+
+我去抢
+
+/ff
 
 ![](https://img.sherry4869.com/blog/game/lol/img_7.png)
 
