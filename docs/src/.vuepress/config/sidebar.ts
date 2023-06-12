@@ -2,6 +2,7 @@ import {sidebar} from "vuepress-theme-hope";
 import {PostgreSQLSidebar} from "../../it/database/postgresql/sidebar"
 import {ShardingSphereSidebar} from "../../it/apache/sharding-sphere/sidebar";
 import {CollectionSidebar} from "../../collection/sidebar"
+import {PlaySidebar} from "../../life/play/sidebar";
 
 export const SidebarConfig = sidebar({
 
@@ -10,6 +11,8 @@ export const SidebarConfig = sidebar({
     "/it/apache/sharding-sphere/": ShardingSphereSidebar,
 
     "/collection/": CollectionSidebar,
+
+    "/life/play/": PlaySidebar
 
     // "/it/java/pay/": [
     //     {
@@ -85,39 +88,4 @@ export const SidebarConfig = sidebar({
     //     },
     //     "gogogo"
     // ],
-    //
-    // "/life/play/": [
-    //     {
-    //         text: "广州",
-    //         prefix: "guangzhou/",
-    //         children: [
-    //             {
-    //                 text: "天河",
-    //                 prefix: "th/",
-    //                 collapsible: true,
-    //                 children: "structure"
-    //             },
-    //             {
-    //                 text: "越秀",
-    //                 prefix: "yx/",
-    //                 collapsible: true,
-    //                 children: "structure"
-    //             },
-    //             {
-    //                 text: "荔湾",
-    //                 prefix: "lw/",
-    //                 collapsible: true,
-    //                 children: "structure"
-    //             },
-    //             {
-    //                 text: "番禺",
-    //                 prefix: "py/",
-    //                 collapsible: true,
-    //                 children: "structure"
-    //             },
-    //         ]
-    //     },
-    //     "gogogo"
-    // ],
-
 });
