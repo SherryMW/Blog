@@ -57,6 +57,7 @@ Windows 10 或者 Windows 11 点击下载时可能会出现【无法下载-检�
 
 ## 英雄联盟
 
+::: info 一键喊话
 不要吵
 
 给个眼
@@ -72,6 +73,13 @@ Windows 10 或者 Windows 11 点击下载时可能会出现【无法下载-检�
 我去抢
 
 /ff
+:::
+
+::: info 主玩位置：打野 > 辅助 > 上单 = 中单 = ADC
+女人和孩子可以犯错，但打野不行 :innocent:
+
+打野玩的好，游戏赢的早；打野玩的菜，这把投的快 :innocent:
+::: 
 
 ![](https://img.sherry4869.com/blog/game/lol/img_7.png)
 
