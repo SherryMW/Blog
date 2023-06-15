@@ -3,7 +3,7 @@ order: 6
 article: false
 ---
 
-# 观影
+# 资源
 
 ## 在线观影
 
