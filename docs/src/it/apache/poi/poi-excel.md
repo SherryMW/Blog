@@ -1,5 +1,5 @@
 ---
-date: 2022-12-18
+date: 2022-05-15
 category: IT
 tag:
   - Java
@@ -14,7 +14,7 @@ tag:
 HSSF 是我们对 Microsoft Excel 97 (-2003) 文件格式 (BIFF8) 的纯 Java 移植。XSSF 是我们对 Microsoft Excel XML (2007+)文件格式（OOXML）的纯 Java 移植。SS 是一个包，用一个共同的 API 为这两种格式提供共同的支持。它们都支持读和写的能力
 :::
 
-## 依赖配置
+## 相关依赖
 
 ```xml
 <dependencies>

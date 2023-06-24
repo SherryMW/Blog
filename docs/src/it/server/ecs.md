@@ -9,7 +9,7 @@ category: IT
 
 <!-- more -->
 
-[云服务器ECS文档](https://help.aliyun.com/product/25365.html)  
+[阿里云云服务器 ECS 产品文档](https://help.aliyun.com/product/25365.html)
 
 ## 购买云服务器 ECS
 

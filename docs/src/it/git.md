@@ -9,6 +9,8 @@ Git 就像是程序员的时间机器，可以让你轻松穿越代码的时光
 
 <!-- more -->
 
+官网：[https://git-scm.com](https://git-scm.com/)
+
 ## Git 简介
 
 Git 是一个分布式版本控制系统，用于管理和跟踪软件开发项目的代码变更
@@ -93,7 +95,3 @@ error: the following files have local modifications:
     ```shell
     git rm -r -f 文件路径
     ```
-   
-## 参考资料
-
-[https://git-scm.com](https://git-scm.com/)

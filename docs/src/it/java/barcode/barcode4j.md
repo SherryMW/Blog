@@ -1,5 +1,5 @@
 ---
-date: 2022-12-17
+date: 2022-05-17
 category: IT
 tag: Java
 ---
@@ -8,9 +8,13 @@ tag: Java
 
 <!-- more -->
 
+官网：[https://barcode4j.sourceforge.net](https://barcode4j.sourceforge.net/)
+
+API：[barcode4j 2.1.0 API](https://barcode4j.sourceforge.net/trunk/javadocs/index.html)
+
 ![Barcode4J 支持的条形码符号](https://img.sherry4869.com/blog/it/java/barcode/barcode4j/img_3.png)
 
-## 依赖配置
+## 相关依赖
 
 ```xml
 <dependencies>
@@ -51,7 +55,7 @@ public class Main {
 }
 ```
 
-## 参数配置
+## 常用方法
 
 ### Code128Bean
 
@@ -75,9 +79,3 @@ public class Main {
 ![doQuietZone(false)效果图](https://img.sherry4869.com/blog/it/java/barcode/barcode4j/img_2.png)
 
 :::
-
-## 参考资料
-
-[Barcode4J 官方文档](https://barcode4j.sourceforge.net/)
-
-[Barcode4J Javadocs](https://barcode4j.sourceforge.net/trunk/javadocs/index.html)

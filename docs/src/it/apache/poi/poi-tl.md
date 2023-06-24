@@ -9,9 +9,12 @@ tag:
 # 在文档的任何地方做任何事情
 
 poi-tl（poi template language）是 Word 模板引擎，使用 Word 模板和数据创建很棒的 Word 文档
+
 <!-- more -->
 
-本示例实现以下的文档渲染效果
+官网：[http://deepoove.com/poi-tl](http://deepoove.com/poi-tl/)
+
+我们将实现以下的文档渲染效果：
 
 ![](https://img.sherry4869.com/blog/it/apache/poi/poi-tl/img.png)
 
@@ -160,7 +163,3 @@ org.apache.poi.openxml4j.exceptions.InvalidFormatException: A part name shall no
 ```
 
 如要使用 poi-tl 1.11.x 以上的版本，spring-boot-starter 的版本要在 2.3.x 以上 ，否则使用 poi-tl 1.11.x 以下的版本，例如 poi-tl poi-tl 1.9.1 ~ 1.10.4
-
-## 参考资料
-
-[Poi-tl Documentation](http://deepoove.com/poi-tl/)

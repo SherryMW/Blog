@@ -87,11 +87,9 @@ Linux 是一种基于 UNIX 操作系统的开源操作系统，让你可以像�
 
     `0 0 * * * TZ=Asia/Shanghai command` 表示每天 0 点 0 分钟按照上海时区执行一次命令
 
-### 查看定时任务
-
-使用 `crontab -l` 命令列出当前用户的 crontab（定时任务）列表。执行该命令后，系统会显示当前用户的所有定时任务，每个任务一行，以及相应的执行时间和执行命令等信息
-
 ### 示例
+
+使用 `crontab -l` 命令列出当前的定时任务列表。执行该命令后，系统会显示当前用户的所有定时任务，每个任务一行，以及相应的执行时间和执行命令等信息
 
 ```shell
 crontab -l
@@ -126,7 +124,7 @@ exit;
 
 1. `#!/bin/bash` 表示使用的解释器是 Bash
 
-2. `log_path_1="/usr/local/nginx/logs"` 定义变量 log_path_1，值为 /usr/local/nginx/logs，表示需要清理的日志文件所在的目录路径
+2. `log_path="/usr/local/nginx/logs"` 定义变量 log_path，值为 /usr/local/nginx/logs，表示需要清理的日志文件所在的目录路径
 
 3. `path_list=($log_path)` 将路径添加到一个数组中，后续会用到
 
@@ -136,7 +134,7 @@ exit;
 
 6. `echo "Start deleting logs that are 180 days old in $item"` 表示输出当前目录，提示开始删除该目录下的日志文件
 
-7. `find "$item"/* -name 'access_*.log' -mtime +180 -exec rm -rf {} \;` 表示查找该目录下所有 access_*.log 文件，且修改时间超过 180 天的文件，-exec 选项则用于在找到的文件上执行指定的命令，然后执行 rm 命令删除这些文件，{} 表示匹配到的文件名。在 -exec 选项中需要使用分号来表示命令的结束，所以需要用反斜杠转义分号，使其在命令中被解释为普通字符而不是命令分隔符
+7. `find "$item"/* -name 'access_*.log' -mtime +180 -exec rm -rf {} \;` 表示查找该目录下所有 access_*.log 文件，且修改时间超过 180 天的文件，`-exec` 选项则用于在找到的文件上执行指定的命令，然后执行 `rm` 命令删除这些文件，{} 表示匹配到的文件名。在 `-exec` 选项中需要使用分号来表示命令的结束，所以需要用反斜杠转义分号，使其在命令中被解释为普通字符而不是命令分隔符
 
 8. `echo "End deleting logs in $item"` 表示输出当前目录，提示已经删除该目录下的日志文件
 

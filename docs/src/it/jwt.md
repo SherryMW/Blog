@@ -9,6 +9,8 @@ JWT 全称为 JSON Web Token，是一种用于身份验证的标准。它使用 
 
 <!-- more -->
 
+官网：[https://jwt.io](https://jwt.io/)
+
 ## 初识 JWT
 
 JWT 由三部分组成：
@@ -87,13 +89,13 @@ public class JwtUtil {
      * 签发 token
      *
      * @param subject JWT 主体
-     * @param claims  JWT 声明
+     * @param claims  JWT 声明 
      * @return JWT 字符串
      */
     public String createToken(String subject, Map<String, Object> claims) {
         JwtBuilder builder = Jwts.builder();
         if (StringUtils.hasLength(subject)) {
-            builder.setSubject(subject); // 设置主题（subject）。主题表示令牌所代表的实体或主体。这个主题可以是用户的唯一标识符、用户名或其他与实体相关的标识
+            builder.setSubject(subject); // 设置主体（subject）。主体表示令牌所代表的实体或主体。这个主体可以是用户的唯一标识符、用户名或其他与实体相关的标识
         }
         if (claims != null) {
             builder.addClaims(claims); // 用于添加声明（claims）到 JWT 中。声明可以包含用户身份、访问权限、角色、过期时间等信息
@@ -138,9 +140,9 @@ public class JwtUtil {
     }
 
     /**
-     * 获取 token 中主体
+     * 获取 token 中的主体
      */
-    public String getUserId(String token) {
+    public String getSubject(String token) {
         Claims claims = pareToken(token);
         if (claims != null) {
             return claims.getSubject();
@@ -182,12 +184,14 @@ public class TestJwt {
         map.put("role", "admin");
         String token = jwtUtil.createToken("123", map);
         System.out.println("exp = " + jwtUtil.validateToken(token));
-        System.out.println("userId = " + jwtUtil.getUserId(token));
+        System.out.println("subject = " + jwtUtil.getSubject(token));
     }
     
 }
 ```
 
-## 参考资料
-
-官网：[https://jwt.io](https://jwt.io/)
+```text
+eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjMiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2ODc2MjEwMTAsImV4cCI6MTY4NzYyNDYxMH0.5jAIbUnp4hOnCh30suH1wVxUT3EkPp8Os-a6rw61u9E
+exp = true
+subject = 123
+```

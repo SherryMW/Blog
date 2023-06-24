@@ -7,6 +7,12 @@ category: IT
 
 Cloudreve 可以让你快速搭建起公私兼备的网盘系统<!-- more -->。Cloudreve 在底层支持不同的云存储平台，用户在实际使用时无须关心物理存储方式。你可以使用 Cloudreve 搭建个人用网盘、文件分享系统，亦或是针对大小团体的公有云系统
 
+官网：[https://docs.cloudreve.org](https://docs.cloudreve.org/)
+
+论坛：[https://forum.cloudreve.org](https://forum.cloudreve.org/)
+
+GitHub：[https://github.com/cloudreve/Cloudreve](https://github.com/cloudreve/Cloudreve)
+
 ## 获取 Cloudreve
 
 在 [GitHub Release](https://github.com/cloudreve/Cloudreve/releases) 页面获取已经构建打包完成的主程序。其中每个版本都提供了常见系统架构下可用的主程序，命名规则为 cloudreve_版本号_操作系统_CPU架构.tar.gz。比如普通 64 位 Linux 系统上部署 3.0.0 版本，则应该下载 cloudreve_3.0.0_linux_amd64.tar.gz
@@ -126,11 +132,3 @@ arch
 ![](https://img.sherry4869.com/blog/it/server/cloudreve/img_17.png)
 
 首先访问服务器 `${ip}:5212` 项目地址测试是否出现该错误提示，如果一切正常则是反向代理配置有误，检查反向代理目标 URL 是否配置成 `127.0.0.1:5212`，如果是的话需要修改成 `${ip}:5212`
-
-## 参考资料
-
-[Cloudreve 官网](https://docs.cloudreve.org/)
-
-[Cloudreve 论坛](https://forum.cloudreve.org/)
-
-[Cloudreve GitHub](https://github.com/cloudreve/Cloudreve)
