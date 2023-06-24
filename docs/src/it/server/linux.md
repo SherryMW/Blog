@@ -110,7 +110,7 @@ log_path="/usr/local/nginx/logs"
 path_list=($log_path)
 for item in ${path_list[@]}
 do
-    #目录存在，删除修改时间为180天前的文件
+    #目录存在，删除修改时间为 180 天前的文件
     if [ -d "$item" ]; then
         echo "Start deleting logs that are 180 days old in $item"
 

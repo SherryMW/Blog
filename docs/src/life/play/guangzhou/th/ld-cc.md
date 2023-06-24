@@ -5,6 +5,12 @@ article: false
 
 # 龙洞/岑村
 
+## 植物园根据地越野俱乐部
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H35Z3NG3" target="_blank">华南国家植物园南区</a>
+
+- [x] 2023-06-23 夜间场（黑灯瞎火的别提有多刺激了）
+
 ## 玄玑阁&源代码沉浸式密室
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFLPC8VF" target="_blank">龙洞街迎龙路167号63汇创商场一楼商场内</a>

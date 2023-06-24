@@ -5,11 +5,11 @@ category: IT
 
 # JWT
 
+JWT 全称为 JSON Web Token，是一种用于身份验证的标准。它使用 JSON 格式将信息进行编码，可以被签名和加密。JWT 通常用于 Web 应用程序中，用于验证用户身份
+
 <!-- more -->
 
 ## 初识 JWT
-
-JWT 全称为 JSON Web Token，是一种用于身份验证的标准。它使用 JSON 格式将信息进行编码，可以被签名和加密。JWT 通常用于 Web 应用程序中，用于验证用户身份
 
 JWT 由三部分组成：
 
@@ -116,7 +116,13 @@ public class JwtUtil {
      * 解析 token
      */
     public Claims pareToken(String token) {
-        return Jwts.parser().setSigningKey(DatatypeConverter.parseBase64Binary(secretKey)).parseClaimsJws(token).getBody();
+        Claims claims = null;
+        try {
+            claims = Jwts.parser().setSigningKey(DatatypeConverter.parseBase64Binary(secretKey)).parseClaimsJws(token).getBody();
+        } catch (Exception e) {
+            log.error("pareToken error:{}", e);
+        }
+        return claims;
     }
 
     /**
@@ -184,4 +190,4 @@ public class TestJwt {
 
 ## 参考资料
 
-[JWT 官网](https://jwt.io/)
+官网：[https://jwt.io](https://jwt.io/)

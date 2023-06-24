@@ -11,7 +11,7 @@ Cloudreve 可以让你快速搭建起公私兼备的网盘系统<!-- more -->。
 
 在 [GitHub Release](https://github.com/cloudreve/Cloudreve/releases) 页面获取已经构建打包完成的主程序。其中每个版本都提供了常见系统架构下可用的主程序，命名规则为 cloudreve_版本号_操作系统_CPU架构.tar.gz。比如普通 64 位 Linux 系统上部署 3.0.0 版本，则应该下载 cloudreve_3.0.0_linux_amd64.tar.gz
 
-查看当前主机的硬件架构类型
+Linux 查看当前主机的硬件架构类型指令：
 
 ```shell
 arch
@@ -23,7 +23,7 @@ arch
 
 ## 使用宝塔部署
 
-1. 登录宝塔面板点击侧边栏中的 **网站** 添加站点
+1. 登录宝塔面板点击侧边栏中的【网站】添加站点
 
     ![](https://img.sherry4869.com/blog/it/server/cloudreve/img_2.png)
 
@@ -47,7 +47,7 @@ arch
     访问站点出现其他非正常界面，有可能是浏览器 Cookie 导致，需要打开浏览器设置 -> Cookie 和网站数据 -> 所有 Cookie 和站点数据，清除对应站点 Cookie
     :::
 
-4. 在网站目录下创建 cloudreve 目录，并上传之前解压后的 cloudreve 可执行文件
+4. 在网站目录下创建 cloudreve 目录，并上传之前解压好的 cloudreve 可执行文件
 
     ![](https://img.sherry4869.com/blog/it/server/cloudreve/img_6.png)
     
@@ -101,7 +101,7 @@ arch
 
     ![](https://img.sherry4869.com/blog/it/server/cloudreve/img_12.png)
 
-9. 在宝塔应用管理器中重新启动 cloudreve 应用。注意：每重启一次应用都会更新登陆密码
+9. 在宝塔应用管理器中重新启动 cloudreve 应用。注意：如果密码不正确或忘记请在应用的日志文件里查看密码
 
     ![](https://img.sherry4869.com/blog/it/server/cloudreve/img_13.png)
 
@@ -125,7 +125,7 @@ arch
 
 ![](https://img.sherry4869.com/blog/it/server/cloudreve/img_17.png)
 
-首先访问服务器 `${ip}:5212` 测试是否还会有该错误提示，如果一切正常则是反向代理配置有误，检查反向代理目标 URL 是否配置成 `127.0.0.1:5212`，如果是的话需要修改成 `${ip}:5212`
+首先访问服务器 `${ip}:5212` 项目地址测试是否出现该错误提示，如果一切正常则是反向代理配置有误，检查反向代理目标 URL 是否配置成 `127.0.0.1:5212`，如果是的话需要修改成 `${ip}:5212`
 
 ## 参考资料
 

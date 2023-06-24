@@ -4,7 +4,28 @@ article: false
 
 # 开发
 
-## 前端
+::: projects
+```yaml
+- icon: https://jwt.io/img/pic_logo.svg
+  name: JWT
+  desc: JSON Web Tokens
+  link: https://jwt.io/
+```
+:::
+
+::: projects
+```yaml
+- icon: https://www.axios-http.cn/assets/favicon.ico
+  name: Axios
+  desc: Axios 是一个基于 promise 的网络请求库，可以用于浏览器和 node.js
+  link: https://www.axios-http.cn/
+
+- icon: https://pinia.vuejs.org/logo.svg
+  name: Pinia
+  desc: 符合直觉的 Vue.js 状态管理库
+  link: https://pinia.vuejs.org/zh/
+```
+:::
 
 ::: projects
 ```yaml
@@ -31,11 +52,7 @@ article: false
   name: NG-ALAIN
   desc: 一个基于 Antd 中后台前端解决方案
   link: https://ng-alain.com/zh
-```
-:::
-
-::: projects
-```yaml
+  
 - icon: https://fastly.jsdelivr.net/npm/@vant/assets/logo.png
   name: Vant
   desc: 轻量、可定制的移动端 Vue 组件库
@@ -48,7 +65,7 @@ article: false
 
 - icon: https://uiadmin.net/uview-plus/common/logo.png
   name: uview-plus
-  desc: 全面兼容nvue的uni-app生态框架
+  desc: 全面兼容 nvue 的 uni-app 生态框架
   link: https://uiadmin.net/uview-plus/
 ```
 :::

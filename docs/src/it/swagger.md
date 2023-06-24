@@ -9,71 +9,9 @@ category: IT
 
 <!-- more -->
 
-## Swagger V3
+官网：[https://swagger.io](https://swagger.io/)
 
-### 引入相关依赖
-
-```xml
-<dependencies>
-    <dependency>
-        <groupId>io.springfox</groupId>
-        <artifactId>springfox-swagger2</artifactId>
-        <version>3.0.0</version>
-    </dependency>
-
-    <dependency>
-        <groupId>io.springfox</groupId>
-        <artifactId>springfox-boot-starter</artifactId>
-        <version>3.0.0</version>
-    </dependency>
-
-    <dependency>
-        <groupId>io.springfox</groupId>
-        <artifactId>springfox-swagger-ui</artifactId>
-        <version>3.0.0</version>
-    </dependency>
-</dependencies>
-```
-
-### 新增配置项
-
-```properties
-spring.mvc.pathmatch.matching-strategy=ant_path_matcher
-```
-
-默认情况下，Spring MVC 使用 URI 模板（uri_template）匹配策略来匹配请求路径，这种策略对大多数情况下都适用。然而，当引入 Swagger 框架时，由于 Swagger 会解析请求路径和参数，使用 URI 模板匹配策略可能会导致路径解析错误或路径重复
-
-为了解决这个问题，需要将路径匹配策略设置为 Ant 路径匹配，即 `spring.mvc.pathmatch.matching-strategy=ant_path_matcher`。Ant 路径匹配更灵活，可以处理带有通配符和占位符的路径模式，能够更准确地匹配和映射请求路径，确保 Swagger 能够正确解析 API 的路径和参数
-
----
-
-在 Swagger V3 中，无需显式创建一个配置类，就可以在启动项目后访问 `http://${ip}:${port}/swagger-ui/index.html` Swagger UI 界面
-
-![](https://img.sherry4869.com/blog/it/swagger/img.png)
-
-### 创建配置类
-
-虽说无需显式配置类，但如有相关配置需求也可以创建配置类
-
-```java
-@Configuration
-@EnableOpenApi
-public class SwaggerConfig {
-
-    @Bean
-    public OpenAPI customOpenAPI() {
-        return new OpenAPI()
-                .info(new Info()
-                        .title("Your API Title") // API 文档的标题
-                        .version("1.0.0") // API 的版本号
-                        .description("Your API Description") // API 文档的描述
-                        .license(new License().name("Apache 2.0").url("http://springdoc.org")) // 许可证的 URL
-                );
-    }
-}
-```
-
-## Swagger V2
+## Swagger V2.0
 
 ### 引入相关依赖
 
@@ -133,23 +71,135 @@ public class SwaggerConfig {
 }
 ```
 
-::: info new Docket(DocumentationType.SWAGGER_2).apis()
+::: info springfox.documentation.spring.web.plugins.ApiSelectorBuilder#apis
 
-该方法可以接受一个 `Predicate<RequestHandler>` 类型的参数，该参数用于筛选出要包含在API文档中的接口。你可以使用不同的条件和过滤器来定义所需的接口
+该方法可以接受一个 `Predicate<RequestHandler>` 类型的参数，该参数用于筛选出要包含在 API 文档中的接口。你可以使用不同的条件和过滤器来定义所需的接口
 
-1. `apis(RequestHandlerSelectors.any())`：包括所有的接口
+- `apis(RequestHandlerSelectors.any())` 包括所有的接口
 
-2. `apis(RequestHandlerSelectors.basePackage("com.example.controllers"))`：包括指定包下的接口
+- `apis(RequestHandlerSelectors.basePackage("com.example.controllers"))` 包括指定包下的接口
 
-3. `apis(RequestHandlerSelectors.withClassAnnotation(RestController.class))`：包括带有特定注解（例如 `@RestController`）的接口
+- `apis(RequestHandlerSelectors.withClassAnnotation(RestController.class))` 包括带有特定注解（例如 `@RestController`）的接口
 
-4. `apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))`：包括带有特定注解（例如 `@ApiOperation`）的接口方法
+- `apis(RequestHandlerSelectors.withMethodAnnotation(ApiOperation.class))` 包括带有特定注解（例如 `@ApiOperation`）的接口方法
 
 :::
 
 启动项目后访问 `http://${ip}:${port}/swagger-ui.html` Swagger UI 界面
 
 ![](https://img.sherry4869.com/blog/it/swagger/img_2.png)
+
+## Swagger V3.0
+
+### 引入相关依赖
+
+```xml
+<dependencies>
+    <dependency>
+        <groupId>io.springfox</groupId>
+        <artifactId>springfox-swagger2</artifactId>
+        <version>3.0.0</version>
+    </dependency>
+
+    <dependency>
+        <groupId>io.springfox</groupId>
+        <artifactId>springfox-boot-starter</artifactId>
+        <version>3.0.0</version>
+    </dependency>
+
+    <dependency>
+        <groupId>io.springfox</groupId>
+        <artifactId>springfox-swagger-ui</artifactId>
+        <version>3.0.0</version>
+    </dependency>
+</dependencies>
+```
+
+### 新增配置项
+
+```properties
+spring.mvc.pathmatch.matching-strategy=ant_path_matcher
+```
+
+默认情况下，Spring MVC 使用 URI 模板（uri_template）匹配策略来匹配请求路径，这种策略对大多数情况下都适用。然而，当引入 Swagger 框架时，由于 Swagger 会解析请求路径和参数，使用 URI 模板匹配策略可能会导致路径解析错误或路径重复
+
+为了解决这个问题，需要将路径匹配策略设置为 Ant 路径匹配，即 `spring.mvc.pathmatch.matching-strategy=ant_path_matcher`。Ant 路径匹配更灵活，可以处理带有通配符和占位符的路径模式，能够更准确地匹配和映射请求路径，确保 Swagger 能够正确解析 API 的路径和参数
+
+---
+
+在 Swagger V3.0 中，无需显式创建一个配置类，就可以直接在启动项目后访问 `http://${ip}:${port}/swagger-ui/index.html` Swagger UI 界面
+
+![](https://img.sherry4869.com/blog/it/swagger/img.png)
+
+### 创建配置类
+
+虽说无需显式创建配置类，但如有相关配置需求也可以创建配置类
+
+```java
+@Configuration
+@EnableOpenApi
+public class SwaggerConfig {
+
+    @Bean
+    public OpenAPI customOpenAPI() {
+        return new OpenAPI()
+                .info(new Info()
+                        .title("Your API Title") // API 文档的标题
+                        .version("1.0.0") // API 的版本号
+                        .description("Your API Description") // API 文档的描述
+                        .license(new License().name("Apache 2.0").url("http://springdoc.org")) // 许可证的 URL
+                );
+    }
+}
+```
+
+## knife4j
+
+Knife4j 是一个集 Swagger2 和 OpenAPI3 为一体的增强解决方案
+
+官网：[https://doc.xiaominfo.com](https://doc.xiaominfo.com/)
+
+### 引入相关依赖
+
+```xml
+<!--引入Knife4j的官方start包,该指南选择Spring Boot版本<3.0,开发者需要注意-->
+<dependency>
+    <groupId>com.github.xiaoymin</groupId>
+    <artifactId>knife4j-openapi2-spring-boot-starter</artifactId>
+    <version>4.0.0</version>
+</dependency>
+```
+
+### 创建配置类
+
+```java
+@Configuration
+@EnableSwagger2WebMvc
+public class Knife4jConfiguration {
+
+    @Bean(value = "docketBean")
+    public Docket dockerBean() {
+        //指定使用 Swagger2 规范
+        Docket docket = new Docket(DocumentationType.SWAGGER_2)
+                .apiInfo(new ApiInfoBuilder()
+                        //描述字段支持 Markdown 语法
+                        .description("# Knife4j RESTful APIs")
+                        .termsOfServiceUrl("https://doc.xiaominfo.com/")
+                        .version("1.0")
+                        .build())
+                .groupName("用户服务") //分组名称
+                .select()
+                .apis(RequestHandlerSelectors.basePackage("com.github.xiaoymin.knife4j.controller")) //这里指定 Controller 扫描包路径
+                .paths(PathSelectors.any())
+                .build();
+        return docket;
+    }
+}
+```
+
+启动项目后访问 `http://${ip}:${port}/doc.html` Knife4j 的文档地址
+
+![](https://img.sherry4869.com/blog/it/swagger/img_4.png)
 
 ## 注意事项
 
@@ -183,7 +233,7 @@ public class SwaggerConfig {
 
 它指示在使用动态 servlet 注册或 API 位于 API 网关后时无法自动推断 Swagger 资源的基本 URL。基本 URL 是指 Swagger 资源所服务的根路径。例如，如果 API 的访问地址是 http://example.org/api/v2/api-docs，那么基本 URL 应为 http://example.org/api/
 
-检测项目中是否配置了一个实现了 `ResponseBodyAdvice` 接口的实现类。该类用于对响应体进行全局处理，如有该类，请查看类中重写的 `supports()` 方法是否返回 true 且没有过滤 Swagger 的接口，因为如果 `supports()` 返回 true，就会执行重写的 `beforeBodyWrite()` 方法，方法里返回的数据封装格式与 Swagger `springfox.documentation.swagger.web.ApiResourceController` 接口里返回的数据格式不匹配导致获取不了 Swagger 资源的基本 URL
+检测项目中是否配置了一个实现了 `ResponseBodyAdvice` 接口的实现类。该类用于对响应体进行全局处理，如有该类，请查看类中重写的 `supports()` 方法是否返回 true 且没有过滤 Swagger 的接口。因为如果 `supports()` 方法返回 true，就会执行重写的 `beforeBodyWrite()` 方法，方法里返回的数据封装格式与 Swagger `springfox.documentation.swagger.web.ApiResourceController` 接口里返回的数据格式不匹配导致获取不了 Swagger 资源的基本 URL
 
 此时我们就需要在实现类中的 `supports()` 方法里过滤 Swagger 接口
 
@@ -434,5 +484,3 @@ public class UserController {
     }
 }
 ```
-
-在上述示例中，`@ApiIgnore` 注解被添加到了需要忽略的接口、方法或类上。这些被标记的元素将不会出现在生成的 Swagger 文档中，从而隐藏起来
