@@ -37,7 +37,7 @@ JWT 由三部分组成：
 
 将 Header 和 Payload 用 Base64URL 编码后，再用点(.)连接起来。然后使用签名算法和密钥对这个字符串进行签名
 
-生成签名的时候需要指定一个密码（secret）。该密码保存在服务器中，并且不能向用户公开。然后使用标头中指定的签名算法根据以下公式生成签名。在计算出签名哈希后，JWT头，有效载荷和签名哈希的三个部分组合成一个字符串，每个部分用"."分隔，就构成整个 JWT 对象。以上三部分都是在服务器定义，当用户登陆成功后，根据用户信息，按照 JWT 规则生成 token 返回给客户端
+生成签名的时候需要指定一个密码（secret）。该密码保存在服务器中，并且不能向用户公开。然后使用标头中指定的签名算法根据以下公式生成签名。在计算出签名哈希后，JWT 头，有效载荷和签名哈希的三个部分组合成一个字符串，每个部分用"."分隔，就构成整个 JWT 对象。以上三部分都是在服务器定义，当用户登陆成功后，根据用户信息，按照 JWT 规则生成 token 返回给客户端
 
 JWT 的工作流程如下：
 
@@ -194,4 +194,53 @@ public class TestJwt {
 eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxMjMiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE2ODc2MjEwMTAsImV4cCI6MTY4NzYyNDYxMH0.5jAIbUnp4hOnCh30suH1wVxUT3EkPp8Os-a6rw61u9E
 exp = true
 subject = 123
+```
+
+## 过滤器配置
+
+```java
+public class TokenFilter implements Filter {
+
+    static final String[] EXCLUDE_URLS = {"/api/user/login", "/api/user/register"}; //过滤器白名单接口
+    @Resource
+    private JwtUtil jwtUtil;
+    @Resource
+    private ObjectMapper objectMapper;
+
+    @Override
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+        HttpServletRequest httpServletRequest = (HttpServletRequest) request;
+        String requestURI = httpServletRequest.getRequestURI();
+        if (Stream.of(EXCLUDE_URLS).noneMatch(requestURI::startsWith)) { //如果当前请求地址不匹配白名单接口地址的话则需要进行 token 过滤验证
+            String token = httpServletRequest.getHeader("Authorization");
+            if (StringUtils.isEmpty(token) || !jwtUtil.validateToken(token)) {
+                DataResult dataResult = DataResult.fail(ResponseCode.TOKEN_ERROR.getCode(), ResponseCode.TOKEN_ERROR.getMessage());
+                response.getOutputStream().write(objectMapper.writeValueAsString(dataResult).getBytes(StandardCharsets.UTF_8));
+                response.setContentType(MediaType.APPLICATION_JSON_VALUE);
+                return;
+            }
+        }
+        chain.doFilter(request, response);
+    }
+}
+```
+
+```java
+@Configuration
+public class FilterConfig {
+
+    @Bean
+    public TokenFilter tokenFilter() {
+        return new TokenFilter();
+    }
+
+    @Bean
+    public FilterRegistrationBean tokenFilterBean(TokenFilter tokenFilter) {
+        FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean();
+        filterRegistrationBean.setFilter(tokenFilter);
+        filterRegistrationBean.setName("tokenFilter");
+        filterRegistrationBean.addUrlPatterns("/api/*"); //请求/api/*开头的接口都要进行 token 校验
+        return filterRegistrationBean;
+    }
+}
 ```
