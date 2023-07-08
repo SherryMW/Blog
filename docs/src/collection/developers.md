@@ -8,8 +8,27 @@ article: false
 ```yaml
 - icon: https://jwt.io/img/pic_logo.svg
   name: JWT
-  desc: JSON Web Tokens
+  desc: 一种开放的行业标准 RFC 7519 方法，用于在双方之间安全地表示声明
   link: https://jwt.io/
+```
+:::
+
+::: projects
+```yaml
+- icon: https://static.npmjs.com/58a19602036db1daee0d7863c94673a4.png
+  name: NPM
+  desc: 打造令人惊叹的东西
+  link: https://www.npmjs.com/
+  
+- icon: https://unpkg.com/favicon.ico
+  name: UNPKG
+  desc: 一个快速的全球内容交付网络，适用于 NPM 上的所有内容
+  link: https://unpkg.com/
+
+- icon: https://www.pnpm.cn/img/logos/pnpm-standard-no-text.png
+  name: PNPM
+  desc: 速度快、节省磁盘空间的软件包管理器
+  link: https://www.pnpm.cn/
 ```
 :::
 
@@ -29,10 +48,24 @@ article: false
 
 ::: projects
 ```yaml
+- icon: https://greensock.com/uploads/monthly_2018_06/favicon.ico.4811a987b377f271db584b422f58e5a7.ico
+  name: GSAP
+  desc: 适用于现代 Web 的专业级 JavaScript 动画
+  link: https://greensock.com/gsap/
+```
+:::
+
+::: projects
+```yaml
 - icon: https://cn.vitejs.dev/logo.svg
   name: Vite
   desc: 下一代的前端工具链
   link: https://cn.vitejs.dev/
+
+- icon: https://webpack.js.org/icon-square-small-slack.1c7f4f7a52c41f94.png
+  name: webpack
+  desc: 现代 JavaScript 应用程序的静态模块捆绑器
+  link: https://webpack.js.org/
 ```
 :::
 

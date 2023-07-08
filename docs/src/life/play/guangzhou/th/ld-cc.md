@@ -33,6 +33,6 @@ article: false
 
 给沈家姐妹的精彩演绎点赞！
 
-三种难度模式选择：天堂；人间；地狱，一刷玩的人间模式
+三种难度模式选择：天堂/人间/地狱，一刷玩的人间模式
 
 ![我可真是幸运儿 :ok_hand:](https://img.sherry4869.com/blog/life/play/guangzhou/th/ld-cc/ydm/img.jpg =x500)

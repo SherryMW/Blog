@@ -1,5 +1,4 @@
 ---
-date: 2022-05-07
 category: IT
 tag:
   - Java
@@ -7,7 +6,11 @@ tag:
 article: false
 ---
 
-# Spring Boot 多环境配置
+# Spring Boot
+
+<!-- more -->
+
+## Spring Boot 多环境配置
 
 在软件开发过程中，多环境部署通常是将软件代码从开发环境顺序部署到测试、用户接受测试和生产环境的过程。在这个过程中，不同的环境拥有不同的目的，不同的测试需求和使用者
 
@@ -29,44 +32,44 @@ article: false
 
 2. 新增应用程序配置文件 properties / yml
 
-    ::: tabs
-    
-    @tab application
-    
+   ::: tabs
+
+   @tab application
+
     ```properties
     # 激活指定环境配置文件
     spring.profiles.active=dev
     ```
-    
-    @tab application-dev
-    
+
+   @tab application-dev
+
     ```properties
     # 应用服务 WEB 访问端口
     server.port=8080
     ```
-    
-    @tab application-test
-    
+
+   @tab application-test
+
     ```properties
     # 应用服务 WEB 访问端口
     server.port=8081
     ```
-    
-    @tab application-uat
-    
+
+   @tab application-uat
+
     ```properties
     # 应用服务 WEB 访问端口
     server.port=8082
     ```
-    
-    @tab application-prod
-    
+
+   @tab application-prod
+
     ```properties
     # 应用服务 WEB 访问端口
     server.port=8083
     ```
-    
-    :::
+
+   :::
 
 3. 运行程序
 
@@ -74,60 +77,60 @@ article: false
     The following 1 profile is active: "dev"
     Tomcat initialized with port(s): 8080 (http)
     ```
-   
+
 4. 修改应用程序配置文件 properties / yml
 
-    Spring Boot 允许在配置文件中定义自定义变量，以便在应用程序中使用。这些自定义变量可以在配置文件中任何位置使用。我们来指定一个 env（Environment Variables）环境变量，用来区分各个不同环境所对应的配置文件
+   Spring Boot 允许在配置文件中定义自定义变量，以便在应用程序中使用。这些自定义变量可以在配置文件中任何位置使用。我们来指定一个 env（Environment Variables）环境变量，用来区分各个不同环境所对应的配置文件
 
-    ::: tabs
-    
-    @tab application
-    
+   ::: tabs
+
+   @tab application
+
     ```properties
     # 激活指定环境配置文件
     spring.profiles.active=dev
     ```
-    
-    @tab application-dev
-    
+
+   @tab application-dev
+
     ```properties
     # 应用服务 WEB 访问端口
     server.port=8080
     # 自定义环境变量
     env=dev
     ```
-    
-    @tab application-test
-    
+
+   @tab application-test
+
     ```properties
     # 应用服务 WEB 访问端口
     server.port=8081
     # 自定义环境变量
     env=test
     ```
-    
-    @tab application-uat
-    
+
+   @tab application-uat
+
     ```properties
     # 应用服务 WEB 访问端口
     server.port=8082
     # 自定义环境变量
     env=uat
     ```
-    
-    @tab application-prod
-    
+
+   @tab application-prod
+
     ```properties
     # 应用服务 WEB 访问端口
     server.port=8083
     # 自定义环境变量
     env=prod
     ```
-    
-    :::
 
-    在配置文件中定义自定义变量，需要使用 ${...} 语法来获取变量值
-    
+   :::
+
+   在配置文件中定义自定义变量，需要使用 ${...} 语法来获取变量值
+
     ```java
     @RestController
     public class TestController {
@@ -141,8 +144,8 @@ article: false
         }
     }
     ```
-   
-    运行应用程序后在浏览器上访问 http://localhost:8080/env
+
+   运行应用程序后在浏览器上访问 http://localhost:8080/env
 
     ```text
     env = dev
@@ -157,9 +160,9 @@ article: false
     ```shell
     mvn clean package
     ```
-    
-    如果提示：No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK? 异常信息，请检查系统的环境变量配置是否配置了 JAVA_HOME
-    
+
+   如果提示：No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK? 异常信息，请检查系统的环境变量配置是否配置了 JAVA_HOME
+
     ```shell
     C:\Users\MW>mvn -version
     Apache Maven 3.8.6
@@ -171,8 +174,8 @@ article: false
 
 2. 运行打包好的 Jar 包
 
-    进入工程的 target 目录下找到对应的 Jar 包并执行以下命令：
-    
+   进入工程的 target 目录下找到对应的 Jar 包并执行以下命令：
+
     ```shell
     java -jar test-0.0.1-SNAPSHOT.jar --spring.profiles.active=test 
     ```
@@ -222,19 +225,19 @@ article: false
         </profile>
     </profiles>
     ```
-    
-    重新加载 Maven 项目后在 Maven 配置文件中就会出现所配置的几个部署环境，默认勾选 dev 环境
-    
-    ![](https://img.sherry4869.com/blog/it/diary/2022/05/07/img.png)
 
-    需要注意的是：在 Maven 中，src/main/resources 目录下的资源文件会默认被打包到最终地构建文件中，例如 JAR 或 WAR 文件。在这个过程中，Maven 会尝试对这些资源文件进行过滤，以解析其中的占位符（例如 ${env}）或者通过 Maven Profile 将不同的环境配置文件打包到不同的构建文件中。
-    
-    在 Maven 3.6.x 及更旧的版本中，如果你在 src/main/resources 目录下定义了 application.properties 文件，并且该文件中包含了 spring.profiles.active=@env@ 配置，Maven 会默认对其进行过滤，且可以正常解析占位符
-    
-    然而从 Maven 3.7.0 开始，Maven 默认采用新的资源过滤器（maven-resource-plugin），它采用了与旧的资源过滤器（maven-filtering-plugin）不同的行为。这意味着在 Maven 3.7.0 之后的版本中，如果你想要使用过滤器解析占位符或者通过 Maven Profile 打包不同环境的配置文件，你需要显式地配置资源过滤器
-    
-    如果你本机的 Maven 版本在 3.7.0 以上，需要在你的 pom.xml 文件中添加如下配置，否则会解析不出 `@env@`
-    
+   重新加载 Maven 项目后在 Maven 配置文件中就会出现所配置的几个部署环境，默认勾选 dev 环境
+
+   ![](https://img.sherry4869.com/blog/it/diary/2022/05/07/img.png)
+
+   需要注意的是：在 Maven 中，src/main/resources 目录下的资源文件会默认被打包到最终地构建文件中，例如 JAR 或 WAR 文件。在这个过程中，Maven 会尝试对这些资源文件进行过滤，以解析其中的占位符（例如 ${env}）或者通过 Maven Profile 将不同的环境配置文件打包到不同的构建文件中。
+
+   在 Maven 3.6.x 及更旧的版本中，如果你在 src/main/resources 目录下定义了 application.properties 文件，并且该文件中包含了 spring.profiles.active=@env@ 配置，Maven 会默认对其进行过滤，且可以正常解析占位符
+
+   然而从 Maven 3.7.0 开始，Maven 默认采用新的资源过滤器（maven-resource-plugin），它采用了与旧的资源过滤器（maven-filtering-plugin）不同的行为。这意味着在 Maven 3.7.0 之后的版本中，如果你想要使用过滤器解析占位符或者通过 Maven Profile 打包不同环境的配置文件，你需要显式地配置资源过滤器
+
+   如果你本机的 Maven 版本在 3.7.0 以上，需要在你的 pom.xml 文件中添加如下配置，否则会解析不出 `@env@`
+
     ```xml
     <resources>
         <resource>
@@ -250,7 +253,7 @@ article: false
     </resources>
     ```
 
-    其中，`<directory>` 标签指定了需要被打包的文件所在的目录，`<filtering>` 标签指定了是否需要使用 Maven 的过滤器来替换配置文件中的占位符
+   其中，`<directory>` 标签指定了需要被打包的文件所在的目录，`<filtering>` 标签指定了是否需要使用 Maven 的过滤器来替换配置文件中的占位符
 
 3. 修改 pom.xml 文件
 
@@ -273,7 +276,7 @@ article: false
     </resources>
     ```
 
-    `<includes>` 标签指定了需要被打包的文件列表，其中 `application-${env}.properties` 表示根据当前激活的 profile 来选择对应的环境配置文件
+   `<includes>` 标签指定了需要被打包的文件列表，其中 `application-${env}.properties` 表示根据当前激活的 profile 来选择对应的环境配置文件
 
 4. 运行和部署
 
@@ -284,7 +287,7 @@ article: false
     Tomcat initialized with port(s): 8083 (http)
     ```
 
-    执行 `mvn clean package -P prod` 打包命令后，解压 test-0.0.1-SNAPSHOT.jar 后访问 .\BOOT-INF\classes 目录，会发现只有 application.properties 和 application-prod.properties 应用配置文件，因此启动该 Jar 包就无需再指定环境配置文件：
+   执行 `mvn clean package -P prod` 打包命令后，解压 test-0.0.1-SNAPSHOT.jar 后访问 .\BOOT-INF\classes 目录，会发现只有 application.properties 和 application-prod.properties 应用配置文件，因此启动该 Jar 包就无需再指定环境配置文件：
 
     ```shell
     java -jar test-0.0.1-SNAPSHOT.jar

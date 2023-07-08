@@ -11,6 +11,8 @@ article: false
 
 ### 弥生壹
 
+<div><p>沉浸：<el-rate model-value="3" disabled /></p></div>
+
 <div><p>场景：<el-rate model-value="4" disabled /></p></div>
 
 <div><p>剧情：<el-rate model-value="3.5" disabled /></p></div>
@@ -22,8 +24,6 @@ article: false
 <div><p>恐怖：<el-rate model-value="0.5" disabled /></p></div>
 
 第一次体验大型真人 NPC 密室的主题，彻底给我打开了密室逃（不）脱的大门
-
-唯一恐怖的那段场景里有惊喜！
 
 ### 弥生贰
 
@@ -64,8 +64,6 @@ article: false
 <div><p>谜题：<el-rate model-value="2" disabled /></p></div>
 
 <div><p>恐怖：<el-rate model-value="2" disabled /></p></div>
-
-MRX 中恐怖氛围最足的一个主题，结尾有惊喜！
 
 ### 烟雨楼
 
@@ -131,7 +129,7 @@ MRX 中恐怖氛围最足的一个主题，结尾有惊喜！
 
 ### 三花物语
 
-<div><p>沉浸：<el-rate model-value="4" disabled /></p></div>
+<div><p>沉浸：<el-rate model-value="3" disabled /></p></div>
 
 <div><p>场景：<el-rate model-value="3.5" disabled /></p></div>
 

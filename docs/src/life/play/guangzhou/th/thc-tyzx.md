@@ -5,11 +5,35 @@ article: false
 
 # 天河城/体育中心
 
+## 渡鸦馆原创剧情密室
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0HDKAELJ4" target="_blank">天河路365号天俊阁2703室</a>
+
+### 记忆宫殿
+
+<div><p>沉浸：<el-rate model-value="5" disabled /></p></div>
+
+<div><p>场景：<el-rate model-value="4.5" disabled /></p></div>
+
+<div><p>剧情：<el-rate model-value="5" disabled /></p></div>
+
+<div><p>机关道具：<el-rate model-value="5" disabled /></p></div>
+
+<div><p>谜题：<el-rate model-value="5" disabled /></p></div>
+
+广州机械推理类密室天花板
+
+店里的两只猫猫一只叫“福福”，另一只叫“莫莫”（超级乖）
+
+![](https://img.sherry4869.com/blog/life/play/guangzhou/th/thc-tyzx/dyg/img.jpg)
+
 ## 头号玩家剧情密室（时尚天河店）
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0GKJ9ZC0W" target="_blank">天河路时尚天河东区负2层停车场F3（可以从地面7号门左手边那条地下通道走到负2楼开门转右）</a>
 
 ### 瞳灵人
+
+<div><p>沉浸：<el-rate model-value="4" disabled /></p></div>
 
 <div><p>场景：<el-rate model-value="2" disabled /></p></div>
 
@@ -45,7 +69,7 @@ article: false
 
 打雷音效还蛮令人触不及防的，只不过到后面都被“劈”麻痹了
 
-因为当天是 9 人满员车队，因此 NPC 在后面没有追得太紧，4~5 人组队体验可能会更刺激
+因为当天是 9 人满员车队，因此 NPC 没有追得太紧，4~5 人组队体验可能会更刺激
 
 ## 逃之妖妖原创剧情密室（天河店）
 
@@ -91,7 +115,7 @@ article: false
 
 <div><p>恐怖：<el-rate model-value="1" disabled /></p></div>
 
-内含魔术表演
+3人开场体验感拉满
 
 ## 速马赫卡丁车（天河店）
 
