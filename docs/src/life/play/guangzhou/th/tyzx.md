@@ -3,7 +3,7 @@ category: 娱乐
 article: false
 ---
 
-# 天河城/体育中心
+# 体育中心
 
 ## 渡鸦馆原创剧情密室
 
@@ -21,15 +21,15 @@ article: false
 
 <div><p>谜题：<el-rate model-value="5" disabled /></p></div>
 
-广州机械推理类密室天花板
+广州机械推理类密室的天花板
 
 店里的两只猫猫一只叫“福福”，另一只叫“莫莫”（超级乖）
 
-![](https://img.sherry4869.com/blog/life/play/guangzhou/th/thc-tyzx/dyg/img.jpg)
+![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/dyg/img.jpg)
 
-## 头号玩家剧情密室（时尚天河店）
+## 头号玩家剧情密室
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0GKJ9ZC0W" target="_blank">天河路时尚天河东区负2层停车场F3（可以从地面7号门左手边那条地下通道走到负2楼开门转右）</a>
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0GKJ9ZC0W" target="_blank">时尚天河东区负2层停车场F3</a>
 
 ### 瞳灵人
 
@@ -47,13 +47,13 @@ article: false
 
 正如工作人员给我们描述的那样：黑追电主题的鼻祖
 
-在保安大哥奋力踹门时调戏了一句：“晚饭是不是没吃饱阿” 后果有点严重 :scream:
+在保安大哥奋力踹门时调戏了一句：“晚饭是不是没吃饱阿” 后果有点严重:scream:
 
-![一刷抽到了雪莉的身份牌（中大奖了）](https://img.sherry4869.com/blog/life/play/guangzhou/th/thc-tyzx/thwj/img.jpg =x500)
+![一刷抽到了雪莉的身份牌（中大奖了）](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/thwj/img.jpg)
 
-## 关你鬼室大型密室逃脱（时尚天河店）
+## 关你鬼室大型密室逃脱
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0G3JY24KV" target="_blank">天河路时尚天河东区负2层停车场F5（可以从地面7号门左手边那条地下通道走到负2楼开门转左）</a>
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0G3JY24KV" target="_blank">时尚天河东区负2层停车场F5</a>
 
 ### 拐卖
 
@@ -69,11 +69,11 @@ article: false
 
 打雷音效还蛮令人触不及防的，只不过到后面都被“劈”麻痹了
 
-因为当天是 9 人满员车队，因此 NPC 没有追得太紧，4~5 人组队体验可能会更刺激
+因为当天是 9 人满员车队，因此 NPC 没有追得太紧，4~5 人组队体验可能会更好
 
-## 逃之妖妖原创剧情密室（天河店）
+## 逃之妖妖原创剧情密室
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0I64CZ3RO" target="_blank">时尚天河3号门中区B2层森林人旁(D区停车场)</a>
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0I64CZ3RO" target="_blank">时尚天河3号门中区B2层演播厅</a>
 
 ### 走尸
 
@@ -97,11 +97,11 @@ article: false
 
 <div><p>谜题：<el-rate model-value="3" disabled /></p></div>
 
-有内奸机制（我指的是当然是整蛊队友摇摇乐的那个人 :zany_face:）
+有内奸机制（我指的是当然是整蛊队友摇摇乐的那个人:zany_face:）
 
-## 森林人沉浸式密室剧场（时尚天河店）
+## 森林人沉浸式密室剧场
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0IGSR3UQF" target="_blank">时尚天河负二层演播厅旁</a>
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0IGSR3UQF" target="_blank">时尚天河3号门中区B2层演播厅</a>
 
 ### Hush
 
@@ -117,16 +117,16 @@ article: false
 
 3人开场体验感拉满
 
-## 速马赫卡丁车（天河店）
+## 速马赫卡丁车
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0G1KA1NWT" target="_blank">天河区时尚天河中五街026(A区停车场)</a>
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0G1KA1NWT" target="_blank">时尚天河地下负一层中五街026(A区停车场)</a>
 
-## 天弓社•射箭•CAFE（天河店）
+## 天弓社•射箭
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFKUT6NL" target="_blank">天河区时尚天河东一街负二层F6</a>
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFKUT6NL" target="_blank">时尚天河东一街负二层F6</a>
 
-## 沉浸世界大空间VR游戏体验馆（天河店）
+## 沉浸世界大空间VR游戏体验馆
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H2F1LL6O" target="_blank">天河区时尚天河中区中二街（夜上海）011号</a>
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H2F1LL6O" target="_blank">时尚天河中区中二街（夜上海）011号</a>
 
 - [x] 丧尸围攻VR

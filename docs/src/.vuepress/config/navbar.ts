@@ -15,10 +15,10 @@ export const NavbarConfig = navbar([
             //     text: "健康",
             //     link: "healthy/sleep/2023"
             // },
-            // {
-            //     text: "饮食",
-            //     link: "delicacies/"
-            // },
+            {
+                text: "美食",
+                link: "food/"
+            },
             {
                 text: "娱乐",
                 link: "play/"
@@ -27,7 +27,7 @@ export const NavbarConfig = navbar([
     },
     {
         text: "收藏",
-        icon: "start",
+        icon: "box",
         link: "/collection/developers"
     },
     {

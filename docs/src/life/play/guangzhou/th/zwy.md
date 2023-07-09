@@ -3,7 +3,7 @@ category: 娱乐
 article: false
 ---
 
-# 龙洞/岑村
+# 植物园
 
 ## 植物园根据地越野俱乐部
 
@@ -35,4 +35,4 @@ article: false
 
 三种难度模式选择：天堂/人间/地狱，一刷玩的人间模式
 
-![我可真是幸运儿 :ok_hand:](https://img.sherry4869.com/blog/life/play/guangzhou/th/ld-cc/ydm/img.jpg =x500)
+![我可真是幸运儿:ok_hand:](https://img.sherry4869.com/blog/life/play/guangzhou/th/zwy/ydm/img.jpg)

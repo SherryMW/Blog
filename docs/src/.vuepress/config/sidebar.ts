@@ -2,6 +2,7 @@ import {sidebar} from "vuepress-theme-hope";
 import {PostgreSQLSidebar} from "../../it/database/postgresql/sidebar"
 import {ShardingSphereSidebar} from "../../it/apache/sharding-sphere/sidebar";
 import {CollectionSidebar} from "../../collection/sidebar"
+import {FoodSidebar} from "../../life/food/sidebar";
 import {PlaySidebar} from "../../life/play/sidebar";
 import {NoteSidebar} from "../../it/java/note/sidebar";
 
@@ -14,6 +15,8 @@ export const SidebarConfig = sidebar({
     "/it/apache/sharding-sphere/": ShardingSphereSidebar,
 
     "/collection/": CollectionSidebar,
+
+    "/life/food/": FoodSidebar,
 
     "/life/play/": PlaySidebar
 

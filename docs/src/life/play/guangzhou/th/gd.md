@@ -3,11 +3,11 @@ category: 娱乐
 article: false
 ---
 
-# 石牌/龙口
+# 岗顶
 
-## MRX•X先生密室逃脱（广州天河店）
+## MRX•X先生密室逃脱
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H63M6721" target="_blank">天河路502号N116天河电脑城</a>
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H63M6721" target="_blank">天河路502号N116天河电脑城负一层</a>
 
 ### 弥生壹
 
@@ -22,6 +22,8 @@ article: false
 <div><p>谜题：<el-rate model-value="3.5" disabled /></p></div>
 
 <div><p>恐怖：<el-rate model-value="0.5" disabled /></p></div>
+
+不愧是招牌弥生
 
 第一次体验大型真人 NPC 密室的主题，彻底给我打开了密室逃（不）脱的大门
 
@@ -49,9 +51,9 @@ article: false
 
 <div><p>恐怖：<el-rate model-value="1" disabled /></p></div>
 
-期待已久的巨型转场机关并未让我感到满意（期待一手深圳 MRX《镇灵村》）
-
 七巧板那关拼老久了 :watch:
+
+期待已久的巨型转场机关并未让我感到特别惊喜（期待一手深圳 MRX《镇灵村》）
 
 ### 明香女校
 
@@ -125,8 +127,6 @@ article: false
 
 吹爆 NPC 朱迪的演绎！！！
 
-结尾有惊喜！
-
 ### 三花物语
 
 <div><p>沉浸：<el-rate model-value="3" disabled /></p></div>
@@ -143,4 +143,4 @@ article: false
 
 温情 :cat2: :cat2: 主题
 
-![下班后的花花](https://img.sherry4869.com/blog/life/play/guangzhou/th/sp-lk/dmj/img.jpg =x500)
+![下班后的花花](https://img.sherry4869.com/blog/life/play/guangzhou/th/gd/dmj/img.jpg)

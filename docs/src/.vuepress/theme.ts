@@ -14,7 +14,7 @@ export default hopeTheme({
         name: "MW",// 作者名称
         url: "https://blog.sherry4869.com"
     },
-    iconAssets: "//at.alicdn.com/t/c/font_3855310_p3z6ugbxr7a.css",
+    iconAssets: "iconfont",
     logo: "/logo.svg", // 网站 Logo
     repo: "SherryMW/Blog", // 仓库配置，默认为 GitHub 同时也可以是一个完整的 URL
     repoDisplay: false, // 是否在导航栏内显示仓库链接入口，默认为 true

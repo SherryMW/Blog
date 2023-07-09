@@ -1,13 +1,11 @@
 ---
 category: 娱乐
-tag:
-  - 密室/沉浸
 article: false
 ---
 
-# 中山七八路
+# 彩虹桥
 
-## 喵惊灵沉浸式剧场(荔湾商厦店)
+## 喵惊灵沉浸式剧场
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H3YC71BS" target="_blank">荔湾路100号4层</a>
 
