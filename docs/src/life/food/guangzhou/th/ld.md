@@ -40,6 +40,13 @@ article: false
 - [x] 啫啫田鸡煲
 - [x] 蒜蓉粉丝蒸元贝
 
+## 莲城 Lotus Lounge
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFHBYPRP" target="_blank">兴盛路七号107铺</a>
+
+- [x] daydream
+- [x] 死亡的性感解释
+
 ## 木棉•醉心粤味
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0GROY2454" target="_blank">珠江东路16号高德置地广场•冬F4层407</a>
@@ -50,7 +57,7 @@ article: false
 - [x] 初恋咕噜肉
 - [x] 龙眼蜜叉烧
 - [ ] 威士忌无骨猪手
-- [x] 香蒜炒肉蟹（炒了个寂寞:see_no_evil:还不如大排档）
+- [x] 香蒜炒肉蟹（炒了个寂寞:see_no_evil:）
 - [ ] 清蒸老虎斑
 - [x] 菜胆炖花胶
 - [x] 桃胶节瓜炖螺头

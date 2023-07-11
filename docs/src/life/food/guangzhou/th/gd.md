@@ -26,6 +26,32 @@ article: false
 - [x] 椰奶冻糕三宝
 - [x] 元气猪猪宝宝套餐
 
+## 今之味
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0GKSBCUID" target="_blank">天河路621号天娱广场西塔楼F4层</a>
+
+::: tabs
+
+@tab 咖喱面包鸡
+
+![](https://img.sherry4869.com/blog/life/food/guangzhou/th/gd/jzw/img.jpg)
+
+@tab 泰式炭烧猪颈肉
+
+![](https://img.sherry4869.com/blog/life/food/guangzhou/th/gd/jzw/img_2.jpg)
+
+@tab 泰式烧元贝
+
+![](https://img.sherry4869.com/blog/life/food/guangzhou/th/gd/jzw/img_3.jpg)
+
+:::
+
+- [x] 咖喱面包鸡（推荐）
+- [x] 泰式烧元贝
+- [x] 泰式炭烧猪颈肉
+- [x] 蒜蓉法包
+- [x] 越式鲜虾芒果沙拉
+
 ## 点都德
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFGHE53M" target="_blank">天河路598号百脑汇大厦4层</a>

@@ -16,6 +16,13 @@ article: false
 - [x] 鱼香肉汁蒸山水豆腐
 - [x] 西洋参炖老鸡汤
 
+## 敏华冰厅
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFKU8QTY" target="_blank">天河城购物中心6层609号</a>
+
+- [x] Big Men 菠萝包（推荐）
+- [x] 香滑奶茶
+
 ## 秘密旅行
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFG63HJJ" target="_blank">体育西横街144号104</a>
