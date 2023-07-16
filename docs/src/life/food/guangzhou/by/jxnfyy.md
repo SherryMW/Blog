@@ -30,3 +30,13 @@ article: false
 - [x] 鹅肝三明治
 - [x] 明太子地瓜烧
 - [x] 玉米刺身
+
+## 稻香酒家
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0JRHCG94T" target="_blank">沙太南路538号二楼</a>
+
+- [x] 榴莲天鹅酥
+- [x] 豉汁蒸排骨
+- [x] 蒜蓉粉丝蒸开边虾
+- [x] 清蒸原只福建生蚝
+- [x] 干烧伊面
