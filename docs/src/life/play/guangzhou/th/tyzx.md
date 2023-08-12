@@ -117,6 +117,52 @@ article: false
 
 3人开场体验感拉满
 
+## 正佳极地海洋世界
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00141V5TB" target="_blank">天河路228号正佳广场2层2D126</a>
+
+![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img.jpg)
+
+![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_2.jpg)
+
+![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_3.jpg)
+
+![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_4.jpg)
+
+![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_5.jpg)
+
+![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_6.jpg)
+
+![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_7.jpg)
+
+![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_8.jpg)
+
+![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_9.jpg)
+
+![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_10.jpg)
+
+![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_11.jpg)
+
+![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_12.jpg)
+
+![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_13.jpg)
+
+![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_14.jpg)
+
+![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_15.jpg)
+
+![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_16.jpg)
+
+![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_17.jpg)
+
+![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_18.jpg)
+
+![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_19.jpg)
+
+![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_20.jpg)
+
+![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_21.jpg)
+
 ## 速马赫卡丁车
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0G1KA1NWT" target="_blank">时尚天河地下负一层中五街026(A区停车场)</a>

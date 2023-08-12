@@ -27,10 +27,10 @@ export default hopeTheme({
     contributors: false, // 是否显示页面贡献者
     lastUpdated: false, // 是否显示页面最后更新时间
     editLink: false, // 是否展示编辑此页链接
-    encrypt: {
-        global: true,
-        admin: "MW"
-    },
+    // encrypt: {
+    //     global: true,
+    //     admin: "MW"
+    // },
 
     blog: {
         avatar: "/avatar.jpg", // 头像
@@ -67,7 +67,7 @@ export default hopeTheme({
         },
         // Markdown 增强功能配置
         mdEnhance: {
-            imgLazyload: true, // 图片懒加载
+            // imgLazyload: true, // 图片懒加载
             imgSize: true, // 图片尺寸
             figure: true, // 图片描述
             tasklist: true, // 任务列表
