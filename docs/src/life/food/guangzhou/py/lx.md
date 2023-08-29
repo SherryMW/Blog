@@ -13,11 +13,11 @@ article: false
 
 @tab 小北极贝刺身
 
-![3只](https://img.sherry4869.com/blog/life/food/guangzhou/py/lx/xdm/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/food/guangzhou/py/lx/xdm/img_2.jpg)
 
 @tab 湛江生蚝
 
-![蒜蓉蒸湛江生蚝（半打）鲜甜肥美](https://img.sherry4869.com/blog/life/food/guangzhou/py/lx/xdm/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/food/guangzhou/py/lx/xdm/img_3.jpg)
 
 @tab 元贝
 

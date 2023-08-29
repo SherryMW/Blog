@@ -17,7 +17,7 @@ article: false
 
 @tab 香煎手打墨鱼饼
 
-![正！](https://img.sherry4869.com/blog/life/food/guangzhou/th/tyzx/cldpd/img_4.jpg)
+![](https://img.sherry4869.com/blog/life/food/guangzhou/th/tyzx/cldpd/img_4.jpg)
 
 @tab 大排档炒牛河
 
@@ -100,7 +100,7 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0IA9MLZIL" target="_blank">体育东路39号</a>
 
-- [x] 招牌黯然销魂饭（推荐）
+- [x] 招牌黯然销魂饭
 - [x] 黑松露虾仁滑蛋饭
 - [x] 滑蛋牛肉炒牛河
 - [x] 漏奶华（推荐）
@@ -142,6 +142,28 @@ article: false
 - [x] 芝麻糊汤圆（推荐）
 - [x] 杏仁茶汤圆
 - [ ] 原味冰镇奶茶
+
+## 龙井湖
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0JAT7QM2I" target="_blank">天河路228号正佳广场5F-5A031-33号</a>
+
+::: tabs
+
+@tab 松鼠鲈鱼
+![](https://img.sherry4869.com/blog/life/food/guangzhou/th/tyzx/ljh/img.jpg)
+
+@tab 杭州绿茶饼
+![](https://img.sherry4869.com/blog/life/food/guangzhou/th/tyzx/ljh/img_2.jpg)
+
+@tab 杭州小笼包
+![](https://img.sherry4869.com/blog/life/food/guangzhou/th/tyzx/ljh/img_3.jpg)
+
+:::
+
+- [x] 松鼠鲈鱼
+- [x] 杭州绿茶饼
+- [x] 杭州小笼包
+- [x] 竹笙炖鸡汤
 
 ## 虾饺妹富竹一生
 

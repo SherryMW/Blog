@@ -19,7 +19,7 @@ article: false
 
 去店里基本点的都是：大盘鸡/卤水猪手盖面 + 煎蛋 + 维他奶
 
-每当心情不太好的时候总会想起这里的盖面
+有段时间每当心情不太好的时候总会想起这里的盖面，美食是治愈心灵的最佳方式
 
 ![](https://img.sherry4869.com/blog/life/food/guangzhou/th/thkyz/xxj/img_2.jpg)
 
@@ -67,7 +67,7 @@ article: false
 - [x] 经典牛腩饭（推荐）
 - [x] 美式经典肉酱意面（推荐）
 - [x] 泡菜肥牛粉丝煲
-- [x] 香菇滑鸡粉丝煲（推荐）
+- [x] 香菇滑鸡粉丝煲
 - [x] 孜然烤鸡翅
 - [x] 唐人街煎饺
 - [x] 紫薯于你
@@ -101,7 +101,7 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H36HYRHC" target="_blank">天源路5号天河新天地4楼</a>
 
-- [x] 老坛酸菜鱼（推荐）
+- [x] 老坛酸菜鱼
 
 ## 蛙小侠
 
@@ -135,4 +135,3 @@ article: false
 ## 潮燚盛荟牛肉店
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFIRS1DD" target="_blank">元岗横路16号A座103-104、201-205一楼</a>
-

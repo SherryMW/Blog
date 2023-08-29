@@ -21,7 +21,7 @@ article: false
 
 @tab 豉油汗蒸白鳝
 
-![好味](https://img.sherry4869.com/blog/life/food/guangzhou/yx/hzgc/dsxc/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/food/guangzhou/yx/hzgc/dsxc/img_3.jpg)
 
 @tab 香煎白鳝
 

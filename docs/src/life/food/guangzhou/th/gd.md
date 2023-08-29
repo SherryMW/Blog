@@ -33,20 +33,17 @@ article: false
 ::: tabs
 
 @tab 咖喱面包鸡
-
 ![](https://img.sherry4869.com/blog/life/food/guangzhou/th/gd/jzw/img.jpg)
 
 @tab 泰式炭烧猪颈肉
-
 ![](https://img.sherry4869.com/blog/life/food/guangzhou/th/gd/jzw/img_2.jpg)
 
 @tab 泰式烧元贝
-
 ![](https://img.sherry4869.com/blog/life/food/guangzhou/th/gd/jzw/img_3.jpg)
 
 :::
 
-- [x] 咖喱面包鸡（推荐）
+- [x] 咖喱面包鸡
 - [x] 泰式烧元贝
 - [x] 泰式炭烧猪颈肉
 - [x] 蒜蓉法包

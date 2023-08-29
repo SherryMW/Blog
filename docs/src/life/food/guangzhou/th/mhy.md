@@ -36,3 +36,5 @@ article: false
 ![](https://img.sherry4869.com/blog/life/food/guangzhou/th/mhy/forza/img.jpg)
 
 - [x] 玛格丽特披萨
+- [x] 意面
+- [x] 沙拉

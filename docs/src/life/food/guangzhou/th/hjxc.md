@@ -15,6 +15,9 @@ article: false
 - [x] 韭菜煎饺（推荐）
 - [x] 菠萝包
 - [x] 牛腩啫肠粉
+- [x] 怀旧咕噜肉
+- [x] 大油条
+- [x] 干炒牛河
 - [x] 三丝炒面
 
 ## 佬麻雀
@@ -36,7 +39,7 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0HU6A19ND" target="_blank">华景路31-33号</a>
 
-![一定要配紫菜吃](https://img.sherry4869.com/blog/life/food/guangzhou/th/hjxc/img.jpg)
+![配紫菜吃更风味](https://img.sherry4869.com/blog/life/food/guangzhou/th/hjxc/img.jpg)
 
 - [x] 烤活鳗（推荐）
 - [x] 厚切猪五花

@@ -16,7 +16,7 @@ article: false
 
 ## 一龙拉面
 
-![金龙浓厚鱼介豚骨拉面](https://img.sherry4869.com/blog/life/food/guangzhou/by/jhwg/yllm/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/guangzhou/by/jhwg/yllm/img.jpg)
 
 - [x] 金龙浓厚鱼介豚骨拉面
-- [x] 木鱼花章鱼小丸子（推荐）
+- [x] 木鱼花章鱼小丸子

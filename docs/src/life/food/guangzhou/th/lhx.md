@@ -17,7 +17,7 @@ article: false
 
 ![399/斤](https://img.sherry4869.com/blog/life/food/guangzhou/th/lhx/79fish/img_2.jpg)
 
-![清蒸蟹脚：原汁原味，鲜甜肉嫩](https://img.sherry4869.com/blog/life/food/guangzhou/th/lhx/79fish/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/food/guangzhou/th/lhx/79fish/img_3.jpg)
 
 ![一蟹三吃里最中意干焗蟹肉，一定要趁热吃，如果凉了可以让服务员拿给后厨加热一下](https://img.sherry4869.com/blog/life/food/guangzhou/th/lhx/79fish/img_4.jpg)
 
