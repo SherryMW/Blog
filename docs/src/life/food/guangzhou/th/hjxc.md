@@ -9,16 +9,25 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00141I8AJ" target="_blank">中山大道西140号华港商务大厦三楼</a>
 
+![](https://img.sherry4869.com/blog/life/food/guangzhou/th/hjxc/img_2.jpg)
+
 - [x] 虾饺皇（推荐）
 - [x] 参汤虾饺
-- [x] 金钱肚
+- [x] 鲜虾春卷（推荐）
 - [x] 韭菜煎饺（推荐）
+- [x] 金钱肚
+- [x] 腐皮卷
 - [x] 菠萝包
+- [x] 咸水角
 - [x] 牛腩啫肠粉
 - [x] 怀旧咕噜肉
 - [x] 大油条
+- [x] 萝卜糕
+- [x] 和味凤爪
+- [x] 鲍汁凤爪
+- [x] 叉烧包
 - [x] 干炒牛河
-- [x] 三丝炒面
+- [x] 三丝炒面（推荐）
 
 ## 佬麻雀
 
