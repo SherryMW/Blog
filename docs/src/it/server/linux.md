@@ -2,6 +2,7 @@
 date: 2022-07-01
 category: IT
 tag: Linux
+article: false
 ---
 
 # Linux

@@ -42,9 +42,27 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFLMYA6N" target="_blank">中山四路395号城壹汇F4层</a>
 
+::: tabs
+
+@tab 摩摩超级爆汁炸鸡
+
+![](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/food/guangzhou/yx/bjl/mdst/img.jpg)
+
+@tab 明太子烤土豆
+
+![](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/food/guangzhou/yx/bjl/mdst/img_2.jpg)
+
+@tab 富贵嫩鱼天妇罗
+
+![](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/food/guangzhou/yx/bjl/mdst/img_3.jpg)
+
+:::
+
 - [x] 摩摩超级爆汁炸鸡（推荐）
-- [x] 明太子烤土豆（推荐）
+- [x] 摩匠手作香浓芝士豆腐（推荐）
+- [x] 明太子烤土豆
 - [x] 澳洲铺天盖地火牛大满贯
+- [x] 富贵嫩鱼天妇罗
 - [x] 火焰牛肉寿司
 - [x] 火炙牛舌
 - [x] 北极贝

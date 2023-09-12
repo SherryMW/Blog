@@ -2,6 +2,7 @@
 date: 2023-04-25
 category: IT
 tag: 数据库
+article: false
 ---
 
 # PostgreSQL
