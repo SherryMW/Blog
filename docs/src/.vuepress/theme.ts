@@ -27,11 +27,10 @@ export default hopeTheme({
     contributors: false, // 是否显示页面贡献者
     lastUpdated: false, // 是否显示页面最后更新时间
     editLink: false, // 是否展示编辑此页链接
-    // encrypt: {
-    //     global: true,
-    //     admin: "MW"
-    // },
-
+    encrypt: {
+        global: true,
+        admin: "MW"
+    },
     blog: {
         avatar: "/avatar.jpg", // 头像
         roundAvatar: true, // 是否剪裁头像为圆形形状
