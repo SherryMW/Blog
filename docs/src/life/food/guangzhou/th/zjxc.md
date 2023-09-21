@@ -27,3 +27,11 @@ article: false
 - [ ] 海盐芝士梳乎厘
 - [ ] 季节鲜果梳乎厘松饼
 - [x] 南瓜汤
+
+## 星龙吟日料放题
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0IUHAMNB8" target="_blank">临江大道57号中和广场F33层</a>
+
+## 雅致酒店中西餐厅•临江阁
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0GR5L4JMP" target="_blank">临江大道天德广场四楼</a>

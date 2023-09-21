@@ -97,6 +97,10 @@ article: false
 - [x] 喜炙郎奶冻布丁
 - [x] 雪米糍
 
+## 骏犇潮州兄弟牛肉火锅
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFI6I5ER" target="_blank">长兴路8号1楼东面</a>
+
 ## 江渔儿酸菜鱼
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H36HYRHC" target="_blank">天源路5号天河新天地4楼</a>

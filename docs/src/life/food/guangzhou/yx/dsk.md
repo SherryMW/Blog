@@ -17,7 +17,7 @@ article: false
 
 @tab 蟹粉小笼包
 
-![小心别被小笼包给咬了哦](https://img.sherry4869.com/blog/life/food/guangzhou/yx/dsk/clx/img_3.jpg)
+![当心别被小笼包给咬了哦](https://img.sherry4869.com/blog/life/food/guangzhou/yx/dsk/clx/img_3.jpg)
 
 @tab 菜单
 

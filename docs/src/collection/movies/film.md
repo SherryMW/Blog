@@ -29,7 +29,7 @@ article: false
 
 ### 低端影视
 
-官网：[https://ddys.art](https://ddys.art/)
+官网：[https://ddys.pro](https://ddys.pro/)
 
 ![](https://img.sherry4869.com/blog/movies/share/img.png)
 

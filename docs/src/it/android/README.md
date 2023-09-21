@@ -21,13 +21,13 @@ SharedPreferences 存储的数据在应用程序关闭后也会保持不变，�
 
 使用 SharedPreferences 需要进行以下几个步骤：
 
-1. 获取 SharedPreferences 对象：通过 `Context` 的 `getSharedPreferences()` 方法获取 SharedPreferences 对象。`getSharedPreferences()` 方法有两个参数：第一个参数是文件名，可以是任意字符串，建议使用应用程序的包名作为文件名；第二个参数是操作模式，包括 `MODE_PRIVATE`、`MODE_WORLD_READABLE`、`MODE_WORLD_WRITEABLE` 等
+1. 获取SharedPreferences对象：通过`Context`的`getSharedPreferences()`方法获取 SharedPreferences 对象。`getSharedPreferences()` 方法有两个参数：第一个参数是文件名，可以是任意字符串，建议使用应用程序的包名作为文件名；第二个参数是操作模式，包括 `MODE_PRIVATE`、`MODE_WORLD_READABLE`、`MODE_WORLD_WRITEABLE` 等
 
-2. 存储数据：通过 `SharedPreferences.Editor` 对象存储数据。获取 `Editor` 对象的方式是通过 SharedPreferences 对象的 `edit()` 方法。存储数据的方法包括 `putBoolean()`、`putFloat()`、`putInt()`、`putLong()`、`putString()` 等。调用 `Editor对` 象的 `apply()` 或 `commit()` 方法将数据写入 `SharedPreferences` 文件中
+2. 存储数据：通过`SharedPreferences.Editor`对象存储数据。获取 `Editor` 对象的方式是通过 SharedPreferences 对象的`edit()`方法。存储数据的方法包括 `putBoolean()`、`putFloat()`、`putInt()`、`putLong()`、`putString()` 等。调用 `Editor对` 象的 `apply()` 或 `commit()` 方法将数据写入 `SharedPreferences` 文件中
 
-3. 读取数据：通过 SharedPreferences 对象读取数据。读取数据的方法包括 `getBoolean()`、`getFloat()`、`getInt()`、`getLong()`、`getString()` 等
+3. 读取数据：通过SharedPreferences对象读取数据。读取数据的方法包括 `getBoolean()`、`getFloat()`、`getInt()`、`getLong()`、`getString()` 等
 
-4. 删除数据：通过 `SharedPreferences.Editor` 对象删除数据。删除数据的方法包括 `remove()` 和 `clear()`
+4. 删除数据：通过`SharedPreferences.Editor`对象删除数据。删除数据的方法包括 `remove()` 和 `clear()`
 
 以下是 SharedPreferences 的示例代码：
 
@@ -234,4 +234,4 @@ public final class DefaultShared {
 
 ## 参考资料
 
-[开发者指南 - 使用 SQLite 保存数据](https://developer.android.google.cn/training/data-storage/sqlite?hl=zh-cn)
+[安卓开发者指南 - 使用 SQLite 保存数据](https://developer.android.google.cn/training/data-storage/sqlite?hl=zh-cn)

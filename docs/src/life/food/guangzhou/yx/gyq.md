@@ -3,7 +3,7 @@ category: 美食
 article: false
 ---
 
-# 公元前
+# 公园前
 
 ## 口福食家
 
@@ -34,3 +34,11 @@ article: false
 - [x] 白切鸡
 - [x] 凉拌鱼皮
 - [ ] 筒骨莲藕煲
+
+## 绿茶餐厅
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B001402D72s" target="_blank">中山五路68号五月花商场5楼</a>
+
+- [x] 东坡肉
+- [x] 咖喱面包鸡
+- [x] 江南绿茶饼
