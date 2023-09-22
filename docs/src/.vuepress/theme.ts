@@ -19,7 +19,7 @@ export default hopeTheme({
     repo: "SherryMW/Blog", // 仓库配置，默认为 GitHub 同时也可以是一个完整的 URL
     repoDisplay: false, // 是否在导航栏内显示仓库链接入口，默认为 true
     docsDir: "docs/src", // 文档在仓库中的目录
-    pageInfo: ["Author", "Category", "Tag"], // 文章中顶部展示的相关标识信息
+    pageInfo: ["Author", "Date", "Category", "Tag"], // 文章中顶部展示的相关标识信息
     navbar: NavbarConfig, // 导航栏
     sidebar: SidebarConfig, // 侧边栏
     headerDepth: 2, // 侧边栏嵌套的标题深度，默认为 2
@@ -27,10 +27,10 @@ export default hopeTheme({
     contributors: false, // 是否显示页面贡献者
     lastUpdated: false, // 是否显示页面最后更新时间
     editLink: false, // 是否展示编辑此页链接
-    encrypt: {
-        global: true,
-        admin: "MW"
-    },
+    // encrypt: {
+    //     global: true,
+    //     admin: "MW"
+    // },
     blog: {
         avatar: "/avatar.jpg", // 头像
         roundAvatar: true, // 是否剪裁头像为圆形形状

@@ -1,7 +1,6 @@
 ---
 date: 2022-05-22
 category: IT
-article: false
 ---
 
 # Git
@@ -759,6 +758,44 @@ Changes not staged for commit:
 
 CONTRIBUTING.md 文件已经是修改未暂存的状态了。到目前为止这个神奇的调用就是你需要对 `git reset` 命令了解的全部。我们将会在 [重置揭密](#重置揭密) 中了解 `reset` 的更多细节以及如何掌握它做一些真正有趣的事
 
+#### 回退版本
+
+`git reset` 命令用于将 HEAD 移动到指定的提交，并可以根据不同的选项来处理暂存区和工作目录的更改。三个选项 `--mixed`，`--soft` 和 `--hard` 分别表示不同的行为：
+
+`--mixed`（默认选项）这是 `git reset` 的默认选项。使用 `--mixed` 选项时，它会将 HEAD 移动到指定的提交，并清空暂存区，但保留工作目录中的更改。这些更改将变为未暂存状态
+
+暂存区将被清空，工作目录中的更改仍然保留，但变为未暂存状态。你可以在随后的提交中将它们重新暂存并提交
+
+```shell
+$ git reset --mixed <commit_hash>
+```
+
+使用 `--soft` 选项时，它会将 HEAD 移动到指定的提交，但保留暂存区和工作目录中的更改。这些更改仍然处于暂存状态，可以在下一次提交中包含它们
+
+暂存区的内容保持不变，工作目录中的更改也保持不变，但它们仍然处于暂存状态。你可以随时提交它们
+
+```shell
+$ git reset --soft <commit_hash>
+```
+
+使用 `--hard` 选项时，它会将 HEAD 移动到指定的提交，并清空暂存区，同时丢弃工作目录中未提交的更改。这是一个慎用的选项，因为未提交的更改将不可恢复
+
+暂存区的内容将被清空，工作目录中未提交的更改将被永久删除
+
+```shell
+$ git reset --hard <commit_hash> # 回退到某个版本回退点之前的所有信息
+$ git reset --hard origin/master    # 将本地的状态回退到和远程的一样
+```
+
+`git reset HEAD` 是一个用于取消暂存区中的更改的命令。它的作用是将暂存区中的文件状态恢复到与最后一次提交相同的状态，但保留工作目录中的更改。这个命令通常用于取消 `git add` 命令添加到暂存区的文件，从而使这些文件不被包含在下一次提交中
+
+```shell
+$ git reset HEAD^ 或者 $ git reset HEAD~1 回退了上一个版本
+$ git reset HEAD^^ 或者 $ git reset HEAD~2 回退了上两个版本
+$ git reset HEAD^^^ 或者 $ git reset HEAD~3 回退了上三个版本
+$ git reset HEAD^ hello.php 回退 hello.php 文件的版本到上一个版本
+```
+
 #### 撤消对文件的修改
 
 如果你并不想保留对 CONTRIBUTING.md 文件的修改怎么办？你该如何方便地撤消修改—将它还原成上次提交时的样子（或者刚克隆完的样子，或者刚把它放入工作目录时的样子）？幸运的是，`git status` 也告诉了你应该如何做。在最后一个例子中，未暂存区域是这样：
@@ -1427,19 +1464,257 @@ please contact us at email.support@github.com
 
 ### 分支管理
 
+现在已经创建、合并、删除了一些分支，让我们看看一些常用的分支管理工具
 
+`git branch` 命令不只是可以创建与删除分支。如果不加任何参数运行它，会得到当前所有分支的一个列表：
 
+```text
+$ git branch
+  iss53
+* master
+  testing
+```
 
+注意 master 分支前的 * 字符：它代表现在检出的那一个分支（也就是说，当前 HEAD 指针所指向的分支）。这意味着如果在这时候提交，master 分支将会随着新的工作向前移动。如果需要查看每一个分支的最后一次提交，可以运行 `git branch -v` 命令：
 
+```text
+$ git branch -v
+  iss53   93b412c fix javascript issue
+* master  7a98805 Merge branch 'iss53'
+  testing 782fd34 add scott to the author list in the readmes
+```
 
+`--merged` 与 `--no-merged` 这两个有用的选项可以过滤这个列表中已经合并或尚未合并到当前分支的分支。如果要查看哪些分支已经合并到当前分支，可以运行 `git branch --merged`：
 
+```text
+$ git branch --merged
+  iss53
+* master
+```
 
+因为之前已经合并了 iss53 分支，所以现在看到它在列表中。在这个列表中分支名字前没有 * 号的分支通常可以使用 `git branch -d` 删除掉；你已经将它们的工作整合到了另一个分支，所以并不会失去任何东西
+
+查看所有包含未合并工作的分支，可以运行 `git branch --no-merged`：
+
+```text
+$ git branch --no-merged
+  testing
+```
+
+这里显示了其他分支。因为它包含了还未合并的工作，尝试使用 `git branch -d` 命令删除它时会失败：
+
+```text
+$ git branch -d testing
+error: The branch 'testing' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D testing'.
+```
+
+如果真的想要删除分支并丢掉那些工作，如同帮助信息里所指出的，可以使用 `-D` 选项强制删除它
+
+上面描述的选项 `--merged` 和 `--no-merged` 会在没有给定提交或分支名作为参数时，分别列出已合并或未合并到当前分支的分支
+
+你总是可以提供一个附加的参数来查看其它分支的合并状态而不必检出它们。 例如，尚未合并到 master 分支的有哪些？
+
+```text
+$ git checkout testing
+$ git branch --no-merged master
+  topicA
+  featureB
+```
+
+### 分支开发工作流
+
+现在你已经学会新建和合并分支，那么你可以或者应该用它来做些什么呢？在本节，我们会介绍一些常见的利用分支进行开发的工作流程。而正是由于分支管理的便捷，才衍生出这些典型的工作模式，你可以根据项目实际情况选择一种用用看
+
+#### 长期分支
+
+因为 Git 使用简单的三方合并，所以就算在一段较长的时间内，反复把一个分支合并入另一个分支，也不是什么难事。也就是说，在整个项目开发周期的不同阶段，你可以同时拥有多个开放的分支；你可以定期地把某些主题分支合并入其他分支中
+
+许多使用 Git 的开发者都喜欢使用这种方式来工作，比如只在 master 分支上保留完全稳定的代码—有可能仅仅是已经发布或即将发布的代码。他们还有一些名为 develop 或者 next 的平行分支，被用来做后续开发或者测试稳定性—这些分支不必保持绝对稳定，但是一旦达到稳定状态，它们就可以被合并入 master 分支了。这样，在确保这些已完成的主题分支（短期分支，比如之前的 iss53 分支）能够通过所有测试，并且不会引入更多 bug 之后，就可以合并入主干分支中，等待下一次的发布
+
+事实上我们刚才讨论的，是随着你的提交而不断右移的指针。稳定分支的指针总是在提交历史中落后一大截，而前沿分支的指针往往比较靠前
+
+![趋于稳定分支的线性图](https://git-scm.com/book/en/v2/images/lr-branches-1.png)
+
+通常把他们想象成流水线（work silos）可能更好理解一点，那些经过测试考验的提交会被遴选到更加稳定的流水线上去
+
+![趋于稳定分支的流水线（“silo”）视图](https://git-scm.com/book/en/v2/images/lr-branches-2.png)
+
+你可以用这种方法维护不同层次的稳定性。一些大型项目还有一个 proposed（建议）或 pu: proposed updates（建议更新）分支，它可能因包含一些不成熟的内容而不能进入 next 或者 master 分支。这么做的目的是使你的分支具有不同级别的稳定性；当它们具有一定程度的稳定性后，再把它们合并入具有更高级别稳定性的分支中。再次强调一下，使用多个长期分支的方法并非必要，但是这么做通常很有帮助，尤其是当你在一个非常庞大或者复杂的项目中工作时
+
+#### 主题分支
+
+主题分支对任何规模的项目都适用。主题分支是一种短期分支，它被用来实现单一特性或其相关工作。也许你从来没有在其他的版本控制系统（VCS）上这么做过，因为在那些版本控制系统中创建和合并分支通常很费劲。然而，在 Git 中一天之内多次创建、使用、合并、删除分支都很常见
+
+你已经在上一节中你创建的 iss53 和 hotfix 主题分支中看到过这种用法。你在上一节用到的主题分支（iss53 和 hotfix 分支）中提交了一些更新，并且在它们合并入主干分支之后，你又删除了它们。这项技术能使你快速并且完整地进行上下文切换（context-switch）—因为你的工作被分散到不同的流水线中，在不同的流水线中每个分支都仅与其目标特性相关，因此，在做代码审查之类的工作的时候就能更加容易地看出你做了哪些改动。你可以把做出的改动在主题分支中保留几分钟、几天甚至几个月，等它们成熟之后再合并，而不用在乎它们建立的顺序或工作进度
+
+考虑这样一个例子，你在 master 分支上工作到 C1，这时为了解决一个问题而新建 iss91 分支，在 iss91 分支上工作到 C4，然而对于那个问题你又有了新的想法，于是你再新建一个 iss91v2 分支试图用另一种方法解决那个问题，接着你回到 master 分支工作了一会儿，你又冒出了一个不太确定的想法，你便在 C10 的时候新建一个 dumbidea 分支，并在上面做些实验。你的提交历史看起来像下面这个样子：
+
+![拥有多个主题分支的提交历史](https://git-scm.com/book/en/v2/images/topic-branches-1.png)
+
+现在，我们假设两件事情：你决定使用第二个方案来解决那个问题，即使用在 iss91v2 分支中方案。另外，你将 dumbidea 分支拿给你的同事看过之后，结果发现这是个惊人之举。这时你可以抛弃 iss91 分支（即丢弃 C5 和 C6 提交），然后把另外两个分支合并入主干分支。最终你的提交历史看起来像下面这个样子：
+
+![合并了 dumbidea 和 iss91v2 分支之后的提交历史](https://git-scm.com/book/en/v2/images/topic-branches-2.png)
+
+我们将会在[分布式 Git](#分布式-git)中向你揭示更多有关分支工作流的细节， 因此，请确保你阅读完那个章节之后，再来决定你的下个项目要使用什么样的分支策略（branching scheme）
+
+请牢记，当你做这么多操作的时候，这些分支全部都存于本地。当你新建和合并分支的时候，所有这一切都只发生在你本地的 Git 版本库中—没有与服务器发生交互
+
+### 远程分支
+
+远程引用是对远程仓库的引用（指针），包括分支、标签等等。你可以通过 `git ls-remote <remote>` 来显式地获得远程引用的完整列表，或者通过 `git remote show <remote>` 获得远程分支的更多信息。然而，一个更常见的做法是利用远程跟踪分支
+
+远程跟踪分支是远程分支状态的引用。它们是你无法移动的本地引用。一旦你进行了网络通信，Git 就会为你移动它们以精确反映远程仓库的状态。请将它们看做书签，这样可以提醒你该分支在远程仓库中的位置就是你最后一次连接到它们的位置
+
+它们以 `<remote>/<branch>` 的形式命名。例如，如果你想要看你最后一次与远程仓库 origin 通信时 master 分支的状态，你可以查看 origin/master 分支。你与同事合作解决一个问题并且他们推送了一个 iss53 分支，你可能有自己的本地 iss53 分支，然而在服务器上的分支会以 origin/iss53 来表示
+
+这可能有一点儿难以理解，让我们来看一个例子。假设你的网络里有一个在 git.ourcompany.com 的 Git 服务器。如果你从这里克隆，Git 的 clone 命令会为你自动将其命名为 origin，拉取它的所有数据，创建一个指向它的 master 分支的指针，并且在本地将其命名为 origin/master。Git 也会给你一个与 origin 的 master 分支在指向同一个地方的本地 master 分支，这样你就有工作的基础
+
+“origin”并无特殊含义：远程仓库名字“origin”与分支名字“master”一样，在 Git 中并没有任何特别的含义一样。同时 “master” 是当你运行 `git init` 时默认的起始分支名字，原因仅仅是它的广泛使用，“origin” 是当你运行 `git clone` 时默认的远程仓库名字。如果你运行 `git clone -o booyah`，那么你默认的远程分支名字将会是 booyah/master
+
+![克隆之后的服务器与本地仓库](https://git-scm.com/book/en/v2/images/remote-branches-1.png)
+
+如果你在本地的 master 分支做了一些工作，在同一段时间内有其他人推送提交到 git.ourcompany.com 并且更新了它的 master 分支，这就是说你们的提交历史已走向不同的方向。即便这样，只要你保持不与 origin 服务器连接（并拉取数据），你的 origin/master 指针就不会移动
+
+![本地与远程的工作可以分叉](https://git-scm.com/book/en/v2/images/remote-branches-2.png)
+
+如果要与给定的远程仓库同步数据，运行 `git fetch <remote>` 命令（在本例中为 `git fetch origin`）。这个命令查找 origin 是哪一个服务器（在本例中，它是git.ourcompany.com），从中抓取本地没有的数据，并且更新本地数据库，移动 origin/master 指针到更新之后的位置
+
+![git fetch 更新你的远程跟踪分支](https://git-scm.com/book/en/v2/images/remote-branches-3.png)
+
+为了演示有多个远程仓库与远程分支的情况，我们假定你有另一个内部 Git 服务器，仅服务于你的某个敏捷开发团队。这个服务器位于 git.team1.ourcompany.com。你可以运行 `git remote add` 命令添加一个新的远程仓库引用到当前的项目，这个命令我们会在[Git 基础](#git-基础)中详细说明。将这个远程仓库命名为 teamone，将其作为完整 URL 的缩写
+
+![添加另一个远程仓库](https://git-scm.com/book/en/v2/images/remote-branches-4.png)
+
+现在，可以运行 `git fetch teamone` 来抓取远程仓库 teamone 有而本地没有的数据。因为那台服务器上现有的数据是 origin 服务器上的一个子集，所以 Git 并不会抓取数据而是会设置远程跟踪分支 teamone/master 指向 teamone 的 master 分支
+
+![远程跟踪分支 teamone/master](https://git-scm.com/book/en/v2/images/remote-branches-5.png)
+
+#### 推送
+
+当你想要公开分享一个分支时，需要将其推送到有写入权限的远程仓库上。本地的分支并不会自动与远程仓库同步—你必须显式地推送想要分享的分支。这样，你就可以把不愿意分享的内容放到私人分支上，而将需要和别人协作的内容推送到公开分支
+
+如果希望和别人一起在名为 serverfix 的分支上工作，你可以像推送第一个分支那样推送它。运行 `git push <remote> <branch>`:
+
+```text
+$ git push origin serverfix
+Counting objects: 24, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (24/24), 1.91 KiB | 0 bytes/s, done.
+Total 24 (delta 2), reused 0 (delta 0)
+To https://github.com/schacon/simplegit
+ * [new branch]      serverfix -> serverfix
+```
+
+这里有些工作被简化了 Git 自动将 serverfix 分支名字展开为 refs/heads/serverfix:refs/heads/serverfix，那意味着，“推送本地的 serverfix 分支来更新远程仓库上的 serverfix 分支。”我们将会详细学习 Git 内部原理 的 refs/heads/ 部分，但是现在可以先把它放在儿。你也可以运行 `git push origin serverfix:serverfix`，它会做同样的事—也就是说“推送本地的 serverfix 分支，将其作为远程仓库的 serverfix 分支”可以通过这种格式来推送本地分支到一个命名不相同的远程分支。如果并不想让远程仓库上的分支叫做 serverfix，可以运行 `git push origin serverfix:awesomebranch`来将本地的 serverfix 分支推送到远程仓库上的 awesomebranch 分支
+
+下一次其他协作者从服务器上抓取数据时，他们会在本地生成一个远程分支 origin/serverfix，指向服务器的 serverfix 分支的引用：
+
+```text
+$ git fetch origin
+remote: Counting objects: 7, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0)
+Unpacking objects: 100% (3/3), done.
+From https://github.com/schacon/simplegit
+ * [new branch]      serverfix    -> origin/serverfix
+```
+
+要特别注意的一点是当抓取到新的远程跟踪分支时，本地不会自动生成一份可编辑的副本（拷贝）。换一句话说，这种情况下，不会有一个新的 serverfix 分支—只有一个不可以修改的 origin/serverfix 指针
+
+可以运行 `git merge origin/serverfix` 将这些工作合并到当前所在的分支。如果想要在自己的 serverfix 分支上工作，可以将其建立在远程跟踪分支之上：
+
+```text
+$ git checkout -b serverfix origin/serverfix
+Branch serverfix set up to track remote branch serverfix from origin.
+Switched to a new branch 'serverfix'
+```
+
+这会给你一个用于工作的本地分支，并且起点位于 origin/serverfix
+
+#### 跟踪分支
+
+从一个远程跟踪分支检出一个本地分支会自动创建所谓的“跟踪分支”（它跟踪的分支叫做“上游分支”）。 跟踪分支是与远程分支有直接关系的本地分支。如果在一个跟踪分支上输入 `git pull`，Git 能自动地识别去哪个服务器上抓取、合并到哪个分支
+
+当克隆一个仓库时，它通常会自动地创建一个跟踪 origin/master 的 master 分支。然而，如果你愿意的话可以设置其他的跟踪分支，或是一个在其他远程仓库上的跟踪分支，又或者不跟踪 master 分支。最简单的实例就是像之前看到的那样，运行 `git checkout -b <branch> <remote>/<branch>`。这是一个十分常用的操作所以 Git 提供了 `--track` 快捷方式：
+
+```text
+$ git checkout --track origin/serverfix
+Branch serverfix set up to track remote branch serverfix from origin.
+Switched to a new branch 'serverfix'
+```
+
+由于这个操作太常用了，该捷径本身还有一个捷径。如果你尝试检出的分支 (a) 不存在且 (b) 刚好只有一个名字与之匹配的远程分支，那么 Git 就会为你创建一个跟踪分支：
+
+```text
+$ git checkout serverfix
+Branch serverfix set up to track remote branch serverfix from origin.
+Switched to a new branch 'serverfix'
+```
+
+如果想要将本地分支与远程分支设置为不同的名字，你可以轻松地使用上一个命令增加一个不同名字的本地分支：
+
+```text
+$ git checkout -b sf origin/serverfix
+Branch sf set up to track remote branch serverfix from origin.
+Switched to a new branch 'sf'
+```
+
+现在，本地分支 sf 会自动从 origin/serverfix 拉取
+
+设置已有的本地分支跟踪一个刚刚拉取下来的远程分支，或者想要修改正在跟踪的上游分支，你可以在任意时间使用 `-u` 或 `--set-upstream-to` 选项运行 `git branch` 来显式地设置
+
+```text
+$ git branch -u origin/serverfix
+Branch serverfix set up to track remote branch serverfix from origin.
+```
+
+上游快捷方式：当设置好跟踪分支后，可以通过简写 `@{upstream}` 或 `@{u}` 来引用它的上游分支。所以在 master 分支时并且它正在跟踪 origin/master 时，如果愿意的话可以使用 `git merge @{u}` 来取代 `git merge origin/master`
+
+如果想要查看设置的所有跟踪分支，可以使用 `git branch` 的 `-vv` 选项。这会将所有的本地分支列出来并且包含更多的信息，如每一个分支正在跟踪哪个远程分支与本地分支是否是领先、落后或是都有
+
+```text
+$ git branch -vv
+  iss53     7e424c3 [origin/iss53: ahead 2] forgot the brackets
+  master    1ae2a45 [origin/master] deploying index fix
+* serverfix f8674d9 [teamone/server-fix-good: ahead 3, behind 1] this should do it
+  testing   5ea463a trying something new
+```
+
+这里可以看到 iss53 分支正在跟踪 origin/iss53 并且 “ahead” 是 2，意味着本地有两个提交还没有推送到服务器上。也能看到 master 分支正在跟踪 origin/master 分支并且是最新的。 接下来可以看到 serverfix 分支正在跟踪 teamone 服务器上的 server-fix-good 分支并且领先 3 落后 1，意味着服务器上有一次提交还没有合并入同时本地有三次提交还没有推送。最后看到 testing 分支并没有跟踪任何远程分支
+
+需要重点注意的一点是这些数字的值来自于你从每个服务器上最后一次抓取的数据。这个命令并没有连接服务器，它只会告诉你关于本地缓存的服务器数据。如果想要统计最新的领先与落后数字，需要在运行此命令前抓取所有的远程仓库。可以像这样做：
+
+```shell
+$ git fetch --all; git branch -vv
+```
+
+#### 拉取
+
+当 `git fetch`命令从服务器上抓取本地没有的数据时，它并不会修改工作目录中的内容。它只会获取数据然后让你自己合并。然而，有一个命令叫作 `git pull` 在大多数情况下它的含义是一个 `git fetch` 紧接着一个 `git merge` 命令。如果有一个像之前章节中演示的设置好的跟踪分支，不管它是显式地设置还是通过 `clone` 或 `checkout` 命令为你创建的，`git pull` 都会查找当前分支所跟踪的服务器与分支，从服务器上抓取数据然后尝试合并入那个远程分支
+
+由于 `git pull` 的魔法经常令人困惑所以通常单独显式地使用 `fetch` 与 `merge` 命令会更好一些
+
+#### 删除远程分支
+
+假设你已经通过远程分支做完所有的工作了—也就是说你和你的协作者已经完成了一个特性，并且将其合并到了远程仓库的 master 分支（或任何其他稳定代码分支）。可以运行带有 `--delete` 选项的 `git push` 命令来删除一个远程分支。如果想要从服务器上删除 serverfix 分支，运行下面的命令：
+
+```text
+$ git push origin --delete serverfix
+To https://github.com/schacon/simplegit
+ - [deleted]         serverfix
+```
+
+基本上这个命令做的只是从服务器上移除这个指针。Git 服务器通常会保留数据一段时间直到垃圾回收运行，所以如果不小心删除掉了，通常是很容易恢复的
 
 ## 服务器上的 Git
 
 ### 在服务器上搭建 Git
 
 ## 分布式 Git
+
+### 分布式工作流程
 
 ## GitHub
 
