@@ -19,7 +19,7 @@ export default hopeTheme({
     repo: "SherryMW/Blog", // 仓库配置，默认为 GitHub 同时也可以是一个完整的 URL
     repoDisplay: false, // 是否在导航栏内显示仓库链接入口，默认为 true
     docsDir: "docs/src", // 文档在仓库中的目录
-    pageInfo: ["Author", "Date", "Category", "Tag"], // 文章中顶部展示的相关标识信息
+    pageInfo: ["Author", "Category", "Tag"], // 文章中顶部展示的相关标识信息
     navbar: NavbarConfig, // 导航栏
     sidebar: SidebarConfig, // 侧边栏
     headerDepth: 2, // 侧边栏嵌套的标题深度，默认为 2
