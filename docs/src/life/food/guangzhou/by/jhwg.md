@@ -16,6 +16,8 @@ article: false
 
 ## 一龙拉面
 
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H1D7O5OQ" target="_blank">百顺北路1号云门New ParkMU层</a>
+
 ![](https://img.sherry4869.com/blog/life/food/guangzhou/by/jhwg/yllm/img.jpg)
 
 - [x] 金龙浓厚鱼介豚骨拉面

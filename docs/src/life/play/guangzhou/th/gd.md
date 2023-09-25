@@ -139,7 +139,7 @@ article: false
 
 <div><p>谜题：<el-rate model-value="2" disabled /></p></div>
 
-<div><p>温情：<el-rate model-value="5" disabled /></p></div>
+<div><p>温情：<el-rate model-value="4" disabled /></p></div>
 
 温情 :cat2: :cat2: 主题
 

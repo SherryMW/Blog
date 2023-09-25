@@ -37,5 +37,23 @@ export const PlaySidebar = arraySidebar([
             },
         ]
     },
+    {
+        text: "佛山",
+        prefix: "foshan/",
+        children: [
+            {
+                text: "顺德",
+                prefix: "sd/",
+                collapsible: true,
+                children: "structure"
+            },
+            {
+                text: "禅城",
+                prefix: "cc/",
+                collapsible: true,
+                children: "structure"
+            },
+        ]
+    },
     "gogogo"
 ])

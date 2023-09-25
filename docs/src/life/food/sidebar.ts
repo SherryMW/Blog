@@ -43,4 +43,16 @@ export const FoodSidebar = arraySidebar([
             },
         ]
     },
+    {
+        text: "佛山",
+        prefix: "foshan/",
+        children: [
+            {
+                text: "禅城",
+                prefix: "cc/",
+                collapsible: true,
+                children: "structure"
+            },
+        ]
+    }
 ])
