@@ -53,7 +53,7 @@ Git 是一个分布式版本控制系统，用于管理和跟踪软件开发项�
 
 这种做法带来了许多好处，特别是相较于老式的本地 VCS 来说。现在，每个人都可以在一定程度上看到项目中的其他人正在做些什么。而管理员也可以轻松掌控每个开发者的权限，并且管理一个 CVCS 要远比在各个客户端上维护本地数据库来得轻松容易
 
-事分两面，有好有坏。这么做最显而易见的缺点是中央服务器的单点故障。如果宕机一小时，那么在这一小时内，谁都无法提交更新，也就无法协同工作。如果中心数据库所在的磁盘发生损坏，又没有做恰当备份，毫无疑问你将丢失所有数据—包括项目的整个变更历史，只剩下人们在各自机器上保留的单独快照。本地版本控制系统也存在类似问题，只要整个项目的历史记录被保存在单一位置，就有丢失所有历史更新记录的风险
+事分两面，有好有坏。这么做最显而易见的缺点是中央服务器的单点故障。如果宕机一小时，那么在这一小时内，谁都无法提交更新，也就无法协同工作。如果中心数据库所在的磁盘发生损坏，又没有做恰当备份，毫无疑问你将丢失所有数据 — 包括项目的整个变更历史，只剩下人们在各自机器上保留的单独快照。本地版本控制系统也存在类似问题，只要整个项目的历史记录被保存在单一位置，就有丢失所有历史更新记录的风险
 
 #### 分布式版本控制系统
 
@@ -83,7 +83,7 @@ Git 不按照以上方式对待或保存数据。反之，Git 更像是把数据
 
 在 Git 中的绝大多数操作都只需要访问本地文件和资源，一般不需要来自网络上其它计算机的信息。如果你习惯于所有操作都有网络延时开销的集中式版本控制系统，Git 在这方面会让你感到速度之神赐给了 Git 超凡的能量。因为你在本地磁盘上就有项目的完整历史，所以大部分操作看起来瞬间完成
 
-举个例子，要浏览项目的历史，Git 不需外连到服务器去获取历史，然后再显示出来—它只需直接从本地数据库中读取。你能立即看到项目历史。如果你想查看当前版本与一个月前的版本之间引入的修改，Git 会查找到一个月前的文件做一次本地的差异计算，而不是由远程服务器处理或从远程服务器拉回旧版本文件再来本地处理
+举个例子，要浏览项目的历史，Git 不需外连到服务器去获取历史，然后再显示出来 — 它只需直接从本地数据库中读取。你能立即看到项目历史。如果你想查看当前版本与一个月前的版本之间引入的修改，Git 会查找到一个月前的文件做一次本地的差异计算，而不是由远程服务器处理或从远程服务器拉回旧版本文件再来本地处理
 
 这也意味着你在离线或者没有 VPN 时，几乎可以进行任何操作。如你在飞机或火车上想做些工作，就能愉快地提交，直到有网络连接时再上传。如你回家后 VPN 客户端不正常，那么也仍能工作。使用其它系统的话，做到这些是不可能或很费力的。比如，用 Perforce 的话，没有连接服务器时几乎不能做什么事；而用 Subversion 和 CVS 的话，你能修改文件，但不能向数据库提交修改（因为你的本地数据库离线了）。这样似乎问题不大，但是你可能会惊喜地发现它带来的巨大的不同
 
@@ -798,7 +798,7 @@ $ git reset HEAD^ hello.php 回退 hello.php 文件的版本到上一个版本
 
 #### 撤消对文件的修改
 
-如果你并不想保留对 CONTRIBUTING.md 文件的修改怎么办？你该如何方便地撤消修改—将它还原成上次提交时的样子（或者刚克隆完的样子，或者刚把它放入工作目录时的样子）？幸运的是，`git status` 也告诉了你应该如何做。在最后一个例子中，未暂存区域是这样：
+如果你并不想保留对 CONTRIBUTING.md 文件的修改怎么办？你该如何方便地撤消修改 — 将它还原成上次提交时的样子（或者刚克隆完的样子，或者刚把它放入工作目录时的样子）？幸运的是，`git status` 也告诉了你应该如何做。在最后一个例子中，未暂存区域是这样：
 
 ```text
 Changes not staged for commit:
@@ -820,7 +820,7 @@ Changes to be committed:
     renamed:    README.md -> README
 ```
 
-可以看到那些修改已经被撤消了（请务必记得 `git checkout-<file>` 是一个危险的命令。你对那个文件在本地的任何修改都会消失—Git 会用最近提交的版本覆盖掉它。除非你确实清楚不想要对那个文件的本地修改了，否则请不要使用这个命令）
+可以看到那些修改已经被撤消了（请务必记得 `git checkout-<file>` 是一个危险的命令。你对那个文件在本地的任何修改都会消失 — Git 会用最近提交的版本覆盖掉它。除非你确实清楚不想要对那个文件的本地修改了，否则请不要使用这个命令）
 
 如果你仍然想保留对那个文件做出的修改，但是现在仍然需要撤消，我们将会在 [Git 分支](#git-分支) 介绍保存进度与分支，这通常是更好的做法
 
@@ -834,7 +834,7 @@ Changes to be committed:
 
 #### 查看远程仓库
 
-如果想查看你已经配置的远程仓库服务器，可以运行 `git remote` 命令。它会列出你指定的每一个远程服务器的简写。如果你已经克隆了自己的仓库，那么至少应该能看到 `origin` —这是 Git 给你克隆的仓库服务器的默认名字：
+如果想查看你已经配置的远程仓库服务器，可以运行 `git remote` 命令。它会列出你指定的每一个远程服务器的简写。如果你已经克隆了自己的仓库，那么至少应该能看到 `origin` — 这是 Git 给你克隆的仓库服务器的默认名字：
 
 你也可以指定选项 `-v`，会显示需要读写远程仓库使用的 Git 保存的简写与其对应的 URL
 
@@ -872,7 +872,7 @@ From https://github.com/paulboone/ticgit
  * [new branch]      ticgit     -> pb/ticgit
 ```
 
-现在 Paul 的 master 分支可以在本地通过 pb/master 访问到—你可以将它合并到自己的某个分支中，或者如果你想要查看它的话，可以检出一个指向该点的本地分支。（我们将会在 [Git 分支](#git-分支) 中详细介绍什么是分支以及如何使用分支）
+现在 Paul 的 master 分支可以在本地通过 pb/master 访问到 — 你可以将它合并到自己的某个分支中，或者如果你想要查看它的话，可以检出一个指向该点的本地分支。（我们将会在 [Git 分支](#git-分支) 中详细介绍什么是分支以及如何使用分支）
 
 #### 从远程仓库中抓取与拉取
 
@@ -884,7 +884,7 @@ $ git fetch <remote>
 
 这个命令会访问远程仓库，从中拉取所有你还没有的数据。执行完成后，你将会拥有那个远程仓库中所有分支的引用，可以随时合并或查看
 
-如果你使用 `clone` 命令克隆了一个仓库，命令会自动将其添加为远程仓库并默认以 “origin” 为简写。所以，`git fetch origin` 会抓取克隆（或上一次抓取）后新推送的所有工作。必须注意 `git fetch` 命令只会将数据下载到你的本地仓库—它并不会自动合并或修改你当前的工作。当准备好时你必须手动将其合并入你的工作
+如果你使用 `clone` 命令克隆了一个仓库，命令会自动将其添加为远程仓库并默认以 “origin” 为简写。所以，`git fetch origin` 会抓取克隆（或上一次抓取）后新推送的所有工作。必须注意 `git fetch` 命令只会将数据下载到你的本地仓库 — 它并不会自动合并或修改你当前的工作。当准备好时你必须手动将其合并入你的工作
 
 如果你的当前分支设置了跟踪远程分支（阅读下一节和 [Git 分支](#git-分支) 了解更多信息），那么可以用 `git pull` 命令来自动抓取后合并该远程分支到当前分支。这或许是个更加简单舒服的工作流程。默认情况下，`git clone` 命令会自动设置本地 master 分支跟踪克隆的远程仓库的 master 分支（或其它名字的默认分支）。运行 `git pull` 通常会从最初克隆的服务器上抓取数据并自动尝试合并到当前所在的分支
 
@@ -956,7 +956,7 @@ $ git remote rename pb paul
 
 值得注意的是这同样也会修改你所有远程跟踪的分支名字。那些过去引用 pb/master 的现在会引用 paul/master
 
-如果因为一些原因想要移除一个远程仓库—你已经从服务器上搬走了或不再想使用某一个特定的镜像了，又或者某一个贡献者不再贡献了—可以使用 `git remote remove` 或 `git remote rm` ：
+如果因为一些原因想要移除一个远程仓库 — 你已经从服务器上搬走了或不再想使用某一个特定的镜像了，又或者某一个贡献者不再贡献了 — 可以使用 `git remote remove` 或 `git remote rm` ：
 
 ```shell
 $ git remote remove paul
@@ -993,7 +993,7 @@ v1.8.5-rc3
 
 Git 支持两种标签：轻量标签（lightweight）与附注标签（annotated）
 
-轻量标签很像一个不会改变的分支—它只是某个特定提交的引用
+轻量标签很像一个不会改变的分支 — 它只是某个特定提交的引用
 
 而附注标签是存储在 Git 数据库中的一个完整对象，它们是可以被校验的，其中包含打标签者的名字、电子邮件地址、日期时间，此外还有一个标签信息，并且可以使用 GNU Privacy Guard （GPG）签名并验证。通常会建议创建附注标签，这样你可以拥有以上所有信息。但是如果你只是想用一个临时的标签， 或者因为某些原因不想要保存这些信息，那么也可以用轻量标签
 
@@ -1030,7 +1030,7 @@ Date:   Mon Mar 17 21:52:11 2008 -0700
 
 #### 轻量标签
 
-另一种给提交打标签的方式是使用轻量标签。轻量标签本质上是将提交校验和存储到一个文件中—没有保存任何其他信息。创建轻量标签，不需要使用 `-a`、`-s` 或 `-m` 选项，只需要提供标签名字：
+另一种给提交打标签的方式是使用轻量标签。轻量标签本质上是将提交校验和存储到一个文件中 — 没有保存任何其他信息。创建轻量标签，不需要使用 `-a`、`-s` 或 `-m` 选项，只需要提供标签名字：
 
 ```text
 $ git tag v1.4-lw
@@ -1092,7 +1092,7 @@ Date:   Sun Apr 27 20:43:35 2008 -0700
 
 #### 共享标签
 
-默认情况下，`git push` 命令并不会传送标签到远程仓库服务器上。在创建完标签后你必须显式地推送标签到共享服务器上。这个过程就像共享远程分支一样—你可以运行 `git push origin <tagname>`
+默认情况下，`git push` 命令并不会传送标签到远程仓库服务器上。在创建完标签后你必须显式地推送标签到共享服务器上。这个过程就像共享远程分支一样 — 你可以运行 `git push origin <tagname>`
 
 ```text
 $ git push origin v1.5
@@ -1152,13 +1152,13 @@ $ git push origin --delete <tagname>
 
 ### 分支简介
 
-几乎所有的版本控制系统都以某种形式支持分支。使用分支意味着你可以把你的工作从开发主线上分离开来，以免影响开发主线。在很多版本控制系统中，这是一个略微低效的过程—常常需要完全创建一个源代码目录的副本。对于大项目来说，这样的过程会耗费很多时间
+几乎所有的版本控制系统都以某种形式支持分支。使用分支意味着你可以把你的工作从开发主线上分离开来，以免影响开发主线。在很多版本控制系统中，这是一个略微低效的过程 — 常常需要完全创建一个源代码目录的副本。对于大项目来说，这样的过程会耗费很多时间
 
 有人把 Git 的分支模型称为它的“必杀技特性”，也正因为这一特性，使得 Git 从众多版本控制系统中脱颖而出。为何 Git 的分支模型如此出众呢？Git 处理分支的方式可谓是难以置信的轻量，创建新分支这一操作几乎能在瞬间完成，并且在不同分支之间的切换操作也是一样便捷。与许多其它版本控制系统不同，Git 鼓励在工作流程中频繁地使用分支与合并，哪怕一天之内进行许多次。理解和精通这一特性，你便会意识到 Git 是如此的强大而又独特，并且从此真正改变你的开发方式
 
 为了真正理解 Git 处理分支的方式，我们需要回顾一下 Git 是如何保存数据的。或许你还记得[起步](#起步)的内容，Git 保存的不是文件的变化或者差异，而是一系列不同时刻的**快照**
 
-在进行提交操作时，Git 会保存一个提交对象（commit object）。知道了 Git 保存数据的方式，我们可以很自然的想到—该提交对象会包含一个指向暂存内容快照的指针。 但不仅仅是这样，该提交对象还包含了作者的姓名和邮箱、提交时输入的信息以及指向它的父对象的指针。首次提交产生的提交对象没有父对象，普通提交操作产生的提交对象有一个父对象，而由多个分支合并产生的提交对象有多个父对象
+在进行提交操作时，Git 会保存一个提交对象（commit object）。知道了 Git 保存数据的方式，我们可以很自然的想到 — 该提交对象会包含一个指向暂存内容快照的指针。 但不仅仅是这样，该提交对象还包含了作者的姓名和邮箱、提交时输入的信息以及指向它的父对象的指针。首次提交产生的提交对象没有父对象，普通提交操作产生的提交对象有一个父对象，而由多个分支合并产生的提交对象有多个父对象
 
 为了更加形象地说明，我们假设现在有一个工作目录，里面包含了三个将要被暂存和提交的文件。暂存操作会为每一个文件计算校验和（使用我们在[起步](#起步)中提到的 SHA-1 哈希算法），然后会把当前版本的文件快照保存到 Git 仓库中（Git 使用 blob 对象来保存它们），最终将校验和加入到暂存区域等待提交：
 
@@ -1182,6 +1182,14 @@ Git 的分支，其实本质上仅仅是指向提交对象的可变指针。Git 
 Git 的 master 分支并不是一个特殊分支。它就跟其它分支完全没有区别。之所以几乎每一个仓库都有 master 分支，是因为 `git init` 命令默认创建它，并且大多数人都懒得去改动它
 
 ![分支及其提交历史](https://git-scm.com/book/en/v2/images/branch-and-history.png)
+
+#### 查看分支
+
+```shell
+$ git branch # 列出本地分支
+$ git branch -r # 列出远程分支
+$ git branch -a # 列出本地和远程分支
+```
 
 #### 分支创建
 
@@ -1298,7 +1306,7 @@ $ git log --oneline --decorate --graph --all
 
 ![一个简单提交历史](https://git-scm.com/book/en/v2/images/basic-branching-1.png)
 
-现在，你已经决定要解决你的公司使用的问题追踪系统中的 #53 问题。想要新建一个分支并同时切换到那个分支上，你可以运行一个带有 -b 参数的 `git checkout` 命令：
+现在，你已经决定要解决你的公司使用的问题追踪系统中的 #53 问题。想要新建一个分支并同时切换到那个分支上，你可以运行一个带有 `-b` 参数的 `git checkout` 命令：
 
 ```text
 $ git checkout -b iss53
@@ -1358,7 +1366,7 @@ Fast-forward
  1 file changed, 2 insertions(+)
 ```
 
-在合并的时候，你应该注意到了“快进（fast-forward）”这个词。由于你想要合并的分支 hotfix 所指向的提交 C4 是你所在的提交 C2 的直接后继，因此 Git 会直接将指针向前移动。换句话说，当你试图合并两个分支时，如果顺着一个分支走下去能够到达另一个分支，那么 Git 在合并两者的时候，只会简单的将指针向前推进（指针右移），因为这种情况下的合并操作没有需要解决的分歧—这就叫做 “快进（fast-forward）”
+在合并的时候，你应该注意到了“快进（fast-forward）”这个词。由于你想要合并的分支 hotfix 所指向的提交 C4 是你所在的提交 C2 的直接后继，因此 Git 会直接将指针向前移动。换句话说，当你试图合并两个分支时，如果顺着一个分支走下去能够到达另一个分支，那么 Git 在合并两者的时候，只会简单的将指针向前推进（指针右移），因为这种情况下的合并操作没有需要解决的分歧 — 这就叫做 “快进（fast-forward）”
 
 现在，最新的修改已经在 master 分支所指向的提交快照中，你可以着手发布该修复了
 
@@ -1530,7 +1538,7 @@ $ git branch --no-merged master
 
 因为 Git 使用简单的三方合并，所以就算在一段较长的时间内，反复把一个分支合并入另一个分支，也不是什么难事。也就是说，在整个项目开发周期的不同阶段，你可以同时拥有多个开放的分支；你可以定期地把某些主题分支合并入其他分支中
 
-许多使用 Git 的开发者都喜欢使用这种方式来工作，比如只在 master 分支上保留完全稳定的代码—有可能仅仅是已经发布或即将发布的代码。他们还有一些名为 develop 或者 next 的平行分支，被用来做后续开发或者测试稳定性—这些分支不必保持绝对稳定，但是一旦达到稳定状态，它们就可以被合并入 master 分支了。这样，在确保这些已完成的主题分支（短期分支，比如之前的 iss53 分支）能够通过所有测试，并且不会引入更多 bug 之后，就可以合并入主干分支中，等待下一次的发布
+许多使用 Git 的开发者都喜欢使用这种方式来工作，比如只在 master 分支上保留完全稳定的代码 — 有可能仅仅是已经发布或即将发布的代码。他们还有一些名为 develop 或者 next 的平行分支，被用来做后续开发或者测试稳定性 — 这些分支不必保持绝对稳定，但是一旦达到稳定状态，它们就可以被合并入 master 分支了。这样，在确保这些已完成的主题分支（短期分支，比如之前的 iss53 分支）能够通过所有测试，并且不会引入更多 bug 之后，就可以合并入主干分支中，等待下一次的发布
 
 事实上我们刚才讨论的，是随着你的提交而不断右移的指针。稳定分支的指针总是在提交历史中落后一大截，而前沿分支的指针往往比较靠前
 
@@ -1546,7 +1554,7 @@ $ git branch --no-merged master
 
 主题分支对任何规模的项目都适用。主题分支是一种短期分支，它被用来实现单一特性或其相关工作。也许你从来没有在其他的版本控制系统（VCS）上这么做过，因为在那些版本控制系统中创建和合并分支通常很费劲。然而，在 Git 中一天之内多次创建、使用、合并、删除分支都很常见
 
-你已经在上一节中你创建的 iss53 和 hotfix 主题分支中看到过这种用法。你在上一节用到的主题分支（iss53 和 hotfix 分支）中提交了一些更新，并且在它们合并入主干分支之后，你又删除了它们。这项技术能使你快速并且完整地进行上下文切换（context-switch）—因为你的工作被分散到不同的流水线中，在不同的流水线中每个分支都仅与其目标特性相关，因此，在做代码审查之类的工作的时候就能更加容易地看出你做了哪些改动。你可以把做出的改动在主题分支中保留几分钟、几天甚至几个月，等它们成熟之后再合并，而不用在乎它们建立的顺序或工作进度
+你已经在上一节中你创建的 iss53 和 hotfix 主题分支中看到过这种用法。你在上一节用到的主题分支（iss53 和 hotfix 分支）中提交了一些更新，并且在它们合并入主干分支之后，你又删除了它们。这项技术能使你快速并且完整地进行上下文切换（context-switch） — 因为你的工作被分散到不同的流水线中，在不同的流水线中每个分支都仅与其目标特性相关，因此，在做代码审查之类的工作的时候就能更加容易地看出你做了哪些改动。你可以把做出的改动在主题分支中保留几分钟、几天甚至几个月，等它们成熟之后再合并，而不用在乎它们建立的顺序或工作进度
 
 考虑这样一个例子，你在 master 分支上工作到 C1，这时为了解决一个问题而新建 iss91 分支，在 iss91 分支上工作到 C4，然而对于那个问题你又有了新的想法，于是你再新建一个 iss91v2 分支试图用另一种方法解决那个问题，接着你回到 master 分支工作了一会儿，你又冒出了一个不太确定的想法，你便在 C10 的时候新建一个 dumbidea 分支，并在上面做些实验。你的提交历史看起来像下面这个样子：
 
@@ -1558,7 +1566,7 @@ $ git branch --no-merged master
 
 我们将会在[分布式 Git](#分布式-git)中向你揭示更多有关分支工作流的细节， 因此，请确保你阅读完那个章节之后，再来决定你的下个项目要使用什么样的分支策略（branching scheme）
 
-请牢记，当你做这么多操作的时候，这些分支全部都存于本地。当你新建和合并分支的时候，所有这一切都只发生在你本地的 Git 版本库中—没有与服务器发生交互
+请牢记，当你做这么多操作的时候，这些分支全部都存于本地。当你新建和合并分支的时候，所有这一切都只发生在你本地的 Git 版本库中 — 没有与服务器发生交互
 
 ### 远程分支
 
@@ -1592,7 +1600,7 @@ $ git branch --no-merged master
 
 #### 推送
 
-当你想要公开分享一个分支时，需要将其推送到有写入权限的远程仓库上。本地的分支并不会自动与远程仓库同步—你必须显式地推送想要分享的分支。这样，你就可以把不愿意分享的内容放到私人分支上，而将需要和别人协作的内容推送到公开分支
+当你想要公开分享一个分支时，需要将其推送到有写入权限的远程仓库上。本地的分支并不会自动与远程仓库同步 — 你必须显式地推送想要分享的分支。这样，你就可以把不愿意分享的内容放到私人分支上，而将需要和别人协作的内容推送到公开分支
 
 如果希望和别人一起在名为 serverfix 的分支上工作，你可以像推送第一个分支那样推送它。运行 `git push <remote> <branch>`:
 
@@ -1607,7 +1615,7 @@ To https://github.com/schacon/simplegit
  * [new branch]      serverfix -> serverfix
 ```
 
-这里有些工作被简化了 Git 自动将 serverfix 分支名字展开为 refs/heads/serverfix:refs/heads/serverfix，那意味着，“推送本地的 serverfix 分支来更新远程仓库上的 serverfix 分支。”我们将会详细学习 Git 内部原理 的 refs/heads/ 部分，但是现在可以先把它放在儿。你也可以运行 `git push origin serverfix:serverfix`，它会做同样的事—也就是说“推送本地的 serverfix 分支，将其作为远程仓库的 serverfix 分支”可以通过这种格式来推送本地分支到一个命名不相同的远程分支。如果并不想让远程仓库上的分支叫做 serverfix，可以运行 `git push origin serverfix:awesomebranch`来将本地的 serverfix 分支推送到远程仓库上的 awesomebranch 分支
+这里有些工作被简化了 Git 自动将 serverfix 分支名字展开为 refs/heads/serverfix:refs/heads/serverfix，那意味着，“推送本地的 serverfix 分支来更新远程仓库上的 serverfix 分支。”我们将会详细学习 Git 内部原理 的 refs/heads/ 部分，但是现在可以先把它放在儿。你也可以运行 `git push origin serverfix:serverfix`，它会做同样的事 — 也就是说“推送本地的 serverfix 分支，将其作为远程仓库的 serverfix 分支”可以通过这种格式来推送本地分支到一个命名不相同的远程分支。如果并不想让远程仓库上的分支叫做 serverfix，可以运行 `git push origin serverfix:awesomebranch`来将本地的 serverfix 分支推送到远程仓库上的 awesomebranch 分支
 
 下一次其他协作者从服务器上抓取数据时，他们会在本地生成一个远程分支 origin/serverfix，指向服务器的 serverfix 分支的引用：
 
@@ -1621,7 +1629,7 @@ From https://github.com/schacon/simplegit
  * [new branch]      serverfix    -> origin/serverfix
 ```
 
-要特别注意的一点是当抓取到新的远程跟踪分支时，本地不会自动生成一份可编辑的副本（拷贝）。换一句话说，这种情况下，不会有一个新的 serverfix 分支—只有一个不可以修改的 origin/serverfix 指针
+要特别注意的一点是当抓取到新的远程跟踪分支时，本地不会自动生成一份可编辑的副本（拷贝）。换一句话说，这种情况下，不会有一个新的 serverfix 分支 — 只有一个不可以修改的 origin/serverfix 指针
 
 可以运行 `git merge origin/serverfix` 将这些工作合并到当前所在的分支。如果想要在自己的 serverfix 分支上工作，可以将其建立在远程跟踪分支之上：
 
@@ -1698,7 +1706,7 @@ $ git fetch --all; git branch -vv
 
 #### 删除远程分支
 
-假设你已经通过远程分支做完所有的工作了—也就是说你和你的协作者已经完成了一个特性，并且将其合并到了远程仓库的 master 分支（或任何其他稳定代码分支）。可以运行带有 `--delete` 选项的 `git push` 命令来删除一个远程分支。如果想要从服务器上删除 serverfix 分支，运行下面的命令：
+假设你已经通过远程分支做完所有的工作了 — 也就是说你和你的协作者已经完成了一个特性，并且将其合并到了远程仓库的 master 分支（或任何其他稳定代码分支）。可以运行带有 `--delete` 选项的 `git push` 命令来删除一个远程分支。如果想要从服务器上删除 serverfix 分支，运行下面的命令：
 
 ```text
 $ git push origin --delete serverfix
@@ -1710,15 +1718,1229 @@ To https://github.com/schacon/simplegit
 
 ## 服务器上的 Git
 
+### 协议
+
+到目前为止，你应该已经有办法使用 Git 来完成日常工作。然而，为了使用 Git 协作功能，你还需要有远程的 Git 仓库。尽管在技术上你可以从个人仓库进行推送（push）和拉取（pull）来修改内容，但不鼓励使用这种方法，因为一不留心就很容易弄混其他人的进度。此外，你希望你的合作者们即使在你的电脑未联机时亦能存取仓库 — 拥有一个更可靠的公用仓库十分有用。因此，与他人合作的最佳方法即是建立一个你与合作者们都有权利访问，且可从那里推送和拉取资料的共用仓库
+
+架设一台 Git 服务器并不难。首先，选择你希望服务器使用的通讯协议。在本章第一节将介绍可用的协议以及各自优缺点。下面一节将解释使用那些协议的典型设置及如何在你的服务器上运行。最后，如果你不介意托管你的代码在其他人的服务器，且不想经历设置与维护自己服务器的麻烦，可以试试我们介绍的几个仓库托管服务
+
+如果你对架设自己的服务器没兴趣，可以跳到本章最后一节去看看如何申请一个代码托管服务的帐户然后继续下一章，我们会在那里讨论分布式源码控制环境的林林总总
+
+一个远程仓库通常只是一个裸仓库（bare repository）— 即一个没有当前工作目录的仓库。因为该仓库仅仅作为合作媒介，不需要从磁盘检查快照；存放的只有 Git 的资料。简单的说，裸仓库就是你工程目录内的 .git 子目录内容，不包含其他资料
+
+Git 可以使用四种不同的协议来传输资料：本地协议（Local），HTTP 协议，SSH（Secure Shell）协议及 Git 协议。在此，我们将会讨论那些协议及哪些情形应该使用（或避免使用）他们
+
+#### 本地协议
+
+最基本的就是 本地协议（Local protocol） ，其中的远程版本库就是同一主机上的另一个目录。这常见于团队每一个成员都对一个共享的文件系统（例如一个挂载的 NFS）拥有访问权，或者比较少见的多人共用同一台电脑的情况。后者并不理想，因为你的所有代码版本库如果长存于同一台电脑，更可能发生灾难性的损失
+
+如果你使用共享文件系统，就可以从本地版本库克隆（clone）、推送（push）以及拉取（pull）。像这样去克隆一个版本库或者增加一个远程到现有的项目中，使用版本库路径作为 URL。例如，克隆一个本地版本库，可以执行如下的命令：
+
+```shell
+$ git clone /srv/git/project.git
+```
+
+或你可以执行这个命令：
+
+```shell
+$ git clone file:///srv/git/project.git
+```
+
+如果在 URL 开头明确的指定 file://，那么 Git 的行为会略有不同。如果仅是指定路径，Git 会尝试使用硬链接（hard link）或直接复制所需要的文件。如果指定 file://，Git 会触发平时用于网路传输资料的进程，那样传输效率会更低。 指定 file:// 的主要目的是取得一个没有外部参考（extraneous references）或对象（object）的干净版本库副本 — 通常是在从其他版本控制系统导入后或一些类似情况需要这么做（关于维护任务可参见 [Git 内部原理](#git-内部原理) ）。在此我们将使用普通路径，因为这样通常更快
+
+要增加一个本地版本库到现有的 Git 项目，可以执行如下的命令：
+
+```shell
+$ git remote add local_proj /srv/git/project.git
+```
+
+然后，就可以通过新的远程仓库名 local_proj 像在网络上一样从远端版本库推送和拉取更新了
+
+**优点**
+
+基于文件系统的版本库的优点是简单，并且直接使用了现有的文件权限和网络访问权限。如果你的团队已经有共享文件系统，建立版本库会十分容易。 只需要像设置其他共享目录一样，把一个裸版本库的副本放到大家都可以访问的路径，并设置好读/写的权限，就可以了，我们会在 [在服务器上搭建 Git](#在服务器上搭建-git) 讨论如何导出一个裸版本库
+
+这也是快速从别人的工作目录中拉取更新的方法。如果你和别人一起合作一个项目，他想让你从版本库中拉取更新时，运行类似 git pull /home/john/project 的命令比推送到服务器再抓取回来简单多了
+
+**缺点**
+
+这种方法的缺点是，通常共享文件系统比较难配置，并且比起基本的网络连接访问，这不方便从多个位置访问。如果你想从家里推送内容，必须先挂载一个远程磁盘，相比网络连接的访问方式，配置不方便，速度也慢
+
+值得一提的是，如果你使用的是类似于共享挂载的文件系统时，这个方法不一定是最快的。访问本地版本库的速度与你访问数据的速度是一样的。在同一个服务器上，如果允许 Git 访问本地硬盘，一般的通过 NFS 访问版本库要比通过 SSH 访问慢
+
+最终，这个协议并不保护仓库避免意外的损坏。每一个用户都有“远程”目录的完整 shell 权限，没有方法可以阻止他们修改或删除 Git 内部文件和损坏仓库
+
+#### HTTP 协议
+
+Git 通过 HTTP 通信有两种模式。在 Git 1.6.6 版本之前只有一个方式可用，十分简单并且通常是只读模式的。Git 1.6.6 版本引入了一种新的、更智能的协议，让 Git 可以像通过 SSH 那样智能的协商和传输数据。之后几年，这个新的 HTTP 协议因为其简单、智能变的十分流行。新版本的 HTTP 协议一般被称为 智能 HTTP 协议，旧版本的一般被称为 哑 HTTP 协议。我们先了解一下新的智能 HTTP 协议
+
+**智能 HTTP 协议**
+
+智能 HTTP 的运行方式和 SSH 及 Git 协议类似，只是运行在标准的 HTTP/S 端口上并且可以使用各种 HTTP 验证机制，这意味着使用起来会比 SSH 协议简单的多，比如可以使用 HTTP 协议的用户名/密码授权，免去设置 SSH 公钥
+
+智能 HTTP 协议或许已经是最流行的使用 Git 的方式了，它即支持像 git:// 协议一样设置匿名服务，也可以像 SSH 协议一样提供传输时的授权和加密。而且只用一个 URL 就可以都做到，省去了为不同的需求设置不同的 URL。如果你要推送到一个需要授权的服务器上（一般来讲都需要），服务器会提示你输入用户名和密码。从服务器获取数据时也一样
+
+事实上，类似 GitHub 的服务，你在网页上看到的 URL 比如 [https://github.com/schacon/simplegit](https://github.com/schacon/simplegit)，和你在克隆、推送（如果你有权限）时使用的是一样的
+
+**哑（Dumb） HTTP 协议**
+
+如果服务器没有提供智能 HTTP 协议的服务，Git 客户端会尝试使用更简单的“哑” HTTP 协议。哑 HTTP 协议里 web 服务器仅把裸版本库当作普通文件来对待，提供文件服务。哑 HTTP 协议的优美之处在于设置起来简单。基本上，只需要把一个裸版本库放在 HTTP 根目录，设置一个叫做 post-update 的挂钩就可以了（见 Git 钩子）。此时，只要能访问 web 服务器上你的版本库，就可以克隆你的版本库。下面是设置从 HTTP 访问版本库的方法：
+
+```shell
+$ cd /var/www/htdocs/
+$ git clone --bare /path/to/git_project gitproject.git
+$ cd gitproject.git
+$ mv hooks/post-update.sample hooks/post-update
+$ chmod a+x hooks/post-update
+```
+
+这样就可以了。Git 自带的 post-update 挂钩会默认执行合适的命令（git update-server-info），来确保通过 HTTP 的获取和克隆操作正常工作。这条命令会在你通过 SSH 向版本库推送之后被执行；然后别人就可以通过类似下面的命令来克隆：
+
+```shell
+$ git clone https://example.com/gitproject.git
+```
+
+这里我们用了 Apache 里设置了常用的路径 /var/www/htdocs，不过你可以使用任何静态 Web 服务器 — 只需要把裸版本库放到正确的目录下就可以。Git 的数据是以基本的静态文件形式提供的（详情见 [Git 内部原理](#git-内部原理)）
+
+通常的，会在可以提供读／写的智能 HTTP 服务和简单的只读的哑 HTTP 服务之间选一个。 极少会将二者混合提供服务
+
+**优点**
+
+我们将只关注智能 HTTP 协议的优点。不同的访问方式只需要一个 URL 以及服务器只在需要授权时提示输入授权信息，这两个简便性让终端用户使用 Git 变得非常简单。相比 SSH 协议，可以使用用户名／密码授权是一个很大的优势，这样用户就不必须在使用 Git 之前先在本地生成 SSH 密钥对再把公钥上传到服务器。对非资深的使用者，或者系统上缺少 SSH 相关程序的使用者，HTTP 协议的可用性是主要的优势。与 SSH 协议类似，HTTP 协议也非常快和高效
+
+你也可以在 HTTPS 协议上提供只读版本库的服务，如此你在传输数据的时候就可以加密数据；或者，你甚至可以让客户端使用指定的 SSL 证书
+
+另一个好处是 HTTPS 协议被广泛使用，一般的企业防火墙都会允许这些端口的数据通过
+
+**缺点**
+
+在一些服务器上，架设 HTTPS 协议的服务端会比 SSH 协议的棘手一些。 除了这一点，用其他协议提供 Git 服务与智能 HTTP 协议相比就几乎没有优势了
+
+如果你在 HTTP 上使用需授权的推送，管理凭证会比使用 SSH 密钥认证麻烦一些。然而，你可以选择使用凭证存储工具，比如 macOS 的 Keychain 或者 Windows 的凭证管理器。参考 [凭证存储](#凭证存储) 如何安全地保存 HTTP 密码
+
+#### SSH 协议
+
+架设 Git 服务器时常用 SSH 协议作为传输协议。因为大多数环境下服务器已经支持通过 SSH 访问 — 即使没有也很容易架设。SSH 协议也是一个验证授权的网络协议；并且，因为其普遍性，架设和使用都很容易
+
+通过 SSH 协议克隆版本库，你可以指定一个 ssh:// 的 URL：
+
+```shell
+$ git clone ssh://[user@]server/project.git
+```
+
+或者使用一个简短的 scp 式的写法：
+
+```shell
+$ git clone [user@]server:project.git
+```
+
+在上面两种情况中，如果你不指定可选的用户名，那么 Git 会使用当前登录的用的名字
+
+**优势**
+
+用 SSH 协议的优势有很多。首先，SSH 架设相对简单 — SSH 守护进程很常见，多数管理员都有使用经验，并且多数操作系统都包含了它及相关的管理工具。其次，通过 SSH 访问是安全的 — 所有传输数据都要经过授权和加密。最后，与 HTTPS 协议、Git 协议及本地协议一样，SSH 协议很高效，在传输前也会尽量压缩数据
+
+**缺点**
+
+SSH 协议的缺点在于它不支持匿名访问 Git 仓库。如果你使用 SSH，那么即便只是读取数据，使用者也 必须 通过 SSH 访问你的主机，这使得 SSH 协议不利于开源的项目，毕竟人们可能只想把你的仓库克隆下来查看。如果你只在公司网络使用，SSH 协议可能是你唯一要用到的协议。如果你要同时提供匿名只读访问和 SSH 协议，那么你除了为自己推送架设 SSH 服务以外，还得架设一个可以让其他人访问的服务
+
+#### Git 协议
+
+最后是 Git 协议。这是包含在 Git 里的一个特殊的守护进程；它监听在一个特定的端口（9418），类似于 SSH 服务，但是访问无需任何授权。要让版本库支持 Git 协议，需要先创建一个 git-daemon-export-ok 文件 — 它是 Git 协议守护进程为这个版本库提供服务的必要条件 — 但是除此之外没有任何安全措施。要么谁都可以克隆这个版本库，要么谁也不能。 这意味着，通常不能通过 Git 协议推送。由于没有授权机制，一旦你开放推送操作，意味着网络上知道这个项目 URL 的人都可以向项目推送数据。不用说，极少会有人这么做
+
+**优点**
+
+目前，Git 协议是 Git 使用的网络传输协议里最快的。如果你的项目有很大的访问量，或者你的项目很庞大并且不需要为写进行用户授权，架设 Git 守护进程来提供服务是不错的选择。它使用与 SSH 相同的数据传输机制，但是省去了加密和授权的开销
+
+**缺点**
+
+Git 协议缺点是缺乏授权机制。把 Git 协议作为访问项目版本库的唯一手段是不可取的。一般的做法里，会同时提供 SSH 或者 HTTPS 协议的访问服务，只让少数几个开发者有推送（写）权限，其他人通过 git:// 访问只有读权限。Git 协议也许也是最难架设的。它要求有自己的守护进程，这就要配置 xinetd、systemd 或者其他的程序，这些工作并不简单。它还要求防火墙开放 9418 端口，但是企业防火墙一般不会开放这个非标准端口。而大型的企业防火墙通常会封锁这个端口
+
 ### 在服务器上搭建 Git
+
+现在我们将讨论如何在你自己的服务器上搭建 Git 服务来运行这些协议
+
+这里我们将要演示在 Linux 服务器上进行一次基本且简化的安装所需的命令与步骤，当然在 macOS 或 Windows 服务器上同样可以运行这些服务。事实上，在你的计算机基础架构中建立一个生产环境服务器，将不可避免的使用到不同的安全措施与操作系统工具。但是，希望你能从本节中获得一些必要的知识
+
+在开始架设 Git 服务器前，需要把现有仓库导出为裸仓库 — 即一个不包含当前工作目录的仓库。这通常是很简单的。为了通过克隆你的仓库来创建一个新的裸仓库，你需要在克隆命令后加上 `--bare` 选项。 按照惯例，裸仓库的目录名以 .git 结尾，就像这样：
+
+```text
+$ git clone --bare my_project my_project.git
+Cloning into bare repository 'my_project.git'...
+done.
+```
+
+现在，你的 my_project.git 目录中应该有 Git 目录的副本了
+
+整体上效果大致相当于
+
+```shell
+$ cp -Rf my_project/.git my_project.git
+```
+
+虽然在配置文件中有若干不同，但是对于你的目的来说，这两种方式都是一样的。它只取出 Git 仓库自身，不要工作目录，然后特别为它单独创建一个目录
+
+#### 把裸仓库放到服务器上
+
+既然你有了裸仓库的副本，剩下要做的就是把裸仓库放到服务器上并设置你的协议。假设一个域名为 git.example.com 的服务器已经架设好，并可以通过 SSH 连接，你想把所有的 Git 仓库放在 /srv/git 目录下。假设服务器上存在 /srv/git/ 目录，你可以通过以下命令复制你的裸仓库来创建一个新仓库：
+
+```shell
+$ scp -r my_project.git user@git.example.com:/srv/git
+```
+
+此时，其他可通过 SSH 读取此服务器上 /srv/git 目录的用户，可运行以下命令来克隆你的仓库
+
+```shell
+$ git clone user@git.example.com:/srv/git/my_project.git
+```
+
+如果一个用户，通过使用 SSH 连接到一个服务器，并且其对 /srv/git/my_project.git 目录拥有可写权限，那么他将自动拥有推送权限
+
+如果到该项目目录中运行 `git init` 命令，并加上 `--shared` 选项，那么 Git 会自动修改该仓库目录的组权限为可写。注意，运行此命令的工程中不会摧毁任何提交、引用等内容
+
+```shell
+$ ssh user@git.example.com
+$ cd /srv/git/my_project.git
+$ git init --bare --shared
+```
+
+由此可见，根据现有的 Git 仓库创建一个裸仓库，然后把它放上你和协作者都有 SSH 访问权的服务器是多么容易。现在你们已经准备好在同一项目上展开合作了
+
+值得注意的是，这的确是架设一个几个人拥有连接权的 Git 服务的全部 — 只要在服务器上加入可以用 SSH 登录的帐号，然后把裸仓库放在大家都有读写权限的地方。你已经准备好了一切，无需更多
+
+下面的几节中，你会了解如何扩展到更复杂的设定。这些内容包含如何避免为每一个用户建立一个账户，给仓库添加公共读取权限，架设网页界面等等。然而，请记住这一点，如果只是和几个人在一个私有项目上合作的话，仅仅 是一个 SSH 服务器和裸仓库就足够了
+
+#### 小型安装
+
+如果设备较少或者你只想在小型开发团队里尝试 Git ，那么一切都很简单。架设 Git 服务最复杂的地方在于用户管理。如果需要仓库对特定的用户可读，而给另一部分用户读写权限，那么访问和许可安排就会比较困难
+
+#### SSH 连接
+
+如果你有一台所有开发者都可以用 SSH 连接的服务器，架设你的第一个仓库就十分简单了，因为你几乎什么都不用做（正如我们上一节所说的）。如果你想在你的仓库上设置更复杂的访问控制权限，只要使用服务器操作系统的普通的文件系统权限就行了
+
+如果需要团队里的每个人都对仓库有写权限，又不能给每个人在服务器上建立账户，那么提供 SSH 连接就是唯一的选择了。我们假设用来共享仓库的服务器已经安装了 SSH 服务，而且你通过它访问服务器
+
+有几个方法可以使你给团队每个成员提供访问权。第一个就是给团队里的每个人创建账号，这种方法很直接但也很麻烦。或许你不会想要为每个人运行一次 adduser（或者 useradd）并且设置临时密码
+
+第二个办法是在主机上建立一个 'git' 账户，让每个需要写权限的人发送一个 SSH 公钥，然后将其加入 git 账户的 ~/.ssh/authorized_keys 文件。这样一来，所有人都将通过 'git' 账户访问主机。这一点也不会影响提交的数据 — 访问主机用的身份不会影响提交对象的提交者信息
+
+另一个办法是让 SSH 服务器通过某个 LDAP 服务，或者其他已经设定好的集中授权机制，来进行授权。只要每个用户可以获得主机的 shell 访问权限，任何 SSH 授权机制你都可视为是有效的
+
+### 生成 SSH 公钥
+
+如前所述，许多 Git 服务器都使用 SSH 公钥进行认证。为了向 Git 服务器提供 SSH 公钥，如果某系统用户尚未拥有密钥，必须事先为其生成一份。这个过程在所有操作系统上都是相似的。首先，你需要确认自己是否已经拥有密钥。默认情况下，用户的 SSH 密钥存储在其 ~/.ssh 目录下。进入该目录并列出其中内容，你便可以快速确认自己是否已拥有密钥：
+
+```text
+$ cd ~/.ssh
+$ ls
+authorized_keys2  id_dsa       known_hosts
+config            id_dsa.pub
+```
+
+我们需要寻找一对以 id_dsa 或 id_rsa 命名的文件，其中一个带有 .pub 扩展名。 .pub 文件是你的公钥，另一个则是与之对应的私钥。如果找不到这样的文件（或者根本没有 .ssh 目录），你可以通过运行 ssh-keygen 程序来创建它们。在 Linux/macOS 系统中，ssh-keygen 随 SSH 软件包提供；在 Windows 上，该程序包含于 MSysGit 软件包中
+
+```text
+$ ssh-keygen -o
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/schacon/.ssh/id_rsa):
+Created directory '/home/schacon/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /home/schacon/.ssh/id_rsa.
+Your public key has been saved in /home/schacon/.ssh/id_rsa.pub.
+The key fingerprint is:
+d0:82:24:8e:d7:f1:bb:9b:33:53:96:93:49:da:9b:e3 schacon@mylaptop.local
+```
+
+首先 ssh-keygen 会确认密钥的存储位置（默认是 .ssh/id_rsa），然后它会要求你输入两次密钥口令。如果你不想在使用密钥时输入口令，将其留空即可。然而，如果你使用了密码，那么请确保添加了 `-o` 选项，它会以比默认格式更能抗暴力破解的格式保存私钥。你也可以用 ssh-agent 工具来避免每次都要输入密码
+
+现在，进行了上述操作的用户需要将各自的公钥发送给任意一个 Git 服务器管理员 （假设服务器正在使用基于公钥的 SSH 验证设置）。他们所要做的就是复制各自的 .pub 文件内容，并将其通过邮件发送。公钥看起来是这样的：
+
+```text
+$ cat ~/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAklOUpkDHrfHY17SbrmTIpNLTGK9Tjom/BWDSU
+GPl+nafzlHDTYW7hdI4yZ5ew18JH4JW9jbhUFrviQzM7xlELEVf4h9lFX5QVkbPppSwg0cda3
+Pbv7kOdJ/MTyBlWXFCR+HAo3FXRitBqxiX1nKhXpHAZsMciLq8V6RjsNAQwdsdMFvSlVK/7XA
+t3FaoJoAsncM1Q9x5+3V0Ww68/eIFmb1zuUFljQJKprrX88XypNDvjYNby6vw/Pb0rwert/En
+mZ+AW4OZPnTPI89ZPmVMLuayrD2cE86Z/il8b+gw3r3+1nKatmIkjn2so1d01QraTlMqVSsbx
+NrRFi9wrf+M7Q== schacon@mylaptop.local
+```
+
+关于在多种操作系统中生成 SSH 密钥的更深入教程，请参阅 GitHub 的 SSH 密钥指南 [https://docs.github.com/cn/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent](https://docs.github.com/cn/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+
+### 配置服务器
+
+我们来看看如何配置服务器端的 SSH 访问。本例中，我们将使用 authorized_keys 方法来对用户进行认证。同时我们假设你使用的操作系统是标准的 Linux 发行版，比如 Ubuntu。首先，创建一个操作系统用户 git，并为其建立一个 .ssh 目录
+
+以下操作可通过 ssh-copy-id 命令自动完成，这样就不必手动复制并安装公钥了
+
+首先，创建一个操作系统用户 git，并为其建立一个 .ssh 目录
+
+```shell
+$ sudo adduser git
+$ su git
+$ cd
+$ mkdir .ssh && chmod 700 .ssh
+$ touch .ssh/authorized_keys && chmod 600 .ssh/authorized_keys
+```
+
+接着，我们需要为系统用户 git 的 authorized_keys 文件添加一些开发者 SSH 公钥。假设我们已经获得了若干受信任的公钥，并将它们保存在临时文件中。与前文类似，这些公钥看起来是这样的：
+
+```text
+$ cat /tmp/id_rsa.john.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCB007n/ww+ouN4gSLKssMxXnBOvf9LGt4L
+ojG6rs6hPB09j9R/T17/x4lhJA0F3FR1rP6kYBRsWj2aThGw6HXLm9/5zytK6Ztg3RPKK+4k
+Yjh6541NYsnEAZuXz0jTTyAUfrtU3Z5E003C4oxOj6H0rfIF1kKI9MAQLMdpGW1GYEIgS9Ez
+Sdfd8AcCIicTDWbqLAcU4UpkaX8KyGlLwsNuuGztobF8m72ALC/nLF6JLtPofwFBlgc+myiv
+O7TCUSBdLQlgMVOFq1I2uPWQOkOWQAHukEOmfjy2jctxSDBQ220ymjaNsHT4kgtZg2AYYgPq
+dAv8JggJICUvax2T9va5 gsg-keypair
+```
+
+将这些公钥加入系统用户 git 的 .ssh 目录下 authorized_keys 文件的末尾：
+
+```shell
+$ cat /tmp/id_rsa.john.pub >> ~/.ssh/authorized_keys
+$ cat /tmp/id_rsa.josie.pub >> ~/.ssh/authorized_keys
+$ cat /tmp/id_rsa.jessica.pub >> ~/.ssh/authorized_keys
+```
+
+现在我们来为开发者新建一个空仓库。可以借助带 `--bare` 选项的 `git init` 命令来做到这一点，该命令在初始化仓库时不会创建工作目录：
+
+```shell
+$ cd /srv/git
+$ mkdir project.git
+$ cd project.git
+$ git init --bare
+Initialized empty Git repository in /srv/git/project.git/
+```
+
+接着，John、Josie 或者 Jessica 中的任意一人可以将他们项目的最初版本推送到这个仓库中，他只需将此仓库设置为项目的远程仓库并向其推送分支。请注意，每添加一个新项目，都需要有人登录服务器取得 shell，并创建一个裸仓库。我们假定这个设置了 git 用户和 Git 仓库的服务器使用 gitserver 作为主机名。同时，假设该服务器运行在内网，并且你已在 DNS 配置中将 gitserver 指向此服务器。那么我们可以运行如下命令（假定 myproject 是已有项目且其中已包含文件）：
+
+```shell
+# on John's computer
+$ cd myproject
+$ git init
+$ git add .
+$ git commit -m 'initial commit'
+$ git remote add origin git@gitserver:/srv/git/project.git
+$ git push origin master
+```
+
+此时，其他开发者可以克隆此仓库，并推回各自的改动，步骤很简单：
+
+```shell
+$ git clone git@gitserver:/srv/git/project.git
+$ cd project
+$ vim README
+$ git commit -am 'fix for the README file'
+$ git push origin master
+```
+
+通过这种方法，你可以快速搭建一个具有读写权限、面向多个开发者的 Git 服务器
+
+需要注意的是，目前所有（获得授权的）开发者用户都能以系统用户 git 的身份登录服务器从而获得一个普通 shell。如果你想对此加以限制，则需要修改 /etc/passwd 文件中（git 用户所对应）的 shell 值
+
+借助一个名为 git-shell 的受限 shell 工具，你可以方便地将用户 git 的活动限制在与 Git 相关的范围内。该工具随 Git 软件包一同提供。如果将 git-shell 设置为用户 git 的登录 shell（login shell），那么该用户便不能获得此服务器的普通 shell 访问权限。若要使用 git-shell，需要用它替换掉 bash 或 csh，使其成为该用户的登录 shell。为进行上述操作，首先你必须确保 git-shell 的完整路径名已存在于 /etc/shells 文件中：
+
+```shell
+$ cat /etc/shells   # see if git-shell is already in there. If not...
+$ which git-shell   # make sure git-shell is installed on your system.
+$ sudo -e /etc/shells  # and add the path to git-shell from last command
+```
+
+现在你可以使用 `chsh <username> -s <shell>` 命令修改任一系统用户的 shell：
+
+```shell
+$ sudo chsh git -s $(which git-shell)
+```
+
+这样，用户 git 就只能利用 SSH 连接对 Git 仓库进行推送和拉取操作，而不能登录机器并取得普通 shell。如果试图登录，你会发现尝试被拒绝，像这样：
+
+```text
+$ ssh git@gitserver
+fatal: Interactive git shell is not enabled.
+hint: ~/git-shell-commands should exist and have read and execute access.
+Connection to gitserver closed.
+```
+
+此时，用户仍可通过 SSH 端口转发来访问任何可达的 git 服务器。如果你想要避免它，可编辑 authorized_keys 文件并在所有想要限制的公钥之前添加以下选项：
+
+```text
+no-port-forwarding,no-X11-forwarding,no-agent-forwarding,no-pty
+```
+
+其结果如下：
+
+```text
+$ cat ~/.ssh/authorized_keys
+no-port-forwarding,no-X11-forwarding,no-agent-forwarding,no-pty ssh-rsa
+AAAAB3NzaC1yc2EAAAADAQABAAABAQCB007n/ww+ouN4gSLKssMxXnBOvf9LGt4LojG6rs6h
+PB09j9R/T17/x4lhJA0F3FR1rP6kYBRsWj2aThGw6HXLm9/5zytK6Ztg3RPKK+4kYjh6541N
+YsnEAZuXz0jTTyAUfrtU3Z5E003C4oxOj6H0rfIF1kKI9MAQLMdpGW1GYEIgS9EzSdfd8AcC
+IicTDWbqLAcU4UpkaX8KyGlLwsNuuGztobF8m72ALC/nLF6JLtPofwFBlgc+myivO7TCUSBd
+LQlgMVOFq1I2uPWQOkOWQAHukEOmfjy2jctxSDBQ220ymjaNsHT4kgtZg2AYYgPqdAv8JggJ
+ICUvax2T9va5 gsg-keypair
+
+no-port-forwarding,no-X11-forwarding,no-agent-forwarding,no-pty ssh-rsa
+AAAAB3NzaC1yc2EAAAADAQABAAABAQDEwENNMomTboYI+LJieaAY16qiXiH3wuvENhBG...
+```
+
+现在，网络相关的 Git 命令依然能够正常工作，但是开发者用户已经无法得到一个普通 shell 了。正如输出信息所提示的，你也可以在 git 用户的主目录下建立一个目录，来对 git-shell 命令进行一定程度的自定义。比如，你可以限制掉某些本应被服务器接受的 Git 命令，或者对刚才的 SSH 拒绝登录信息进行自定义，这样，当有开发者用户以类似方式尝试登录时，便会看到你的信息。要了解更多有关自定义 shell 的信息，请运行 `git help shell`
+
+### Git 守护进程
+
+接下来我们将通过 “Git” 协议建立一个基于守护进程的仓库。对于快速且无需授权的 Git 数据访问，这是一个理想之选。请注意，因为其不包含授权服务，任何通过该协议管理的内容将在其网络上公开
+
+如果运行在防火墙之外的服务器上，它应该只对那些公开的只读项目服务。如果运行在防火墙之内的服务器上，它可用于支撑大量参与人员或自动系统 （用于持续集成或编译的主机）只读访问的项目，这样可以省去逐一配置 SSH 公钥的麻烦
+
+无论何时，该 Git 协议都是相对容易设定的。通常，你只需要以守护进程的形式运行该命令：
+
+```shell
+$ git daemon --reuseaddr --base-path=/srv/git/ /srv/git/
+```
+
+`--reuseaddr` 选项允许服务器在无需等待旧连接超时的情况下重启，而 `--base-path` 选项允许用户在未完全指定路径的条件下克隆项目，结尾的路径将告诉 Git 守护进程从何处寻找仓库来导出。如果有防火墙正在运行，你需要开放端口 9418 的通信权限
+
+你可以通过许多方式将该进程以守护进程的方式运行，这主要取决于你所使用的操作系统
+
+由于在现代的 Linux 发行版中，systemd 是最常见的初始化系统，因此你可以用它来达到此目的。只要在 /etc/systemd/system/git-daemon.service 中放一个文件即可，其内容如下：
+
+```text
+[Unit]
+Description=Start Git Daemon
+
+[Service]
+ExecStart=/usr/bin/git daemon --reuseaddr --base-path=/srv/git/ /srv/git/
+
+Restart=always
+RestartSec=500ms
+
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=git-daemon
+
+User=git
+Group=git
+
+[Install]
+WantedBy=multi-user.target
+```
+
+你可能会注意这里以 git 启动的 Git 驻留程序同时使用了 Group 和 User 权限。按需修改它并确保提供的用户在此系统上。此外，请确保 Git 二进制文件位于 /usr/bin/git，必要时可修改此路径
+
+最后，你需要运行 `systemctl enable git-daemon` 以让它在系统启动时自动运行，这样也能让它通过 `systemctl start git-daemon` 启动，通过 `systemctl stop git-daemon` 停止
+
+在其他系统中，你可以使用 sysvinit 系统中的 xinetd 脚本，或者另外的方式来实现 — 只要你能够将其命令守护进程化并实现监控
+
+接下来，你需要告诉 Git 哪些仓库允许基于服务器的无授权访问。你可以在每个仓库下创建一个名为 git-daemon-export-ok 的文件来实现
+
+```shell
+$ cd /path/to/project.git
+$ touch git-daemon-export-ok
+```
+
+该文件将允许 Git 提供无需授权的项目访问服务
+
+### Smart HTTP
+
+我们一般通过 SSH 进行授权访问，通过 git:// 进行无授权访问，但是还有一种协议可以同时实现以上两种方式的访问。设置 Smart HTTP 一般只需要在服务器上启用一个 Git 自带的名为 git-http-backend 的 CGI 脚本。该 CGI 脚本将会读取由 `git fetch` 或 `git push` 命令向 HTTP URL 发送的请求路径和头部信息，来判断该客户端是否支持 HTTP 通信（不低于 1.6.6 版本的客户端支持此特性）。如果 CGI 发现该客户端支持智能（Smart）模式，它将会以智能模式与它进行通信，否则它将会回落到哑（Dumb）模式下（因此它可以对某些老的客户端实现向下兼容）。
+
+在完成以上简单的安装步骤后，我们将用 Apache 来作为 CGI 服务器。如果你没有安装 Apache，你可以在 Linux 环境下执行如下或类似的命令来安装：
+
+```shell
+$ sudo apt-get install apache2 apache2-utils
+$ a2enmod cgi alias env
+```
+
+该操作将会启用 mod_cgi， mod_alias 和 mod_env 等 Apache 模块， 这些模块都是使该功能正常工作所必须的
+
+你还需要将 /srv/git 的 Unix 用户组设置为 www-data，这样 Web 服务器才能读写该仓库，因为运行 CGI 脚本的 Apache 实例默认会以该用户的权限运行：
+
+```shell
+$ chgrp -R www-data /srv/git
+```
+
+接下来我们要向 Apache 配置文件添加一些内容，来让 git-http-backend 作为 Web 服务器对 /git 路径请求的处理器
+
+```text
+SetEnv GIT_PROJECT_ROOT /srv/git
+SetEnv GIT_HTTP_EXPORT_ALL
+ScriptAlias /git/ /usr/lib/git-core/git-http-backend/
+```
+
+如果留空 GIT_HTTP_EXPORT_ALL 这个环境变量，Git 将只对无授权客户端提供带 git-daemon-export-ok 文件的版本库，就像 Git 守护进程一样
+
+最后，如果想让 Apache 允许 git-http-backend 请求并实现写入操作的授权验证，使用如下授权屏蔽配置即可：
+
+```text
+<Files "git-http-backend">
+    AuthType Basic
+    AuthName "Git Access"
+    AuthUserFile /srv/git/.htpasswd
+    Require expr !(%{QUERY_STRING} -strmatch '*service=git-receive-pack*' || %{REQUEST_URI} =~ m#/git-receive-pack$#)
+    Require valid-user
+</Files>
+```
+
+这需要你创建一个包含所有合法用户密码的 .htpasswd 文件。以下是一个添加 “schacon” 用户到此文件的例子：
+
+```shell
+$ htpasswd -c /srv/git/.htpasswd schacon
+```
+
+你可以通过许多方式添加 Apache 授权用户，选择使用其中一种方式即可。以上仅仅只是我们可以找到的最简单的一个例子。如果愿意的话，你也可以通过 SSL 运行它，以保证所有数据是在加密状态下进行传输的
+
+我们不想深入去讲解 Apache 配置文件，因为你可能会使用不同的 Web 服务器，或者可能有不同的授权需求。它的主要原理是使用一个 Git 附带的，名为 git-http-backend 的 CGI。它被引用来处理协商通过 HTTP 发送和接收的数据。它本身并不包含任何授权功能，但是授权功能可以在 Web 服务器层引用它时被轻松实现。你可以在任何所有可以处理 CGI 的 Web 服务器上办到这点，所以随便挑一个你最熟悉的 Web 服务器试手吧
+
+欲了解更多的有关配置 Apache 授权访问的信息，请通过以下链接浏览 Apache 文档：[https://httpd.apache.org/docs/current/howto/auth.html](https://httpd.apache.org/docs/current/howto/auth.html)
+
+### GitWeb
+
+如果你对项目有读写权限或只读权限，你可能需要建立起一个基于网页的简易查看器。Git 提供了一个叫做 GitWeb 的 CGI 脚本来做这项工作
+
+![GitWeb 的网页用户界面](https://git-scm.com/book/en/v2/images/git-instaweb.png)
+
+如果你想要查看 GitWeb 如何展示你的项目，并且在服务器上安装了轻量级 Web 服务器比如 lighttpd 或 webrick，Git 提供了一个命令来让你启动一个临时的服务器。在 Linux 系统的电脑上，lighttpd 通常已经安装了，所以你只需要在项目目录里执行 git instaweb 命令即可。如果你使用 Mac 系统，Mac OS X Leopard 系统已经预安装了 Ruby，所以 webrick 或许是你最好的选择。如果不想使用 lighttpd 启动 instaweb 命令，你需要在执行时加入 --httpd 参数
+
+```text
+$ git instaweb --httpd=webrick
+[2009-02-21 10:02:21] INFO  WEBrick 1.3.1
+[2009-02-21 10:02:21] INFO  ruby 1.8.6 (2008-03-03) [universal-darwin9.0]
+```
+
+这个命令启动了一个监听 1234 端口的 HTTP 服务器，并且自动打开了浏览器。这对你来说十分方便。当你已经完成了工作并想关闭这个服务器，你可以执行同一个命令，并加上 `--stop` 选项：
+
+```shell
+$ git instaweb --httpd=webrick --stop
+```
+
+如果你现在想为你的团队或你托管的开源项目持续的运行这个页面，你需要通过普通的 Web 服务器来设置 CGI 脚本。一些 Linux 发行版的软件库有 gitweb 包，可以通过 `apt` 或 `dnf` 来安装，你可以先试试。接下来我们来快速的了解一下如何手动安装 GitWeb。首先，你需要获得 Git 的源代码，它包含了 GitWeb ，并可以生成自定义的 CGI 脚本：
+
+```text
+$ git clone git://git.kernel.org/pub/scm/git/git.git
+$ cd git/
+$ make GITWEB_PROJECTROOT="/srv/git" prefix=/usr gitweb
+    SUBDIR gitweb
+    SUBDIR ../
+make[2]: `GIT-VERSION-FILE' is up to date.
+    GEN gitweb.cgi
+    GEN static/gitweb.js
+$ sudo cp -Rf gitweb /var/www/
+```
+
+需要注意的是，你需要在命令中指定 GITWEB_PROJECTROOT 变量来让程序知道你的 Git 版本库的位置。现在，你需要在 Apache 中使用这个 CGI 脚本，你需要为此添加一个虚拟主机：
+
+```text
+<VirtualHost *:80>
+    ServerName gitserver
+    DocumentRoot /var/www/gitweb
+    <Directory /var/www/gitweb>
+        Options +ExecCGI +FollowSymLinks +SymLinksIfOwnerMatch
+        AllowOverride All
+        order allow,deny
+        Allow from all
+        AddHandler cgi-script cgi
+        DirectoryIndex gitweb.cgi
+    </Directory>
+</VirtualHost>
+```
+
+再次提醒，GitWeb 可以通过任何一个支持 CGI 或 Perl 的网络服务器架设；如果你需要的话，架设起来应该不会很困难。现在，你可以访问 [http://gitserver/](http://gitserver/) 在线查看你的版本库
+
+### GitLab
+
+虽然 GitWeb 相当简单。 但如果你正在寻找一个更现代，功能更全的 Git 服务器，这里有几个开源的解决方案可供你选择安装。因为 GitLab 是其中最出名的一个，我们将它作为示例并讨论它的安装和使用。这比 GitWeb 要复杂的多并且需要更多的维护，但它的确是一个功能更全的选择
+
+#### 安装
+
+GitLab 是一个数据库支持的 web 应用，所以相比于其他 git 服务器，它的安装过程涉及到更多的东西。幸运的是，这个过程有非常详细的文档说明和支持
+
+这里有一些可参考的方法帮你安装 GitLab 。为了更快速的启动和运行，你可以下载虚拟机镜像或者在 [https://bitnami.com/stack/gitlab](https://bitnami.com/stack/gitlab) 上获取一键安装包，同时调整配置使之符合你特定的环境。Bitnami 的一个优点在于它的登录界面（通过 alt+→ 键进入），它会告诉你安装好的 GitLab 的 IP 地址以及默认的用户名和密码
+
+![Bitnami GitLab 虚拟机登录界面](https://git-scm.com/book/en/v2/images/bitnami.png)
+
+无论如何，跟着 GitLab 社区版的 readme 文件一步步来，你可以在这里找到它 [https://gitlab.com/gitlab-org/gitlab-ce/tree/master](https://gitlab.com/gitlab-org/gitlab-ce/tree/master) 。在这里你将会在主菜单中找到安装 GitLab 的帮助，一个可以在 Digital Ocean 上运行的虚拟机，以及 RPM 和 DEB 包（都是测试版）。这里还有 “非官方” 的引导让 GitLab 运行在非标准的操作系统和数据库上，一个全手动的安装脚本，以及许多其他的话题
+
+GitLab 官网：[https://gitlab.com](https://gitlab.com)
+
+gitlab-ce：社区版，免费，中小型企业
+
+gitlab-ee：企业版，收费，功能相对较多
+
+下载参考：[ 清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn/gitlab-ce/yum/el7/)
+
+**安装依赖包**
+
+```shell
+sudo yum install -y curl policycoreutils-python openssh-server
+```
+
+说明 本教程中示例场景的操作系统为 CentOs 7.2 64 位。如果您使用 CentOs 8 系统的 ECS 实例，运行以上命令将出现找不到依赖包 policycoreutils-python 的问题，原因是 CentOS 8 的软件源中没有包含该依赖包。该依赖包不影响部署 GitLab，您可以忽略该问题继续运行下文中的命令
+
+**安装步骤如下**
+
+1. 执行以下命令，使用官方脚本添加 yum 源
+
+    ```shell
+    curl https://packages.gitlab.com/install/repositories/gitlab/gitlab-ee/script.rpm.sh | bash
+    ```
+
+2. 执行以下命令，安装 GitLab
+
+    ```shell
+    yum install -y gitlab-ee
+    ```
+
+3. 执行以下命令，初始化已经安装好的 GitLab 说明：此过程将耗时3分钟左右，请耐心等待
+
+    ```shell
+    gitlab-ctl reconfigure
+    ```
+
+4. 执行以下命令，启动 GitLab
+
+    ```shell
+    gitlab-ctl start
+    ```
+
+5. 查看启动日志
+
+    ```shell
+    gitlab-ctl tail
+    ```
+
+6. 访问 GitLab，GitLab 的访问地址是 external_url 配置的地址，所以直接访问 http://${ip}（需要确保云服务商中的安全组已开放 80 端口）
+
+7. 设置管理员用户密码
+
+    默认管理员用户为 root，所以只需要设置 root 用户的密码即可。GitLab 安装初始化后，默认账户是 root，密码存放在配置文件里，执行以下命令查看：
+    
+    ```shell
+    cat /etc/gitlab/initial_root_password
+    ```
+
+**常用命令**
+
+```shell
+gitlab-ctl start # 启动所有 GitLab 组件
+gitlab-ctl stop # 停止所有 GitLab 组件
+gitlab-ctl restart # 重启所有 GitLab 组件
+gitlab-ctl status # 查看 GitLab 服务状态
+gitlab-ctl tail # 查看 GitLab 所有日志
+gitlab-ctl reconfigure # 如果更改了主配置文件 /etc/gitlab/gitlab.rb 需要使用该命令，使配置文件生效；但是会初始化除了 gitlab.rb 之外的所有文件
+```
+
+#### 管理
+
+GitLab 的管理界面是通过网络进入的。将你的浏览器转到已经安装 GitLab 的 主机名或 IP 地址，然后以管理员身份登录即可。默认的用户名是 admin@local.host，默认的密码是 5iveL!fe（你会得到类似 请登录后尽快更换密码 的提示）。登录后，点击主栏上方靠右位置的 “Admin area” 图标进行管理
+
+![GitLab 主栏的 “Admin area” 图标](https://git-scm.com/book/en/v2/images/gitlab-menu.png)
+
+#### 使用者
+
+GitLab 上的用户指的是对应协作者的帐号。用户帐号没有很多复杂的地方，主要是包含登录数据的用户信息集合。每一个用户账号都有一个 命名空间 ，即该用户项目的逻辑集合。如果一个叫 jane 的用户拥有一个名称是 project 的项目，那么这个项目的 url 会是 [http://server/jane/project](http://server/jane/project)
+
+![GitLab 用户管理界面](https://git-scm.com/book/en/v2/images/gitlab-users.png)
+
+移除一个用户有两种方法。 “屏蔽（Blocking）” 一个用户阻止他登录 GitLab 实例，但是该用户命名空间下的所有数据仍然会被保存，并且仍可以通过该用户提交对应的登录邮箱链接回他的个人信息页
+
+而另一方面，“销毁（Destroying）” 一个用户，会彻底的将他从数据库和文件系统中移除。他命名空间下的所有项目和数据都会被删除，拥有的任何组也会被移除。这显然是一个更永久且更具破坏力的行为，所以很少用到这种方法
+
+#### 组
+
+一个 GitLab 的组是一些项目的集合，连同关于多少用户可以访问这些项目的数据。每一个组都有一个项目命名空间（与用户一样），所以如果一个叫 training 的组拥有一个名称是 materials 的项目，那么这个项目的 url 会是 [http://server/training/materials](http://server/training/materials)
+
+![GitLab 组管理界面](https://git-scm.com/book/en/v2/images/gitlab-groups.png)
+
+每一个组都有许多用户与之关联，每一个用户对组中的项目以及组本身的权限都有级别区分。权限的范围从 “访客”（仅能提问题和讨论） 到 “拥有者”（完全控制组、成员和项目）。权限的种类太多以至于难以在这里一一列举，不过在 GitLab 的管理界面上有帮助链接
+
+#### 项目
+
+一个 GitLab 的项目相当于 git 的版本库。每一个项目都属于一个用户或者一个组的单个命名空间。如果这个项目属于一个用户，那么这个拥有者对所有可以获取这个项目的人拥有直接管理权；如果这个项目属于一个组，那么该组中用户级别的权限也会起作用
+
+每一个项目都有一个可视级别，控制着谁可以看到这个项目页面和仓库。 如果一个项目是 私有 的，这个项目的拥有者必须明确授权从而使特定的用户可以访问。一个 内部 的项目可以被所有登录的人看到，而一个 公开 的项目则是对所有人可见的。注意，这种控制既包括 `git fetch` 的使用也包括对项目 web 用户界面的访问
+
+#### 钩子
+
+GitLab 在项目和系统级别上都支持钩子程序。对任意级别，当有相关事件发生时，GitLab 的服务器会执行一个包含描述性 JSON 数据的 HTTP 请求。这是自动化连接你的 git 版本库和 GitLab 实例到其他的开发工具，比如 CI 服务器，聊天室，或者部署工具的一个极好方法
+
+#### 基本用途
+
+你想要在 GitLab 做的第一件事就是建立一个新项目。这通过点击工具栏上的 “+” 图标完成。你需要填写项目名称，项目所属命名空间，以及它的可视层级。绝大多数的设定并不是永久的，可以通过设置界面重新调整。点击 “Create Project”，你就完成了
+
+项目存在后，你可能会想将它与本地的 Git 版本库连接。每一个项目都可以通过 HTTPS 或者 SSH 连接，任意两者都可以被用来配置远程 Git。在项目主页的顶栏可以看到这个项目的 URL。对于一个存在的本地版本库，这个命令将会向主机位置添加一个叫 gitlab 的远程仓库：
+
+```shell
+$ git remote add gitlab https://server/namespace/project.git
+```
+
+如果你的本地没有版本库的副本，你可以这样做：
+
+```shell
+$ git clone https://server/namespace/project.git
+```
+
+web 用户界面提供了几个有用的获取版本库信息的网页。每一个项目的主页都显示了最近的活动，并且通过顶部的链接可以使你浏览项目文件以及提交日志
+
+#### 一起工作
+
+在一个 GitLab 项目上一起工作的最简单方法就是赋予协作者对 git 版本库的直接 push 权限。你可以通过项目设定的 “Members（成员）” 部分向一个项目添加协作者，并且将这个新的协作者与一个访问级别关联（不同的访问级别在 [组](#组) 中已简单讨论）。通过赋予一个协作者 “Developer（开发者）” 或者更高的访问级别，这个用户就可以毫无约束地直接向版本库或者向分支进行提交
+
+另外一个让合作更解耦的方法就是使用合并请求。它的优点在于让任何能够看到这个项目的协作者在被管控的情况下对这个项目作出贡献。可以直接访问的协作者能够简单的创建一个分支，向这个分支进行提交，也可以开启一个向 master 或者其他任何一个分支的合并请求。对版本库没有推送权限的协作者则可以 “fork” 这个版本库（即创建属于自己的这个库的副本），向那个副本进行提交，然后从那个副本开启一个到主项目的合并请求。这个模型使得项目拥有者完全控制着向版本库的提交，以及什么时候允许加入陌生协作者的贡献
+
+在 GitLab 中合并请求和问题是一个长久讨论的主要部分。每一个合并请求都允许在提出改变的行进行讨论（它支持一个轻量级的代码审查），也允许对一个总体性话题进行讨论。两者都可以被分配给用户，或者组织到 milestones（里程碑） 界面
+
+这个部分主要聚焦于在 GitLab 中与 Git 相关的特性，但是 GitLab 作为一个成熟的系统，它提供了许多其他产品来帮助你协同工作，例如项目 wiki 与系统维护工具。 GitLab 的一个优点在于，服务器设置和运行以后，你将很少需要调整配置文件或通过 SSH 连接服务器。绝大多数的管理和日常使用都可以在浏览器界面中完成
+
+### 第三方托管的选择
+
+如果不想设立自己的 Git 服务器，你可以选择将你的 Git 项目托管到一个外部专业的托管网站。这带来了一些好处：一个托管网站可以用来快速建立并开始项目，且无需进行服务器维护和监控工作。即使你在内部设立并且运行了自己的服务器，你仍然可以把你的开源代码托管在公共托管网站——这通常更有助于开源社区来发现和帮助你
+
+现在，有非常多的托管供你选择，每个选择都有不同的优缺点。欲查看最新列表，请浏览 Git 维基的 GitHosting 页面 [https://git.wiki.kernel.org/index.php/GitHosting](https://git.wiki.kernel.org/index.php/GitHosting)
+
+我们会在 [GitHub](#github) 详细讲解 GitHub，作为目前最大的 Git 托管平台，你很可能需要与托管在 GitHub 上的项目进行交互，而且你也很可能并不想去设立你自己的 Git 服务器
 
 ## 分布式 Git
 
 ### 分布式工作流程
 
+你现在拥有了一个远程 Git 版本库，能为所有开发者共享代码提供服务，在一个本地工作流程下，你也已经熟悉了基本 Git 命令。你现在可以学习如何利用 Git 提供的一些分布式工作流程了
+
+这一章中，你将会学习如何作为贡献者或整合者，在一个分布式协作的环境中使用 Git。你会学习为一个项目成功地贡献代码，并接触一些最佳实践方式，让你和项目的维护者能轻松地完成这个过程。另外，你也会学到如何管理有很多开发者提交贡献的项目
+
+与传统的集中式版本控制系统（CVCS）相反，Git 的分布式特性使得开发者间的协作变得更加灵活多样。在集中式系统中，每个开发者就像是连接在集线器上的节点，彼此的工作方式大体相像。而在 Git 中，每个开发者同时扮演着节点和集线器的角色 — 也就是说，每个开发者既可以将自己的代码贡献到其他的仓库中，同时也能维护自己的公开仓库，让其他人可以在其基础上工作并贡献代码。由此，Git 的分布式协作可以为你的项目和团队衍生出种种不同的工作流程，接下来的章节会介绍几种利用了 Git 的这种灵活性的常见应用方式。我们将讨论每种方式的优点以及可能的缺点；你可以选择使用其中的某一种，或者将它们的特性混合搭配使用
+
+#### 集中式工作流
+
+集中式系统中通常使用的是单点协作模型 — 集中式工作流。一个中心集线器，或者说仓库，可以接受代码，所有人将自己的工作与之同步。若干个开发者则作为节点，即中心仓库的消费者与中心仓库同步
+
+![集中式工作流](https://git-scm.com/book/en/v2/images/centralized_workflow.png)
+
+这意味着如果两个开发者从中心仓库克隆代码下来，同时作了一些修改，那么只有第一个开发者可以顺利地把数据推送回共享服务器。第二个开发者在推送修改之前，必须先将第一个人的工作合并进来，这样才不会覆盖第一个人的修改。这和 Subversion （或任何 CVCS）中的概念一样，而且这个模式也可以很好地运用到 Git 中
+
+如果在公司或者团队中，你已经习惯了使用这种集中式工作流程，完全可以继续采用这种简单的模式。只需要搭建好一个中心仓库，并给开发团队中的每个人推送数据的权限，就可以开展工作了。Git 不会让用户覆盖彼此的修改
+
+例如 John 和 Jessica 同时开始工作。John 完成了他的修改并推送到服务器。接着 Jessica 尝试提交她自己的修改，却遭到服务器拒绝。她被告知她的修改正通过非快进式（non-fast-forward）的方式推送，只有将数据抓取下来并且合并后方能推送。这种模式的工作流程的使用非常广泛，因为大多数人对其很熟悉也很习惯
+
+当然这并不局限于小团队。利用 Git 的分支模型，通过同时在多个分支上工作的方式，即使是上百人的开发团队也可以很好地在单个项目上协作
+
+#### 集成管理者工作流
+
+Git 允许多个远程仓库存在，使得这样一种工作流成为可能：每个开发者拥有自己仓库的写权限和其他所有人仓库的读权限。这种情形下通常会有个代表“官方”项目的权威的仓库。要为这个项目做贡献，你需要从该项目克隆出一个自己的公开仓库，然后将自己的修改推送上去。接着你可以请求官方仓库的维护者拉取更新合并到主项目。维护者可以将你的仓库作为远程仓库添加进来，在本地测试你的变更，将其合并入他们的分支并推送回官方仓库。这一流程的工作方式如下所示
+
+1. 项目维护者推送到主仓库
+
+2. 贡献者克隆此仓库，做出修改
+
+3. 贡献者将数据推送到自己的公开仓库
+
+4. 贡献者给维护者发送邮件，请求拉取自己的更新
+
+5. 维护者在自己本地的仓库中，将贡献者的仓库加为远程仓库并合并修改
+
+6. 维护者将合并后的修改推送到主仓库
+
+![集成管理者工作流](https://git-scm.com/book/en/v2/images/integration-manager.png)
+
+这是 GitHub 和 GitLab 等集线器式（hub-based）工具最常用的工作流程。人们可以容易地将某个项目派生成为自己的公开仓库，向这个仓库推送自己的修改，并为每个人所见。这么做最主要的优点之一是你可以持续地工作，而主仓库的维护者可以随时拉取你的修改。贡献者不必等待维护者处理完提交的更新 — 每一方都可以按照自己的节奏工作
+
+#### 主管与副主管工作流
+
+这其实是多仓库工作流程的变种。一般拥有数百位协作开发者的超大型项目才会用到这样的工作方式，例如著名的 Linux 内核项目。被称为 副主管（lieutenant）的各个集成管理者分别负责集成项目中的特定部分。所有这些副主管头上还有一位称为 主管（dictator） 的总集成管理者负责统筹。主管维护的仓库作为参考仓库，为所有协作者提供他们需要拉取的项目代码。整个流程看起来是这样的
+
+1. 普通开发者在自己的主题分支上工作，并根据 master 分支进行变基。这里是主管推送的参考仓库的 master 分支
+
+2. 副主管将普通开发者的主题分支合并到自己的 master 分支中
+
+3. 主管将所有副主管的 master 分支并入自己的 master 分支中
+
+4. 最后，主管将集成后的 master 分支推送到参考仓库中，以便所有其他开发者以此为基础进行变基
+
+![主管与副主管工作流](https://git-scm.com/book/en/v2/images/benevolent-dictator.png)
+
+这种工作流程并不常用，只有当项目极为庞杂，或者需要多级别管理时，才会体现出优势。利用这种方式，项目总负责人（即主管）可以把大量分散的集成工作委托给不同的小组负责人分别处理，然后在不同时刻将大块的代码子集统筹起来，用于之后的整合
+
+### 向一个项目贡献
+
+描述如何向一个项目贡献的主要困难在于完成贡献有很多不同的方式。因为 Git 非常灵活，人们可以通过不同的方式来一起工作，所以描述应该如何贡献并不是非常准确 — 每一个项目都有一点儿不同。影响因素包括活跃贡献者的数量、选择的工作流程、提交权限与可能包含的外部贡献方法
+
+第一个影响因素是活跃贡献者的数量 — 积极地向这个项目贡献代码的用户数量以及他们的贡献频率。在许多情况下，你可能会有两三个开发者一天提交几次，对于不活跃的项目可能更少。对于大一些的公司或项目，开发者的数量可能会是上千，每天都有成百上千次提交。这很重要，因为随着开发者越来越多，在确保你的代码能干净地应用或轻松地合并时会遇到更多问题。提交的改动可能表现为过时的，也可能在你正在做改动或者等待改动被批准应用时被合并入的工作严重损坏。如何保证代码始终是最新的，并且提交始终是有效的？
+
+下一个影响因素是项目使用的工作流程。它是中心化的吗，即每一个开发者都对主线代码有相同的写入权限？项目是否有一个检查所有补丁的维护者或整合者？是否所有的补丁是同行评审后批准的？你是否参与了那个过程？是否存在副官系统，你必须先将你的工作提交到上面？
+
+下一个影响因素是提交权限。是否有项目的写权限会使向项目贡献所需的流程有极大的不同。如果没有写权限，项目会选择何种方式接受贡献的工作？是否甚至有一个如何贡献的规范？你一次贡献多少工作？你多久贡献一次？
+
+所有这些问题都会影响实际如何向一个项目贡献，以及对你来说哪些工作流程更适合或者可用。我们将会由浅入深，通过一系列用例来讲述其中的每一个方面；从这些例子应该能够建立实际中你需要的特定工作流程
+
+#### 提交准则
+
+在我们开始查看特定的用例前，这里有一个关于提交信息的快速说明。有一个好的创建提交的准则并且坚持使用会让与 Git 工作和与其他人协作更容易。Git 项目提供了一个文档，其中列举了关于创建提交到提交补丁的若干好的提示 — 可以在 Git 源代码中的 Documentation/SubmittingPatches 文件中阅读它
+
+首先，你的提交不应该包含任何空白错误。Git 提供了一个简单的方式来检查这点 — 在提交前，运行 `git diff --check`，它将会找到可能的空白错误并将它们为你列出来
+
+![git diff --check 的输出](https://git-scm.com/book/en/v2/images/git-diff-check.png)
+
+如果在提交前运行那个命令，可以知道提交中是否包含可能会使其他开发者恼怒的空白问题
+
+接下来，尝试让每一个提交成为一个逻辑上的独立变更集。如果可以，尝试让改动可以理解 — 不要在整个周末编码解决五个问题，然后在周一时将它们提交为一个巨大的提交。即使在周末期间你无法提交，在周一时使用暂存区域将你的工作最少拆分为每个问题一个提交，并且为每一个提交附带一个有用的信息。如果其中一些改动修改了同一个文件，尝试使用 `git add --patch` 来部分暂存文件（在 [交互式暂存](#交互式暂存) 中有详细介绍）。不管你做一个或五个提交，只要所有的改动都曾添加过，项目分支末端的快照就是一样的，所以尽量让你的开发者同事们在审查你的改动的时候更容易些吧
+
+当你之后需要时这个方法也会使拉出或还原一个变更集更容易些。[重写历史](#重写历史) 描述了重写历史与交互式暂存文件的若干有用的 Git 技巧 — 在将工作发送给其他人前使用这些工具来帮助生成一个干净又易懂的历史
+
+最后一件要牢记的事是提交信息。 有一个创建优质提交信息的习惯会使 Git 的使用与协作容易的多。一般情况下，信息应当以少于 50 个字符（25个汉字）的单行开始且简要地描述变更，接着是一个空白行，再接着是一个更详细的解释。Git 项目要求一个更详细的解释，包括做改动的动机和它的实现与之前行为的对比 — 这是一个值得遵循的好规则。使用指令式的语气来编写提交信息，比如使用“Fix bug”而非“Fixed bug”或“Fixes bug”。这里是一份最初由 Tim Pope 写的模板：
+
+```text
+首字母大写的摘要（不多于 50 个字符）
+
+如果必要的话，加入更详细的解释文字。在大概 72 个字符的时候换行。
+在某些情形下，第一行被当作一封电子邮件的标题，剩下的文本作为正文。
+分隔摘要与正文的空行是必须的（除非你完全省略正文），
+如果你将两者混在一起，那么类似变基等工具无法正常工作。
+
+使用指令式的语气来编写提交信息：使用“Fix bug”而非“Fixed bug”或“Fixes bug”。
+此约定与 git merge 和 git revert 命令生成提交说明相同。
+
+空行接着更进一步的段落。
+
+- 标号也是可以的。
+
+- 项目符号可以使用典型的连字符或星号，后跟一个空格，行之间用空行隔开，
+  但是可以依据不同的惯例有所不同。
+
+- 使用悬挂式缩进
+```
+
+如果你所有的提交信息都遵循此模版，那么对你和与你协作的其他开发者来说事情会变得非常容易。Git 项目有一个良好格式化的提交信息 — 尝试在那儿运行 `git log --no-merges` 来看看漂亮的格式化的项目提交历史像什么样
+
+#### 私有小型团队
+
+你可能会遇到的最简单的配置是有一两个其他开发者的私有项目。“私有” 在这个上下文中，意味着闭源 — 不可以从外面的世界中访问到。你和其他的开发者都有仓库的推送权限
+
+在这个环境下，可以采用一个类似使用 Subversion 或其他集中式的系统时会使用的工作流程。依然可以得到像离线提交、非常容易地新建分支与合并分支等高级功能，但是工作流程可以是很简单的；主要的区别是合并发生在客户端这边而不是在提交时发生在服务器那边。让我们看看当两个开发者在一个共享仓库中一起工作时会是什么样子。第一个开发者，John，克隆了仓库，做了改动，然后本地提交。（为了缩短这些例子长度，协议信息已被替换为 …）
+
+```text
+# John's Machine
+$ git clone john@githost:simplegit.git
+Cloning into 'simplegit'...
+...
+$ cd simplegit/
+$ vim lib/simplegit.rb
+$ git commit -am 'remove invalid default value'
+[master 738ee87] remove invalid default value
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+```
+
+第二个开发者，Jessica，做了同样的事情 — 克隆仓库并提交了一个改动：
+
+```text
+# Jessica's Machine
+$ git clone jessica@githost:simplegit.git
+Cloning into 'simplegit'...
+...
+$ cd simplegit/
+$ vim TODO
+$ git commit -am 'add reset task'
+[master fbff5bc] add reset task
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+```
+
+现在，Jessica 把她的工作推送到服务器上，一切正常：
+
+```text
+# Jessica's Machine
+$ git push origin master
+...
+To jessica@githost:simplegit.git
+   1edee6b..fbff5bc  master -> master
+```
+
+上方输出信息中最后一行显示的是推送操作执行完毕后返回的一条很有用的消息。消息的基本格式是 `<oldref>..<newref> fromref → toref` ， `oldref` 的含义是推送前所指向的引用， `newref` 的含义是推送后所指向的引用， `fromref` 是将要被推送的本地引用的名字，`toref` 是将要被更新的远程引用的名字。 在后面的讨论中你还会看到类似的输出消息，所以对这条消息的含义有一些基础的了解将会帮助你理解仓库的诸多状态
+
+John 稍候也做了些改动，将它们提交到了本地仓库中，然后试着将它们推送到同一个服务器：
+
+```text
+# John's Machine
+$ git push origin master
+To john@githost:simplegit.git
+ ! [rejected]        master -> master (non-fast forward)
+error: failed to push some refs to 'john@githost:simplegit.git'
+```
+
+这时 John 会推送失败，因为之前 Jessica 已经推送了她的更改。如果之前习惯于用 Subversion 那么理解这点特别重要，因为你会注意到两个开发者并没有编辑同一个文件。尽管 Subversion 会对编辑的不同文件在服务器上自动进行一次合并，但 Git 要求你先在本地合并提交。换言之，John 必须先抓取 Jessica 的上游改动并将它们合并到自己的本地仓库中，才能被允许推送
+
+第一步，John 抓取 Jessica 的工作（这只会抓取 Jessica 的上游工作，并不会将它合并到 John 的工作中）：
+
+```text
+$ git fetch origin
+...
+From john@githost:simplegit
+ + 049d078...fbff5bc master     -> origin/master
+```
+
+在这个时候，John 的本地仓库看起来像这样：
+
+![John 的分叉历史](https://git-scm.com/book/en/v2/images/small-team-1.png)
+
+现在 John 可以将抓取下来的 Jessica 的工作合并到他自己的本地工作中了：
+
+```text
+$ git merge origin/master
+Merge made by the 'recursive' strategy.
+ TODO |    1 +
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+```
+
+合并进行得很顺利 — John 更新后的历史现在看起来像这样：
+
+![合并了 origin/master 之后 John 的仓库](https://git-scm.com/book/en/v2/images/small-team-2.png)
+
+此时，John 可能想要测试新的代码，以确保 Jessica 的工作没有影响他自己的工作，当一切正常后，他就能将新合并的工作推送到服务器了：
+
+```text
+$ git push origin master
+...
+To john@githost:simplegit.git
+   fbff5bc..72bbc59  master -> master
+```
+
+最终，John 的提交历史看起来像这样：
+
+![推送到 origin 服务器后 John 的历史](https://git-scm.com/book/en/v2/images/small-team-3.png)
+
+在此期间，Jessica 新建了一个名为 issue54 的主题分支，然后在该分支上提交了三次。她还没有抓取 John 的改动，所以她的提交历史看起来像这样：
+
+![Jessica 的主题分支](https://git-scm.com/book/en/v2/images/small-team-4.png)
+
+忽然，Jessica 发现 John 向服务器推送了一些新的工作，她想要看一下，于是就抓取了所有服务器上的新内容：
+
+```text
+# Jessica's Machine
+$ git fetch origin
+...
+From jessica@githost:simplegit
+   fbff5bc..72bbc59  master     -> origin/master
+```
+
+那会同时拉取 John 推送的工作。Jessica 的历史现在看起来像这样：
+
+![抓取 John 的改动后 Jessica 的历史](https://git-scm.com/book/en/v2/images/small-team-5.png)
+
+Jessica 认为她的主题分支已经准备好了，但她想知道需要将 John 工作的哪些合并到自己的工作中才能推送。她运行 `git log` 找了出来：
+
+```text
+$ git log --no-merges issue54..origin/master
+commit 738ee872852dfaa9d6634e0dea7a324040193016
+Author: John Smith <jsmith@example.com>
+Date:   Fri May 29 16:01:27 2009 -0700
+
+   remove invalid default value
+```
+
+issue54..origin/master 语法是一个日志过滤器，要求 Git 只显示所有在后面分支 （在本例中是 origin/master）但不在前面分支（在本例中是 issue54）的提交的列表。我们将会在 [提交区间](#提交区间) 中详细介绍这个语法
+
+目前，我们可以从输出中看到有一个 John 生成的但是 Jessica 还没有合并的提交。如果她合并 origin/master，那个未合并的提交将会修改她的本地工作
+
+现在，Jessica 可以合并她的特性工作到她的 master 分支，合并 John 的工作（origin/master）进入她的 master 分支，然后再次推送回服务器
+
+首先（在已经提交了所有 issue54 主题分支上的工作后），为了整合所有这些工作，她切换回她的 master 分支
+
+```text
+$ git checkout master
+Switched to branch 'master'
+Your branch is behind 'origin/master' by 2 commits, and can be fast-forwarded.
+```
+
+Jessica 既可以先合并 origin/master 也可以先合并 issue54 — 它们都是上游，所以顺序并没有关系。不论她选择的顺序是什么最终的结果快照是完全一样的；只是历史会稍微有些不同。她选择先合并 issue54：
+
+```text
+$ git merge issue54
+Updating fbff5bc..4af4298
+Fast forward
+ README           |    1 +
+ lib/simplegit.rb |    6 +++++-
+ 2 files changed, 6 insertions(+), 1 deletions(-)
+```
+
+没有发生问题，如你所见它是一次简单的快进合并。现在 Jessica 在本地合并了之前抓取的 origin/master 分支上 John 的工作：
+
+```text
+$ git merge origin/master
+Auto-merging lib/simplegit.rb
+Merge made by the 'recursive' strategy.
+ lib/simplegit.rb |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+```
+
+每一个文件都干净地合并了，Jessica 的历史现在看起来像这样：
+
+![合并了 John 的改动后 Jessica 的历史](https://git-scm.com/book/en/v2/images/small-team-6.png)
+
+现在 origin/master 是可以从 Jessica 的 master 分支到达的，所以她应该可以成功地推送（假设同一时间 John 并没有更多推送）：
+
+```text
+$ git push origin master
+...
+To jessica@githost:simplegit.git
+   72bbc59..8059c15  master -> master
+```
+
+每一个开发者都提交了几次并成功地合并了其他人的工作
+
+![推送所有的改动回服务器后 Jessica 的历史](https://git-scm.com/book/en/v2/images/small-team-7.png)
+
+这是一个最简单的工作流程。你通常会在一个主题分支上工作一会儿，当它准备好整合时就合并到你的 master 分支。当想要共享工作时，如果有改动的话就抓取它然后合并到你自己的 master 分支，之后推送到服务器上的 master 分支。通常顺序像这样：
+
+![一个简单的多人 Git 工作流程的通常事件顺序](https://git-scm.com/book/en/v2/images/small-team-flow.png)
+
+#### 私有管理团队
+
+在接下来的场景中，你会看到大型私有团队中贡献者的角色。你将学到如何在这种工作环境中工作，其中小组基于特性进行协作，而这些团队的贡献将会由其他人整合
+
+让我们假设 John 与 Jessica 在一个特性（featureA）上工作，同时 Jessica 与第三个开发者 Josie 在第二个特性（featureB）上工作。在本例中，公司使用了一种整合-管理者工作流程，独立小组的工作只能被特定的工程师整合，主仓库的 master 分支只能被那些工程师更新。在这种情况下，所有的工作都是在基于团队的分支上完成的并且稍后会被整合者拉到一起
+
+因为 Jessica 在两个特性上工作，并且平行地与两个不同的开发者协作，让我们跟随她的工作流程。假设她已经克隆了仓库，首先决定在 featureA 上工作。她为那个特性创建了一个新分支然后在那做了一些工作：
+
+```text
+# Jessica's Machine
+$ git checkout -b featureA
+Switched to a new branch 'featureA'
+$ vim lib/simplegit.rb
+$ git commit -am 'add limit to log function'
+[featureA 3300904] add limit to log function
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+```
+
+在这个时候，她需要将工作共享给 John，所以她推送了 featureA 分支的提交到服务器上。Jessica 没有 master 分支的推送权限 — 只有整合者有 — 所以为了与 John 协作必须推送另一个分支
+
+```text
+$ git push -u origin featureA
+...
+To jessica@githost:simplegit.git
+ * [new branch]      featureA -> featureA
+```
+
+Jessica 向 John 发邮件告诉他已经推送了一些工作到 featureA 分支现在可以看一看。当她等待 John 的反馈时，Jessica 决定与 Josie 开始在 featureB 上工作。为了开始工作，她基于服务器的 master 分支开始了一个新分支
+
+```text
+# Jessica's Machine
+$ git fetch origin
+$ git checkout -b featureB origin/master
+Switched to a new branch 'featureB'
+```
+
+现在，Jessica 在 featureB 分支上创建了几次提交：
+
+```text
+$ vim lib/simplegit.rb
+$ git commit -am 'made the ls-tree function recursive'
+[featureB e5b0fdc] made the ls-tree function recursive
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+$ vim lib/simplegit.rb
+$ git commit -am 'add ls-files'
+[featureB 8512791] add ls-files
+ 1 files changed, 5 insertions(+), 0 deletions(-)
+```
+
+现在 Jessica 的仓库看起来像这样：
+
+![Jessica 的初始提交历史](https://git-scm.com/book/en/v2/images/managed-team-1.png)
+
+她准备好推送工作了，但是一封来自 Josie 的邮件告知一些初始的“featureB” 工作已经被推送到服务器的 featureBee 上了。Jessica 在能够将她的工作推送到服务器前，需要将那些改动与她自己的合并。她首先通过 `git fetch` 抓取了 Josie 的改动：
+
+```text
+$ git fetch origin
+...
+From jessica@githost:simplegit
+ * [new branch]      featureBee -> origin/featureBee
+```
+
+假设 Jessica 还在她检出的 featureB 分支上，现在可以通过 `git merge` 将其合并到她做的工作中了：
+
+```text
+$ git merge origin/featureBee
+Auto-merging lib/simplegit.rb
+Merge made by the 'recursive' strategy.
+ lib/simplegit.rb |    4 ++++
+ 1 files changed, 4 insertions(+), 0 deletions(-)
+```
+
+此时，Jessica 想要将所有合并后的“featureB”推送回服务器，但她并不想直接推送她自己的 featureB 分支。由于 Josie 已经开启了一个上游的 featureBee 分支，因此 Jessica 想要推送到这个分支上，于是她这样做：
+
+```text
+$ git push -u origin featureB:featureBee
+...
+To jessica@githost:simplegit.git
+   fba9af8..cd685d1  featureB -> featureBee
+```
+
+这称作一个 引用规范。 查看 [引用规范](#引用规范) 了解关于 Git 引用规范与通过它们可以做的不同的事情的详细讨论。也要注意 `-u` 标记；这是 `--set-upstream` 的简写，该标记会为之后轻松地推送与拉取配置分支
+
+紧接着，John 发邮件给 Jessica 说他已经推送了一些改动到 featureA 分支并要求她去验证它们。她运行一个 `git fetch` 来拉取下那些改动：
+
+```text
+$ git fetch origin
+...
+From jessica@githost:simplegit
+   3300904..aad881d  featureA   -> origin/featureA
+```
+
+Jessica 通过比较新抓取的 featureA 分支和她同一分支的本地副本，看到了 John 的新工作日志
+
+```text
+$ git log featureA..origin/featureA
+commit aad881d154acdaeb2b6b18ea0e827ed8a6d671e6
+Author: John Smith <jsmith@example.com>
+Date:   Fri May 29 19:57:33 2009 -0700
+
+    changed log output to 30 from 25
+```
+
+如果 Jessica 觉得可以，她就能将 John 的新工作合并到她本地的 featureA 分支上：
+
+```text
+$ git checkout featureA
+Switched to branch 'featureA'
+$ git merge origin/featureA
+Updating 3300904..aad881d
+Fast forward
+ lib/simplegit.rb |   10 +++++++++-
+1 files changed, 9 insertions(+), 1 deletions(-)
+```
+
+最后，Jessica 可能想要对整个合并后的内容做一些小修改，于是她将这些修改提交到了本地的 featureA 分支，接着将最终的结果推送回了服务器
+
+```text
+$ git commit -am 'small tweak'
+[featureA 774b3ed] small tweak
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+$ git push
+...
+To jessica@githost:simplegit.git
+   3300904..774b3ed  featureA -> featureA
+```
+
+Jessica 的提交历史现在看起来像这样：
+
+![在一个主题分支提交后 Jessica 的历史](https://git-scm.com/book/en/v2/images/managed-team-2.png)
+
+这时，Jessica、Josie 与 John 通知整合者服务器上的 featureA 与 featureBee 分支准备好整合到主线中了。在整合者将这些分支合并到主线后，就能一次将这个新的合并提交抓取下来，历史看起来就会像这样：
+
+![合并了 Jessica 的两个主题分支后她的历史](https://git-scm.com/book/en/v2/images/managed-team-3.png)
+
+许多团队切换到 Git 就是看中了这种能让多个团队并行工作、并在之后合并不同工作的能力。团队中更小一些的子小组可以通过远程分支协作而不必影响或妨碍整个团队的能力是 Git 的一个巨大优势。在这儿看到的工作流程顺序类似这样：
+
+![这种管理团队工作流程的基本顺序](https://git-scm.com/book/en/v2/images/managed-team-flow.png)
+
+#### 派生的公开项目
+
+向公开项目做贡献有一点儿不同。因为没有权限直接更新项目的分支，你必须用其他办法将工作给维护者。第一个例子描述在支持简单派生的 Git 托管上使用派生来做贡献。许多托管站点支持这个功能（包括 GitHub、BitBucket、repo.or.cz 等等），许多项目维护者期望这种风格的贡献。下一节会讨论偏好通过邮件接受贡献补丁的项目
+
+首先，你可能想要克隆主仓库，为计划贡献的补丁或补丁序列创建一个主题分支，然后在那儿做工作。顺序看起来基本像这样：
+
+```text
+$ git clone <url>
+$ cd project
+$ git checkout -b featureA
+  ... work ...
+$ git commit
+  ... work ...
+$ git commit
+```
+
+你可以用 `rebase -i` 将工作压缩成一个单独的提交，或者重排提交中的工作使补丁更容易被维护者审核 — 查看 [重写历史](#重写历史) 了解关于交互式变基的更多信息
+
+当你的分支工作完成后准备将其贡献回维护者，去原始项目中然后点击“Fork”按钮，创建一份自己的可写的项目派生仓库。然后需要在本地仓库中将该仓库添加为一个新的远程仓库，在本例中称作 myfork：
+
+```shell
+$ git remote add myfork <url>
+```
+
+然后需要推送工作到上面。相对于合并到主分支再推送上去，推送你正在工作的主题分支到仓库上更简单。原因是工作如果不被接受或者是被拣选的，就不必回退你的 master 分支（拣选操作 cherry-pick 详见 变基与拣选工作流）。如果维护者合并、变基或拣选你的工作，不管怎样你最终会通过拉取他们的仓库找回来你的工作
+
+在任何情况下，你都可以使用下面的命令推送你的工作：
+
+```shell
+$ git push -u myfork featureA
+```
+
+当工作已经被推送到你的派生仓库后，你需要通知原项目的维护者你有想要他们合并的工作。这通常被称作一个 拉取请求（Pull Request），你通常可以通过网站生成它 — GitHub 有它自己的 Pull Request 机制，我们将会在 [GitHub](#github) 介绍 — 也可以运行 `git request-pull` 命令然后将随后的输出通过电子邮件手动发送给项目维护者
+
+`git request-pull` 命令接受一个要拉取主题分支的基础分支，以及它们要拉取的 Git 仓库的 URL，产生一个请求拉取的所有修改的摘要。例如，Jessica 想要发送给 John 一个拉取请求，她已经在刚刚推送的分支上做了两次提交。她可以运行这个：
+
+```text
+$ git request-pull origin/master myfork
+The following changes since commit 1edee6b1d61823a2de3b09c160d7080b8d1b3a40:
+Jessica Smith (1):
+        added a new function
+
+are available in the git repository at:
+
+  git://githost/simplegit.git featureA
+
+Jessica Smith (2):
+      add limit to log function
+      change log output to 30 from 25
+
+ lib/simplegit.rb |   10 +++++++++-
+ 1 files changed, 9 insertions(+), 1 deletions(-)
+```
+
+此输出可被发送给维护者 — 它告诉他们工作是从哪个分支开始的、提交的摘要、以及从哪里拉取这些工作
+
+在一个你不是维护者的项目上，通常有一个总是跟踪 origin/master 的 master 分支会很方便，在主题分支上做工作是因为如果它们被拒绝时你可以轻松地丢弃。如果同一时间主仓库移动了然后你的提交不再能干净地应用，那么使工作主题独立于主题分支也会使你变基（rebase）工作时更容易。例如，你想要提供第二个特性工作到项目，不要继续在刚刚推送的主题分支上工作 — 从主仓库的 master 分支重新开始：
+
+```text
+$ git checkout -b featureB origin/master
+  ... work ...
+$ git commit
+$ git push myfork featureB
+$ git request-pull origin/master myfork
+  ... email generated request pull to maintainer ...
+$ git fetch origin
+```
+
+现在，每一个特性都保存在一个贮藏库中 — 类似于补丁队列 — 可以重写、变基与修改而不会让特性互相干涉或互相依赖，像这样：
+
+![featureB 的初始提交历史](https://git-scm.com/book/en/v2/images/public-small-1.png)
+
+假设项目维护者已经拉取了一串其他补丁，然后尝试拉取你的第一个分支，但是没有干净地合并。在这种情况下，可以尝试变基那个分支到 origin/master 的顶部，为维护者解决冲突，然后重新提交你的改动：
+
+```text
+$ git checkout featureA
+$ git rebase origin/master
+$ git push -f myfork featureA
+```
+
+这样会重写你的历史，现在看起来像是 featureA 工作之后的提交历史
+
+![featureA 工作之后的提交历史](https://git-scm.com/book/en/v2/images/public-small-2.png)
+
+因为你将分支变基了，所以必须为推送命令指定 `-f` 选项，这样才能将服务器上有一个不是它的后代的提交的 featureA 分支替换掉。一个替代的选项是推送这个新工作到服务器上的一个不同分支（可能称作 featureAv2）
+
+让我们看一个更有可能的情况：维护者看到了你的第二个分支上的工作并且很喜欢其中的概念，但是想要你修改一下实现的细节。你也可以利用这次机会将工作基于项目现在的 master 分支。你从现在的 origin/master 分支开始一个新分支，在那儿压缩 featureB 的改动，解决任何冲突，改变实现，然后推送它为一个新分支
+
+```text
+$ git checkout -b featureBv2 origin/master
+$ git merge --squash featureB
+  ... change implementation ...
+$ git commit
+$ git push myfork featureBv2
+```
+
+`--squash` 选项接受被合并的分支上的所有工作，并将其压缩至一个变更集，使仓库变成一个真正的合并发生的状态，而不会真的生成一个合并提交。这意味着你的未来的提交将会只有一个父提交，并允许你引入另一个分支的所有改动，然后在记录一个新提交前做更多的改动。同样 `--no-commit` 选项在默认合并过程中可以用来延迟生成合并提交
+
+现在你可以给维护者发送一条消息，表示你已经做了要求的修改然后他们可以在你的 featureBv2 分支上找到那些改动
+
+![featureBv2 工作之后的提交历史](https://git-scm.com/book/en/v2/images/public-small-3.png)
+
 ## GitHub
 
 ## Git 工具
+
+### 选择修订版本
+
+#### 提交区间
+
+### 交互式暂存
 
 ### 贮藏与清理
 
@@ -1957,7 +3179,11 @@ What now>
 
 在一种奇怪的情况下，可能需要格外用力才能让 Git 清理你的工作目录。如果你恰好在工作目录中复制或克隆了其他 Git 仓库（可能是子模块），那么即便是 `git clean -f -d` 都会拒绝删除这些目录。这种情况下，你需要加上第二个 `-f` 选项来强调
 
+### 重写历史
+
 ### 重置揭密
+
+### 凭证存储
 
 ## 自定义 Git
 
@@ -1966,6 +3192,8 @@ What now>
 ## Git 内部原理
 
 ### 底层命令与上层命令
+
+### 引用规范
 
 ### 维护与数据恢复
 
