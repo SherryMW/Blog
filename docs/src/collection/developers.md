@@ -4,14 +4,21 @@ article: false
 
 # 开发
 
-::: projects
-```yaml
-- icon: https://jwt.io/img/pic_logo.svg
-  name: JWT
-  desc: 一种开放的行业标准 RFC 7519 方法，用于在双方之间安全地表示声明
-  link: https://jwt.io/
-```
-:::
+[//]: # (::: projects)
+
+[//]: # (```yaml)
+
+[//]: # (- icon: https://jwt.io/img/pic_logo.svg)
+
+[//]: # (  name: JWT)
+
+[//]: # (  desc: 一种开放的行业标准 RFC 7519 方法，用于在双方之间安全地表示声明)
+
+[//]: # (  link: https://jwt.io/)
+
+[//]: # (```)
+
+[//]: # (:::)
 
 ::: projects
 ```yaml
@@ -32,28 +39,46 @@ article: false
 ```
 :::
 
-::: projects
-```yaml
-- icon: https://www.axios-http.cn/assets/favicon.ico
-  name: Axios
-  desc: Axios 是一个基于 promise 的网络请求库，可以用于浏览器和 node.js
-  link: https://www.axios-http.cn/
+[//]: # (::: projects)
 
-- icon: https://pinia.vuejs.org/logo.svg
-  name: Pinia
-  desc: 符合直觉的 Vue.js 状态管理库
-  link: https://pinia.vuejs.org/zh/
-```
-:::
+[//]: # (```yaml)
 
-::: projects
-```yaml
-- icon: https://greensock.com/uploads/monthly_2018_06/favicon.ico.4811a987b377f271db584b422f58e5a7.ico
-  name: GSAP
-  desc: 适用于现代 Web 的专业级 JavaScript 动画
-  link: https://greensock.com/gsap/
-```
-:::
+[//]: # (- icon: https://www.axios-http.cn/assets/favicon.ico)
+
+[//]: # (  name: Axios)
+
+[//]: # (  desc: Axios 是一个基于 promise 的网络请求库，可以用于浏览器和 node.js)
+
+[//]: # (  link: https://www.axios-http.cn/)
+
+[//]: # ()
+[//]: # (- icon: https://pinia.vuejs.org/logo.svg)
+
+[//]: # (  name: Pinia)
+
+[//]: # (  desc: 符合直觉的 Vue.js 状态管理库)
+
+[//]: # (  link: https://pinia.vuejs.org/zh/)
+
+[//]: # (```)
+
+[//]: # (:::)
+
+[//]: # (::: projects)
+
+[//]: # (```yaml)
+
+[//]: # (- icon: https://greensock.com/uploads/monthly_2018_06/favicon.ico.4811a987b377f271db584b422f58e5a7.ico)
+
+[//]: # (  name: GSAP)
+
+[//]: # (  desc: 适用于现代 Web 的专业级 JavaScript 动画)
+
+[//]: # (  link: https://greensock.com/gsap/)
+
+[//]: # (```)
+
+[//]: # (:::)
 
 ::: projects
 ```yaml

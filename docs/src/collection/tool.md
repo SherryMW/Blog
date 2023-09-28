@@ -44,36 +44,59 @@ article: false
 ```
 :::
 
-## 编程
+[//]: # (## 编程)
 
-::: projects
-```yaml
-- icon: https://leetcode.cn/favicon.ico
-  name: LeetCode
-  desc: 全球极客挚爱的技术成长平台
-  link: https://leetcode.cn/
-  
-- icon: https://jsn.lintcode.com/static/img/favicon.ico
-  name: LintCode
-  desc: 通过在线实操的方式，提升编程能力
-  link: https://www.lintcode.com/
+[//]: # (::: projects)
 
-- icon: https://regexlearn.com/favicon.svg
-  name: RegexLearn
-  desc: 逐步学习正则表达式，从零基础到高阶
-  link: https://regexlearn.com/zh-cn
+[//]: # (```yaml)
 
-- icon: https://goregex.cn/favicon.ico
-  name: GoRegex.Cn
-  desc: Regex正则表达式在线测试、生成、解析工具
-  link: https://goregex.cn/
+[//]: # (- icon: https://leetcode.cn/favicon.ico)
 
-- icon: https://code.org/images/logo.svg
-  name: CODE
-  desc: 学习计算机科学，改变世界
-  link: https://code.org/
-```
-:::
+[//]: # (  name: LeetCode)
+
+[//]: # (  desc: 全球极客挚爱的技术成长平台)
+
+[//]: # (  link: https://leetcode.cn/)
+
+[//]: # (  )
+[//]: # (- icon: https://jsn.lintcode.com/static/img/favicon.ico)
+
+[//]: # (  name: LintCode)
+
+[//]: # (  desc: 通过在线实操的方式，提升编程能力)
+
+[//]: # (  link: https://www.lintcode.com/)
+
+[//]: # ()
+[//]: # (- icon: https://regexlearn.com/favicon.svg)
+
+[//]: # (  name: RegexLearn)
+
+[//]: # (  desc: 逐步学习正则表达式，从零基础到高阶)
+
+[//]: # (  link: https://regexlearn.com/zh-cn)
+
+[//]: # ()
+[//]: # (- icon: https://goregex.cn/favicon.ico)
+
+[//]: # (  name: GoRegex.Cn)
+
+[//]: # (  desc: Regex正则表达式在线测试、生成、解析工具)
+
+[//]: # (  link: https://goregex.cn/)
+
+[//]: # ()
+[//]: # (- icon: https://code.org/images/logo.svg)
+
+[//]: # (  name: CODE)
+
+[//]: # (  desc: 学习计算机科学，改变世界)
+
+[//]: # (  link: https://code.org/)
+
+[//]: # (```)
+
+[//]: # (:::)
 
 ## 测试
 

@@ -2930,19 +2930,987 @@ $ git push myfork featureBv2
 
 ![featureBv2 工作之后的提交历史](https://git-scm.com/book/en/v2/images/public-small-3.png)
 
-## GitHub
+#### 通过邮件的公开项目
 
-### 对项目做出贡献
+许多项目建立了接受补丁的流程 — 需要检查每一个项目的特定规则，因为它们之间有区别。因为有几个历史悠久的、大型的项目会通过一个开发者的邮件列表接受补丁，现在我们将会通过一个例子来演示
 
-#### 让你的 GitHub 公共仓库保持更新
+工作流程与之前的用例是类似的 — 你为工作的每一个补丁序列创建主题分支。区别是如何提交它们到项目中。生成每一个提交序列的电子邮件版本然后邮寄它们到开发者邮件列表，而不是派生项目然后推送到你自己的可写版本
+
+```text
+$ git checkout -b topicA
+  ... work ...
+$ git commit
+  ... work ...
+$ git commit
+```
+
+现在有两个提交要发送到邮件列表。使用 `git format-patch` 来生成可以邮寄到列表的 mbox 格式的文件 — 它将每一个提交转换为一封电子邮件，提交信息的第一行作为主题，剩余信息与提交引入的补丁作为正文。它有一个好处是使用 `format-patch` 生成的一封电子邮件应用的提交正确地保留了所有的提交信息
+
+```text
+$ git format-patch -M origin/master
+0001-add-limit-to-log-function.patch
+0002-changed-log-output-to-30-from-25.patch
+```
+
+`format-patch` 命令打印出它创建的补丁文件名字。`-M` 开关告诉 Git 查找重命名。文件最后看起来像这样：
+
+```text
+$ cat 0001-add-limit-to-log-function.patch
+From 330090432754092d704da8e76ca5c05c198e71a8 Mon Sep 17 00:00:00 2001
+From: Jessica Smith <jessica@example.com>
+Date: Sun, 6 Apr 2008 10:17:23 -0700
+Subject: [PATCH 1/2] add limit to log function
+
+Limit log functionality to the first 20
+
+---
+ lib/simplegit.rb |    2 +-
+ 1 files changed, 1 insertions(+), 1 deletions(-)
+
+diff --git a/lib/simplegit.rb b/lib/simplegit.rb
+index 76f47bc..f9815f1 100644
+--- a/lib/simplegit.rb
++++ b/lib/simplegit.rb
+@@ -14,7 +14,7 @@ class SimpleGit
+   end
+
+   def log(treeish = 'master')
+-    command("git log #{treeish}")
++    command("git log -n 20 #{treeish}")
+   end
+
+   def ls_tree(treeish = 'master')
+--
+2.1.0
+```
+
+也可以编辑这些补丁文件为邮件列表添加更多不想要在提交信息中显示出来的信息。如果在 - 行与补丁开头（`diff --git` 行）之间添加文本，那么开发者就可以阅读它，但是应用补丁时会忽略它
+
+为了将其邮寄到邮件列表，你既可以将文件粘贴进电子邮件客户端，也可以通过命令行程序发送它。粘贴文本经常会发生格式化问题，特别是那些不会合适地保留换行符与其他空白的 “更聪明的” 客户端。幸运的是，Git 提供了一个工具帮助你通过 IMAP 发送正确格式化的补丁，这可能对你更容易些。 我们将会演示如何通过 Gmail 发送一个补丁，它正好是我们所知最好的邮件代理；可以在之前提到的 Git 源代码中的 Documentation/SubmittingPatches 文件的最下面了解一系列邮件程序的详细指令
+
+首先，需要在 ~/.gitconfig 文件中设置 imap 区块。可以通过一系列的 `git config` 命令来分别设置每一个值，或者手动添加它们，不管怎样最后配置文件应该看起来像这样：
+
+```text
+[imap]
+  folder = "[Gmail]/Drafts"
+  host = imaps://imap.gmail.com
+  user = user@gmail.com
+  pass = YX]8g76G_2^sFbd
+  port = 993
+  sslverify = false
+```
+
+如果 IMAP 服务器不使用 SSL，最后两行可能没有必要，host 的值会是 imap:// 而不是 imaps://。当那些设置完成后，可以使用 `git imap-send` 将补丁序列放在特定 IMAP 服务器的 Drafts 文件夹中：
+
+```text
+$ cat *.patch |git imap-send
+Resolving imap.gmail.com... ok
+Connecting to [74.125.142.109]:993... ok
+Logging in...
+sending 2 messages
+100% (2/2) done
+```
+
+此时，你可以到 Drafts 文件夹中，修改收件人字段为想要发送补丁的邮件列表，可能需要抄送给维护者或负责那个部分的人，然后发送
+
+你也可以通过一个 SMTP 服务器发送补丁。同之前一样，你可以通过一系列的 `git config` 命令来分别设置选项，或者你可以手动地将它们添加到你的 ~/.gitconfig 文件的 sendmail 区块：
+
+```text
+[sendemail]
+  smtpencryption = tls
+  smtpserver = smtp.gmail.com
+  smtpuser = user@gmail.com
+  smtpserverport = 587
+```
+
+当这完成后，你可以使用 `git send-email` 发送你的补丁：
+
+```text
+$ git send-email *.patch
+0001-added-limit-to-log-function.patch
+0002-changed-log-output-to-30-from-25.patch
+Who should the emails appear to be from? [Jessica Smith <jessica@example.com>]
+Emails will be sent from: Jessica Smith <jessica@example.com>
+Who should the emails be sent to? jessica@example.com
+Message-ID to be used as In-Reply-To for the first email? y
+```
+
+然后，对于正在发送的每一个补丁，Git 会吐出这样的一串日志信息：
+
+```text
+(mbox) Adding cc: Jessica Smith <jessica@example.com> from
+  \line 'From: Jessica Smith <jessica@example.com>'
+OK. Log says:
+Sendmail: /usr/sbin/sendmail -i jessica@example.com
+From: Jessica Smith <jessica@example.com>
+To: jessica@example.com
+Subject: [PATCH 1/2] added limit to log function
+Date: Sat, 30 May 2009 13:29:15 -0700
+Message-Id: <1243715356-61726-1-git-send-email-jessica@example.com>
+X-Mailer: git-send-email 1.6.2.rc1.20.g8c5b.dirty
+In-Reply-To: <y>
+References: <y>
+
+Result: OK
+```
+
+### 维护项目
+
+除了如何有效地参与一个项目的贡献之外，你可能也需要了解如何维护项目。这包含接受并应用别人使用 `format-patch` 生成并通过电子邮件发送过来的补丁，或对项目添加的远程版本库分支中的更改进行整合。但无论是管理版本库，还是帮忙验证、审核收到的补丁，都需要同其他贡献者约定某种长期可持续的工作方式
+
+#### 在主题分支中工作
+
+如果你想向项目中整合一些新东西，最好将这些尝试局限在 主题分支 — 一种通常用来尝试新东西的临时分支中。这样便于单独调整补丁，如果遇到无法正常工作的情况，可以先不用管，等到有时间的时候再来处理。如果你基于你所尝试进行工作的特性为分支创建一个简单的名字，比如 ruby_client 或者具有类似描述性的其他名字，这样即使你必须暂时抛弃它，以后回来时也不会忘记。项目的维护者一般还会为这些分支附带命名空间，比如 sc/ruby_client（其中 sc 是贡献该项工作的人名称的简写）。你应该记得，可以使用如下方式基于 master 分支建立主题分支：
+
+```shell
+$ git branch sc/ruby_client master
+```
+
+或者如果你同时想立刻切换到新分支上的话，可以使用 `checkout -b` 选项：
+
+```shell
+$ git checkout -b sc/ruby_client master
+```
+
+现在你已经准备好将你收到的贡献加入到这个主题分支，并考虑是否将其合并到长期分支中去了
+
+#### 应用来自邮件的补丁
+
+如果你通过电子邮件收到了一个需要整合进入项目的补丁，你需要将其应用到主题分支中进行评估。有两种应用该种补丁的方法：使用 `git apply`，或者使用 `git am`
+
+#### 使用 apply 命令应用补丁
+
+如果你收到了一个使用 `git diff` 或 `Unix diff` 命令的变体（不推荐使用这种方式，具体见下一节） 创建的补丁，可以使用 git apply 命令来应用。假设你将补丁保存在了 /tmp/patch-ruby-client.patch 中，可以这样应用补丁：
+
+```shell
+$ git apply /tmp/patch-ruby-client.patch
+```
+
+这会修改工作目录中的文件。它与运行 `patch -p1` 命令来应用补丁几乎是等效的，但是这种方式更加严格，相对于 `patch` 来说，它能够接受的模糊匹配更少。它也能够处理 `git diff` 格式文件所描述的文件添加、删除和重命名操作，而 patch 则不会。最后，`git apply` 命令采用了一种“全部应用，否则就全部撤销（apply all or abort all）”的模型， 即补丁只有全部内容都被应用和完全不被应用两个状态，而 patch 可能会导致补丁文件被部分应用，最后使你的工作目录保持在一个比较奇怪的状态。总体来看，`git apply` 命令要比 `patch` 谨慎得多。 并且，它不会为你创建提交 — 在运行之后，你需要手动暂存并提交补丁所引入的更改
+
+在实际应用补丁前，你还可以使用 `git apply` 来检查补丁是否可以顺利应用 — 即对补丁运行 `git apply --check` 命令：
+
+```text
+$ git apply --check 0001-seeing-if-this-helps-the-gem.patch
+error: patch failed: ticgit.gemspec:1
+error: ticgit.gemspec: patch does not apply
+```
+
+如果没有产生输出，则该补丁可以顺利应用。如果检查失败了，该命令还会以一个非零的状态退出，所以需要时你也可以在脚本中使用它
+
+#### 使用 am 命令应用补丁
+
+如果补丁的贡献者也是一个 Git 用户，并且其能熟练使用 `format-patch` 命令来生成补丁，这样的话你的工作会变得更加轻松，因为这种补丁中包含了作者信息和提交信息供你参考。如果可能的话，请鼓励贡献者使用 `format-patch` 而不是 `diff` 来为你生成补丁。而只有对老式的补丁，你才必须使用 `git apply` 命令
+
+要应用一个由 `format-patch` 命令生成的补丁，你应该使用 `git am` 命令 （该命令的名字 am 表示它“应用（Apply）一系列来自邮箱（Mailbox）的补丁”）。从技术的角度看，`git am` 是为了读取 mbox 文件而构建的，mbox 是一种用来在单个文本文件中存储一个或多个电子邮件消息的简单纯文本格式。 其大致格式如下所示：
+
+```text
+From 330090432754092d704da8e76ca5c05c198e71a8 Mon Sep 17 00:00:00 2001
+From: Jessica Smith <jessica@example.com>
+Date: Sun, 6 Apr 2008 10:17:23 -0700
+Subject: [PATCH 1/2] add limit to log function
+
+Limit log functionality to the first 20
+```
+
+这其实就是你前面看到的 `git format-patch` 命令输出的开始几行，而同时它也是有效的 mbox 电子邮件格式。如果有人使用 `git send-email` 命令将补丁以电子邮件的形式发送给你，你便可以将它下载为 mbox 格式的文件，之后将 `git am` 命令指向该文件，它会应用其中包含的所有补丁。如果你所使用的邮件客户端能够同时将多封邮件保存为 mbox 格式的文件，你甚至能够将一系列补丁打包为单个 mbox 文件，并利用 `git am` 命令将它们一次性全部应用
+
+然而，如果贡献者将 `git format-patch` 生成的补丁文件上传到工单系统或类似的任务处理系统，你可以先将其保存到本地，之后通过 `git am` 来应用补丁：
+
+```text
+$ git am 0001-limit-log-function.patch
+Applying: add limit to log function
+```
+
+你会看到补丁被顺利地应用，并且为你自动创建了一个新的提交。其中的作者信息来自于电子邮件头部的 From 和 Date 字段，提交消息则取自 Subject 和邮件正文中补丁之前的内容。比如，应用上面那个 mbox 示例后生成的提交是这样的：
+
+```text
+$ git log --pretty=fuller -1
+commit 6c5e70b984a60b3cecd395edd5b48a7575bf58e0
+Author:     Jessica Smith <jessica@example.com>
+AuthorDate: Sun Apr 6 10:17:23 2008 -0700
+Commit:     Scott Chacon <schacon@gmail.com>
+CommitDate: Thu Apr 9 09:19:06 2009 -0700
+
+   add limit to log function
+
+   Limit log functionality to the first 20
+```
+
+其中 Commit 信息表示的是应用补丁的人和应用补丁的时间。Author 信息则表示补丁的原作者和原本的创建时间
+
+但是，有时候无法顺利地应用补丁。这也许是因为你的主分支和创建补丁的分支相差较多，也有可能是因为这个补丁依赖于其他你尚未应用的补丁。这种情况下，`git am` 进程将会报错并且询问你要做什么：
+
+```text
+$ git am 0001-seeing-if-this-helps-the-gem.patch
+Applying: seeing if this helps the gem
+error: patch failed: ticgit.gemspec:1
+error: ticgit.gemspec: patch does not apply
+Patch failed at 0001.
+When you have resolved this problem run "git am --resolved".
+If you would prefer to skip this patch, instead run "git am --skip".
+To restore the original branch and stop patching run "git am --abort".
+```
+
+该命令将会在所有出现问题的文件内加入冲突标记，就和发生冲突的合并或变基操作一样。而你解决问题的手段很大程度上也是一样的 — 即手动编辑那些文件来解决冲突，暂存新的文件，之后运行 `git am --resolved` 继续应用下一个补丁：
+
+```text
+$ (fix the file)
+$ git add ticgit.gemspec
+$ git am --resolved
+Applying: seeing if this helps the gem
+```
+
+如果你希望 Git 能够尝试以更加智能的方式解决冲突，你可以对其传递 `-3` 选项来使 Git 尝试进行三方合并。该选项默认并没有打开，因为如果用于创建补丁的提交并不在你的版本库内的话，这样做是没有用处的。而如果你确实有那个提交的话 — 比如补丁是基于某个公共提交的 — 那么通常 `-3` 选项对于应用有冲突的补丁是更加明智的选择
+
+```text
+$ git am -3 0001-seeing-if-this-helps-the-gem.patch
+Applying: seeing if this helps the gem
+error: patch failed: ticgit.gemspec:1
+error: ticgit.gemspec: patch does not apply
+Using index info to reconstruct a base tree...
+Falling back to patching base and 3-way merge...
+No changes -- Patch already applied.
+```
+
+比如上面这种情况，如果没有 `-3` 选项的话，这看起来就像是存在一个冲突。由于使用了 `-3` 选项，该补丁就被干净地应用了
+
+如果你正在利用一个 mbox 文件应用多个补丁，也可以在交互模式下运行 `am` 命令，这样在每个补丁之前，它会停住询问你是否要应用该补丁：
+
+```text
+$ git am -3 -i mbox
+Commit Body is:
+--------------------------
+seeing if this helps the gem
+--------------------------
+Apply? [y]es/[n]o/[e]dit/[v]iew patch/[a]ccept all
+```
+
+这在你保存的补丁较多时很好用，因为你可以在应用之前查看忘掉内容的补丁，并且跳过已经应用过的补丁
+
+当与你的特性相关的所有补丁都被应用并提交到分支中之后，你就可以选择是否以及如何将其整合到更长期的分支中去了
+
+#### 检出远程分支
+
+如果你的贡献者建立了自己的版本库，并且向其中推送了若干修改，之后将版本库的 URL 和包含更改的远程分支发送给你，那么你可以将其添加为一个远程分支，并且在本地进行合并
+
+比如 Jessica 向你发送了一封电子邮件，内容是在她的版本库中的 ruby-client 分支中有一个很不错的新功能，为了测试该功能，你可以将其添加为一个远程分支，并在本地检出：
+
+```shell
+$ git remote add jessica git://github.com/jessica/myproject.git
+$ git fetch jessica
+$ git checkout -b rubyclient jessica/ruby-client
+```
+
+如果她再次发邮件说另一个分支中包含另一个优秀功能，因为之前已经设置好远程分支了，你就可以直接进行 `fetch` 和 `checkout` 操作
+
+这对于与他人长期合作工作来说很有用。而对于提交补丁频率较小的贡献者，相对于每个人维护自己的服务器，不断增删远程分支的做法，使用电子邮件来接收可能会比较省时。况且你也不会想要加入数百个只提供一两个补丁的远程分支。然而，脚本和托管服务在一定程度上可以简化这些工作 — 这很大程度上依赖于你和你的贡献者开发的方式
+
+这种方式的另一种优点是你可以同时得到提交历史。虽然代码合并中可能会出现问题，但是你能获知他人的工作是基于你的历史中的具体哪一个位置；所以 Git 会默认进行三方合并，不需要提供 `-3` 选项，你也不需要担心补丁是基于某个你无法访问的提交生成的
+
+对于非持续性的合作，如果你依然想要以这种方式拉取数据的话，你可以对远程版本库的 URL 调用 `git pull` 命令。这会执行一个一次性的抓取，而不会将该 URL 存为远程引用：
+
+```text
+$ git pull https://github.com/onetimeguy/project
+From https://github.com/onetimeguy/project
+ * branch            HEAD       -> FETCH_HEAD
+Merge made by the 'recursive' strategy.
+```
+
+#### 确定引入了哪些东西
+
+你已经有了一个包含其他人贡献的主题分支。现在你可以决定如何处理它们了。本节回顾了若干命令，以便于你检查若将其合并入主分支所引入的更改
+
+一般来说，你应该对该分支中所有 master 分支尚未包含的提交进行检查。通过在分支名称前加入 `--not` 选项，你可以排除 master 分支中的提交。这和我们之前使用的 master..contrib 格式是一样的。假设贡献者向你发送了两个补丁，为此你创建了一个名叫 contrib 的分支并在其上应用补丁，你可以运行：
+
+```text
+$ git log contrib --not master
+commit 5b6235bd297351589efc4d73316f0a68d484f118
+Author: Scott Chacon <schacon@gmail.com>
+Date:   Fri Oct 24 09:53:59 2008 -0700
+
+    seeing if this helps the gem
+
+commit 7482e0d16d04bea79d0dba8988cc78df655f16a0
+Author: Scott Chacon <schacon@gmail.com>
+Date:   Mon Oct 22 19:38:36 2008 -0700
+
+    updated the gemspec to hopefully work better
+```
+
+如果要查看每次提交所引入的具体修改，你应该记得可以给 `git log` 命令传递 `-p` 选项，这样它会在每次提交后面附加对应的差异（diff）
+
+而要查看将该主题分支与另一个分支合并的完整 diff，你可能需要使用一个有些奇怪的技巧来得到正确的结果。你可能会想到这种方式：
+
+```shell
+$ git diff master
+```
+
+这个命令会输出一个 diff，但它可能并不是我们想要的。如果在你创建主题分支之后，master 分支向前移动了，你获得的结果就会显得有些不对。这是因为 Git 会直接将该主题分支与 master 分支的最新提交快照进行比较。比如说你在 master 分支中向某个文件添加了一行内容，那么直接比对最新快照的结果看上去就像是你在主题分支中将这一行删除了
+
+如果 master 分支是你的主题分支的直接祖先，其实是没有任何问题的；但是一旦两个分支的历史产生了分叉，上述比对产生的 diff 看上去就像是将主题分支中所有的新东西加入，并且将 master 分支所独有的东西删除
+
+而你真正想要检查的东西，实际上仅仅是主题分支所添加的更改 — 也就是该分支与 master 分支合并所要引入的工作。要达到此目的，你需要让 Git 对主题分支上最新的提交与该分支与 master 分支的首个公共祖先进行比较
+
+从技术的角度讲，你可以以手工的方式找出公共祖先，并对其显式运行 diff 命令：
+
+```text
+$ git merge-base contrib master
+36c7dba2c95e6bbb78dfa822519ecfec6e1ca649
+$ git diff 36c7db
+```
+
+或者，更简洁的形式：
+
+```shell
+$ git diff $(git merge-base contrib master)
+```
+
+然而，这种做法比较麻烦，所以 Git 提供了一种比较便捷的方式：三点语法。对于 `git diff` 命令来说，你可以通过把 … 置于另一个分支名后来对该分支的最新提交与两个分支的共同祖先进行比较：
+
+```shell
+$ git diff master...contrib
+```
+
+该命令仅会显示自当前主题分支与 master 分支的共同祖先起，该分支中的工作。这个语法很有用，应该牢记
+
+#### 将贡献的工作整合进来
+
+当主题分支中所有的工作都已经准备好整合进入更靠近主线的分支时，接下来的问题就是如何进行整合了。 此外，还有一个问题是，你想使用怎样的总体工作流来维护你的项目？你的选择有很多，我们会介绍其中的一部分
+
+#### 合并工作流
+
+一种基本的工作流就是将所有的工作直接合并到 master 分支。在这种情况下，master 分支包含的代码是基本稳定的。当你完成某个主题分支的工作，或审核通过了其他人所贡献的工作时，你会将其合并进入 master 分支，之后将主题分支删除，如此反复
+
+举例来说，如果我们的版本库包含类似 包含若干主题分支的提交历史 的两个名称分别为 ruby_client 和 php_client 的分支，并且我们合并完 ruby_client 分支后，再合并 php_client 分支，那么提交历史最后会变成 合并主题分支之后 的样子
+
+![包含若干主题分支的提交历史](https://git-scm.com/book/en/v2/images/merging-workflows-1.png)
+
+![合并主题分支之后](https://git-scm.com/book/en/v2/images/merging-workflows-2.png)
+
+这也许是最简单的工作流了，但是当项目更大，或更稳定，你对自己所引入的工作更加在意时，它可能会带来问题
+
+如果你的项目非常重要，你可能会使用两阶段合并循环。在这种情况下，你会维护两个长期分支，分别是 master 和 develop，master 分支只会在一个非常稳定的版本发布时才会更新，而所有的新代码会首先整合进入 develop 分支。你定期将这两个分支推送到公共版本库中。每次需要合并新的主题分支时（合并主题分支前），你都应该合并进入 develop 分支（合并主题分支后）；当打标签发布的时候，你会将 master 分支快进到已经稳定的 develop 分支（一次发布之后）
+
+![合并主题分支前](https://git-scm.com/book/en/v2/images/merging-workflows-3.png)
+
+![合并主题分支后](https://git-scm.com/book/en/v2/images/merging-workflows-4.png)
+
+![一次发布之后](https://git-scm.com/book/en/v2/images/merging-workflows-5.png)
+
+这样当人们克隆你项目的版本库后，既可以检出 master 分支以构建最新的稳定版本并保持更新，也可以检出包含更多前沿内容 develop 分支。你也可以扩展这个概念，维护一个将所有工作合并到一起的整合分支。当该分支的代码稳定并通过测试之后，将其合并进入 develop 分支；经过一段时间，确认其稳定之后，将其以快进的形式并入 master 分支
+
+#### 大项目合并工作流
+
+Git 项目包含四个长期分支：master、next，用于新工作的 pu（proposed updates）和用于维护性向后移植工作（maintenance backports）的 maint 分支。贡献者的新工作会以类似之前所介绍的方式收入主题分支中（见 管理复杂的一系列接收贡献的平行主题分支）。之后对主题分支进行测试评估，检查其是否已经能够合并，或者仍需要更多工作。 安全的主题分支会被合并入 next 分支，之后该分支会被推送使得所有人都可以尝试整合到一起的特性
+
+![管理复杂的一系列接收贡献的平行主题分支](https://git-scm.com/book/en/v2/images/large-merges-1.png)
+
+如果主题分支需要更多工作，它则会被并入 pu 分支。当它们完全稳定之后，会被再次并入 master 分支。这意味着 master 分支始终在进行快进，next 分支偶尔会被变基，而 pu 分支的变基比较频繁：
+
+![将贡献的主题分支并入长期整合分支](https://git-scm.com/book/en/v2/images/large-merges-2.png)
+
+当主题分支最终被并入 master 分支后，便会被从版本库中删除掉。Git 项目还有一个从上一次发布中派生出来的 maint 分支来提供向后移植过来的补丁以供发布维护更新。因此，当你克隆 Git 的版本库之后，就会有四个可分别评估该项目开发的不同阶段的可检出的分支，检出哪个分支，取决于你需要多新的版本，或者你想要如何进行贡献；对于维护者来说，这套结构化的工作流能帮助它们审查新的贡献。Git 项目的工作流是特别的。要清晰地理解它，请阅读 [Git 维护者手册](https://github.com/git/git/blob/master/Documentation/howto/maintain-git.txt)
+
+#### 变基与拣选工作流
+
+为了保持线性的提交历史，有些维护者更喜欢在 master 分支上对贡献过来的工作进行变基和拣选，而不是直接将其合并。当你完成了某个主题分支中的工作，并且决定要将其整合的时候，你可以在该分支中运行变基命令，在当前 master 分支（或者是 develop 等分支）的基础上重新构造修改。如果结果理想的话，你可以快进 master 分支，最后得到一个线性的项目提交历史
+
+另一种将引入的工作转移到其他分支的方法是拣选。Git 中的拣选类似于对特定的某次提交的变基。它会提取该提交的补丁，之后尝试将其重新应用到当前分支上。这种方式在你只想引入主题分支中的某个提交，或者主题分支中只有一个提交，而你不想运行变基时很有用。举个例子，假设你的项目提交历史类似：
+
+![拣选之前的示例历史](https://git-scm.com/book/en/v2/images/rebasing-1.png)
+
+如果你希望将提交 e43a6 拉取到 master 分支，你可以运行：
+
+```text
+$ git cherry-pick e43a6
+Finished one cherry-pick.
+[master]: created a0a41a9: "More friendly message when locking the index fails."
+ 3 files changed, 17 insertions(+), 3 deletions(-)
+```
+
+这样会拉取和 e43a6 相同的更改，但是因为应用的日期不同，你会得到一个新的提交 SHA-1 值。现在你的历史会变成这样：
+
+![拣选主题分支中的一个提交后的历史](https://git-scm.com/book/en/v2/images/rebasing-2.png)
+
+现在你可以删除这个主题分支，并丢弃不想拉入的提交
+
+#### Rerere
+
+如果你在进行大量的合并或变基，或维护一个长期的主题分支，Git 提供的一个叫做“rerere”的功能会有一些帮助
+
+Rerere 是“重用已记录的冲突解决方案（reuse recorded resolution）”的意思 — 它是一种简化冲突解决的方法。当启用 rerere 时，Git 将会维护一些成功合并之前和之后的镜像，当 Git 发现之前已经修复过类似的冲突时，便会使用之前的修复方案，而不需要你的干预
+
+这个功能包含两个部分：一个配置选项和一个命令。其中的配置选项是 rerere.enabled，把它放在全局配置中就可以了：
+
+```shell
+$ git config --global rerere.enabled true
+```
+
+现在每当你进行一次需要解决冲突的合并时，解决方案都会被记录在缓存中，以备之后使用
+
+如果你需要和 rerere 的缓存交互，你可以使用 `git rerere` 命令。当单独调用它时，Git 会检查解决方案数据库，尝试寻找一个和当前任一冲突相关的匹配项并解决冲突 （尽管当 rerere.enabled 被设置为 true 时会自动进行）。它也有若干子命令，可用来查看记录项，删除特定解决方案和清除缓存全部内容等。我们将在 Rerere 中详细探讨
+
+#### 为发布打标签
+
+当你决定进行一次发布时，你可能想要打一个标签，这样在之后的任何一个提交点都可以重新创建该发布。你在 Git 基础 中已经了解了创建新标签的过程。作为一个维护者，如果你决定要为标签签名的话，打标签的过程应该是这样子的：
+
+```text
+$ git tag -s v1.5 -m 'my signed 1.5 tag'
+You need a passphrase to unlock the secret key for
+user: "Scott Chacon <schacon@gmail.com>"
+1024-bit DSA key, ID F721C45A, created 2009-02-09
+```
+
+如果你为标签签名了，你可能会遇到分发用来签名的 PGP 公钥的问题。Git 项目的维护者已经解决了这一问题，其方法是在版本库中以 blob 对象的形式包含他们的公钥，并添加一个直接指向该内容的标签。要完成这一任务，首先你可以通过运行 `gpg --list-keys` 找出你所想要的 key：
+
+```text
+$ gpg --list-keys
+/Users/schacon/.gnupg/pubring.gpg
+---------------------------------
+pub   1024D/F721C45A 2009-02-09 [expires: 2010-02-09]
+uid                  Scott Chacon <schacon@gmail.com>
+sub   2048g/45D02282 2009-02-09 [expires: 2010-02-09]
+```
+
+之后你可以通过导出 key 并通过管道传递给 `git hash-object` 来直接将 key 导入到 Git 的数据库中，`git hash-object` 命令会向 Git 中写入一个包含其内容的新 blob 对象，并向你返回该 blob 对象的 SHA-1 值：
+
+```text
+$ gpg -a --export F721C45A | git hash-object -w --stdin
+659ef797d181633c87ec71ac3f9ba29fe5775b92
+```
+
+既然 Git 中已经包含你的 key 的内容了，你就可以通过指定由 hash-object 命令给出的新 SHA-1 值来创建一个直接指向它的标签：
+
+```shell
+$ git tag -a maintainer-pgp-pub 659ef797d181633c87ec71ac3f9ba29fe5775b92
+```
+
+如果你运行 `git push --tags` 命令，那么 maintainer-pgp-pub 标签将会被共享给所有人。需要校验标签的人可以通过从数据库中直接拉取 blob 对象并导入到 GPG 中来导入 PGP key：
+
+```shell
+$ git show maintainer-pgp-pub | gpg --import
+```
+
+人们可以使用这个 key 来校验所有由你签名的标签。另外，如果你在标签信息中包含了一些操作说明，用户可以通过运行 `git show <tag>` 来获取更多关于标签校验的说明
+
+#### 生成一个构建号
+
+Git 中不存在随每次提交递增的“v123”之类的数字序列，如果你想要为提交附上一个可读的名称，可以对其运行 `git describe` 命令。作为回应，Git 将会生成一个字符串，它由最近的标签名、自该标签之后的提交数目和你所描述的提交的部分 SHA-1 值（前缀的 g 表示 Git）构成：
+
+```text
+$ git describe master
+v1.6.2-rc1-20-g8c5b85c
+```
+
+这样你在导出一个快照或构建时，可以给出一个便于人们理解的命名。实际上，如果你的 Git 是从 Git 自己的版本库克隆下来并构建的，那么 `git --version` 命令给出的结果是与此类似的。如果你所描述的提交自身就有一个标签，那么它将只会输出标签名，没有后面两项信息
+
+默认情况下，`git describe` 命令需要有注解的标签（即使用 -a 或 -s 选项创建的标签）；如果你想使用轻量标签（无注解的标签），请在命令后添加 `--tags` 选项。你也可以使用这个字符串来调用 `git checkout` 或 `git show` 命令，但是这依赖于其末尾的简短 SHA-1 值，因此不一定一直有效。比如，最近 Linux 内核为了保证 SHA-1 值对象的唯一性，将其位数由 8 位扩展到了 10 位，导致以前的 `git describe` 输出全部失效
+
+#### 准备一次发布
+
+现在你可以发布一个构建了。其中一件事情就是为那些不使用 Git 的可怜包们创建一个最新的快照归档。使用 `git archive` 命令完成此工作：
+
+```text
+$ git archive master --prefix='project/' | gzip > `git describe master`.tar.gz
+$ ls *.tar.gz
+v1.6.2-rc1-20-g8c5b85c.tar.gz
+```
+
+如果有人将这个压缩包解压，他就可以在一个 project 目录中得到你项目的最新快照。你也可以以类似的方式创建一个 zip 压缩包，但此时你应该向 `git archive` 命令传递 `--format=zip` 选项：
+
+```shell
+$ git archive master --prefix='project/' --format=zip > `git describe master`.zip
+```
+
+现在你有了本次发布的一个 tar 包和一个 zip 包，可以将其上传到网站或以电子邮件的形式发送给人们
+
+#### 制作提交简报
+
+现在是时候通知邮件列表里那些好奇你的项目发生了什么的人了。使用 `git shortlog` 命令可以快速生成一份包含从上次发布之后项目新增内容的修改日志（changelog）类文档。它会对你给定范围内的所有提交进行总结；比如，你的上一次发布名称是 v1.0.1，那么下面的命令可以给出上次发布以来所有提交的总结：
+
+```text
+$ git shortlog --no-merges master --not v1.0.1
+Chris Wanstrath (6):
+      Add support for annotated tags to Grit::Tag
+      Add packed-refs annotated tag support.
+      Add Grit::Commit#to_patch
+      Update version and History.txt
+      Remove stray `puts`
+      Make ls_tree ignore nils
+
+Tom Preston-Werner (4):
+      fix dates in history
+      dynamic version method
+      Version bump to 1.0.2
+      Regenerated gemspec for version 1.0.2
+```
+
+这份整洁的总结包括了自 v1.0.1 以来的所有提交，并且已经按照作者分好组，你可以通过电子邮件将其直接发送到列表中
 
 ## Git 工具
 
 ### 选择修订版本
 
+现在，你已经学习了管理或者维护 Git 仓库、实现代码控制所需的大多数日常命令和工作流程。你已经尝试了跟踪和提交文件的基本操作，并且掌握了暂存区和轻量级地分支及合并的威力
+
+接下来你将学习一些 Git 的强大功能，这些功能你可能并不会在日常操作中使用，但在某些时候你可能会需要
+
+Git 能够以多种方式来指定单个提交、一组提交、或者一定范围内的提交。了解它们并不是必需的，但是了解一下总没坏处
+
+#### 单个修订版本
+
+你可以通过任意一个提交的 40 个字符的完整 SHA-1 散列值来指定它，不过还有很多更人性化的方式来做同样的事情。本节将会介绍获取单个提交的多种方法
+
+#### 简短的 SHA-1
+
+Git 十分智能，你只需要提供 SHA-1 的前几个字符就可以获得对应的那次提交，当然你提供的 SHA-1 字符数量不得少于 4 个，并且没有歧义 — 也就是说，当前对象数据库中没有其它对象以这段 SHA-1 开头
+
+例如，要查看你知道其中添加了某个功能的提交，首先运行 `git log` 命令来定位该提交：
+
+```text
+$ git log
+commit 734713bc047d87bf7eac9674765ae793478c50d3
+Author: Scott Chacon <schacon@gmail.com>
+Date:   Fri Jan 2 18:32:33 2009 -0800
+
+    fixed refs handling, added gc auto, updated tests
+
+commit d921970aadf03b3cf0e71becdaab3147ba71cdef
+Merge: 1c002dd... 35cfb2b...
+Author: Scott Chacon <schacon@gmail.com>
+Date:   Thu Dec 11 15:08:43 2008 -0800
+
+    Merge commit 'phedders/rdocs'
+
+commit 1c002dd4b536e7479fe34593e72e6c6c1819e53b
+Author: Scott Chacon <schacon@gmail.com>
+Date:   Thu Dec 11 14:58:32 2008 -0800
+
+    added some blame and merge stuff
+```
+
+在本例中，假设你想要的提交其 SHA-1 以 1c002dd…. 开头，那么你可以用如下几种 `git show` 的变体来检视该提交（假设简短的版本没有歧义）：
+
+```shell
+$ git show 1c002dd4b536e7479fe34593e72e6c6c1819e53b
+$ git show 1c002dd4b536e7479f
+$ git show 1c002d
+```
+
+Git 可以为 SHA-1 值生成出简短且唯一的缩写。如果你在 `git log` 后加上 `--abbrev-commit` 参数，输出结果里就会显示简短且唯一的值；默认使用七个字符，不过有时为了避免 SHA-1 的歧义，会增加字符数：
+
+```text
+$ git log --abbrev-commit --pretty=oneline
+ca82a6d changed the version number
+085bb3b removed unnecessary test code
+a11bef0 first commit
+```
+
+通常 8 到 10 个字符就已经足够在一个项目中避免 SHA-1 的歧义。例如，到 2019 年 2 月为止，Linux 内核这个相当大的 Git 项目，其对象数据库中有超过 875,000 个提交，包含七百万个对象，也只需要前 12 个字符就能保证唯一性
+
+#### 分支引用
+
+引用特定提交的一种直接方法是，若它是一个分支的顶端的提交，那么可以在任何需要引用该提交的 Git 命令中直接使用该分支的名称。例如，你想要查看一个分支的最后一次提交的对象，假设 topic1 分支指向提交 ca82a6d… ，那么以下的命令是等价的：
+
+```shell
+$ git show ca82a6dff817ec66f44342007202690a93763949
+$ git show topic1
+```
+
+如果你想知道某个分支指向哪个特定的 SHA-1，或者想看任何一个例子中被简写的 SHA-1，你可以使用一个叫做 rev-parse 的 Git 探测工具。你可以在 Git 内部原理 中查看更多关于探测工具的信息。简单来说，`rev-parse` 是为了底层操作而不是日常操作设计的。不过，有时你想看 Git 现在到底处于什么状态时，它可能会很有用。你可以在你的分支上执行 `rev-parse`
+
+```text
+$ git rev-parse topic1
+ca82a6dff817ec66f44342007202690a93763949
+```
+
+#### 引用日志
+
+当你在工作时，Git 会在后台保存一个引用日志（reflog），引用日志记录了最近几个月你的 HEAD 和分支引用所指向的历史
+
+你可以使用 `git reflog` 来查看引用日志
+
+```text
+$ git reflog
+734713b HEAD@{0}: commit: fixed refs handling, added gc auto, updated
+d921970 HEAD@{1}: merge phedders/rdocs: Merge made by the 'recursive' strategy.
+1c002dd HEAD@{2}: commit: added some blame and merge stuff
+1c36188 HEAD@{3}: rebase -i (squash): updating HEAD
+95df984 HEAD@{4}: commit: # This is a combination of two commits.
+1c36188 HEAD@{5}: rebase -i (squash): updating HEAD
+7e05da5 HEAD@{6}: rebase -i (pick): updating HEAD
+```
+
+每当你的 HEAD 所指向的位置发生了变化，Git 就会将这个信息存储到引用日志这个历史记录里。你也可以通过 reflog 数据来获取之前的提交历史。如果你想查看仓库中 HEAD 在五次前的所指向的提交，你可以使用 `@{n}` 来引用 reflog 中输出的提交记录
+
+```shell
+$ git show HEAD@{5}
+```
+
+你同样可以使用这个语法来查看某个分支在一定时间前的位置。例如，查看你的 master 分支在昨天的时候指向了哪个提交，你可以输入
+
+```shell
+$ git show master@{yesterday}
+```
+
+就会显示昨天 master 分支的顶端指向了哪个提交。这个方法只对还在你引用日志里的数据有用，所以不能用来查好几个月之前的提交
+
+可以运行 `git log -g` 来查看类似于 `git log` 输出格式的引用日志信息：
+
+```text
+$ git log -g master
+commit 734713bc047d87bf7eac9674765ae793478c50d3
+Reflog: master@{0} (Scott Chacon <schacon@gmail.com>)
+Reflog message: commit: fixed refs handling, added gc auto, updated
+Author: Scott Chacon <schacon@gmail.com>
+Date:   Fri Jan 2 18:32:33 2009 -0800
+
+    fixed refs handling, added gc auto, updated tests
+
+commit d921970aadf03b3cf0e71becdaab3147ba71cdef
+Reflog: master@{1} (Scott Chacon <schacon@gmail.com>)
+Reflog message: merge phedders/rdocs: Merge made by recursive.
+Author: Scott Chacon <schacon@gmail.com>
+Date:   Thu Dec 11 15:08:43 2008 -0800
+
+    Merge commit 'phedders/rdocs'
+```
+
+值得注意的是，引用日志只存在于本地仓库，它只是一个记录你在 自己 的仓库里做过什么的日志。其他人拷贝的仓库里的引用日志不会和你的相同，而你新克隆一个仓库的时候，引用日志是空的，因为你在仓库里还没有操作。`git show HEAD@{2.months.ago}` 这条命令只有在你克隆了一个项目至少两个月时才会显示匹配的提交 — 如果你刚刚克隆了仓库，那么它将不会有任何结果返回
+
+#### 祖先引用
+
+祖先引用是另一种指明一个提交的方式。如果你在引用的尾部加上一个 ^（脱字符），Git 会将其解析为该引用的上一个提交。假设你的提交历史是：
+
+```text
+$ git log --pretty=format:'%h %s' --graph
+* 734713b fixed refs handling, added gc auto, updated tests
+*   d921970 Merge commit 'phedders/rdocs'
+|\
+| * 35cfb2b Some rdoc changes
+* | 1c002dd added some blame and merge stuff
+|/
+* 1c36188 ignore *.gem
+* 9b29157 add open3_detach to gemspec file list
+```
+
+你可以使用 HEAD^ 来查看上一个提交，也就是 “HEAD 的父提交”：
+
+```text
+$ git show HEAD^
+commit d921970aadf03b3cf0e71becdaab3147ba71cdef
+Merge: 1c002dd... 35cfb2b...
+Author: Scott Chacon <schacon@gmail.com>
+Date:   Thu Dec 11 15:08:43 2008 -0800
+
+    Merge commit 'phedders/rdocs'
+```
+
+在 Windows 的 cmd.exe 中，^ 是一个特殊字符，因此需要区别对待。你可以双写它或者将提交引用放在引号中：
+
+```shell
+$ git show HEAD^     # 在 Windows 上无法工作
+$ git show HEAD^^    # 可以
+$ git show "HEAD^"   # 可以
+```
+
+你也可以在 ^ 后面添加一个数字来指明想要 哪一个 父提交 — 例如 d921970^2 代表 “d921970 的第二父提交” 这个语法只适用于合并的提交，因为合并提交会有多个父提交。合并提交的第一父提交是你合并时所在分支（通常为 master），而第二父提交是你所合并的分支（例如 topic）：
+
+```text
+$ git show d921970^
+commit 1c002dd4b536e7479fe34593e72e6c6c1819e53b
+Author: Scott Chacon <schacon@gmail.com>
+Date:   Thu Dec 11 14:58:32 2008 -0800
+
+    added some blame and merge stuff
+
+$ git show d921970^2
+commit 35cfb2b795a55793d7cc56a6cc2060b4bb732548
+Author: Paul Hedderly <paul+git@mjr.org>
+Date:   Wed Dec 10 22:22:03 2008 +0000
+
+    Some rdoc changes
+```
+
+另一种指明祖先提交的方法是 ~（波浪号）。同样是指向第一父提交，因此 HEAD~ 和 HEAD^ 是等价的。而区别在于你在后面加数字的时候。HEAD~2 代表“第一父提交的第一父提交”，也就是“祖父提交”— Git 会根据你指定的次数获取对应的第一父提交。例如，在之前的列出的提交历史中，HEAD~3 就是
+
+```text
+$ git show HEAD~3
+commit 1c3618887afb5fbcbea25b7c013f4e2114448b8d
+Author: Tom Preston-Werner <tom@mojombo.com>
+Date:   Fri Nov 7 13:47:59 2008 -0500
+
+    ignore *.gem
+```
+
+也可以写成 HEAD~，也是第一父提交的第一父提交的第一父提交：
+
+```text
+$ git show HEAD~~~
+commit 1c3618887afb5fbcbea25b7c013f4e2114448b8d
+Author: Tom Preston-Werner <tom@mojombo.com>
+Date:   Fri Nov 7 13:47:59 2008 -0500
+
+    ignore *.gem
+```
+
+你也可以组合使用这两个语法——你可以通过 HEAD~3^2 来取得之前引用的第二父提交（假设它是一个合并提交）
+
 #### 提交区间
 
+你已经学会如何指定单次的提交，现在来看看如何指明一定区间的提交。当你有很多分支时，这对管理你的分支十分有用， 你可以用提交区间来解决“这个分支还有哪些提交尚未合并到主分支？”的问题
+
+#### 双点
+
+最常用的指明提交区间语法是双点。 这种语法可以让 Git 选出在一个分支中而不在另一个分支中的提交。例如，你有如下的提交历史 Example history for range selection.
+
+![Example history for range selection.](https://git-scm.com/book/en/v2/images/double-dot.png)
+
+你想要查看 experiment 分支中还有哪些提交尚未被合并入 master 分支。你可以使用 master..experiment 来让 Git 显示这些提交。也就是“在 experiment 分支中而不在 master 分支中的提交”。为了使例子简单明了，我使用了示意图中提交对象的字母来代替真实日志的输出，所以会显示：
+
+```text
+$ git log master..experiment
+D
+C
+```
+
+反过来，如果你想查看在 master 分支中而不在 experiment 分支中的提交，你只要交换分支名即可。experiment..master 会显示在 master 分支中而不在 experiment 分支中的提交：
+
+```text
+$ git log experiment..master
+F
+E
+```
+
+这可以让你保持 experiment 分支跟随最新的进度以及查看你即将合并的内容。另一个常用的场景是查看你即将推送到远端的内容：
+
+```shell
+$ git log origin/master..HEAD
+```
+
+这个命令会输出在你当前分支中而不在远程 origin 中的提交。如果你执行 `git push` 并且你的当前分支正在跟踪 origin/master，由 `git log origin/master..HEAD` 所输出的提交就是会被传输到远端服务器的提交。如果你留空了其中的一边，Git 会默认为 HEAD。例如， `git log origin/master..` 将会输出与之前例子相同的结果 — Git 使用 HEAD 来代替留空的一边
+
+#### 多点
+
+双点语法很好用，但有时候你可能需要两个以上的分支才能确定你所需要的修订，比如查看哪些提交是被包含在某些分支中的一个，但是不在你当前的分支上。Git 允许你在任意引用前加上 ^ 字符或者 `--not` 来指明你不希望提交被包含其中的分支。因此下列三个命令是等价的：
+
+```shell
+$ git log refA..refB
+$ git log ^refA refB
+$ git log refB --not refA
+```
+
+这个语法很好用，因为你可以在查询中指定超过两个的引用，这是双点语法无法实现的。比如，你想查看所有被 refA 或 refB 包含的但是不被 refC 包含的提交，你可以使用以下任意一个命令：
+
+```shell
+$ git log refA refB ^refC
+$ git log refA refB --not refC
+```
+
+这就构成了一个十分强大的修订查询系统，你可以通过它来查看你的分支里包含了哪些东西
+
+#### 三点
+
+最后一种主要的区间选择语法是三点，这个语法可以选择出被两个引用 之一 包含但又不被两者同时包含的提交。再看看之前双点例子中的提交历史。如果你想看 master 或者 experiment 中包含的但不是两者共有的提交，你可以执行：
+
+```text
+$ git log master...experiment
+F
+E
+D
+C
+```
+
+这和通常 log 按日期排序的输出一样，仅仅给出了4个提交的信息
+
+这种情形下，log 命令的一个常用参数是 `--left-right`，它会显示每个提交到底处于哪一侧的分支。这会让输出数据更加清晰
+
+```text
+$ git log --left-right master...experiment
+< F
+< E
+> D
+> C
+```
+
+有了这些工具，你就可以十分方便地查看你 Git 仓库中的提交
+
 ### 交互式暂存
+
+本节中的几个交互式 Git 命令可以帮助你将文件的特定部分组合成提交。当你在修改了大量文件后，希望这些改动能拆分为若干提交而不是混杂在一起成为一个提交时，这几个工具会非常有用。 通过这种方式，可以确保提交是逻辑上独立的变更集，同时也会使其他开发者在与你工作时很容易地审核。如果运行 `git add` 时使用` -i` 或者 `--interactive` 选项，Git 将会进入一个交互式终端模式，显示类似下面的东西：
+
+```text
+$ git add -i
+           staged     unstaged path
+  1:    unchanged        +0/-1 TODO
+  2:    unchanged        +1/-1 index.html
+  3:    unchanged        +5/-1 lib/simplegit.rb
+
+*** Commands ***
+  1: [s]tatus     2: [u]pdate      3: [r]evert     4: [a]dd untracked
+  5: [p]atch      6: [d]iff        7: [q]uit       8: [h]elp
+What now>
+```
+
+可以看到这个命令以和平时非常不同的视图显示了暂存区 — 基本上与 `git status` 是相同的信息，但是更简明扼要一些。它将暂存的修改列在左侧，未暂存的修改列在右侧
+
+在这块区域后是“Commands”命令区域。在这里你可以做一些工作，包括暂存文件、取消暂存文件、暂存文件的一部分、添加未被追踪的文件、显示暂存内容的区别
+
+#### 暂存与取消暂存文件
+
+如果在 What now> 提示符后键入 u 或 2（更新），它会问你想要暂存哪个文件：
+
+```text
+What now> u
+           staged     unstaged path
+  1:    unchanged        +0/-1 TODO
+  2:    unchanged        +1/-1 index.html
+  3:    unchanged        +5/-1 lib/simplegit.rb
+Update>>
+```
+
+要暂存 TODO 和 index.html 文件，可以输入数字：
+
+```text
+Update>> 1,2
+           staged     unstaged path
+* 1:    unchanged        +0/-1 TODO
+* 2:    unchanged        +1/-1 index.html
+  3:    unchanged        +5/-1 lib/simplegit.rb
+Update>>
+```
+
+每个文件前面的 * 意味着选中的文件将会被暂存。如果在 Update>> 提示符后不输入任何东西并直接按回车，Git 将会暂存之前选择的文件：
+
+```text
+Update>>
+updated 2 paths
+
+*** Commands ***
+  1: [s]tatus     2: [u]pdate      3: [r]evert     4: [a]dd untracked
+  5: [p]atch      6: [d]iff        7: [q]uit       8: [h]elp
+What now> s
+           staged     unstaged path
+  1:        +0/-1      nothing TODO
+  2:        +1/-1      nothing index.html
+  3:    unchanged        +5/-1 lib/simplegit.rb
+```
+
+现在可以看到 TODO 与 index.html 文件已经被暂存而 simplegit.rb 文件还未被暂存。如果这时想要取消暂存 TODO 文件，使用 r 或 3（撤消）选项：
+
+```text
+*** Commands ***
+  1: [s]tatus     2: [u]pdate      3: [r]evert     4: [a]dd untracked
+  5: [p]atch      6: [d]iff        7: [q]uit       8: [h]elp
+What now> r
+           staged     unstaged path
+  1:        +0/-1      nothing TODO
+  2:        +1/-1      nothing index.html
+  3:    unchanged        +5/-1 lib/simplegit.rb
+Revert>> 1
+           staged     unstaged path
+* 1:        +0/-1      nothing TODO
+  2:        +1/-1      nothing index.html
+  3:    unchanged        +5/-1 lib/simplegit.rb
+Revert>> [enter]
+reverted one path
+```
+
+再次查看 Git 状态，可以看到已经取消暂存 TODO 文件：
+
+```text
+*** Commands ***
+  1: [s]tatus     2: [u]pdate      3: [r]evert     4: [a]dd untracked
+  5: [p]atch      6: [d]iff        7: [q]uit       8: [h]elp
+What now> s
+           staged     unstaged path
+  1:    unchanged        +0/-1 TODO
+  2:        +1/-1      nothing index.html
+  3:    unchanged        +5/-1 lib/simplegit.rb
+```
+
+如果想要查看已暂存内容的区别，可以使用 d 或 6（区别）命令。它会显示暂存文件的一个列表，可以从中选择想要查看的暂存区别。这跟你在命令行指定 `git diff --cached` 非常相似：
+
+```text
+*** Commands ***
+  1: [s]tatus     2: [u]pdate      3: [r]evert     4: [a]dd untracked
+  5: [p]atch      6: [d]iff        7: [q]uit       8: [h]elp
+What now> d
+           staged     unstaged path
+  1:        +1/-1      nothing index.html
+Review diff>> 1
+diff --git a/index.html b/index.html
+index 4d07108..4335f49 100644
+--- a/index.html
++++ b/index.html
+@@ -16,7 +16,7 @@ Date Finder
+
+ <p id="out">...</p>
+
+-<div id="footer">contact : support@github.com</div>
++<div id="footer">contact : email.support@github.com</div>
+
+ <script type="text/javascript">
+```
+
+通过这些基本命令，可以使用交互式添加模式来轻松地处理暂存区
+
+#### 暂存补丁
+
+Git 也可以暂存文件的特定部分。例如，如果在 simplegit.rb 文件中做了两处修改，但只想要暂存其中的一个而不是另一个，Git 会帮你轻松地完成。在和上一节一样的交互式提示符中，输入 p 或 5（补丁）。Git 会询问你想要部分暂存哪些文件；然后，对已选择文件的每一个部分，它都会一个个地显示文件区别并询问你是否想要暂存它们：
+
+```text
+diff --git a/lib/simplegit.rb b/lib/simplegit.rb
+index dd5ecc4..57399e0 100644
+--- a/lib/simplegit.rb
++++ b/lib/simplegit.rb
+@@ -22,7 +22,7 @@ class SimpleGit
+   end
+
+   def log(treeish = 'master')
+-    command("git log -n 25 #{treeish}")
++    command("git log -n 30 #{treeish}")
+   end
+
+   def blame(path)
+Stage this hunk [y,n,a,d,/,j,J,g,e,?]?
+```
+
+这时有很多选项。输入 ? 显示所有可以使用的命令列表：
+
+```text
+Stage this hunk [y,n,a,d,/,j,J,g,e,?]? ?
+y - stage this hunk
+n - do not stage this hunk
+a - stage this and all the remaining hunks in the file
+d - do not stage this hunk nor any of the remaining hunks in the file
+g - select a hunk to go to
+/ - search for a hunk matching the given regex
+j - leave this hunk undecided, see next undecided hunk
+J - leave this hunk undecided, see next hunk
+k - leave this hunk undecided, see previous undecided hunk
+K - leave this hunk undecided, see previous hunk
+s - split the current hunk into smaller hunks
+e - manually edit the current hunk
+? - print help
+```
+
+通常情况下可以输入 y 或 n 来选择是否要暂存每一个区块，当然，暂存特定文件中的所有部分或为之后的选择跳过一个区块也是非常有用的。如果你只暂存文件的一部分，状态输出可能会像下面这样：
+
+```text
+What now> 1
+           staged     unstaged path
+  1:    unchanged        +0/-1 TODO
+  2:        +1/-1      nothing index.html
+  3:        +1/-1        +4/-0 lib/simplegit.rb
+```
+
+simplegit.rb 文件的状态很有趣。它显示出若干行被暂存与若干行未被暂存。已经部分地暂存了这个文件。在这时，可以退出交互式添加脚本并且运行 `git commit` 来提交部分暂存的文件
+
+也可以不必在交互式添加模式中做部分文件暂存 — 可以在命令行中使用 `git add -p` 或 `git add --patch` 来启动同样的脚本
+
+更进一步地，可以使用 `git reset --patch` 命令的补丁模式来部分重置文件，通过 `git checkout --patch` 命令来部分检出文件与 `git stash save --patch` 命令来部分暂存文件。我们将会在接触这些命令的高级使用方法时了解更多详细信息
 
 ### 贮藏与清理
 
@@ -3183,19 +4151,1165 @@ What now>
 
 ### 重写历史
 
+许多时候，在使用 Git 时，你可能想要修订提交历史。Git 很棒的一点是它允许你在最后时刻做决定。你可以在将暂存区内容提交前决定哪些文件进入提交，可以通过 `git stash` 来决定不与某些内容工作，也可以重写已经发生的提交就像它们以另一种方式发生的一样。这可能涉及改变提交的顺序，改变提交中的信息或修改文件，将提交压缩或是拆分，或完全地移除提交 — 在将你的工作成果与他人共享之前
+
+在满意之前不要推送你的工作：Git 的基本原则之一是，由于克隆中有很多工作是本地的，因此你可以在本地随便重写历史记录。然而一旦推送了你的工作，那就完全是另一回事了，除非你有充分的理由进行更改，否则应该将推送的工作视为最终结果。简而言之，在对它感到满意并准备与他人分享之前，应当避免推送你的工作
+
+#### 修改最后一次提交
+
+修改你最近一次提交可能是所有修改历史提交的操作中最常见的一个。对于你的最近一次提交，你往往想做两件事情：简单地修改提交信息，或者通过添加、移除或修改文件来更改提交实际的内容
+
+如果，你只是想修改最近一次提交的提交信息，那么很简单：
+
+```shell
+$ git commit --amend
+```
+
+上面这条命令会将最后一次的提交信息载入到编辑器中供你修改。当保存并关闭编辑器后，编辑器会将更新后的提交信息写入新提交中，它会成为新的最后一次提交
+
+另一方面，如果你想要修改最后一次提交的实际内容，那么流程很相似：首先作出你想要补上的修改，暂存它们，然后用 `git commit --amend` 以新的改进后的提交来替换掉旧有的最后一次提交
+
+使用这个技巧的时候需要小心，因为修正会改变提交的 SHA-1 校验和。它类似于一个小的变基 — 如果已经推送了最后一次提交就不要修正它
+
+修补后的提交可能需要修补提交信息：当你在修补一次提交时，可以同时修改提交信息和提交内容。如果你修补了提交的内容，那么几乎肯定要更新提交消息以反映修改后的内容。另一方面，如果你的修补是琐碎的（如修改了一个笔误或添加了一个忘记暂存的文件），那么之前的提交信息不必修改，你只需作出更改，暂存它们，然后通过以下命令避免不必要的编辑器环节即可：
+
+```shell
+$ git commit --amend --no-edit
+```
+
+#### 修改多个提交信息
+
+为了修改在提交历史中较远的提交，必须使用更复杂的工具。Git 没有一个改变历史工具，但是可以使用变基工具来变基一系列提交，基于它们原来的 HEAD 而不是将其移动到另一个新的上面。通过交互式变基工具，可以在任何想要修改的提交后停止，然后修改信息、添加文件或做任何想做的事情。可以通过给 `git rebase` 增加 `-i` 选项来交互式地运行变基。必须指定想要重写多久远的历史，这可以通过告诉命令将要变基到的提交来做到
+
+例如，如果想要修改最近三次提交信息，或者那组提交中的任意一个提交信息，将想要修改的最近一次提交的父提交作为参数传递给 `git rebase -i` 命令，即 `HEAD~2^` 或 `HEAD~3`。记住 `~3` 可能比较容易，因为你正尝试修改最后三次提交；但是注意实际上指定了以前的四次提交，即想要修改提交的父提交：
+
+```shell
+$ git rebase -i HEAD~3
+```
+
+再次记住这是一个变基命令 — 在 `HEAD~3..HEAD` 范围内的每一个修改了提交信息的提交及其所有后裔都会被重写。不要涉及任何已经推送到中央服务器的提交 — 这样做会产生一次变更的两个版本，因而使他人困惑
+
+运行这个命令会在文本编辑器上给你一个提交的列表，看起来像下面这样：
+
+```text
+pick f7f3f6d changed my name a bit
+pick 310154e updated README formatting and added blame
+pick a5f4a0d added cat-file
+
+# Rebase 710f0f8..a5f4a0d onto 710f0f8
+#
+# Commands:
+# p, pick <commit> = use commit
+# r, reword <commit> = use commit, but edit the commit message
+# e, edit <commit> = use commit, but stop for amending
+# s, squash <commit> = use commit, but meld into previous commit
+# f, fixup <commit> = like "squash", but discard this commit's log message
+# x, exec <command> = run command (the rest of the line) using shell
+# b, break = stop here (continue rebase later with 'git rebase --continue')
+# d, drop <commit> = remove commit
+# l, label <label> = label current HEAD with a name
+# t, reset <label> = reset HEAD to a label
+# m, merge [-C <commit> | -c <commit>] <label> [# <oneline>]
+# .       create a merge commit using the original merge commit's
+# .       message (or the oneline, if no original merge commit was
+# .       specified). Use -c <commit> to reword the commit message.
+#
+# These lines can be re-ordered; they are executed from top to bottom.
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+#
+# However, if you remove everything, the rebase will be aborted.
+#
+# Note that empty commits are commented out
+```
+
+需要重点注意的是相对于正常使用的 log 命令，这些提交显示的顺序是相反的。 运行一次 'log' 命令，会看到类似这样的东西：
+
+```text
+$ git log --pretty=format:"%h %s" HEAD~3..HEAD
+a5f4a0d added cat-file
+310154e updated README formatting and added blame
+f7f3f6d changed my name a bit
+```
+
+注意其中的反序显示。交互式变基给你一个它将会运行的脚本。它将会从你在命令行中指定的提交（HEAD~3）开始，从上到下的依次重演每一个提交引入的修改。它将最旧的而不是最新的列在上面，因为那会是第一个将要重演的
+
+你需要修改脚本来让它停留在你想修改的变更上。要达到这个目的，你只要将你想修改的每一次提交前面的 `pick' 改为 `edit'。例如，只想修改第三次提交信息，可以像下面这样修改文件：
+
+```text
+edit f7f3f6d changed my name a bit
+pick 310154e updated README formatting and added blame
+pick a5f4a0d added cat-file
+```
+
+当保存并退出编辑器时，Git 将你带回到列表中的最后一次提交，把你送回命令行并提示以下信息：
+
+```text
+$ git rebase -i HEAD~3
+Stopped at f7f3f6d... changed my name a bit
+You can amend the commit now, with
+
+       git commit --amend
+
+Once you're satisfied with your changes, run
+
+       git rebase --continue
+```
+
+这些指令准确地告诉你该做什么。 输入
+
+```shell
+$ git commit --amend
+```
+
+修改提交信息，然后退出编辑器。 然后，运行
+
+```shell
+$ git rebase --continue
+```
+
+这个命令将会自动地应用另外两个提交，然后就完成了。如果需要将不止一处的 pick 改为 edit，需要在每一个修改为 edit 的提交上重复这些步骤。每一次，Git 将会停止，让你修正提交，然后继续直到完成
+
+#### 重新排序提交
+
+也可以使用交互式变基来重新排序或完全移除提交。如果想要移除 “added cat-file” 提交然后修改另外两个提交引入的顺序，可以将变基脚本从这样：
+
+```text
+pick f7f3f6d changed my name a bit
+pick 310154e updated README formatting and added blame
+pick a5f4a0d added cat-file
+```
+
+改为这样：
+
+```text
+pick 310154e updated README formatting and added blame
+pick f7f3f6d changed my name a bit
+```
+
+当保存并退出编辑器时，Git 将你的分支带回这些提交的父提交，应用 310154e 然后应用 f7f3f6d，最后停止。事实修改了那些提交的顺序并完全地移除了 “added cat-file” 提交
+
+#### 压缩提交
+
+通过交互式变基工具，也可以将一连串提交压缩成一个单独的提交。在变基信息中脚本给出了有用的指令：
+
+```text
+#
+# Commands:
+# p, pick <commit> = use commit
+# r, reword <commit> = use commit, but edit the commit message
+# e, edit <commit> = use commit, but stop for amending
+# s, squash <commit> = use commit, but meld into previous commit
+# f, fixup <commit> = like "squash", but discard this commit's log message
+# x, exec <command> = run command (the rest of the line) using shell
+# b, break = stop here (continue rebase later with 'git rebase --continue')
+# d, drop <commit> = remove commit
+# l, label <label> = label current HEAD with a name
+# t, reset <label> = reset HEAD to a label
+# m, merge [-C <commit> | -c <commit>] <label> [# <oneline>]
+# .       create a merge commit using the original merge commit's
+# .       message (or the oneline, if no original merge commit was
+# .       specified). Use -c <commit> to reword the commit message.
+#
+# These lines can be re-ordered; they are executed from top to bottom.
+#
+# If you remove a line here THAT COMMIT WILL BE LOST.
+#
+# However, if you remove everything, the rebase will be aborted.
+#
+# Note that empty commits are commented out
+```
+
+如果，指定 “squash” 而不是 “pick” 或 “edit”，Git 将应用两者的修改并合并提交信息在一起。所以，如果想要这三次提交变为一个提交，可以这样修改脚本：
+
+```text
+pick f7f3f6d changed my name a bit
+squash 310154e updated README formatting and added blame
+squash a5f4a0d added cat-file
+```
+
+当保存并退出编辑器时，Git 应用所有的三次修改然后将你放到编辑器中来合并三次提交信息：
+
+```text
+# This is a combination of 3 commits.
+# The first commit's message is:
+changed my name a bit
+
+# This is the 2nd commit message:
+
+updated README formatting and added blame
+
+# This is the 3rd commit message:
+
+added cat-file
+```
+
+当你保存之后，你就拥有了一个包含前三次提交的全部变更的提交
+
+#### 拆分提交
+
+拆分一个提交会撤消这个提交，然后多次地部分地暂存与提交直到完成你所需次数的提交。例如，假设想要拆分三次提交的中间那次提交。想要将它拆分为两次提交：第一个 “updated README formatting”，第二个 “added blame” 来代替原来的 “updated README formatting and added blame”。可以通过修改 `rebase -i` 的脚本来做到这点，将要拆分的提交的指令修改为 “edit”：
+
+```text
+pick f7f3f6d changed my name a bit
+edit 310154e updated README formatting and added blame
+pick a5f4a0d added cat-file
+```
+
+然后，当脚本带你进入到命令行时，重置那个提交，拿到被重置的修改，从中创建几次提交。当保存并退出编辑器时，Git 带你到列表中第一个提交的父提交，应用第一个提交（f7f3f6d），应用第二个提交（310154e），然后让你进入命令行。那里，可以通过 `git reset HEAD^` 做一次针对那个提交的混合重置，实际上将会撤消那次提交并将修改的文件取消暂存。现在可以暂存并提交文件直到有几个提交，然后当完成时运行 `git rebase --continue`：
+
+```shell
+$ git reset HEAD^
+$ git add README
+$ git commit -m 'updated README formatting'
+$ git add lib/simplegit.rb
+$ git commit -m 'added blame'
+$ git rebase --continue
+```
+
+Git 在脚本中应用最后一次提交（a5f4a0d），历史记录看起来像这样：
+
+```text
+$ git log -4 --pretty=format:"%h %s"
+1c002dd added cat-file
+9b29157 added blame
+35cfb2b updated README formatting
+f3cc40e changed my name a bit
+```
+
+再次强调，这些改动了所有在列表中的提交的 SHA-1 校验和，所以要确保列表中的提交还没有推送到共享仓库中
+
+#### 核武器级选项：filter-branch
+
+有另一个历史改写的选项，如果想要通过脚本的方式改写大量提交的话可以使用它 — 例如，全局修改你的邮箱地址或从每一个提交中移除一个文件。这个命令是 `filter-branch`，它可以改写历史中大量的提交，除非你的项目还没有公开并且其他人没有基于要改写的工作的提交做的工作，否则你不应当使用它。然而，它可以很有用。你将会学习到几个常用的用途，这样就得到了它适合使用地方的想法
+
+`git filter-branch` 有很多陷阱，不再推荐使用它来重写历史。请考虑使用 `git-filter-repo`，它是一个 Python 脚本，相比大多数使用 `filter-branch` 的应用来说，它做得要更好。它的文档和源码可访问 [https://github.com/newren/git-filter-repo](https://github.com/newren/git-filter-repo) 获取
+
+#### 从每一个提交中移除一个文件
+
+这经常发生。 有人粗心地通过 git add . 提交了一个巨大的二进制文件，你想要从所有地方删除。可能偶然地提交了一个包括一个密码的文件，然而你想要开源项目。`filter-branch` 是一个可能会用来擦洗整个提交历史的工具。 为了从整个提交历史中移除一个叫做 passwords.txt 的文件，可以使用 `--tree-filter` 选项给 `filter-branch`：
+
+```text
+$ git filter-branch --tree-filter 'rm -f passwords.txt' HEAD
+Rewrite 6b9b3cf04e7c5686a9cb838c3f36a8cb6a0fc2bd (21/21)
+Ref 'refs/heads/master' was rewritten
+```
+
+`--tree-filter` 选项在检出项目的每一个提交后运行指定的命令然后重新提交结果。在本例中，你从每一个快照中移除了一个叫作 passwords.txt 的文件，无论它是否存在。如果想要移除所有偶然提交的编辑器备份文件，可以运行类似 `git filter-branch --tree-filter 'rm -f *~' HEAD` 的命令
+
+最后将可以看到 Git 重写树与提交然后移动分支指针。通常一个好的想法是在一个测试分支中做这件事，然后当你决定最终结果是真正想要的，可以硬重置 master 分支。为了让 `filter-branch` 在所有分支上运行，可以给命令传递 `--all` 选项
+
+#### 使一个子目录做为新的根目录
+
+假设已经从另一个源代码控制系统中导入，并且有几个没意义的子目录（trunk、tags 等等）。如果想要让 trunk 子目录作为每一个提交的新的项目根目录，`filter-branch` 也可以帮助你那么做：
+
+```text
+$ git filter-branch --subdirectory-filter trunk HEAD
+Rewrite 856f0bf61e41a27326cdae8f09fe708d679f596f (12/12)
+Ref 'refs/heads/master' was rewritten
+```
+
+现在新项目根目录是 trunk 子目录了。Git 会自动移除所有不影响子目录的提交
+
+#### 全局修改邮箱地址
+
+另一个常见的情形是在你开始工作时忘记运行 `git config` 来设置你的名字与邮箱地址，或者你想要开源一个项目并且修改所有你的工作邮箱地址为你的个人邮箱地址。任何情形下，你也可以通过 `filter-branch` 来一次性修改多个提交中的邮箱地址。需要小心的是只修改你自己的邮箱地址，所以你使用 `--commit-filter`：
+
+```text
+$ git filter-branch --commit-filter '
+        if [ "$GIT_AUTHOR_EMAIL" = "schacon@localhost" ];
+        then
+                GIT_AUTHOR_NAME="Scott Chacon";
+                GIT_AUTHOR_EMAIL="schacon@example.com";
+                git commit-tree "$@";
+        else
+                git commit-tree "$@";
+        fi' HEAD
+```
+
+这会遍历并重写每一个提交来包含你的新邮箱地址。因为提交包含了它们父提交的 SHA-1 校验和，这个命令会修改你的历史中的每一个提交的 SHA-1 校验和，而不仅仅只是那些匹配邮箱地址的提交
+
 ### 重置揭密
 
+在继续了解更专业的工具前，我们先探讨一下 Git 的 `reset` 和 `checkout` 命令。在初遇的 Git 命令中，这两个是最让人困惑的。它们能做很多事情，所以看起来我们很难真正地理解并恰当地运用它们。针对这一点，我们先来做一个简单的比喻
+
+#### 三棵树
+
+理解 `reset` 和 `checkout` 的最简方法，就是以 Git 的思维框架（将其作为内容管理器）来管理三棵不同的树。“树” 在我们这里的实际意思是 “文件的集合”，而不是指特定的数据结构。（在某些情况下索引看起来并不像一棵树，不过我们现在的目的是用简单的方式思考它）
+
+Git 作为一个系统，是以它的一般操作来管理并操纵这三棵树的：
+
+|         树         |        	用途         |
+|:-----------------:|:------------------:|
+|       HEAD        | 上一次提交的快照，下一次提交的父结点 |
+|       Index       |    预期的下一次提交的快照     |
+| Working Directory |         沙盒         |
+
+#### HEAD
+
+HEAD 是当前分支引用的指针，它总是指向该分支上的最后一次提交。这表示 HEAD 将是下一次提交的父结点。通常，理解 HEAD 的最简方式，就是将它看做该分支上的最后一次提交的快照
+
+其实，查看快照的样子很容易。下例就显示了 HEAD 快照实际的目录列表，以及其中每个文件的 SHA-1 校验和：
+
+```text
+$ git cat-file -p HEAD
+tree cfda3bf379e4f8dba8717dee55aab78aef7f4daf
+author Scott Chacon  1301511835 -0700
+committer Scott Chacon  1301511835 -0700
+
+initial commit
+
+$ git ls-tree -r HEAD
+100644 blob a906cb2a4a904a152...   README
+100644 blob 8f94139338f9404f2...   Rakefile
+040000 tree 99f1a6d12cb4b6f19...   lib
+```
+
+Git 的 `cat-file` 和 `ls-tree` 是底层命令，它们一般用于底层工作，在日常工作中并不使用。不过它们能帮助我们了解到底发生了什么
+
+#### 索引
+
+索引是你的 预期的下一次提交。我们也会将这个概念引用为 Git 的“暂存区”，这就是当你运行 `git commit` 时 Git 看起来的样子
+
+Git 将上一次检出到工作目录中的所有文件填充到索引区，它们看起来就像最初被检出时的样子。之后你会将其中一些文件替换为新版本，接着通过 `git commit` 将它们转换为树来用作新的提交
+
+```text
+$ git ls-files -s
+100644 a906cb2a4a904a152e80877d4088654daad0c859 0	README
+100644 8f94139338f9404f26296befa88755fc2598c289 0	Rakefile
+100644 47c6340d6459e05787f644c2447d2595f5d3a54b 0	lib/simplegit.rb
+```
+
+再说一次，我们在这里又用到了 `git ls-files` 这个幕后的命令，它会显示出索引当前的样子
+
+确切来说，索引在技术上并非树结构，它其实是以扁平的清单实现的。不过对我们而言，把它当做树就够了
+
+#### 工作目录
+
+最后，你就有了自己的 工作目录（通常也叫 工作区）。另外两棵树以一种高效但并不直观的方式，将它们的内容存储在 .git 文件夹中。工作目录会将它们解包为实际的文件以便编辑。你可以把工作目录当做 沙盒。在你将修改提交到暂存区并记录到历史之前，可以随意更改
+
+```text
+$ tree
+.
+├── README
+├── Rakefile
+└── lib
+    └── simplegit.rb
+
+1 directory, 3 files
+```
+
+#### 工作流程
+
+经典的 Git 工作流程是通过操纵这三个区域来以更加连续的状态记录项目快照的
+
+![](https://git-scm.com/book/en/v2/images/reset-workflow.png)
+
+让我们来可视化这个过程：假设我们进入到一个新目录，其中有一个文件。我们称其为该文件的 v1 版本，将它标记为蓝色。现在运行 `git init`，这会创建一个 Git 仓库，其中的 HEAD 引用指向未创建的 master 分支
+
+![](https://git-scm.com/book/en/v2/images/reset-ex1.png)
+
+此时，只有工作目录有内容
+
+现在我们想要提交这个文件，所以用 `git add` 来获取工作目录中的内容，并将其复制到索引中
+
+![](https://git-scm.com/book/en/v2/images/reset-ex2.png)
+
+接着运行 `git commit`，它会取得索引中的内容并将它保存为一个永久的快照，然后创建一个指向该快照的提交对象，最后更新 master 来指向本次提交
+
+![](https://git-scm.com/book/en/v2/images/reset-ex3.png)
+
+此时如果我们运行 `git status`，会发现没有任何改动，因为现在三棵树完全相同
+
+现在我们想要对文件进行修改然后提交它。我们将会经历同样的过程；首先在工作目录中修改文件。我们称其为该文件的 v2 版本，并将它标记为红色
+
+![](https://git-scm.com/book/en/v2/images/reset-ex4.png)
+
+如果现在运行 `git status`，我们会看到文件显示在 “Changes not staged for commit” 下面并被标记为红色，因为该条目在索引与工作目录之间存在不同。接着我们运行 `git add` 来将它暂存到索引中
+
+![](https://git-scm.com/book/en/v2/images/reset-ex5.png)
+
+此时，由于索引和 HEAD 不同，若运行 `git status` 的话就会看到 “Changes to be committed” 下的该文件变为绿色 — 也就是说，现在预期的下一次提交与上一次提交不同。最后，我们运行 `git commit` 来完成提交
+
+![](https://git-scm.com/book/en/v2/images/reset-ex6.png)
+
+现在运行 `git status` 会没有输出，因为三棵树又变得相同了
+
+切换分支或克隆的过程也类似。当检出一个分支时，它会修改 HEAD 指向新的分支引用，将索引填充为该次提交的快照，然后将索引的内容复制到工作目录中
+
+#### 重置的作用
+
+在以下情景中观察 `reset` 命令会更有意义
+
+为了演示这些例子，假设我们再次修改了 file.txt 文件并第三次提交它。现在的历史看起来是这样的：
+
+![](https://git-scm.com/book/en/v2/images/reset-start.png)
+
+让我们跟着 `reset` 看看它都做了什么。它以一种简单可预见的方式直接操纵这三棵树。它做了三个基本操作
+
+**第 1 步：移动 HEAD**
+
+`reset` 做的第一件事是移动 HEAD 的指向。这与改变 HEAD 自身不同（`checkout` 所做的）；`reset` 移动 HEAD 指向的分支。这意味着如果 HEAD 设置为 master 分支（例如，你正在 master 分支上），运行 `git reset 9e5e6a4` 将会使 master 指向 9e5e6a4
+
+![](https://git-scm.com/book/en/v2/images/reset-soft.png)
+
+无论你调用了何种形式的带有一个提交的 `reset`，它首先都会尝试这样做。使用 `reset --soft`，它将仅仅停在那儿
+
+现在看一眼上图，理解一下发生的事情：它本质上是撤销了上一次 `git commit` 命令。当你在运行 `git commit` 时，Git 会创建一个新的提交，并移动 HEAD 所指向的分支来使其指向该提交。当你将它 `reset` 回 `HEAD~`（HEAD 的父结点）时，其实就是把该分支移动回原来的位置，而不会改变索引和工作目录。现在你可以更新索引并再次运行 `git commit` 来完成 `git commit --amend` 所要做的事情了（见 [修改最后一次提交](#修改最后一次提交)）
+
+**第 2 步：更新索引（--mixed）**
+
+注意，如果你现在运行 `git status` 的话，就会看到新的 HEAD 和以绿色标出的它和索引之间的区别
+
+接下来，`reset` 会用 HEAD 指向的当前快照的内容来更新索引
+
+![](https://git-scm.com/book/en/v2/images/reset-mixed.png)
+
+如果指定 `--mixed` 选项，`reset` 将会在这时停止。这也是默认行为，所以如果没有指定任何选项（在本例中只是 `git reset HEAD~`），这就是命令将会停止的地方
+
+现在再看一眼上图，理解一下发生的事情：它依然会撤销一上次提交，但还会取消暂存所有的东西。于是，我们回滚到了所有 `git add` 和 `git commit` 的命令执行之前
+
+**第 3 步：更新工作目录（--hard）**
+
+`reset` 要做的的第三件事情就是让工作目录看起来像索引。如果使用 `--hard` 选项，它将会继续这一步
+
+![](https://git-scm.com/book/en/v2/images/reset-hard.png)
+
+现在让我们回想一下刚才发生的事情。你撤销了最后的提交、`git add` 和 `git commit` 命令以及工作目录中的所有工作
+
+必须注意，`--hard` 标记是 `reset` 命令唯一的危险用法，它也是 Git 会真正地销毁数据的仅有的几个操作之一。其他任何形式的 `reset` 调用都可以轻松撤消，但是 `--hard` 选项不能，因为它强制覆盖了工作目录中的文件。在这种特殊情况下，我们的 Git 数据库中的一个提交内还留有该文件的 v3 版本，我们可以通过 `reflog` 来找回它。但是若该文件还未提交，Git 仍会覆盖它从而导致无法恢复
+
+`reset` 命令会以特定的顺序重写这三棵树，在你指定以下选项时停止：
+
+1. 移动 HEAD 分支的指向（若指定了 --soft，则到此停止）
+
+2. 使索引看起来像 HEAD（若未指定 --hard，则到此停止）
+
+3. 使工作目录看起来像索引
+
+#### 通过路径来重置
+
+前面讲述了 `reset` 基本形式的行为，不过你还可以给它提供一个作用路径。若指定了一个路径，`reset` 将会跳过第 1 步，并且将它的作用范围限定为指定的文件或文件集合。这样做自然有它的道理，因为 HEAD 只是一个指针，你无法让它同时指向两个提交中各自的一部分。不过索引和工作目录 可以部分更新，所以重置会继续进行第 2、3 步
+
+现在，假如我们运行 `git reset file.txt` （这其实是 `git reset --mixed HEAD file.txt` 的简写形式，因为你既没有指定一个提交的 SHA-1 或分支，也没有指定 `--soft` 或 `--hard`），它会：
+
+1. 移动 HEAD 分支的指向 （已跳过）
+
+2. 让索引看起来像 HEAD （到此处停止）
+
+所以它本质上只是将 file.txt 从 HEAD 复制到索引中
+
+![](https://git-scm.com/book/en/v2/images/reset-path1.png)
+
+它还有取消暂存文件的实际效果。如果我们查看该命令的示意图，然后再想想 `git add` 所做的事，就会发现它们正好相反
+
+![](https://git-scm.com/book/en/v2/images/reset-path2.png)
+
+这就是为什么 `git status` 命令的输出会建议运行此命令来取消暂存一个文件。（查看 [取消暂存的文件](#取消暂存的文件) 来了解更多）
+
+我们可以不让 Git 从 HEAD 拉取数据，而是通过具体指定一个提交来拉取该文件的对应版本。我们只需运行类似于 `git reset eb43bf file.txt` 的命令即可
+
+![](https://git-scm.com/book/en/v2/images/reset-path3.png)
+
+它其实做了同样的事情，也就是把工作目录中的文件恢复到 v1 版本，运行 `git add` 添加它，然后再将它恢复到 v3 版本（只是不用真的过一遍这些步骤）。如果我们现在运行 `git commit`，它就会记录一条“将该文件恢复到 v1 版本”的更改，尽管我们并未在工作目录中真正地再次拥有它
+
+还有一点同 `git add` 一样，就是 `reset` 命令也可以接受一个 `--patch` 选项来一块一块地取消暂存的内容。这样你就可以根据选择来取消暂存或恢复内容了
+
+#### 压缩
+
+我们来看看如何利用这种新的功能来做一些有趣的事情 — 压缩提交。
+
+假设你的一系列提交信息中有 “oops.”“WIP” 和 “forgot this file”，聪明的你就能使用 `reset` 来轻松快速地将它们压缩成单个提交，也显出你的聪明。（[压缩提交](#压缩提交) 展示了另一种方式，不过在本例中用 `reset` 更简单）
+
+假设你有一个项目，第一次提交中有一个文件，第二次提交增加了一个新的文件并修改了第一个文件，第三次提交再次修改了第一个文件。由于第二次提交是一个未完成的工作，因此你想要压缩它
+
+![](https://git-scm.com/book/en/v2/images/reset-squash-r1.png)
+
+那么可以运行 `git reset --soft HEAD~2` 来将 HEAD 分支移动到一个旧一点的提交上（即你想要保留的最近的提交）：
+
+![](https://git-scm.com/book/en/v2/images/reset-squash-r2.png)
+
+然后只需再次运行 `git commit`：
+
+![](https://git-scm.com/book/en/v2/images/reset-squash-r3.png)
+
+现在你可以查看可到达的历史，即将会推送的历史，现在看起来有个 v1 版 file-a.txt 的提交，接着第二个提交将 file-a.txt 修改成了 v3 版并增加了 file-b.txt。包含 v2 版本的文件已经不在历史中了
+
+#### 检出
+
+最后，你大概还想知道 `checkout` 和 `reset` 之间的区别。和 `reset` 一样，`checkout` 也操纵三棵树，不过它有一点不同，这取决于你是否传给该命令一个文件路径
+
+#### 不带路径
+
+运行 `git checkout [branch]` 与运行 `git reset --hard [branch]` 非常相似，它会更新所有三棵树使其看起来像 `[branch]`，不过有两点重要的区别
+
+首先不同于 `reset --hard`，`checkout` 对工作目录是安全的，它会通过检查来确保不会将已更改的文件弄丢。其实它还更聪明一些。它会在工作目录中先试着简单合并一下，这样所有 还未修改过的 文件都会被更新。而 `reset --hard` 则会不做检查就全面地替换所有东西
+
+第二个重要的区别是 checkout 如何更新 HEAD。 reset 会移动 HEAD 分支的指向，而 checkout 只会移动 HEAD 自身来指向另一个分支
+
+例如，假设我们有 master 和 develop 分支，它们分别指向不同的提交；我们现在在 develop 上（所以 HEAD 指向它）。如果我们运行 `git reset master`，那么 develop 自身现在会和 master 指向同一个提交。而如果我们运行 `git checkout master` 的话，develop 不会移动，HEAD 自身会移动。现在 HEAD 将会指向 master。
+
+所以，虽然在这两种情况下我们都移动 HEAD 使其指向了提交 A，但 做法 是非常不同的。`reset` 会移动 HEAD 分支的指向，而 `checkout` 则移动 HEAD 自身
+
+![](https://git-scm.com/book/en/v2/images/reset-checkout.png)
+
+#### 带路径
+
+运行 `checkout` 的另一种方式就是指定一个文件路径，这会像 `reset` 一样不会移动 HEAD。它就像 `git reset [branch] file` 那样用该次提交中的那个文件来更新索引，但是它也会覆盖工作目录中对应的文件。它就像是 `git reset --hard [branch] file`（如果 reset 允许你这样运行的话），这样对工作目录并不安全，它也不会移动 HEAD
+
+此外，同 `git reset` 和 `git add` 一样，`checkout` 也接受一个 `--patch` 选项，允许你根据选择一块一块地恢复文件内容
+
+#### 总结
+
+希望你现在熟悉并理解了 `reset` 命令，不过关于它和 `checkout` 之间的区别，你可能还是会有点困惑，毕竟不太可能记住不同调用的所有规则
+
+下面的速查表列出了命令对树的影响。“HEAD” 一列中的 “REF” 表示该命令移动了 HEAD 指向的分支引用，而 “HEAD” 则表示只移动了 HEAD 自身。特别注意 'WD Safe?' 一列 — 如果它标记为 NO，那么运行该命令之前请考虑一下
+
+|                             | 	HEAD | Index | Workdir | WD Safe? |
+|:---------------------------:|:-----:|:-----:|:-------:|:--------:|
+|        Commit Level         |       |       |         |          |
+|   `reset --soft [commit]`   |  REF  |  NO   |   NO    |   YES    |
+|      `reset [commit]`       |  REF  |  YES  |   NO    |   YES    |
+|   `reset --hard [commit]`   |  REF  |  YES  |   YES   |    NO    |
+|     `checkout <commit>`     | HEAD  |  YES  |   YES   |   YES    |
+|         File Level          |       |       |         |          |
+|  `reset [commit] <paths>`   |  NO   |  YES  |   NO    |   YES    |
+| `checkout [commit] <paths>` |  NO   |  YES  |   YES   |    NO    |
+
 ### 凭证存储
+
+如果你使用的是 SSH 方式连接远端，并且设置了一个没有口令的密钥，这样就可以在不输入用户名和密码的情况下安全地传输数据。然而，这对 HTTP 协议来说是不可能的 — 每一个连接都是需要用户名和密码的。这在使用双重认证的情况下会更麻烦，因为你需要输入一个随机生成并且毫无规律的 token 作为密码
+
+幸运的是，Git 拥有一个凭证系统来处理这个事情。下面有一些 Git 的选项：
+
+- 默认所有都不缓存。 每一次连接都会询问你的用户名和密码
+
+- “cache” 模式会将凭证存放在内存中一段时间。密码永远不会被存储在磁盘中，并且在15分钟后从内存中清除
+
+- “store” 模式会将凭证用明文的形式存放在磁盘中，并且永不过期。这意味着除非你修改了你在 Git 服务器上的密码，否则你永远不需要再次输入你的凭证信息。这种方式的缺点是你的密码是用明文的方式存放在你的 home 目录下
+
+- 如果你使用的是 Mac，Git 还有一种 “osxkeychain” 模式，它会将凭证缓存到你系统用户的钥匙串中。这种方式将凭证存放在磁盘中，并且永不过期，但是是被加密的，这种加密方式与存放 HTTPS 凭证以及 Safari 的自动填写是相同的
+
+- 如果你使用的是 Windows，你可以安装一个叫做 “Git Credential Manager for Windows” 的辅助工具。这和上面说的 “osxkeychain” 十分类似，但是是使用 Windows Credential Store 来控制敏感信息。可以在 [https://github.com/Microsoft/Git-Credential-Manager-for-Windows](https://github.com/Microsoft/Git-Credential-Manager-for-Windows) 下载
+
+你可以设置 Git 的配置来选择上述的一种方式
+
+```shell
+$ git config --global credential.helper cache
+```
+
+部分辅助工具有一些选项。“store” 模式可以接受一个 `--file <path>` 参数，可以自定义存放密码的文件路径（默认是 `~/.git-credentials` ）。“cache” 模式有 `--timeout <seconds>` 参数，可以设置后台进程的存活时间（默认是 “900”，也就是 15 分钟）。下面是一个配置 “store” 模式自定义路径的例子：
+
+```shell
+$ git config --global credential.helper 'store --file ~/.my-credentials'
+```
+
+Git 甚至允许你配置多个辅助工具。当查找特定服务器的凭证时，Git 会按顺序查询，并且在找到第一个回答时停止查询。当保存凭证时，Git 会将用户名和密码发送给所有配置列表中的辅助工具，它们会按自己的方式处理用户名和密码。如果你在闪存上有一个凭证文件，但又希望在该闪存被拔出的情况下使用内存缓存来保存用户名密码，.gitconfig 配置文件如下：
+
+```text
+[credential]
+    helper = store --file /mnt/thumbdrive/.git-credentials
+    helper = cache --timeout 30000
+```
+
+#### 底层实现
+
+这些是如何实现的呢？ Git 凭证辅助工具系统的命令是 `git credential`，这个命令接收一个参数，并通过标准输入获取更多的参数
+
+举一个例子更容易理解。我们假设已经配置好一个凭证辅助工具，这个辅助工具保存了 mygithost 的凭证信息。下面是一个使用 “fill” 命令的会话，当 Git 尝试寻找一个服务器的凭证时就会被调用
+
+```text
+$ git credential fill (1)
+protocol=https (2)
+host=mygithost
+(3)
+protocol=https (4)
+host=mygithost
+username=bob
+password=s3cre7
+$ git credential fill (5)
+protocol=https
+host=unknownhost
+
+Username for 'https://unknownhost': bob
+Password for 'https://bob@unknownhost':
+protocol=https
+host=unknownhost
+username=bob
+password=s3cre7
+```
+
+1. 这是开始交互的命令
+
+2. Git-credential 接下来会等待标准输入。我们提供我们所知道的信息：协议和主机名
+
+3. 一个空行代表输入已经完成，凭证系统应该输出它所知道的信息
+
+4. 接下来由 Git-credential 接管，并且将找到的信息打印到标准输出
+
+5. 如果没有找到对应的凭证，Git 会询问用户的用户名和密码，我们将这些信息输入到在标准输出的地方（这个例子中是同一个控制台）
+
+凭证系统实际调用的程序和 Git 本身是分开的；具体是哪一个以及如何调用与 credential.helper 配置的值有关。这个配置有多种格式：
+
+|                 配置值                 |                 行为                 |
+|:-----------------------------------:|:----------------------------------:|
+|                 foo                 |       执行 git-credential-foo        |
+|          foo -a --opt=bcd           | 执行 git-credential-foo -a --opt=bcd |
+|       /absolute/path/foo -xyz       |     执行 /absolute/path/foo -xyz     |
+| !f() { echo "password=s3cre7"; }; f |         ! 后面的代码会在 shell 执行         |
+
+上面描述的辅助工具可以被称做 `git-credential-cache`、`git-credential-store` 之类，我们可以配置它们来接受命令行参数。通常的格式是 `git-credential-foo [args] <action>` 标准输入/输出协议和 git-credential 一样，但它们使用的是一套稍微不太一样的行为：
+
+- get 是请求输入一对用户名和密码
+
+- store 是请求保存一个凭证到辅助工具的内存
+
+- erase 会将给定的证书从辅助工具内存中清除
+
+对于 store 和 erase 两个行为是不需要返回数据的（Git 也会忽略掉）。然而对于 get，Git 对辅助工具的返回信息十分感兴趣。如果辅助工具并不知道任何有用的信息，它就会直接退出而没有任何输出，但如果知道的话，它就会在已存储信息的基础上扩充所提供的信息。它的输出可看做一系列赋值语句，提供的任何内容都会取代 Git 已知的内容
+
+如果辅助工具没有任何有用的信息，它可以直接退出而不需要输出任何东西，但如果它有这些信息，它在提供的信息后面增加它所拥有的信息。这些输出会被视为一系列的赋值语句；每一个提供的数据都会将 Git 已有的数据替换掉
+
+这有一个和上面一样的例子，但是跳过了 `git-credential` 这一步，直接到 `git-credential-store`:
+
+```text
+$ git credential-store --file ~/git.store store (1)
+protocol=https
+host=mygithost
+username=bob
+password=s3cre7
+$ git credential-store --file ~/git.store get (2)
+protocol=https
+host=mygithost
+
+username=bob (3)
+password=s3cre7
+```
+
+1. 我们告诉 `git-credential-store` 去保存凭证：当访问 [https://mygithost](https://mygithost) 时使用用户名 “bob”，密码是 “s3cre7”
+
+2. 现在我们取出这个凭证。我们提供连接这部分的信息 [https://mygithost](https://mygithost) 以及一个空行
+
+3. `git-credential-store` 输出我们之前保存的用户名和密码
+
+~/git.store 文件的内容类似：
+
+```text
+https://bob:s3cre7@mygithost
+```
+
+仅仅是一系列包含凭证信息 URL 组成的行。`osxkeychain` 和 `wincred` 辅助工具使用它们后端存储的原生格式，而 cache 使用它的内存格式（其他进程无法读取）
+
+#### 自定义凭证缓存
+
+已经知道 `git-credential-store` 之类的是和 Git 是相互独立的程序，就不难理解 Git 凭证辅助工具可以是任意程序。虽然 Git 提供的辅助工具覆盖了大多数常见的使用场景，但并不能满足所有情况。比如，假设你的整个团队共享一些凭证，也许是在部署时使用。 这些凭证是保存在一个共享目录里，由于这些凭证经常变更，所以你不想把它们复制到你自己的凭证仓库中。现有的辅助工具无法满足这种情况；来看看我们如何自己实现一个。这个程序应该拥有几个核心功能：
+
+1. 我们唯一需要关注的行为是 `get` `store` 和 `erase` 是写操作，所以当接受到这两个请求时我们直接退出即可
+
+2. 共享的凭证文件格式和 `git-credential-store` 使用的格式相同
+
+3. 凭证文件的路径一般是固定的，但我们应该允许用户传入一个自定义路径以防万一
+
+我们再一次使用 Ruby 来编写这个扩展，但只要 Git 能够执行最终的程序，任何语言都是可以的。这是我们的凭证辅助工具的完整代码：
+
+```text
+#!/usr/bin/env ruby
+
+require 'optparse'
+
+path = File.expand_path '~/.git-credentials' # (1)
+OptionParser.new do |opts|
+    opts.banner = 'USAGE: git-credential-read-only [options] <action>'
+    opts.on('-f', '--file PATH', 'Specify path for backing store') do |argpath|
+        path = File.expand_path argpath
+    end
+end.parse!
+
+exit(0) unless ARGV[0].downcase == 'get' # (2)
+exit(0) unless File.exists? path
+
+known = {} # (3)
+while line = STDIN.gets
+    break if line.strip == ''
+    k,v = line.strip.split '=', 2
+    known[k] = v
+end
+
+File.readlines(path).each do |fileline| # (4)
+    prot,user,pass,host = fileline.scan(/^(.*?):\/\/(.*?):(.*?)@(.*)$/).first
+    if prot == known['protocol'] and host == known['host'] and user == known['username'] then
+        puts "protocol=#{prot}"
+        puts "host=#{host}"
+        puts "username=#{user}"
+        puts "password=#{pass}"
+        exit(0)
+    end
+end
+```
+
+1. 我们在这里解析命令行参数，允许用户指定输入文件，默认是 `~/.git-credentials`
+
+2. 这个程序只有在接受到 `get` 行为的请求并且后端存储的文件存在时才会有输出
+
+3. 这个循环从标准输入读取数据，直到读取到第一个空行。输入的数据被保存到 `known` 哈希表中，之后需要用到
+
+4. 这个循环读取存储文件中的内容，寻找匹配的行。如果 `known` 中的协议和主机名与该行相匹配，这个程序输出结果并退出
+
+我们把这个辅助工具保存为 `git-credential-read-only`，放到我们的 PATH 路径下并且给予执行权限。一个交互式会话类似：
+
+```text
+$ git credential-read-only --file=/mnt/shared/creds get
+protocol=https
+host=mygithost
+
+protocol=https
+host=mygithost
+username=bob
+password=s3cre7
+```
+
+由于这个的名字是 “git-” 开头，所以我们可以在配置值中使用简便的语法：
+
+```shell
+$ git config --global credential.helper 'read-only --file /mnt/shared/creds'
+```
+
+正如你看到的，扩展这个系统是相当简单的，并且可以为你和你的团队解决一些常见问题
 
 ## 自定义 Git
 
 ### Git 钩子
 
+和其它版本控制系统一样，Git 能在特定的重要动作发生时触发自定义脚本。有两组这样的钩子：客户端的和服务器端的。客户端钩子由诸如提交和合并这样的操作所调用，而服务器端钩子作用于诸如接收被推送的提交这样的联网操作。你可以随心所欲地运用这些钩子
+
+#### 安装一个钩子
+
+钩子都被存储在 Git 目录下的 hooks 子目录中。也即绝大部分项目中的 .git/hooks 。当你用 `git init` 初始化一个新版本库时，Git 默认会在这个目录中放置一些示例脚本。这些脚本除了本身可以被调用外，它们还透露了被触发时所传入的参数。所有的示例都是 shell 脚本，其中一些还混杂了 Perl 代码，不过，任何正确命名的可执行脚本都可以正常使用 — 你可以用 Ruby 或 Python，或任何你熟悉的语言编写它们。这些示例的名字都是以 .sample 结尾，如果你想启用它们，得先移除这个后缀。
+
+把一个正确命名（不带扩展名）且可执行的文件放入 .git 目录下的 hooks 子目录中，即可激活该钩子脚本。这样一来，它就能被 Git 调用。接下来，我们会讲解常用的钩子脚本类型
+
+#### 客户端钩子
+
+客户端钩子分为很多种。 下面把它们分为：提交工作流钩子、电子邮件工作流钩子和其它钩子
+
+需要注意的是，克隆某个版本库时，它的客户端钩子 并不 随同复制。如果需要靠这些脚本来强制维持某种策略，建议你在服务器端实现这一功能。（请参照 [使用强制策略的一个例子](#使用强制策略的一个例子) 中的例子）
+
+#### 提交工作流钩子
+
+前四个钩子涉及提交的过程
+
+`pre-commit` 钩子在键入提交信息前运行。它用于检查即将提交的快照，例如，检查是否有所遗漏，确保测试运行，以及核查代码。如果该钩子以非零值退出，Git 将放弃此次提交，不过你可以用 `git commit --no-verify` 来绕过这个环节。你可以利用该钩子，来检查代码风格是否一致（运行类似 lint 的程序）、尾随空白字符是否存在（自带的钩子就是这么做的），或新方法的文档是否适当
+
+`prepare-commit-msg` 钩子在启动提交信息编辑器之前，默认信息被创建之后运行。它允许你编辑提交者所看到的默认信息。该钩子接收一些选项：存有当前提交信息的文件的路径、提交类型和修补提交的提交的 SHA-1 校验。它对一般的提交来说并没有什么用；然而对那些会自动产生默认信息的提交，如提交信息模板、合并提交、压缩提交和修订提交等非常实用。你可以结合提交模板来使用它，动态地插入信息
+
+`commit-msg` 钩子接收一个参数，此参数即上文提到的，存有当前提交信息的临时文件的路径。如果该钩子脚本以非零值退出，Git 将放弃提交，因此，可以用来在提交通过前验证项目状态或提交信息。在本章的最后一节，我们将展示如何使用该钩子来核对提交信息是否遵循指定的模板
+
+`post-commit` 钩子在整个提交过程完成后运行。 它不接收任何参数，但你可以很容易地通过运行 git log -1 HEAD 来获得最后一次的提交信息。该钩子一般用于通知之类的事情
+
+#### 电子邮件工作流钩子
+
+你可以给电子邮件工作流设置三个客户端钩子。它们都是由 `git am` 命令调用的，因此如果你没有在你的工作流中用到这个命令，可以跳到下一节。如果你需要通过电子邮件接收由 `git format-patch` 产生的补丁，这些钩子也许用得上
+
+第一个运行的钩子是 `applypatch-msg` 。它接收单个参数：包含请求合并信息的临时文件的名字。如果脚本返回非零值，Git 将放弃该补丁。你可以用该脚本来确保提交信息符合格式，或直接用脚本修正格式错误
+
+下一个在 `git am` 运行期间被调用的是 `pre-applypatch` 。有些难以理解的是，它正好运行于应用补丁 之后，产生提交之前，所以你可以用它在提交前检查快照。你可以用这个脚本运行测试或检查工作区。如果有什么遗漏，或测试未能通过，脚本会以非零值退出，中断 `git am` 的运行，这样补丁就不会被提交
+
+`post-applypatch` 运行于提交产生之后，是在 `git am` 运行期间最后被调用的钩子。你可以用它把结果通知给一个小组或所拉取的补丁的作者。 但你没办法用它停止打补丁的过程
+
+#### 其它客户端钩子
+
+`pre-rebase` 钩子运行于变基之前，以非零值退出可以中止变基的过程。你可以使用这个钩子来禁止对已经推送的提交变基。 Git 自带的 `pre-rebase` 钩子示例就是这么做的，不过它所做的一些假设可能与你的工作流程不匹配
+
+`post-rewrite` 钩子被那些会替换提交记录的命令调用，比如 `git commit --amend` 和 `git rebase`（不过不包括 git filter-branch）。它唯一的参数是触发重写的命令名，同时从标准输入中接受一系列重写的提交记录。这个钩子的用途很大程度上跟 `post-checkout` 和 `post-merge` 差不多
+
+在 `git checkout` 成功运行后，`post-checkout` 钩子会被调用。你可以根据你的项目环境用它调整你的工作目录。 其中包括放入大的二进制文件、自动生成文档或进行其他类似这样的操作
+
+在 `git merge` 成功运行后，`post-merge` 钩子会被调用。 你可以用它恢复 Git 无法跟踪的工作区数据，比如权限数据。 这个钩子也可以用来验证某些在 Git 控制之外的文件是否存在，这样你就能在工作区改变时，把这些文件复制进来
+
+`pre-push` 钩子会在 `git push` 运行期间， 更新了远程引用但尚未传送对象时被调用。 它接受远程分支的名字和位置作为参数，同时从标准输入中读取一系列待更新的引用。 你可以在推送开始之前，用它验证对引用的更新操作（一个非零的退出码将终止推送过程）
+
+Git 的一些日常操作在运行时，偶尔会调用 `git gc --auto` 进行垃圾回收。 `pre-auto-gc` 钩子会在垃圾回收开始之前被调用，可以用它来提醒你现在要回收垃圾了，或者依情形判断是否要中断回收
+
+#### 服务器端钩子
+
+除了客户端钩子，作为系统管理员，你还可以使用若干服务器端的钩子对项目强制执行各种类型的策略。这些钩子脚本在推送到服务器之前和之后运行。推送到服务器前运行的钩子可以在任何时候以非零值退出，拒绝推送并给客户端返回错误消息，还可以依你所想设置足够复杂的推送策略
+
+`pre-receive` 处理来自客户端的推送操作时，最先被调用的脚本是 `pre-receive`。它从标准输入获取一系列被推送的引用。如果它以非零值退出，所有的推送内容都不会被接受。你可以用这个钩子阻止对引用进行非快进（non-fast-forward）的更新，或者对该推送所修改的所有引用和文件进行访问控制
+
+`update` 脚本和 `pre-receive` 脚本十分类似，不同之处在于它会为每一个准备更新的分支各运行一次。假如推送者同时向多个分支推送内容，`pre-receive` 只运行一次，相比之下 `update` 则会为每一个被推送的分支各运行一次。它不会从标准输入读取内容，而是接受三个参数：引用的名字（分支），推送前的引用指向的内容的 SHA-1 值，以及用户准备推送的内容的 SHA-1 值。 如果 update 脚本以非零值退出，只有相应的那一个引用会被拒绝；其余的依然会被更新
+
+`post-receive` 挂钩在整个过程完结以后运行，可以用来更新其他系统服务或者通知用户。 它接受与 pre-receive 相同的标准输入数据。 它的用途包括给某个邮件列表发信，通知持续集成（continous integration）的服务器，或者更新问题追踪系统（ticket-tracking system） — 甚至可以通过分析提交信息来决定某个问题（ticket）是否应该被开启，修改或者关闭。该脚本无法终止推送进程，不过客户端在它结束运行之前将保持连接状态，所以如果你想做其他操作需谨慎使用它，因为它将耗费你很长的一段时间
+
 ### 使用强制策略的一个例子
+
+在本节中，你将应用前面学到的知识建立这样一个 Git 工作流程：检查提交信息的格式，并且指定只能由特定用户修改项目中特定的子目录。你将编写一个客户端脚本来提示开发人员他们的推送是否会被拒绝，以及一个服务器端脚本来实际执行这些策略
+
+我们待会展示的脚本是用 Ruby 写的，部分是由于我习惯用它写脚本，另外也因为 Ruby 简单易懂，即便你没写过它也能看明白。不过任何其他语言也一样适用。所有 Git 自带的示例钩子脚本都是用 Perl 或 Bash 写的，所以你能从它们中找到相当多的这两种语言的钩子示例
+
+#### 服务器端钩子
+
+所有服务器端的工作都将在你的 hooks 目录下的 update 脚本中完成。update 脚本会为每一个提交的分支各运行一次，它接受三个参数：
+
+- 被推送的引用的名字
+
+- 推送前分支的修订版本（revision）
+
+- 用户准备推送的修订版本（revision）
+
+如果推送是通过 SSH 进行的，还可以获知进行此次推送的用户的信息。如果你允许所有操作都通过公匙授权的单一帐号（比如“git”）进行，就有必要通过一个 shell 包装脚本依据公匙来判断用户的身份，并且相应地设定环境变量来表示该用户的身份。下面就假设 `$USER` 环境变量里存储了当前连接的用户的身份，你的 update 脚本首先搜集一切需要的信息：
+
+```text
+#!/usr/bin/env ruby
+
+$refname = ARGV[0]
+$oldrev  = ARGV[1]
+$newrev  = ARGV[2]
+$user    = ENV['USER']
+
+puts "Enforcing Policies..."
+puts "(#{$refname}) (#{$oldrev[0,6]}) (#{$newrev[0,6]})"
+```
+
+是的，我们这里用的都是全局变量。请勿在此吐槽 — 这样做只是为了方便展示而已
 
 #### 指定特殊的提交信息格式
 
-## Git 与其他系统
+你的第一项任务是要求每一条提交信息都必须遵循某种特殊的格式。作为目标，假定每一条信息必须包含一条形似“ref: 1234”的字符串，因为你想把每一次提交对应到问题追踪系统（ticketing system）中的某个事项。你要逐一检查每一条推送上来的提交内容，看看提交信息是否包含这么一个字符串，然后，如果某个提交里不包含这个字符串，以非零返回值退出从而拒绝此次推送
+
+把 `$newrev` 和 `$oldrev` 变量的值传给一个叫做 `git rev-list` 的 Git 底层命令，你可以获取所有提交的 SHA-1 值列表。`git rev-list` 基本类似 `git log` 命令，但它默认只输出 SHA-1 值而已，没有其他信息。所以要获取由一次提交到另一次提交之间的所有 SHA-1 值，可以像这样运行：
+
+```text
+$ git rev-list 538c33..d14fc7
+d14fc7c847ab946ec39590d87783c69b031bdfb7
+9f585da4401b0a3999e84113824d15245c13f0be
+234071a1be950e2a8d078e6141f5cd20c1e61ad3
+dfa04c9ef3d5197182f13fb5b9b1fb7717d2222a
+17716ec0f1ff5c77eff40b7fe912f9f6cfd0e475
+```
+
+你可以截取这些输出内容，循环遍历其中每一个 SHA-1 值，找出与之对应的提交信息， 然后用正则表达式来测试该信息包含的内容
+
+下一步要实现从每个提交中提取出提交信息。使用另一个叫做 `git cat-file` 的底层命令来获得原始的提交数据。我们将在 [Git 内部原理](#git-内部原理) 了解到这些底层命令的细节； 现在暂时先看一下这条命令的输出：
+
+```text
+$ git cat-file commit ca82a6
+tree cfda3bf379e4f8dba8717dee55aab78aef7f4daf
+parent 085bb3bcb608e1e8451d4b2432f8ecbe6306e7e7
+author Scott Chacon <schacon@gmail.com> 1205815931 -0700
+committer Scott Chacon <schacon@gmail.com> 1240030591 -0700
+
+changed the version number
+```
+
+通过 SHA-1 值获得提交中的提交信息的一个简单办法是找到提交的第一个空行，然后取从它往后的所有内容。可以使用 Unix 系统的 `sed` 命令来实现该效果：
+
+```text
+$ git cat-file commit ca82a6 | sed '1,/^$/d'
+changed the version number
+```
+
+你可以用这条咒语从每一个待推送的提交里提取提交信息，然后在提取的内容不符合要求时退出。为了退出脚本和拒绝此次推送，返回非零值。整个脚本大致如下：
+
+```text
+$regex = /\[ref: (\d+)\]/
+
+# 指定自定义的提交信息格式
+def check_message_format
+  missed_revs = `git rev-list #{$oldrev}..#{$newrev}`.split("\n")
+  missed_revs.each do |rev|
+    message = `git cat-file commit #{rev} | sed '1,/^$/d'`
+    if !$regex.match(message)
+      puts "[POLICY] Your message is not formatted correctly"
+      exit 1
+    end
+  end
+end
+check_message_format
+```
+
+把这一段放在 `update` 脚本里，所有包含不符合指定规则的提交都会遭到拒绝
+
+#### 指定基于用户的访问权限控制列表（ACL）系统
+
+假设你需要添加一个使用访问权限控制列表的机制，来指定哪些用户对项目的哪些部分有推送权限。某些用户具有全部的访问权，其他人只对某些子目录或者特定的文件具有推送权限。为了实现这一点，你要把相关的规则写入位于服务器原始 Git 仓库的 acl 文件中。你还需要让 `update` 钩子检阅这些规则，审视推送的提交内容中被修改的所有文件，然后决定执行推送的用户是否对所有这些文件都有权限
+
+先从写一个 ACL 文件开始吧。这里使用的格式和 CVS 的 ACL 机制十分类似：它由若干行构成，第一项内容是 `avail` 或者 `unavail`，接着是逗号分隔的适用该规则的用户列表，最后一项是适用该规则的路径（该项空缺表示没有路径限制）。各项由管道符 | 隔开
+
+在本例中，你会有几个管理员，一些对 doc 目录具有权限的文档作者，以及一位仅对 lib 和 tests 目录具有权限的开发人员，相应的 ACL 文件如下：
+
+```text
+avail|nickh,pjhyett,defunkt,tpw
+avail|usinclair,cdickens,ebronte|doc
+avail|schacon|lib
+avail|schacon|tests
+```
+
+首先把这些数据读入你要用到的数据结构里。在本例中，为保持简洁，我们暂时只实现 avail 的规则。下面这个方法生成一个关联数组，它的键是用户名，值是一个由该用户有写权限的所有目录组成的数组：
+
+```text
+def get_acl_access_data(acl_file)
+  # 读取 ACL 数据
+  acl_file = File.read(acl_file).split("\n").reject { |line| line == '' }
+  access = {}
+  acl_file.each do |line|
+    avail, users, path = line.split('|')
+    next unless avail == 'avail'
+    users.split(',').each do |user|
+      access[user] ||= []
+      access[user] << path
+    end
+  end
+  access
+end
+```
+
+对于之前给出的 ACL 规则文件，这个 get_acl_access_data 方法返回的数据结构如下：
+
+```text
+{"defunkt"=>[nil],
+ "tpw"=>[nil],
+ "nickh"=>[nil],
+ "pjhyett"=>[nil],
+ "schacon"=>["lib", "tests"],
+ "cdickens"=>["doc"],
+ "usinclair"=>["doc"],
+ "ebronte"=>["doc"]}
+```
+
+既然拿到了用户权限的数据，接下来你需要找出提交都修改了哪些路径，从而才能保证推送者对所有这些路径都有权限
+
+使用 `git log` 的 `--name-only` 选项，我们可以轻而易举的找出一次提交里修改的文件：
+
+```text
+$ git log -1 --name-only --pretty=format:'' 9f585d
+
+README
+lib/test.rb
+```
+
+使用 `get_acl_access_data` 返回的 ACL 结构来一一核对每次提交修改的文件列表，就能找出该用户是否有权限推送所有的提交内容：
+
+```text
+# 仅允许特定用户修改项目中的特定子目录
+def check_directory_perms
+  access = get_acl_access_data('acl')
+
+  # 检查是否有人在向他没有权限的地方推送内容
+  new_commits = `git rev-list #{$oldrev}..#{$newrev}`.split("\n")
+  new_commits.each do |rev|
+    files_modified = `git log -1 --name-only --pretty=format:'' #{rev}`.split("\n")
+    files_modified.each do |path|
+      next if path.size == 0
+      has_file_access = false
+      access[$user].each do |access_path|
+        if !access_path  # 用户拥有完全访问权限
+           || (path.start_with? access_path) # 或者对此路径有访问权限
+          has_file_access = true
+        end
+      end
+      if !has_file_access
+        puts "[POLICY] You do not have access to push to #{path}"
+        exit 1
+      end
+    end
+  end
+end
+
+check_directory_perms
+```
+
+通过 `git rev-list` 获取推送到服务器的所有提交。接着，对于每一个提交，找出它修改的文件，然后确保推送者具有这些文件的推送权限
+
+现在你的用户没法推送带有不正确的提交信息的内容，也不能在准许他们访问范围之外的位置做出修改
+
+#### 测试一下
+
+如果已经把上面的代码放到 .git/hooks/update 文件里了，运行 `chmod u+x .git/hooks/update`，然后尝试推送一个不符合格式的提交，你会得到以下的提示：
+
+```text
+$ git push -f origin master
+Counting objects: 5, done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 323 bytes, done.
+Total 3 (delta 1), reused 0 (delta 0)
+Unpacking objects: 100% (3/3), done.
+Enforcing Policies...
+(refs/heads/master) (8338c5) (c5b616)
+[POLICY] Your message is not formatted correctly
+error: hooks/update exited with error code 1
+error: hook declined to update refs/heads/master
+To git@gitserver:project.git
+ ! [remote rejected] master -> master (hook declined)
+error: failed to push some refs to 'git@gitserver:project.git'
+```
+
+这里有几个有趣的信息。首先，我们可以看到钩子运行的起点
+
+```text
+Enforcing Policies...
+(refs/heads/master) (fb8c72) (c56860)
+```
+
+注意这是从 `update` 脚本开头输出到标准输出的。所有从脚本输出到标准输出的内容都会转发给客户端
+
+下一个值得注意的部分是错误信息
+
+```text
+[POLICY] Your message is not formatted correctly
+error: hooks/update exited with error code 1
+error: hook declined to update refs/heads/master
+```
+
+第一行是我们的脚本输出的，剩下两行是 Git 在告诉我们 `update` 脚本退出时返回了非零值因而推送遭到了拒绝。最后一点：
+
+```text
+To git@gitserver:project.git
+ ! [remote rejected] master -> master (hook declined)
+error: failed to push some refs to 'git@gitserver:project.git'
+```
+
+你会看到每个被你的钩子拒之门外的引用都收到了一个 `remote rejected` 信息，它告诉你正是钩子无法成功运行导致了推送的拒绝
+
+又或者某人想修改一个自己不具备权限的文件然后推送了一个包含它的提交，他将看到类似的提示。比如，一个文档作者尝试推送一个修改到 lib 目录的提交，他会看到
+
+```text
+[POLICY] You do not have access to push to lib/test.rb
+```
+
+从今以后，只要 `update` 脚本存在并且可执行，我们的版本库中永远都不会包含不符合格式的提交信息，并且用户都会待在沙箱里面
+
+#### 客户端钩子
+
+这种方法的缺点在于，用户推送的提交遭到拒绝后无法避免的抱怨。辛辛苦苦写成的代码在最后时刻惨遭拒绝是十分让人沮丧且具有迷惑性的；更可怜的是他们不得不修改提交历史来解决问题，这个方法并不能让每一个人满意
+
+逃离这种两难境地的法宝是给用户一些客户端的钩子，在他们犯错的时候给以警告。然后呢，用户们就能趁问题尚未变得更难修复，在提交前消除这个隐患。由于钩子本身不跟随克隆的项目副本分发，所以你必须通过其他途径把这些钩子分发到用户的 .git/hooks 目录并设为可执行文件。虽然你可以在相同或单独的项目里加入并分发这些钩子，但是 Git 不会自动替你设置它
+
+首先，你应该在每次提交前核查你的提交信息，这样才能确保服务器不会因为不合条件的提交信息而拒绝你的更改。为了达到这个目的，你可以增加 `commit-msg` 钩子。如果你使用该钩子来读取作为第一个参数传递的提交信息，然后与规定的格式作比较，你就可以使 Git 在提交信息格式不对的情况下拒绝提交
+
+```text
+#!/usr/bin/env ruby
+message_file = ARGV[0]
+message = File.read(message_file)
+
+$regex = /\[ref: (\d+)\]/
+
+if !$regex.match(message)
+  puts "[POLICY] Your message is not formatted correctly"
+  exit 1
+end
+```
+
+如果这个脚本位于正确的位置（ .git/hooks/commit-msg ）并且是可执行的，你提交信息的格式又是不正确的，你会看到：
+
+```text
+$ git commit -am 'test'
+[POLICY] Your message is not formatted correctly
+```
+
+在这个示例中，提交没有成功。然而如果你的提交注释信息是符合要求的，Git 会允许你提交：
+
+```text
+$ git commit -am 'test [ref: 132]'
+[master e05c914] test [ref: 132]
+ 1 file changed, 1 insertions(+), 0 deletions(-)
+```
+
+接下来我们要保证没有修改到 ACL 允许范围之外的文件。假如你的 .git 目录下有前面使用过的那份 ACL 文件，那么以下的 pre-commit 脚本将把里面的规定执行起来：
+
+```text
+#!/usr/bin/env ruby
+
+$user    = ENV['USER']
+
+# [ 插入上文中的 get_acl_access_data 方法 ]
+
+# 仅允许特定用户修改项目中的特定子目录
+def check_directory_perms
+  access = get_acl_access_data('.git/acl')
+
+  files_modified = `git diff-index --cached --name-only HEAD`.split("\n")
+  files_modified.each do |path|
+    next if path.size == 0
+    has_file_access = false
+    access[$user].each do |access_path|
+    if !access_path || (path.index(access_path) == 0)
+      has_file_access = true
+    end
+    if !has_file_access
+      puts "[POLICY] You do not have access to push to #{path}"
+      exit 1
+    end
+  end
+end
+
+check_directory_perms
+```
+
+这和服务器端的脚本几乎一样，除了两个重要区别。第一，ACL 文件的位置不同，因为这个脚本在当前工作目录运行，而非 .git 目录。ACL 文件的路径必须从
+
+```text
+access = get_acl_access_data('acl')
+```
+
+修改成：
+
+```text
+access = get_acl_access_data('.git/acl')
+```
+
+另一个重要区别是获取被修改文件列表的方式。在服务器端的时候使用了查看提交纪录的方式，可是目前的提交都还没被记录下来呢，所以这个列表只能从暂存区域获取。和原来的
+
+```text
+files_modified = `git log -1 --name-only --pretty=format:'' #{ref}`
+```
+
+不同，现在要用
+
+```text
+files_modified = `git diff-index --cached --name-only HEAD`
+```
+
+不同的就只有这两个 — 除此之外，该脚本完全相同。有一点要注意的是，它假定在本地运行的用户和推送到远程服务器端的相同。如果这二者不一样，则需要手动设置一下 `$user` 变量
+
+在这里，我们还可以确保推送内容中不包含非快进（non-fast-forward）的引用。出现一个不是快进（fast-forward）的引用有两种情形，要么是在某个已经推送过的提交上作变基，要么是从本地推送一个错误的分支到远程分支上
+
+假定为了执行这个策略，你已经在服务器上配置好了 `receive.denyDeletes` 和 `receive.denyNonFastForwards`，因而唯一还需要避免的是在某个已经推送过的提交上作变基
+
+下面是一个检查这个问题的 pre-rebase 脚本示例。它获取所有待重写的提交的列表，然后检查它们是否存在于远程引用中。一旦发现其中一个提交是在某个远程引用中可达的（reachable），它就终止此次变基：
+
+```text
+#!/usr/bin/env ruby
+
+base_branch = ARGV[0]
+if ARGV[1]
+  topic_branch = ARGV[1]
+else
+  topic_branch = "HEAD"
+end
+
+target_shas = `git rev-list #{base_branch}..#{topic_branch}`.split("\n")
+remote_refs = `git branch -r`.split("\n").map { |r| r.strip }
+
+target_shas.each do |sha|
+  remote_refs.each do |remote_ref|
+    shas_pushed = `git rev-list ^#{sha}^@ refs/remotes/#{remote_ref}`
+    if shas_pushed.split("\n").include?(sha)
+      puts "[POLICY] Commit #{sha} has already been pushed to #{remote_ref}"
+      exit 1
+    end
+  end
+end
+```
+
+此脚本使用了 [选择修订版本](#选择修订版本) 一章中不曾提到的语法。通过运行这个命令可以获得一系列之前推送过的提交：
+
+```text
+`git rev-list ^#{sha}^@ refs/remotes/#{remote_ref}`
+```
+
+`SHA^@` 语法会被解析成该提交的所有父提交。该命令会列出在远程分支最新的提交中可达的，却在所有我们尝试推送的提交的 SHA-1 值的所有父提交中不可达的提交 — 也就是快进的提交
+
+这个解决方案主要的问题在于它有可能很慢而且常常没有必要 — 只要你不用 `-f` 来强制推送，服务器就会自动给出警告并且拒绝接受推送。然而，这是个不错的练习，而且理论上能帮助你避免一次以后可能不得不回头修补的变基
 
 ## Git 内部原理
 
@@ -3315,9 +5429,7 @@ $ git push origin master:refs/heads/qa/master
 	push = refs/heads/master:refs/heads/qa/master
 ```
 
-正如刚才所指出的，这会让 git push origin 默认把本地 master 分支推送到远程 qa/master 分支
-
-你无法通过引用规范从一个仓库获取并推送到另一个仓库。 这样做的示例见 [让你的 GitHub 公共仓库保持更新]()
+正如刚才所指出的，这会让 `git push origin` 默认把本地 master 分支推送到远程 qa/master 分支
 
 #### 删除引用
 

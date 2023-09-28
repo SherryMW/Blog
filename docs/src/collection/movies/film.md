@@ -61,7 +61,7 @@ article: false
 
 ### Grab4K
 
-官网：[https://www.grab4k.net](https://www.grab4k.net/)
+官网：[https://www.grab4k.com](https://www.grab4k.com/)
 
 ::: info 会员说明
 会员才可以下载资源
@@ -75,7 +75,7 @@ article: false
 
 ### 布谷TV
 
-官网：[https://www.bugutv.net](https://www.bugutv.net)
+官网：[https://www.bugutv.org](https://www.bugutv.org/)
 
 ::: info 会员说明
 会员可以下载杜比视界影像的资源
