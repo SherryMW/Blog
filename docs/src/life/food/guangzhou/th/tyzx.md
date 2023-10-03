@@ -47,7 +47,10 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFG2O3RL" target="_blank">天河路228号正佳广场6层C059铺</a>
 
-得闲饮茶！
+- [x] 冰镇咕噜肉
+- [x] 海皇鸡火炒饭
+- [x] 酸菜肥牛
+- [x] 蒜香骨
 
 ## 富士喜日式猪扒店
 

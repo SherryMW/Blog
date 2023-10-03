@@ -47,6 +47,17 @@ article: false
 - [x] daydream
 - [x] 死亡的性感解释
 
+## 太艮堡毋米粥·粥底火锅
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00140TZ3W" target="_blank">金穗路72号盈嘉花园103号-201号</a>
+
+- [x] 海蚬
+- [x] 生蚝
+- [x] 元贝
+- [x] 沙虫
+- [x] 粉肠
+- [x] 猪脷
+
 ## 木棉•醉心粤味
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0GROY2454" target="_blank">珠江东路16号高德置地广场•冬F4层407</a>
