@@ -9,7 +9,7 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFIIJZ6B" target="_blank">裕和路95号(新城东地铁站D口步行50米)</a>
 
-### AGA ONEDERFUL LIVE 2023
+### AGA ONEDERFUL LIVE
 
 ![](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/play/foshan/sd/xcd/live/AGA2023/img.jpg)
 

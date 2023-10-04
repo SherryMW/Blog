@@ -35,6 +35,12 @@ export const PlaySidebar = arraySidebar([
                 collapsible: true,
                 children: "structure"
             },
+            {
+                text: "黄埔",
+                prefix: "hp/",
+                collapsible: true,
+                children: "structure"
+            },
         ]
     },
     {
