@@ -29,12 +29,13 @@ export default hopeTheme({
     editLink: false, // 是否展示编辑此页链接
     encrypt: {
         global: true,
-        admin: "MW"
+        admin: "MW8888"
     },
     blog: {
         avatar: "/avatar.jpg", // 头像
         roundAvatar: true, // 是否剪裁头像为圆形形状
-        description: "过往不恋 未来不迎 <br/> <br/> 上次更新：" + lastUpdate, // 主页口号、座右铭或介绍语
+        // description: "过往不恋 未来不迎 <br/> <br/> 上次更新：" + lastUpdate, // 主页口号、座右铭或介绍语
+        description: "上次更新：" + lastUpdate,
         intro: "", // 填写后点击头像或作者名称进入个人介绍页的界面地址
         // 主页媒体链接配置
         medias: {
@@ -57,7 +58,7 @@ export default hopeTheme({
         // 版权信息插件配置
         copyright: {
             author: "MW",
-            triggerWords: 300,
+            triggerLength: 300,
             global: true
         },
         // 注册一些可以在 Markdown 文件中使用的组件
@@ -72,7 +73,8 @@ export default hopeTheme({
             tasklist: true, // 任务列表
             container: true, // 自定义容器
             echarts: true, // ECharts图表配置
-            tabs: true, // 选项卡
+            tabs: true, // 选项卡,
+            vuePlayground: true
         },
     },
 });

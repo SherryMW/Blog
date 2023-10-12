@@ -16,7 +16,7 @@ article: false
 
 主题：[VuePress-Theme-Hope](https://theme-hope.vuejs.press/zh/)
 
-部署：[Vercel](http://vercel.com/)（被墙）
+部署：[Vercel](http://vercel.com/)
 
 搜索插件：[Algolia](https://crawler.algolia.com/admin/crawlers)
 

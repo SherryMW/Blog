@@ -48,7 +48,7 @@ WHERE query_condition;
 
 ## WHERE 子句示例
 
-我们将使用 [PostgreSQL Sakila 示例数据库](./start.md#sakila) 里的数据表进行演示
+我们将使用 [PostgreSQL Sakila 示例数据库](../start.md#sakila) 里的数据表进行演示
 
 ### 使用等号运算符
 

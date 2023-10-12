@@ -54,7 +54,7 @@ WHERE b = v2 and c = v3;
 
 ## 多列索引示例
 
-我们将使用 [PostgreSQL Sakila 示例数据库](./start.md#sakila) 里的数据表进行演示
+我们将使用 [PostgreSQL Sakila 示例数据库](../start.md#sakila) 里的数据表进行演示
 
 通过下面的语句查看 customer 表的信息：
 
