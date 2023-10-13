@@ -11,6 +11,62 @@ article: false
 
 ### AGA ONEDERFUL LIVE
 
+Count to Ten
+
+Mad
+
+MIZU
+
+Nights Without You
+
+Everyday
+
+吃定我
+
+The Lovers
+
+What are we gonna do
+
+理性与任性之间
+
+若
+
+圆
+
+Yes or No
+
+Better Me
+
+Tomorrow
+
+Miss u Goodbye
+
+孤雏
+
+问好
+
+So Called Love Song
+
+Two at a time
+
+Superman
+
+小问题
+
+3AM
+
+CityPop
+
+无期
+
+一
+
+Wonderful U
+
+See You Next Time
+
+Tonight
+
 ![](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/play/foshan/sd/xcd/live/AGA2023/img.jpg)
 
 ![](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/play/foshan/sd/xcd/live/AGA2023/img_3.jpg)

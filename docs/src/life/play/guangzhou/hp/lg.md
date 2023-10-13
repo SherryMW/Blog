@@ -11,6 +11,56 @@ article: false
 
 ### 张学友 60+
 
+留住这时光
+
+Ooh La La
+
+马路英雄
+
+情不禁
+
+我应该
+
+等你等到我心痛
+
+深海
+
+三天两夜
+
+Double Trouble
+
+情书
+
+我真的受伤了
+
+日出时让街灯安睡
+
+又十年
+
+天气这么热
+
+想劈酒
+
+刹那爱
+
+岁月流情
+
+分手总要在雨天
+
+只想一生跟你走
+
+爱是永恒
+
+过敏世界
+
+蓝雨
+
+她来看我的演唱会
+
+每天爱你多一些（清唱）
+
+吻别
+
 ![](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/play/guangzhou/hp/lg/bn/jacky60%2B/img.jpg)
 
 ![](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/play/guangzhou/hp/lg/bn/jacky60%2B/img_0.jpg)
