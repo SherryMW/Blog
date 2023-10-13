@@ -27,7 +27,7 @@ article: false
 
 :::
 
-- [x] 北岛长脚蟹（蟹脚清蒸，蟹肉干焗，蟹壳炒饭）（推荐）
+- [x] 北岛长脚蟹：蟹脚清蒸/蟹肉干焗/蟹壳炒饭（推荐）
 - [x] 三叔烤罗虾
 - [ ] 蒜酱烤波龙
 
@@ -70,7 +70,7 @@ article: false
 - [x] 香草雪糕球
 - [x] 雨后芒果园
 
-## 努尔博斯坦•新疆餐饮研究
+## NurBOSTAN 努尔博斯坦
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFFZD6Z2" target="_blank">天河直街160号北七铺</a>
 

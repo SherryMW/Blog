@@ -11,7 +11,6 @@ article: false
 
 ![招牌冰镇咕噜肉](https://img.sherry4869.com/blog/life/food/guangzhou/yx/bjl/ttj/img.jpg)
 
-- [x] 陶陶居百年烧鹅（推荐）
 - [x] 冰镇咕噜肉（推荐）
 - [x] 经典白切鸡
 - [x] 广府豉油鸡
@@ -43,6 +42,8 @@ article: false
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00141VVZW" target="_blank">中山四路395号城壹汇F5层</a>
 
 - [x] 参鲍鸡金汤锅（推荐）
+- [x] 番茄锅底
+- [x] 牛油麻辣锅底
 
 ## 摩打食堂
 

@@ -17,7 +17,7 @@ article: false
 
 @tab 果园鲜全翅
 
-![味道还行](https://img.sherry4869.com/blog/life/food/guangzhou/th/hc/hbyy/img_1.jpg)
+![](https://img.sherry4869.com/blog/life/food/guangzhou/th/hc/hbyy/img_1.jpg)
 
 @tab 鸡的不见天
 

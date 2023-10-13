@@ -52,7 +52,7 @@ article: false
 - [x] 酸菜肥牛
 - [x] 蒜香骨
 
-## 富士喜日式猪扒店
+## 富士喜日式猪扒店（歇业）
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0IDSRMT99" target="_blank">天河南二路26号</a>
 

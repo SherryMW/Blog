@@ -27,15 +27,15 @@ article: false
   desc: 打造令人惊叹的东西
   link: https://www.npmjs.com/
   
-- icon: https://unpkg.com/favicon.ico
-  name: UNPKG
-  desc: 一个快速的全球内容交付网络，适用于 NPM 上的所有内容
-  link: https://unpkg.com/
-
 - icon: https://www.pnpm.cn/img/logos/pnpm-standard-no-text.png
   name: PNPM
   desc: 速度快、节省磁盘空间的软件包管理器
   link: https://www.pnpm.cn/
+
+- icon: https://unpkg.com/favicon.ico
+  name: UNPKG
+  desc: 一个快速的全球内容交付网络，适用于 NPM 上的所有内容
+  link: https://unpkg.com/
 ```
 :::
 
@@ -80,19 +80,30 @@ article: false
 
 [//]: # (:::)
 
-::: projects
-```yaml
-- icon: https://cn.vitejs.dev/logo.svg
-  name: Vite
-  desc: 下一代的前端工具链
-  link: https://cn.vitejs.dev/
+[//]: # (::: projects)
 
-- icon: https://webpack.js.org/icon-square-small-slack.1c7f4f7a52c41f94.png
-  name: webpack
-  desc: 现代 JavaScript 应用程序的静态模块捆绑器
-  link: https://webpack.js.org/
-```
-:::
+[//]: # (```yaml)
+
+[//]: # (- icon: https://cn.vitejs.dev/logo.svg)
+
+[//]: # (  name: Vite)
+
+[//]: # (  desc: 下一代的前端工具链)
+
+[//]: # (  link: https://cn.vitejs.dev/)
+
+[//]: # ()
+[//]: # (- icon: https://webpack.js.org/icon-square-small-slack.1c7f4f7a52c41f94.png)
+
+[//]: # (  name: webpack)
+
+[//]: # (  desc: 现代 JavaScript 应用程序的静态模块捆绑器)
+
+[//]: # (  link: https://webpack.js.org/)
+
+[//]: # (```)
+
+[//]: # (:::)
 
 ::: projects
 ```yaml

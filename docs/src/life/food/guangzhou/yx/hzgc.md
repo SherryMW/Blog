@@ -5,6 +5,16 @@ article: false
 
 # 海珠广场
 
+## 稻香酒家
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFJCNMA7" target="_blank">侨光路8号华厦大酒店2楼</a>
+
+- [x] 脆皮烧鹅（推荐）
+- [x] 澳门烧肉（推荐）
+- [x] 豉油鸡
+- [x] 紫苏茄子炒豆角
+- [x] 凉瓜炒牛肉
+
 ## 东山小厨
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFKY7XWI" target="_blank">起义路12-14号首层之一</a>
