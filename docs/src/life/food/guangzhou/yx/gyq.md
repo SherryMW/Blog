@@ -35,6 +35,18 @@ article: false
 - [x] 凉拌鱼皮
 - [ ] 筒骨莲藕煲
 
+## 穗香食府
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00140UBQ1" target="_blank">惠福西路199号</a>
+
+- [x] 脆皮烧鹅（推荐）
+- [x] 澳门烧肉（推荐）
+- [x] 豉油鸡
+- [x] 秘制猪手皇
+- [x] 凉瓜炒牛肉
+- [x] 家乡味道炒粗斋
+- [x] 紫苏茄子炒豆角
+
 ## 绿茶餐厅
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B001402D72s" target="_blank">中山五路68号五月花商场5楼</a>
