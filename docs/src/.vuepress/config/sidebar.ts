@@ -1,24 +1,31 @@
 import {sidebar} from "vuepress-theme-hope";
-import {PostgreSQLSidebar} from "../../it/database/postgresql/sidebar"
-import {ShardingSphereSidebar} from "../../it/apache/sharding-sphere/sidebar";
 import {CollectionSidebar} from "../../collection/sidebar"
 import {FoodSidebar} from "../../life/food/sidebar";
 import {PlaySidebar} from "../../life/play/sidebar";
-import {NoteSidebar} from "../../it/java/note/sidebar";
+import {VueSidebar} from "../../it/vue/sidebar";
 
 export const SidebarConfig = sidebar({
-
-    "/it/java/note/": NoteSidebar,
-
-    "/it/database/postgresql/": PostgreSQLSidebar,
-
-    "/it/apache/sharding-sphere/": ShardingSphereSidebar,
 
     "/collection/": CollectionSidebar,
 
     "/life/food/": FoodSidebar,
 
-    "/life/play/": PlaySidebar
+    "/life/play/": PlaySidebar,
+
+    "/it/es6/":[
+        {
+            text: "ECMAScript 6",
+            children: "structure"
+        },
+    ],
+
+    "/it/vue/": VueSidebar,
+
+    // "/it/java/note/": NoteSidebar,
+
+    // "/it/database/postgresql/": PostgreSQLSidebar,
+
+    // "/it/apache/sharding-sphere/": ShardingSphereSidebar,
 
     // "/it/java/pay/": [
     //     {

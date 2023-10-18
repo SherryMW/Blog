@@ -21,6 +21,8 @@ article: false
 
 部署：[Vercel](http://vercel.com/)
 
-搜索插件：[Algolia](https://crawler.algolia.com/admin/crawlers)
+[//]: # (搜索插件：[Algolia]&#40;https://crawler.algolia.com/admin/crawlers&#41;)
+
+搜索插件：[plugin-search-pro](https://plugin-search-pro.vuejs.press/zh/)
 
 评论插件：[Waline](https://waline.js.org/)
