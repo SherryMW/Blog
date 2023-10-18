@@ -20,11 +20,6 @@ article: false
   name: UNIT helper
   desc: 在线单位换算器
   link: https://cn.unithelper.com/
-
-- icon: https://global-uploads.webflow.com/5a5de2c1a0eb5000019e4dc0/5d9b02fbeaeaab4acd4f95fb_favicon-256x256.png
-  name: Be My Eyes
-  desc: 帮助盲人
-  link: https://www.bemyeyes.com/
 ```
 :::
 

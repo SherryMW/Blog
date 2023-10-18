@@ -7,6 +7,10 @@ article: false
 
 官网：[http://www.blueaward.co.kr](http://www.blueaward.co.kr/)
 
+## 2023年
+
+11月25日
+
 ## 2022年
 
 最佳影片：《分手的决心》 헤어질 결심

@@ -7,6 +7,10 @@ article: false
 
 官网：[https://thegameawards.com](https://thegameawards.com/)
 
+## 2023
+
+12月8日
+
 ## 2022
 
 年度最佳游戏：《艾尔登法环》（Elden Ring）

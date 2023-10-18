@@ -12,10 +12,23 @@ article: false
 - [x] 脆皮烧鹅（推荐）
 - [x] 澳门烧肉（推荐）
 - [x] 豉油鸡
+- [x] 白切鸡
+- [x] 蜜汁叉烧
+- [x] 烧鹅/叉烧/烧肉三拼
+- [x] 煎酿豆腐煲（推荐）
+- [x] 煎酿尖椒
+- [x] 孜然扇骨
 - [x] 秘制猪手皇
 - [x] 凉瓜炒牛肉
 - [x] 家乡味道炒粗斋
 - [x] 紫苏茄子炒豆角
+- [x] 豉汁鱼头蒸爽肠
+- [x] 山楂三杯汁咕噜肉
+- [x] 五柳炸蛋拼斑鱼柳
+- [x] 生炒菜心
+- [x] 大排档干炒牛河（推荐）
+- [x] 酥皮菠萝包（推荐）
+- [x] 法式脆皮餐包
 
 ## 口福食家
 
@@ -47,9 +60,15 @@ article: false
 - [x] 凉拌鱼皮
 - [ ] 筒骨莲藕煲
 
+## 粽香园
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFHFHFI6" target="_blank">大德路298号之1号</a>
+
+- [x] 绿豆咸肉蛋黄粽（推荐）
+
 ## 绿茶餐厅
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B001402D72s" target="_blank">中山五路68号五月花商场5楼</a>
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B001402D72" target="_blank">中山五路68号五月花商场5楼</a>
 
 - [x] 东坡肉
 - [x] 咖喱面包鸡
