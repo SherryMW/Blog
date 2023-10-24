@@ -34,3 +34,9 @@ article: false
 - [x] 豉油汗蒸白鳝（推荐）
 - [x] 香煎白鳝
 - [x] 椒丝付乳炒通菜
+
+## 粽香园
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFHFHFI6" target="_blank">大德路298号之1号</a>
+
+- [x] 绿豆咸肉蛋黄粽（推荐）

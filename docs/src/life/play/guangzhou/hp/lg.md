@@ -11,7 +11,7 @@ article: false
 
 ### 张学友 60+
 
-留住这时光
+Overture（留住这时光）
 
 Ooh La La
 
@@ -53,6 +53,8 @@ Double Trouble
 
 过敏世界
 
+Encore：
+
 蓝雨
 
 她来看我的演唱会
@@ -61,7 +63,7 @@ Double Trouble
 
 吻别
 
-![](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/play/guangzhou/hp/lg/bn/jacky60%2B/img.jpg)
+![黄牛代拍1050，一共3330](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/play/guangzhou/hp/lg/bn/jacky60%2B/img.jpg)
 
 ![](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/play/guangzhou/hp/lg/bn/jacky60%2B/img_0.jpg)
 

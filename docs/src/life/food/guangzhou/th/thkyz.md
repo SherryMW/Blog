@@ -5,13 +5,15 @@ article: false
 
 # 天河客运站
 
-## 谢小匠
+## 谢小匠（歇业）
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFKPHPIY" target="_blank">下元岗西大街11巷1号102铺</a>
 
 春夏吃盖面 秋冬嗦粉煲
 
-自从换了两波人接手后，出品逐渐下降，再也回不去了
+自从换了两波人接手后，出品逐渐下降，蛮可惜的
+
+2023年10月20日刚好路过天河客运站，想着很久没过来吃了，结果到店后老板娘告知今天是最后一天营业，她还以为我看到她发的朋友圈特地过来吃的，没想到会如此巧合。打听了一下一开始掌管店铺的那对夫妻回老家武汉也开了家谢小匠，等以后有机会去武汉时一定品尝下
 
 ::: tabs
 
@@ -28,6 +30,8 @@ article: false
 ![](https://img.sherry4869.com/blog/life/food/guangzhou/th/thkyz/xxj/img_4.jpg)
 
 @tab 菜单
+
+![2023-10-20](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/food/guangzhou/th/thkyz/xxj/img_5.png)
 
 ![](https://img.sherry4869.com/blog/life/food/guangzhou/th/thkyz/xxj/img.jpg)
 
@@ -101,6 +105,8 @@ article: false
 ## 骏犇潮州兄弟牛肉火锅
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFI6I5ER" target="_blank">长兴路8号1楼东面</a>
+
+- [x] 雪花（推荐）
 
 ## 江渔儿酸菜鱼
 
