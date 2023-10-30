@@ -50,11 +50,11 @@ export default hopeTheme({
     plugins: {
         blog: true,
         // 评论插件配置
-        // comment: {
-        //     // comment: false, // 是否默认启用评论功能
-        //     provider: "Waline",
-        //     serverURL: "https://waline.sherry4869.com",
-        // },
+        comment: {
+            // comment: false, // 是否默认启用评论功能
+            provider: "Waline",
+            serverURL: "https://waline.sherry4869.com",
+        },
         // 版权信息插件配置
         copyright: {
             author: "MW",

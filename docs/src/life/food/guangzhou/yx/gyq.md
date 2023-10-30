@@ -9,10 +9,10 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00140UBQ1" target="_blank">惠福西路199号</a>
 
-- [x] 脆皮烧鹅（推荐）
-- [x] 澳门烧肉（推荐）
+- [x] 脆皮烧鹅
 - [x] 豉油鸡
 - [x] 白切鸡
+- [x] 澳门烧肉（推荐）
 - [x] 蜜汁叉烧
 - [x] 烧鹅/叉烧/烧肉三拼
 - [x] 煎酿豆腐煲（推荐）
@@ -27,6 +27,7 @@ article: false
 - [x] 五柳炸蛋拼斑鱼柳
 - [x] 生炒菜心
 - [x] 大排档干炒牛河（推荐）
+- [x] 香煎韭菜饺（推荐）
 - [x] 酥皮菠萝包（推荐）
 - [x] 法式脆皮餐包
 

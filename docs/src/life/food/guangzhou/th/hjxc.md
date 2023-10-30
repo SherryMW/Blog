@@ -9,7 +9,7 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00141I8AJ" target="_blank">中山大道西140号华港商务大厦三楼</a>
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/th/hjxc/img_2.jpg)
+![午餐饭堂](https://img.sherry4869.com/blog/life/food/guangzhou/th/hjxc/img_2.jpg)
 
 - [x] 虾饺皇（推荐）
 - [x] 参汤虾饺

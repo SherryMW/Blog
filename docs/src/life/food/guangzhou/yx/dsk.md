@@ -7,7 +7,7 @@ article: false
 
 ## 成隆行
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00141UOCG" target="_blank">庙前直街31号(近庙前直街工行)</a>
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00141UOCG" target="_blank">庙前直街31号</a>
 
 ::: tabs
 
@@ -31,3 +31,10 @@ article: false
 - [ ] 蟹王
 - [ ] 蟹后
 - [ ] 头手黄油蟹
+
+## 澳泰美食
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFGFKMHI" target="_blank">庙前直街14号</a>
+
+- [x] 金牌海鲜冬阴功贵刁粉
+- [x] 热牛奶

@@ -13,7 +13,7 @@ article: false
 
 @tab 深井烧鹅
 
-![不愧是招牌](https://img.sherry4869.com/blog/life/food/guangzhou/yx/hzgc/dsxc/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/guangzhou/yx/hzgc/dsxc/img.jpg)
 
 @tab 白切咸猪手
 
@@ -40,3 +40,4 @@ article: false
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFHFHFI6" target="_blank">大德路298号之1号</a>
 
 - [x] 绿豆咸肉蛋黄粽（推荐）
+- [x] 牛腩布拉肠
