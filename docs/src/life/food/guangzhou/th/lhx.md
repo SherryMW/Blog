@@ -13,7 +13,7 @@ article: false
 
 @tab 北岛长脚蟹（一蟹三吃）
 
-![海鲜海鲜，就得吃的新鲜](https://img.sherry4869.com/blog/life/food/guangzhou/th/lhx/79fish/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/guangzhou/th/lhx/79fish/img.jpg)
 
 ![399/斤](https://img.sherry4869.com/blog/life/food/guangzhou/th/lhx/79fish/img_2.jpg)
 

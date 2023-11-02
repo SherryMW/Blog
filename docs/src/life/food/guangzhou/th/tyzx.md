@@ -21,7 +21,7 @@ article: false
 
 @tab 大排档炒牛河
 
-![炒出风味](https://img.sherry4869.com/blog/life/food/guangzhou/th/tyzx/cldpd/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/food/guangzhou/th/tyzx/cldpd/img_2.jpg)
 
 :::
 

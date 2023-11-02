@@ -3,7 +3,6 @@ date: 2022-07-10
 category: IT
 tag: ES6
 shortTitle: 简介
-article: false
 ---
 
 # ECMAScript 6

@@ -7,6 +7,66 @@ article: false
 
 # 变量的解构赋值
 
+## 解构赋值
+
+在 Javascript 我们经常需要从某个对象或者数组中提取特定的数据赋值给变量，解构赋值就是把对象或者数组中的值解构出来赋值给变量的过程：
+
+```js
+let book = {
+    title: "ES6",
+    price: 60,
+    category: {
+        id: 1,
+        name: "前端"
+    }
+}
+
+let title = book.title;
+let price = book.price;
+let categoryId = book.category.id;
+let categoryName = book.category.name;
+console.log(title, price, categoryId, categoryName);
+```
+
+传统的取值和赋值还有另外一种中括号写法：
+
+```js
+let title = book['title'];
+let price = book['price'];
+let categoryId = book['category']['id'];
+let categoryName = book['category']['name'];
+console.log(title, price, categoryId, categoryName);
+```
+
+::: details 中括号扩展
+
+中括号的写法可以在里面传递变量，以及适用于包含特殊字符或空格的属性名：
+
+```js
+function css(id) {
+    document.getElementById(id).style.background = 'red';
+}
+
+css('box');
+
+// 动态地在运行时设置元素的样式属性
+function css(id, key, value) {
+    document.getElementById(id).style[key] = value;
+}
+
+css('box', 'background', 'red');
+css('box', 'fontSize', '18px');
+```
+
+:::
+
+ES6 的解构赋值：
+
+```js
+let {title, price, category: {id, name}} = book;
+console.log(title, price, id, name);
+```
+
 ## 数组的解构赋值
 
 ### 基本用法
@@ -99,7 +159,7 @@ let [x, y, z] = new Set(['a', 'b', 'c']);
 x // "a"
 ```
 
-事实上，只要某种数据结构具有 Iterator 接口，都可以采用数组形式的解构赋值
+事实上，只要某种数据结构具有 `Iterator` 接口，都可以采用数组形式的解构赋值
 
 ```js
 function* fibs() {
@@ -115,7 +175,7 @@ let [first, second, third, fourth, fifth, sixth] = fibs();
 sixth // 5
 ```
 
-上面代码中，`fibs` 是一个 Generator 函数，原生具有 Iterator 接口。解构赋值会依次从这个接口获取值。`fibs` 该函数生成斐波那契数列数列的值，前 6 个值是 `[0,1,1,2,3,5]`，因此 sixth 变量的值为 5
+上面代码中，`fibs` 是一个 `Generator` 函数，原生具有 `Iterator` 接口。解构赋值会依次从这个接口获取值。`fibs` 该函数生成斐波那契数列数列的值，前 6 个值是 `[0,1,1,2,3,5]`，因此 sixth 变量的值为 5
 
 ::: details 生成器函数
 
