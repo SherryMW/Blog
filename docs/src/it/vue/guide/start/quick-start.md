@@ -9,6 +9,12 @@ article: false
 
 ## 线上尝试 Vue
 
+想要快速体验 Vue，你可以直接试试官方的 [演练场](https://play.vuejs.org/#eNp9kVFLwzAQx7/KeS9TmBuyt1EHKgP1QUUFX/JS2lvXmSYhucxC6Xf32tLqwxiEJPf/X5Lf5Rq8c25xjIRrTELmS8cbZah21jPktEujZmiUAchTTi+vhj2AJ47ejBFAFYo1zB5Jawtf1uv8YjZYbbfIJCNZTg9IwFQ5nTJJBJDsbzZN090CbZssJerV0rjIcLyubE76VqH4CsVKltNpnCOHzJpdWSwOwRqpo4dSmNnKlZr8q+PSmqBwPeIqTIXz57nX2Eeaj3q2p+z7hH4IdacpfPMUyB9J4eRx6gviwd5+vFAt+8kU8qgl+4z5TsHq2DEOaffR5IL9L6+nfaq6npSm+AzbmsmEsagOtP/kPl+hNPPhTOl/uKvFamwOtr/4aany)
+
+如果你更喜欢不用任何构建的原始 HTML，可以使用 [JSFiddle](https://jsfiddle.net/yyx990803/2ke1ab0z/) 入门
+
+如果你已经比较熟悉 Node.js 和构建工具等概念，还可以直接在浏览器中打开 [StackBlitz](https://vite.new/vue) 来尝试完整的构建设置
+
 ## 创建一个 Vue 应用
 
 ::: tip 前提条件
@@ -29,7 +35,7 @@ article: false
 > npm create vue@latest
 ```
 
-这一指令将会安装并执行 `create-vue`，它是 Vue 官方的项目脚手架工具。你将会看到一些诸如 TypeScript 和测试支持之类的可选功能提示：
+这一指令将会安装并执行 [create-vue](https://github.com/vuejs/create-vue)，它是 Vue 官方的项目脚手架工具。你将会看到一些诸如 TypeScript 和测试支持之类的可选功能提示：
 
 ```text
 ✔ Project name: … <your-project-name>
@@ -58,7 +64,11 @@ Done.
 
 - 推荐的 IDE 配置是 [Visual Studio Code](https://code.visualstudio.com/) + [Volar 扩展](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
 
-待更新
+- 更多工具细节，包括与后端框架的整合，我们会在 [工具链指南](../scaling-up/tooling.md) 进行讨论
+
+- 要了解构建工具 Vite 更多背后的细节，请查看 [Vite 文档](https://cn.vitejs.dev/)
+
+- 如果你选择使用 TypeScript，请阅读 [TypeScript 使用指南](../typescript/overview.md)
 
 当你准备将应用发布到生产环境时，请运行：
 
@@ -70,7 +80,7 @@ Done.
 
 ## 通过 CDN 使用 Vue
 
-你可以借助 script 标签直接通过 CDN 来使用 Vue：
+你可以借助 `script` 标签直接通过 CDN 来使用 Vue：
 
 ```html
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
@@ -94,7 +104,7 @@ Done.
 <div id="app">{{ message }}</div>
 
 <script>
-    const { createApp } = Vue
+    const {createApp} = Vue
 
     createApp({
         data() {
@@ -283,9 +293,9 @@ export default {
 }
 ```
 
-如果直接在浏览器中打开了上面的 `index.html`，你会发现它抛出了一个错误，因为 ES 模块不能通过 `file://` 协议工作，也即是当你打开一个本地文件时浏览器使用的协议
+如果直接在浏览器中打开了上面的 `index.html`，你会发现它抛出了一个错误，因为 ES 模块不能通过 `file://` 协议工作，也既是当你打开一个本地文件时浏览器使用的协议
 
-由于安全原因，ES 模块只能通过 `http://` 协议工作，也即是浏览器在打开网页时使用的协议。为了使 ES 模块在我们的本地机器上工作，我们需要使用本地的 HTTP 服务器，通过 `http://` 协议来提供 `index.html`
+由于安全原因，ES 模块只能通过 `http://` 协议工作，也既是浏览器在打开网页时使用的协议。为了使 ES 模块在我们的本地机器上工作，我们需要使用本地的 HTTP 服务器，通过 `http://` 协议来提供 `index.html`
 
 要启动一个本地的 HTTP 服务器，请先安装 [Node.js](https://nodejs.org/en)，然后通过命令行在 HTML 文件所在文件夹下运行 `npx serve`。你也可以使用其他任何可以基于正确的 MIME 类型服务静态文件的 HTTP 服务器
 

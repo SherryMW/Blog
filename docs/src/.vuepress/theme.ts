@@ -67,14 +67,13 @@ export default hopeTheme({
         },
         // Markdown 增强功能配置
         mdEnhance: {
-            // imgLazyload: true, // 图片懒加载
-            imgSize: true, // 图片尺寸
+            tabs: true, // 选项卡,
             figure: true, // 图片描述
+            // imgSize: true, // 图片尺寸
+            // imgLazyload: true, // 图片懒加载
             tasklist: true, // 任务列表
             container: true, // 自定义容器
             echarts: true, // ECharts图表配置
-            tabs: true, // 选项卡,
-            vuePlayground: true
         },
     },
 });

@@ -5,27 +5,47 @@ article: false
 
 # 体育中心
 
-## 渡鸦馆原创剧情密室
+## 渡鸦馆原创剧情密室（装修）
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0HDKAELJ4" target="_blank">天河路365号天俊阁2703室</a>
 
-### 记忆宫殿
+### 福尔摩斯•记忆宫殿
 
-<div><p>沉浸：<el-rate model-value="5" disabled /></p></div>
+<div><p>沉浸：<el-rate model-value="4.5" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>场景：<el-rate model-value="4.5" disabled /></p></div>
+<div><p>场景：<el-rate model-value="5" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>剧情：<el-rate model-value="5" disabled /></p></div>
+<div><p>剧情：<el-rate model-value="5" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>机关道具：<el-rate model-value="5" disabled /></p></div>
+<div><p>机关道具：<el-rate model-value="5" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>谜题：<el-rate model-value="5" disabled /></p></div>
+<div><p>谜题：<el-rate model-value="5" disabled text-color="#ff9900" show-score /></p></div>
 
-广州机械推理类密室的天花板
+广州本格推理主题密室天花板
 
 店里的两只猫猫一只叫“福福”，另一只叫“莫莫”（超级乖）
 
 ![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/dyg/img.jpg)
+
+## 怪诞小镇原创剧情密室
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0G0SU10Q0" target="_blank">天河路365号天俊国际大厦24楼01户</a>
+
+### 精怪物语
+
+<div><p>沉浸：<el-rate model-value="4" disabled text-color="#ff9900" show-score /></p></div>
+
+<div><p>场景：<el-rate model-value="3.5" disabled text-color="#ff9900" show-score /></p></div>
+
+<div><p>剧情：<el-rate model-value="5" disabled text-color="#ff9900" show-score /></p></div>
+
+<div><p>机关道具：<el-rate model-value="4" disabled text-color="#ff9900" show-score /></p></div>
+
+<div><p>谜题：<el-rate model-value="5" disabled text-color="#ff9900" show-score /></p></div>
+
+广州变格推理主题密室天花板
+
+![CPU干烧了](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/play/guangzhou/th/tyzx/gdxz/img.jpg)
 
 ## 头号玩家剧情密室
 
@@ -33,17 +53,17 @@ article: false
 
 ### 瞳灵人
 
-<div><p>沉浸：<el-rate model-value="4" disabled /></p></div>
+<div><p>沉浸：<el-rate model-value="4" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>场景：<el-rate model-value="2" disabled /></p></div>
+<div><p>场景：<el-rate model-value="2" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>剧情：<el-rate model-value="3" disabled /></p></div>
+<div><p>剧情：<el-rate model-value="3" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>谜题：<el-rate model-value="1" disabled /></p></div>
+<div><p>谜题：<el-rate model-value="1" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>恐怖：<el-rate model-value="5" disabled /></p></div>
+<div><p>恐怖：<el-rate model-value="5" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>运动量：<el-rate model-value="5" disabled /></p></div>
+<div><p>运动量：<el-rate model-value="5" disabled text-color="#ff9900" show-score /></p></div>
 
 正如工作人员给我们描述的那样：黑追电主题的鼻祖
 
@@ -57,15 +77,15 @@ article: false
 
 ### 拐卖
 
-<div><p>场景：<el-rate model-value="1.5" disabled /></p></div>
+<div><p>场景：<el-rate model-value="1.5" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>剧情：<el-rate model-value="1" disabled /></p></div>
+<div><p>剧情：<el-rate model-value="1" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>谜题：<el-rate model-value="0.5" disabled /></p></div>
+<div><p>谜题：<el-rate model-value="0.5" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>恐怖：<el-rate model-value="2" disabled /></p></div>
+<div><p>恐怖：<el-rate model-value="2" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>运动量：<el-rate model-value="2.5" disabled /></p></div>
+<div><p>运动量：<el-rate model-value="2.5" disabled text-color="#ff9900" show-score /></p></div>
 
 打雷音效还蛮令人触不及防的，只不过到后面都被“劈”麻痹了
 
@@ -77,25 +97,25 @@ article: false
 
 ### 走尸
 
-<div><p>场景：<el-rate model-value="3.5" disabled /></p></div>
+<div><p>场景：<el-rate model-value="3.5" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>剧情：<el-rate model-value="3.5" disabled /></p></div>
+<div><p>剧情：<el-rate model-value="3.5" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>机关道具：<el-rate model-value="3.5" disabled /></p></div>
+<div><p>机关道具：<el-rate model-value="3.5" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>谜题：<el-rate model-value="3.5" disabled /></p></div>
+<div><p>谜题：<el-rate model-value="3.5" disabled text-color="#ff9900" show-score /></p></div>
 
 剧本杀 + 实景搜证密室
 
 ### 无刃之剑
 
-<div><p>场景：<el-rate model-value="2.5" disabled /></p></div>
+<div><p>场景：<el-rate model-value="2.5" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>剧情：<el-rate model-value="2.5" disabled /></p></div>
+<div><p>剧情：<el-rate model-value="2.5" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>机关道具：<el-rate model-value="3" disabled /></p></div>
+<div><p>机关道具：<el-rate model-value="3" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>谜题：<el-rate model-value="3" disabled /></p></div>
+<div><p>谜题：<el-rate model-value="3" disabled text-color="#ff9900" show-score /></p></div>
 
 有内奸机制（我指的是当然是整蛊队友摇摇乐的那个人:zany_face:）
 
@@ -105,15 +125,15 @@ article: false
 
 ### Hush
 
-<div><p>场景：<el-rate model-value="3.5" disabled /></p></div>
+<div><p>场景：<el-rate model-value="3.5" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>剧情：<el-rate model-value="3" disabled /></p></div>
+<div><p>剧情：<el-rate model-value="3" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>机关道具：<el-rate model-value="3.5" disabled /></p></div>
+<div><p>机关道具：<el-rate model-value="3.5" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>谜题：<el-rate model-value="1" disabled /></p></div>
+<div><p>谜题：<el-rate model-value="1" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>恐怖：<el-rate model-value="1" disabled /></p></div>
+<div><p>恐怖：<el-rate model-value="1" disabled text-color="#ff9900" show-score /></p></div>
 
 3人开场体验感拉满
 

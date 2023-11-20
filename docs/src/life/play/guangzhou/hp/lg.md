@@ -11,59 +11,9 @@ article: false
 
 ### 张学友 60+
 
-Overture（留住这时光）
+1 Overture（留住这时光）2 Ooh La La 3 马路英雄 4 情不禁 5 我应该 6 等你等到我心痛 7 深海 8 三天两夜 9 Double Trouble 10 情书 11 我真的受伤了 12 日出时让街灯安睡 13 又十年 14 天气这么热 15 想劈酒 16 刹那爱 17 岁月流情 18 分手总要在雨天 19 只想一生跟你走 20 爱是永恒 21 过敏世界 **Encore：** 22 蓝雨 23 她来看我的演唱会 24 每天爱你多一些（清唱） 25 吻别
 
-Ooh La La
-
-马路英雄
-
-情不禁
-
-我应该
-
-等你等到我心痛
-
-深海
-
-三天两夜
-
-Double Trouble
-
-情书
-
-我真的受伤了
-
-日出时让街灯安睡
-
-又十年
-
-天气这么热
-
-想劈酒
-
-刹那爱
-
-岁月流情
-
-分手总要在雨天
-
-只想一生跟你走
-
-爱是永恒
-
-过敏世界
-
-Encore：
-
-蓝雨
-
-她来看我的演唱会
-
-每天爱你多一些（清唱）
-
-吻别
-
-![黄牛代拍1050，一共3330](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/play/guangzhou/hp/lg/bn/jacky60%2B/img.jpg)
+![黄牛代拍1050](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/play/guangzhou/hp/lg/bn/jacky60%2B/img.jpg)
 
 ![](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/play/guangzhou/hp/lg/bn/jacky60%2B/img_0.jpg)
 

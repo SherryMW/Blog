@@ -146,7 +146,7 @@ article: false
 - [x] 杏仁茶汤圆
 - [ ] 原味冰镇奶茶
 
-## 佩姐老火锅
+## 珮姐老火锅
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0I1F4EXRB" target="_blank">宏发大厦北门一楼10号</a>
 
@@ -154,7 +154,7 @@ article: false
 
 - [x] 屠场鲜毛肚（推荐）
 - [x] 精品鸭肠
-- [x] 卤鸭爪
+- [x] 卤鸡爪
 - [x] 和牛雪花
 - [x] 高钙羊肉卷
 - [x] 鱼豆花

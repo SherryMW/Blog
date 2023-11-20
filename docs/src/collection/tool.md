@@ -6,6 +6,11 @@ article: false
 
 ::: projects
 ```yaml
+- icon: https://greasyfork.org/vite/assets/blacklogo96-e0c2c761.png
+  name: Greasy Fork
+  desc: 提供用户脚本的网站
+  link: https://greasyfork.org/zh-CN
+
 - icon: https://uutool.cn/favicon.ico
   name: UU在线工具
   desc: 工欲善其事，必先利其器

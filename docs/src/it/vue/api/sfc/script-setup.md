@@ -11,7 +11,7 @@ article: false
 
 - 更少的样板内容，更简洁的代码
 
-- 能够使用纯 TypeScript 声明 props 和自定义事件
+- 能够使用纯 TypeScript 声明 `props` 和自定义事件
 
 - 更好的运行时性能 (其模板会被编译成同一作用域内的渲染函数，避免了渲染上下文代理对象)
 
@@ -19,7 +19,7 @@ article: false
 
 ## 基本语法
 
-要启用该语法，需要在 `<script>` 代码块上添加 `setup` attribute：
+要启用该语法，需要在 `<script>` 代码块上添加 `setup` 属性：
 
 ```vue
 <script setup>
@@ -31,9 +31,13 @@ console.log('hello script setup')
 
 ### 顶层的绑定会被暴露给模板
 
-当使用 `<script setup>` 的时候，任何在 `<script setup>` 声明的顶层的绑定 (包括变量，函数声明，以及 import 导入的内容) 都能在模板中直接使用：
+当使用 `<script setup>` 的时候，任何在 `<script setup>` 声明的顶层的绑定 (包括变量，函数声明，以及 `import` 导入的内容) 都能在模板中直接使用：
 
 ```vue
+<template>
+  <button @click="log">{{ msg }}</button>
+</template>
+
 <script setup>
 // 变量
 const msg = 'Hello!'
@@ -43,27 +47,23 @@ function log() {
   console.log(msg)
 }
 </script>
-
-<template>
-  <button @click="log">{{ msg }}</button>
-</template>
 ```
 
-import 导入的内容也会以同样的方式暴露。这意味着我们可以在模板表达式中直接使用导入的 helper 函数，而不需要通过 `methods` 选项来暴露它：
+`import` 导入的内容也会以同样的方式暴露。这意味着我们可以在模板表达式中直接使用导入的 `helper` 函数，而不需要通过 `methods` 选项来暴露它：
 
 ```vue
-<script setup>
-import { capitalize } from './helpers'
-</script>
-
 <template>
   <div>{{ capitalize('hello') }}</div>
 </template>
+
+<script setup>
+  import { capitalize } from './helpers'
+</script>
 ```
 
 ## 响应式
 
-响应式状态需要明确使用响应式 API 来创建。和 `setup()` 函数的返回值一样，ref 在模板中使用的时候会自动解包：
+响应式状态需要明确使用响应式 API 来创建。和 `setup()` 函数的返回值一样，`ref` 在模板中使用的时候会自动解包：
 
 ```vue
 <script setup>
@@ -82,13 +82,13 @@ const count = ref(0)
 `<script setup>` 范围里的值也能被直接作为自定义组件的标签名使用：
 
 ```vue
-<script setup>
-import MyComponent from './MyComponent.vue'
-</script>
-
 <template>
   <MyComponent />
 </template>
+
+<script setup>
+import MyComponent from './MyComponent.vue'
+</script>
 ```
 
 这里 `MyComponent` 应当被理解为像是在引用一个变量。如果你使用过 JSX，此处的心智模型是类似的。其 kebab-case 格式的 `<my-component>` 同样能在模板中使用——不过，我们强烈建议使用 PascalCase 格式以保持一致性。同时这也有助于区分原生的自定义元素
@@ -98,15 +98,15 @@ import MyComponent from './MyComponent.vue'
 由于组件是通过变量引用而不是基于字符串组件名注册的，在 `<script setup>` 中要使用动态组件的时候，应该使用动态的 `:is` 来绑定：
 
 ```vue
-<script setup>
-import Foo from './Foo.vue'
-import Bar from './Bar.vue'
-</script>
-
 <template>
   <component :is="Foo" />
   <component :is="someCondition ? Foo : Bar" />
 </template>
+
+<script setup>
+import Foo from './Foo.vue'
+import Bar from './Bar.vue'
+</script>
 ```
 
 请注意组件是如何在三元表达式中被当做变量使用的
@@ -143,15 +143,53 @@ export {
 ```
 
 ```vue
-<script setup>
-import * as Form from './form-components'
-</script>
-
 <template>
   <Form.Input>
     <Form.Label>label</Form.Label>
   </Form.Input>
 </template>
+
+<script setup>
+  import * as Form from './form-components'
+</script>
 ```
+
+## 使用自定义指令
+
+待更新
+
+## defineProps() 和 defineEmits()
+
+待更新
+
+## defineExpose()
+
+待更新
+
+## defineOptions()
+
+待更新
+
+## defineSlots()
+
+待更新
+
+## useSlots() 和 useAttrs()
+
+待更新
+
+## 与普通的 `<script>` 一起使用
+
+待更新
+
+## 顶层 await
+
+待更新
+
+## 泛型
+
+待更新
+
+## 限制
 
 待更新

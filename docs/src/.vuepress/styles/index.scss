@@ -23,3 +23,23 @@
 .vp-blog-mask::after {
   background: var(--light);
 }
+
+//在演练场中尝试一下
+.vp-page a[href^="https://play.vuejs.org"]:before {
+  content: '▶';
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 10px;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+  color: #42b883;
+  border: 2px solid #42b883;
+  margin-right: 8px;
+  margin-left: 4px;
+  line-height: 15px;
+  padding-left: 4.5px;
+  font-size: 11px;
+  box-sizing: border-box;
+}

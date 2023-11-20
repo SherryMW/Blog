@@ -10,13 +10,13 @@ article: false
 
 ## 组件作用域 CSS
 
-当 `<style>` 标签带有 `scoped` attribute 的时候，它的 CSS 只会影响当前组件的元素，和 Shadow DOM 中的样式封装类似。使用时有一些注意事项，不过好处是不需要任何的 polyfill。它的实现方式是通过 PostCSS 将以下内容：
+当 `<style>` 标签带有 `scoped` 属性的时候，它的 CSS 只会影响当前组件的元素，和 Shadow DOM 中的样式封装类似。使用时有一些注意事项，不过好处是不需要任何的 polyfill。它的实现方式是通过 PostCSS 将以下内容：
 
 ```vue
 <style scoped>
-.example {
-  color: red;
-}
+  .example {
+    color: red;
+  }
 </style>
 
 <template>
@@ -28,9 +28,9 @@ article: false
 
 ```vue
 <style>
-.example[data-v-f3f3eg9] {
-  color: red;
-}
+  .example[data-v-f3f3eg9] {
+    color: red;
+  }
 </style>
 
 <template>
@@ -122,9 +122,9 @@ article: false
 </template>
 
 <style module>
-.red {
-  color: red;
-}
+  .red {
+    color: red;
+  }
 </style>
 ```
 
@@ -142,9 +142,9 @@ article: false
 </template>
 
 <style module="classes">
-.red {
-  color: red;
-}
+  .red {
+    color: red;
+  }
 </style>
 ```
 
@@ -173,19 +173,19 @@ useCssModule('classes')
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      color: 'red'
+  export default {
+    data() {
+      return {
+        color: 'red'
+      }
     }
   }
-}
 </script>
 
 <style>
-.text {
-  color: v-bind(color);
-}
+  .text {
+    color: v-bind(color);
+  }
 </style>
 ```
 
@@ -193,9 +193,9 @@ export default {
 
 ```vue
 <script setup>
-const theme = {
-  color: 'red'
-}
+  const theme = {
+    color: 'red'
+  }
 </script>
 
 <template>
@@ -203,9 +203,9 @@ const theme = {
 </template>
 
 <style scoped>
-p {
-  color: v-bind('theme.color');
-}
+  p {
+    color: v-bind('theme.color');
+  }
 </style>
 ```
 

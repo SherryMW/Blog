@@ -79,7 +79,7 @@ Postgre 是数据库引擎，而 SQL 是结构化查询语言，是一种数据�
 
    Stack Builder 可以用来下载和安装额外的工具、驱动程序和应用程序，以补充你的 PostgreSqL 安装。没有这个需求就不用勾选该选项
 
-   ![](https://img.sherry4869.com/blog/it/database/postgresql/img_5.png =x500)
+   ![](https://img.sherry4869.com/blog/it/database/postgresql/img_5.png)
 
    我们需要用到 pgAdmin 4 图形用户界面客户端和 SQL Shell(psql)
 

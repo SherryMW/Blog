@@ -49,6 +49,16 @@ article: false
 - [x] 豆花
 - [x] 豆浆
 
+## Moos Coffee（歇业）
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFFOBIXZ" target="_blank">元岗路310号</a>
+
+- [x] 生榨椰乳拿铁（推荐）
+- [x] 牛油果拿铁
+- [x] 北海道吐司（推荐）
+- [x] 蔻曼黄油可颂
+- [x] 贝果
+
 ## 三两粉
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H1U90B35" target="_blank">天源路5号天河新天地B1</a>

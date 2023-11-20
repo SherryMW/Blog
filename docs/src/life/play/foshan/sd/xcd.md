@@ -11,63 +11,7 @@ article: false
 
 ### AGA ONEDERFUL LIVE
 
-Count to Ten
-
-Mad
-
-MIZU
-
-Nights Without You
-
-Everyday
-
-吃定我
-
-The Lovers
-
-What are we gonna do
-
-理性与任性之间
-
-若
-
-圆
-
-Yes or No
-
-Better Me
-
-Tomorrow
-
-Miss u Goodbye
-
-孤雏
-
-问好
-
-So Called Love Song
-
-Two at a time
-
-Superman
-
-小问题
-
-3AM
-
-CityPop
-
-Encore：
-
-无期
-
-一
-
-Wonderful U
-
-See You Next Time
-
-Tonight
+1 Count to Ten 2 Mad 3 MIZU 4 Nights Without You 5 Everyday 6 吃定我 7 The Lovers 8 What are we gonna do 9 理性与任性之间 10 若 11 圆 12 Yes or No 13 Better Me 14 Tomorrow 15 Miss u Goodbye 16 孤雏 17 问好 18 So Called Love Song 19 Two at a time 20 Superman 21 小问题 22 3AM 23 CityPop **Encore：** 24 无期 25 一 26 Wonderful U 27 See You Next Time 28 Tonight
 
 ![](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/play/foshan/sd/xcd/live/AGA2023/img.jpg)
 

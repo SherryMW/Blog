@@ -74,3 +74,10 @@ article: false
 - [x] 大片牛肉手工拉面
 - [x] 招牌烤包子（推荐）
 - [x] 红柳羊肉大串
+
+## 巴打茶记
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0JDY7YWYO" target="_blank">惠福东路451号101首层-4</a>
+
+- [x] 招牌港式丝袜奶茶（推荐）
+- [x] 港式鸳鸯

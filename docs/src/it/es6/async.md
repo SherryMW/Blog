@@ -7,6 +7,175 @@ article: false
 
 # async 函数
 
+## 关于异步问题
+
+串行：卷子批完了，班长来上来拿了发下去
+
+并行：这是这次要做的新卷子,来第一排的我每人给你们一叠都往后传一下
+
+Java 程序默认的执行规则是从上至下运行，也就是一种串行执行，除非使用多线程去执行那么就是并行执行
+
+```java
+public class Test {
+    public static void loadCollect1() {
+        System.out.println("111");
+    }
+
+    public static void loadCollect2() {
+        System.out.println("222");
+    }
+
+    public static void created() {
+        loadCollect1();
+        loadCollect2();
+    }
+
+    public static void main(String[] args) {
+        created(); // 111  222
+    }
+}
+```
+
+默认情况下 JavaScript 也是一种串行执行：
+
+```js
+function loadCollect1() {
+    console.log("11111111")
+}
+
+function loadCollect2() {
+    console.log("2222222")
+}
+
+function created() {
+    loadCollect1();
+    loadCollect2();
+}
+
+created();
+```
+
+而 Ajax 是一种异步非阻塞的一种并行执行方式：
+
+```js
+export default {
+    created() {
+        console.log(111);
+        this.loadCollect1();
+        console.log(333);
+        this.loadCollect2();
+        console.log(555);
+    },
+    methods: {
+        loadCollect1() {
+            axios.get("/api/collect/load").then(res => {
+                console.log(222)
+            })
+        },
+        loadCollect2() {
+            axios.get("/api/collect/load").then(res => {
+                console.log(444)
+            })
+        }
+    }
+}
+```
+
+如果上述执行的顺序是 1，2，3，4，5 就说明是串行执行，但 Ajax 是异步非阻塞的，所以输出结果并不是串行的
+
+通过上面的分析得出结论：异步请求是一种并行执行，不会阻塞代码，这样就告诉开发人员在开发中不要闹出如下的笑话：
+
+```js
+export default {
+    data() {
+        return {
+            data: ""
+        }
+    },
+    created() {
+        this.loadCollect1();
+        this.saveLog(this.data); // 这里是拿不到 data 值的
+    },
+    methods: {
+        loadCollect1() {
+            axios.get("/api/collect/load").then(res => {
+                this.data = res.data;
+            })
+        },
+        saveLog(data) {
+            console.log(data);
+        }
+    }
+}
+```
+
+那么如何解决和获取这个内容的值呢？
+
+1. 直接在方法中的回调去获取调用
+
+    ```js
+    export default {
+        created() {
+            this.loadCollect1();
+        },
+        methods: {
+            loadCollect1() {
+                axios.get("/api/collect/load").then(res => {
+                    this.saveLog(res.data);
+                })
+            },
+            saveLog(data) {
+                console.log(data);
+            }
+        }
+    }
+    ```
+    
+    但上面的代码会存在耦合度高的问题：你中有我，我中有你
+
+2. 用函数（行为）入参，回调函数
+
+    ```js
+    export default {
+        created() {
+            this.loadCollect1(res => {
+                this.saveLog(res)
+            });
+        },
+        methods: {
+            loadCollect1(callbackFn) {
+                axios.get("/api/collect/load").then(res => {
+                    callbackFn && callbackFn(res.data);
+                })
+            },
+            saveLog(data) {
+                console.log(data);
+            }
+        }
+    }
+    ```
+    
+    行为入参可以解决函数的隔离和行为执行延续的问题，这样可以解耦合度和代码污染问题，但这里就会有一个地狱回调的问题
+
+3. `async` + `await`
+
+    ```js
+    export default {
+        async created() {
+            var res = await this.loadCollect1();
+            this.saveLog(res.data);
+        },
+        methods: {
+            loadCollect1(callbackFn) {
+                return axios.get("/api/collect/load");
+            },
+            saveLog(data) {
+                console.log(data);
+            }
+        }
+    }
+    ```
+
 ## 含义
 
 ES2017 标准引入了 `async` 函数，使得异步操作变得更加方便。`async` 函数是什么？一句话，它就是 `Generator` 函数的语法糖

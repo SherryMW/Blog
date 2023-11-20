@@ -24,18 +24,36 @@ article: false
 ```yaml
 - icon: https://static.npmjs.com/58a19602036db1daee0d7863c94673a4.png
   name: NPM
-  desc: 打造令人惊叹的东西
+  desc: Build amazing things
   link: https://www.npmjs.com/
   
-- icon: https://www.pnpm.cn/img/logos/pnpm-standard-no-text.png
-  name: PNPM
-  desc: 速度快、节省磁盘空间的软件包管理器
-  link: https://www.pnpm.cn/
-
 - icon: https://unpkg.com/favicon.ico
   name: UNPKG
   desc: 一个快速的全球内容交付网络，适用于 NPM 上的所有内容
   link: https://unpkg.com/
+
+- icon: https://www.pnpm.cn/img/logos/pnpm-standard-no-text.png
+  name: PNPM
+  desc: 速度快、节省磁盘空间的软件包管理器
+  link: https://www.pnpm.cn/
+```
+:::
+
+::: projects
+```yaml
+- icon: https://cn.vuejs.org/logo.svg
+  name: Vue
+  desc: 渐进式 JavaScript 框架
+  link: https://cn.vuejs.org/
+```
+:::
+
+::: projects
+```yaml
+- icon: https://animate.style/img/favicon.ico
+  name: Animate.css
+  desc: Just-add-water CSS animations
+  link: https://animate.style/
 ```
 :::
 
@@ -110,7 +128,7 @@ article: false
 - icon: https://element-plus.org//images/element-plus-logo-small.svg
   name: Element Plus
   desc: 基于 Vue 3 面向设计师和开发者的组件库
-  link: https://element-plus.org/
+  link: https://element-plus.org/zh-CN/
 
 - icon: https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg
   name: Ant Design 5.0
@@ -131,10 +149,5 @@ article: false
   name: Vant Weapp
   desc: 轻量、可靠的小程序 UI 组件库
   link: https://vant-contrib.gitee.io/vant-weapp/#/home
-
-- icon: https://uiadmin.net/uview-plus/common/logo.png
-  name: uview-plus
-  desc: 全面兼容 nvue 的 uni-app 生态框架
-  link: https://uiadmin.net/uview-plus/
 ```
 :::

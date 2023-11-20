@@ -59,7 +59,7 @@ Windows 10 或者 Windows 11 点击下载时可能会出现【无法下载-检�
 
 ## 英雄联盟
 
-::: info 一键喊话
+::: info “一键喊话”
 不要吵
 
 给个眼
@@ -77,16 +77,10 @@ Windows 10 或者 Windows 11 点击下载时可能会出现【无法下载-检�
 /ff
 :::
 
-![](https://img.sherry4869.com/blog/game/lol/img_7.png)
-
-![](https://img.sherry4869.com/blog/game/lol/img_2.jpg)
-
 ![](https://img.sherry4869.com/blog/game/lol/img_1.png)
+
+![](https://img.sherry4869.com/blog/game/lol/img_2.png)
 
 ![](https://img.sherry4869.com/blog/game/lol/img_3.png)
 
 ![](https://img.sherry4869.com/blog/game/lol/img_4.png)
-
-![](https://img.sherry4869.com/blog/game/lol/img_5.png)
-
-![](https://img.sherry4869.com/blog/game/lol/img_6.png)

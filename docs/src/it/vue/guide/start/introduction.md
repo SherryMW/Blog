@@ -4,7 +4,6 @@ category: IT
 tag: Vue
 shortTitle: 简介
 order: 1
-article: false
 ---
 
 # Vue
@@ -17,29 +16,27 @@ Vue (发音为 /vjuː/，类似 view) 是一款用于构建用户界面的 JavaS
 
 下面是一个最基本的示例：
 
-::: vue-playground Vue 交互演示
-
-@file App.vue
-
 ```vue
-<script setup>
-  import {ref} from "vue";
-
-  const msg = ref("你好交互演示!");
-  const count = ref(0);
-</script>
-
 <template>
-  <h1>{{ msg }}</h1>
-  <input v-model="msg"/>
-  <br/>
-  <button @click="count++">
-    Count is: {{ count }}
-  </button>
+  <div id="app">
+    <button @click="count++">
+      Count is: {{ count }}
+    </button>
+  </div>
 </template>
-```
 
-:::
+<script>
+  import { createApp } from 'vue'
+
+  createApp({
+    data() {
+      return {
+        count: 0
+      }
+    }
+  }).mount('#app')
+</script>
+```
 
 上面的示例展示了 Vue 的两个核心功能：
 
@@ -53,9 +50,9 @@ Vue (发音为 /vjuː/，类似 view) 是一款用于构建用户界面的 JavaS
 
 - 响应性：Vue 具备响应式系统，它能够自动追踪数据的变化，并在数据发生变化时自动更新与之相关联的 DOM 元素，从而保持页面的同步。这是通过以下方式实现的：
 
-    - 当我们创建一个 Vue 实例时，Vue 会扫描实例中的数据属性，将其转换为 getter 和 setter，并建立响应式依赖关系
+    - 当我们创建一个 Vue 实例时，Vue 会扫描实例中的数据属性，将其转换为 `getter` 和 `setter`，并建立响应式依赖关系
 
-    - 当数据属性发生变化时，setter 会通知相关的 DOM 元素进行更新。这意味着无论是通过用户交互还是其他方式修改了数据，页面都会自动反映这些变化
+    - 当数据属性发生变化时，`setter` 会通知相关的 DOM 元素进行更新。这意味着无论是通过用户交互还是其他方式修改了数据，页面都会自动反映这些变化
 
     - 响应性系统还可以嵌套，即一个数据属性可以依赖于另一个数据属性，这样复杂的数据关系也可以得到自动追踪和更新
 
@@ -67,28 +64,32 @@ Vue 2 使用了 `Object.defineProperty` 来实现响应式。以下是主要的�
 
 1. 数据劫持：Vue 2 通过遍历组件的数据对象，对每个属性使用 `Object.defineProperty` 来定义 `getter` 和 `setter`。这样，当属性被访问或者修改时，Vue 可以捕获这些操作
 
-2. 依赖追踪：每个属性都有一个依赖收集器，用于存储依赖于该属性的 Watcher 对象。Watcher 对象负责更新视图
+2. 依赖追踪：每个属性都有一个依赖收集器，用于存储依赖于该属性的 `Watcher` 对象。`Watcher` 对象负责更新视图
 
 3. 编译阶段：在模板编译阶段，Vue 2 解析模板中的表达式，并创建一个渲染函数，这个函数包含对数据属性的引用，这些引用将触发依赖收集
 
-4. 首次渲染：首次渲染过程中，渲染函数会执行，访问数据属性并触发依赖收集，Watcher 对象将添加到依赖收集器中
+4. 首次渲染：首次渲染过程中，渲染函数会执行，访问数据属性并触发依赖收集，`Watcher` 对象将添加到依赖收集器中
 
-5. 更新触发：当数据属性发生变化时，它们的 `setter` 被调用，`setter` 会通知依赖收集器中的 Watcher 对象，告诉它们需要重新渲染视图
+5. 更新触发：当数据属性发生变化时，它们的 `setter` 被调用，`setter` 会通知依赖收集器中的 `Watcher` 对象，告诉它们需要重新渲染视图
 
-6. 重新渲染：触发更新的 Watcher 对象会重新运行渲染函数，生成新的虚拟 DOM（Virtual DOM），并与之前的虚拟 DOM 进行对比，最终更新真实的 DOM
+6. 重新渲染：触发更新的 `Watcher` 对象会重新运行渲染函数，生成新的虚拟 DOM（Virtual DOM），并与之前的虚拟 DOM 进行对比，最终更新真实的 DOM
 
 **Vue 3 的响应式实现：**
 
-Vue 3 采用了 Proxy 来实现响应式，这是一种更现代和灵活的方式。以下是 Vue 3 的响应式实现的关键特点：
+Vue 3 采用了 `Proxy` 来实现响应式，这是一种更现代和灵活的方式。以下是 Vue 3 的响应式实现的关键特点：
 
-1. Proxy代理：Vue 3 使用 ES6 中的 Proxy 对象，它可以拦截对象上的各种操作，包括属性的读取、设置、删除等。这使得 Vue 3 可以更灵活地捕获对象上的操作
+1. Proxy 代理：Vue 3 使用 ES6 中的 `Proxy` 对象，它可以拦截对象上的各种操作，包括属性的读取、设置、删除等。这使得 Vue 3 可以更灵活地捕获对象上的操作
 
 2. 递归代理：Vue 3 会递归地代理对象的所有嵌套属性，包括子对象。这简化了响应式数据的管理，无需手动逐层设置
 
-3. WeakMap 缓存：Vue 3 使用 WeakMap 来缓存已经代理的对象，以提高性能并避免内存泄漏
+3. WeakMap 缓存：Vue 3 使用 `WeakMap` 来缓存已经代理的对象，以提高性能并避免内存泄漏
 
 4. 副作用跟踪：Vue 3 引入了 `effect` 函数，用于跟踪副作用，例如数据变化时需要执行的函数。这是 Composition API 的一部分，用于组织组件逻辑
 
+:::
+
+::: tip 预备知识
+文档接下来的内容会假设你对 HTML、CSS 和 JavaScript 已经基本熟悉。如果你对前端开发完全陌生，最好不要直接从一个框架开始进行入门学习——最好是掌握了基础知识再回到这里。你可以通过这篇 [JavaScript 概述](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Language_overview)来检验你的 JavaScript 知识水平。如果之前有其他框架的经验会很有帮助，但也不是必须的
 :::
 
 ## 渐进式框架
@@ -114,24 +115,23 @@ Vue 是一个框架，也是一个生态。其功能覆盖了大部分前端开�
 在大多数启用了构建工具的 Vue 项目中，我们可以使用一种类似 HTML 格式的文件来书写 Vue 组件，它被称为单文件组件 (也被称为 `*.vue` 文件，英文 Single-File Components，缩写为 SFC)。顾名思义，Vue 的单文件组件会将一个组件的逻辑 (JavaScript)，模板 (HTML) 和样式 (CSS) 封装在同一个文件里。下面我们将用单文件组件的格式重写上面的计数器示例：
 
 ```vue
-<script>
-export default {
-  data() {
-    return {
-      count: 0
-    }
-  }
-}
-</script>
-
 <template>
   <button @click="count++">Count is: {{ count }}</button>
 </template>
 
+<script>
+  export default {
+    data() {
+      return {
+        count: 0
+      }
+    }
+  }
+</script>
 <style scoped>
-button {
-  font-weight: bold;
-}
+  button {
+    font-weight: bold;
+  }
 </style>
 ```
 
@@ -146,42 +146,42 @@ Vue 的组件可以按两种不同的风格书写：**选项式 API** 和 **组�
 使用选项式 API，我们可以用包含多个选项的对象来描述组件的逻辑，例如 `data`、`methods` 和 `mounted`。选项所定义的属性都会暴露在函数内部的 `this` 上，它会指向当前的组件实例
 
 ```vue
-<script>
-export default {
-  // data() 返回的属性将会成为响应式的状态
-  // 并且暴露在 `this` 上
-  data() {
-    return {
-      count: 0
-    }
-  },
-
-  // methods 是一些用来更改状态与触发更新的函数
-  // 它们可以在模板中作为事件处理器绑定
-  methods: {
-    increment() {
-      this.count++
-    }
-  },
-
-  // 生命周期钩子会在组件生命周期的各个不同阶段被调用
-  // 例如这个函数就会在组件挂载完成后被调用
-  mounted() {
-    console.log(`The initial count is ${this.count}.`)
-  }
-}
-</script>
-
 <template>
   <button @click="increment">Count is: {{ count }}</button>
 </template>
+
+<script>
+  export default {
+    // data() 返回的属性将会成为响应式的状态
+    // 并且暴露在 `this` 上
+    data() {
+      return {
+        count: 0
+      }
+    },
+
+    // methods 是一些用来更改状态与触发更新的函数
+    // 它们可以在模板中作为事件处理器绑定
+    methods: {
+      increment() {
+        this.count++
+      }
+    },
+
+    // 生命周期钩子会在组件生命周期的各个不同阶段被调用
+    // 例如这个函数就会在组件挂载完成后被调用
+    mounted() {
+      console.log(`The initial count is ${this.count}.`)
+    }
+  }
+</script>
 ```
 
 [在演练场中尝试一下](https://play.vuejs.org/#eNptkMFqxCAQhl9lkB522ZL0HNKlpa/Qo4e1ZpLIGhUdl5bgu9es2eSyIMio833zO7NP56pbRNawNkivHJ25wV9nPUGHvYiaYOYGoK7Bo5CkbgiBBOFy2AkSh2N5APmeojePCkDaaKiBt1KnZUuv3Ky0PppMsyYAjYJgigu0oEGYDsirYUAP0WULhqVrQhptF5qHQhnpcUJD+wyQaSpUd/Xp9NysVY/yT2qE0dprIS/vsds5Mg9mNVbaDofL94jZpUgJXUKBCvAy76ZUXY53CTd5tfX2k7kgnJzOCXIF0P5EImvgQ2olr++cbRE4O3+t6JxvXj0ptXVpye1tvbFY+ge/NJZt)
 
 ### 组合式 API (Composition API)
 
-通过组合式 API，我们可以使用导入的 API 函数来描述组件逻辑。在单文件组件中，组合式 API 通常会与 `<script setup>` 搭配使用。这个 setup attribute 是一个标识，告诉 Vue 需要在编译时进行一些处理，让我们可以更简洁地使用组合式 API。比如，`<script setup>` 中的导入和顶层变量/函数都能够在模板中直接使用
+通过组合式 API，我们可以使用导入的 API 函数来描述组件逻辑。在单文件组件中，组合式 API 通常会与 [`<script setup>`](../../api/sfc/script-setup.md) 搭配使用。这个 `setup` attribute 是一个标识，告诉 Vue 需要在编译时进行一些处理，让我们可以更简洁地使用组合式 API。比如，`<script setup>` 中的导入和顶层变量/函数都能够在模板中直接使用
 
 下面是使用了组合式 API 与 `<script setup>` 改造后和上面的模板完全一样的组件：
 
@@ -227,3 +227,7 @@ onMounted(() => {
     - 当你不需要使用构建工具，或者打算主要在低复杂度的场景中使用 Vue，例如渐进增强的应用场景，推荐采用选项式 API
 
     - 当你打算用 Vue 构建完整的单页应用，推荐采用组合式 API + 单文件组件
+
+## 参考资料
+
+[官方文档](https://cn.vuejs.org/)

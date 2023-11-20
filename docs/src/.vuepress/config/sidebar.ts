@@ -40,21 +40,21 @@ export const SidebarConfig = sidebar({
     //     }
     // ],
     //
-    // "/life/healthy/": [
-    //     {
-    //         text: "作息",
-    //         prefix: "sleep/",
-    //         collapsible: true,
-    //         children: "structure"
-    //     },
-    //     {
-    //         text: "健身",
-    //         prefix: "gym/",
-    //         collapsible: true,
-    //         children: "structure"
-    //     },
-    //     "ill"
-    // ],
+    "/life/healthy/": [
+        {
+            text: "作息",
+            prefix: "rest/",
+            collapsible: true,
+            children: "structure"
+        },
+        // {
+        //     text: "健身",
+        //     prefix: "gym/",
+        //     collapsible: true,
+        //     children: "structure"
+        // },
+        // "ill"
+    ],
     //
     // "/life/delicacies/": [
     //     {

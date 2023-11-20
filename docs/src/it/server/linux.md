@@ -2,18 +2,43 @@
 date: 2022-07-01
 category: IT
 tag: Linux
-article: false
 ---
 
 # Linux
 
-Linux 是一种基于 UNIX 操作系统的开源操作系统，让你可以像个真正的程序员一样在命令行里面摆弄自己的电脑，感觉自己是黑客，但实际上只是个蒟蒻
-
 <!-- more -->
 
-## crontab
+## df
 
-### 创建定时任务
+Linux df（英文全拼：disk free） 命令用于显示目前在 Linux 系统上的文件系统磁盘使用情况统计
+
+```shell
+df [选项]... [FILE]...
+```
+
+- `-h`（`--human-readable`）：人类可读选项。此标志以更容易阅读的格式打印大小，如 KB、MB、GB 等
+
+    运行 `df -h` 时，输出通常包含有关每个已挂载文件系统的信息，包括总大小、已用空间、可用空间和利用率等详细信息。例如，输出可能类似于以下内容：
+    
+    ```shell
+    Filesystem      Size  Used Avail Use% Mounted on
+    /dev/sda1        20G   10G  8.1G  55% /
+    /dev/sdb1        50G   25G   22G  54% /home
+    ```
+
+  - Filesystem：文件系统的名称
+
+  - Size：文件系统的总大小
+
+  - Used：已使用的空间量
+
+  - Avail：可用空间
+
+  - Use%：已使用空间的百分比
+
+  - Mounted on：文件系统的挂载点
+
+## crontab
 
 在 Linux 中，可以使用 `crontab` 命令来创建定时任务。具体步骤如下：
 
@@ -88,7 +113,7 @@ Linux 是一种基于 UNIX 操作系统的开源操作系统，让你可以像�
 
     `0 0 * * * TZ=Asia/Shanghai command` 表示每天 0 点 0 分钟按照上海时区执行一次命令
 
-### 示例
+**示例：**
 
 使用 `crontab -l` 命令列出当前的定时任务列表。执行该命令后，系统会显示当前用户的所有定时任务，每个任务一行，以及相应的执行时间和执行命令等信息
 

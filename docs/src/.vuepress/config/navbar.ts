@@ -11,10 +11,10 @@ export const NavbarConfig = navbar([
         icon: "creative",
         prefix: "/life/",
         children: [
-            // {
-            //     text: "健康",
-            //     link: "healthy/sleep/2023"
-            // },
+            {
+                text: "健康",
+                link: "healthy/rest/2023"
+            },
             {
                 text: "美食",
                 link: "food/"

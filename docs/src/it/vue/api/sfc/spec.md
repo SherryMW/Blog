@@ -20,19 +20,19 @@ article: false
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      msg: 'Hello world!'
+  export default {
+    data() {
+      return {
+        msg: 'Hello world!'
+      }
     }
   }
-}
 </script>
 
 <style>
-.example {
-  color: red;
-}
+  .example {
+    color: red;
+  }
 </style>
 
 <custom1>
@@ -48,6 +48,8 @@ export default {
 
 - 语块包裹的内容将会被提取、传递给 `@vue/compiler-dom`，预编译为 JavaScript 渲染函数，并附在导出的组件上作为其 `render` 选项
 
+::: details render
+
 在 Vue 2 中，`render` 函数通常是由 Vue 模板编译器自动生成的，开发者只需要编写模板即可。而在 Vue 3 中，你可以选择手动编写 `render` 函数来控制组件的渲染过程，这为更高级的用例提供了更大的灵活性
 
 以下是一个简单的示例，演示了如何使用 `render` 选项：
@@ -61,25 +63,25 @@ export default {
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      message: "Hello, Vue!",
-    };
-  },
-  methods: {
-    changeMessage() {
-      this.message = "Message changed!";
+  export default {
+    data() {
+      return {
+        message: "Hello, Vue!",
+      };
     },
-  },
-  render() {
-    // 使用手动编写的 render 函数
-    return this.$createElement("div", [
-      this.$createElement("p", this.message),
-      this.$createElement("button", { on: { click: this.changeMessage } }, "Change Message"),
-    ]);
-  },
-};
+    methods: {
+      changeMessage() {
+        this.message = "Message changed!";
+      },
+    },
+    render() {
+      // 使用手动编写的 render 函数
+      return this.$createElement("div", [
+        this.$createElement("p", this.message),
+        this.$createElement("button", {on: {click: this.changeMessage}}, "Change Message"),
+      ]);
+    },
+  };
 </script>
 ```
 
@@ -87,25 +89,39 @@ export default {
 
 使用 `render` 函数的主要优势是更高的性能和更大的灵活性。它适用于需要在组件渲染中进行动态计算、条件渲染、循环渲染等复杂场景。然而，对于简单的组件，使用模板仍然是一种有效的方式
 
+:::
+
 ### `<script>`
 
 - 每个 `*.vue` 文件最多可以包含一个 `<script>` 块。(使用 `<script setup>` 的情况除外)
 
 - 这个脚本代码块将作为 ES 模块执行
 
-- 默认导出应该是 Vue 的组件选项对象，可以是一个对象字面量或是 `defineComponent` 函数的返回值
+- 默认导出应该是 Vue 的组件选项对象，可以是一个对象字面量或是 [defineComponent](../global/general.md#definecomponent) 函数的返回值
 
 ### `<script setup>`
 
 - 每个 `*.vue` 文件最多可以包含一个 `<script setup>`。(不包括一般的 `<script>`)
 
-- 这个脚本块将被预处理为组件的 `setup()` 函数，这意味着它将为每一个组件实例都执行。`<script setup>` 中的顶层绑定都将自动暴露给模板。要了解更多细节，请看 [`<script setup>` 的专门文档](sfc-script-setup.md)
+- 这个脚本块将被预处理为组件的 `setup()` 函数，这意味着它将为每一个组件实例都执行。`<script setup>` 中的顶层绑定都将自动暴露给模板。要了解更多细节，请看 [`<script setup>` 的专门文档](script-setup.md)
 
 ### `<style>`
 
 - 每个 `*.vue` 文件可以包含多个 `<style>` 标签
 
-- 一个 `<style>` 标签可以使用 `scoped` 或 `module attribute` (查看[SFC 样式功能](sfc-css-features.md)了解更多细节) 来帮助封装当前组件的样式。使用了不同封装模式的多个 `<style>` 标签可以被混合入同一个组件
+- 一个 `<style>` 标签可以使用 `scoped` 或 `module attribute` (查看[SFC 样式功能](css-features.md)了解更多细节) 来帮助封装当前组件的样式。使用了不同封装模式的多个 `<style>` 标签可以被混合入同一个组件
+
+### 自定义块
+
+在一个 `*.vue` 文件中可以为任何项目特定需求使用额外的自定义块。举例来说，一个用作写文档的 `<docs>` 块。这里是一些自定义块的真实用例：
+
+- [`Gridsome：<page-query>`](https://gridsome.org/docs/querying-data)
+
+- [`vite-plugin-vue-gql：<gql>`](https://github.com/wheatjs/vite-plugin-vue-gql)
+
+- [`vue-i18n：<i18n>`](https://github.com/intlify/bundle-tools/tree/main/packages/vite-plugin-vue-i18n#i18n-custom-block)
+
+自定义块的处理需要依赖工具链。如果你想要在构建中集成你的自定义语块，请参见 [SFC 自定义块集成工具链指南](https://cn.vuejs.org/guide/scaling-up/tooling.html#sfc-custom-block-integrations) 获取更多细节
 
 ## 自动名称推导
 
@@ -119,7 +135,7 @@ SFC 在以下场景中会根据文件名自动推导其组件名：
 
 ## 预处理器
 
-代码块可以使用 `lang` 这个 attribute 来声明预处理器语言，最常见的用例就是在 `<script>` 中使用 TypeScript：
+代码块可以使用 `lang` 这个属性来声明预处理器语言，最常见的用例就是在 `<script>` 中使用 TypeScript：
 
 ```js
 <script lang="ts">

@@ -11,11 +11,11 @@ article: false
 
 ### 顶针Plus
 
-<div><p>沉浸：<el-rate model-value="3" disabled /></p></div>
+<div><p>沉浸：<el-rate model-value="3" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>场景：<el-rate model-value="2.5" disabled /></p></div>
+<div><p>场景：<el-rate model-value="2.5" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>剧情：<el-rate model-value="2" disabled /></p></div>
+<div><p>剧情：<el-rate model-value="2" disabled text-color="#ff9900" show-score /></p></div>
 
 沉浸式互动主题，可以在密室里吃烤鸡、唱K、打麻将等
 

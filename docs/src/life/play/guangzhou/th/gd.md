@@ -11,17 +11,17 @@ article: false
 
 ### 弥生壹
 
-<div><p>沉浸：<el-rate model-value="3" disabled /></p></div>
+<div><p>沉浸：<el-rate model-value="3" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>场景：<el-rate model-value="4" disabled /></p></div>
+<div><p>场景：<el-rate model-value="4" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>剧情：<el-rate model-value="3.5" disabled /></p></div>
+<div><p>剧情：<el-rate model-value="3.5" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>机关道具：<el-rate model-value="4" disabled /></p></div>
+<div><p>机关道具：<el-rate model-value="4" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>谜题：<el-rate model-value="3.5" disabled /></p></div>
+<div><p>谜题：<el-rate model-value="3.5" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>恐怖：<el-rate model-value="0.5" disabled /></p></div>
+<div><p>恐怖：<el-rate model-value="0.5" disabled text-color="#ff9900" show-score /></p></div>
 
 不愧是招牌弥生
 
@@ -29,27 +29,27 @@ article: false
 
 ### 弥生贰
 
-<div><p>场景：<el-rate model-value="3.5" disabled /></p></div>
+<div><p>场景：<el-rate model-value="3.5" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>剧情：<el-rate model-value="3" disabled /></p></div>
+<div><p>剧情：<el-rate model-value="3" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>机关道具：<el-rate model-value="3" disabled /></p></div>
+<div><p>机关道具：<el-rate model-value="3" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>谜题：<el-rate model-value="3" disabled /></p></div>
+<div><p>谜题：<el-rate model-value="3" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>温情：<el-rate model-value="3" disabled /></p></div>
+<div><p>温情：<el-rate model-value="3" disabled text-color="#ff9900" show-score /></p></div>
 
 ### 找到你了
 
-<div><p>场景：<el-rate model-value="4.5" disabled /></p></div>
+<div><p>场景：<el-rate model-value="4.5" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>剧情：<el-rate model-value="3.5" disabled /></p></div>
+<div><p>剧情：<el-rate model-value="3.5" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>机关道具：<el-rate model-value="4" disabled /></p></div>
+<div><p>机关道具：<el-rate model-value="4" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>谜题：<el-rate model-value="3.5" disabled /></p></div>
+<div><p>谜题：<el-rate model-value="3.5" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>恐怖：<el-rate model-value="1" disabled /></p></div>
+<div><p>恐怖：<el-rate model-value="1" disabled text-color="#ff9900" show-score /></p></div>
 
 七巧板那关拼老久了 :watch:
 
@@ -57,55 +57,55 @@ article: false
 
 ### 明香女校
 
-<div><p>场景：<el-rate model-value="3" disabled /></p></div>
+<div><p>场景：<el-rate model-value="3" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>剧情：<el-rate model-value="2.5" disabled /></p></div>
+<div><p>剧情：<el-rate model-value="2.5" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>机关道具：<el-rate model-value="2.5" disabled /></p></div>
+<div><p>机关道具：<el-rate model-value="2.5" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>谜题：<el-rate model-value="2" disabled /></p></div>
+<div><p>谜题：<el-rate model-value="2" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>恐怖：<el-rate model-value="2" disabled /></p></div>
+<div><p>恐怖：<el-rate model-value="2" disabled text-color="#ff9900" show-score /></p></div>
 
 ### 烟雨楼
 
-<div><p>场景：<el-rate model-value="4" disabled /></p></div>
+<div><p>场景：<el-rate model-value="4" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>剧情：<el-rate model-value="2.5" disabled /></p></div>
+<div><p>剧情：<el-rate model-value="2.5" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>机关道具：<el-rate model-value="2" disabled /></p></div>
+<div><p>机关道具：<el-rate model-value="2" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>谜题：<el-rate model-value="1.5" disabled /></p></div>
+<div><p>谜题：<el-rate model-value="1.5" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>温情：<el-rate model-value="2.5" disabled /></p></div>
+<div><p>温情：<el-rate model-value="2.5" disabled text-color="#ff9900" show-score /></p></div>
 
-个人还蛮喜欢烟雨楼的场景搭建
+还蛮喜欢烟雨楼的场景搭建
 
 ### 绝爱
 
-<div><p>场景：<el-rate model-value="1.5" disabled /></p></div>
+<div><p>场景：<el-rate model-value="1.5" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>剧情：<el-rate model-value="2" disabled /></p></div>
+<div><p>剧情：<el-rate model-value="2" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>机关道具：<el-rate model-value="1.5" disabled /></p></div>
+<div><p>机关道具：<el-rate model-value="1.5" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>谜题：<el-rate model-value="1.5" disabled /></p></div>
+<div><p>谜题：<el-rate model-value="1.5" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>恐怖：<el-rate model-value="0.5" disabled /></p></div>
+<div><p>恐怖：<el-rate model-value="0.5" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>运动量：<el-rate model-value="2" disabled /></p></div>
+<div><p>运动量：<el-rate model-value="2" disabled text-color="#ff9900" show-score /></p></div>
 
 ### 胭脂扣
 
-<div><p>场景：<el-rate model-value="2" disabled /></p></div>
+<div><p>场景：<el-rate model-value="2" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>剧情：<el-rate model-value="2" disabled /></p></div>
+<div><p>剧情：<el-rate model-value="2" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>机关道具：<el-rate model-value="2" disabled /></p></div>
+<div><p>机关道具：<el-rate model-value="2" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>谜题：<el-rate model-value="2" disabled /></p></div>
+<div><p>谜题：<el-rate model-value="2" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>恐怖：<el-rate model-value="0.5" disabled /></p></div>
+<div><p>恐怖：<el-rate model-value="0.5" disabled text-color="#ff9900" show-score /></p></div>
 
 ## 大迷局实景原创密室
 
@@ -113,33 +113,33 @@ article: false
 
 ### 庄园
 
-<div><p>沉浸：<el-rate model-value="4" disabled /></p></div>
+<div><p>沉浸：<el-rate model-value="4" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>场景：<el-rate model-value="4" disabled /></p></div>
+<div><p>场景：<el-rate model-value="4" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>剧情：<el-rate model-value="4" disabled /></p></div>
+<div><p>剧情：<el-rate model-value="4" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>机关道具：<el-rate model-value="3" disabled /></p></div>
+<div><p>机关道具：<el-rate model-value="3" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>谜题：<el-rate model-value="2.5" disabled /></p></div>
+<div><p>谜题：<el-rate model-value="2.5" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>恐怖：<el-rate model-value="2" disabled /></p></div>
+<div><p>恐怖：<el-rate model-value="2" disabled text-color="#ff9900" show-score /></p></div>
 
 吹爆 NPC 朱迪的演绎！！！
 
 ### 三花物语
 
-<div><p>沉浸：<el-rate model-value="3" disabled /></p></div>
+<div><p>沉浸：<el-rate model-value="3" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>场景：<el-rate model-value="3.5" disabled /></p></div>
+<div><p>场景：<el-rate model-value="3.5" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>剧情：<el-rate model-value="4" disabled /></p></div>
+<div><p>剧情：<el-rate model-value="4" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>机关道具：<el-rate model-value="3" disabled /></p></div>
+<div><p>机关道具：<el-rate model-value="3" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>谜题：<el-rate model-value="2" disabled /></p></div>
+<div><p>谜题：<el-rate model-value="2" disabled text-color="#ff9900" show-score /></p></div>
 
-<div><p>温情：<el-rate model-value="4" disabled /></p></div>
+<div><p>温情：<el-rate model-value="4" disabled text-color="#ff9900" show-score /></p></div>
 
 温情 :cat2: :cat2: 主题
 
