@@ -13,15 +13,15 @@ article: false
 
 @tab 红烧乳鸽
 
-![](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/food/foshan/cc/pjbl/ytj/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/foshan/cc/pjbl/ytj/img.jpg)
 
 @tab 金牌鱼饼
 
-![](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/food/foshan/cc/pjbl/ytj/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/food/foshan/cc/pjbl/ytj/img_2.jpg)
 
 @tab 金牌鱼皮
 
-![](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/food/foshan/cc/pjbl/ytj/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/food/foshan/cc/pjbl/ytj/img_3.jpg)
 
 :::
 
@@ -37,13 +37,13 @@ article: false
 
 @tab 早餐
 
-![](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/food/foshan/cc/pjbl/dbx/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/foshan/cc/pjbl/dbx/img.jpg)
 
 @tab 菜单
 
-![](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/food/foshan/cc/pjbl/dbx/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/food/foshan/cc/pjbl/dbx/img_2.jpg)
 
-![](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/food/foshan/cc/pjbl/dbx/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/food/foshan/cc/pjbl/dbx/img_3.jpg)
 
 :::
 

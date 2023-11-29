@@ -7,6 +7,8 @@ article: false
 
 官网：[https://hkfaa.com](https://hkfaa.com/)
 
+每年4月中旬颁奖
+
 ## 2023年
 
 最佳电影：《给十九岁的我》

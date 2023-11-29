@@ -53,15 +53,15 @@ article: false
 
 @tab 摩摩超级爆汁炸鸡
 
-![](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/food/guangzhou/yx/bjl/mdst/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/guangzhou/yx/bjl/mdst/img.jpg)
 
 @tab 明太子烤土豆
 
-![](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/food/guangzhou/yx/bjl/mdst/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/food/guangzhou/yx/bjl/mdst/img_2.jpg)
 
 @tab 富贵嫩鱼天妇罗
 
-![](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/food/guangzhou/yx/bjl/mdst/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/food/guangzhou/yx/bjl/mdst/img_3.jpg)
 
 :::
 

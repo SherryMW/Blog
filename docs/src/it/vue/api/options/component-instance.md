@@ -41,7 +41,65 @@ article: false
 
 ## $attrs
 
-待更新
+一个包含了组件所有透传 attributes 的对象
+
+- 类型
+
+    ```typescript
+    interface ComponentPublicInstance {
+        $attrs: object
+    }
+    ```
+
+- 详细信息
+
+    [透传 Attributes](../../guide/components/attrs.md) 是指由父组件传入，且没有被子组件声明为 props 或是组件自定义事件的 attributes 和事件处理函数
+
+    默认情况下，若是单一根节点组件，`$attrs` 中的所有属性都是直接自动继承自组件的根元素。而多根节点组件则不会如此，同时你也可以通过配置 [inheritAttrs](options-misc.md#inheritattrs) 选项来显式地关闭该行为
+
+- 参考 [透传 Attribute](../../guide/components/attrs.md)
+
+下面是一个简单的例子，演示了 `$attrs` 的使用：
+
+```vue
+<!-- ParentComponent.vue -->
+<template>
+  <ChildComponent title="Hello" custom-attribute="example"/>
+</template>
+
+<script>
+  import ChildComponent from './ChildComponent.vue';
+
+  export default {
+    components: {
+      ChildComponent,
+    },
+  };
+</script>
+```
+
+```vue
+<!-- ChildComponent.vue -->
+<template>
+  <div>
+    <h1>{{ title }}</h1>
+    <p>Custom Attribute: {{ $attrs['custom-attribute'] }}</p>
+  </div>
+</template>
+
+<script>
+  export default {
+    props: {
+      title: String,
+    },
+    mounted() {
+      console.log(this.$attrs); // 输出：{ custom-attribute: "example" }
+    },
+  };
+</script>
+```
+
+在这个例子中，`ChildComponent` 接收了一个 `title` 的 prop，并且通过 `$attrs` 访问了父组件传递给它的非 `prop` 特性 `custom-attribute`。在父组件中，我们将 `title` 传递给 `ChildComponent` 作为 prop，并且添加了一个额外的非 prop 特性 `custom-attribute`。这个非 prop 特性会被传递给子组件，然后通过 `$attrs` 进行访问
 
 ## $watch()
 

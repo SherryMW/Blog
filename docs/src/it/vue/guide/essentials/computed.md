@@ -78,7 +78,7 @@ export default {
 
 在模板中使用计算属性的方式和一般的属性并无二致。Vue 会检测到 `this.publishedBooksMessage` 依赖于 `this.author.books`，所以当 `this.author.books` 改变时，任何依赖于 `this.publishedBooksMessage` 的绑定都将同时更新
 
-也可参考：[为计算属性标记类型](../typescript/composition-api.md#为计算属性标记类型)
+也可参考：[为计算属性标记类型](../typescript/options-api.md#为计算属性标记类型)
 
 ## 计算属性缓存 vs 方法
 

@@ -19,15 +19,15 @@ article: false
 
 @tab 招牌蒸耗
 
-![](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/food/guangzhou/th/spq/hsfs/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/guangzhou/th/spq/hsfs/img.jpg)
 
 @tab 蒜香烤生蚝
 
-![](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/food/guangzhou/th/spq/hsfs/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/food/guangzhou/th/spq/hsfs/img_2.jpg)
 
 @tab 烤鸡翼
 
-![](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/food/guangzhou/th/spq/hsfs/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/food/guangzhou/th/spq/hsfs/img_3.jpg)
 
 :::
 
@@ -78,22 +78,22 @@ article: false
 
 @tab 酥皮山楂叉烧包
 
-![](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/food/guangzhou/th/spq/cl/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/guangzhou/th/spq/cl/img.jpg)
 
 @tab 赛螃蟹凤眼饺
 
-![](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/food/guangzhou/th/spq/cl/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/food/guangzhou/th/spq/cl/img_2.jpg)
 
 @tab 黄金蟹甲
-![](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/food/guangzhou/th/spq/cl/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/food/guangzhou/th/spq/cl/img_3.jpg)
 
 @tab 豉汁凤爪
 
-![](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/food/guangzhou/th/spq/cl/img_4.jpg)
+![](https://img.sherry4869.com/blog/life/food/guangzhou/th/spq/cl/img_4.jpg)
 
 @tab 白玉琉璃
 
-![](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/food/guangzhou/th/spq/cl/img_5.jpg)
+![](https://img.sherry4869.com/blog/life/food/guangzhou/th/spq/cl/img_5.jpg)
 
 :::
 

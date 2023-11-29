@@ -150,7 +150,7 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0I1F4EXRB" target="_blank">宏发大厦北门一楼10号</a>
 
-![番茄鸳鸯锅（微微辣）](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/food/guangzhou/th/tyzx/pj/img.jpg)
+![番茄鸳鸯锅（微微辣）](https://img.sherry4869.com/blog/life/food/guangzhou/th/tyzx/pj/img.jpg)
 
 - [x] 屠场鲜毛肚（推荐）
 - [x] 精品鸭肠

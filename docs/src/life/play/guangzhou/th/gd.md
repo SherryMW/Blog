@@ -107,7 +107,7 @@ article: false
 
 <div><p>恐怖：<el-rate model-value="0.5" disabled text-color="#ff9900" show-score /></p></div>
 
-## 大迷局实景原创密室
+## 大迷局实景原创密室（歇业）
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H2PSP36Z" target="_blank">天河路603号莱福广场F4层</a>
 

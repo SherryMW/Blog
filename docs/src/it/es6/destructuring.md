@@ -67,6 +67,31 @@ let {title, price, category: {id, name}} = book;
 console.log(title, price, id, name);
 ```
 
+再看下面这个例子：
+
+```js
+export default {
+    data() {
+        return {
+            user: {
+                male: 2
+            },
+            maleText: '保密'
+        }
+    },
+    watch: {
+        'user.male'(newValue, oldValue) {
+            // if (newValue == 0) this.maleText = "女";
+            // if (newValue == 1) this.maleText = "男";
+            // if (newValue == 2) this.maleText = "保密";
+
+            let obj = {"0": "女", "1": "男", "2": "保密"};
+            this.maleText = obj[newValue];
+        }
+    }
+}
+```
+
 ## 数组的解构赋值
 
 ### 基本用法

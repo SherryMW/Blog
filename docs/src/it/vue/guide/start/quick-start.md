@@ -256,15 +256,11 @@ import { createApp } from 'vue'
 你也可以在映射表中添加其他的依赖——但请务必确保你使用的是该库的 ES 模块版本
 
 ::: tip 导入映射表的浏览器支持情况
-
 导入映射表是一个相对较新的浏览器功能。请确保使用其[支持范围](https://caniuse.com/import-maps)内的浏览器。请注意，只有 Safari 16.4 以上版本支持
-
 :::
 
 ::: warning 生产环境中的注意事项
-
 到目前为止示例中使用的都是 Vue 的开发构建版本——如果你打算在生产中通过 CDN 使用 Vue，请务必查看[生产环境部署指南](../best-practices/production-deployment.md)
-
 :::
 
 ### 拆分模块

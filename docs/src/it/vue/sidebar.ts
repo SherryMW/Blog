@@ -21,7 +21,12 @@ export const VueSidebar = arraySidebar([
                 children: "structure"
             },
             {
-                text: "深入组件",
+                text: "逻辑复用",
+                prefix: "reusability/",
+                children: "structure"
+            },
+            {
+                text: "内置组件",
                 prefix: "built/",
                 children: "structure"
             },

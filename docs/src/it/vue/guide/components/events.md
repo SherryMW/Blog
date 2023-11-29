@@ -94,6 +94,59 @@ this.$on('foo', (arg1, arg2, arg3) => {
 });
 ```
 
+以下是一个简单的例子，演示了组件事件的基本用法：
+
+```vue
+<!-- ChildComponent.vue -->
+<template>
+  <button @click="sendMessage">Click me</button>
+</template>
+
+<script>
+  export default {
+    methods: {
+      sendMessage() {
+        // 触发自定义事件 'message'
+        this.$emit('message', 'Hello from ChildComponent');
+      },
+    },
+  };
+</script>
+```
+
+```vue
+<!-- ParentComponent.vue -->
+<template>
+  <div>
+    <ChildComponent @message="receiveMessage"/>
+    <p>{{ receivedMessage }}</p>
+  </div>
+</template>
+
+<script>
+  import ChildComponent from "@/components/ChildComponent.vue";
+
+  export default {
+    components: {
+      ChildComponent,
+    },
+    data() {
+      return {
+        receivedMessage: '',
+      };
+    },
+    methods: {
+      receiveMessage(message) {
+        // 监听 'message' 事件，接收消息并更新数据
+        this.receivedMessage = message;
+      },
+    },
+  };
+</script>
+```
+
+在这个例子中，`ChildComponent` 组件有一个按钮，当点击按钮时，会触发一个自定义事件 `message`，并传递一个消息 'Hello from ChildComponent'。在 `ParentComponent` 中，它包含了 `ChildComponent` 并监听了 `message` 事件。当 `message` 事件被触发时，`ParentComponent` 的 `receiveMessage` 方法会被调用，接收消息并更新 `receivedMessage` 数据，最终在模板中显示出来
+
 ## 声明触发的事件
 
 组件可以显式地通过 [`emits`](../../api/options/state.md#emits) 选项来声明它要触发的事件：

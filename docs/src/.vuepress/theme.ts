@@ -29,7 +29,10 @@ export default hopeTheme({
     editLink: false, // 是否展示编辑此页链接
     encrypt: {
         global: true,
-        admin: "MW8888"
+        admin: "MW8888",
+        config: {
+            "/life/healthy/rest/2023.html": "MW8888"
+        }
     },
     blog: {
         avatar: "/avatar.jpg", // 头像

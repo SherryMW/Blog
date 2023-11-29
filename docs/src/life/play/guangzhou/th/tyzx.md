@@ -45,7 +45,7 @@ article: false
 
 广州变格推理主题密室天花板
 
-![CPU干烧了](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/play/guangzhou/th/tyzx/gdxz/img.jpg)
+![CPU干烧了](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/gdxz/img.jpg)
 
 ## 头号玩家剧情密室
 

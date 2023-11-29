@@ -37,9 +37,7 @@ Vue 使用一种基于 HTML 的模板语法，使我们能够声明式地将其�
 `span` 的内容将会被替换为 `rawHtml` 属性的值，插值为纯 HTML——数据绑定将会被忽略。注意，你不能使用 `v-html` 来拼接组合模板，因为 Vue 不是一个基于字符串的模板引擎。在使用 Vue 时，应当使用组件作为 UI 重用和组合的基本单元
 
 ::: warning 安全警告
-
 在网站上动态渲染任意 HTML 是非常危险的，因为这非常容易造成 [XSS 漏洞](https://zh.wikipedia.org/wiki/%E8%B7%A8%E7%B6%B2%E7%AB%99%E6%8C%87%E4%BB%A4%E7%A2%BC)。请仅在内容安全可信时再使用 `v-html`，并且永远不要使用用户提供的 HTML 内容
-
 :::
 
 ## Attribute 绑定
@@ -256,4 +254,4 @@ export default {
 
 最后，在这里你可以直观地看到完整的指令语法：
 
-![](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/it/vue/img.png)
+![](https://img.sherry4869.com/blog/it/vue/img.png)

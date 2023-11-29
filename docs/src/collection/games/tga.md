@@ -7,6 +7,8 @@ article: false
 
 官网：[https://thegameawards.com](https://thegameawards.com/)
 
+每年12月初颁奖
+
 ## 2023
 
 12月8日

@@ -5,7 +5,7 @@ article: false
 
 # Games
 
-Steam 工具箱：[https://steampp.net](https://steampp.net/)
+[Steam 工具箱 Watt Toolkit（原名 Steam++）](https://steampp.net/)
 
 ## 双人成行
 
@@ -59,20 +59,8 @@ Windows 10 或者 Windows 11 点击下载时可能会出现【无法下载-检�
 
 ## 英雄联盟
 
-::: info “一键喊话”
-不要吵
-
-给个眼
-
-蹲一下
-
-团一波
-
-得拉扯
-
-打反手
-
-我去抢
+::: info 一键喊话
+小兵还在前行 英雄怎能放弃
 
 /ff
 :::

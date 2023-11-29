@@ -79,5 +79,5 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0JDY7YWYO" target="_blank">惠福东路451号101首层-4</a>
 
-- [x] 招牌港式丝袜奶茶（推荐）
+- [x] 招牌港式丝袜奶茶
 - [x] 港式鸳鸯

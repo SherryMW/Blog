@@ -7,6 +7,8 @@ article: false
 
 官网：[https://www.oscars.org](https://www.oscars.org/)
 
+每年3月中下旬颁奖
+
 ## 2023年
 
 最佳影片：《瞬息全宇宙》 Everything Everywhere All at Once

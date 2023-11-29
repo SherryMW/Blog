@@ -31,7 +31,7 @@ article: false
 
 @tab 菜单
 
-![2023-10-20](https://mw-blog.oss-cn-guangzhou.aliyuncs.com/blog/life/food/guangzhou/th/thkyz/xxj/img_5.png)
+![2023-10-20](https://img.sherry4869.com/blog/life/food/guangzhou/th/thkyz/xxj/img_5.png)
 
 ![](https://img.sherry4869.com/blog/life/food/guangzhou/th/thkyz/xxj/img.jpg)
 
