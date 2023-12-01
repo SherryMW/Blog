@@ -1,6 +1,6 @@
 ---
 category: IT
-tag: ES6
+tag: ES
 order: 19
 article: false
 ---

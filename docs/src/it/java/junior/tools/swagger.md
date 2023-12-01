@@ -1,13 +1,13 @@
 ---
-date: 2022-03-28
 category: IT
+tag: Java
+order: 4
+article: false
 ---
 
-# Swagger
+# Swagger 面向所有人的API开发
 
 协议、错误处理和代码模块化只是您的团队在构建出色的 API 之前需要解决的一些问题。Swagger 提供了用于快速原型设计和构建 API 功能的工具
-
-<!-- more -->
 
 官网：[https://swagger.io](https://swagger.io/)
 

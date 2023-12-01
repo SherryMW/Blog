@@ -112,7 +112,7 @@ public class AlipayClientConfig {
 
 [电脑网站支付快速接入](https://opendocs.alipay.com/open/270/105899)
 
-![支付流程时序图](https://img.sherry4869.com/blog/it/java/pay/alipay/payment-docking/img.png)
+![支付流程时序图](https://img.sherry4869.com/blog/it/java/intermediate/pay/alipay/payment-docking/img.png)
 
 ### 统一收单下单并支付页面接口
 
@@ -234,17 +234,17 @@ public class AliPayServiceImpl implements AliPayService {
 
 [电脑网站支付常见问题](https://opendocs.alipay.com/support/01rfvm)
 
-![](https://img.sherry4869.com/blog/it/java/pay/alipay/payment-docking/img_1.png)
+![](https://img.sherry4869.com/blog/it/java/intermediate/pay/alipay/payment-docking/img_1.png)
 
 有两种支付方法，可以打开沙箱版的支付宝APP使用买家账号登录扫码支付或者使用沙箱买家账密登录支付
 
-![](https://img.sherry4869.com/blog/it/java/pay/alipay/payment-docking/img_2.png)
+![](https://img.sherry4869.com/blog/it/java/intermediate/pay/alipay/payment-docking/img_2.png)
 
-![](https://img.sherry4869.com/blog/it/java/pay/alipay/payment-docking/img_3.png)
+![](https://img.sherry4869.com/blog/it/java/intermediate/pay/alipay/payment-docking/img_3.png)
 
-![](https://img.sherry4869.com/blog/it/java/pay/alipay/payment-docking/img_4.png)
+![](https://img.sherry4869.com/blog/it/java/intermediate/pay/alipay/payment-docking/img_4.png)
 
-![](https://img.sherry4869.com/blog/it/java/pay/alipay/payment-docking/img_5.png)
+![](https://img.sherry4869.com/blog/it/java/intermediate/pay/alipay/payment-docking/img_5.png)
 
 ### 支付异步通知回调
 

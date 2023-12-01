@@ -108,7 +108,7 @@ IDEA 把 wxpay.properties 配置成 Spring Boot 配置文件：打开项目结�
 
 配置商户API证书序号以及加载商户私钥的目的：商户用私钥对请求信息进行签名后向微信平台发送请求，微信支付平台会根据商户证书序列号找到对应的证书，从证书中解密出商户公钥，用公钥对商户的请求进行验签
 
-![](https://img.sherry4869.com/blog/it/java/pay/weixin/payment-docking/img.png)
+![](https://img.sherry4869.com/blog/it/java/intermediate/pay/weixin/payment-docking/img.png)
 
 使用官方提供的 [SDK&工具](https://pay.weixin.qq.com/wiki/doc/apiv3/wechatpay/wechatpay6_0.shtml) 帮助我们完成开发
 
@@ -258,7 +258,7 @@ public class WxPayConfig {
 
 ## Native支付
 
-![支付业务流程时序图](https://img.sherry4869.com/blog/it/java/pay/weixin/payment-docking/img_1.png)
+![支付业务流程时序图](https://img.sherry4869.com/blog/it/java/intermediate/pay/weixin/payment-docking/img_1.png)
 
 ### Native下单
 

@@ -1,18 +1,19 @@
 ---
-date: 2022-05-17
 category: IT
 tag: Java
+order: 1
+article: false
 ---
 
-# 条形码生成技术-Barcode4J
+# Barcode4J 条形码生成技术
 
 <!-- more -->
 
 官网：[https://barcode4j.sourceforge.net](https://barcode4j.sourceforge.net/)
 
-API：[barcode4j 2.1.0 API](https://barcode4j.sourceforge.net/trunk/javadocs/index.html)
+API：[https://barcode4j.sourceforge.net/trunk/javadocs/index.html](https://barcode4j.sourceforge.net/trunk/javadocs/index.html)
 
-![Barcode4J 支持的条形码符号](https://img.sherry4869.com/blog/it/java/barcode/barcode4j/img_3.png)
+![Barcode4J 支持的条形码符号](https://img.sherry4869.com/blog/it/java/junior/tools/barcode4j/img_3.png)
 
 ## 相关依赖
 
@@ -55,7 +56,7 @@ public class Main {
 }
 ```
 
-## 常用方法
+## 常用类
 
 ### Code128Bean
 
@@ -63,19 +64,19 @@ public class Main {
 
 @tab setModuleWidth(double width)
 
-设置窄模块的宽度
+设置窄模块的宽度：
 
-![setModuleWidth(0.3)效果图](https://img.sherry4869.com/blog/it/java/barcode/barcode4j/img.png)
+![setModuleWidth(0.3)效果图](https://img.sherry4869.com/blog/it/java/junior/tools/barcode4j/img.png)
 
-![setModuleWidth(0.9)效果图](https://img.sherry4869.com/blog/it/java/barcode/barcode4j/img_1.png)
+![setModuleWidth(0.9)效果图](https://img.sherry4869.com/blog/it/java/junior/tools/barcode4j/img_1.png)
 
 
 @tab doQuietZone(boolean value)
 
-控制条形码两侧是否留有空白区域
+控制条形码两侧是否留有空白区域：
 
-![doQuietZone(true)效果图](https://img.sherry4869.com/blog/it/java/barcode/barcode4j/img.png)
+![doQuietZone(true)效果图](https://img.sherry4869.com/blog/it/java/junior/tools/barcode4j/img.png)
 
-![doQuietZone(false)效果图](https://img.sherry4869.com/blog/it/java/barcode/barcode4j/img_2.png)
+![doQuietZone(false)效果图](https://img.sherry4869.com/blog/it/java/junior/tools/barcode4j/img_2.png)
 
 :::
