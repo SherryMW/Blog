@@ -1,7 +1,6 @@
 ---
 category: IT
 tag: Java
-sticky: true
 article: false
 ---
 

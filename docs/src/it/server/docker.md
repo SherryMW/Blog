@@ -1,12 +1,13 @@
 ---
-date: 2022-11-10
+date: 2022-07-28
 category: IT
-article: false
 ---
 
 # Docker
 
 <!-- more -->
+
+官网：[https://docs.docker.com/reference](https://docs.docker.com/reference/)
 
 ## Docker 简介
 
@@ -90,8 +91,6 @@ cat /etc/redhat-release
 yum -y install docker
 ```
 
----
-
 #### 安装社区版 Docker（docker-ce）
 
 1. 安装软件包：
@@ -155,8 +154,6 @@ cat /etc/redhat-release
 ```shell
 yum -y install docker
 ```
-
----
 
 #### 安装社区版 Docker（docker-ce）
 
@@ -279,7 +276,7 @@ docker stop $(docker ps -q)
 docker rm my_container
 ```
 
-如果想要删除所有已停止的容器，使用以下指令：（注意：该指令与 docker container rm 指令是等效的）
+如果想要删除所有已停止的容器，使用以下指令：（注意：该指令与 `docker container rm` 指令是等效的）
 
 ```shell
 docker rm $(docker ps -a -q)
@@ -293,7 +290,7 @@ docker rm $(docker ps -a -q)
 docker rmi my_image
 ```
 
-如果想要删除所有不使用的镜像，使用以下指令：（注意，只有没有容器引用的镜像才能被删除。如果你想要强制删除被引用的镜像，添加 -f 选项）
+如果想要删除所有不使用的镜像，使用以下指令：（注意，只有没有容器引用的镜像才能被删除。如果你想要强制删除被引用的镜像，添加 `-f` 选项）
 
 ```shell
 docker image prune -f -a
@@ -305,20 +302,16 @@ docker image prune -f -a
 docker exec -it my_container env LANG=C.UTF-8 /bin/bash
 ```
 
-让你在运行中的容器里执行一个交互式的指令。-i 选项表示即使没有附加也保持 STDIN 打开，这样你可以输入指令或数据。 -t 选项表示分配一个伪终端，这样你可以看到指令的输出或错误信息。这两个选项通常一起使用，以便与容器互动
+让你在运行中的容器里执行一个交互式的指令。-i 选项表示即使没有附加也保持 STDIN 打开，这样你可以输入指令或数据。 `-t` 选项表示分配一个伪终端，这样你可以看到指令的输出或错误信息。这两个选项通常一起使用，以便与容器互动
 
-/bash shell 是一种指令行解释器，它可以让你在容器里执行各种指令。 它是 Linux 系统的默认 shell，也是很多容器的默认 shell。 通过 docker exec -it /bin/bash，你可以进入容器的 bash shell，并在里面执行任何你想要的指令
+/bash shell 是一种指令行解释器，它可以让你在容器里执行各种指令。 它是 Linux 系统的默认 shell，也是很多容器的默认 shell。 通过 `docker exec -it /bin/bash`，你可以进入容器的 bash shell，并在里面执行任何你想要的指令
 
-env LANG=C.UTF-8 避免容器中显示中文乱码
+`env LANG=C.UTF-8` 避免容器中显示中文乱码
 
 ### docker ps
 
-用于列出当前运行的容器（container），可以加上 -a 选项来显示所有的容器，包括已经停止的容器
+用于列出当前运行的容器（container），可以加上 `-a` 选项来显示所有的容器，包括已经停止的容器
 
 ### docker images
 
-用于列出本地存储的镜像（images），可以加上 -a 选项来显示所有的镜像，包括中间层的
-
-## 参考资料
-
-[部署并使用 Docker（Alibaba Cloud Linux 2）](https://help.aliyun.com/document_detail/51853.html)
+用于列出本地存储的镜像（images），可以加上 `-a` 选项来显示所有的镜像，包括中间层的
