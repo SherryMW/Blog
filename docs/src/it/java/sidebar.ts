@@ -29,23 +29,23 @@ export const JavaSidebar = arraySidebar([
         text: "中级",
         prefix: "intermediate/",
         children: [
-            {
-                text: "支付",
-                prefix: "pay/",
-                collapsible: true,
-                children: [
-                    {
-                        text: "微信",
-                        prefix: "weixin/",
-                        children: "structure"
-                    },
-                    {
-                        text: "支付宝",
-                        prefix: "alipay/",
-                        children: "structure"
-                    }
-                ]
-            }
+            // {
+            //     text: "支付",
+            //     prefix: "pay/",
+            //     collapsible: true,
+            //     children: [
+            //         {
+            //             text: "微信",
+            //             prefix: "weixin/",
+            //             children: "structure"
+            //         },
+            //         {
+            //             text: "支付宝",
+            //             prefix: "alipay/",
+            //             children: "structure"
+            //         }
+            //     ]
+            // }
         ]
     },
     {
