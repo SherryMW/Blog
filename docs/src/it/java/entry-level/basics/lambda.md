@@ -6,6 +6,8 @@ article: false
 
 # Lambda 表达式
 
+Lambda 表达式是在 JDK 8 中引入的
+
 ## 为什么要引入 Lambda 表达式
 
 Lambda 表达式是 Java 函数式编程的核心概念之一，它的出现是用来简化实现函数式接口（Functional Interface），听起来似乎有点抽象，什么又是函数式接口呢？
