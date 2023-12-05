@@ -4,6 +4,7 @@ import {FoodSidebar} from "../../life/food/sidebar";
 import {PlaySidebar} from "../../life/play/sidebar";
 import {VueSidebar} from "../../it/vue/sidebar";
 import {JavaSidebar} from "../../it/java/sidebar";
+import {ViteSidebar} from "../../it/vite/sidebar";
 
 export const SidebarConfig = sidebar({
 
@@ -23,6 +24,8 @@ export const SidebarConfig = sidebar({
     }],
 
     "/it/vue/": VueSidebar,
+
+    "/it/vite/": ViteSidebar,
 
     "/it/java/": JavaSidebar,
 

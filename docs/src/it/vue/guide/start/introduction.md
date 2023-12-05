@@ -10,6 +10,8 @@ order: 1
 
 <!-- more -->
 
+官网：[https://cn.vuejs.org](https://cn.vuejs.org/)
+
 ## 什么是 Vue
 
 Vue (发音为 /vjuː/，类似 view) 是一款用于构建用户界面的 JavaScript 框架。它基于标准 HTML、CSS 和 JavaScript 构建，并提供了一套声明式的、组件化的编程模型，帮助你高效地开发用户界面。无论是简单还是复杂的界面，Vue 都可以胜任
@@ -227,7 +229,3 @@ onMounted(() => {
     - 当你不需要使用构建工具，或者打算主要在低复杂度的场景中使用 Vue，例如渐进增强的应用场景，推荐采用选项式 API
 
     - 当你打算用 Vue 构建完整的单页应用，推荐采用组合式 API + 单文件组件
-
-## 参考资料
-
-[官方文档](https://cn.vuejs.org/)
