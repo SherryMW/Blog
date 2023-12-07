@@ -5,7 +5,7 @@ article: false
 
 # 江南西
 
-## 新兴饭店•百年羊肉煲（前进路总店）
+## 新兴饭店•百年羊肉煲
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00140BENW" target="_blank">前进路92-94号</a>
 

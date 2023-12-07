@@ -21,7 +21,7 @@ article: false
 
 去店里基本点的都是：大盘鸡/卤水猪手盖面 + 煎蛋 + 维他奶
 
-有段时间每当心情不太好的时候总会想起这里的盖面，美食是治愈心灵的最佳方式
+有段时间每当心情不太好的时候总会过来这里，美食是治愈心灵的最佳方式
 
 ![](https://img.sherry4869.com/blog/life/food/guangzhou/th/thkyz/xxj/img_2.jpg)
 
@@ -148,6 +148,10 @@ article: false
 - [x] 乌鸡无骨风爪
 - [x] 超级香锅鸭宝
 - [x] 红糖糍粑
+
+## 揸哥茶餐厅
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0HDROU73Q" target="_blank">天源路5号天河新天地大厦商场负一楼</a>
 
 ## 以饭湘许
 

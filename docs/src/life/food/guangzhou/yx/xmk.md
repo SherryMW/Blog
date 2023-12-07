@@ -20,4 +20,4 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFFZS28T" target="_blank">诗书路113号</a>
 
-- [x] 芋泥双皮奶（推荐）
+- [x] 芋泥双皮奶

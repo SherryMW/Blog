@@ -52,7 +52,7 @@ article: false
 
 ![配紫菜吃更风味](https://img.sherry4869.com/blog/life/food/guangzhou/th/hjxc/img.jpg)
 
-- [x] 烤活鳗（推荐）
+- [x] 烤活鳗
 - [x] 厚切猪五花
 
 ## 渔棠里

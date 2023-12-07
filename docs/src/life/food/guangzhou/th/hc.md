@@ -21,7 +21,7 @@ article: false
 
 @tab 鸡的不见天
 
-![鸡的胳肢窝部位，看老板娘朋友圈里极力推荐的，但不好吃](https://img.sherry4869.com/blog/life/food/guangzhou/th/hc/hbyy/img_2.jpg)
+![鸡的胳肢窝部位，看老板娘朋友圈里极力推荐的，一言难尽](https://img.sherry4869.com/blog/life/food/guangzhou/th/hc/hbyy/img_2.jpg)
 
 @tab 生蚝菜单
 

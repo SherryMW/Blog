@@ -35,7 +35,7 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFFPAIUH" target="_blank">北京路362号</a>
 
-- [x] 双皮奶（推荐）
+- [x] 原味双皮奶（推荐）
 
 ## 海底捞火锅
 
