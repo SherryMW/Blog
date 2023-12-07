@@ -5,6 +5,7 @@ import {PlaySidebar} from "../../life/play/sidebar";
 import {VueSidebar} from "../../it/vue/sidebar";
 import {JavaSidebar} from "../../it/java/sidebar";
 import {ViteSidebar} from "../../it/vite/sidebar";
+import {VueRouterSidebar} from "../../it/vue-router/sidebar";
 
 export const SidebarConfig = sidebar({
 
@@ -24,6 +25,8 @@ export const SidebarConfig = sidebar({
     }],
 
     "/it/vue/": VueSidebar,
+
+    "/it/vue-router/": VueRouterSidebar,
 
     "/it/vite/": ViteSidebar,
 

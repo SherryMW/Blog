@@ -75,3 +75,9 @@ article: false
 - [x] 摩匠手作香浓芝士豆腐（推荐）
 - [x] 北极贝
 - [x] 芥末八爪鱼
+
+## 麺屋猪一
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0J1COEOXQ" target="_blank">西湖路63号光明广场B1层</a>
+
+- [x] 豚骨王拉面
