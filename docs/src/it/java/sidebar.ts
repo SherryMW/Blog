@@ -18,6 +18,12 @@ export const JavaSidebar = arraySidebar([
         prefix: "junior/",
         children: [
             {
+                text: "Spring Boot",
+                prefix: "sprint-boot/",
+                collapsible: true,
+                children: "structure"
+            },
+            {
                 text: "工具",
                 prefix: "tools/",
                 collapsible: true,
