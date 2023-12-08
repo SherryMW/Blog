@@ -5,7 +5,7 @@ order: 4
 article: false
 ---
 
-# Swagger 面向所有人的API开发
+# Swagger
 
 官网：[https://swagger.io](https://swagger.io/)
 
@@ -87,7 +87,7 @@ public class SwaggerConfig {
 
 启动项目后访问 `http://${ip}:${port}/swagger-ui.html` Swagger UI 界面
 
-![](https://img.sherry4869.com/blog/it/swagger/img_2.png)
+![](https://img.sherry4869.com/blog/it/java/junior/tools/swagger/img_2.png)
 
 ## Swagger V3.0
 
@@ -129,7 +129,7 @@ spring.mvc.pathmatch.matching-strategy=ant_path_matcher
 
 在 Swagger V3.0 中，无需显式创建一个配置类，就可以直接在启动项目后访问 `http://${ip}:${port}/swagger-ui/index.html` Swagger UI 界面
 
-![](https://img.sherry4869.com/blog/it/swagger/img.png)
+![](https://img.sherry4869.com/blog/it/java/junior/tools/swagger/img.png)
 
 ### 创建配置类
 
@@ -199,15 +199,15 @@ public class Knife4jConfiguration {
 
 启动项目后访问 `http://${ip}:${port}/doc.html` Knife4j 的文档地址
 
-![](https://img.sherry4869.com/blog/it/swagger/img_4.png)
+![](https://img.sherry4869.com/blog/it/java/junior/tools/swagger/img_4.png)
 
-## 注意事项
+## 关闭 Swagger
 
 在生产环境中，关闭 Swagger 是一种常见的做法，以防止未经授权的访问和减少潜在的安全风险。以下是一些常用的方法来关闭 Swagger：
 
 1. 使用配置文件：
 
-    在你的应用程序的配置文件中，可以通过设置来禁用 Swagger 相关的功能。具体的设置方式可能因使用的框架和配置文件格式而有所不同。对于 Spring Boot，可以在 application-prod.properties 或 application-prod.yml 文件中添加以下配置来禁用 Swagger：
+    在你的应用程序的配置文件中，可以通过设置来禁用 Swagger 相关的功能。具体的设置方式可能因使用的框架和配置文件格式而有所不同。对于 Spring Boot，可以在 `application-prod.properties` 或 `application-prod.yml` 文件中添加以下配置来禁用 Swagger：
     
     ```properties
     springfox.documentation.enabled=false
@@ -229,13 +229,13 @@ public class SwaggerConfig {
 
 ## 常见问题
 
-![](https://img.sherry4869.com/blog/it/swagger/img_3.png)
+![](https://img.sherry4869.com/blog/it/java/junior/tools/swagger/img_3.png)
 
-它指示在使用动态 servlet 注册或 API 位于 API 网关后时无法自动推断 Swagger 资源的基本 URL。基本 URL 是指 Swagger 资源所服务的根路径。例如，如果 API 的访问地址是 http://example.org/api/v2/api-docs，那么基本 URL 应为 http://example.org/api/
+它指示在使用动态 servlet 注册或 API 位于 API 网关后时无法自动推断 Swagger 资源的基本 URL。基本 URL 是指 Swagger 资源所服务的根路径。例如，如果 API 的访问地址是 http://example.org/api/v2/api-docs ，那么基本 URL 应为 http://example.org/api/
 
-检测项目中是否配置了一个实现了 `ResponseBodyAdvice` 接口的实现类。该类用于对响应体进行全局处理，如有该类，请查看类中重写的 `supports()` 方法是否返回 true 且没有过滤 Swagger 的接口。因为如果 `supports()` 方法返回 true，就会执行重写的 `beforeBodyWrite()` 方法，方法里返回的数据封装格式与 Swagger `springfox.documentation.swagger.web.ApiResourceController` 接口里返回的数据格式不匹配导致获取不了 Swagger 资源的基本 URL
+我们检测一下项目中是否配置了一个实现了 `ResponseBodyAdvice` 接口的实现类。该类用于对响应体进行全局处理，如有该类，请查看类中重写的 `supports()` 方法是否返回 `true` 且没有过滤 Swagger 的接口。因为如果 `supports()` 方法返回 `true`，就会执行重写的 `beforeBodyWrite()` 方法，方法里返回的数据封装格式与 Swagger 的 `ApiResourceController` 接口里返回的数据格式不匹配导致获取不了 Swagger 资源的基本 URL
 
-此时我们就需要在实现类中的 `supports()` 方法里过滤 Swagger 接口
+如果是该原因导致的，那么我们就需要在实现类中的 `supports()` 方法里过滤 Swagger 接口
 
 ```java
 @RestControllerAdvice
@@ -243,7 +243,7 @@ public class RestResponseBodyAdvice implements ResponseBodyAdvice {
 
     @Override
     public boolean supports(MethodParameter returnType, Class converterType) {
-        return !returnType.getDeclaringClass().getName().contains("springfox");
+        return !returnType.getDeclaringClass().getName().contains("springfox"); // 过滤 Swagger 的接口
     }
 
     @Override
