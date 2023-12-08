@@ -4,9 +4,14 @@ import {SidebarConfig} from "./config/sidebar";
 
 process.env.TZ = "Asia/Shanghai";
 // @ts-ignore
-let data = await fetch("https://api.github.com/repos/SherryMW/Blog?token=ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGZrbd1zYgX7b4FYXUpAxWEjDOIJAYsuyjIuAEhKeove sherry_mw@163.com").then(response => response.json());
-let pushedAt = new Date(data['pushed_at']);
-let lastUpdate = pushedAt.getFullYear() + "年" + (pushedAt.getMonth() + 1) + "月" + pushedAt.getDate() + "日 " + pushedAt.getHours() + ":" + ("0" + pushedAt.getMinutes()).slice(-2);
+let response = await fetch("https://api.github.com/repos/SherryMW/Blog/commits", {
+    headers: {
+        Authorization: "token=ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGZrbd1zYgX7b4FYXUpAxWEjDOIJAYsuyjIuAEhKeove sherry_mw@163.com"
+    }
+}).then(res => res.json());
+const commitMessage = response[0].commit.message;
+const date = new Date(response[0].commit.author.date);
+const commitDate = date.getFullYear() + "年" + (date.getMonth() + 1) + "月" + date.getDate() + "日 " + date.getHours() + ":" + ("0" + date.getMinutes()).slice(-2);
 
 export default hopeTheme({
     hostname: "https://blog.sherry4869.com", // 当前网站部署到的域名
@@ -37,8 +42,8 @@ export default hopeTheme({
     blog: {
         avatar: "/avatar.jpg", // 头像
         roundAvatar: true, // 是否剪裁头像为圆形形状
-        // description: "过往不恋 未来不迎 <br/> <br/> 上次更新：" + lastUpdate, // 主页口号、座右铭或介绍语
-        description: "上次更新：" + lastUpdate,
+        description: "过往不恋 未来不迎 <br/> <br/> 上次更新：" + commitDate + "<br/><br/>更新内容：" + commitMessage, // 主页口号、座右铭或介绍语
+        // description: "上次更新：" + lastUpdate,
         intro: "", // 填写后点击头像或作者名称进入个人介绍页的界面地址
         // 主页媒体链接配置
         medias: {
