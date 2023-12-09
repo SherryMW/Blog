@@ -5,7 +5,7 @@ article: false
 
 # Games
 
-[Steam 工具箱 Watt Toolkit（原名 Steam++）](https://steampp.net/)
+Steam 工具箱 Watt Toolkit（原名 Steam++）：[https://steampp.net/](https://steampp.net/)
 
 ## 双人成行
 

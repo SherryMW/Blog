@@ -6,10 +6,13 @@ import {VueSidebar} from "../../it/vue/sidebar";
 import {JavaSidebar} from "../../it/java/sidebar";
 import {ViteSidebar} from "../../it/vite/sidebar";
 import {VueRouterSidebar} from "../../it/vue-router/sidebar";
+import {HealthySidebar} from "../../life/healthy/sidebar";
 
 export const SidebarConfig = sidebar({
 
     // ----- Life -----
+
+    "/life/healthy/": HealthySidebar,
 
     "/collection/": CollectionSidebar,
 
@@ -37,20 +40,4 @@ export const SidebarConfig = sidebar({
     // "/it/database/postgresql/": PostgreSQLSidebar,
 
     // "/it/apache/sharding-sphere/": ShardingSphereSidebar,
-
-    "/life/healthy/": [
-        {
-            text: "作息",
-            prefix: "rest/",
-            collapsible: true,
-            children: "structure"
-        },
-        // {
-        //     text: "健身",
-        //     prefix: "gym/",
-        //     collapsible: true,
-        //     children: "structure"
-        // },
-        // "ill"
-    ],
 });

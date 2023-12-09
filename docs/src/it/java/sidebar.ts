@@ -10,6 +10,12 @@ export const JavaSidebar = arraySidebar([
                 prefix: "basics/",
                 collapsible: true,
                 children: "structure"
+            },
+            {
+                text: "Spring",
+                prefix: "spring/",
+                collapsible: true,
+                children: "structure"
             }
         ]
     },

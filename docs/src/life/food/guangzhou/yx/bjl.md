@@ -76,8 +76,20 @@ article: false
 - [x] 北极贝
 - [x] 芥末八爪鱼
 
+## 陈添记
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0J1COEOXQ" target="_blank">惠福东路612号</a>
+
+- [x] 陈添记鱼皮（推荐）
+
 ## 麺屋猪一
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0J1COEOXQ" target="_blank">西湖路63号光明广场B1层</a>
 
 - [x] 豚骨王拉面
+
+## 霸王茶姬
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFJ8JP89" target="_blank">北京路182号粤潮NEW-IN-PARK-LG-M-层LG104-M104</a>
+
+- [x] 白雾红尘

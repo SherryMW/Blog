@@ -40,3 +40,9 @@ article: false
 - [x] 蒜蓉粉丝蒸开边虾
 - [x] 清蒸原只福建生蚝
 - [x] 干烧伊面
+
+## 马记永•兰州牛肉面
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0JA6LJTAA" target="_blank">广州大道北1811-1813号</a>
+
+- [x] 大片牛腱子兰州牛肉面（推荐）

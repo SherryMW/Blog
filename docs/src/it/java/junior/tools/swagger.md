@@ -233,17 +233,19 @@ public class SwaggerConfig {
 
 它指示在使用动态 servlet 注册或 API 位于 API 网关后时无法自动推断 Swagger 资源的基本 URL。基本 URL 是指 Swagger 资源所服务的根路径。例如，如果 API 的访问地址是 http://example.org/api/v2/api-docs ，那么基本 URL 应为 http://example.org/api/
 
-我们检测一下项目中是否配置了一个实现了 `ResponseBodyAdvice` 接口的实现类。该类用于对响应体进行全局处理，如有该类，请查看类中重写的 `supports()` 方法是否返回 `true` 且没有过滤 Swagger 的接口。因为如果 `supports()` 方法返回 `true`，就会执行重写的 `beforeBodyWrite()` 方法，方法里返回的数据封装格式与 Swagger 的 `ApiResourceController` 接口里返回的数据格式不匹配导致获取不了 Swagger 资源的基本 URL
+我们检测一下项目中是否配置了一个实现了 `ResponseBodyAdvice` 接口的实现类。该类用于对响应体进行全局处理，如有该类，请查看类中重写的 `supports()` 方法是否返回 `true` 且没有过滤 Swagger 的接口。因为如果 `supports()` 方法返回 `true`，就会执行重写的 `beforeBodyWrite()` 方法，方法里返回的数据封装格式与 Swagger 接口里返回的数据格式不匹配导致获取不了 Swagger 资源的基本 URL
 
 如果是该原因导致的，那么我们就需要在实现类中的 `supports()` 方法里过滤 Swagger 接口
 
 ```java
+@Slf4j
 @RestControllerAdvice
 public class RestResponseBodyAdvice implements ResponseBodyAdvice {
 
     @Override
     public boolean supports(MethodParameter returnType, Class converterType) {
-        return !returnType.getDeclaringClass().getName().contains("springfox"); // 过滤 Swagger 的接口
+        // log.info(returnType.getDeclaringClass().getName()); // 用于获取声明响应体的方法的类的全限定名（Fully Qualified Name）当调用 Swagger 接口时，将打印出 springfox.documentation.swagger.web.ApiResourceController 以及 springfox.documentation.swagger2.web.Swagger2ControllerWebMvc
+        return !returnType.getDeclaringClass().getName().contains("springfox.documentation"); // 过滤 Swagger 的接口
     }
 
     @Override

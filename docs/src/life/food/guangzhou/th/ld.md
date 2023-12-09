@@ -47,7 +47,7 @@ article: false
 - [x] daydream
 - [x] 死亡的性感解释
 
-## 太艮堡毋米粥·粥底火锅
+## 太艮堡毋米粥•粥底火锅
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00140TZ3W" target="_blank">金穗路72号盈嘉花园103号-201号</a>
 

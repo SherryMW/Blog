@@ -133,7 +133,7 @@ article: false
         @Value("${env}")
         private String env;
     
-        @RequestMapping("/env")
+        @GetMapping("/env")
         public String env() {
             return "env = " + env;
         }

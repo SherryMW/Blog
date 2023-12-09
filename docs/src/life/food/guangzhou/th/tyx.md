@@ -34,3 +34,9 @@ article: false
 - [x] 甜蜜派对蜜糖草莓吐司（推荐）
 - [x] 满杯新鲜水果茶
 - [x] 桃桃乌龙清香茶
+
+## 奈雪的茶
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0I2VO73QT" target="_blank">天河北路711曜一城F1层</a>
+
+- [x] 厚芋泥奶茶

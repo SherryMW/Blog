@@ -160,3 +160,19 @@ article: false
 ## 潮燚盛荟牛肉店
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFIRS1DD" target="_blank">元岗横路16号A座103-104、201-205一楼</a>
+
+## 茶理宜世
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0HBGAF1Z5" target="_blank">元岗横路23号天汇创意园A座一楼</a>
+
+- [x] 长乐未央
+- [x] 郁郁幽兰
+- [x] 翠枝玉露
+- [x] 烟雨乌龙
+- [x] 莺莺
+
+## 茶百道
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0GK6KP6PJ" target="_blank">元岗横路16号5栋105铺</a>
+
+- [x] 多芒杨枝甘露

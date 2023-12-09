@@ -61,3 +61,9 @@ article: false
 
 - [x] 回头鱼
 - [x] 鸭嘴鱼
+
+## 喜茶
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0G2AC5537" target="_blank">华景北路279号一层112铺</a>
+
+- [x] 冰蓝生打椰

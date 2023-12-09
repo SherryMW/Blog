@@ -36,7 +36,7 @@ export default hopeTheme({
         global: true,
         admin: "MW8888",
         config: {
-            "/life/healthy/rest/2023.html": "MW8888"
+            "/life/healthy/": "MW8888"
         }
     },
     blog: {

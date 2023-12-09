@@ -29,7 +29,7 @@ article: false
 - [x] 油盐头菜蒸无骨鲩鱼
 - [x] 椰青雪蛤炖蛋白奶（推荐）
 
-## Pizza Forza意式窑烤披萨
+## Pizza Forza 意式窑烤披萨
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0I12MZD0C" target="_blank">VLAB181负一楼123铺</a>
 
