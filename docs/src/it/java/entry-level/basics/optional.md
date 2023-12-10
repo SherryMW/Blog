@@ -6,7 +6,7 @@ article: false
 
 # Optional
 
-`Optional` 是在 JDK 8 中引入的
+Optional 在 JDK 8 中引入
 
 ## 为什么要引入 Optional
 

@@ -6,7 +6,7 @@ article: false
 
 # Lambda 表达式
 
-Lambda 表达式是在 JDK 8 中引入的
+Lambda 表达式在 JDK 8 中引入
 
 ## 为什么要引入 Lambda 表达式
 

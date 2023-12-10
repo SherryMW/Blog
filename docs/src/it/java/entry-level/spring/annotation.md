@@ -7,6 +7,64 @@ article: false
 
 # 注解
 
+## Component
+
+用于标识一个类作为 Spring 容器管理的组件。通过 `@Component` 注解，Spring会自动扫描并识别这些类，并将其纳入Spring容器进行管理。我们可以简化组件的创建和配置过程，使得应用程序的开发和维护更加方便
+
+- 标识组件：`@Component` 注解将一个类标识为 Spring 容器中的组件。被 `@Component` 注解标记的类将被自动扫描并注册为一个 Bean
+
+- 自动创建实例：当 Spring 容器扫描到被 `@Component` 注解标记的类时，它会自动实例化该类的对象。通过默认的实例化策略，Spring 将创建单例的 Bean 对象
+
+- 自动装配依赖：被 `@Component` 注解标记的类可以通过依赖注入来访问其他被 Spring 管理的 Bean。Spring 容器会自动解析依赖关系，并将相应的 Bean 自动注入到组件中
+
+- 组件扫描：`@Component` 注解与组件扫描（Component Scanning）配合使用。组件扫描是 Spring 容器在启动时自动扫描指定包下的类，识别并注册所有被 `@Component` 注解标记的类为 Bean
+
+- 泛化注解：`@Component` 注解是一个泛化的注解，它还有几个具体的衍生注解，如 [@Service](#service)、[@Repository](#repository) 和 [@Controller](#controller) 等。这些注解提供了更具体的语义，并可用于不同层次的组件（如服务层、数据访问层、控制层）
+
+```java
+@Component
+public class MyComponent {
+    
+    public void doSomething() {
+        // ...
+    }
+    
+    // ...
+}
+```
+
+在上述示例中，`MyComponent` 类被标记为 `@Component`，表示它是一个 Spring 容器中的组件。当 Spring 容器启动时，它会自动创建 `MyComponent` 的实例，并将其注册为一个 Bean
+
+::: info
+`@Component` 和 `@Bean` 是 Spring 框架中用于创建和管理 Bean 的两种不同方式，它们有以下区别：
+
+- 用途和应用场景：`@Component` 注解用于将类标识为 Spring 容器中的组件，可以扫描并自动创建 Bean 实例。适用于通用的组件创建和管理。`@Bean` 注解用于在配置类中定义方法，该方法负责手动创建和配置 Bean 实例。适用于更细粒度的、定制化的 Bean 创建和配置
+
+- 创建方式：`@Component` 注解通过组件扫描自动创建 Bean 实例，无需显式配置。`@Bean` 注解需要在配置类中手动创建 Bean 实例，通过调用方法返回一个实例
+
+- 配置灵活性：`@Component` 注解提供了一种简单的方式来创建和配置 Bean，但它的配置选项有限。`@Bean` 注解允许在方法级别进行更细粒度的配置，可以设置初始化参数、依赖关系等
+
+- 依赖注入：`@Component` 注解的 Bean 可以通过自动装配 `@Autowired` 进行依赖注入，Spring 容器会自动解析依赖关系并自动注入。`@Bean` 注解的 Bean 通常需要手动进行依赖注入，通过方法参数或其他方式显式指定
+
+- 托管范围：`@Component` 注解默认将 Bean 注册为单例（Singleton）托管，Spring 容器中只有一个实例。`@Bean` 注解可以通过配置 `@Scope` 注解指定不同的托管范围，如单例、原型、会话、请求等
+
+- 所属类：`@Component` 注解可以用于标记类本身，将其注册为 Bean。`@Bean` 注解通常用于配置类中的方法，用于定义和配置具体的 Bean 实例
+
+综上所述，`@Component` 注解适用于通用的组件创建和管理，通过组件扫描自动创建 Bean 实例。`@Bean` 注解适用于更细粒度和定制化的 Bean 创建和配置，需要手动在配置类中定义方法返回 Bean 实例。两者可以根据具体需求灵活使用
+:::
+
+## Service
+
+待更新
+
+## Repository
+
+待更新
+
+## Controller
+
+待更新
+
 ## ResponseBody
 
 `@ResponseBody` 注解用于将方法的返回值直接作为响应体返回给客户端，而不是通过视图解析器进行视图渲染
@@ -171,7 +229,7 @@ public class GlobalControllerAdvice {
     }
     ```
 
-   详情参考：[封装异常处理类](response-data-result.md#封装异常处理类)
+   参考：[封装异常处理类](response-data-result.md#封装异常处理类)
 
 2. 全局响应数据封装：
 
@@ -194,7 +252,7 @@ public class GlobalControllerAdvice {
     }
     ```
 
-    详情参考：[自定义全局处理控制器](response-data-result.md#自定义全局处理控制器)
+    参考：[自定义全局处理控制器](response-data-result.md#自定义全局处理控制器)
 
 ## RestControllerAdvice
 
