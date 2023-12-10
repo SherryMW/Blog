@@ -1,6 +1,5 @@
 ---
 category: IT
-tag: Java
 order: 2
 article: false
 ---

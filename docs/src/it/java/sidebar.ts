@@ -30,6 +30,12 @@ export const JavaSidebar = arraySidebar([
                 children: "structure"
             },
             {
+                text: "Redis",
+                prefix: "redis/",
+                collapsible: true,
+                children: "structure"
+            },
+            {
                 text: "工具",
                 prefix: "tools/",
                 collapsible: true,
