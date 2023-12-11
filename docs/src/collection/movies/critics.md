@@ -15,7 +15,7 @@ article: false
 
 官网：[https://www.rottentomatoes.com](https://www.rottentomatoes.com/)
 
-![漫威电影宇宙所有电影&剧集烂番茄新鲜度（2008-2023）](https://img.sherry4869.com/blog/movies/tomatoes-mcu.jpg)
+![漫威电影宇宙所有电影&剧集烂番茄新鲜度（2008-2023）](https://img.sherry4869.com/blog/collection/movies/tomatoes-mcu.jpg)
 
 ## 豆瓣电影
 
