@@ -1,6 +1,5 @@
 ---
 category: IT
-tag: Vue
 order: 3
 shortTitle: 事件
 article: false

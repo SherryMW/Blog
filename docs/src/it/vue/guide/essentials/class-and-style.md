@@ -1,6 +1,5 @@
 ---
 category: IT
-tag: Vue
 order: 5
 shortTitle: 类与样式绑定
 article: false

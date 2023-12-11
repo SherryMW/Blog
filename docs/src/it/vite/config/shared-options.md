@@ -1,11 +1,10 @@
 ---
 category: IT
-tag: Vue
 order: 2
 article: false
 ---
 
-# 共享配置
+# 共享选项
 
 ## resolve.alias
 

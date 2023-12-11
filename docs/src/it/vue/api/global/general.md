@@ -1,6 +1,5 @@
 ---
 category: IT
-tag: Vue
 order: 2
 shortTitle: 通用
 article: false

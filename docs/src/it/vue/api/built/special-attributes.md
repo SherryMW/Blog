@@ -1,6 +1,5 @@
 ---
 category: IT
-tag: Vue
 order: 4
 shortTitle: 特殊 Attributes
 article: false

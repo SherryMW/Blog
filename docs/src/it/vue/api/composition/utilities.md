@@ -1,6 +1,5 @@
 ---
 category: IT
-tag: Vue
 order: 3
 shortTitle: 响应式：工具
 article: false

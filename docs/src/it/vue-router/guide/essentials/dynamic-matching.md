@@ -1,6 +1,5 @@
 ---
 category: IT
-tag: Vue
 order: 2
 shortTitle: 动态路由匹配
 article: false

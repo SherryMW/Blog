@@ -1,6 +1,5 @@
 ---
 category: IT
-tag: Vue
 shortTitle: 语法定义
 order: 1
 article: false

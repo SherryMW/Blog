@@ -36,10 +36,20 @@ article: false
 
 ::: projects
 ```yaml
+- icon: https://img.sherry4869.com/blog/collection/developers/axios.ico
+  name: Axios
+  desc: 基于 promise 的网络请求库，可以用于浏览器和 node.js
+  link: https://www.axios-http.cn/
+
 - icon: https://img.sherry4869.com/blog/collection/developers/vue_logo.svg
   name: Vue
   desc: 渐进式 JavaScript 框架
   link: https://cn.vuejs.org/
+
+- icon: https://img.sherry4869.com/blog/collection/developers/pinia.svg
+  name: Pinia
+  desc: 符合直觉的 Vue.js 状态管理库
+  link: https://pinia.vuejs.org/zh/
 ```
 :::
 
@@ -65,31 +75,6 @@ article: false
   link: https://animate.style/
 ```
 :::
-
-[//]: # (::: projects)
-
-[//]: # (```yaml)
-
-[//]: # (- icon: https://www.axios-http.cn/assets/favicon.ico)
-
-[//]: # (  name: Axios)
-
-[//]: # (  desc: Axios 是一个基于 promise 的网络请求库，可以用于浏览器和 node.js)
-
-[//]: # (  link: https://www.axios-http.cn/)
-
-[//]: # ()
-[//]: # (- icon: https://pinia.vuejs.org/logo.svg)
-
-[//]: # (  name: Pinia)
-
-[//]: # (  desc: 符合直觉的 Vue.js 状态管理库)
-
-[//]: # (  link: https://pinia.vuejs.org/zh/)
-
-[//]: # (```)
-
-[//]: # (:::)
 
 ::: projects
 ```yaml

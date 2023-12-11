@@ -1,6 +1,5 @@
 ---
 category: IT
-tag: Vue
 order: 4
 shortTitle: 响应式：进阶
 article: false

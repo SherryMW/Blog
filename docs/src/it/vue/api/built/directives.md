@@ -1,6 +1,5 @@
 ---
 category: IT
-tag: Vue
 order: 1
 shortTitle: 指令
 article: false

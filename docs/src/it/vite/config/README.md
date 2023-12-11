@@ -1,6 +1,5 @@
 ---
 category: IT
-tag: Vue
 article: false
 ---
 

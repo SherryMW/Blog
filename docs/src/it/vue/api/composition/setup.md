@@ -1,6 +1,5 @@
 ---
 category: IT
-tag: Vue
 order: 1
 shortTitle: setup()
 article: false

@@ -191,8 +191,8 @@ public class RestResponseBodyAdvice implements ResponseBodyAdvice {
     @Override
     public Object beforeBodyWrite(Object body, MethodParameter returnType, MediaType selectedContentType, Class selectedConverterType, ServerHttpRequest request, ServerHttpResponse response) {
         // 当接口返回的类型消息转换器是 StringHttpMessageConverter 时，也就是说返回值类型是 String，因此就不可以直接返回 DataResult，需要转换成 JSON 字符串
-        // 在 Spring Boot 中，StringHttpMessageConverter 消息转换器已经默认添加到了消息转换器列表中，它会将请求和响应中的字符串类型数据转换成 Java 中的 String 类型，当接口返回类型是字符串类型，则 StringHttpMessageConverter 会处理该请求，并将请求中的数据转换成 Java 中的 String 类型，如果我们直接返回到是 DataResult 类型就会出现类型转换异常 java.lang.ClassCastException: com.mw.common.DataResult cannot be cast to java.lang.String
-        if (stringConverter.equalsIgnoreCase(selectedConverterType.getName())) {
+        // 在 Spring Boot 中，StringHttpMessageConverter 消息转换器已经默认添加到了消息转换器列表中，它会将请求和响应中的字符串类型数据转换成 Java 中的 String 类型，当接口返回类型是字符串类型，则 StringHttpMessageConverter 会处理该请求，并将请求中的数据转换成 Java 中的 String 类型，如果我们直接返回 DataResult 类型就会出现类型转换异常 java.lang.ClassCastException: com.mw.common.DataResult cannot be cast to java.lang.String
+        if (stringConverter.equalsIgnoreCase(selectedConverterType.getName())) { // 只有类型是 StringHttpMessageConverter 消息转换器才进入该代码块
             HttpHeaders headers = response.getHeaders();
             headers.setContentType(MediaType.APPLICATION_JSON);
             return objectMapper.writeValueAsString(DataResult.success(body));
@@ -241,8 +241,8 @@ public class RestResponseBodyAdvice implements ResponseBodyAdvice {
     @Override
     public Object beforeBodyWrite(Object body, MethodParameter returnType, MediaType selectedContentType, Class selectedConverterType, ServerHttpRequest request, ServerHttpResponse response) {
         // 当接口返回的类型消息转换器是 StringHttpMessageConverter 时，也就是说返回值类型是 String，因此就不可以直接返回 DataResult，需要转换成 JSON 字符串
-        // 在 Spring Boot 中，StringHttpMessageConverter 消息转换器已经默认添加到了消息转换器列表中，它会将请求和响应中的字符串类型数据转换成 Java 中的 String 类型，当接口返回类型是字符串类型，则 StringHttpMessageConverter 会处理该请求，并将请求中的数据转换成 Java 中的 String 类型，如果我们直接返回到是 DataResult 类型就会出现类型转换异常 java.lang.ClassCastException: com.mw.common.DataResult cannot be cast to java.lang.String
-        if (stringConverter.equalsIgnoreCase(selectedConverterType.getName())) {
+        // 在 Spring Boot 中，StringHttpMessageConverter 消息转换器已经默认添加到了消息转换器列表中，它会将请求和响应中的字符串类型数据转换成 Java 中的 String 类型，当接口返回类型是字符串类型，则 StringHttpMessageConverter 会处理该请求，并将请求中的数据转换成 Java 中的 String 类型，如果我们直接返回 DataResult 类型就会出现类型转换异常 java.lang.ClassCastException: com.mw.common.DataResult cannot be cast to java.lang.String
+        if (stringConverter.equalsIgnoreCase(selectedConverterType.getName())) { // 只有类型是 StringHttpMessageConverter 消息转换器才进入该代码块
             HttpHeaders headers = response.getHeaders();
             headers.setContentType(MediaType.APPLICATION_JSON);
             return objectMapper.writeValueAsString(DataResult.success(body));
