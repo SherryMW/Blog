@@ -1,15 +1,9 @@
 ---
-date: 2022-05-06
 category: IT
-tag:
-  - Java
-  - Spring
 article: false
 ---
 
-# Spring Cloud Eureka 配置用户认证
-
-<!-- more -->
+# Eureka 配置用户认证
 
 Spring Cloud 是一个基于 Spring Boot 实现的云应用开发工具，它是若干个框架的集合，提供了全套的分布式系统解决方案。Spring Boot 专注于快速、方便集成的单个个体，而 Spring Cloud 是关注全局的服务治理框架。Eureka 是 Spring Cloud 的一部分，它是一个基于 REST 的服务，用于定位服务，以实现云端中间层服务发现和故障转移。Eureka 是 Netflix 开源的一个组件，Spring Cloud 将其集成在了自己的子项目中
 
@@ -23,7 +17,7 @@ Spring Cloud 是一个基于 Spring Boot 实现的云应用开发工具，它是
 
 ## 基于 Spring Cloud 1.x 配置
 
-1. 在 Eureka 服务端的 pom 文件中添加 Security 依赖
+1. 在 Eureka 服务端的 `pom` 文件中添加 Security 依赖
 
     ```xml
     <dependency>
@@ -32,7 +26,7 @@ Spring Cloud 是一个基于 Spring Boot 实现的云应用开发工具，它是
     </dependency>
     ```
 
-2. 修改 Eureka 服务端的应用程序配置文件 application.properties 或 application.yml
+2. 修改 Eureka 服务端的应用程序配置文件 `application.properties` 或 `application.yml`
 
     ```properties
     # 服务端口
@@ -43,9 +37,9 @@ Spring Cloud 是一个基于 Spring Boot 实现的云应用开发工具，它是
     spring.security.user.password=password
     # 应用实例主机名
     eureka.instance.hostname=localhost
-    # 是否将自己注册到 Eureka 服务中，因为该应用本身就是注册中心，因此不需要再注册自己（集群的时候为true）
+    # 是否将自己注册到 Eureka 服务中，如果该应用本身就是注册中心，则不需要再注册自己（集群的时候为true）
     eureka.client.register-with-eureka=false
-    # 是否从 Eureka 中获取注册信息，因为该应用本身就是注册中心，因此不会在该应用中检索服务信息
+    # 是否从 Eureka 中获取注册信息，如果该应用本身就是注册中心，则不会在该应用中检索服务信息
     eureka.client.fetch-registry=false
     # 指定 Eureka 服务器的地址，如果服务注册中心为高可用集群时，多个注册中心地址以逗号分隔
     eureka.client.service-url.defaultZone=http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:${server.port}/eureka/
@@ -57,15 +51,15 @@ Spring Cloud 是一个基于 Spring Boot 实现的云应用开发工具，它是
 
    在浏览器上访问注册中心地址：http://localhost:9090 就会进行 HTTP Basic Authentication
 
-   ![](https://img.sherry4869.com/blog/it/diary/2022/05/06/img_1.png)
+   ![](https://img.sherry4869.com/blog/it/java/intermediate/spring-cloud/img_1.png)
 
-   ![](https://img.sherry4869.com/blog/it/diary/2022/05/06/img_2.png)
+   ![](https://img.sherry4869.com/blog/it/java/intermediate/spring-cloud/img_2.png)
 
-   此时注册中心中提示没有可用的实例，此时我们可以注册所需的服务
+   此时注册中心中提示没有可用的实例，我们可以注册所需的服务
 
 4. 注册服务
 
-   修改需要注册的服务端的应用程序配置文件 application.properties 或 application.yml
+   修改需要注册的服务端的应用程序配置文件 `application.properties` 或 `application.yml`
 
     ```properties
     # 服务端口
@@ -82,7 +76,7 @@ Spring Cloud 是一个基于 Spring Boot 实现的云应用开发工具，它是
 
    启动服务后刷新注册中心地址可以看到当前注册的实例列表里有 TEST 实例
 
-   ![](https://img.sherry4869.com/blog/it/diary/2022/05/06/img_3.png)
+   ![](https://img.sherry4869.com/blog/it/java/intermediate/spring-cloud/img_3.png)
 
 ## 基于 Spring Cloud 2.x 配置
 
@@ -95,7 +89,7 @@ Spring Cloud 是一个基于 Spring Boot 实现的云应用开发工具，它是
     </dependency>
     ```
 
-2. 修改 Eureka 服务端的应用程序配置文件 application.properties 或 application.yml
+2. 修改 Eureka 服务端的应用程序配置文件 `application.properties` 或 `application.yml`
 
     ```properties
     # 服务端口
@@ -106,9 +100,9 @@ Spring Cloud 是一个基于 Spring Boot 实现的云应用开发工具，它是
     spring.security.user.password=password
     # 应用实例主机名
     eureka.instance.hostname=localhost
-    # 是否将自己注册到 Eureka 服务中，因为该应用本身就是注册中心，因此不需要再注册自己（集群的时候为true）
+    # 是否将自己注册到 Eureka 服务中，如果该应用本身就是注册中心，则不需要再注册自己（集群的时候为true）
     eureka.client.register-with-eureka=false
-    # 是否从 Eureka 中获取注册信息，因为该应用本身就是注册中心，因此不会在该应用中检索服务信息
+    # 是否从 Eureka 中获取注册信息，如果该应用本身就是注册中心，则不会在该应用中检索服务信息
     eureka.client.fetch-registry=false
     # 指定 Eureka 服务器的地址，如果服务注册中心为高可用集群时，多个注册中心地址以逗号分隔
     eureka.client.service-url.defaultZone=http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:${server.port}/eureka/
@@ -140,15 +134,15 @@ Spring Cloud 是一个基于 Spring Boot 实现的云应用开发工具，它是
 
     在浏览器上访问注册中心地址：http://localhost:9090 就会进行 HTTP Basic Authentication
 
-    ![](https://img.sherry4869.com/blog/it/diary/2022/05/06/img_1.png)
+    ![](https://img.sherry4869.com/blog/it/java/intermediate/spring-cloud/img_1.png)
 
-    ![](https://img.sherry4869.com/blog/it/diary/2022/05/06/img_2.png)
+    ![](https://img.sherry4869.com/blog/it/java/intermediate/spring-cloud/img_2.png)
 
-    此时注册中心中提示没有可用的实例，此时我们可以注册所需的服务
+    此时注册中心中提示没有可用的实例，我们可以注册所需的服务
 
 5. 注册服务
 
-    修改需要注册的服务端的应用程序配置文件 application.properties 或 application.yml
+    修改需要注册的服务端的应用程序配置文件 `application.properties` 或 `application.yml`
 
     ```properties
     # 服务端口
@@ -165,4 +159,4 @@ Spring Cloud 是一个基于 Spring Boot 实现的云应用开发工具，它是
 
     启动服务后刷新注册中心地址可以看到当前注册的实例列表里有 TEST 实例
 
-    ![](https://img.sherry4869.com/blog/it/java/diary/2022/05/06/img_3.png)
+    ![](https://img.sherry4869.com/blog/it/java/intermediate/spring-cloud/img_3.png)
