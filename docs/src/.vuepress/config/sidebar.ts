@@ -7,6 +7,7 @@ import {JavaSidebar} from "../../it/java/sidebar";
 import {ViteSidebar} from "../../it/vite/sidebar";
 import {VueRouterSidebar} from "../../it/vue-router/sidebar";
 import {HealthySidebar} from "../../life/healthy/sidebar";
+import {PiniaSidebar} from "../../it/pinia/sidebar";
 
 export const SidebarConfig = sidebar({
 
@@ -32,6 +33,8 @@ export const SidebarConfig = sidebar({
     "/it/vue-router/": VueRouterSidebar,
 
     "/it/vite/": ViteSidebar,
+
+    "/it/pinia/": PiniaSidebar,
 
     "/it/java/": JavaSidebar,
 

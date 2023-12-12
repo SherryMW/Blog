@@ -3,11 +3,20 @@ category: IT
 article: false
 ---
 
-# 工具类
+# 加密
 
 ## MD5/SHA 加密
 
+::: tabs
+
+@tab PasswordEncoder.java
+
 ```java
+package com.mw.utils;
+
+import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
+
 public class PasswordEncoder {
 
     private final static String[] hexDigits = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"};
@@ -100,7 +109,13 @@ public class PasswordEncoder {
 }
 ```
 
+@tab PasswordUtils.java
+
 ```java
+package com.mw.utils;
+
+import java.util.UUID;
+
 public class PasswordUtils {
 
     /**
@@ -133,6 +148,8 @@ public class PasswordUtils {
 }
 ```
 
+@tab 测试
+
 ```java
 @SpringBootTest
 public class TestMD5 {
@@ -151,9 +168,13 @@ public class TestMD5 {
 }
 ```
 
+打印结果：
+
 ```text
 盐：c287d0ba57e24d488dd5
 明文：rawPassword
 密文：718ee07b0a1a9bb6dcbe523dfeb5b1e1
 校验密码是否正确：true
 ```
+
+:::

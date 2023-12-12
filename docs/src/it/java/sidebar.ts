@@ -16,6 +16,12 @@ export const JavaSidebar = arraySidebar([
                 prefix: "spring/",
                 collapsible: true,
                 children: "structure"
+            },
+            {
+                text: "工具",
+                prefix: "tools/",
+                collapsible: true,
+                children: "structure"
             }
         ]
     },
