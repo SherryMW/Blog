@@ -374,17 +374,19 @@ public class TokenFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-        HttpServletRequest httpServletRequest = (HttpServletRequest) request;
-        String requestURI = httpServletRequest.getRequestURI();
-        if (Stream.of(EXCLUDE_URLS).noneMatch(requestURI::startsWith)) { //如果当前请求地址不匹配白名单接口地址的话则需要进行 token 过滤验证
-            String token = httpServletRequest.getHeader("Authorization");
-            if (StringUtils.isEmpty(token) || !jwtUtil.validateToken(token)) {
+        HttpServletRequest httpServletRequest = (HttpServletRequest) request; // 获取请求对象，以便后续获取请求信息
+        String requestURI = httpServletRequest.getRequestURI(); // 获取 HTTP 请求的统一资源标识符（URI），即请求的路径部分
+        if (Stream.of(EXCLUDE_URLS).noneMatch(requestURI::startsWith)) { //如果当前请求地址不匹配白名单接口地址的话则需要进行 Token 过滤验证
+            String token = httpServletRequest.getHeader("Authorization"); // 从请求头中获取名为 "Authorization" 的头信息，即 Token
+            if (StringUtils.isEmpty(token) || !jwtUtil.validateToken(token)) { // 判断 Token 是否为空或者经过 JwtUtil 验证。如果 Token 为空或者验证不通过，返回 Token 错误的响应
+                // 如果 Token 验证不通过，将错误信息返回给客户端。这里使用了 DataResult 类来封装响应数据，以及 ObjectMapper 将 DataResult 对象转换为 JSON 字符串
                 DataResult dataResult = DataResult.fail(ResponseCode.TOKEN_ERROR.getCode(), ResponseCode.TOKEN_ERROR.getMessage());
                 response.getOutputStream().write(objectMapper.writeValueAsString(dataResult).getBytes(StandardCharsets.UTF_8));
                 response.setContentType(MediaType.APPLICATION_JSON_VALUE);
                 return;
             }
         }
+        // 如果 Token 验证通过，或者请求在白名单中，通过 chain.doFilter(request, response); 将请求传递给下一个过滤器或目标资源
         chain.doFilter(request, response);
     }
 }
@@ -395,23 +397,136 @@ public class TokenFilter implements Filter {
 过滤器策略配置类，指定哪些资源是受保护的
 
 ```java
-@Configuration
+@Configuration // 这个注解表示这是一个配置类，用于定义 Spring Bean
 public class FilterConfig {
 
     @Bean
-    public TokenFilter tokenFilter() {
+    public TokenFilter tokenFilter() { // 这个方法创建并返回一个 TokenFilter 的实例，将其声明为一个 Spring Bean。这个 Bean 将会被 Spring 容器管理
         return new TokenFilter();
     }
 
     @Bean
-    public FilterRegistrationBean tokenFilterBean(TokenFilter tokenFilter) {
+    public FilterRegistrationBean tokenFilterBean(TokenFilter tokenFilter) { // FilterRegistrationBean 是 Spring 提供的用于配置过滤器的辅助类。它允许你以编程方式配置过滤器
         FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean();
-        filterRegistrationBean.setFilter(tokenFilter);
-        filterRegistrationBean.setName("tokenFilter");
-        filterRegistrationBean.addUrlPatterns("/api/*"); //请求/api/*开头的接口都要进行 token 校验
-        return filterRegistrationBean;
+        filterRegistrationBean.setFilter(tokenFilter); // 通过调用 setFilter 方法，将 TokenFilter 注册到 FilterRegistrationBean 中
+        filterRegistrationBean.setName("tokenFilter"); // 设置过滤器的名称为 "tokenFilter"
+        filterRegistrationBean.addUrlPatterns("/api/*"); // 通过 addUrlPatterns 方法，指定了需要经过 TokenFilter 过滤器处理的 URL 模式。在这里，所有以 "/api/" 开头的请求都会经过 TokenFilter 进行处理
+        return filterRegistrationBean; // 最后，将配置好的 FilterRegistrationBean 返回，这个 Bean 将被 Spring 容器管理
     }
 }
 ```
 
 :::
+
+### 前端请求头携带 Token
+
+参考代码：
+
+::: tabs
+
+@tab request.ts
+
+```ts {18-23,33-38}
+import router from "@/router";
+import { useUserStore } from "@/store/userStore";
+import axios, { AxiosResponse, InternalAxiosRequestConfig } from "axios";
+import { ElMessage } from "element-plus";
+import cache from "./cache";
+
+const userStore = useUserStore();
+
+const instance = axios.create({
+    timeout: 60000,
+    headers: { "Content-Type": "application/json" },
+    baseURL: 'http://localhost:8080'
+})
+
+/**
+ * 请求拦截器
+ */
+instance.interceptors.request.use((request: InternalAxiosRequestConfig) => {
+    if (userStore.getToken) { // 从状态管理中取出 Token 添加进请求头中
+        request.headers.Authorization = userStore.getToken;
+    }
+    return request;
+})
+/**
+ * 响应拦截器
+ */
+instance.interceptors.response.use((response: AxiosResponse) => {
+    if (response.status === 200) {
+        if (response.data.code === 0) { // 后端成功响应
+            return response.data; // 直接获取后端响应对象中的 data 业务数据
+        }
+        ElMessage.error(response.data.message); // 将后端响应的错误信息提示给用户
+        if (response.data.code === 401000) { // Token 失效需要把用户状态信息给清空
+            cache.setUserId("");
+            cache.setUserName("");
+            cache.setToken("");
+            location.reload();
+        }
+    }
+    return Promise.reject(response.statusText);
+}, (error) => {
+    // if (error.response.status === 404) {
+    //     router.push('/404');
+    // }
+    ElMessage.error(error.message);
+    return Promise.reject(error.message);
+})
+
+export default instance
+```
+
+@tab cache.ts
+
+```ts
+import constants from "./constants"
+
+class Cache {
+    setUserId(userId: string) {
+        if (!userId) {
+            window.localStorage.removeItem(constants.userIdKey);
+            return;
+        }
+        window.localStorage.setItem(constants.userIdKey, JSON.stringify(userId));
+    }
+    setUserName(userName: string) {
+        if (!userName) {
+            window.localStorage.removeItem(constants.userNameKey);
+            return
+        }
+        window.localStorage.setItem(constants.userNameKey, JSON.stringify(userName));
+    }
+    setToken(token: string) {
+        if (!token) {
+            window.localStorage.removeItem(constants.tokenKey);
+            return
+        }
+        window.localStorage.setItem(constants.tokenKey, JSON.stringify(token));
+    }
+
+    getUserId(): string {
+        let result: any = window.localStorage.getItem(constants.userIdKey);
+        return JSON.parse(result);
+    }
+    getUserName(): string {
+        let result: any = window.localStorage.getItem(constants.userNameKey);
+        return JSON.parse(result);
+    }
+    getToken(): string {
+        let result: any = window.localStorage.getItem(constants.tokenKey);
+        return JSON.parse(result);
+    }
+}
+
+export default new Cache()
+```
+
+:::
+
+虽然配置了请求拦截器，但前端还是可以绕过 Token 认证直接访问已知界面
+
+例如用户把浏览器本地缓存中用户状态信息对应的键值给删除，接着不访问 `${ip}/login` 路径进行登录，而是直接访问主页 `${ip}/home`，此时主页是可以访问成功的，虽然业务数据没有加载出来（后端配置了过滤器），这样的行为我们是不能认可的
+
+我们可以通过[导航守卫](/it/vue-router/guide/advanced/navigation-guards.md)安全认证来解决这个问题

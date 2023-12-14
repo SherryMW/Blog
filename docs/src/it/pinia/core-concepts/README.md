@@ -99,7 +99,7 @@ export const useUserStore = defineStore('userStoreId', {
 
 @tab /src/components/login/loginForm.vue
 
-```vue
+```vue {46-48}
 <template>
   <ElForm class="login-form" ref="loginRef" :model="loginParam" :rules="loginRules">
     <h1 class="login-title">登录</h1>
@@ -144,7 +144,7 @@ export const useUserStore = defineStore('userStoreId', {
       if (validate) {
         await userLoginApi(loginParam).then(res => {
           ElMessage.success("登录成功");
-          // 把用户数据引进 Store 中
+          // 把用户数据存储进 Store 中
           userStore.setUserId(res.data.id);
           userStore.setUserName(res.data.username);
           userStore.setToken(res.data.token);
@@ -225,19 +225,22 @@ import constants from "./constants"
 
 class Cache {
     setUserId(userId: string) {
-        if (userId === undefined) {
-            return
+        if (!userId) {
+            window.localStorage.removeItem(constants.userIdKey);
+            return;
         }
         window.localStorage.setItem(constants.userIdKey, JSON.stringify(userId));
     }
     setUserName(userName: string) {
-        if (userName === undefined) {
+        if (!userName) {
+            window.localStorage.removeItem(constants.userNameKey);
             return
         }
         window.localStorage.setItem(constants.userNameKey, JSON.stringify(userName));
     }
     setToken(token: string) {
-        if (token === undefined) {
+        if (!token) {
+            window.localStorage.removeItem(constants.tokenKey);
             return
         }
         window.localStorage.setItem(constants.tokenKey, JSON.stringify(token));
@@ -335,7 +338,7 @@ export const useCounterStore = defineStore('counter', () => {
 
 - `function()` 就是 `actions`
 
-Setup store 比 Option Store 带来了更多的灵活性，因为你可以在一个 store 内创建侦听器，并自由地使用任何[组合式函数](https://cn.vuejs.org/guide/reusability/composables.html#composables)。不过，请记住，使用组合式函数会让 [SSR](待更新) 变得更加复杂
+Setup store 比 Option Store 带来了更多的灵活性，因为你可以在一个 store 内创建侦听器，并自由地使用任何[组合式函数](https://cn.vuejs.org/guide/reusability/composables.html#composables)。不过，请记住，使用组合式函数会让 [SSR](#待更新) 变得更加复杂
 
 ## 你应该选用哪种语法？
 

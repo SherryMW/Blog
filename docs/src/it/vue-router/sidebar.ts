@@ -14,6 +14,11 @@ export const VueRouterSidebar = arraySidebar([
                 text: "基础",
                 prefix: "essentials/",
                 children: "structure"
+            },
+            {
+                text: "进阶",
+                prefix: "advanced/",
+                children: "structure"
             }
         ]
     }

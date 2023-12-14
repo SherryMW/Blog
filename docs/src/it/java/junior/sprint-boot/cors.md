@@ -12,11 +12,11 @@ article: false
 
 跨域请求可以发生在以下情况下：
 
-1. 不同协议：例如从 http://example.com 发起一个请求到 https://example.com
+1. 不同协议：例如从 `http://example.com` 发起一个请求到 `https://example.com`
 
-2. 不同主机：例如从 http://example.com 发起一个请求到 http://api.example.com
+2. 不同主机：例如从 `http://example.com` 发起一个请求到 `http://api.example.com`
 
-3. 不同端口：例如从 http://example.com:8080 发起一个请求到 http://example.com:3000
+3. 不同端口：例如从 `http://example.com:8080` 发起一个请求到 `http://example.com:3000`
 
 跨域请求会受到浏览器的限制，一般情况下会被浏览器拦截，不允许直接发送跨域请求。但有一些方式可以实现跨域请求，如使用 CORS（跨源资源共享）机制、代理服务器等。需要注意的是，跨域问题仅存在于浏览器环境中，对于服务器之间的通信没有跨域限制。服务器可以自由地进行跨域通信，而不受同源策略的限制
 
@@ -136,7 +136,7 @@ public class CorsConfig implements WebMvcConfigurer {
 
 - `maxAge` 方法指定了预检请求的缓存时间，示例中设置为 3600 秒（即 1 小时）
 
-## 使用 CorsFilter 过滤器
+## 配置 CorsFilter 过滤器
 
 `CorsFilter` 是 Spring 提供的一个过滤器，用于实现 CORS 功能
 
@@ -186,7 +186,7 @@ public class CorsWebConfig {
         configuration.addAllowedMethod("*");
         source.registerCorsConfiguration("/**", configuration);
         FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean(new CorsFilter(source));
-        filterRegistrationBean.setOrder(Ordered.LOWEST_PRECEDENCE);
+        filterRegistrationBean.setOrder(Ordered.HIGHEST_PRECEDENCE);
         return filterRegistrationBean;
     }
 }
@@ -194,11 +194,11 @@ public class CorsWebConfig {
 
 在 Spring 中，过滤器的执行顺序是根据其注册顺序来确定的。`FilterRegistrationBean` 是用于注册过滤器的辅助类，可以通过它来设置过滤器的属性和优先级，其中 `setOrder` 方法用于指定过滤器的优先级
 
-对于过滤器的执行顺序，数值越小表示优先级越高。在 `setOrder(Ordered.LOWEST_PRECEDENCE)` 中，`Ordered.LOWEST_PRECEDENCE` 表示最低优先级，它对应于 `Integer.MAX_VALUE`。因此，设置为最低优先级意味着这个过滤器将在其他过滤器之后执行
+对于过滤器的执行顺序，数值越小表示优先级越高。在 `setOrder(Ordered.HIGHEST_PRECEDENCE)` 中，`Ordered.HIGHEST_PRECEDENCE` 表示最高优先级，它对应于 `Integer.MIN_VALUE`。因此，设置为最高优先级意味着这个过滤器将在其他过滤器之前执行
 
-在 CORS 过滤器的情况下，将其优先级设置为最低，确保它是在其他过滤器之后执行的，这样它就有机会修改请求和响应，添加跨域相关的头信息。这样做是为了确保 CORS 头能够正确地添加到响应中，以解决跨域请求的问题
+在 CORS 过滤器的情况下，将其优先级设置为最高，确保它是在其他过滤器之前执行的，让 CORS 头信息能够正确添加到响应中。这样可以避免其他过滤器对 CORS 头的干扰
 
-通常情况下，如果你有多个过滤器，可能需要根据它们的执行顺序有选择地调整优先级，以确保它们按照期望的顺序执行。在处理跨域请求时，CORS 过滤器通常被设置为较低的优先级，以确保它在其他过滤器之后执行
+通常情况下，如果你有多个过滤器（例如还有 [Token 过滤器](../tools/jwt.md#配置过滤器)），可能需要根据它们的执行顺序有选择地调整优先级，以确保它们按照期望的顺序执行。在处理跨域请求时，CORS 过滤器通常被设置为较低的优先级，以确保它在其他过滤器之后执行
 
 ## 代理服务器
 

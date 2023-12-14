@@ -14,10 +14,10 @@ article: false
 
 当使用文件系统路径的别名时，请始终使用绝对路径。相对路径的别名值会原封不动地被使用，因此无法被正常解析
 
-更高级的自定义解析方法可以通过 [插件](待更新) 实现
+更高级的自定义解析方法可以通过 [插件](#待更新) 实现
 
 ::: info 在 SSR 中使用
-如果你已经为 [SSR 外部化的依赖](待更新) 配置了别名，你可能想要为真实的 `node_modules` 包配别名。[Yarn](https://classic.yarnpkg.com/en/docs/cli/add/#toc-yarn-add-alias) 和 [pnpm](https://pnpm.io/aliases/) 都支持通过 `npm:` 前缀配置别名
+如果你已经为 [SSR 外部化的依赖](#待更新) 配置了别名，你可能想要为真实的 `node_modules` 包配别名。[Yarn](https://classic.yarnpkg.com/en/docs/cli/add/#toc-yarn-add-alias) 和 [pnpm](https://pnpm.io/aliases/) 都支持通过 `npm:` 前缀配置别名
 :::
 
 示例：

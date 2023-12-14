@@ -1,6 +1,6 @@
 ---
 category: IT
-order: 2
+order: 1
 shortTitle: 动态路由匹配
 article: false
 ---
@@ -38,7 +38,7 @@ const User = {
 |        /users/:username        |      	/users/eduardo      |        `{ username: 'eduardo' }`         |
 | /users/:username/posts/:postId | 	/users/eduardo/posts/123 | `{ username: 'eduardo', postId: '123' }` |
 
-除了 `$route.params` 之外，`$route` 对象还公开了其他有用的信息，如 `$route.query`（如果 URL 中存在参数）、`$route.hash` 等。你可以在 [API 参考](待更新)中查看完整的细节
+除了 `$route.params` 之外，`$route` 对象还公开了其他有用的信息，如 `$route.query`（如果 URL 中存在参数）、`$route.hash` 等。你可以在 [API 参考](#待更新)中查看完整的细节
 
 ## 响应路由参数的变化
 
@@ -72,7 +72,7 @@ const User = {
 }
 ```
 
-或者，使用 `beforeRouteUpdate` [导航守卫](待更新)，它也可以取消导航：
+或者，使用 `beforeRouteUpdate` [导航守卫](#待更新)，它也可以取消导航：
 
 ```js
 const User = {
@@ -97,7 +97,7 @@ const routes = [
 ]
 ```
 
-在这个特定的场景中，我们在括号之间使用了[自定义正则表达式](待更新)，并将 `pathMatch` 参数标记为[可选可重复](待更新)。这样做是为了让我们在需要的时候，可以通过将 `path` 拆分成一个数组，直接导航到路由：
+在这个特定的场景中，我们在括号之间使用了[自定义正则表达式](#待更新)，并将 `pathMatch` 参数标记为[可选可重复](#待更新)。这样做是为了让我们在需要的时候，可以通过将 `path` 拆分成一个数组，直接导航到路由：
 
 ```js
 this.$router.push({
@@ -110,9 +110,9 @@ this.$router.push({
 })
 ```
 
-更多内容请参见[重复参数](待更新)部分
+更多内容请参见[重复参数](#待更新)部分
 
-如果你正在使用[历史模式](待更新)，请务必按照说明正确配置你的服务器
+如果你正在使用[历史模式](#待更新)，请务必按照说明正确配置你的服务器
 
 ### 示例
 
@@ -120,7 +120,7 @@ this.$router.push({
 
 @tab /router/index.ts
 
-```ts
+```ts {8-12}
 import {Router, createRouter, createWebHistory, RouteRecordRaw} from "vue-router";
 
 const routes: RouteRecordRaw[] = [
@@ -136,6 +136,10 @@ const routes: RouteRecordRaw[] = [
     {
         path: '/home',
         component: () => import('@/views/home/home.vue')
+    },
+    {
+        path: '/login',
+        component: () => import('@/views/login/login.vue')
     }
 ]
 
@@ -169,4 +173,4 @@ export default router
 
 ## 高级匹配模式
 
-Vue Router 使用自己的路径匹配语法，其灵感来自于 `express`，因此它支持许多高级匹配模式，如可选的参数，零或多个 / 一个或多个，甚至自定义的正则匹配规则。请查看[高级匹配](待更新)文档来探索它们
+Vue Router 使用自己的路径匹配语法，其灵感来自于 `express`，因此它支持许多高级匹配模式，如可选的参数，零或多个 / 一个或多个，甚至自定义的正则匹配规则。请查看[高级匹配](#待更新)文档来探索它们

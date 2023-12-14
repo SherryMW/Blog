@@ -71,7 +71,7 @@ article: false
 
 - 参考
 
-  - [指南 - `ref()` 的响应式基础](待更新)
+  - [指南 - `ref()` 的响应式基础](#待更新)
 
   - [指南 - 为 `ref()` 标注类型](../../guide/typescript/composition-api.md#为-ref-标注类型)
 

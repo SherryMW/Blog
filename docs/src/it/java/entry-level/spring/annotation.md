@@ -6,6 +6,10 @@ article: false
 
 # 注解
 
+## Controller
+
+待更新
+
 ## Component
 
 用于标识一个类作为 Spring 容器管理的组件。通过 `@Component` 注解，Spring会自动扫描并识别这些类，并将其纳入Spring容器进行管理。我们可以简化组件的创建和配置过程，使得应用程序的开发和维护更加方便
@@ -52,15 +56,132 @@ public class MyComponent {
 综上所述，`@Component` 注解适用于通用的组件创建和管理，通过组件扫描自动创建 Bean 实例。`@Bean` 注解适用于更细粒度和定制化的 Bean 创建和配置，需要手动在配置类中定义方法返回 Bean 实例。两者可以根据具体需求灵活使用
 :::
 
-## Service
+## ControllerAdvice
+
+`@ControllerAdvice` 注解用于定义全局的异常处理、数据绑定规则和模型属性的添加。它提供了一种集中管理和配置全局行为的方式，可以在应用的多个控制器中共享配置
+
+- 作用：
+
+    - `@ControllerAdvice` 注解用于定义全局的配置，包括异常处理、数据绑定规则和模型属性的添加
+
+    - 它可以用于全局异常处理、全局数据绑定规则、全局模型属性的添加等场景
+
+- 异常处理：
+
+    - 使用 `@ControllerAdvice` 注解的类可以通过 [@ExceptionHandler](#exceptionhandler) 注解来定义全局的异常处理方法
+
+    - 异常处理方法可以处理特定类型的异常，并返回自定义的错误信息、视图或其他响应
+
+- 数据绑定规则：
+
+    - 使用 `@ControllerAdvice` 注解的类可以通过 [@InitBinder](#initbinder) 注解来定义全局的数据绑定规则
+
+    - `@InitBinder` 注解的方法可以对请求参数进行预处理、数据验证或转换等操作
+
+- 模型属性添加：
+
+    - 使用 `@ControllerAdvice` 注解的类可以通过 [@ModelAttribute](#modelattribute) 注解来定义全局的模型属性
+
+    - `@ModelAttribute` 注解的方法可以在每个请求处理之前向模型中添加属性，使其在所有处理器方法中可用
+
+下面是一个简单示例，展示了 `@ControllerAdvice` 注解的使用：
+
+```java
+@ControllerAdvice
+public class GlobalControllerAdvice {
+
+    @ExceptionHandler(Exception.class)
+    public ResponseEntity<String> handleException(Exception ex) {
+        // 处理全局异常，并返回自定义错误信息
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("An error occurred: " + ex.getMessage());
+    }
+
+    @InitBinder
+    public void initBinder(WebDataBinder binder) {
+        // 定义全局数据绑定规则
+        binder.setDisallowedFields("id");
+    }
+
+    @ModelAttribute
+    public void addGlobalAttribute(Model model) {
+        // 在模型中添加全局属性
+        model.addAttribute("globalAttribute", "Some value");
+    }
+}
+```
+
+在上述示例中，`GlobalControllerAdvice` 类使用了 `@ControllerAdvice` 注解，表示它是一个全局配置类
+
+`handleException()` 方法使用了 `@ExceptionHandler(Exception.class)` 注解，用于处理所有类型的异常。当发生异常时，它将返回一个包含自定义错误信息的 `ResponseEntity` 对象
+
+`initBinder()` 方法使用了 `@InitBinder` 注解，定义了全局的数据绑定规则。在此例中，它设置了禁止绑定名为 "id" 的请求参数
+
+`addGlobalAttribute()` 方法使用了 `@ModelAttribute` 注解，在每个请求处理之前向模型中添加名为 "globalAttribute" 的全局属性
+
+---
+
+1. 异常处理（Exception Handling）：
+
+   `@ControllerAdvice` 注解的类可以包含用于处理异常的方法
+
+   使用 `@ExceptionHandler` 注解标记的方法可以处理特定类型的异常，并返回相应的错误信息或进行其他处理
+
+   这些异常处理方法可以针对整个应用程序中的所有控制器生效
+
+    ```java
+    import org.springframework.http.HttpStatus;
+    import org.springframework.http.ResponseEntity;
+    import org.springframework.web.bind.annotation.ControllerAdvice;
+    import org.springframework.web.bind.annotation.ExceptionHandler;
+    
+    @ControllerAdvice
+    public class GlobalExceptionHandler {
+    
+        @ExceptionHandler(Exception.class)
+        public ResponseEntity<String> handleException(Exception e) {
+            return new ResponseEntity<>("An error occurred: " + e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+    ```
+
+   参考：[封装异常处理类](response-data-result.md#封装异常处理类)
+
+2. 全局响应数据封装：
+
+   除了异常处理，`@ControllerAdvice` 还可以用于全局性的响应数据封装，例如统一添加响应头、统一格式化响应数据等
+
+   使用 `@ModelAttribute` 注解的方法可以在所有控制器方法执行前添加一些模型属性
+
+    ```java
+    import org.springframework.ui.Model;
+    import org.springframework.web.bind.annotation.ControllerAdvice;
+    import org.springframework.web.bind.annotation.ModelAttribute;
+    
+    @ControllerAdvice
+    public class GlobalControllerAdvice {
+    
+        @ModelAttribute
+        public void globalAttributes(Model model) {
+            model.addAttribute("globalMessage", "Global Message");
+        }
+    }
+    ```
+
+   参考：[自定义全局处理控制器](response-data-result.md#自定义全局处理控制器)
+
+## ExceptionHandler
+
+待更新
+
+## InitBinder
+
+待更新
+
+## ModelAttribute
 
 待更新
 
 ## Repository
-
-待更新
-
-## Controller
 
 待更新
 
@@ -140,119 +261,6 @@ Spring MVC 使用消息转换器（Message Converter）来处理返回值的转�
 
 通过使用 `@ResponseBody` 注解，您可以轻松地将方法的返回值直接作为响应体返回给客户端，而无需经过视图解析器进行视图渲染。这在构建 RESTful API 或需要直接返回数据的场景中非常有用
 
-## ControllerAdvice
-
-`@ControllerAdvice` 注解用于定义全局的异常处理、数据绑定规则和模型属性的添加。它提供了一种集中管理和配置全局行为的方式，可以在应用的多个控制器中共享配置
-
-- 作用：
-
-    - `@ControllerAdvice` 注解用于定义全局的配置，包括异常处理、数据绑定规则和模型属性的添加
-
-    - 它可以用于全局异常处理、全局数据绑定规则、全局模型属性的添加等场景
-
-- 异常处理：
-
-    - 使用 `@ControllerAdvice` 注解的类可以通过 [@ExceptionHandler](#exceptionhandler) 注解来定义全局的异常处理方法
-
-    - 异常处理方法可以处理特定类型的异常，并返回自定义的错误信息、视图或其他响应
-
-- 数据绑定规则：
-
-    - 使用 `@ControllerAdvice` 注解的类可以通过 [@InitBinder](#initbinder) 注解来定义全局的数据绑定规则
-
-    - `@InitBinder` 注解的方法可以对请求参数进行预处理、数据验证或转换等操作
-
-- 模型属性添加：
-
-    - 使用 `@ControllerAdvice` 注解的类可以通过 [@ModelAttribute](#modelattribute) 注解来定义全局的模型属性
-
-    - `@ModelAttribute` 注解的方法可以在每个请求处理之前向模型中添加属性，使其在所有处理器方法中可用
-
-下面是一个简单示例，展示了 `@ControllerAdvice` 注解的使用：
-
-```java
-@ControllerAdvice
-public class GlobalControllerAdvice {
-
-    @ExceptionHandler(Exception.class)
-    public ResponseEntity<String> handleException(Exception ex) {
-        // 处理全局异常，并返回自定义错误信息
-        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("An error occurred: " + ex.getMessage());
-    }
-
-    @InitBinder
-    public void initBinder(WebDataBinder binder) {
-        // 定义全局数据绑定规则
-        binder.setDisallowedFields("id");
-    }
-
-    @ModelAttribute
-    public void addGlobalAttribute(Model model) {
-        // 在模型中添加全局属性
-        model.addAttribute("globalAttribute", "Some value");
-    }
-}
-```
-
-在上述示例中，`GlobalControllerAdvice` 类使用了 `@ControllerAdvice` 注解，表示它是一个全局配置类
-
-`handleException()` 方法使用了 `@ExceptionHandler(Exception.class)` 注解，用于处理所有类型的异常。当发生异常时，它将返回一个包含自定义错误信息的 `ResponseEntity` 对象
-
-`initBinder()` 方法使用了 `@InitBinder` 注解，定义了全局的数据绑定规则。在此例中，它设置了禁止绑定名为 "id" 的请求参数
-
-`addGlobalAttribute()` 方法使用了 `@ModelAttribute` 注解，在每个请求处理之前向模型中添加名为 "globalAttribute" 的全局属性
-
----
-
-1. 异常处理（Exception Handling）：
-
-    `@ControllerAdvice` 注解的类可以包含用于处理异常的方法
-    
-    使用 `@ExceptionHandler` 注解标记的方法可以处理特定类型的异常，并返回相应的错误信息或进行其他处理
-    
-    这些异常处理方法可以针对整个应用程序中的所有控制器生效
-    
-    ```java
-    import org.springframework.http.HttpStatus;
-    import org.springframework.http.ResponseEntity;
-    import org.springframework.web.bind.annotation.ControllerAdvice;
-    import org.springframework.web.bind.annotation.ExceptionHandler;
-    
-    @ControllerAdvice
-    public class GlobalExceptionHandler {
-    
-        @ExceptionHandler(Exception.class)
-        public ResponseEntity<String> handleException(Exception e) {
-            return new ResponseEntity<>("An error occurred: " + e.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
-        }
-    }
-    ```
-
-   参考：[封装异常处理类](response-data-result.md#封装异常处理类)
-
-2. 全局响应数据封装：
-
-    除了异常处理，`@ControllerAdvice` 还可以用于全局性的响应数据封装，例如统一添加响应头、统一格式化响应数据等
-
-    使用 `@ModelAttribute` 注解的方法可以在所有控制器方法执行前添加一些模型属性
-
-    ```java
-    import org.springframework.ui.Model;
-    import org.springframework.web.bind.annotation.ControllerAdvice;
-    import org.springframework.web.bind.annotation.ModelAttribute;
-    
-    @ControllerAdvice
-    public class GlobalControllerAdvice {
-    
-        @ModelAttribute
-        public void globalAttributes(Model model) {
-            model.addAttribute("globalMessage", "Global Message");
-        }
-    }
-    ```
-
-    参考：[自定义全局处理控制器](response-data-result.md#自定义全局处理控制器)
-
 ## RestControllerAdvice
 
 `@RestControllerAdvice` 注解用于定义全局的异常处理、数据绑定规则和直接返回响应体的处理器方法。它结合了 [@ControllerAdvice](#controlleradvice) 和 [@ResponseBody](#responsebody) 注解的功能，适用于构建 RESTful API，可以集中管理和配置全局行为，处理器方法的返回值会直接作为响应体返回给客户端
@@ -299,14 +307,6 @@ public class RestResponseBodyAdvice implements ResponseBodyAdvice {
 
     - 在这段示例代码中，`beforeBodyWrite()` 方法直接返回原始的响应体 body，没有进行任何修改
 
-## ExceptionHandler
-
-待更新
-
-## InitBinder
-
-待更新
-
-## ModelAttribute
+## Service
 
 待更新
