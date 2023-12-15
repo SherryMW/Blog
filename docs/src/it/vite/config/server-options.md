@@ -56,30 +56,6 @@ export default defineConfig({
 
 示例：
 
-```vue
-<template>
-    <h1>home</h1>
-</template>
-
-<script setup lang="ts">
-import axios from 'axios';
-import { onMounted } from 'vue';
-
-const envApi = async () => {
-  await axios.get('/api/env').then(res => {
-    console.log(res.data);
-  })
-}
-
-onMounted(() => {
-    envApi();
-})
-
-</script>
-
-<style scoped></style>
-```
-
 控制台报错：**Access to XMLHttpRequest at 'http://localhost:8080/env' from origin 'http://localhost:5173' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource.**
 
 当遇到上述跨域资源共享（CORS）问题时，可以设置代理服务器将前端的请求代理到后端服务：

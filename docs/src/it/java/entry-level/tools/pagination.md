@@ -205,6 +205,7 @@ public class SysUser implements Serializable {
     @ApiModelProperty("创建时间")
     private LocalDateTime createTime;
 
+    @ApiModelProperty("更新时间")
     private LocalDateTime updateTime;
 }
 ```
@@ -338,13 +339,13 @@ public interface SysUserMapper extends BaseMapper<SysUser> {
 
 ::: tabs
 
-@tab base.ts
+@tab src/types/global.ts
 
 ```ts
 /**
  * 后端统一响应体数据结构
  */
-export interface IResponse<T = any> {
+declare interface IResponse<T = any> {
     code: number;
     message: string;
     data: T;
@@ -353,13 +354,13 @@ export interface IResponse<T = any> {
 /**
  * 后端统一分页数据结构
  */
-export interface Page<T = any> {
+declare interface Page<T = any> {
     list: T[];
     total: number;
 }
 ```
 
-@tab user.ts
+@tab src/api/user/type.ts
 
 ```ts
 /**
@@ -385,10 +386,9 @@ export interface PageUserRespVO {
 }
 ```
 
-@tab userApi.ts
+@tab src/api/user/index.ts
 
 ```ts
-import { IResponse, Page } from "@/interface/base";
 import { PageUserReqVO, PageUserRespVO } from "@/interface/user";
 import instance from "@/utils/request";
 
@@ -400,7 +400,7 @@ export const userPageApi = (param: PageUserReqVO) => {
 }
 ```
 
-@tab home.vue
+@tab src/views/home/index.vue
 
 ```vue
 <template>

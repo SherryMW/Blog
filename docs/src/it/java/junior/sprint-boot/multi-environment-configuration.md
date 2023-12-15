@@ -311,3 +311,29 @@ article: false
     ```shell
     java -jar admin-api-0.0.1-SNAPSHOT.jar
     ```
+   
+## 常见问题
+
+如果使用 `yaml` 格式应用配置文件启动工程时出现 '@' that cannot start any token. (Do not use @ for indentation) 异常
+
+`pom.xml` 文件加入如下 plugin 和 resource 配置：
+
+```xml
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-resources-plugin</artifactId>
+    <configuration>
+        <delimiters>
+            <delimiter>@</delimiter>
+        </delimiters>
+        <useDefaultDelimiters>false</useDefaultDelimiters>
+    </configuration>
+</plugin>
+```
+
+```xml
+<resource>
+    <directory>src/main/resources</directory>
+    <filtering>true</filtering>
+</resource>
+```

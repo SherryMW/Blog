@@ -131,7 +131,7 @@ export declare function createRouter(options: RouterOptions): Router;
 
 ::: tabs
 
-@tab /router/index.ts
+@tab src/router/index.ts
 
 ```ts
 import {Router, createRouter, createWebHistory, RouteRecordRaw} from "vue-router";
@@ -143,11 +143,11 @@ const routes: RouteRecordRaw[] = [
     },
     {
         path: '/home',
-        component: () => import('@/views/home/home.vue')
+        component: () => import('@/views/home/index.vue')
     },
     {
         path: '/login',
-        component: () => import('@/views/login/login.vue')
+        component: () => import('@/views/login/index.vue')
     }
 ]
 
@@ -185,7 +185,7 @@ app.mount('#app')
 <style scoped></style>
 ```
 
-@tab /views/home/home.vue
+@tab src/views/home/index.vue
 
 ```vue
 <template>
@@ -199,7 +199,7 @@ app.mount('#app')
 <style scoped></style>
 ```
 
-@tab /views/login/login.vue
+@tab src/views/login/index.vue
 
 ```vue
 <template>

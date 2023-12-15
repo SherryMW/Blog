@@ -61,7 +61,7 @@ export const useCounterStore = defineStore('counter', {
 
 ::: tabs
 
-@tab /src/store/userStore.ts
+@tab src/store/userStore.ts
 
 ```ts
 import { defineStore } from 'pinia'
@@ -97,7 +97,7 @@ export const useUserStore = defineStore('userStoreId', {
 })
 ```
 
-@tab /src/components/login/loginForm.vue
+@tab src/components/login/loginForm.vue
 
 ```vue {46-48}
 <template>
@@ -188,7 +188,7 @@ export const useUserStore = defineStore('userStoreId', {
 </style>
 ```
 
-@tab /src/views/home.vue
+@tab src/views/home/index.vue
 
 ```vue
 <template>
@@ -204,11 +204,15 @@ const userStore = useUserStore();
 
 :::
 
+### 持久化操作
+
 当我们登录成功跳转到 home.vue 界面后虽然可以通过 `userStore.getUserName` 读取到用户名称。但如果我们刷新页面数据则会读取不到，这是因为我们没有对数据做持久化操作
+
+#### 手动实现持久化
 
 ::: tabs
 
-@tab /src/utils/constants.ts
+@tab src/utils/constants.ts
 
 ```ts
 export default {
@@ -218,7 +222,7 @@ export default {
 }
 ```
 
-@tab /src/utils/cache.ts
+@tab src/utils/cache.ts
 
 ```ts
 import constants from "./constants"
@@ -263,7 +267,7 @@ class Cache {
 export default new Cache()
 ```
 
-@tab /src/store/userStore.ts
+@tab src/store/userStore.ts
 
 ```ts
 import cache from '@/utils/cache';
@@ -313,6 +317,116 @@ export const useUserStore = defineStore('userStoreId', {
 ```
 
 :::
+
+#### 使用持久化插件
+
+我们可以使用 [pinia-plugin-persistedstate](https://prazdevs.github.io/pinia-plugin-persistedstate/zh/) 持久化插件来帮助我们对仓库数据进行持久化。我们只需要加上一下配置即可开启 Pinia 持久化
+
+用你喜欢的包管理器安装依赖：
+
+::: tabs
+
+@tab pnpm
+
+```shell
+pnpm i pinia-plugin-persistedstate
+```
+
+@tab npm
+
+```shell
+npm i pinia-plugin-persistedstate
+```
+
+@tab yarn
+
+```shell
+yarn add pinia-plugin-persistedstate
+```
+
+:::
+
+将插件添加到 Pinia 实例上
+
+```ts
+import { createPinia } from 'pinia'
+import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
+
+const pinia = createPinia()
+pinia.use(piniaPluginPersistedstate)
+```
+
+创建 Store 时，将 persist 选项设置为 true。
+
+::: tabs
+
+@tab 选项式语法
+
+```ts
+import {defineStore} from 'pinia'
+
+export const useStore = defineStore('main', {
+    state: () => {
+        return {
+            someState: '你好 pinia',
+        }
+    },
+    persist: true,
+})
+```
+
+@tab 组合式语法
+
+```ts
+import {defineStore} from 'pinia'
+
+export const useStore = defineStore(
+    'main',
+    () => {
+        const someState = ref('你好 pinia')
+        return {someState}
+    },
+    {
+        persist: true,
+    },
+)
+```
+
+:::
+
+现在，你的整个 Store 将使用[默认持久化配置](https://prazdevs.github.io/pinia-plugin-persistedstate/zh/guide/config.html)保存
+
+改造结果：
+
+```ts
+import { defineStore } from 'pinia'
+import { ref } from 'vue';
+
+export const useUserStore = defineStore('userStoreId', () => {
+    const userId = ref<string>("");
+    const userName = ref<string>("");
+    const token = ref<string>("");
+
+    const setUserId = (value: string) => {
+        userId.value = value
+    }
+    const setUserName = (value: string) => {
+        userName.value = value
+    }
+    const setToken = (value: string) => {
+        token.value = value
+    }
+
+    return {
+        userId,
+        userName,
+        token,
+        setUserId,
+        setUserName,
+        setToken
+    }
+}, { persist: true })
+```
 
 ## Setup Store
 

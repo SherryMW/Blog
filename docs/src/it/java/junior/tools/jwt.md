@@ -262,8 +262,7 @@ public class JwtUtil {
             builder.setExpiration(new Date(expMillis)); // 设置令牌过期时间
         }
         if (StringUtils.hasLength(secretKey)) {
-            SignatureAlgorithm hs256 = SignatureAlgorithm.HS256; // 指定签名算法
-            builder.signWith(hs256, DatatypeConverter.parseBase64Binary(secretKey)); // 使用 HS256 算法和提供的密钥对 JWT 进行签名。这将生成一个带有签名的 JWT，以确保在后续验证过程中可以验证其真实性和完整性
+            builder.signWith(SignatureAlgorithm.HS256, secretKey); // 使用 HS256 算法和提供的密钥对 JWT 进行签名。这将生成一个带有签名的 JWT，以确保在后续验证过程中可以验证其真实性和完整性
         }
         return builder.compact(); // 生成最终的 JWT 字符串
     }
@@ -274,7 +273,7 @@ public class JwtUtil {
     public Claims pareToken(String token) {
         Claims claims = null;
         try {
-            claims = Jwts.parser().setSigningKey(DatatypeConverter.parseBase64Binary(secretKey)).parseClaimsJws(token).getBody();
+            claims = Jwts.parser().setSigningKey(secretKey).parseClaimsJws(token).getBody();
         } catch (Exception e) {
             log.error("pareToken error:{}", e);
         }
@@ -424,14 +423,13 @@ public class FilterConfig {
 
 ::: tabs
 
-@tab request.ts
+@tab src/utils/request.ts
 
-```ts {18-23,33-38}
+```ts {17-22,32-37}
 import router from "@/router";
 import { useUserStore } from "@/store/userStore";
 import axios, { AxiosResponse, InternalAxiosRequestConfig } from "axios";
 import { ElMessage } from "element-plus";
-import cache from "./cache";
 
 const userStore = useUserStore();
 
@@ -445,8 +443,8 @@ const instance = axios.create({
  * 请求拦截器
  */
 instance.interceptors.request.use((request: InternalAxiosRequestConfig) => {
-    if (userStore.getToken) { // 从状态管理中取出 Token 添加进请求头中
-        request.headers.Authorization = userStore.getToken;
+    if (userStore.token) { // 从状态管理中取出 Token 添加进请求头中
+        request.headers.Authorization = userStore.token;
     }
     return request;
 })
@@ -460,10 +458,10 @@ instance.interceptors.response.use((response: AxiosResponse) => {
         }
         ElMessage.error(response.data.message); // 将后端响应的错误信息提示给用户
         if (response.data.code === 401000) { // Token 失效需要把用户状态信息给清空
-            cache.setUserId("");
-            cache.setUserName("");
-            cache.setToken("");
-            location.reload();
+            userStore.setUserId("");
+            userStore.setUserName("");
+            userStore.setToken("");
+            location.reload(); // 重新加载界面通过导航守卫重定向到登录界面
         }
     }
     return Promise.reject(response.statusText);
@@ -478,55 +476,42 @@ instance.interceptors.response.use((response: AxiosResponse) => {
 export default instance
 ```
 
-@tab cache.ts
+@tab src/store/userStore.ts
 
 ```ts
-import constants from "./constants"
+import { defineStore } from 'pinia'
+import { ref } from 'vue';
 
-class Cache {
-    setUserId(userId: string) {
-        if (!userId) {
-            window.localStorage.removeItem(constants.userIdKey);
-            return;
-        }
-        window.localStorage.setItem(constants.userIdKey, JSON.stringify(userId));
+export const useUserStore = defineStore('userStoreId', () => {
+    const userId = ref<string>("");
+    const userName = ref<string>("");
+    const token = ref<string>("");
+
+    const setUserId = (value: string) => {
+        userId.value = value
     }
-    setUserName(userName: string) {
-        if (!userName) {
-            window.localStorage.removeItem(constants.userNameKey);
-            return
-        }
-        window.localStorage.setItem(constants.userNameKey, JSON.stringify(userName));
+    const setUserName = (value: string) => {
+        userName.value = value
     }
-    setToken(token: string) {
-        if (!token) {
-            window.localStorage.removeItem(constants.tokenKey);
-            return
-        }
-        window.localStorage.setItem(constants.tokenKey, JSON.stringify(token));
+    const setToken = (value: string) => {
+        token.value = value
     }
 
-    getUserId(): string {
-        let result: any = window.localStorage.getItem(constants.userIdKey);
-        return JSON.parse(result);
+    return {
+        userId,
+        userName,
+        token,
+        setUserId,
+        setUserName,
+        setToken
     }
-    getUserName(): string {
-        let result: any = window.localStorage.getItem(constants.userNameKey);
-        return JSON.parse(result);
-    }
-    getToken(): string {
-        let result: any = window.localStorage.getItem(constants.tokenKey);
-        return JSON.parse(result);
-    }
-}
-
-export default new Cache()
+}, { persist: true })
 ```
 
 :::
 
 虽然配置了请求拦截器，但前端还是可以绕过 Token 认证直接访问已知界面
 
-例如用户把浏览器本地缓存中用户状态信息对应的键值给删除，接着不访问 `${ip}/login` 路径进行登录，而是直接访问主页 `${ip}/home`，此时主页是可以访问成功的，虽然业务数据没有加载出来（后端配置了过滤器），这样的行为我们是不能认可的
+例如用户把浏览器本地缓存中用户状态信息对应的键值给删除，接着不访问 `${ip}:${port}/login` 路径进行登录，而是直接访问主页 `${ip}:${port}/home`，此时主页是可以访问成功的，虽然业务数据没有加载出来（后端配置了过滤器），这样的行为我们是不能认可的
 
 我们可以通过[导航守卫](/it/vue-router/guide/advanced/navigation-guards.md)安全认证来解决这个问题

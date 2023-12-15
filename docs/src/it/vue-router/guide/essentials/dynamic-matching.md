@@ -118,7 +118,7 @@ this.$router.push({
 
 ::: tabs
 
-@tab /router/index.ts
+@tab src/router/index.ts
 
 ```ts {8-12}
 import {Router, createRouter, createWebHistory, RouteRecordRaw} from "vue-router";
@@ -135,11 +135,11 @@ const routes: RouteRecordRaw[] = [
     },
     {
         path: '/home',
-        component: () => import('@/views/home/home.vue')
+        component: () => import('@/views/home/index.vue')
     },
     {
         path: '/login',
-        component: () => import('@/views/login/login.vue')
+        component: () => import('@/views/login/index.vue')
     }
 ]
 
@@ -151,7 +151,7 @@ const router: Router = createRouter({
 export default router
 ```
 
-@tab /views/error/404.vue
+@tab src/views/error/404.vue
 
 ```vue
 <template>

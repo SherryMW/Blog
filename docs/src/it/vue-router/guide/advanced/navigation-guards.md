@@ -66,7 +66,7 @@ router.beforeEach(async (to, from) => {
 
 示例：
 
-```ts {29-34}
+```ts {29-36}
 import { useUserStore } from "@/store/userStore";
 import { Router, createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 
@@ -86,7 +86,7 @@ const routes: RouteRecordRaw[] = [
     },
     {
         path: '/login',
-        component: () => import('@/views/login/login.vue')
+        component: () => import('@/views/login/index.vue')
     }
 ]
 
@@ -97,8 +97,10 @@ const router: Router = createRouter({
 
 router.beforeEach(async (to, from) => {
     const userStore = useUserStore();
-    if (!userStore.getToken && to.path !== '/login') { // 当用户没有有效令牌，并且正在尝试访问除了登录页之外的其他页面
+    if (!userStore.token && to.path !== '/login') { // 当用户没有有效令牌，并且正在尝试访问除了登录页之外的其他页面
         return { path: '/login' }
+    } else if (userStore.token && to.path === '/login') { // 当用户处于登录状态并正在尝试访问登录界面
+        return { path: '/home' }
     }
 })
 
