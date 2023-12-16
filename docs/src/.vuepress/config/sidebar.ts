@@ -8,6 +8,7 @@ import {ViteSidebar} from "../../it/vite/sidebar";
 import {VueRouterSidebar} from "../../it/vue-router/sidebar";
 import {HealthySidebar} from "../../life/healthy/sidebar";
 import {PiniaSidebar} from "../../it/pinia/sidebar";
+import {MySQLSidebar} from "../../it/database/mysql/sidebar";
 
 export const SidebarConfig = sidebar({
 
@@ -38,7 +39,7 @@ export const SidebarConfig = sidebar({
 
     "/it/java/": JavaSidebar,
 
-    // "/it/java/note/": NoteSidebar,
+    "/it/database/mysql/": MySQLSidebar,
 
     // "/it/database/postgresql/": PostgreSQLSidebar,
 
