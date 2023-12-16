@@ -159,4 +159,4 @@ spring:
 
 :::
 
-配置完成后可以启动工程访问 Durid 监控界面：`http://${ip}:${port}/druid/login.html`
+配置完成后启动工程访问 Durid 监控界面：`http://${ip}:${port}/druid/login.html`

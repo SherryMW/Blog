@@ -147,7 +147,7 @@ article: false
 
 ---
 
-## 单环境打包
+## Spring Boot 指定运行环境
 
 通过以上配置，在实际部署中就可以通过激活指定环境配置文件来运行应用程序
 
@@ -172,32 +172,36 @@ article: false
     OS name: "windows 11", version: "10.0", arch: "amd64", family: "windows"
     ```
 
+    ::: tip
+    如果打包的时候单元测试类报错的话，我们需要在构建时跳过执行单元测试：`mvn clean package -DskipTests=true` 
+    :::
+
 2. 运行打包好的 JAR 包
 
-   进入工程的 target 目录下找到对应的 JAR 包并执行以下命令：
-
-    ```shell
+    使用 `--spring.profiles.active=` 命令行参数，你可以在启动 Spring Boot 应用程序时选择要激活的配置文件：
+    
+   ```shell
     java -jar admin-api-0.0.1-SNAPSHOT.jar --spring.profiles.active=test
     ```
 
----
+    ::: tip
+    如果在 JAR 中没有看到 BOOT-INF 文件夹，而是看到根目录上就有应用程序配置文件，请检查 pom.xml 文件中 Maven 插件配置中是否配置了 `<skip>true</skip>`。`<skip>true</skip>` 的作用是跳过 Maven 插件的执行。如果设置为 `true`，那么 Maven 将跳过执行 `maven-jar-plugin` 插件，因此在执行 `mvn clean package` 后，生成的 JAR 文件中将不包含 BOOT-INF 文件夹
+    
+    ```xml
+    <configuration>
+        <mainClass>com.mw.Application</mainClass>
+        <skip>false</skip>
+    </configuration>
+    ```
+    
+    并且如果跳过了 Maven 插件的执行，生成的 JAR 文件可能不包含正确的主清单属性，导致在运行 JAR 文件时提示没有主清单属性
+    :::
 
-但这种打包发布方式存在会把所有的配置信息都打包进去的问题，我们可以把 admin-api-0.0.1-SNAPSHOT.jar 解压后在 `.\BOOT-INF\classes` 目录下查看到所有环境对应的应用配置文件。
+## Maven profiles
 
-如果在 JAR 中没有看到 BOOT-INF 文件夹，而是看到根目录上就有应用程序配置文件，请检查 pom.xml 文件中 Maven 插件配置中是否配置了 `<skip>true</skip>`。`<skip>true</skip>` 的作用是跳过 Maven 插件的执行。如果设置为 `true`，那么 Maven 将跳过执行 `maven-jar-plugin` 插件，因此在执行 `mvn clean package` 后，生成的 JAR 文件中将不包含 BOOT-INF 文件夹
+但上述的打包发布方式存在会把所有的配置信息都打包进去的问题，我们可以把 admin-api-0.0.1-SNAPSHOT.jar 解压后在 `.\BOOT-INF\classes` 目录下查看到所有环境对应的应用配置文件
 
-```xml
-<configuration>
-    <mainClass>com.mw.Application</mainClass>
-    <skip>false</skip>
-</configuration>
-```
-
-并且如果跳过了 Maven 插件的执行，生成的 JAR 文件可能不包含正确的主清单属性，导致在运行 JAR 文件时提示没有主清单属性
-
-## 多环境打包
-
-有些公司就会要求每个环境只打包对应环境的配置信息。因此我们可以使用 Maven 的 `profiles` 特性，让我们在打包过程中根据指定的环境配置文件来选择需要打包的内容，从而满足不同环境的需求
+有些公司就会要求每个环境只打包对应环境的配置信息。因此我们可以使用 Maven 的 `profiles` 特性，你可以在构建过程中根据不同的配置要求选择性地包含或排除特定的资源、属性文件等内容。这对于在不同的环境中定制构建过程非常有用
 
 1. 修改 `properties` 应用程序配置文件
 

@@ -339,7 +339,7 @@ public interface SysUserMapper extends BaseMapper<SysUser> {
 
 ::: tabs
 
-@tab src/types/global.ts
+@tab src/types/global.d.ts
 
 ```ts
 /**
