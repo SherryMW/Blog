@@ -11,14 +11,17 @@ article: false
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
+import javax.validation.constraints.Max;
+
 @Data
 public class BasePage {
 
-    @ApiModelProperty("每页显示条目个数")
-    private Integer size;
+    @ApiModelProperty("每页记录数")
+    @Max(value = 1000, message = "最大支持查询1000条数据")
+    private Integer size = 10;
 
     @ApiModelProperty("当前页数")
-    private Integer current;
+    private Integer current = 1;
 }
 ```
 
@@ -36,7 +39,7 @@ public class PageResult<T> {
     @ApiModelProperty("分页数据")
     private List<T> list;
 
-    @ApiModelProperty("分页总条目数")
+    @ApiModelProperty("分页总记录数")
     private Long total;
 
     public PageResult(List<T> list, Long total) {
@@ -53,69 +56,220 @@ public class PageResult<T> {
 }
 ```
 
-下面举例用户信息分页条件查询：
+## 手动实现分页
+
+在数据库中，`LIMIT` 是一种用于限制查询结果集的 SQL 关键字。在 `LIMIT` 子句中，有两个参数，它们分别代表：
+
+- `offset`：它表示从查询结果的哪一行开始获取数据，也可以称为偏移量。如果设置为 0，表示从结果集的第一行开始获取数据；如果设置为 10，表示从结果集的第 11 行开始获取数据，以此类推
+
+- `limit`：它表示最多返回的记录数，即在从偏移量开始的位置上最多返回多少行记录
 
 ::: tabs
 
-@tab PageUserReqVO.java
+@tab Products.java
 
-前端传递给后端的分页条件查询实体类
+```java
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
+
+import java.io.Serializable;
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
+
+@Data
+@ApiModel(value = "Products对象", description = "商品表")
+public class Products implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
+    @TableId(value = "id", type = IdType.AUTO)
+    private Integer id;
+
+    @ApiModelProperty("商品名称")
+    private String name;
+
+    @ApiModelProperty("价格")
+    private BigDecimal price;
+
+    @ApiModelProperty("库存")
+    private Integer stock;
+
+    @ApiModelProperty("商品描述")
+    private String description;
+
+    @ApiModelProperty("创建人")
+    private Long createBy;
+
+    @ApiModelProperty("更新人")
+    private Long modifiedBy;
+
+    @ApiModelProperty("创建时间")
+    private LocalDateTime gmtCreate;
+
+    @ApiModelProperty("更新时间")
+    private LocalDateTime gmtModified;
+}
+```
+
+@tab PageProductReqVO.java
 
 ```java
 import com.mw.pojo.BasePage;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
+import java.sql.Timestamp;
+
 @Data
-public class PageUserReqVO extends BasePage {
+public class PageProductReqVO extends BasePage {
 
-    @ApiModelProperty(value = "账号")
-    private String username;
+    @ApiModelProperty("商品名称")
+    private String productName;
 
-    @ApiModelProperty(value = "状态")
-    private Integer status;
+    @ApiModelProperty("起始时间")
+    private Timestamp startTime;
+
+    @ApiModelProperty("结束时间")
+    private Timestamp endTime;
+}
+```
+
+@tab ProductMapper.java
+
+```java
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.mw.entity.Products;
+import com.mw.vo.req.PageProductReqVO;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
+
+public interface ProductsMapper extends BaseMapper<Products> {
+
+    /**
+     * 条件查询总记录数
+     * @param vo 条件查询对象
+     * @return 返回总记录数
+     */
+    Long pageProductTotal(@Param("vo") PageProductReqVO vo);
+
+    /**
+     * 条件查询分页数据
+     * @param vo 条件查询对象
+     * @param offset 偏移量
+     * @param limit 返回的记录数
+     * @return 分页数据集
+     */
+    List<Products> pageProduct(@Param("vo") PageProductReqVO vo, @Param("offset") Integer offset, @Param("limit") Integer limit);
 
 }
 ```
 
-@tab PageUserRespVO.java
+@tab ProductMapper.xml
 
-后端响应给前端的分页数据
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mw.mapper.ProductsMapper">
 
-```java
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
-import io.swagger.annotations.ApiModelProperty;
-import lombok.Data;
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.mw.entity.Products">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="price" property="price"/>
+        <result column="stock" property="stock"/>
+        <result column="description" property="description"/>
+        <result column="create_by" property="createBy"/>
+        <result column="modified_by" property="modifiedBy"/>
+        <result column="gmt_create" property="gmtCreate"/>
+        <result column="gmt_modified" property="gmtModified"/>
+    </resultMap>
 
-@Data
-public class PageUserRespVO {
+    <!--  分页条件查询sql片段  -->
+    <sql id="pageProductSql">
+        <where>
+            1 = 1
+            <if test="vo.productName != null and vo.productName != ''">
+                AND name = #{vo.productName}
+            </if>
+            <if test="vo.startTime != null">
+                AND gmt_create &gt; #{vo.startTime}
+            </if>
+            <if test="vo.endTime != null">
+                AND gmt_create &lt; #{vo.startTime}
+            </if>
+        </where>
+    </sql>
 
-    @ApiModelProperty("主键ID")
-    @JsonSerialize(using = ToStringSerializer.class) //解决生成主键太长导致JS精度丢失
-    private Long id;
+    <!--  商品总记录数  -->
+    <select id="pageProductTotal" resultType="java.lang.Long" parameterType="com.mw.vo.req.PageProductReqVO">
+        SELECT COUNT(1) FROM products <include refid="pageProductSql"></include>
+    </select>
 
-    @ApiModelProperty("账户名称")
-    private String username;
+    <!--  商品分页条件查询  -->
+    <select id="pageProduct" resultType="com.mw.entity.Products">
+        SELECT * FROM products a INNER JOIN (SELECT id FROM products <include refid="pageProductSql"></include> ORDER BY gmt_create DESC LIMIT #{offset}, #{limit}) b ON a.id = b.id;
+    </select>
 
-    @ApiModelProperty("邮箱(唯一)")
-    private String email;
-
-    @ApiModelProperty("账户状态(1.正常 2.锁定 )")
-    private Integer status;
-
-    @ApiModelProperty("创建时间")
-    private String createTime;
-}
+</mapper>
 ```
 
-@tab SysUserController.java
+@tab IProductsService.java
 
 ```java
+import com.mw.entity.Products;
+import com.baomidou.mybatisplus.extension.service.IService;
 import com.mw.pojo.PageResult;
-import com.mw.service.ISysUserService;
-import com.mw.vo.req.PageUserReqVO;
-import com.mw.vo.resp.PageUserRespVO;
+import com.mw.vo.req.PageProductReqVO;
+
+public interface IProductsService extends IService<Products> {
+
+    PageResult<Products> pageProducts(PageProductReqVO vo);
+
+}
+```
+
+@tab ProductsServiceImpl.java
+
+```java
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.mw.entity.Products;
+import com.mw.mapper.ProductsMapper;
+import com.mw.pojo.PageResult;
+import com.mw.service.IProductsService;
+import com.mw.vo.req.PageProductReqVO;
+import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
+import java.util.List;
+
+@Service
+public class ProductsServiceImpl extends ServiceImpl<ProductsMapper, Products> implements IProductsService {
+
+    @Resource
+    private ProductsMapper productsMapper;
+
+    @Override
+    public PageResult<Products> pageProducts(PageProductReqVO vo) {
+        int offset = (vo.getCurrent() - 1) * vo.getSize(); // 计算偏移量
+        List<Products> products = productsMapper.pageProduct(vo, offset, vo.getSize()); // 通过偏移量和限制返回数量实现分页
+        Long total = productsMapper.pageProductTotal(vo);
+        return PageResult.getPage(products, total); // 返回分页条件查询数据以及总记录数
+    }
+}
+```
+
+@tab ProductController.java
+
+```java
+import com.mw.entity.Products;
+import com.mw.pojo.PageResult;
+import com.mw.service.IProductsService;
+import com.mw.vo.req.PageProductReqVO;
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -127,18 +281,170 @@ import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/api")
-public class SysUserController {
+@Api(tags = "商品模块")
+public class ProductsController {
 
     @Resource
-    private ISysUserService userService;
-    
-    @PostMapping("/users")
-    @ApiOperation(value = "用户分页接口")
-    public PageResult<PageUserRespVO> pageUsers(@RequestBody @Valid PageUserReqVO vo) {
-        return userService.pageUsers(vo);
+    private IProductsService productsService;
+
+    @PostMapping("/products")
+    @ApiOperation(value = "商品分页接口")
+    public PageResult<Products> products(@RequestBody @Valid PageProductReqVO vo) {
+        return productsService.pageProducts(vo);
     }
+
 }
 ```
+
+:::
+
+请求参数：
+
+```json
+{
+  "current": 1,
+  "size": 10
+}
+```
+
+日志：
+
+```text
+DEBUG 28176 --- [nio-8081-exec-5] c.mw.mapper.ProductsMapper.pageProduct   : ==>  Preparing: SELECT * FROM products a INNER JOIN (SELECT id FROM products WHERE 1 = 1 ORDER BY gmt_create DESC LIMIT ?, ?) b ON a.id = b.id;
+DEBUG 28176 --- [nio-8081-exec-5] c.mw.mapper.ProductsMapper.pageProduct   : ==> Parameters: 0(Integer), 10(Integer)
+DEBUG 28176 --- [nio-8081-exec-5] c.mw.mapper.ProductsMapper.pageProduct   : <==      Total: 10
+DEBUG 28176 --- [nio-8081-exec-5] c.m.m.ProductsMapper.pageProductTotal    : ==>  Preparing: SELECT COUNT(1) FROM products WHERE 1 = 1
+DEBUG 28176 --- [nio-8081-exec-5] c.m.m.ProductsMapper.pageProductTotal    : ==> Parameters: 
+DEBUG 28176 --- [nio-8081-exec-5] c.m.m.ProductsMapper.pageProductTotal    : <==      Total: 1
+```
+
+响应结果：
+
+```json
+{
+  "code": 0,
+  "data": {
+    "list": [
+      {
+        "id": 6053192,
+        "name": "Product2998271",
+        "price": 48.09,
+        "stock": 2998271,
+        "description": "Description for Product2998271",
+        "createBy": 1706255488020324354,
+        "modifiedBy": null,
+        "gmtCreate": "2022-12-16T16:55:48",
+        "gmtModified": "2022-12-16T16:55:48"
+      },
+      {
+        "id": 6053185,
+        "name": "Product2998264",
+        "price": 11.22,
+        "stock": 2998264,
+        "description": "Description for Product2998264",
+        "createBy": 1706255488020324354,
+        "modifiedBy": null,
+        "gmtCreate": "2022-12-16T16:55:48",
+        "gmtModified": "2022-12-16T16:55:48"
+      },
+      {
+        "id": 6054921,
+        "name": "Product3000000",
+        "price": 70.72,
+        "stock": 3000000,
+        "description": "Description for Product3000000",
+        "createBy": 1706255488020324354,
+        "modifiedBy": null,
+        "gmtCreate": "2022-12-16T16:55:48",
+        "gmtModified": "2022-12-16T16:55:48"
+      },
+      {
+        "id": 6053187,
+        "name": "Product2998266",
+        "price": 82.44,
+        "stock": 2998266,
+        "description": "Description for Product2998266",
+        "createBy": 1706255488020324354,
+        "modifiedBy": null,
+        "gmtCreate": "2022-12-16T16:55:48",
+        "gmtModified": "2022-12-16T16:55:48"
+      },
+      {
+        "id": 6053191,
+        "name": "Product2998270",
+        "price": 99.94,
+        "stock": 2998270,
+        "description": "Description for Product2998270",
+        "createBy": 1706255488020324354,
+        "modifiedBy": null,
+        "gmtCreate": "2022-12-16T16:55:48",
+        "gmtModified": "2022-12-16T16:55:48"
+      },
+      {
+        "id": 6053188,
+        "name": "Product2998267",
+        "price": 106.53,
+        "stock": 2998267,
+        "description": "Description for Product2998267",
+        "createBy": 1706255488020324354,
+        "modifiedBy": null,
+        "gmtCreate": "2022-12-16T16:55:48",
+        "gmtModified": "2022-12-16T16:55:48"
+      },
+      {
+        "id": 6053186,
+        "name": "Product2998265",
+        "price": 65.22,
+        "stock": 2998265,
+        "description": "Description for Product2998265",
+        "createBy": 1706255488020324354,
+        "modifiedBy": null,
+        "gmtCreate": "2022-12-16T16:55:48",
+        "gmtModified": "2022-12-16T16:55:48"
+      },
+      {
+        "id": 6053190,
+        "name": "Product2998269",
+        "price": 47.21,
+        "stock": 2998269,
+        "description": "Description for Product2998269",
+        "createBy": 1706255488020324354,
+        "modifiedBy": null,
+        "gmtCreate": "2022-12-16T16:55:48",
+        "gmtModified": "2022-12-16T16:55:48"
+      },
+      {
+        "id": 6053189,
+        "name": "Product2998268",
+        "price": 75.36,
+        "stock": 2998268,
+        "description": "Description for Product2998268",
+        "createBy": 1706255488020324354,
+        "modifiedBy": null,
+        "gmtCreate": "2022-12-16T16:55:48",
+        "gmtModified": "2022-12-16T16:55:48"
+      },
+      {
+        "id": 6053184,
+        "name": "Product2998263",
+        "price": 26.95,
+        "stock": 2998263,
+        "description": "Description for Product2998263",
+        "createBy": 1706255488020324354,
+        "modifiedBy": null,
+        "gmtCreate": "2022-12-16T16:55:48",
+        "gmtModified": "2022-12-16T16:55:48"
+      }
+    ],
+    "total": 3000000
+  },
+  "message": "响应成功"
+}
+```
+
+## 自动实现分页
+
+::: tabs
 
 @tab SysUser.java
 
@@ -210,6 +516,102 @@ public class SysUser implements Serializable {
 }
 ```
 
+@tab PageUserReqVO.java
+
+前端传递给后端的分页条件查询实体类
+
+```java
+import com.mw.pojo.BasePage;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
+
+@Data
+public class PageUserReqVO extends BasePage {
+
+    @ApiModelProperty(value = "账号")
+    private String username;
+
+    @ApiModelProperty(value = "状态")
+    private Integer status;
+
+}
+```
+
+@tab PageUserRespVO.java
+
+后端响应给前端的分页数据对象
+
+```java
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
+
+@Data
+public class PageUserRespVO {
+
+    @ApiModelProperty("主键ID")
+    @JsonSerialize(using = ToStringSerializer.class) //解决生成主键太长导致JS精度丢失
+    private Long id;
+
+    @ApiModelProperty("账户名称")
+    private String username;
+
+    @ApiModelProperty("邮箱(唯一)")
+    private String email;
+
+    @ApiModelProperty("账户状态(1.正常 2.锁定 )")
+    private Integer status;
+
+    @ApiModelProperty("创建时间")
+    private String createTime;
+}
+```
+
+@tab SysUserMapper.java
+
+```java
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.mw.entity.SysUser;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.mw.vo.req.PageUserReqVO;
+import com.mw.vo.resp.PageUserRespVO;
+import org.apache.ibatis.annotations.Param;
+
+public interface SysUserMapper extends BaseMapper<SysUser> {
+
+    IPage<PageUserRespVO> selectPageUser(IPage<PageUserReqVO> page, @Param("vo") PageUserReqVO vo);
+}
+```
+
+- `IPage<PageUserRespVO>`：这是方法的返回类型。`IPage` 是 MyBatis-Plus 提供的分页查询结果的接口，它包含了查询结果以及分页相关的信息，如总记录数、当前页码、每页记录数等。`PageUserRespVO` 表示查询结果的数据类型
+
+- `IPage<PageUserReqVO> page`：这是作为方法参数的 `IPage` 对象，用于传递分页相关的信息。通常，`IPage` 包含了分页查询的信息，比如当前页码、每页记录数等。在这里，`IPage<PageUserReqVO>` 表示查询条件，因为 `PageUserReqVO` 中可能包含了一些查询条件的信息
+
+- `@Param("vo") PageUserReqVO vo`：这是另一个参数，用于传递查询条件的对象。`@Param("vo")` 注解用于给参数取一个别名，这里的别名是 `vo`，在 SQL 语句中可以通过 `${vo.property}` 的方式引用对象的属性。`PageUserReqVO` 是查询条件的数据类型
+
+@tab SysUserMapper.xml
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mw.mapper.SysUserMapper">
+
+    <select id="selectPageUser" resultType="com.mw.vo.resp.PageUserRespVO" parameterType="com.mw.vo.req.PageUserReqVO">
+        SELECT id, username, email, status, create_time FROM sys_user
+        <where>
+            deleted = 1
+            <if test="vo.username != null and vo.username != ''">
+                AND username LIKE CONCAT('%',#{vo.username},'%')
+            </if>
+            <if test="vo.status != null">
+                AND status = #{vo.status}
+            </if>
+        </where>
+    </select>
+</mapper>
+```
+
 @tab ISysUserService.java
 
 ```java
@@ -257,48 +659,35 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
 }
 ```
 
-@tab SysUserMapper.java
+@tab SysUserController.java
 
 ```java
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.mw.entity.SysUser;
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.mw.pojo.PageResult;
+import com.mw.service.ISysUserService;
 import com.mw.vo.req.PageUserReqVO;
 import com.mw.vo.resp.PageUserRespVO;
-import org.apache.ibatis.annotations.Param;
+import io.swagger.annotations.ApiOperation;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-public interface SysUserMapper extends BaseMapper<SysUser> {
+import javax.annotation.Resource;
+import javax.validation.Valid;
 
-    IPage<PageUserRespVO> selectPageUser(IPage<?> page, @Param("vo") PageUserReqVO vo);
+@RestController
+@RequestMapping("/api")
+public class SysUserController {
+
+    @Resource
+    private ISysUserService userService;
+    
+    @PostMapping("/users")
+    @ApiOperation(value = "用户分页接口")
+    public PageResult<PageUserRespVO> pageUsers(@RequestBody @Valid PageUserReqVO vo) {
+        return userService.pageUsers(vo);
+    }
 }
-```
-
-`IPage` 是 MyBatis-Plus 框架中的分页查询结果的封装接口。`IPage` 包含了查询到的数据列表以及分页的相关信息。在这里，`selectPageUser` 方法声明返回类型为 `IPage<PageUserRespVO>`，表示这个方法用于分页查询，并且返回的数据是 `PageUserRespVO` 类型的
-
-参数 `IPage<?> page`：代表分页的相关信息，包括页码、每页数量等。`IPage<?>` 是一个泛型接口，具体类型会在运行时确定。通过传递 `IPage` 对象，MyBatis-Plus 能够获取当前页码、每页数量等信息，以便在 SQL 语句中生成对应的分页查询语句
-
-参数 `@Param("vo") PageUserReqVO vo`：使用 `@Param` 注解给参数取了一个别名 "vo"，表示这是一个用于查询的参数对象。`PageUserReqVO` 是一个用户查询请求的值对象，用于传递查询条件
-
-@tab SysUserMapper.xml
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.mw.mapper.SysUserMapper">
-
-    <select id="selectPageUser" resultType="com.mw.vo.resp.PageUserRespVO" parameterType="com.mw.vo.req.PageUserReqVO">
-        SELECT id, username, email, status, create_time FROM sys_user
-        <where>
-            deleted = 1
-            <if test="vo.username != null and vo.username != ''">
-                AND username LIKE CONCAT('%',#{vo.username},'%')
-            </if>
-            <if test="vo.status != null">
-                AND status = #{vo.status}
-            </if>
-        </where>
-    </select>
-</mapper>
 ```
 
 :::
@@ -312,6 +701,17 @@ public interface SysUserMapper extends BaseMapper<SysUser> {
   "status": 1,
   "username": ""
 }
+```
+
+日志：
+
+```text
+DEBUG 28176 --- [nio-8081-exec-2] c.m.m.S.selectPageUser_mpCount           : ==>  Preparing: SELECT COUNT(*) AS total FROM sys_user WHERE deleted = 1 AND status = ?
+DEBUG 28176 --- [nio-8081-exec-2] c.m.m.S.selectPageUser_mpCount           : ==> Parameters: 0(Integer)
+DEBUG 28176 --- [nio-8081-exec-2] c.m.m.S.selectPageUser_mpCount           : <==      Total: 1
+DEBUG 28176 --- [nio-8081-exec-4] c.m.mapper.SysUserMapper.selectPageUser  : ==>  Preparing: SELECT id, username, email, status, create_time FROM sys_user WHERE deleted = 1 AND status = ? LIMIT ?
+DEBUG 28176 --- [nio-8081-exec-4] c.m.mapper.SysUserMapper.selectPageUser  : ==> Parameters: 1(Integer), 10(Long)
+DEBUG 28176 --- [nio-8081-exec-4] c.m.mapper.SysUserMapper.selectPageUser  : <==      Total: 1
 ```
 
 响应结果：
@@ -335,7 +735,7 @@ public interface SysUserMapper extends BaseMapper<SysUser> {
 }
 ```
 
-前端参考代码：
+### 前端参考代码：
 
 ::: tabs
 
@@ -486,10 +886,10 @@ export const userPageApi = (param: PageUserReqVO) => {
   }
 
   /**
-   * 分页组件API：改变每页显示条目个数时触发
+   * 分页组件API：改变每页记录数时触发
    */
   const handleSizeChange = (val: number) => {
-    pageUserReqVo.current = 1; // 当改变每页显示条目个数时得回到第一页重新计算
+    pageUserReqVo.current = 1; // 当改变每页记录数时得回到第一页重新计算
     loadData();
   }
   

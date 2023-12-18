@@ -55,12 +55,12 @@ article: false
 - [x] 洛奇榴莲披萨
 - [x] 牛仔至尊海鲜披萨
 - [x] 特色洛奇小吃拼盘
-- [x] 美国纽约克长条鲜虾卷
+- [x] 美国纽约克长条鲜虾卷（推荐）
 - [x] 芝士焗阿拉斯加蟹柳法包
 - [x] 芝士拼薯条
 - [x] 橙香麦芽（推荐）
 - [ ] 德式小麦王
-- [ ] 哈雷焦香黑啤
+- [x] 哈雷焦香黑啤
 - [x] 潘多拉魔盒
 - [x] 尼格罗尼（中年男人的无奈与心酸）
 - [ ] 野格猎人
@@ -76,3 +76,9 @@ article: false
 
 - [x] 碳烤羊肉串（推荐）
 - [x] 和田玫瑰花酱馕
+
+## 西域烤肉小酒馆
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0JG6LIEZX" target="_blank">天河北路76-78号</a>
+
+- [x] 牛肉煲

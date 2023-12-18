@@ -204,11 +204,9 @@ const userStore = useUserStore();
 
 :::
 
-### 持久化操作
-
 当我们登录成功跳转到 home.vue 界面后虽然可以通过 `userStore.getUserName` 读取到用户名称。但如果我们刷新页面数据则会读取不到，这是因为我们没有对数据做持久化操作
 
-#### 手动实现持久化
+### 手动实现持久化
 
 ::: tabs
 
@@ -318,7 +316,7 @@ export const useUserStore = defineStore('userStoreId', {
 
 :::
 
-#### 使用持久化插件
+### 使用持久化插件
 
 我们可以使用 [pinia-plugin-persistedstate](https://prazdevs.github.io/pinia-plugin-persistedstate/zh/) 持久化插件来帮助我们对仓库数据进行持久化。我们只需要加上一下配置即可开启 Pinia 持久化
 
@@ -394,9 +392,7 @@ export const useStore = defineStore(
 
 :::
 
-现在，你的整个 Store 将使用[默认持久化配置](https://prazdevs.github.io/pinia-plugin-persistedstate/zh/guide/config.html)保存
-
-改造结果：
+现在，你的整个 Store 将使用[默认持久化配置](#待更新)保存
 
 ```ts
 import { defineStore } from 'pinia'
