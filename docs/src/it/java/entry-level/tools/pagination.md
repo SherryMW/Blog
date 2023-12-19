@@ -25,7 +25,7 @@ public class BasePage {
 }
 ```
 
-统一分页响应数据实体类，因为定义的是泛型，因此不管是商品分页数据，还是说订单分页数据都可以接收：
+统一分页响应数据实体类，因为定义的是泛型，所以不管是商品分页数据，还是说订单分页数据都可以接收：
 
 ```java
 import io.swagger.annotations.ApiModelProperty;
@@ -67,6 +67,8 @@ public class PageResult<T> {
 ::: tabs
 
 @tab Products.java
+
+商品信息实体类
 
 ```java
 import com.baomidou.mybatisplus.annotation.IdType;
@@ -116,6 +118,8 @@ public class Products implements Serializable {
 
 @tab PageProductReqVO.java
 
+前端传递给后端的分页条件查询实体类
+
 ```java
 import com.mw.pojo.BasePage;
 import io.swagger.annotations.ApiModelProperty;
@@ -137,11 +141,47 @@ public class PageProductReqVO extends BasePage {
 }
 ```
 
+@tab PageProductRespVO.java
+
+后端响应给前端的分页数据对象
+
+```java
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
+
+import java.math.BigDecimal;
+
+@Data
+public class PageProductRespVO {
+
+    @ApiModelProperty("商品ID")
+    private Integer id;
+
+    @ApiModelProperty("商品名称")
+    private String name;
+
+    @ApiModelProperty("价格")
+    private BigDecimal price;
+
+    @ApiModelProperty("库存")
+    private Integer stock;
+
+    @ApiModelProperty("商品描述")
+    private String description;
+
+    @ApiModelProperty("创建时间")
+    private String gmtCreate;
+
+    @ApiModelProperty("更新时间")
+    private String gmtModified;
+}
+```
+
 @tab ProductMapper.java
 
 ```java
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.mw.entity.Products;
+import com.mw.vo.resp.PageProductRespVO;
 import com.mw.vo.req.PageProductReqVO;
 import org.apache.ibatis.annotations.Param;
 
@@ -151,6 +191,7 @@ public interface ProductsMapper extends BaseMapper<Products> {
 
     /**
      * 条件查询总记录数
+     * 
      * @param vo 条件查询对象
      * @return 返回总记录数
      */
@@ -158,12 +199,13 @@ public interface ProductsMapper extends BaseMapper<Products> {
 
     /**
      * 条件查询分页数据
+     * 
      * @param vo 条件查询对象
      * @param offset 偏移量
      * @param limit 返回的记录数
      * @return 分页数据集
      */
-    List<Products> pageProduct(@Param("vo") PageProductReqVO vo, @Param("offset") Integer offset, @Param("limit") Integer limit);
+    List<PageProductRespVO> pageProduct(@Param("vo") PageProductReqVO vo, @Param("offset") Integer offset, @Param("limit") Integer limit);
 
 }
 ```
@@ -196,10 +238,10 @@ public interface ProductsMapper extends BaseMapper<Products> {
                 AND name = #{vo.productName}
             </if>
             <if test="vo.startTime != null">
-                AND gmt_create &gt; #{vo.startTime}
+                AND gmt_create &gt;= #{vo.startTime}
             </if>
             <if test="vo.endTime != null">
-                AND gmt_create &lt; #{vo.startTime}
+                AND gmt_create &lt;= #{vo.endTime}
             </if>
         </where>
     </sql>
@@ -210,7 +252,7 @@ public interface ProductsMapper extends BaseMapper<Products> {
     </select>
 
     <!--  商品分页条件查询  -->
-    <select id="pageProduct" resultType="com.mw.entity.Products">
+    <select id="pageProduct" resultType="com.mw.vo.resp.PageProductRespVO">
         SELECT * FROM products a INNER JOIN (SELECT id FROM products <include refid="pageProductSql"></include> ORDER BY gmt_create DESC LIMIT #{offset}, #{limit}) b ON a.id = b.id;
     </select>
 
@@ -220,14 +262,14 @@ public interface ProductsMapper extends BaseMapper<Products> {
 @tab IProductsService.java
 
 ```java
-import com.mw.entity.Products;
+import com.mw.vo.resp.PageProductRespVO;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.mw.pojo.PageResult;
 import com.mw.vo.req.PageProductReqVO;
 
 public interface IProductsService extends IService<Products> {
 
-    PageResult<Products> pageProducts(PageProductReqVO vo);
+    PageResult<PageProductRespVO> pageProducts(PageProductReqVO vo);
 
 }
 ```
@@ -236,7 +278,7 @@ public interface IProductsService extends IService<Products> {
 
 ```java
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.mw.entity.Products;
+import com.mw.vo.resp.PageProductRespVO;
 import com.mw.mapper.ProductsMapper;
 import com.mw.pojo.PageResult;
 import com.mw.service.IProductsService;
@@ -253,9 +295,9 @@ public class ProductsServiceImpl extends ServiceImpl<ProductsMapper, Products> i
     private ProductsMapper productsMapper;
 
     @Override
-    public PageResult<Products> pageProducts(PageProductReqVO vo) {
+    public PageResult<PageProductRespVO> pageProducts(PageProductReqVO vo) {
         int offset = (vo.getCurrent() - 1) * vo.getSize(); // 计算偏移量
-        List<Products> products = productsMapper.pageProduct(vo, offset, vo.getSize()); // 通过偏移量和限制返回数量实现分页
+        List<PageProductRespVO> products = productsMapper.pageProduct(vo, offset, vo.getSize()); // 通过偏移量和限制返回数量实现分页
         Long total = productsMapper.pageProductTotal(vo);
         return PageResult.getPage(products, total); // 返回分页条件查询数据以及总记录数
     }
@@ -265,7 +307,7 @@ public class ProductsServiceImpl extends ServiceImpl<ProductsMapper, Products> i
 @tab ProductController.java
 
 ```java
-import com.mw.entity.Products;
+import com.mw.vo.resp.PageProductRespVO;
 import com.mw.pojo.PageResult;
 import com.mw.service.IProductsService;
 import com.mw.vo.req.PageProductReqVO;
@@ -289,7 +331,7 @@ public class ProductsController {
 
     @PostMapping("/products")
     @ApiOperation(value = "商品分页接口")
-    public PageResult<Products> products(@RequestBody @Valid PageProductReqVO vo) {
+    public PageResult<PageProductRespVO> products(@RequestBody @Valid PageProductReqVO vo) {
         return productsService.pageProducts(vo);
     }
 
@@ -303,7 +345,8 @@ public class ProductsController {
 ```json
 {
   "current": 1,
-  "size": 10
+  "size": 10,
+  "productName": ""
 }
 ```
 
@@ -318,8 +361,7 @@ DEBUG 28176 --- [nio-8081-exec-5] c.m.m.ProductsMapper.pageProductTotal    : ==>
 DEBUG 28176 --- [nio-8081-exec-5] c.m.m.ProductsMapper.pageProductTotal    : <==      Total: 1
 ```
 
-响应结果：
-
+::: details 响应结果：
 ```json
 {
   "code": 0,
@@ -331,10 +373,8 @@ DEBUG 28176 --- [nio-8081-exec-5] c.m.m.ProductsMapper.pageProductTotal    : <==
         "price": 48.09,
         "stock": 2998271,
         "description": "Description for Product2998271",
-        "createBy": 1706255488020324354,
-        "modifiedBy": null,
-        "gmtCreate": "2022-12-16T16:55:48",
-        "gmtModified": "2022-12-16T16:55:48"
+        "gmtCreate": "2022-12-16 16:55:48",
+        "gmtModified": "2022-12-16 16:55:48"
       },
       {
         "id": 6053185,
@@ -342,10 +382,8 @@ DEBUG 28176 --- [nio-8081-exec-5] c.m.m.ProductsMapper.pageProductTotal    : <==
         "price": 11.22,
         "stock": 2998264,
         "description": "Description for Product2998264",
-        "createBy": 1706255488020324354,
-        "modifiedBy": null,
-        "gmtCreate": "2022-12-16T16:55:48",
-        "gmtModified": "2022-12-16T16:55:48"
+        "gmtCreate": "2022-12-16 16:55:48",
+        "gmtModified": "2022-12-16 16:55:48"
       },
       {
         "id": 6054921,
@@ -353,10 +391,8 @@ DEBUG 28176 --- [nio-8081-exec-5] c.m.m.ProductsMapper.pageProductTotal    : <==
         "price": 70.72,
         "stock": 3000000,
         "description": "Description for Product3000000",
-        "createBy": 1706255488020324354,
-        "modifiedBy": null,
-        "gmtCreate": "2022-12-16T16:55:48",
-        "gmtModified": "2022-12-16T16:55:48"
+        "gmtCreate": "2022-12-16 16:55:48",
+        "gmtModified": "2022-12-16 16:55:48"
       },
       {
         "id": 6053187,
@@ -364,10 +400,8 @@ DEBUG 28176 --- [nio-8081-exec-5] c.m.m.ProductsMapper.pageProductTotal    : <==
         "price": 82.44,
         "stock": 2998266,
         "description": "Description for Product2998266",
-        "createBy": 1706255488020324354,
-        "modifiedBy": null,
-        "gmtCreate": "2022-12-16T16:55:48",
-        "gmtModified": "2022-12-16T16:55:48"
+        "gmtCreate": "2022-12-16 16:55:48",
+        "gmtModified": "2022-12-16 16:55:48"
       },
       {
         "id": 6053191,
@@ -375,10 +409,8 @@ DEBUG 28176 --- [nio-8081-exec-5] c.m.m.ProductsMapper.pageProductTotal    : <==
         "price": 99.94,
         "stock": 2998270,
         "description": "Description for Product2998270",
-        "createBy": 1706255488020324354,
-        "modifiedBy": null,
-        "gmtCreate": "2022-12-16T16:55:48",
-        "gmtModified": "2022-12-16T16:55:48"
+        "gmtCreate": "2022-12-16 16:55:48",
+        "gmtModified": "2022-12-16 16:55:48"
       },
       {
         "id": 6053188,
@@ -386,10 +418,8 @@ DEBUG 28176 --- [nio-8081-exec-5] c.m.m.ProductsMapper.pageProductTotal    : <==
         "price": 106.53,
         "stock": 2998267,
         "description": "Description for Product2998267",
-        "createBy": 1706255488020324354,
-        "modifiedBy": null,
-        "gmtCreate": "2022-12-16T16:55:48",
-        "gmtModified": "2022-12-16T16:55:48"
+        "gmtCreate": "2022-12-16 16:55:48",
+        "gmtModified": "2022-12-16 16:55:48"
       },
       {
         "id": 6053186,
@@ -397,10 +427,8 @@ DEBUG 28176 --- [nio-8081-exec-5] c.m.m.ProductsMapper.pageProductTotal    : <==
         "price": 65.22,
         "stock": 2998265,
         "description": "Description for Product2998265",
-        "createBy": 1706255488020324354,
-        "modifiedBy": null,
-        "gmtCreate": "2022-12-16T16:55:48",
-        "gmtModified": "2022-12-16T16:55:48"
+        "gmtCreate": "2022-12-16 16:55:48",
+        "gmtModified": "2022-12-16 16:55:48"
       },
       {
         "id": 6053190,
@@ -408,10 +436,8 @@ DEBUG 28176 --- [nio-8081-exec-5] c.m.m.ProductsMapper.pageProductTotal    : <==
         "price": 47.21,
         "stock": 2998269,
         "description": "Description for Product2998269",
-        "createBy": 1706255488020324354,
-        "modifiedBy": null,
-        "gmtCreate": "2022-12-16T16:55:48",
-        "gmtModified": "2022-12-16T16:55:48"
+        "gmtCreate": "2022-12-16 16:55:48",
+        "gmtModified": "2022-12-16 16:55:48"
       },
       {
         "id": 6053189,
@@ -419,10 +445,8 @@ DEBUG 28176 --- [nio-8081-exec-5] c.m.m.ProductsMapper.pageProductTotal    : <==
         "price": 75.36,
         "stock": 2998268,
         "description": "Description for Product2998268",
-        "createBy": 1706255488020324354,
-        "modifiedBy": null,
-        "gmtCreate": "2022-12-16T16:55:48",
-        "gmtModified": "2022-12-16T16:55:48"
+        "gmtCreate": "2022-12-16 16:55:48",
+        "gmtModified": "2022-12-16 16:55:48"
       },
       {
         "id": 6053184,
@@ -430,10 +454,8 @@ DEBUG 28176 --- [nio-8081-exec-5] c.m.m.ProductsMapper.pageProductTotal    : <==
         "price": 26.95,
         "stock": 2998263,
         "description": "Description for Product2998263",
-        "createBy": 1706255488020324354,
-        "modifiedBy": null,
-        "gmtCreate": "2022-12-16T16:55:48",
-        "gmtModified": "2022-12-16T16:55:48"
+        "gmtCreate": "2022-12-16 16:55:48",
+        "gmtModified": "2022-12-16 16:55:48"
       }
     ],
     "total": 3000000
@@ -441,6 +463,195 @@ DEBUG 28176 --- [nio-8081-exec-5] c.m.m.ProductsMapper.pageProductTotal    : <==
   "message": "响应成功"
 }
 ```
+:::
+
+### 前端参考代码
+
+::: tabs
+
+@tab src/types/global.d.ts
+
+```ts
+/**
+ * 后端统一响应体数据结构
+ */
+declare interface IResponse<T = any> {
+    code: number;
+    message: string;
+    data: T;
+}
+
+/**
+ * 后端统一分页数据结构
+ */
+declare interface Page<T = any> {
+    list: T[];
+    total: number;
+}
+```
+
+@tab src/api/product/types.ts
+
+```ts
+/**
+ * 分页条件查询用户请求字段（提交给后端的数据结构）
+ */
+export interface PageProductReqVO {
+    size: number;
+    current: number;
+    productName?: string;
+    startTime?: number;
+    endTime?: number;
+    rangeTime?: [Date, Date];
+}
+
+/**
+ * 分页查询用户响应字段（后端响应的数据结构）
+ */
+export interface PageProductRespVO {
+    id: string;
+    name: string;
+    price: number;
+    stock: number;
+    description: string;
+    gmtCreate: String;
+    gmtModified: string;
+}
+```
+
+@tab src/api/product/index.ts
+
+```ts
+import instance from "@/utils/request";
+import { PageProductReqVO, PageProductRespVO } from "./types";
+
+/**
+ * 用户分页接口
+ */
+export const productPageApi = (param: PageProductReqVO) => {
+    return instance.post<any, IResponse<Page<PageProductRespVO>>>('/api/products', param);
+}
+```
+
+@tab src/views/product/index.vue
+
+```vue
+<template>
+    <div>
+        <div style="margin: 20px 20px;">
+            <el-form :inline="true" ref="productFormRef" :model="pageProductForm">
+                <el-form-item label="商品名称" prop="productName">
+                    <el-input v-model="pageProductForm.productName" placeholder="请输入商品名称" clearable />
+                </el-form-item>
+                <el-form-item label="创建时间" prop="rangeTime">
+                    <el-date-picker v-model="pageProductForm.rangeTime" type="datetimerange" range-separator="~"
+                        start-placeholder="开始时间" end-placeholder="结束时间" />
+                </el-form-item>
+                <el-form-item>
+                    <el-button type="primary" @click="onSubmit">查询</el-button>
+                    <el-button type="primary" @click="onReset(productFormRef)">重置</el-button>
+                </el-form-item>
+            </el-form>
+        </div>
+        <el-card>
+            <div>
+                <el-table :data="productTableData.list" :border=true style="width: 100%">
+                    <el-table-column prop="id" label="ID" align="center" />
+                    <el-table-column prop="name" label="商品名称" align="center" />
+                    <el-table-column prop="price" label="商品价格" align="center" />
+                    <el-table-column prop="stock" label="商品库存" align="center" />
+                    <el-table-column prop="description" label="商品描述" align="center" />
+                    <el-table-column prop="gmtCreate" label="商品创建时间" align="center" />
+                    <el-table-column prop="gmtModified" label="商品更新时间" align="center" />
+                </el-table>
+            </div>
+            <div style="padding: 20px 20px;">
+                <el-pagination v-model:current-page="pageProductForm.current" v-model:page-size="pageProductForm.size"
+                    :page-sizes="[10, 20, 30, 40, 50]" :small=false :disabled=false :background=true
+                    layout="total, sizes, prev, pager, next, jumper" :total="productTableData.total"
+                    @size-change="handleSizeChange" @current-change="handleCurrentChange" />
+            </div>
+        </el-card>
+    </div>
+</template>
+
+<script setup lang="ts">
+import { onMounted, reactive, ref } from 'vue';
+import { PageProductReqVO, PageProductRespVO } from '@/api/product/types'
+import { productPageApi } from '@/api/product';
+import { FormInstance } from 'element-plus';
+
+onMounted(() => {
+    loadData();
+})
+
+/**
+ * 响应式分页表格数据对象
+ */
+const productTableData: Page<PageProductRespVO> = reactive({
+    list: [],
+    total: 0
+})
+
+/**
+ * 响应式分页条件查询对象。PageProductReqVO 中配置了 productName/startTime/endTime/rangeTime 为可选项，因此这里可以不指定
+ */
+const pageProductForm: PageProductReqVO = reactive({
+    current: 1,
+    size: 10
+})
+
+/**
+ * 请求后端分页接口
+ */
+const loadData = async () => {
+    await productPageApi(pageProductForm).then(res => {
+        productTableData.list = res.data.list;
+        productTableData.total = res.data.total;
+    }).catch(error => { })
+}
+
+const onSubmit = async () => {
+    if (pageProductForm.rangeTime) {
+        pageProductForm.startTime = pageProductForm.rangeTime[0].getTime();
+        pageProductForm.endTime = pageProductForm.rangeTime[1].getTime();
+    } else {
+        pageProductForm.startTime = undefined;
+        pageProductForm.endTime = undefined;
+    }
+    pageProductForm.current = 1; // 页码重置为第一页
+    loadData();
+}
+
+const productFormRef = ref<FormInstance>();
+const onReset = (formEl: FormInstance | undefined) => {
+    if (!formEl) return
+    formEl.resetFields();
+    loadData();
+}
+
+/**
+ * 分页组件API：改变每页记录数时触发
+ */
+const handleSizeChange = (val: number) => {
+    pageProductForm.current = 1; // 当改变每页记录数时得回到第一页重新计算
+    loadData();
+}
+
+/**
+ * 分页组件API：改变当前页数时触发
+ */
+const handleCurrentChange = (val: number) => {
+    pageProductForm.current = val;
+    loadData();
+}
+
+</script>
+
+<style scoped></style>
+```
+
+:::
 
 ## 自动实现分页
 
@@ -714,8 +925,7 @@ DEBUG 28176 --- [nio-8081-exec-4] c.m.mapper.SysUserMapper.selectPageUser  : ==>
 DEBUG 28176 --- [nio-8081-exec-4] c.m.mapper.SysUserMapper.selectPageUser  : <==      Total: 1
 ```
 
-响应结果：
-
+::: details 响应结果：
 ```json
 {
   "code": 0,
@@ -734,8 +944,9 @@ DEBUG 28176 --- [nio-8081-exec-4] c.m.mapper.SysUserMapper.selectPageUser  : <==
   "message": "响应成功"
 }
 ```
+:::
 
-### 前端参考代码：
+### 前端参考代码
 
 ::: tabs
 
@@ -760,7 +971,7 @@ declare interface Page<T = any> {
 }
 ```
 
-@tab src/api/user/type.ts
+@tab src/api/user/types.ts
 
 ```ts
 /**
@@ -789,7 +1000,7 @@ export interface PageUserRespVO {
 @tab src/api/user/index.ts
 
 ```ts
-import { PageUserReqVO, PageUserRespVO } from "@/interface/user";
+import { PageUserReqVO, PageUserRespVO } from "./types";
 import instance from "@/utils/request";
 
 /**
@@ -806,12 +1017,12 @@ export const userPageApi = (param: PageUserReqVO) => {
 <template>
   <div>
     <div style="margin: 20px 20px;">
-      <el-form :inline="true" :model="pageUserReqVo">
+      <el-form :inline="true" :model="pageUserForm">
         <el-form-item label="账号">
-          <el-input v-model="pageUserReqVo.username" placeholder="请输入账号" clearable/>
+          <el-input v-model="pageUserForm.username" placeholder="请输入账号" clearable/>
         </el-form-item>
         <el-form-item label="状态">
-          <el-select v-model="pageUserReqVo.status" placeholder="请选择状态" clearable>
+          <el-select v-model="pageUserForm.status" placeholder="请选择状态" clearable>
             <el-option label="正常" value="1"/>
             <el-option label="锁定" value="2"/>
           </el-select>
@@ -831,7 +1042,7 @@ export const userPageApi = (param: PageUserReqVO) => {
       </el-table>
     </div>
     <div style="padding: 20px 20px;">
-      <el-pagination v-model:current-page="pageUserReqVo.current" v-model:page-size="pageUserReqVo.size"
+      <el-pagination v-model:current-page="pageUserForm.current" v-model:page-size="pageUserForm.size"
                      :page-sizes="[10, 20, 30, 40, 50]" :small=false :disabled=false :background=true
                      layout="total, sizes, prev, pager, next, jumper" :total="userTableData.total"
                      @size-change="handleSizeChange" @current-change="handleCurrentChange"/>
@@ -842,8 +1053,7 @@ export const userPageApi = (param: PageUserReqVO) => {
 <script setup lang="ts">
   import { userPageApi } from '@/api/userApi';
   import { onMounted, reactive } from 'vue';
-  import { PageUserReqVO, PageUserRespVO } from '@/interface/user';
-  import { Page } from '@/interface/base';
+  import { PageUserReqVO, PageUserRespVO } from '@/api/user/types';
 
   onMounted(() => {
     loadData();
@@ -860,16 +1070,16 @@ export const userPageApi = (param: PageUserReqVO) => {
   /**
    * 响应式分页条件查询对象。PageUserReqVO 中配置了 username 和 status 为可选项，因此这里可以不指定
    */
-  const pageUserReqVo: PageUserReqVO = reactive({
-    size: 10,
-    current: 1
+  const pageUserForm: PageUserReqVO = reactive({
+    current: 1,
+    size: 10
   })
 
   /**
    * 请求后端分页接口
    */
   const loadData = async () => {
-    await userPageApi(pageUserReqVo).then(res => {
+    await userPageApi(pageUserForm).then(res => {
       userTableData.list = res.data.list;
       userTableData.total = res.data.total;
     }).catch(error => { })
@@ -889,7 +1099,7 @@ export const userPageApi = (param: PageUserReqVO) => {
    * 分页组件API：改变每页记录数时触发
    */
   const handleSizeChange = (val: number) => {
-    pageUserReqVo.current = 1; // 当改变每页记录数时得回到第一页重新计算
+    pageUserForm.current = 1; // 当改变每页记录数时得回到第一页重新计算
     loadData();
   }
   
@@ -897,7 +1107,7 @@ export const userPageApi = (param: PageUserReqVO) => {
    * 分页组件API：改变当前页数时触发
    */
   const handleCurrentChange = (val: number) => {
-    pageUserReqVo.current = val;
+    pageUserForm.current = val;
     loadData();
   }
 </script>

@@ -117,10 +117,10 @@ export const useUserStore = defineStore('userStoreId', {
 
 <script setup lang="ts">
   import { User, Lock } from '@element-plus/icons-vue';
-  import { LoginReq } from '@/interface/user'
+  import { LoginReq } from '@/api/user/types'
   import { reactive, ref } from 'vue';
   import { ElMessage, FormInstance, FormRules } from 'element-plus';
-  import { userLoginApi } from '@/api/userApi';
+  import { userLoginApi } from '@/api/user';
   import router from '@/router';
   import { useUserStore } from '@/store/userStore'
 

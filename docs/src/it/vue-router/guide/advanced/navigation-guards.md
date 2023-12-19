@@ -82,7 +82,7 @@ const routes: RouteRecordRaw[] = [
     },
     {
         path: '/home',
-        component: () => import('@/views/home/home.vue')
+        component: () => import('@/views/home/index.vue')
     },
     {
         path: '/login',
