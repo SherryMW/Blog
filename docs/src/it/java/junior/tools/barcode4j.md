@@ -1,16 +1,18 @@
 ---
 category: IT
-order: 5
+order: 6
 article: false
 ---
 
-# Barcode4J 条形码生成技术
+# Barcode4J
 
 <!-- more -->
 
 官网：[https://barcode4j.sourceforge.net](https://barcode4j.sourceforge.net/)
 
 API：[https://barcode4j.sourceforge.net/trunk/javadocs/index.html](https://barcode4j.sourceforge.net/trunk/javadocs/index.html)
+
+Barcode4J 是一个灵活的用 Java 编写的条形码生成器
 
 ![Barcode4J 支持的条形码符号](https://img.sherry4869.com/blog/it/java/junior/tools/barcode4j/img_3.png)
 

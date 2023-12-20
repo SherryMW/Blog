@@ -4,9 +4,13 @@ order: 3
 article: false
 ---
 
-# Poi-tl 文档模板引擎
+# Poi-tl
 
 官网：[http://deepoove.com/poi-tl](http://deepoove.com/poi-tl)
+
+poi-tl（poi template language）是 Word 模板引擎，使用 Word 模板和数据创建很棒的 Word 文档
+
+在文档的任何地方做任何事情（Do Anything Anywhere）是 poi-tl 的星辰大海
 
 我们将实现以下的文档渲染效果：
 

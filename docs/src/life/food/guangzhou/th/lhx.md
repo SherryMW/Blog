@@ -67,8 +67,8 @@ article: false
 - [ ] 维密•天使之吻
 - [ ] 女神的新衣
 - [x] 洛奇鲜果沙拉
-- [x] 香草雪糕球
 - [x] 雨后芒果园
+- [x] 香草雪糕球
 
 ## NurBOSTAN 努尔博斯坦
 
@@ -81,4 +81,4 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0JG6LIEZX" target="_blank">天河北路76-78号</a>
 
-- [x] 牛肉煲
+- [x] 羊肉煲

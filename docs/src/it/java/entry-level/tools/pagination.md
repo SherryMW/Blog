@@ -253,7 +253,7 @@ public interface ProductsMapper extends BaseMapper<Products> {
 
     <!--  商品分页条件查询  -->
     <select id="pageProduct" resultType="com.mw.vo.resp.PageProductRespVO">
-        SELECT * FROM products a INNER JOIN (SELECT id FROM products <include refid="pageProductSql"></include> ORDER BY gmt_create DESC LIMIT #{offset}, #{limit}) b ON a.id = b.id;
+        SELECT a.id, a.name, a.price, a.stock, a.description, a.gmt_create, a.gmt_modified FROM products a INNER JOIN (SELECT id FROM products <include refid="pageProductSql"></include> LIMIT #{offset}, #{limit}) b ON a.id = b.id;
     </select>
 
 </mapper>
@@ -353,7 +353,7 @@ public class ProductsController {
 日志：
 
 ```text
-DEBUG 28176 --- [nio-8081-exec-5] c.mw.mapper.ProductsMapper.pageProduct   : ==>  Preparing: SELECT * FROM products a INNER JOIN (SELECT id FROM products WHERE 1 = 1 ORDER BY gmt_create DESC LIMIT ?, ?) b ON a.id = b.id;
+DEBUG 28176 --- [nio-8081-exec-5] c.mw.mapper.ProductsMapper.pageProduct   : ==>  Preparing: SELECT a.id, a.name, a.price, a.stock, a.description, a.gmt_create, a.gmt_modified FROM products a INNER JOIN (SELECT id FROM products LIMIT ?, ?) b ON a.id = b.id;
 DEBUG 28176 --- [nio-8081-exec-5] c.mw.mapper.ProductsMapper.pageProduct   : ==> Parameters: 0(Integer), 10(Integer)
 DEBUG 28176 --- [nio-8081-exec-5] c.mw.mapper.ProductsMapper.pageProduct   : <==      Total: 10
 DEBUG 28176 --- [nio-8081-exec-5] c.m.m.ProductsMapper.pageProductTotal    : ==>  Preparing: SELECT COUNT(1) FROM products WHERE 1 = 1
@@ -554,17 +554,15 @@ export const productPageApi = (param: PageProductReqVO) => {
             </el-form>
         </div>
         <el-card>
-            <div>
-                <el-table :data="productTableData.list" :border=true style="width: 100%">
-                    <el-table-column prop="id" label="ID" align="center" />
-                    <el-table-column prop="name" label="商品名称" align="center" />
-                    <el-table-column prop="price" label="商品价格" align="center" />
-                    <el-table-column prop="stock" label="商品库存" align="center" />
-                    <el-table-column prop="description" label="商品描述" align="center" />
-                    <el-table-column prop="gmtCreate" label="商品创建时间" align="center" />
-                    <el-table-column prop="gmtModified" label="商品更新时间" align="center" />
-                </el-table>
-            </div>
+            <el-table :data="productTableData.list" :border=true style="width: 100%">
+                <el-table-column prop="id" label="ID" align="center" />
+                <el-table-column prop="name" label="商品名称" align="center" />
+                <el-table-column prop="price" label="商品价格" align="center" />
+                <el-table-column prop="stock" label="商品库存" align="center" />
+                <el-table-column prop="description" label="商品描述" align="center" />
+                <el-table-column prop="gmtCreate" label="商品创建时间" align="center" />
+                <el-table-column prop="gmtModified" label="商品更新时间" align="center" />
+            </el-table>
             <div style="padding: 20px 20px;">
                 <el-pagination v-model:current-page="pageProductForm.current" v-model:page-size="pageProductForm.size"
                     :page-sizes="[10, 20, 30, 40, 50]" :small=false :disabled=false :background=true

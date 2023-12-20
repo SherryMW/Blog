@@ -378,10 +378,10 @@ public class BusinessException extends RuntimeException {
 
     private final String message;
 
-    public BusinessException(int code, String message) {
-        super(message);
-        this.code = code;
-        this.message = message;
+    public BusinessException(ResponseCode responseCode) {
+        super(responseCode.getMessage());
+        this.code = responseCode.getCode();
+        this.message = responseCode.getMessage();
     }
 
     public int getCode() {
@@ -434,10 +434,8 @@ public class TestController {
 
     @PostMapping("/test-business-error")
     public TestBusinessObj testBusError(@RequestBody TestBusinessObj obj) {
-        if (!StringUtils.hasLength(obj.getUsername())) {
-            throw new BusinessException(500000, "账号不能为空");
-        } else if (!StringUtils.hasLength(obj.getPassword())) {
-            throw new BusinessException(500000, "密码不能为空");
+        if (!StringUtils.hasLength(obj.getUsername()) || !StringUtils.hasLength(obj.getPassword())) {
+            throw new BusinessException(ResponseCode.DATA_PARAM_ERROR);
         }
         return obj;
     }

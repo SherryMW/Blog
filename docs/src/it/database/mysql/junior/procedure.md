@@ -149,29 +149,31 @@ SET product_create_by = 1706255488020324354 ;
 SET product_description = CONCAT(
   'Description for Product',
   i
-) ;
+) ; 
 INSERT INTO products (
-    `name`,
-    `price`,
-    `stock`,
-    `description`,
-    `create_by`,
-    `gmt_create`,
-    `gmt_modified`
+  `name`,
+  `price`,
+  `stock`,
+  `description`,
+  `create_by`,
+  `gmt_create`,
+  `gmt_modified`
 )
 VALUES
-    (
-        product_name,
-        product_price,
-        product_stock,
-        product_description,
-        product_create_by,
-        NOW(),
-        NOW()
-    ) ; UNTIL i = max_num
-END REPEAT;
+	(
+    product_name,
+    product_price,
+    product_stock,    
+    product_description,
+    product_create_by,   
+    NOW(),
+    NOW()
+  ) ; UNTIL i = max_num
+END
+REPEAT; 
 COMMIT ;
-END ;;
+END
+;;
 DELIMITER ;
 ```
 
