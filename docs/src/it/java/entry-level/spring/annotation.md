@@ -6,6 +6,14 @@ article: false
 
 # 注解
 
+## Async
+
+待更新
+
+## Autowired
+
+待更新
+
 ## Controller
 
 待更新
@@ -120,7 +128,7 @@ public class GlobalControllerAdvice {
 
 ---
 
-1. 异常处理（Exception Handling）：
+- 异常处理（Exception Handling）：
 
    `@ControllerAdvice` 注解的类可以包含用于处理异常的方法
 
@@ -146,7 +154,7 @@ public class GlobalControllerAdvice {
 
    参考：[封装异常处理类](response-data-result.md#封装异常处理类)
 
-2. 全局响应数据封装：
+- 全局响应数据封装：
 
    除了异常处理，`@ControllerAdvice` 还可以用于全局性的响应数据封装，例如统一添加响应头、统一格式化响应数据等
 
@@ -169,11 +177,58 @@ public class GlobalControllerAdvice {
 
    参考：[自定义全局处理控制器](response-data-result.md#自定义全局处理控制器)
 
+## ConfigurationProperties
+
+待更新
+
+## EnableAsync
+
+在 Spring 中，异步方法是指可以在调用方法时不阻塞主线程，而是在另一个线程中执行。这对于需要执行长时间操作的方法，如网络调用、文件读写或其他耗时的任务，是非常有用的
+
+`@EnableAsync` 注解是一个配置类级别的注解，通常与 `@Configuration` 注解一起使用。通过在应用程序的配置类上添加 `@EnableAsync`，你告诉 Spring 框架启用异步方法的支持
+
+与 `@EnableAsync` 一起使用的是 `@Async` 注解。`@Async` 注解用于标记方法，告诉 Spring 这个方法应该在一个单独的线程中执行。被标记为 `@Async` 的方法必须位于 `@EnableAsync` 所在的类中或者被另一个通过 `@EnableAsync` 启用了异步支持的配置类中
+
+默认情况下，Spring 使用一个简单的线程池执行异步方法。你也可以在 `@EnableAsync` 上配置一个自定义的 `TaskExecutor`，以更好地控制异步方法的执行。例如：
+
+```java
+import org.springframework.context.annotation.Configuration;
+import org.springframework.scheduling.annotation.EnableAsync;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
+
+@Configuration
+@EnableAsync
+public class AsyncConfig {
+    // 其他配置...
+
+    @Bean
+    public ThreadPoolTaskExecutor taskExecutor() {
+        ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
+        executor.setCorePoolSize(5);
+        executor.setMaxPoolSize(10);
+        executor.setQueueCapacity(25);
+        return executor;
+    }
+}
+```
+
+在这个例子中，我们创建了一个自定义的 `ThreadPoolTaskExecutor`，并设置了核心线程数、最大线程数以及队列容量
+
+## EnableScheduling
+
+待更新
+
 ## ExceptionHandler
 
 待更新
 
+参考：[封装异常处理类](response-data-result.md#封装异常处理类)
+
 ## InitBinder
+
+待更新
+
+## MapperScan
 
 待更新
 
@@ -182,6 +237,10 @@ public class GlobalControllerAdvice {
 待更新
 
 ## Repository
+
+待更新
+
+## Resource
 
 待更新
 
@@ -307,6 +366,35 @@ public class RestResponseBodyAdvice implements ResponseBodyAdvice {
 
     - 在这段示例代码中，`beforeBodyWrite()` 方法直接返回原始的响应体 body，没有进行任何修改
 
+参考：[自定义全局处理控制器](response-data-result.md#自定义全局处理控制器)
+
+## Scheduled
+
+待更新
+
 ## Service
+
+`@Service` 注解是 Spring 框架中用于标识服务层组件的一种重要注解，它通过自动扫描和自动装配等机制，帮助开发者更方便地管理和使用业务逻辑组件
+
+- 注解参数：`@Service` 注解没有具体的参数，通常直接标注在服务类的类定义上
+
+- 自动扫描和自动装配：在 Spring 应用上下文中，`@Service` 注解通常与自动扫描和自动装配结合使用。通过在配置中启用组件扫描，Spring 将自动发现被 `@Service` 注解标注的服务类，并将其注册为 Spring 管理的 Bean
+
+- 与其他注解的关系：`@Service` 注解通常与其他注解结合使用，例如 [`@Autowired`](#autowired) 用于自动装配其他依赖，或者 [`@Transactional`](#transactional) 用于声明事务行为
+
+- 事务管理：在实际应用中，`@Service` 注解的类通常包含业务逻辑，可能涉及到事务管理。因此，`@Service` 类上经常搭配使用 [`@Transactional`](#transactional) 注解，以便声明事务的边界
+
+- 示例：
+
+    ```java
+    import org.springframework.stereotype.Service;
+    
+    @Service
+    public class MyBusinessService {
+        // 业务逻辑方法
+    }
+    ```
+
+## Transactional
 
 待更新

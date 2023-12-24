@@ -65,6 +65,13 @@ article: false
 - [x] 凉拌鱼皮
 - [ ] 筒骨莲藕煲
 
+## 粽香园
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFHFHFI6" target="_blank">大德路298号之1号</a>
+
+- [x] 绿豆咸肉蛋黄粽（推荐）
+- [x] 牛腩布拉肠
+
 ## 绿茶餐厅
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B001402D72" target="_blank">中山五路68号五月花商场5楼</a>
@@ -74,6 +81,8 @@ article: false
 - [x] 江南绿茶饼
 
 ## 马小火牛肉面
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0IU5R4JEM" target="_blank">中山五路中旅商业城1楼103号</a>
 
 - [x] 大片牛肉手工拉面
 - [x] 招牌烤包子（推荐）

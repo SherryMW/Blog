@@ -5,7 +5,7 @@ article: false
 
 # 分页查询
 
-不管是商品的分页还是说订单的分页，前端只需要传递给后端两个字段就可以实现分页，因此通用的字段可以考虑封装起来：
+前端分页组件只需要传递给后端两个字段就可以实现分页查询，因此通用的字段可以考虑封装起来：
 
 ```java
 import io.swagger.annotations.ApiModelProperty;
@@ -25,7 +25,7 @@ public class BasePage {
 }
 ```
 
-统一分页响应数据实体类，因为定义的是泛型，所以不管是商品分页数据，还是说订单分页数据都可以接收：
+后端统一分页响应数据实体类，因为定义的是泛型，所以不管是商品分页数据，还是说订单分页数据都可以接收：
 
 ```java
 import io.swagger.annotations.ApiModelProperty;
@@ -56,7 +56,7 @@ public class PageResult<T> {
 }
 ```
 
-## 手动实现分页
+## 手写分页逻辑
 
 在数据库中，`LIMIT` 是一种用于限制查询结果集的 SQL 关键字。在 `LIMIT` 子句中，有两个参数，它们分别代表：
 
@@ -297,7 +297,7 @@ public class ProductsServiceImpl extends ServiceImpl<ProductsMapper, Products> i
     @Override
     public PageResult<PageProductRespVO> pageProducts(PageProductReqVO vo) {
         int offset = (vo.getCurrent() - 1) * vo.getSize(); // 计算偏移量
-        List<PageProductRespVO> products = productsMapper.pageProduct(vo, offset, vo.getSize()); // 通过偏移量和限制返回数量实现分页
+        List<PageProductRespVO> products = productsMapper.pageProduct(vo, offset, vo.getSize()); // 通过偏移量和返回记录数实现分页
         Long total = productsMapper.pageProductTotal(vo);
         return PageResult.getPage(products, total); // 返回分页条件查询数据以及总记录数
     }
@@ -465,7 +465,7 @@ DEBUG 28176 --- [nio-8081-exec-5] c.m.m.ProductsMapper.pageProductTotal    : <==
 ```
 :::
 
-### 前端参考代码
+前端参考代码：
 
 ::: tabs
 
@@ -526,7 +526,7 @@ import instance from "@/utils/request";
 import { PageProductReqVO, PageProductRespVO } from "./types";
 
 /**
- * 用户分页接口
+ * 商品分页接口
  */
 export const productPageApi = (param: PageProductReqVO) => {
     return instance.post<any, IResponse<Page<PageProductRespVO>>>('/api/products', param);
@@ -549,12 +549,12 @@ export const productPageApi = (param: PageProductReqVO) => {
                 </el-form-item>
                 <el-form-item>
                     <el-button type="primary" @click="onSubmit">查询</el-button>
-                    <el-button type="primary" @click="onReset(productFormRef)">重置</el-button>
+                    <el-button type="primary" @click="onReset">重置</el-button>
                 </el-form-item>
             </el-form>
         </div>
         <el-card>
-            <el-table :data="productTableData.list" :border=true style="width: 100%">
+            <el-table v-loading="loading" :data="productTableData.list" :border=true style="width: 100%">
                 <el-table-column prop="id" label="ID" align="center" />
                 <el-table-column prop="name" label="商品名称" align="center" />
                 <el-table-column prop="price" label="商品价格" align="center" />
@@ -583,6 +583,8 @@ onMounted(() => {
     loadData();
 })
 
+const loading = ref<boolean>(false);
+
 /**
  * 响应式分页表格数据对象
  */
@@ -603,12 +605,17 @@ const pageProductForm: PageProductReqVO = reactive({
  * 请求后端分页接口
  */
 const loadData = async () => {
+    loading.value = true;
     await productPageApi(pageProductForm).then(res => {
         productTableData.list = res.data.list;
         productTableData.total = res.data.total;
     }).catch(error => { })
+    loading.value = false;
 }
 
+/**
+ * 查询按钮事件
+ */
 const onSubmit = async () => {
     if (pageProductForm.rangeTime) {
         pageProductForm.startTime = pageProductForm.rangeTime[0].getTime();
@@ -621,11 +628,17 @@ const onSubmit = async () => {
     loadData();
 }
 
+/**
+ * 条件查询表单实例对象
+ */
 const productFormRef = ref<FormInstance>();
-const onReset = (formEl: FormInstance | undefined) => {
-    if (!formEl) return
-    formEl.resetFields();
-    loadData();
+
+/**
+ * 重置按钮事件
+ */
+const onReset = () => {
+  productFormRef.value?.resetFields();
+  loadData();
 }
 
 /**
@@ -646,12 +659,38 @@ const handleCurrentChange = (val: number) => {
 
 </script>
 
-<style scoped></style>
+<style scoped>
+  
+</style>
 ```
 
 :::
 
-## 自动实现分页
+## 使用 IPage 和 Page
+
+配置分页插件
+
+```java
+import com.baomidou.mybatisplus.annotation.DbType;
+import com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor;
+import com.baomidou.mybatisplus.extension.plugins.inner.PaginationInnerInterceptor;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class MybatisPlusConfig {
+
+    /**
+     * 新的分页插件,一缓和二缓遵循mybatis的规则,需要设置 MybatisConfiguration#useDeprecatedExecutor = false 避免缓存出现问题(该属性会在旧插件移除后一同移除)
+     */
+    @Bean
+    public MybatisPlusInterceptor mybatisPlusInterceptor() {
+        MybatisPlusInterceptor interceptor = new MybatisPlusInterceptor();
+        interceptor.addInnerInterceptor(new PaginationInnerInterceptor(DbType.MYSQL));
+        return interceptor;
+    }
+}
+```
 
 ::: tabs
 
@@ -862,6 +901,7 @@ public class SysUserServiceImpl extends ServiceImpl<SysUserMapper, SysUser> impl
 
     @Override
     public PageResult<PageUserRespVO> pageUsers(PageUserReqVO vo) {
+        // 例如 current=4；size=10 表示用户想获取第4页的10条数据，分页插件就会在SQL结尾加上：LIMIT 30,10 （获取用户id为31-40的10条记录）
         IPage<PageUserRespVO> result = userMapper.selectPageUser(new Page<>(vo.getCurrent(), vo.getSize()), vo);
         return PageResult.getPage(result.getRecords(), result.getTotal());
     }
@@ -944,7 +984,7 @@ DEBUG 28176 --- [nio-8081-exec-4] c.m.mapper.SysUserMapper.selectPageUser  : <==
 ```
 :::
 
-### 前端参考代码
+前端参考代码：
 
 ::: tabs
 
@@ -1109,6 +1149,146 @@ export const userPageApi = (param: PageUserReqVO) => {
     loadData();
   }
 </script>
+```
+
+:::
+
+## 自定义分页
+
+假设管理后台的导出数据模块中有个按页导出功能，管理员输入起始页以及结束页，后台就能导出对应的数据。例如起始页输入“3”，结束页输入“5”，那么后台就要导出当前第 3 页到第 5 页的数据
+
+::: tabs
+
+@tab ExportServiceImpl.java
+
+```java {31-36}
+import com.alibaba.excel.EasyExcel;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.mw.common.BusinessException;
+import com.mw.common.ResponseCode;
+import com.mw.mapper.ProductsMapper;
+import com.mw.service.IExportService;
+import com.mw.vo.req.ExportProductReqVO;
+import com.mw.vo.resp.PageProductRespVO;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
+import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletResponse;
+import java.net.URLEncoder;
+import java.util.List;
+import java.util.Objects;
+
+@Service
+@Slf4j
+public class ExportServiceImpl implements IExportService {
+
+    @Resource
+    private ProductsMapper productsMapper;
+
+    @Override
+    public void exportConditionProduct(ExportProductReqVO vo, HttpServletResponse response) {
+        List<PageProductRespVO> result = null;
+        if (Objects.isNull(vo.getIds()) || vo.getIds().isEmpty()) { // 按页导出
+            if (vo.getPageStart() < 1 || vo.getPageEnd() < 2 || vo.getPageStart() >= vo.getPageEnd()) {
+                throw new BusinessException(ResponseCode.DATA_PARAM_ERROR);
+            }
+            int offset = (vo.getPageStart() - 1) * vo.getSize();
+            int limit = (vo.getPageEnd() - vo.getPageStart() + 1) * vo.getSize();
+            result = productsMapper.pageProduct(vo, offset, limit);
+        } else { // 勾选导出
+            result = productsMapper.selectPageProduct(new Page<>(vo.getCurrent(), vo.getSize()), vo).getRecords();
+        }
+        //通过 EasyExcel 写入数据进 Excel 文件并返回给客户端
+        try {
+            response.setContentType(MediaType.APPLICATION_OCTET_STREAM_VALUE);
+            response.setHeader(HttpHeaders.ACCESS_CONTROL_EXPOSE_HEADERS, HttpHeaders.CONTENT_DISPOSITION);
+            response.setCharacterEncoding("UTF-8");
+            String fileName = URLEncoder.encode("商品数据导出", "UTF-8").replaceAll("\\+", "%20");
+            response.setHeader(HttpHeaders.CONTENT_DISPOSITION, "attachment;filename=" + fileName + ".xlsx");
+            EasyExcel.write(response.getOutputStream(), PageProductRespVO.class).sheet("商品列表").doWrite(result);
+        } catch (Exception e) {
+            log.error("exportConditionProduct Error:{}", e.getMessage());
+            throw new BusinessException(ResponseCode.SYSTEM_ERROR);
+        }
+    }
+}
+```
+
+@tab ProductsMapper.java
+
+```java
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.mw.entity.Products;
+import com.mw.vo.req.PageProductReqVO;
+import com.mw.vo.resp.PageProductRespVO;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
+
+public interface ProductsMapper extends BaseMapper<Products> {
+
+    /**
+     * 条件查询分页数据
+     *
+     * @param vo     条件查询对象
+     * @param offset 偏移量
+     * @param limit  返回的记录数
+     * @return 分页数据集
+     */
+    List<PageProductRespVO> pageProduct(@Param("vo") PageProductReqVO vo, @Param("offset") Integer offset, @Param("limit") Integer limit);
+}
+```
+
+@tab ProductsMapper.xml
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mw.mapper.ProductsMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.mw.entity.Products">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="price" property="price"/>
+        <result column="stock" property="stock"/>
+        <result column="description" property="description"/>
+        <result column="create_by" property="createBy"/>
+        <result column="modified_by" property="modifiedBy"/>
+        <result column="gmt_create" property="gmtCreate"/>
+        <result column="gmt_modified" property="gmtModified"/>
+    </resultMap>
+
+    <!--  分页条件查询sql片段  -->
+    <sql id="pageProductSql">
+        <where>
+            1 = 1
+            <if test="vo.productName != null and vo.productName != ''">
+                AND name = #{vo.productName}
+            </if>
+            <if test="vo.startTime != null">
+                AND gmt_create &gt;= #{vo.startTime}
+            </if>
+            <if test="vo.endTime != null">
+                AND gmt_create &lt;= #{vo.endTime}
+            </if>
+        </where>
+    </sql>
+
+    <!--  商品总记录数  -->
+    <select id="pageProductTotal" resultType="java.lang.Long" parameterType="com.mw.vo.req.PageProductReqVO">
+        SELECT COUNT(1) FROM products <include refid="pageProductSql"></include>
+    </select>
+
+    <!--  商品分页条件查询  -->
+    <select id="pageProduct" resultType="com.mw.vo.resp.PageProductRespVO">
+        SELECT a.id, a.name, a.price, a.stock, a.description, a.gmt_create, a.gmt_modified FROM products a INNER JOIN (SELECT id FROM products <include refid="pageProductSql"></include> LIMIT #{offset}, #{limit}) b ON a.id = b.id;
+    </select>
+
+</mapper>
 ```
 
 :::

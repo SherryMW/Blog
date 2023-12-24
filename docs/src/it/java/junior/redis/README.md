@@ -147,6 +147,15 @@ public class RedisUtil {
     }
 
     /**
+     * 设置值并且制定过期时间
+     */
+    public <T> void set(String key, T value, long expTime, TimeUnit timeUnit) {
+        if (StringUtils.hasLength(key)) {
+            redisTemplate.opsForValue().set(key, value, expTime, timeUnit);
+        }
+    }
+
+    /**
      * 从 Redis 中获取与指定键关联的值
      */
     public <T> T get(String key) {

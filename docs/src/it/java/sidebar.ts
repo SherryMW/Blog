@@ -58,7 +58,13 @@ export const JavaSidebar = arraySidebar([
                 prefix: "spring-cloud/",
                 collapsible: true,
                 children: "structure"
-            }
+            },
+            {
+                text: "并发编程",
+                prefix: "juc/",
+                collapsible: true,
+                children: "structure"
+            },
             // {
             //     text: "支付",
             //     prefix: "pay/",

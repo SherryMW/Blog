@@ -11,10 +11,10 @@ article: false
 
 ![招牌冰镇咕噜肉](https://img.sherry4869.com/blog/life/food/guangzhou/yx/bjl/ttj/img.jpg)
 
-- [x] 冰镇咕噜肉（推荐）
 - [x] 经典白切鸡
 - [x] 广府豉油鸡
 - [x] 金牌蜜汁叉烧
+- [x] 冰镇咕噜肉（推荐）
 - [x] 海皇粉丝煲
 - [x] 蟹黄豆腐
 - [x] 陶陶居大虾饺（推荐）
@@ -92,6 +92,7 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFJ8JP89" target="_blank">北京路182号粤潮NEW-IN-PARK-LG-M-层LG104-M104</a>
 
+- [x] 万山红金丝小种
 - [x] 伯牙绝铉
 - [x] 玫瑰普洱
 - [x] 白雾红尘

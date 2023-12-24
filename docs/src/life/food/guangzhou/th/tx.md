@@ -9,7 +9,7 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFLCC9S3" target="_blank">科新路147号</a>
 
-![1.8斤，店员说2斤以下的羊排肥肉会没那么多，非常上火（吃的时候可以想好待会去哪买杯癍痧凉茶）](https://img.sherry4869.com/blog/life/food/guangzhou/th/tx/hlbe/img.jpg)
+![1.8斤，店员说2斤以下的羊排肥肉会没那么多，非常上火（吃的时候可以想好待会去哪买杯癍痧凉茶降火）](https://img.sherry4869.com/blog/life/food/guangzhou/th/tx/hlbe/img.jpg)
 
 - [x] 烤羊排
 - [x] 烤羊肉串

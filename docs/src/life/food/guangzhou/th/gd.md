@@ -12,10 +12,6 @@ article: false
 - [x] 老锅底（推荐）
 - [x] 经典锅底
 
-## 八合里牛肉火锅
-
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFI8YYA2" target="_blank">龙口西路3号保利中辰广场1号2层</a>
-
 ## 大鸽饭（岗顶一店）
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFIS13WN" target="_blank">天河路633号桔子酒店3层</a>
@@ -40,6 +36,10 @@ article: false
 ## 火垂火居酒屋
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0HR6S7X4D" target="_blank">龙口西路3号保利中辰广场1层103铺</a>
+
+## 八合里牛肉火锅
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFI8YYA2" target="_blank">龙口西路3号保利中辰广场1号2层</a>
 
 ## 今之味
 

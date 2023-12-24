@@ -66,4 +66,4 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0G2AC5537" target="_blank">华景北路279号一层112铺</a>
 
-- [x] 冰蓝生打椰
+- [x] 冰蓝生打椰（emm）
