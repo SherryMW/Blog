@@ -13,7 +13,7 @@ export const NavbarConfig = navbar([
         children: [
             {
                 text: "健康",
-                link: "healthy/rest/2023"
+                link: "healthy/rest/2024"
             },
             {
                 text: "美食",
