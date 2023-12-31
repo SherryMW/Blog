@@ -7,7 +7,7 @@ article: false
 
 ## The Eating Table
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFGZI7W1" target="_blank">珠江东路16号高德置地广场•冬F4层401</a>
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFGZI7W1" target="_blank">珠江东路16号高德置地广场·冬F4层401</a>
 
 ::: tabs
 
@@ -32,6 +32,6 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0IUHAMNB8" target="_blank">临江大道57号中和广场F33层</a>
 
-## 雅致酒店中西餐厅•临江阁
+## 雅致酒店中西餐厅·临江阁
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0GR5L4JMP" target="_blank">临江大道天德广场四楼</a>

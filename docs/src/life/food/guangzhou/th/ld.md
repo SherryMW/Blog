@@ -47,7 +47,7 @@ article: false
 - [x] daydream
 - [x] 死亡的性感解释
 
-## 太艮堡毋米粥•粥底火锅
+## 太艮堡毋米粥·粥底火锅
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00140TZ3W" target="_blank">金穗路72号盈嘉花园103号-201号</a>
 
@@ -58,9 +58,9 @@ article: false
 - [x] 粉肠
 - [x] 猪脷
 
-## 木棉•醉心粤味
+## 木棉·醉心粤味
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0GROY2454" target="_blank">珠江东路16号高德置地广场•冬F4层407</a>
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0GROY2454" target="_blank">珠江东路16号高德置地广场·冬F4层407</a>
 
 ![海报与实物对比:see_no_evil:](https://img.sherry4869.com/blog/life/food/guangzhou/th/ld/mmzx/img.jpg)
 

@@ -236,11 +236,15 @@ public class AsyncConfig {
 
 待更新
 
-## Repository
+## PathVariable
 
 待更新
 
 ## Resource
+
+待更新
+
+## Repository
 
 待更新
 
@@ -320,6 +324,10 @@ Spring MVC 使用消息转换器（Message Converter）来处理返回值的转�
 
 通过使用 `@ResponseBody` 注解，您可以轻松地将方法的返回值直接作为响应体返回给客户端，而无需经过视图解析器进行视图渲染。这在构建 RESTful API 或需要直接返回数据的场景中非常有用
 
+## RequestParam
+
+待更新
+
 ## RestControllerAdvice
 
 `@RestControllerAdvice` 注解用于定义全局的异常处理、数据绑定规则和直接返回响应体的处理器方法。它结合了 [@ControllerAdvice](#controlleradvice) 和 [@ResponseBody](#responsebody) 注解的功能，适用于构建 RESTful API，可以集中管理和配置全局行为，处理器方法的返回值会直接作为响应体返回给客户端
@@ -368,10 +376,6 @@ public class RestResponseBodyAdvice implements ResponseBodyAdvice {
 
 参考：[自定义全局处理控制器](response-data-result.md#自定义全局处理控制器)
 
-## Scheduled
-
-待更新
-
 ## Service
 
 `@Service` 注解是 Spring 框架中用于标识服务层组件的一种重要注解，它通过自动扫描和自动装配等机制，帮助开发者更方便地管理和使用业务逻辑组件
@@ -394,6 +398,10 @@ public class RestResponseBodyAdvice implements ResponseBodyAdvice {
         // 业务逻辑方法
     }
     ```
+
+## Scheduled
+
+待更新
 
 ## Transactional
 

@@ -65,6 +65,23 @@ article: false
 - [x] 凉拌鱼皮
 - [ ] 筒骨莲藕煲
 
+## 今崎烧·寿喜烧专门店
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H2H1K16K" target="_blank">惠福东路522号首层</a>
+
+- 真的上脑寿喜烧双人餐（推荐）
+- [x] 美国安格斯牛上脑×2
+- [x] 澳洲霜降牛肉×2
+- [x] 松阪黑毛豚五花
+- [x] 墨鱼肠片
+- [x] 野菜拼盘
+- [x] 手打乌冬
+- [x] 无菌生鸡蛋
+
+## 大喜居酒屋
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFIIKP20" target="_blank">教育路1号</a>
+
 ## 粽香园
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFHFHFI6" target="_blank">大德路298号之1号</a>
@@ -92,5 +109,5 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0JDY7YWYO" target="_blank">惠福东路451号101首层-4</a>
 
-- [x] 招牌港式丝袜奶茶
+- [x] 港式丝袜奶茶
 - [x] 港式鸳鸯

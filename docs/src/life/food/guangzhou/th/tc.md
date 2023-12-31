@@ -5,7 +5,7 @@ article: false
 
 # 潭村
 
-## 笃•TOKU居酒屋
+## 笃·TOKU居酒屋
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFIG9VK4" target="_blank">马场路珠光新城国际商务中心B座首层104</a>
 

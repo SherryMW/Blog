@@ -5,7 +5,7 @@ article: false
 
 # 梅花园
 
-## 粤•向群饭店
+## 粤·向群饭店
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0I2JZ4YIS" target="_blank">广州大道北920号信达金茂广场L3层301-302</a>
 

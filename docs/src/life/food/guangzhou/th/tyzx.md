@@ -161,6 +161,10 @@ article: false
 - [x] 红豆雪山冰
 - [x] 冰粉
 
+## 乐焰烤肉·和牛海鲜放题（歇业）
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B001401AEE" target="_blank">体育东路112号百福广场二层201号</a>
+
 ## 凑凑火锅
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFKX3B93" target="_blank">天河路218号天环广场西塔B1层</a>

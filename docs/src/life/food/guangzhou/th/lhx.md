@@ -31,7 +31,7 @@ article: false
 - [x] 三叔烤罗虾
 - [ ] 蒜酱烤波龙
 
-## MR•ROCKY 洛奇先生餐吧
+## MR·ROCKY 洛奇先生餐吧
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFFW7PUF" target="_blank">天河北路28号时代广场首层115-117-121</a>
 
@@ -54,6 +54,7 @@ article: false
 - [ ] 西部牛仔烤全鸡
 - [x] 洛奇榴莲披萨
 - [x] 牛仔至尊海鲜披萨
+- [x] 意大利香肠披萨
 - [x] 特色洛奇小吃拼盘
 - [x] 美国纽约克长条鲜虾卷（推荐）
 - [x] 芝士焗阿拉斯加蟹柳法包
@@ -64,11 +65,22 @@ article: false
 - [x] 潘多拉魔盒
 - [x] 尼格罗尼（中年男人的无奈与心酸）
 - [ ] 野格猎人
-- [ ] 维密•天使之吻
+- [ ] 维密·天使之吻
 - [ ] 女神的新衣
 - [x] 洛奇鲜果沙拉
 - [x] 雨后芒果园
 - [x] 香草雪糕球
+
+## 麒麟屋总本铺
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFFZD6Z2" target="_blank">侨林街51-2号铺(近林乐路)</a>
+
+- [x] 炸鸡块
+- [x] 炸蟹肉可乐饼
+- [x] 章鱼小丸子
+- [x] 土豆沙拉
+- [x] 芥末章鱼
+- [x] 两人份啤酒放题1个半小时
 
 ## NurBOSTAN 努尔博斯坦
 

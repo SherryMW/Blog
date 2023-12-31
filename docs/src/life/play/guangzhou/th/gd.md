@@ -5,7 +5,7 @@ article: false
 
 # 岗顶
 
-## MRX•X先生密室逃脱
+## MRX·X先生密室逃脱
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H63M6721" target="_blank">天河路502号N116天河电脑城负一层</a>
 
@@ -144,3 +144,7 @@ article: false
 温情 :cat2: :cat2: 主题
 
 ![下班后的花花](https://img.sherry4869.com/blog/life/play/guangzhou/th/gd/dmj/img.jpg)
+
+## 超级大快活量贩KTV
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFFA9UB2" target="_blank">石牌东路自编36号大快活二三楼</a>

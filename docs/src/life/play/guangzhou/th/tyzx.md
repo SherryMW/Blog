@@ -9,7 +9,7 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0HDKAELJ4" target="_blank">天河路365号天俊阁2703室</a>
 
-### 福尔摩斯•记忆宫殿
+### 福尔摩斯·记忆宫殿
 
 <div><p>沉浸：<el-rate model-value="4.5" disabled text-color="#ff9900" show-score /></p></div>
 
@@ -187,12 +187,16 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0G1KA1NWT" target="_blank">时尚天河地下负一层中五街026(A区停车场)</a>
 
-## 天弓社•射箭
+## 天弓社·射箭
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFKUT6NL" target="_blank">时尚天河东一街负二层F6</a>
 
-## 沉浸世界大空间VR游戏体验馆
+## 沉浸世界大空间VR游戏体验馆（歇业）
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H2F1LL6O" target="_blank">时尚天河中区中二街（夜上海）011号</a>
 
 - [x] 丧尸围攻VR
+
+## 叁高空娱乐KTV
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0I3J42VJ1" target="_blank">天河路228号正佳金殿33楼</a>

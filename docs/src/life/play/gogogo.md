@@ -26,7 +26,7 @@ article: false
 
 - [ ] 康斯坦丁
 
-#### 梦境旅人•沉浸映像剧场
+#### 梦境旅人·沉浸映像剧场
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0IRMAK7CC" target="_blank">江南大道中102号3楼</a>
 
@@ -39,7 +39,7 @@ article: false
 - [ ] 马家花园
 - [ ] 昆池盐
 
-#### 幻剧•魔术沉浸剧场
+#### 幻剧·魔术沉浸剧场
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0I63HYJVD" target="_blank">天河路611号摩登百货二楼201</a>
 

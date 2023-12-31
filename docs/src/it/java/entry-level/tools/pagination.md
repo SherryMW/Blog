@@ -964,6 +964,7 @@ DEBUG 28176 --- [nio-8081-exec-4] c.m.mapper.SysUserMapper.selectPageUser  : <==
 ```
 
 ::: details 响应结果：
+
 ```json
 {
   "code": 0,
@@ -982,6 +983,7 @@ DEBUG 28176 --- [nio-8081-exec-4] c.m.mapper.SysUserMapper.selectPageUser  : <==
   "message": "响应成功"
 }
 ```
+
 :::
 
 前端参考代码：
@@ -1153,69 +1155,11 @@ export const userPageApi = (param: PageUserReqVO) => {
 
 :::
 
-## 自定义分页
+## 自定义分页查询
 
 假设管理后台的导出数据模块中有个按页导出功能，管理员输入起始页以及结束页，后台就能导出对应的数据。例如起始页输入“3”，结束页输入“5”，那么后台就要导出当前第 3 页到第 5 页的数据
 
 ::: tabs
-
-@tab ExportServiceImpl.java
-
-```java {31-36}
-import com.alibaba.excel.EasyExcel;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.mw.common.BusinessException;
-import com.mw.common.ResponseCode;
-import com.mw.mapper.ProductsMapper;
-import com.mw.service.IExportService;
-import com.mw.vo.req.ExportProductReqVO;
-import com.mw.vo.resp.PageProductRespVO;
-import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.MediaType;
-import org.springframework.stereotype.Service;
-
-import javax.annotation.Resource;
-import javax.servlet.http.HttpServletResponse;
-import java.net.URLEncoder;
-import java.util.List;
-import java.util.Objects;
-
-@Service
-@Slf4j
-public class ExportServiceImpl implements IExportService {
-
-    @Resource
-    private ProductsMapper productsMapper;
-
-    @Override
-    public void exportConditionProduct(ExportProductReqVO vo, HttpServletResponse response) {
-        List<PageProductRespVO> result = null;
-        if (Objects.isNull(vo.getIds()) || vo.getIds().isEmpty()) { // 按页导出
-            if (vo.getPageStart() < 1 || vo.getPageEnd() < 2 || vo.getPageStart() >= vo.getPageEnd()) {
-                throw new BusinessException(ResponseCode.DATA_PARAM_ERROR);
-            }
-            int offset = (vo.getPageStart() - 1) * vo.getSize();
-            int limit = (vo.getPageEnd() - vo.getPageStart() + 1) * vo.getSize();
-            result = productsMapper.pageProduct(vo, offset, limit);
-        } else { // 勾选导出
-            result = productsMapper.selectPageProduct(new Page<>(vo.getCurrent(), vo.getSize()), vo).getRecords();
-        }
-        //通过 EasyExcel 写入数据进 Excel 文件并返回给客户端
-        try {
-            response.setContentType(MediaType.APPLICATION_OCTET_STREAM_VALUE);
-            response.setHeader(HttpHeaders.ACCESS_CONTROL_EXPOSE_HEADERS, HttpHeaders.CONTENT_DISPOSITION);
-            response.setCharacterEncoding("UTF-8");
-            String fileName = URLEncoder.encode("商品数据导出", "UTF-8").replaceAll("\\+", "%20");
-            response.setHeader(HttpHeaders.CONTENT_DISPOSITION, "attachment;filename=" + fileName + ".xlsx");
-            EasyExcel.write(response.getOutputStream(), PageProductRespVO.class).sheet("商品列表").doWrite(result);
-        } catch (Exception e) {
-            log.error("exportConditionProduct Error:{}", e.getMessage());
-            throw new BusinessException(ResponseCode.SYSTEM_ERROR);
-        }
-    }
-}
-```
 
 @tab ProductsMapper.java
 
@@ -1289,6 +1233,77 @@ public interface ProductsMapper extends BaseMapper<Products> {
     </select>
 
 </mapper>
+```
+
+@tab ExportService.java
+
+```java
+import com.mw.vo.req.ExportProductReqVO;
+
+import javax.servlet.http.HttpServletResponse;
+
+public interface ExportService {
+    
+    void exportConditionProduct(ExportProductReqVO vo, HttpServletResponse response);
+}
+```
+
+@tab ExportServiceImpl.java
+
+```java {31-36}
+import com.alibaba.excel.EasyExcel;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.mw.common.BusinessException;
+import com.mw.common.ResponseCode;
+import com.mw.mapper.ProductsMapper;
+import com.mw.service.ExportService;
+import com.mw.vo.req.ExportProductReqVO;
+import com.mw.vo.resp.PageProductRespVO;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
+import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletResponse;
+import java.net.URLEncoder;
+import java.util.List;
+import java.util.Objects;
+
+@Service
+@Slf4j
+public class ExportServiceImpl implements IExportService {
+
+    @Resource
+    private ProductsMapper productsMapper;
+
+    @Override
+    public void exportConditionProduct(ExportProductReqVO vo, HttpServletResponse response) {
+        List<PageProductRespVO> result = null;
+        if (Objects.isNull(vo.getIds()) || vo.getIds().isEmpty()) { // 按页导出
+            if (vo.getPageStart() < 1 || vo.getPageEnd() < 2 || vo.getPageStart() >= vo.getPageEnd()) {
+                throw new BusinessException(ResponseCode.DATA_PARAM_ERROR);
+            }
+            int offset = (vo.getPageStart() - 1) * vo.getSize();
+            int limit = (vo.getPageEnd() - vo.getPageStart() + 1) * vo.getSize();
+            result = productsMapper.pageProduct(vo, offset, limit);
+        } else { // 勾选导出
+            result = productsMapper.selectPageProduct(new Page<>(vo.getCurrent(), vo.getSize()), vo).getRecords();
+        }
+        //通过 EasyExcel 写入数据进 Excel 文件并返回给客户端
+        try {
+            response.setContentType(MediaType.APPLICATION_OCTET_STREAM_VALUE);
+            response.setHeader(HttpHeaders.ACCESS_CONTROL_EXPOSE_HEADERS, HttpHeaders.CONTENT_DISPOSITION);
+            response.setCharacterEncoding("UTF-8");
+            String fileName = URLEncoder.encode("商品数据导出", "UTF-8").replaceAll("\\+", "%20");
+            response.setHeader(HttpHeaders.CONTENT_DISPOSITION, "attachment;filename=" + fileName + ".xlsx");
+            EasyExcel.write(response.getOutputStream(), PageProductRespVO.class).sheet("商品列表").doWrite(result);
+        } catch (Exception e) {
+            log.error("exportConditionProduct Error:{}", e.getMessage());
+            throw new BusinessException(ResponseCode.SYSTEM_ERROR);
+        }
+    }
+}
 ```
 
 :::
