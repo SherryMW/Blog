@@ -69,6 +69,8 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H2H1K16K" target="_blank">惠福东路522号首层</a>
 
+![](https://img.sherry4869.com/blog/life/food/guangzhou/yx/gyq/jqs/img.jpg)
+
 - 真的上脑寿喜烧双人餐（推荐）
 - [x] 美国安格斯牛上脑×2
 - [x] 澳洲霜降牛肉×2

@@ -51,8 +51,15 @@ article: false
   name: Greasy Fork
   desc: 提供用户脚本的网站
   link: https://greasyfork.org/zh-CN
+
+- icon: https://img.sherry4869.com/blog/collection/tools/qmjianli.png
+  name: 全民简历
+  desc: 10分钟快速制作简历
+  link: https://www.qmjianli.com
 ```
 :::
+
+---
 
 ::: projects
 ```yaml
@@ -68,6 +75,8 @@ article: false
 ```
 :::
 
+---
+
 ::: projects
 ```yaml
 - icon: https://img.sherry4869.com/blog/collection/tools/pagespeed.png
@@ -76,6 +85,8 @@ article: false
   link: https://pagespeed.web.dev/
 ```
 :::
+
+---
 
 ::: projects
 ```yaml
