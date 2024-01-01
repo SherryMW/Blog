@@ -1,6 +1,5 @@
 ---
 category: IT
-order: 2
 article: false
 ---
 
@@ -9,13 +8,21 @@ article: false
 ## 信息安全的基础-机密性
 
 - 明文：加密前的消息叫“明文”（plain text）
+
 - 密文：加密后的文本叫“密文”（cipher text）
+
 - 密钥：只有掌握特殊“钥匙”的人，才能对加密的文本进行解密，这里的“钥匙”就叫做“密钥”（key）
+
 > “密钥”就是一个字符串，度量单位是“位”（bit），比如密钥长度是 128，指的就是 16 字节的二进制串（一个字节为8位）
+
 - 加密：实现机密性最常用的手段是“加密”（encrypt）
+
 > 按照密钥的使用方式，加密可以分为两大类：对称加密和非对称加密
+
 - 解密：使用密钥还原明文的过程叫“解密”（decrypt）
+
 - 加密算法：加密解密的操作过程就是“加密算法”
+
 > 所有的加密算法都是公开的，而算法使用的“密钥”则必须保密
 
 ## 密钥
@@ -26,9 +33,9 @@ article: false
 因为通信过程中传输的消息全是用密钥加密后的密文，所以只有拥有密钥的消息发送方和接收方才能解密。
 恶意的用户即使能够窃听到我们的消息，看到的也只是加密后的密文，因为没有密钥无法解密出明文，所以就实现了消息发送的机密性，可密钥一旦被窃取，消息就会被破解
 
-AES加密算法：密钥长度128、192或256，安全强度很高，性能也很好
+AES 加密算法：密钥长度 128、192 或 256，安全强度很高，性能也很好
 
-加密分组模式：先将明文分组，再对每个分组用密钥进行加密，微信支付中使用的对称加密算法就是分组模式中的一种，名为AEAD_AES_256_GCM
+加密分组模式：先将明文分组，再对每个分组用密钥进行加密，微信支付中使用的对称加密算法就是分组模式中的一种，名为 AEAD_AES_256_GCM
 
 ![](https://img.sherry4869.com/blog/it/java/intermediate/pay/weixin/payment-security/img.png)
 
@@ -39,7 +46,7 @@ AES加密算法：密钥长度128、192或256，安全强度很高，性能也�
 
 非对称加密算法的设计要比对称加密算法复杂很多，因此运算速度比较慢
 
-RSA加密算法：最著名的非对称加密算法，微信支付中的非对称加密算法使用的就是RSA
+RSA 加密算法：最著名的非对称加密算法，微信支付中的非对称加密算法使用的就是 RSA
 
 ![](https://img.sherry4869.com/blog/it/java/intermediate/pay/weixin/payment-security/img_1.png)
 
@@ -49,25 +56,25 @@ RSA加密算法：最著名的非对称加密算法，微信支付中的非对�
 
 ## 身份认证
 
-Bob有一把公钥和私钥，公钥给了三个朋友，私钥自己保留
+Bob 有一把公钥和私钥，公钥给了三个朋友，私钥自己保留
 
 ![](https://img.sherry4869.com/blog/it/java/intermediate/pay/weixin/payment-security/img_2.png)
 
-Susan想给Bob写信，信件内容需要保密，那么他可以使用Bob的公钥将信件内容加密后发送给Bob，Bob收到信件后使用私钥解密看到信件内容，只要Bob的私钥不泄露这封信就是安全的
+Susan 想给 Bob 写信，信件内容需要保密，那么他可以使用 Bob 的公钥将信件内容加密后发送给 Bob，Bob 收到信件后使用私钥解密看到信件内容，只要 Bob 的私钥不泄露这封信就是安全的
 
-如果Bob想给Susan回信的话，Susan也需要有自己的公钥私钥，把公钥分发给Bob。Bob使用Susan的公钥将信件加密后发送给Susan，Susan收到信后用自己的私钥解密后进行阅读
+如果 Bob 想给 Susan 回信的话，Susan 也需要有自己的公钥私钥，把公钥分发给 Bob。Bob 使用 Susan 的公钥将信件加密后发送给 Susan，Susan 收到信后用自己的私钥解密后进行阅读
 
 ![](https://img.sherry4869.com/blog/it/java/intermediate/pay/weixin/payment-security/img_3.png)
 
 如果把用法反过来的话，使用私钥加密，公钥解密？
 
-Bob使用自己的私钥加密了一份信件发送给Susan，可是Bob所有的朋友都有他的公钥，因此他们都可以解密Bob发送的信件
+Bob 使用自己的私钥加密了一份信件发送给 Susan，可是 Bob 所有的朋友都有他的公钥，因此他们都可以解密 Bob 发送的信件
 
 我们发现私钥加密公钥解密其实并不是为了加密
 
 ![](https://img.sherry4869.com/blog/it/java/intermediate/pay/weixin/payment-security/img_4.png)
 
-Bob使用自己的私钥对信件原文进行加密，Susan必须使用Bob的公钥才能对信件进行解密，因此Susan能够确认的是这封信确实是Bob发出的，因为Susan使用的是Bob的公钥对信件进行解密，那么加密方一定是使用了Bob的私钥对信件进行加密。因此私钥加密公钥解密其实并不是为了加密，而是身份认证
+Bob 使用自己的私钥对信件原文进行加密，Susan 必须使用 Bob 的公钥才能对信件进行解密，因此 Susan 能够确认的是这封信确实是 Bob 发出的，因为 Susan 使用的是 Bob 的公钥对信件进行解密，那么加密方一定是使用了 Bob 的私钥对信件进行加密。因此私钥加密公钥解密其实并不是为了加密，而是身份认证
 
 ![](https://img.sherry4869.com/blog/it/java/intermediate/pay/weixin/payment-security/img_5.png)
 

@@ -1,8 +1,6 @@
 ---
 category: IT
-tag:
-  - Java
-  - Apache
+order: 3
 article: false
 ---
 
@@ -16,7 +14,7 @@ ShardingSphere-JDBC 定位为轻量级 Java 框架，在 Java 的 JDBC 层提供
 
 - 支持任意实现 JDBC 规范的数据库，目前支持 MySQL，PostgreSQL，Oracle，SQLServer 以及任何可使用 JDBC 访问的数据库
 
-![](https://img.sherry4869.com/blog/it/apache/sharding-sphere/jdbc/img.png)
+![](https://img.sherry4869.com/blog/it/java/intermediate/sharding-sphere/jdbc/img.png)
 
 [ShardingSphere 5.1.2 官方文档](https://shardingsphere.apache.org/document/5.1.2/cn/overview/)
 
@@ -214,7 +212,7 @@ ShardingSphere-JDBC 定位为轻量级 Java 框架，在 Java 的 JDBC 层提供
 
 ### 准备服务器
 
-参考 [一主多从配置](/it/apache/sharding-sphere/mysql-zctb/#一主多从)
+参考 [一主多从配置](/it/java/intermediate/sharding-sphere/mysql-zctb/#一主多从)
 
 ### 相关配置
 
@@ -584,7 +582,7 @@ Actual SQL: slave2 ::: SELECT  id,uname  FROM t_user
 
 ### 准备服务器
 
-![服务器规划：使用 Docker 创建容器](https://img.sherry4869.com/blog/it/apache/sharding-sphere/jdbc/img.png)
+![服务器规划：使用 Docker 创建容器](https://img.sherry4869.com/blog/it/java/intermediate/sharding-sphere/jdbc/img.png)
 
 - 服务器：容器名 mw-server-user，端口 3301
 
@@ -887,7 +885,7 @@ Rolled back transaction for test
 
 把用于测试测试垂直分片的 mw-server-order 容器停止运行，创建 mw-server-order0，mw-server-order1 两个 MySQL 容器，并分别创建两张 order 分片数据表
 
-![服务器规划：使用 docker 创建容器](https://img.sherry4869.com/blog/it/apache/sharding-sphere/jdbc/img_1.png)
+![服务器规划：使用 docker 创建容器](https://img.sherry4869.com/blog/it/java/intermediate/sharding-sphere/jdbc/img_1.png)
 
 - 服务器：容器名 mw-server-order0，端口 3310
 
@@ -1546,7 +1544,7 @@ Actual SQL: server-order1 ::: SELECT  id,order_no,user_id,amount  FROM t_order0 
 
   该序列是用来在同一个毫秒内生成不同的 ID。如果在这个毫秒内生成的数量超过 4096 (2 的 12 次幂)，那么生成器会等待到下个毫秒继续生成
 
-![雪花算法主键的详细结构图](https://img.sherry4869.com/blog/it/apache/sharding-sphere/jdbc/img_2.png)
+![雪花算法主键的详细结构图](https://img.sherry4869.com/blog/it/java/intermediate/sharding-sphere/jdbc/img_2.png)
 
 #### 时钟回拨
 

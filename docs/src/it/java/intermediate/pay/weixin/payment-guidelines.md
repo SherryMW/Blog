@@ -1,15 +1,20 @@
 ---
-date: 2022-09-10
 category: IT
 order: 1
 article: false
 ---
 
-# 微信支付接入指引
+# 接入指引
 
-<!-- more -->
+微信支付商户平台：[https://pay.weixin.qq.com/static/applyment_guide/applyment_index.shtml](https://pay.weixin.qq.com/static/applyment_guide/applyment_index.shtml)
 
-[微信支付产品](https://pay.weixin.qq.com/static/product/product_index.shtml)
+微信支付商户常见问题：[https://kf.qq.com/product/wechatpaymentmerchant.html](https://kf.qq.com/product/wechatpaymentmerchant.html)
+
+微信支付APIv3文档：[https://pay.weixin.qq.com/wiki/doc/apiv3/index.shtml](https://pay.weixin.qq.com/wiki/doc/apiv3/index.shtml)
+
+H5支付开发指引：[https://pay.weixin.qq.com/wiki/doc/api/H5.php?chapter=15_4](https://pay.weixin.qq.com/wiki/doc/api/H5.php?chapter=15_4)
+
+微信支付产品：[https://pay.weixin.qq.com/static/product/product_index.shtml](https://pay.weixin.qq.com/static/product/product_index.shtml)
 
 ![](https://img.sherry4869.com/blog/it/java/intermediate/pay/weixin/payment-guidelines/img.png)
 
@@ -21,7 +26,7 @@ H5 支付是指商户在微信客户端外的移动端网页展示商品或服�
 
 ## 注册公众号
 
-访问 [微信公众平台](https://mp.weixin.qq.com) 注册公众号（服务号）
+访问微信公众平台：[https://mp.weixin.qq.com](https://mp.weixin.qq.com) 注册公众号（服务号）
 
 ![](https://img.sherry4869.com/blog/it/java/intermediate/pay/weixin/payment-guidelines/img_1.png)
 
@@ -31,11 +36,11 @@ H5 支付是指商户在微信客户端外的移动端网页展示商品或服�
 
 目前微信仅支持已完成微信认证的公众号（服务号）绑定商户号开发使用
 
- [微信认证申请流程（企业类型）](https://kf.qq.com/faq/161220Brem2Q161220uUjERB.html)
+微信认证申请流程（企业类型）：[https://kf.qq.com/faq/161220Brem2Q161220uUjERB.html](https://kf.qq.com/faq/161220Brem2Q161220uUjERB.html)
 
 ## 注册商户号
 
-[选择微信支付对应支付场景](https://pay.weixin.qq.com/static/applyment_guide/applyment_index.shtml)
+选择微信支付对应支付场景：[https://pay.weixin.qq.com/static/applyment_guide/applyment_index.shtml](https://pay.weixin.qq.com/static/applyment_guide/applyment_index.shtml)
 
 ![](https://img.sherry4869.com/blog/it/java/intermediate/pay/weixin/payment-guidelines/img_3.png)
 
@@ -61,19 +66,19 @@ H5 支付是指商户在微信客户端外的移动端网页展示商品或服�
 
 微信支付交易发起依赖于公众号、小程序、移动应用（即APPID）与商户号（即MCHID）的绑定关系，因此商户在完成签约后，需要确认当前商户号同AppID的绑定关系，方可使用
 
-[商家商户号与AppID账号关联管理](https://kf.qq.com/faq/1801116VJfua1801113QVNVz.html)
+商家商户号与AppID账号关联管理：[https://kf.qq.com/faq/1801116VJfua1801113QVNVz.html](https://kf.qq.com/faq/1801116VJfua1801113QVNVz.html)
 
-[商户申请接入时，如何确认绑定关系](https://kf.qq.com/faq/180910QZzmaE180910vQJfIB.html)
+商户申请接入时，如何确认绑定关系：[https://kf.qq.com/faq/180910QZzmaE180910vQJfIB.html](https://kf.qq.com/faq/180910QZzmaE180910vQJfIB.html)
 
 ![](https://img.sherry4869.com/blog/it/java/intermediate/pay/weixin/payment-guidelines/img_7.png)
 
 ## 获取开发中需要的秘钥和证书
 
-[商户平台密码安全](https://kf.qq.com/faq/161222RNRFFN161222VVb6ba.html)
+商户平台密码安全：[](https://kf.qq.com/faq/161222RNRFFN161222VVb6ba.html)
 
-[获取商户API证书](https://kf.qq.com/faq/161222NneAJf161222U7fARv.html)
+获取商户API证书：[https://kf.qq.com/faq/161222NneAJf161222U7fARv.html](https://kf.qq.com/faq/161222NneAJf161222U7fARv.html)
 
-[设置APIv3秘钥](https://kf.qq.com/faq/180830E36vyQ180830AZFZvu.html)
+设置APIv3秘钥：[https://kf.qq.com/faq/180830E36vyQ180830AZFZvu.html](https://kf.qq.com/faq/180830E36vyQ180830AZFZvu.html)
 
 管理员的操作密码就是在申请商户平台账号时设置的密码
 
@@ -93,6 +98,6 @@ APIv3 版本的所有接口都需要证书；APIv2 版本的高级接口需要�
 
 ### H5支付产品
 
-[商户申请H5支付权限需要注意哪些规则](https://kf.qq.com/faq/211124JbyEFj211124aeY77F.html)
+商户申请H5支付权限需要注意哪些规则：[https://kf.qq.com/faq/211124JbyEFj211124aeY77F.html](https://kf.qq.com/faq/211124JbyEFj211124aeY77F.html)
 
 产品对应网站域名要填写实际的商品详情页，要能体现整个业务的流程，不然可能会被拒。如果项目开发未完成，可以做一些简单的页面，要有支付的按钮和订单详情之类的

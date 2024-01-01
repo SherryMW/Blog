@@ -1,6 +1,6 @@
 ---
 category: IT
-order: 3
+order: 2
 article: false
 ---
 
@@ -242,17 +242,22 @@ public class WxPayConfig {
 
 内网穿透工具：
 
-[Ngrok](https://ngrok.com/)
+Ngrok：[https://ngrok.com](https://ngrok.com/)
 
 需要挂梯子
 
 可以使用GitHub账号关联登录，免费版每次重启服务后内网穿透映射地址都会发生改变
 
-[花生壳](https://hsk.oray.com/)
+花生壳：[https://hsk.oray.com](https://hsk.oray.com/)
+
 - 关注服务号绑定手机号码注册，设置登录密码
+
 - 为了响应《互联网域名管理办法》，通过6元支付凭证对体验版用户进行HTTPS网站认证，以配合公安部门对涉黄、涉非、私服等违法行为的打击
+
 - 实名认证（上传身份证正反面 + 人脸识别）
+
 - 配置内网穿透映射 [花生壳域名诊断不同情况的处理办法](https://service.oray.com/question/5901.html) 若按照官方文档方法排查问题未得到解决试试关闭防火墙，或者电话联系在线客服
+
 - 创建应用后内网穿透映射地址不会改变
 
 ## Native支付
@@ -263,9 +268,9 @@ public class WxPayConfig {
 
 商户调用Native支付下单接口，微信支付系统后台返回二维码链接参数`code_url`，商户后台系统将`code_url`参数生成二维码图片，用户使用微信客户端扫码后发起支付，`code_url`有效期为2小时，过期后扫码不能再发起支付
 
-[Native支付开发指引](https://pay.weixin.qq.com/wiki/doc/apiv3/open/pay/chapter2_7_2.shtml)
+Native支付开发指引：[https://pay.weixin.qq.com/wiki/doc/apiv3/open/pay/chapter2_7_2.shtml](https://pay.weixin.qq.com/wiki/doc/apiv3/open/pay/chapter2_7_2.shtml)
 
-[Native下单API](https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_4_1.shtml)
+Native下单API：[https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_4_1.shtml](https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_4_1.shtml)
 
 商户后台下单接口，响应二维码链接和订单号码给商户前台
 
@@ -376,7 +381,7 @@ logging:
     root: debug
 ```
 
-[签名生成](https://pay.weixin.qq.com/wiki/doc/apiv3/wechatpay/wechatpay4_0.shtml)
+签名生成：[https://pay.weixin.qq.com/wiki/doc/apiv3/wechatpay/wechatpay4_0.shtml](https://pay.weixin.qq.com/wiki/doc/apiv3/wechatpay/wechatpay4_0.shtml)
 
 **构造签名串：**
 
@@ -449,32 +454,34 @@ http-outgoing-2 >> Authorization: WECHATPAY2-SHA256-RSA2048 mchid="1558950191",n
 
 ::: details 验证应答签名流程
 
-[获取平台证书列表](https://pay.weixin.qq.com/wiki/doc/apiv3/apis/wechatpay5_1.shtml)
+获取平台证书列表：[https://pay.weixin.qq.com/wiki/doc/apiv3/apis/wechatpay5_1.shtml](https://pay.weixin.qq.com/wiki/doc/apiv3/apis/wechatpay5_1.shtml)
 
 增加需要自动更新平台证书的商户信息
 
-引用：com.wechat.pay.contrib.apache.httpclient.cert.CertificatesManager#putMerchant
+引用：`com.wechat.pay.contrib.apache.httpclient.cert.CertificatesManager#putMerchant`
 
 下载和更新平台证书
 
-引用：com.wechat.pay.contrib.apache.httpclient.cert.CertificatesManager#downloadAndUpdateCert
+引用：`com.wechat.pay.contrib.apache.httpclient.cert.CertificatesManager#downloadAndUpdateCert`
 
 获取商户号为merchantId的验签器
 
-引用：com.wechat.pay.contrib.apache.httpclient.cert.CertificatesManager#getVerifier
+引用：`com.wechat.pay.contrib.apache.httpclient.cert.CertificatesManager#getVerifier`
 
-[验证签名](https://pay.weixin.qq.com/wiki/doc/apiv3/wechatpay/wechatpay4_1.shtml)
+验证签名：[https://pay.weixin.qq.com/wiki/doc/apiv3/wechatpay/wechatpay4_1.shtml](https://pay.weixin.qq.com/wiki/doc/apiv3/wechatpay/wechatpay4_1.shtml)
 
-引用：com.wechat.pay.contrib.apache.httpclient.auth.WechatPay2Validator#validate
+引用：`com.wechat.pay.contrib.apache.httpclient.auth.WechatPay2Validator#validate`
 
 **构造验签名串**
 
-引用：com.wechat.pay.contrib.apache.httpclient.auth.WechatPay2Validator#buildMessage
+引用：`com.wechat.pay.contrib.apache.httpclient.auth.WechatPay2Validator#buildMessage`
 
 首先，商户先从应答中获取以下信息
 
 - HTTP头 Wechatpay-Timestamp 中的应答时间戳
+
 - HTTP头 Wechatpay-Nonce 中的应答随机串
+
 - 应答主体（response Body），需要按照接口返回的顺序进行验签，错误的顺序将导致验签失败
 
 Wechatpay-Timestamp: 1674370324  
@@ -483,7 +490,7 @@ response Body：{"code_url":"weixin://wxpay/bizpayurl?pr=PlRzPDvzz"}
 
 **获取应答签名**
 
-String signature = response.getFirstHeader(WECHAT_PAY_SIGNATURE).getValue();
+`String signature = response.getFirstHeader(WECHAT_PAY_SIGNATURE).getValue();`
 
 微信支付的应答签名通过HTTP头 Wechatpay-Signature 传递
 ```text
@@ -492,9 +499,9 @@ org.apache.http.headers: http-outgoing-2 << Wechatpay-Signature: OxSz8rXwYO8pLWK
 
 **验证签名**
 
-引用：com.wechat.pay.contrib.apache.httpclient.auth.CertificatesVerifier#verify(java.security.cert.X509Certificate, byte[], java.lang.String)
+引用：`com.wechat.pay.contrib.apache.httpclient.auth.CertificatesVerifier#verify(java.security.cert.X509Certificate, byte[], java.lang.String)`
 
-sun.security.rsa.RSASignature#engineVerify
+`sun.security.rsa.RSASignature#engineVerify`
 
 ```text
 protected boolean engineVerify(byte[] var1) throws SignatureException {
@@ -523,9 +530,10 @@ protected boolean engineVerify(byte[] var1) throws SignatureException {
 
 微信支付通过支付通知接口将用户支付成功消息通知给商户
 
-[支付通知API](https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_4_5.shtml)
+支付通知API：[https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_4_5.shtml](https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_4_5.shtml)
 
-支付通知的完整请求参数示例
+支付通知的完整请求参数示例：
+
 ```json
 {
   "id": "c0bb3e59-a165-5927-89bc-c0d1709cb415",
@@ -543,9 +551,10 @@ protected boolean engineVerify(byte[] var1) throws SignatureException {
 }
 ```
 
-支付通知接口
+支付通知接口：
 
 wechatpay-apache-httpclient版本 = 0.3.0
+
 ```java
 @CrossOrigin
 @RestController
@@ -595,7 +604,7 @@ public class WxPayController {
 }
 ```
 
-支付通知验签，参考 com.wechat.pay.contrib.apache.httpclient.auth.WechatPay2Validator
+支付通知验签，参考 `com.wechat.pay.contrib.apache.httpclient.auth.WechatPay2Validator`
 ```java
 public class WechatPay2ValidatorForRequest {
 
@@ -672,7 +681,8 @@ public class WechatPay2ValidatorForRequest {
 }
 ```
 
-处理订单
+处理订单：
+
 ```java
 @Service
 @Slf4j
@@ -730,7 +740,8 @@ public class WxPayServiceImpl implements WxPayService {
 }
 ```
 
-处理订单时解密支付通知对称的加密密文
+处理订单时解密支付通知对称的加密密文：
+
 ```java
 public class WxPayServiceImpl implements WxPayService {
     
@@ -762,6 +773,7 @@ public class WxPayServiceImpl implements WxPayService {
 ```
 
 wechatpay-apache-httpclient版本 >= 0.4.2
+
 ```java
 @CrossOrigin
 @RestController
@@ -828,7 +840,7 @@ public class WxPayController {
 
 ### 查询订单
 
-[查询订单API](https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_4_2.shtml)
+查询订单API：[https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_4_2.shtml](https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_4_2.shtml)
 
 ```java
 @Service
@@ -854,7 +866,7 @@ public class WxPayServiceImpl implements WxPayService {
 
 ### 关闭订单
 
-[关闭订单API](https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_4_3.shtml)
+关闭订单API：[https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_4_3.shtml](https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_4_3.shtml)
 
 ```java
 @Service
@@ -916,7 +928,7 @@ public class WxPayServiceImpl implements WxPayService {
 
 ### 申请退款
 
-[申请退款API](https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_4_9.shtml)
+申请退款API：[https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_4_9.shtml](https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_4_9.shtml)
 
 ```java
 @Service
@@ -990,7 +1002,7 @@ public class WxPayServiceImpl implements WxPayService {
 
 ### 查询单笔退款
 
-[查询单笔退款API](https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_4_10.shtml)
+查询单笔退款API：[https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_4_10.shtml](https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_4_10.shtml)
 
 ```java
 @Service
@@ -1033,7 +1045,7 @@ public class WxPayServiceImpl implements WxPayService {
 
 ### 退款结果通知
 
-[退款结果通知API](https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_4_11.shtml)
+退款结果通知API：[https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_4_11.shtml](https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_4_11.shtml)
 
 ```java
 @CrossOrigin
@@ -1105,7 +1117,8 @@ public class WxPayController {
 }
 ```
 
-处理退款单
+处理退款单：
+
 ```java
 @Service
 @Slf4j
@@ -1150,9 +1163,9 @@ public class WxPayServiceImpl implements WxPayService {
 
 ### 申请交易账单/申请资金账单
 
-[申请交易账单API](https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_4_6.shtml)
+申请交易账单API：[https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_4_6.shtml](https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_4_6.shtml)
 
-[申请资金账单API](https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_4_7.shtml)
+申请资金账单API：[https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_4_7.shtml](https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_4_7.shtml)
 
 ```java
 @Service
@@ -1205,7 +1218,7 @@ public class WxPayServiceImpl implements WxPayService {
 
 ### 下载账单
 
-[下载账单API](https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_4_8.shtml)
+下载账单API：[https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_4_8.shtml](https://pay.weixin.qq.com/wiki/doc/apiv3/apis/chapter3_4_8.shtml)
 
 ```java
 @Configuration

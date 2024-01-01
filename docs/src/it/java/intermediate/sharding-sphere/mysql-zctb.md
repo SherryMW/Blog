@@ -1,7 +1,6 @@
 ---
 category: IT
-tag:
-  - 数据库
+order: 2
 article: false
 ---
 
@@ -13,7 +12,7 @@ MySQL 的主从同步和复制是一个异步的过程，底层是基于 MySQL �
 
 在 MySQL 8.0 版本中，主从同步和复制的配置方式有所变化，主要是使用了新的用户角色 replication_applier 和 replication_admin，以及新的密码验证插件 caching_sha2_password
 
-![MySQL 主从同步原理](https://img.sherry4869.com/blog/it/apache/sharding-sphere/zctb/img.png)
+![MySQL 主从同步原理](https://img.sherry4869.com/blog/it/java/intermediate/sharding-sphere/zctb/img.png)
 
 ::: info
 [查看当前 MySQL 最新下载版本](https://dev.mysql.com/downloads/mysql/)
@@ -177,7 +176,7 @@ netstat -tunlp | grep 3307
    - 如果想让新的 binlog 格式永久生效，还需要在 my.cnf 文件中设置 binlog_format 参数，并重启 MySQL 服务
    :::
    
-   ![binlog-ignore-db 和 binlog-do-db 的优先级](https://img.sherry4869.com/blog/it/apache/sharding-sphere/zctb/img_1.png)
+   ![binlog-ignore-db 和 binlog-do-db 的优先级](https://img.sherry4869.com/blog/it/java/intermediate/sharding-sphere/zctb/img_1.png)
 
 3. 连接 MySQL 主服务器 Master
 

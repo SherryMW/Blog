@@ -1,8 +1,6 @@
 ---
 category: IT
-tag:
-  - Java
-  - Apache
+order: 4
 article: false
 ---
 
@@ -16,7 +14,7 @@ ShardingSphere-Proxy 定位为透明化的数据库代理端，通过实现数�
 
 - 适用于任何兼容 MySQL/PostgreSQL 协议的的客户端，如：MySQL Command Client, MySQL Workbench, Navicat 等
 
-![](https://img.sherry4869.com/blog/it/apache/sharding-sphere/proxy/img.png)
+![](https://img.sherry4869.com/blog/it/java/intermediate/sharding-sphere/proxy/img.png)
 
 ## 获取方式
 
@@ -165,11 +163,11 @@ apache/shardingsphere-proxy:5.1.2
 
 ## 读写分离
 
-服务器准备：参考 [一主多从配置](/it/apache/sharding-sphere/mysql-zctb/#一主多从)
+服务器准备：参考 [一主多从配置](/it/java/intermediate/sharding-sphere/mysql-zctb/#一主多从)
 
 ### 代理服务器访问实际数据源
 
-![](https://img.sherry4869.com/blog/it/apache/sharding-sphere/proxy/img_1.png)
+![](https://img.sherry4869.com/blog/it/java/intermediate/sharding-sphere/proxy/img_1.png)
 
 1. 新建配置文件
 
@@ -326,7 +324,7 @@ Caused by: java.net.ConnectException: Connection refused
 
 从应用程序中访问 ShardingSphere-Proxy 代理服务器
 
-![](https://img.sherry4869.com/blog/it/apache/sharding-sphere/proxy/img_2.png)
+![](https://img.sherry4869.com/blog/it/java/intermediate/sharding-sphere/proxy/img_2.png)
 
 #### 依赖
 
@@ -489,7 +487,7 @@ INFO ShardingSphere-SQL - Actual SQL: read_ds_1 ::: SELECT  id,uname  FROM t_use
 
 ## 垂直分片
 
-服务器准备：参考 [垂直分片服务器配置](/it/apache/sharding-sphere/jdbc/#垂直分片)
+服务器准备：参考 [垂直分片服务器配置](/it/java/intermediate/sharding-sphere/jdbc/#垂直分片)
 
 1. 新建配置文件
 
@@ -578,7 +576,7 @@ INFO ShardingSphere-SQL - Actual SQL: read_ds_1 ::: SELECT  id,uname  FROM t_use
    
 ## 水平分片
 
-服务器准备：参考 [水平分片服务器配置](/it/apache/sharding-sphere/jdbc/#水平分片)
+服务器准备：参考 [水平分片服务器配置](/it/java/intermediate/sharding-sphere/jdbc/#水平分片)
 
 1. 修改配置文件
 

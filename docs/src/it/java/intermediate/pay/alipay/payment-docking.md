@@ -24,7 +24,7 @@ CSR 文件：CSR 即证书签名请求（Certificate Signing Request），CSR �
 
 ## 电脑网站支付
 
-[接入准备](https://opendocs.alipay.com/open/270/01didh)
+接入准备：[https://opendocs.alipay.com/open/270/01didh](https://opendocs.alipay.com/open/270/01didh)
 
 ### 引入支付参数
 
@@ -59,7 +59,7 @@ alipay.notify-url=https://a863-180-174-204-169.ngrok.io/api/ali-pay/trade/notify
 
 ### 引入服务端 SDK
 
-[开发工具包（SDK）下载](https://opendocs.alipay.com/open/02nk0x)
+开发工具包（SDK）下载：[https://opendocs.alipay.com/open/02nk0x](https://opendocs.alipay.com/open/02nk0x)
 
 #### 引入依赖
 
@@ -109,13 +109,13 @@ public class AlipayClientConfig {
 }
 ```
 
-[电脑网站支付快速接入](https://opendocs.alipay.com/open/270/105899)
+电脑网站支付快速接入：[https://opendocs.alipay.com/open/270/105899](https://opendocs.alipay.com/open/270/105899)
 
 ![支付流程时序图](https://img.sherry4869.com/blog/it/java/intermediate/pay/alipay/payment-docking/img.png)
 
 ### 统一收单下单并支付页面接口
 
-[API 文档](https://opendocs.alipay.com/open/028r8t?scene=22)
+API：[https://opendocs.alipay.com/open/028r8t?scene=22](https://opendocs.alipay.com/open/028r8t?scene=22)
 
 ```java
 @CrossOrigin
@@ -231,7 +231,7 @@ public class AliPayServiceImpl implements AliPayService {
 
 如果跳转的界面出现“支付存在钓鱼风险！防钓鱼网站方法”的警告提示，关闭浏览器所有窗口，重新打开支付页面窗口即可
 
-[电脑网站支付常见问题](https://opendocs.alipay.com/support/01rfvm)
+电脑网站支付常见问题：[https://opendocs.alipay.com/support/01rfvm](https://opendocs.alipay.com/support/01rfvm)
 
 ![](https://img.sherry4869.com/blog/it/java/intermediate/pay/alipay/payment-docking/img_1.png)
 
@@ -247,7 +247,7 @@ public class AliPayServiceImpl implements AliPayService {
 
 ### 支付异步通知回调
 
-[API 文档](https://opendocs.alipay.com/open/270/105902)
+API：[https://opendocs.alipay.com/open/270/105902](https://opendocs.alipay.com/open/270/105902)
 
 ```java
 @CrossOrigin
@@ -374,7 +374,7 @@ public class AliPayServiceImpl implements AliPayService {
 
 ### 统一收单交易关闭接口
 
-[API 文档](https://opendocs.alipay.com/open/028wob)
+API：[https://opendocs.alipay.com/open/028wob](https://opendocs.alipay.com/open/028wob)
 
 ```java
 @CrossOrigin
@@ -451,7 +451,7 @@ public class AliPayServiceImpl implements AliPayService {
 
 ### 统一收单交易查询
 
-[API 文档](https://opendocs.alipay.com/open/028woa?scene=common)
+API：[https://opendocs.alipay.com/open/028woa?scene=common](https://opendocs.alipay.com/open/028woa?scene=common)
 
 ```java
 @CrossOrigin
@@ -583,7 +583,7 @@ public class AliPayServiceImpl implements AliPayService {
 
 ### 统一收单交易退款接口
 
-[API 文档](https://opendocs.alipay.com/open/028sm9)
+API：[https://opendocs.alipay.com/open/028sm9](https://opendocs.alipay.com/open/028sm9)
 
 ```java
 @CrossOrigin
@@ -657,7 +657,7 @@ public class AliPayServiceImpl implements AliPayService {
 
 ### 统一收单交易退款查询
 
-[API 文档](https://opendocs.alipay.com/open/028sma)
+API：[https://opendocs.alipay.com/open/028sma](https://opendocs.alipay.com/open/028sma)
 
 ```java
 @CrossOrigin
@@ -715,7 +715,7 @@ public class AliPayServiceImpl implements AliPayService {
 
 ### 查询对账单下载地址
 
-[API 文档](https://opendocs.alipay.com/open/028woc)
+API：[https://opendocs.alipay.com/open/028woc](https://opendocs.alipay.com/open/028woc)
 
 ```java
 @CrossOrigin

@@ -65,23 +65,32 @@ export const JavaSidebar = arraySidebar([
                 collapsible: true,
                 children: "structure"
             },
-            // {
-            //     text: "支付",
-            //     prefix: "pay/",
-            //     collapsible: true,
-            //     children: [
-            //         {
-            //             text: "微信",
-            //             prefix: "weixin/",
-            //             children: "structure"
-            //         },
-            //         {
-            //             text: "支付宝",
-            //             prefix: "alipay/",
-            //             children: "structure"
-            //         }
-            //     ]
-            // }
+            {
+                text: "Sharding Sphere",
+                prefix: "sharding-sphere/",
+                collapsible: true,
+                children: "structure"
+            },
+            {
+                text: "支付",
+                prefix: "pay/",
+                collapsible: true,
+                children: [
+                    "payment-security",
+                    {
+                        text: "微信支付",
+                        prefix: "weixin/",
+                        collapsible: true,
+                        children: "structure"
+                    },
+                    {
+                        text: "支付宝支付",
+                        prefix: "alipay/",
+                        collapsible: true,
+                        children: "structure"
+                    }
+                ]
+            }
         ]
     },
     {
