@@ -418,6 +418,7 @@ article: false
 
 - [x] 特工 [【影评】](https://www.bilibili.com/video/BV1be411g7CK/)
 - [x] 麻药王
+- [x] 暗数杀人
 
 @tab 2016
 
