@@ -42,8 +42,8 @@ export default hopeTheme({
     blog: {
         avatar: "/avatar.jpg", // 头像
         roundAvatar: true, // 是否剪裁头像为圆形形状
-        description: "过往不恋 未来不迎 <br/><br/> 上次更新：" + commitDate + "<br/><br/>更新内容：" + commitMessage, // 主页口号、座右铭或介绍语
-        // description: "上次更新：" + lastUpdate,
+        // description: "过往不恋 未来不迎 <br/><br/> 上次更新：" + commitDate + "<br/><br/>更新内容：" + commitMessage, // 主页口号、座右铭或介绍语
+        description: "上次更新：" + commitDate + " <br/><br/> 更新内容：" + commitMessage,
         intro: "", // 填写后点击头像或作者名称进入个人介绍页的界面地址
         // 主页媒体链接配置
         medias: {

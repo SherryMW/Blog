@@ -7,6 +7,4 @@ sticky: true
 
 # Java 技术栈
 
-<!-- more -->
-
 持续更新中

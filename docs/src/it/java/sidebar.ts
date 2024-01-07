@@ -60,6 +60,12 @@ export const JavaSidebar = arraySidebar([
                 children: "structure"
             },
             {
+                text: "Spring Cloud Alibaba",
+                prefix: "spring-cloud-alibaba/",
+                collapsible: true,
+                children: "structure"
+            },
+            {
                 text: "并发编程",
                 prefix: "juc/",
                 collapsible: true,
@@ -90,12 +96,25 @@ export const JavaSidebar = arraySidebar([
                         children: "structure"
                     }
                 ]
-            }
+            },
+            {
+                text: "工具",
+                prefix: "tools/",
+                collapsible: true,
+                children: "structure"
+            },
         ]
     },
     {
         text: "高级",
         prefix: "senior/",
-        children: []
+        children: [
+            {
+                text: "算法",
+                prefix: "algorithm/",
+                collapsible: true,
+                children: "structure"
+            },
+        ]
     }
 ])

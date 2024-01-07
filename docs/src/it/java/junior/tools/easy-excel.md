@@ -1347,7 +1347,7 @@ public class ExportServiceImpl implements ExportService {
             // 将生成的6个Excel文件压缩成一个zip文件，第一个参数是 List<File>，表示要打包的文件列表；第二个参数是 File，表示生成的 ZIP 文件
             FileUtil.toZip(Files.list(tempPath).map(path -> { // 使用 Files.list 方法列出指定目录 tempPath 下的所有文件和子目录的路径
                 return path.toFile(); // 使用 map 转换操作，将路径 (Path) 映射为文件 (File)。这样，我们得到了一个 File 对象的流
-                // 使用 collect 操作，将文件流收集为一个 List<File>；Paths.get 构建一个 Path 对象，表示要生成的 ZIP 文件的路径
+                // 使用 collect 操作，将文件流收集为一个 List<File>；Paths.get 构建一个 Path 对象，表示要生成的 zip 文件的路径
             }).collect(Collectors.toList()), Paths.get(zipPathStr, fileName).toFile());
 
             // Excel导出任务状态为成功并保存进Redis 30分钟

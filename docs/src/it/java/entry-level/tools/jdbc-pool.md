@@ -19,11 +19,49 @@ article: false
 
 - 事务管理：一些连接池提供了事务管理的支持，可以在事务提交或回滚时处理连接的状态。这确保了事务的一致性，并简化了开发者的工作
 
+```sql
+-- 查看 MySQL 当前最大连接数：
+SHOW VARIABLES LIKE 'max_connections';
+-- 默认最大连接数为 151，修改最大连接数
+SET GLOBAL max_connections = 1000;
+-- 重启服务 service mysql restart
+```
+
 ## HikariCP
 
 [HikariCP](https://github.com/brettwooldridge/HikariCP) 是一个轻量级、高性能的连接池。它被认为是当前性能最好地连接池之一，具有低延迟和高吞吐量的特点。HikariCP 的配置简单，且在大多数场景下表现优秀
 
-待更新
+```properties
+# 数据源类型为 HikariCP
+spring.datasource.type=com.zaxxer.hikari.HikariDataSource
+# 数据库驱动类
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+#  数据库连接 URL
+spring.datasource.url=jdbc:mysql://localhost:3306/mydatabase
+#  数据库用户名
+spring.datasource.username=root
+# 数据库密码
+spring.datasource.password=rootpassword
+##################    连接池配置    ##################
+# 连接超时时间，表示从连接池获取连接的最大等待时间（毫秒）
+spring.datasource.hikari.connection-timeout=60000
+# 连接校验超时时间，表示在获取连接时，等待连接校验的最大等待时间（毫秒）每隔多久去校验一次连接是否有效
+spring.datasource.hikari.validation-timeout=10000
+# 连接空闲超时时间，表示连接在连接池中空闲多久后会被回收（毫秒），超时且没有使用则被释放，默认值是10分钟
+spring.datasource.hikari.idle-timeout=60000
+# 接生命周期最大时间，表示连接在连接池中存在的最大时间（毫秒），超时且没有被使用则被释放，默认值是30分钟
+spring.datasource.hikari.max-lifetime=60000
+# 连接池的最大连接数，表示连接池中允许存在的最多连接数 当前CPU核数×2
+spring.datasource.hikari.maximum-pool-size=24
+# 连接池的最小空闲连接数，表示连接池中保持的最小连接数
+spring.datasource.hikari.minimum-idle=24
+# 是否自动提交事务
+spring.datasource.hikari.auto-commit=true
+# 用于检测连接是否有效的 SQL 查询语句
+spring.datasource.hikari.connection-test-query=select 1
+# 连接池的名称
+spring.datasource.hikari.pool-name=DataSourceHikariCP
+```
 
 ## Apache DBCP
 
@@ -72,9 +110,9 @@ article: false
 # druid 数据库配置
 spring.datasource.type=com.alibaba.druid.pool.DruidDataSource
 spring.datasource.druid.driver-class-name=com.mysql.cj.jdbc.Driver
-spring.datasource.druid.url=jdbc:mysql://localhost:3306/yourdatabase
+spring.datasource.druid.url=jdbc:mysql://localhost:3306/mydatabase
 spring.datasource.druid.username=root
-spring.datasource.druid.password=root
+spring.datasource.druid.password=rootpassword
 ##################    连接池配置    ##################
 # 连接池建立时创建的初始化连接数
 spring.datasource.druid.initial-size=5
