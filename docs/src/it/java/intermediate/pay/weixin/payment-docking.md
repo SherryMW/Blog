@@ -711,7 +711,7 @@ public class WxPayServiceImpl implements WxPayService {
         //ReentrantLock在获取锁时成功获取返回true，如果获取不到会立即返回false，而Synchronized没有获取到锁后会一直等待。如果是分布式项目则需要用分布式锁
         if (lock.tryLock()) {
             try {
-                //处理重复的通知
+                // 处理重复的通知，接口调用的幂等性：无论接口被调用多少次，产生的结果是一致的
                 OrderInfo checkOrder = orderInfoService.getOne(new LambdaQueryWrapper<OrderInfo>().eq(OrderInfo::getOrderNo, orderNo));
                 if (checkOrder != null && OrderStatus.SUCCESS.getType().equals(checkOrder.getOrderStatus())) {
                     return;
@@ -1141,7 +1141,7 @@ public class WxPayServiceImpl implements WxPayService {
         String orderNo = plainTextMap.get("out_trade_no");
         if (lock.tryLock()) {
             try {
-                //处理重复的通知
+                // 处理重复的通知，接口调用的幂等性：无论接口被调用多少次，产生的结果是一致的
                 OrderInfo checkOrder = orderInfoService.getOne(new LambdaQueryWrapper<OrderInfo>().eq(OrderInfo::getOrderNo, orderNo));
                 if (!OrderStatus.REFUND_PROCESSING.getType().equals(checkOrder.getOrderStatus())) {
                     return;

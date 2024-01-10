@@ -217,7 +217,8 @@ article: false
 
 - 示例
 
-    ```vue 方法处理函数 -->
+    ```vue 
+    <!-- 方法处理函数 -->
     
     <button v-on:click="doThis"></button>
     

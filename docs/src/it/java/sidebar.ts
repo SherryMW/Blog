@@ -42,6 +42,12 @@ export const JavaSidebar = arraySidebar([
                 children: "structure"
             },
             {
+                text: "锁",
+                prefix: "lock/",
+                collapsible: true,
+                children: "structure"
+            },
+            {
                 text: "工具",
                 prefix: "tools/",
                 collapsible: true,
@@ -66,18 +72,6 @@ export const JavaSidebar = arraySidebar([
                 children: "structure"
             },
             {
-                text: "并发编程",
-                prefix: "juc/",
-                collapsible: true,
-                children: "structure"
-            },
-            {
-                text: "Sharding Sphere",
-                prefix: "sharding-sphere/",
-                collapsible: true,
-                children: "structure"
-            },
-            {
                 text: "支付",
                 prefix: "pay/",
                 collapsible: true,
@@ -98,6 +92,50 @@ export const JavaSidebar = arraySidebar([
                 ]
             },
             {
+                text: "并发编程",
+                prefix: "juc/",
+                collapsible: true,
+                children: "structure"
+            },
+            {
+                text: "消息队列",
+                prefix: "mq/",
+                collapsible: true,
+                children: [
+                    "README",
+                    {
+                        text: "ActiveMQ",
+                        prefix: "activemq/",
+                        collapsible: true,
+                        children: "structure"
+                    },
+                    {
+                        text: "Kafka",
+                        prefix: "kafka/",
+                        collapsible: true,
+                        children: "structure"
+                    },
+                    {
+                        text: "RabbitMQ",
+                        prefix: "rabbitmq/",
+                        collapsible: true,
+                        children: "structure"
+                    },
+                    {
+                        text: "RocketMQ",
+                        prefix: "rocketmq/",
+                        collapsible: true,
+                        children: "structure"
+                    },
+                ]
+            },
+            {
+                text: "Sharding Sphere",
+                prefix: "sharding-sphere/",
+                collapsible: true,
+                children: "structure"
+            },
+            {
                 text: "工具",
                 prefix: "tools/",
                 collapsible: true,
@@ -116,5 +154,6 @@ export const JavaSidebar = arraySidebar([
                 children: "structure"
             },
         ]
-    }
+    },
+    "interview"
 ])

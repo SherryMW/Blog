@@ -5,6 +5,8 @@ article: false
 
 # Resilience4j
 
+官网：[https://resilience4j.readme.io](https://resilience4j.readme.io/)
+
 Resilience4j 是一款专注于帮助 Java 应用程序实现弹性（resilience）和容错性（fault tolerance）的轻量级库。它提供了一组模块，涵盖了常见的弹性模式，包括重试、断路器（Circuit Breaker）、限流、超时控制等，帮助开发者构建更具弹性和容错性的分布式系统
 
 以下是 Resilience4j 的一些主要特点和模块：

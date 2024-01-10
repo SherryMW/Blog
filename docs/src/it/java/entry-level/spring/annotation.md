@@ -224,6 +224,30 @@ public class AsyncConfig {
 
 参考：[封装异常处理类](response-data-result.md#封装异常处理类)
 
+## EnableScheduling
+
+`@EnableScheduling` 是 Spring 中用于用于启用计划任务功能的注解，允许在应用程序中定义定时任务，通常与 [@Scheduled](#scheduled) 注解一起使用
+
+```java {10}
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableAsync;
+import org.springframework.scheduling.annotation.EnableScheduling;
+
+@SpringBootApplication
+@MapperScan("com.mw.mapper")
+@EnableAsync
+@EnableScheduling
+public class AdminApiApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(AdminApiApplication.class, args);
+    }
+
+}
+```
+
 ## InitBinder
 
 待更新
@@ -401,7 +425,83 @@ public class RestResponseBodyAdvice implements ResponseBodyAdvice {
 
 ## Scheduled
 
-待更新
+`@Scheduled` 注解表示这是一个定时任务方法，它使用 `cron` 表达式定义了任务的执行时间规则
+
+```java {10}
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableAsync;
+import org.springframework.scheduling.annotation.EnableScheduling;
+
+@SpringBootApplication
+@MapperScan("com.mw.mapper")
+@EnableAsync
+@EnableScheduling // @EnableScheduling 是 Spring 中用于用于启用 Spring 的计划任务功能的注解，允许在应用程序中定义定时任务
+public class AdminApiApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(AdminApiApplication.class, args);
+    }
+
+}
+```
+
+```java
+import com.mw.common.constant.Constant;
+import com.mw.config.SystemConfig;
+import com.mw.utils.RedisUtil;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Component;
+
+import javax.annotation.Resource;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.text.MessageFormat;
+
+/**
+ * 定时删除临时文件
+ */
+@Component // @Component 注解将 ScheduleService 类标记为 Spring 组件，使其成为 Spring 管理的 Bean
+@Slf4j // @Slf4j 注解是 Lombok 提供的注解，用于生成日志变量 log
+public class ScheduleService {
+
+    @Resource
+    private SystemConfig systemConfig;
+
+    @Resource
+    private RedisUtil redisUtil;
+
+    /**
+     * 清理临时目录下的 Excel 文件
+     */
+    @Scheduled(cron = "0 */10 * * * ?") // @Scheduled 注解表示这是一个定时任务方法，它使用 cron 表达式定义了任务的执行时间规则。这里的表达式表示每隔 10 分钟执行一次
+    private void cleanExcelTemp() {
+        log.info("start run cleanExcelTemp schedule");
+        Path path = Paths.get(MessageFormat.format("{0}{1}{2}", systemConfig.getLocalPath(), systemConfig.getTempPath(), systemConfig.getExcel())); // 使用 Paths.get 创建了临时目录的 Path 对象，路径通过 systemConfig 对象获取配置
+        try {
+            Files.list(path).forEach(pathFile -> { // 使用 Files.list(path) 列出目录下的所有文件，对每个文件进行处理
+                // 提取文件名和任务 ID。如果文件名中包含有扩展名且对应的任务 ID 在 Redis 中不存在（下载地址过期），就删除该文件
+                String fileName = pathFile.getFileName().toString();
+                String taskId = fileName.substring(0, fileName.lastIndexOf("."));
+                if (fileName.contains(".") && !redisUtil.hasKey(Constant.EXCEL_OPERATION_TASK_KEY + taskId)) {
+                    try {
+                        Files.deleteIfExists(pathFile);
+                        log.info("delete filename: {}", fileName);
+                    } catch (IOException e) {
+                        log.error("run cleanExcelTemp schedule delete file error: {}", e);
+                    }
+                }
+            });
+        } catch (IOException e) {
+            log.error("run cleanExcelTemp schedule error: {}", e);
+        }
+    }
+}
+```
 
 ## Transactional
 
