@@ -70,7 +70,7 @@ public class ActivityServiceImpl extends ActivityService{
                 /**
                  * 判断 Redis 中是否存在当前日期和权益券ID构成的键
                  * 如果不存在，说明是当天第一次操作该权益券，需要将初始库存数量 lockStock 存入 Redis，并设置有效期为当前时间到第二天早上8点59分59秒之间的秒数差
-                 * 如果 Redis 中已经存在当前日期和权益券ID构成的键，说明之前已经有过操作，需要从 Redis 中获取当前库存量
+                 * 如果 Redis 中已经存在当前日期和权益券ID构成的键，说明之前已经有过操作，需要从 Redis 中获取当前奖品的库存量
                  */
                 if (!redisTemplate.hasKey(redisKey + LocalDate.now() + rightsId)) {
                     redisTemplate.opsForValue().set(redisKey + LocalDate.now() + rightsId, lockStock, Duration.ofSeconds(ChronoUnit.SECONDS.between(currentDateTime, midnight)));

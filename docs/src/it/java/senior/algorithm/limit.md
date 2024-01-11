@@ -15,49 +15,6 @@ article: false
 
 - 实现：每隔一段时间往桶中添加一定数量的令牌，请求时尝试获取令牌，如果获取成功则处理请求，否则限流
 
-```java
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.core.StringRedisTemplate;
-import org.springframework.stereotype.Component;
-
-@Component
-public class DistributedRateLimiter {
-
-    @Autowired
-    private StringRedisTemplate redisTemplate;
-
-    private static final String BUCKET_KEY = "bucket";
-    private static final long RATE = 10; // 每秒生成10个令牌
-    private static final long CAPACITY = 20; // 桶的容量
-
-    public boolean tryAcquire() {
-        long now = System.currentTimeMillis();
-        String lastTokenTime = redisTemplate.opsForValue().get(BUCKET_KEY);
-
-        long tokens;
-        if (lastTokenTime == null) {
-            tokens = CAPACITY;
-        } else {
-            long elapsedTime = now - Long.parseLong(lastTokenTime);
-            tokens = Math.min(CAPACITY, RATE * (elapsedTime / 1000));
-        }
-
-        if (tokens < 1) {
-            // 桶中没有足够的令牌
-            return false;
-        } else {
-            // 消耗一个令牌
-            redisTemplate.opsForValue().set(BUCKET_KEY, String.valueOf(now));
-            return true;
-        }
-    }
-}
-```
-
-在上述代码中，使用 Redis 作为分布式环境下的共享存储，通过 `StringRedisTemplate` 进行对 Redis 的操作。每个请求到来时，先检查桶中的令牌数量，如果令牌数量足够，则允许通过，并更新桶中的令牌信息
-
-请注意，这只是一个简单的示例，实际项目中需要考虑更多因素，如并发控制、一致性、性能等。不同的限流算法和实现方式也会有所不同
-
 ## 漏桶算法（Leaky Bucket）
 
 - 原理：漏桶算法将请求以固定速率处理，多余的请求将被放入一个漏桶中，当漏桶满时，多余的请求会被限流

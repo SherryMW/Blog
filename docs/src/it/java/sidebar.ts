@@ -42,12 +42,6 @@ export const JavaSidebar = arraySidebar([
                 children: "structure"
             },
             {
-                text: "锁",
-                prefix: "lock/",
-                collapsible: true,
-                children: "structure"
-            },
-            {
                 text: "工具",
                 prefix: "tools/",
                 collapsible: true,
@@ -95,7 +89,14 @@ export const JavaSidebar = arraySidebar([
                 text: "并发编程",
                 prefix: "juc/",
                 collapsible: true,
-                children: "structure"
+                children: [
+                    {
+                        text: "锁",
+                        prefix: "lock/",
+                        collapsible: true,
+                        children: "structure"
+                    },
+                ]
             },
             {
                 text: "消息队列",
