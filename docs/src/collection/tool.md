@@ -63,6 +63,22 @@ article: false
 
 ::: projects
 ```yaml
+- icon: https://img.sherry4869.com/blog/collection/tools/processon.svg
+  name: ProcessOn
+  desc: 免费在线流程图思维导图
+  link: https://www.processon.com/
+
+- icon: https://img.sherry4869.com/blog/collection/tools/mindline.png
+  name: MindLine
+  desc: 快速高效制作思维导图工具
+  link: https://www.mindline.cn/webapp
+```
+:::
+
+---
+
+::: projects
+```yaml
 - icon: https://img.sherry4869.com/blog/collection/tools/duolingo.ico
   name: 多邻国
   desc: 好玩高效的英语学习途径
