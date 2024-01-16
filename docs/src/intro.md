@@ -4,16 +4,13 @@ article: false
 
 # 关于
 
-[//]: # (## 关于我)
+## 关于我
 
-[//]: # ()
-[//]: # (熬夜协会常任理事)
+熬夜协会常任理事
 
-[//]: # ()
-[//]: # (专注减肥协会会长)
+专注减肥协会会长
 
-[//]: # ()
-[//]: # (退堂鼓一级表演艺术家)
+退堂鼓一级表演艺术家
 
 ## 关于博客
 
@@ -21,8 +18,6 @@ article: false
 
 部署：[Vercel](http://vercel.com/)
 
-[//]: # (搜索插件：[Algolia]&#40;https://crawler.algolia.com/admin/crawlers&#41;)
-
-搜索插件：[plugin-search-pro](https://plugin-search-pro.vuejs.press/zh/)
+搜索插件：[plugin-search-pro](https://plugin-search-pro.vuejs.press/zh/) / [Algolia](https://crawler.algolia.com/admin/crawlers)
 
 评论插件：[Waline](https://waline.js.org/)
