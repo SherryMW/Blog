@@ -95,6 +95,6 @@ category: IT
 
 ![](https://img.sherry4869.com/blog/it/project/ec/img_9.png)
 
-![](https://img.sherry4869.com/blog/it/project/ec/img_10.png)
+![支付成功](https://img.sherry4869.com/blog/it/project/ec/img_10.png)
 
-![](https://img.sherry4869.com/blog/it/project/ec/img_11.png)
+![支付失败](https://img.sherry4869.com/blog/it/project/ec/img_11.png)
