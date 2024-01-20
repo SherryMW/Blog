@@ -7,7 +7,7 @@ article: false
 
 ## 炳胜品味
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00140UVX2" target="_blank">冼村路2号首府大厦1-4层</a>
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00140UVX2" target="_blank">冼村路2号博雅首府大厦1-4层</a>
 
 - [ ] 首创灌汤烧鹅
 - [ ] 水晶鸡

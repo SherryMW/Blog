@@ -6,6 +6,15 @@ article: false
 
 ::: projects
 ```yaml
+- icon: https://img.sherry4869.com/blog/collection/tools/itspgx.png
+  name: IT视频共享
+  desc: 打造一流IT分享社区，整合全网优质资源
+  link: https://www.itspgx.com/
+```
+:::
+
+::: projects
+```yaml
 - icon: https://img.sherry4869.com/blog/collection/tools/leetcode.ico
   name: LeetCode
   desc: 全球极客挚爱的技术成长平台

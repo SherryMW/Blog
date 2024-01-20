@@ -57,8 +57,7 @@ export const renderProjects = (tokens: Token[], idx: number) => {
                 href="${withBase(project.link)}"
                 ${isFriends ? '' : 'rel="noopener noreferrer"'}
                 target="_blank">
-                <img src="${withBase(project.icon)}"
-                  alt="${project.name}" class="vp-project-image" />
+                <img src="${withBase(project.icon)}" alt="${project.name}" class="vp-project-image" />
                 <div class="vp-project-name">${project.name}</div>
                 <div class="vp-project-desc">${project.desc ? project.desc : ''}</div>
               </a>

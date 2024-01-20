@@ -31,6 +31,30 @@ article: false
 - [x] 明炉香滑靓葡挞（推荐）
 - [x] 木瓜炖雪蛤（推荐）
 
+## 小炳胜
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFIWT9NM" target="_blank">北京路168号北京路天河城A区6层B605号</a>
+
+::: tabs
+
+@tab 秘制黑叉烧
+
+![](https://img.sherry4869.com/blog/life/food/guangzhou/yx/bjl/xbs/img.jpg)
+
+@tab 秘制脆皮灌汤烧鹅
+
+![](https://img.sherry4869.com/blog/life/food/guangzhou/yx/bjl/xbs/img_2.jpg)
+
+@tab 招积茄子
+
+![](https://img.sherry4869.com/blog/life/food/guangzhou/yx/bjl/xbs/img_3.jpg)
+
+:::
+
+- [x] 秘制黑叉烧
+- [x] 秘制脆皮灌汤烧鹅
+- [x] 招积茄子
+
 ## 仁信老铺甜品
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFFPAIUH" target="_blank">北京路362号</a>
