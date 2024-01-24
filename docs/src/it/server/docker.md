@@ -1,6 +1,6 @@
 ---
-date: 2022-08-28
 category: IT
+article: false
 ---
 
 # Docker

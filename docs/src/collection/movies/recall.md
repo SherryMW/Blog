@@ -268,6 +268,7 @@ article: false
 @tab 1990
 
 - [ ] 阿飞正传
+- [x] 咖喱辣椒 [【影评】](https://www.bilibili.com/video/BV1yC4y1Y7q3/)
 - [x] 赌侠
 - [x] 赌圣
 
@@ -430,6 +431,10 @@ article: false
 - [x] 麻药王
 - [x] 暗数杀人
 
+@tab 2017
+
+- [x] 骗子
+
 @tab 2016
 
 - [x] 小姐
@@ -450,6 +455,7 @@ article: false
 - [x] 新世界
 - [x] 恐怖直播
 - [x] 蒙太奇
+- [x] 回家的路
 
 @tab 2012
 

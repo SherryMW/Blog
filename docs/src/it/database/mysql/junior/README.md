@@ -1,8 +1,8 @@
 ---
-date: 2023-03-28
 category: IT
 shortTitle: 简介
 tag: Database
+article: false
 ---
 
 # MySQL

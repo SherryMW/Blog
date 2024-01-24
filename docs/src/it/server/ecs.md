@@ -9,7 +9,7 @@ category: IT
 
 <!-- more -->
 
-[阿里云云服务器 ECS 产品文档](https://help.aliyun.com/product/25365.html)
+阿里云云服务器 ECS 产品文档：[https://help.aliyun.com/zh/ecs](https://help.aliyun.com/zh/ecs)
 
 ## 购买云服务器 ECS
 
@@ -23,25 +23,25 @@ category: IT
 
 访问购买界面后根据个人需求购买合适的云服务器ESC（下图为参考配置，可点击放大查看）
 
-[Alibaba Cloud Linux镜像概述](https://help.aliyun.com/document_detail/111881.html)
+[Alibaba Cloud Linux 产品概述](https://help.aliyun.com/zh/alinux/product-overview/alibaba-cloud-linux-overview)
 
 ![](https://img.sherry4869.com/blog/it/server/ecs/img_2.png)
 
 ---
 
-[升降配方式](https://help.aliyun.com/document_detail/25437.html) 创建实例后，如果当前实例配置无法满足你的业务需求，你可以修改实例规格（vCPU和内存）、公网带宽配置和数据盘计费方式  
+[升降配方式概述](https://help.aliyun.com/zh/ecs/user-guide/overview-of-instance-configuration-changes) 创建实例后，如果当前实例配置无法满足你的业务需求，你可以修改实例规格（vCPU和内存）、公网带宽配置和数据盘计费方式  
 
 ::: info
 CentOS 官方已计划停止维护 CentOS 7、CentOS 8 等 Linux 项目，如果你的操作系统后续想得到维护和技术支持，需要将 CentOS 操作系统迁移到其他Linux LTS（长期支持）发行版
 :::
 
-[迁移操作系统](https://help.aliyun.com/document_detail/438217.html) 通过 SMC 将 CentOS 7/8 操作系统平滑迁移至 Alibaba Cloud Linux 和龙蜥操作系统（Anolis OS）  
+[迁移操作系统](https://help.aliyun.com/zh/ecs/user-guide/migrate-the-operating-system-of-an-ecs-instance-1) 通过 SMC 将 CentOS 7/8 操作系统平滑迁移至 Alibaba Cloud Linux 和龙蜥操作系统（Anolis OS）  
 
-[创建一个快照](https://help.aliyun.com/document_detail/25455.html) 在回滚云盘、修改关键系统文件、更换操作系统前为了数据安全，你可以提前创建快照备份，提高操作容错率    
+[创建一个快照](https://help.aliyun.com/zh/ecs/user-guide/create-a-snapshot-of-a-disk) 在回滚云盘、修改关键系统文件、更换操作系统前为了数据安全，你可以提前创建快照备份，提高操作容错率    
 
-[更换操作系统（系统盘）](https://help.aliyun.com/document_detail/25436.html) 如果你在创建ECS实例时选择了错误的操作系统，或者在使用过程中需要改用其他操作系统，你可以为 ECS 实例更换新的操作系统  
+[更换操作系统（系统盘）](https://help.aliyun.com/zh/ecs/user-guide/replace-the-operating-system-of-an-instance) 如果你在创建ECS实例时选择了错误的操作系统，或者在使用过程中需要改用其他操作系统，你可以为 ECS 实例更换新的操作系统  
 
-访问云服务器ECS控制台->选择指定服务器实例ID访问实例详情界面->点击更换操作系统
+访问云服务器 ECS 控制台 -> 选择指定服务器实例ID访问实例详情界面 -> 点击更换操作系统
 
 ![](https://img.sherry4869.com/blog/it/server/ecs/img_5.png)
 
@@ -93,7 +93,7 @@ CentOS 官方已计划停止维护 CentOS 7、CentOS 8 等 Linux 项目，如果
 
 ![](https://img.sherry4869.com/blog/it/server/ecs/img_17.png)
 
-[添加解析记录配置详解](https://help.aliyun.com/document_detail/29725.htm?spm=a2c4g.11186623.0.0.47a55b8e8icKvj#topic-2035899)
+[添加解析记录配置详解](https://help.aliyun.com/document_detail/29725.htm)
 
 ## 网站备案
 

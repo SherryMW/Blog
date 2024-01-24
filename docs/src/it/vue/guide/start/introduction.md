@@ -1,9 +1,9 @@
 ---
-date: 2022-07-10
 category: IT
 tag: Vue
 shortTitle: 简介
 order: 1
+article: false
 ---
 
 # Vue

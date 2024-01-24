@@ -1,8 +1,8 @@
 ---
-date: 2022-07-01
 category: IT
 tag: ES
 shortTitle: 简介
+article: false
 ---
 
 # ECMAScript 6

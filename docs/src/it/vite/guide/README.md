@@ -1,8 +1,8 @@
 ---
-date: 2022-07-20
 category: IT
 tag: Vue
 shortTitle: 开始
+article: false
 ---
 
 # Vite

@@ -59,6 +59,7 @@ export default hopeTheme({
             provider: "Waline",
             serverURL: "https://waline.sherry4869.com",
         },
+        searchPro: true, // 搜索插件
         // 版权信息插件配置
         copyright: {
             author: "MW",
@@ -66,9 +67,9 @@ export default hopeTheme({
             global: true
         },
         // 注册一些可以在 Markdown 文件中使用的组件
-        components: {
-            components: ["SiteInfo"]
-        },
+        // components: {
+        //     components: []
+        // },
         // Markdown 增强功能配置
         mdEnhance: {
             tabs: true, // 选项卡,
@@ -76,7 +77,6 @@ export default hopeTheme({
             // imgSize: true, // 图片尺寸
             // imgLazyload: true, // 图片懒加载
             tasklist: true, // 任务列表
-            container: true, // 自定义容器
             echarts: true, // ECharts图表配置
         },
     },

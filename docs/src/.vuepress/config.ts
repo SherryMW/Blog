@@ -2,7 +2,6 @@ import {defineUserConfig} from "vuepress";
 import theme from "./theme.js";
 import {containerPlugin} from "@vuepress/plugin-container";
 import {renderProjects} from "./config/projects";
-import {searchProPlugin} from "vuepress-plugin-search-pro";
 
 export default defineUserConfig({
     base: "/",
@@ -10,7 +9,7 @@ export default defineUserConfig({
     title: "MW Blog",
     description: "MW Blog",
     head: [
-        ["meta", {name: "keywords", content: "MW,Sherry,Sherry4869"}],
+        ["meta", {name: "keywords", content: "Blog,MW,Sherry,Sherry4869"}],
         ["script", {}, `
         var _hmt = _hmt || [];
         (function() {
@@ -27,10 +26,7 @@ export default defineUserConfig({
                 return renderProjects(tokens, idx)
             }
         }),
-        searchProPlugin({}),
     ],
-
     theme,
-
     shouldPrefetch: false,
 });

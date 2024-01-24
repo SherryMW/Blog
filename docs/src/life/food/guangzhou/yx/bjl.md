@@ -116,7 +116,7 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFJ8JP89" target="_blank">北京路182号粤潮NEW-IN-PARK-LG-M-层LG104-M104</a>
 
-- [x] 伯牙绝铉
+- [x] 伯牙绝铉（推荐）
 - [x] 万山红金丝小种
 - [x] 玫瑰普洱
 - [x] 白雾红尘

@@ -1,5 +1,4 @@
 ---
-date: 2023-05-26
 category: IT
 tag:
   - Java

@@ -1,7 +1,7 @@
 ---
-date: 2022-07-25
 category: IT
 tag: Vue
+article: false
 ---
 
 # Pinia

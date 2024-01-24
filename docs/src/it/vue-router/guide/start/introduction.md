@@ -1,9 +1,9 @@
 ---
-date: 2022-07-15
 category: IT
 tag: Vue
 order: 1
 shortTitle: 介绍
+article: false
 ---
 
 # Vue Router

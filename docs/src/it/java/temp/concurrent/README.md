@@ -1,5 +1,4 @@
 ---
-date: 2023-06-21
 category: IT
 order: 1
 article: false

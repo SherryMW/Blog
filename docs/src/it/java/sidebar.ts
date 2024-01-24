@@ -99,7 +99,7 @@ export const JavaSidebar = arraySidebar([
                 ]
             },
             {
-                text: "消息队列",
+                text: "消息中间件",
                 prefix: "mq/",
                 collapsible: true,
                 children: [

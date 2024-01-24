@@ -1,8 +1,7 @@
 ---
-date: 2023-12-01
 category: IT
 tag: Java
-sticky: true
+article: false
 ---
 
 # Java 技术栈
