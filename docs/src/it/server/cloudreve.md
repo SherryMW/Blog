@@ -15,7 +15,7 @@ GitHub：[https://github.com/cloudreve/Cloudreve](https://github.com/cloudreve/C
 
 ## 获取 Cloudreve
 
-在 [GitHub Release](https://github.com/cloudreve/Cloudreve/releases) 页面获取已经构建打包完成的主程序。其中每个版本都提供了常见系统架构下可用的主程序，命名规则为 cloudreve_版本号_操作系统_CPU架构.tar.gz。比如普通 64 位 Linux 系统上部署 3.0.0 版本，则应该下载 cloudreve_3.0.0_linux_amd64.tar.gz
+在 [GitHub Release](https://github.com/cloudreve/Cloudreve/releases) 页面获取已经构建打包完成的主程序。其中每个版本都提供了常见系统架构下可用的主程序，命名规则为 【cloudreve_版本号_操作系统_CPU架构.tar.gz】。比如普通 64 位 Linux 系统上部署 3.0.0 版本，则应该下载 【cloudreve_3.0.0_linux_amd64.tar.gz】
 
 Linux 查看当前主机的硬件架构类型指令：
 
@@ -25,7 +25,7 @@ arch
 
 ![](https://img.sherry4869.com/blog/it/server/cloudreve/img.png)
 
-下载解压后得到 cloudreve 可执行文件
+下载解压后得到 【cloudreve】 可执行文件
 
 ## 使用宝塔部署
 
@@ -53,7 +53,7 @@ arch
     访问站点出现其他非正常界面，有可能是浏览器 Cookie 导致，需要打开浏览器设置 -> Cookie 和网站数据 -> 所有 Cookie 和站点数据，清除对应站点 Cookie
     :::
 
-4. 在网站目录下创建 cloudreve 目录，并上传之前解压好的 cloudreve 可执行文件
+4. 在网站目录下创建 cloudreve 目录，并上传之前解压好的 【cloudreve】 可执行文件
 
     ![](https://img.sherry4869.com/blog/it/server/cloudreve/img_6.png)
     
@@ -63,7 +63,7 @@ arch
 
     ![](https://img.sherry4869.com/blog/it/server/cloudreve/img_1.png)
 
-6. 添加 cloudreve 应用
+6. 添加 【cloudreve】 应用
 
     ![](https://img.sherry4869.com/blog/it/server/cloudreve/img_8.png)
     
@@ -71,11 +71,11 @@ arch
     
     ![](https://img.sherry4869.com/blog/it/server/cloudreve/img_10.png)
     
-    此时网站目录中会新增 cloudreve.db 以及 conf.ini 文件，接着暂停应用进入下一步配置
+    此时网站目录中会新增 【cloudreve.db】 以及 【conf.ini】 文件，接着暂停应用进入下一步配置
     
     ![](https://img.sherry4869.com/blog/it/server/cloudreve/img_9.png)
     
-    添加 cloudreve 数据库（可选）
+    添加 【cloudreve】 数据库（可选）
     
     ![](https://img.sherry4869.com/blog/it/server/cloudreve/img_11.png)
 
@@ -83,7 +83,7 @@ arch
     创建数据库时提示 **数据库管理密码错误** 可以先修改 root 密码后再重新创建
     :::
     
-    编辑站点目录下的 conf.ini 文件，新增以下配置项
+    编辑站点目录下的 【conf.ini】 文件，新增以下配置项
 
     ```
     [Database]
@@ -107,7 +107,7 @@ arch
 
     ![](https://img.sherry4869.com/blog/it/server/cloudreve/img_12.png)
 
-9. 在宝塔应用管理器中重新启动 cloudreve 应用。注意：如果密码不正确或忘记请在应用的日志文件里查看密码
+9. 在宝塔应用管理器中重新启动 【cloudreve】 应用。注意：如果密码不正确或忘记请在应用的日志文件里查看密码
 
     ![](https://img.sherry4869.com/blog/it/server/cloudreve/img_13.png)
 
@@ -115,13 +115,13 @@ arch
 
     ![](https://img.sherry4869.com/blog/it/server/cloudreve/img_14.png)
 
-    可以在 Cloudreve 仪表盘中的用户组选择对应角色修改初始容量
+可以在 Cloudreve 仪表盘中的用户组选择对应角色修改初始容量
 
-    ![](https://img.sherry4869.com/blog/it/server/cloudreve/img_15.png)
+![](https://img.sherry4869.com/blog/it/server/cloudreve/img_15.png)
 
-    Nginx 配置大文件上传
+Nginx 配置大文件上传
 
-    ![](https://img.sherry4869.com/blog/it/server/cloudreve/img_18.png)
+![](https://img.sherry4869.com/blog/it/server/cloudreve/img_18.png)
 
 ## 常见问题
 

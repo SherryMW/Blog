@@ -11,10 +11,18 @@ article: false
 
 ### 阁楼
 
-<div><p>剧情：<el-rate model-value="4" disabled text-color="#ff9900" show-score /></p></div>
+沉浸：<el-rate model-value="3" disabled text-color="#ff9900" show-score />
 
-<div><p>机关道具：<el-rate model-value="2" disabled text-color="#ff9900" show-score /></p></div>
+剧情：<el-rate model-value="4" disabled text-color="#ff9900" show-score />
 
-<div><p>谜题：<el-rate model-value="3" disabled text-color="#ff9900" show-score /></p></div>
+场景：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
 
-<div><p>温情：<el-rate model-value="5" disabled text-color="#ff9900" show-score /></p></div>
+道具：<el-rate model-value="2" disabled text-color="#ff9900" show-score />
+
+谜题：<el-rate model-value="3" disabled text-color="#ff9900" show-score />
+
+恐怖：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
+
+温情：<el-rate model-value="5" disabled text-color="#ff9900" show-score />
+
+运动量：<el-rate model-value="0" disabled text-color="#ff9900" show-score />

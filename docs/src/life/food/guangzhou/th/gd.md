@@ -5,13 +5,6 @@ article: false
 
 # 岗顶
 
-## 野味经典火锅
-
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFK8MWS5" target="_blank">天河路598号百脑汇A座5楼</a>
-
-- [x] 老锅底（推荐）
-- [x] 经典锅底
-
 ## 大鸽饭（岗顶一店）
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFIS13WN" target="_blank">天河路633号桔子酒店3层</a>
@@ -32,6 +25,13 @@ article: false
 - [x] 头菜蒸肉饼
 - [x] 椰奶冻糕三宝
 - [x] 元气猪猪宝宝套餐
+
+## 野味经典火锅
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFK8MWS5" target="_blank">天河路598号百脑汇A座5楼</a>
+
+- [x] 老锅底（推荐）
+- [x] 经典锅底
 
 ## 火垂火居酒屋
 

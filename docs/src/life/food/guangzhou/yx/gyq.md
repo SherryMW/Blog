@@ -113,3 +113,12 @@ article: false
 
 - [x] 港式丝袜奶茶
 - [x] 港式鸳鸯
+
+## 麦提烤馕美食店
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0JGU1KSGV" target="_blank">惠福西路324号</a>
+
+- [x] 羊肉串
+- [x] 牛肉串
+- [x] 羊肋排
+- [x] 烤包子

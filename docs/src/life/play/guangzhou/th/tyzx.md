@@ -11,19 +11,25 @@ article: false
 
 ### 福尔摩斯·记忆宫殿
 
-<div><p>沉浸：<el-rate model-value="4.5" disabled text-color="#ff9900" show-score /></p></div>
+沉浸：<el-rate model-value="4.5" disabled text-color="#ff9900" show-score />
 
-<div><p>场景：<el-rate model-value="5" disabled text-color="#ff9900" show-score /></p></div>
+剧情：<el-rate model-value="5" disabled text-color="#ff9900" show-score />
 
-<div><p>剧情：<el-rate model-value="5" disabled text-color="#ff9900" show-score /></p></div>
+场景：<el-rate model-value="5" disabled text-color="#ff9900" show-score />
 
-<div><p>机关道具：<el-rate model-value="5" disabled text-color="#ff9900" show-score /></p></div>
+道具：<el-rate model-value="5" disabled text-color="#ff9900" show-score />
 
-<div><p>谜题：<el-rate model-value="5" disabled text-color="#ff9900" show-score /></p></div>
+谜题：<el-rate model-value="5" disabled text-color="#ff9900" show-score />
+
+恐怖：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
+
+温情：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
+
+运动量：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
 
 广州本格推理主题密室天花板
 
-店里的两只猫猫一只叫“福福”，另一只叫“莫莫”（超级乖）
+店里的两只猫猫一只叫“福福”，另一只叫“莫莫”
 
 ![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/dyg/img.jpg)
 
@@ -33,15 +39,21 @@ article: false
 
 ### 精怪物语
 
-<div><p>沉浸：<el-rate model-value="4" disabled text-color="#ff9900" show-score /></p></div>
+沉浸：<el-rate model-value="4" disabled text-color="#ff9900" show-score />
 
-<div><p>场景：<el-rate model-value="3.5" disabled text-color="#ff9900" show-score /></p></div>
+剧情：<el-rate model-value="5" disabled text-color="#ff9900" show-score />
 
-<div><p>剧情：<el-rate model-value="5" disabled text-color="#ff9900" show-score /></p></div>
+场景：<el-rate model-value="3.5" disabled text-color="#ff9900" show-score />
 
-<div><p>机关道具：<el-rate model-value="4" disabled text-color="#ff9900" show-score /></p></div>
+道具：<el-rate model-value="4" disabled text-color="#ff9900" show-score />
 
-<div><p>谜题：<el-rate model-value="5" disabled text-color="#ff9900" show-score /></p></div>
+谜题：<el-rate model-value="5" disabled text-color="#ff9900" show-score />
+
+恐怖：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
+
+温情：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
+
+运动量：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
 
 广州变格推理主题密室天花板
 
@@ -53,17 +65,21 @@ article: false
 
 ### 瞳灵人
 
-<div><p>沉浸：<el-rate model-value="4" disabled text-color="#ff9900" show-score /></p></div>
+沉浸：<el-rate model-value="4" disabled text-color="#ff9900" show-score />
 
-<div><p>场景：<el-rate model-value="2" disabled text-color="#ff9900" show-score /></p></div>
+剧情：<el-rate model-value="3" disabled text-color="#ff9900" show-score />
 
-<div><p>剧情：<el-rate model-value="3" disabled text-color="#ff9900" show-score /></p></div>
+场景：<el-rate model-value="2.5" disabled text-color="#ff9900" show-score />
 
-<div><p>谜题：<el-rate model-value="1" disabled text-color="#ff9900" show-score /></p></div>
+道具：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
 
-<div><p>恐怖：<el-rate model-value="5" disabled text-color="#ff9900" show-score /></p></div>
+谜题：<el-rate model-value="1" disabled text-color="#ff9900" show-score />
 
-<div><p>运动量：<el-rate model-value="5" disabled text-color="#ff9900" show-score /></p></div>
+恐怖：<el-rate model-value="5" disabled text-color="#ff9900" show-score />
+
+温情：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
+
+运动量：<el-rate model-value="5" disabled text-color="#ff9900" show-score />
 
 正如工作人员给我们描述的那样：黑追电主题的鼻祖
 
@@ -77,15 +93,21 @@ article: false
 
 ### 拐卖
 
-<div><p>场景：<el-rate model-value="1.5" disabled text-color="#ff9900" show-score /></p></div>
+沉浸：<el-rate model-value="1" disabled text-color="#ff9900" show-score />
 
-<div><p>剧情：<el-rate model-value="1" disabled text-color="#ff9900" show-score /></p></div>
+剧情：<el-rate model-value="1" disabled text-color="#ff9900" show-score />
 
-<div><p>谜题：<el-rate model-value="0.5" disabled text-color="#ff9900" show-score /></p></div>
+场景：<el-rate model-value="1.5" disabled text-color="#ff9900" show-score />
 
-<div><p>恐怖：<el-rate model-value="2" disabled text-color="#ff9900" show-score /></p></div>
+道具：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
 
-<div><p>运动量：<el-rate model-value="2.5" disabled text-color="#ff9900" show-score /></p></div>
+谜题：<el-rate model-value="0.5" disabled text-color="#ff9900" show-score />
+
+恐怖：<el-rate model-value="2" disabled text-color="#ff9900" show-score />
+
+温情：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
+
+运动量：<el-rate model-value="2.5" disabled text-color="#ff9900" show-score />
 
 打雷音效还蛮令人触不及防的，只不过到后面都被“劈”麻痹了
 
@@ -97,25 +119,41 @@ article: false
 
 ### 走尸
 
-<div><p>场景：<el-rate model-value="3.5" disabled text-color="#ff9900" show-score /></p></div>
+沉浸：<el-rate model-value="2" disabled text-color="#ff9900" show-score />
 
-<div><p>剧情：<el-rate model-value="3.5" disabled text-color="#ff9900" show-score /></p></div>
+剧情：<el-rate model-value="3.5" disabled text-color="#ff9900" show-score />
 
-<div><p>机关道具：<el-rate model-value="3.5" disabled text-color="#ff9900" show-score /></p></div>
+场景：<el-rate model-value="3.5" disabled text-color="#ff9900" show-score />
 
-<div><p>谜题：<el-rate model-value="3.5" disabled text-color="#ff9900" show-score /></p></div>
+道具：<el-rate model-value="3.5" disabled text-color="#ff9900" show-score />
+
+谜题：<el-rate model-value="3.5" disabled text-color="#ff9900" show-score />
+
+恐怖：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
+
+温情：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
+
+运动量：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
 
 剧本杀 + 实景搜证密室
 
 ### 无刃之剑
 
-<div><p>场景：<el-rate model-value="2.5" disabled text-color="#ff9900" show-score /></p></div>
+沉浸：<el-rate model-value="2" disabled text-color="#ff9900" show-score />
 
-<div><p>剧情：<el-rate model-value="2.5" disabled text-color="#ff9900" show-score /></p></div>
+剧情：<el-rate model-value="2.5" disabled text-color="#ff9900" show-score />
 
-<div><p>机关道具：<el-rate model-value="3" disabled text-color="#ff9900" show-score /></p></div>
+场景：<el-rate model-value="2.5" disabled text-color="#ff9900" show-score />
 
-<div><p>谜题：<el-rate model-value="3" disabled text-color="#ff9900" show-score /></p></div>
+道具：<el-rate model-value="3" disabled text-color="#ff9900" show-score />
+
+谜题：<el-rate model-value="3" disabled text-color="#ff9900" show-score />
+
+恐怖：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
+
+温情：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
+
+运动量：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
 
 有内奸机制（我指的是当然是整蛊队友摇摇乐的那个人:zany_face:）
 
@@ -125,15 +163,21 @@ article: false
 
 ### Hush
 
-<div><p>场景：<el-rate model-value="3.5" disabled text-color="#ff9900" show-score /></p></div>
+沉浸：<el-rate model-value="2" disabled text-color="#ff9900" show-score />
 
-<div><p>剧情：<el-rate model-value="3" disabled text-color="#ff9900" show-score /></p></div>
+剧情：<el-rate model-value="3" disabled text-color="#ff9900" show-score />
 
-<div><p>机关道具：<el-rate model-value="3.5" disabled text-color="#ff9900" show-score /></p></div>
+场景：<el-rate model-value="3.5" disabled text-color="#ff9900" show-score />
 
-<div><p>谜题：<el-rate model-value="1" disabled text-color="#ff9900" show-score /></p></div>
+道具：<el-rate model-value="3.5" disabled text-color="#ff9900" show-score />
 
-<div><p>恐怖：<el-rate model-value="1" disabled text-color="#ff9900" show-score /></p></div>
+谜题：<el-rate model-value="1" disabled text-color="#ff9900" show-score />
+
+恐怖：<el-rate model-value="1" disabled text-color="#ff9900" show-score />
+
+温情：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
+
+运动量：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
 
 3人开场体验感拉满
 

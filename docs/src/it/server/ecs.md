@@ -53,16 +53,14 @@ CentOS 官方已计划停止维护 CentOS 7、CentOS 8 等 Linux 项目，如果
 
 ## 域名注册
 
-::: info
 在域名没有被发明之前，人们访问网站都是通过 IP 地址，也就是类似 1.1.1.1 这样的一串字符，但是 IP 地址不直观，而且用户记忆十分不方便，于是人们又发明了另一套字符型的地址方案，即所谓的域名地址
-:::
 
 访问 [阿里云域名注册](https://wanwang.aliyun.com/domain/searchresult/) 中查询自己想要注册的域名下单购买
 
 ![](https://img.sherry4869.com/blog/it/server/ecs/img_7.png)
 
 ::: tip
-支付前可以通过输入优惠口令获得减免 [优惠口令获取方式](https://help.aliyun.com/document_detail/44007.html)
+支付前可以通过输入优惠口令获得减免 [优惠口令获取方式](https://help.aliyun.com/zh/dws/support/discount-codes)
 
 ![](https://img.sherry4869.com/blog/it/server/ecs/img_8.png)
 :::
@@ -71,12 +69,10 @@ CentOS 官方已计划停止维护 CentOS 7、CentOS 8 等 Linux 项目，如果
 
 ### 域名解析
 
-::: info
 域名解析就是需要我们手动把域名地址和 IP 地址的对应关系写到 DNS 服务器上，这样别人访问域名地址的时候就可以在 DNS 查询到对于的 IP 地址
-:::
 
 ::: tip
-.com/.net/.cn/.xin/.top/.xyz/.vip/.club/.shop/.wang/.ren 等域名注册成功后必须进行域名实名认证，否则会造成解析不生效，实名认证审核通过后的1-2个工作日解析可恢复使用 [查看详细](https://help.aliyun.com/document_detail/35881.html)
+.com/.net/.cn/.xin/.top/.xyz/.vip/.club/.shop/.wang/.ren 等域名注册成功后必须进行域名实名认证，否则会造成解析不生效，实名认证审核通过后的1-2个工作日解析可恢复使用 [域名实名认证概述](https://help.aliyun.com/zh/dws/user-guide/overview-of-real-name-verification-for-domain-names)
 :::
 
 访问 [云解析DNS](https://dns.console.aliyun.com/) 配置界面
@@ -105,13 +101,13 @@ CentOS 官方已计划停止维护 CentOS 7、CentOS 8 等 Linux 项目，如果
 公安备案审核完成后公安联网会下发一个当地省份开头的公网安备 xxxxx 号，同时还会为网站生成一个网站HTML代码
 :::
 
-[ICP 备案流程](https://help.aliyun.com/document_detail/116625.html)
+[ICP 备案流程](https://help.aliyun.com/zh/icp-filing/user-guide/the-icp-registration-process/)
 
-[ICP 备案操作指导（PC端）](https://help.aliyun.com/document_detail/117418.html)
+[ICP 备案操作指导（PC端）](https://help.aliyun.com/zh/icp-filing/basic-icp-service/user-guide/basic-information-check)
 
-[ICP 备案查询](https://beian.miit.gov.cn/#/Integrated/recordQuery)
+[ICP 备案查询](https://beian.miit.gov.cn/)
 
-访问 [公安机关互联网站安全管理服务平台](https://www.beian.gov.cn/portal/index) 完成注册登录
+访问 [公安机关互联网站安全管理服务平台](https://beian.mps.gov.cn/#/) 完成注册登录
 
 访问个人主页点击新办网站申请
 
@@ -168,7 +164,7 @@ CentOS 官方已计划停止维护 CentOS 7、CentOS 8 等 Linux 项目，如果
 使用免费 SLL 证书在通过手机端访问网站时会出现类似“该链接经检测无法确定其安全性，请谨慎输入敏感信息”的提示
 :::
 
-[安装SSL证书到服务器](https://help.aliyun.com/document_detail/198938.html)
+[安装SSL证书到服务器](https://help.aliyun.com/zh/ssl-certificate/user-guide/install-certificates-to-servers/)
 
 ## LNMP 开发环境搭建
 
@@ -220,9 +216,9 @@ Linux面板 7.9.6 在线安装示例
 
 - 如果涉及到生产环境，可以先用旧主机镜像创建一台临时服务器过度使用，新主机会和旧主机数据一致
 
-  - 先通过旧实例创建自定义镜像 [参考文档](https://help.aliyun.com/document_detail/35109.html)
+  - 先通过旧实例创建自定义镜像 [参考文档](https://help.aliyun.com/zh/ecs/user-guide/create-a-custom-image-from-an-instance)
   
-  - 然后通过这个自定义镜像创建一个新的实例 [参考文档](https://help.aliyun.com/document_detail/25465.html)
+  - 然后通过这个自定义镜像创建一个新的实例 [参考文档](https://help.aliyun.com/zh/ecs/user-guide/create-an-ecs-instance-by-using-a-custom-image)
   
   - 新服务器就和旧主机数据一样，业务方面先访问新主机的 ip 过度使用
 
