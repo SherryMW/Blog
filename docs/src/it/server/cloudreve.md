@@ -59,7 +59,7 @@ arch
     
     ![](https://img.sherry4869.com/blog/it/server/cloudreve/img_7.png)
 
-5. 在宝塔面板点击软件商店下载 **堡塔应用管理器** 插件
+5. 在宝塔面板点击软件商店下载【堡塔应用管理器】插件
 
     ![](https://img.sherry4869.com/blog/it/server/cloudreve/img_1.png)
 
@@ -80,7 +80,7 @@ arch
     ![](https://img.sherry4869.com/blog/it/server/cloudreve/img_11.png)
 
     ::: tip
-    创建数据库时提示 **数据库管理密码错误** 可以先修改 root 密码后再重新创建
+    创建数据库时提示【数据库管理密码错误】可以先修改 root 密码后再重新创建
     :::
     
     编辑站点目录下的 【conf.ini】 文件，新增以下配置项

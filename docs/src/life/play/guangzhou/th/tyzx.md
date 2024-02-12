@@ -5,7 +5,7 @@ article: false
 
 # 体育中心
 
-## 渡鸦馆原创剧情密室（装修）
+## 渡鸦馆原创剧情密室
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0HDKAELJ4" target="_blank">天河路365号天俊阁2703室</a>
 
@@ -85,7 +85,7 @@ article: false
 
 在保安大哥奋力踹门时调戏了一句：“晚饭是不是没吃饱阿” 后果有点严重:scream:
 
-![一刷抽到了雪莉的身份牌（中大奖了）](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/thwj/img.jpg)
+![一刷抽到了雪莉的身份牌 OMG](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/thwj/img.jpg)
 
 ## 关你鬼室大型密室逃脱
 
@@ -111,7 +111,7 @@ article: false
 
 打雷音效还蛮令人触不及防的，只不过到后面都被“劈”麻痹了
 
-因为当天是 9 人满员车队，因此 NPC 没有追得太紧，4~5 人组队体验可能会更好
+当天是 9 人满员车队，因此 NPC 没有追得太紧，4~5 人组队体验可能会更好
 
 ## 逃之妖妖原创剧情密室
 

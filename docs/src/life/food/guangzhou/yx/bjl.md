@@ -9,7 +9,7 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFIMXLSX" target="_blank">北京路168号仰忠汇7层A707-A708</a>
 
-![招牌冰镇咕噜肉](https://img.sherry4869.com/blog/life/food/guangzhou/yx/bjl/ttj/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/guangzhou/yx/bjl/ttj/img.jpg)
 
 - [x] 经典白切鸡
 - [x] 广府豉油鸡
@@ -55,12 +55,6 @@ article: false
 - [x] 秘制脆皮灌汤烧鹅
 - [x] 招积茄子
 
-## 仁信老铺甜品
-
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFFPAIUH" target="_blank">北京路362号</a>
-
-- [x] 原味双皮奶（推荐）
-
 ## 海底捞火锅
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00141VVZW" target="_blank">中山四路395号城壹汇F5层</a>
@@ -100,6 +94,16 @@ article: false
 - [x] 北极贝
 - [x] 芥末八爪鱼
 
+## 凤园椰珍·臻品椰子鸡
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0GK7146CJ" target="_blank">西湖路63号光明广场三楼北区B06铺</a>
+
+- 臻品双人餐
+  - [x] 五指毛桃椰子鸡
+  - [x] 精品肥牛
+  - [x] 娃娃菜
+  - [x] 响铃卷
+
 ## 陈添记
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0J1COEOXQ" target="_blank">惠福东路612号</a>
@@ -111,6 +115,12 @@ article: false
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0J1COEOXQ" target="_blank">西湖路63号光明广场B1层</a>
 
 - [x] 豚骨王拉面
+
+## 仁信老铺甜品
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFFPAIUH" target="_blank">北京路362号</a>
+
+- [x] 原味双皮奶（推荐）
 
 ## 霸王茶姬
 

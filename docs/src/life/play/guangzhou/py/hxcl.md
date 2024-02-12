@@ -7,6 +7,8 @@ article: false
 
 ## 长隆
 
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFFYPEE9" target="_blank">汉溪大道299号</a>
+
 官网：[https://www.chimelong.com](https://www.chimelong.com/)
 
 ::: tabs

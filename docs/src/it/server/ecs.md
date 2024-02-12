@@ -5,7 +5,7 @@ category: IT
 
 # 云服务器 ECS
 
-记录购买云服务器 ESC、域名注册、 网站备案、SSL 证书申请、LNMP 开发环境搭建过程
+记录购买云服务器 ESC、域名注册、 网站备案、SSL证书申请、LNMP 开发环境搭建过程
 
 <!-- more -->
 
@@ -13,7 +13,7 @@ category: IT
 
 ## 购买云服务器 ECS
 
-登录访问 [阿里云官网](https://www.aliyun.com/)
+登录访问阿里云官网：[https://www.aliyun.com](https://www.aliyun.com/)
 
 ![](https://img.sherry4869.com/blog/it/server/ecs/img.png)
 
@@ -77,11 +77,11 @@ CentOS 官方已计划停止维护 CentOS 7、CentOS 8 等 Linux 项目，如果
 
 访问 [云解析DNS](https://dns.console.aliyun.com/) 配置界面
 
-在选项卡中选择权威域名点击 **添加域名**
+在选项卡中选择权威域名点击【添加域名】
 
 ![](https://img.sherry4869.com/blog/it/server/ecs/img_18.png)
 
-域名添加后点击 **解析设置** 进行DNS配置
+域名添加后点击【解析设置】进行DNS配置
 
 ![](https://img.sherry4869.com/blog/it/server/ecs/img_16.png)
 
@@ -109,6 +109,8 @@ CentOS 官方已计划停止维护 CentOS 7、CentOS 8 等 Linux 项目，如果
 
 访问 [公安机关互联网站安全管理服务平台](https://beian.mps.gov.cn/#/) 完成注册登录
 
+全国互联网安全管理服务平台在 2023年10月7日 进行优化升级，请按最新系统界面进行相关操作（以下示例图片是旧版系统界面）
+
 访问个人主页点击新办网站申请
 
 ![](https://img.sherry4869.com/blog/it/server/ecs/img_9.png)
@@ -124,25 +126,28 @@ CentOS 官方已计划停止维护 CentOS 7、CentOS 8 等 Linux 项目，如果
 ![](https://img.sherry4869.com/blog/it/server/ecs/img_21.png)
 
 ::: tip
-如网站提供互联网交互服务需要发送 **博客个人空间服务企业基础信息登记表** 以及 **交互式服务安全检查表** 邮件到指定邮箱进行审核  
+如网站提供互联网交互服务需要发送【博客个人空间服务企业基础信息登记表】以及【交互式服务安全检查表】邮件到指定邮箱进行审核
+
 提交审核后预计等待两周审核时间，如有审核失败疑问可以拨打当地公网备案客户咨询电话进行咨询
 :::
 
-## SSL 免费证书申请
+## SSL证书申请
 
 ::: info
 安全套接字层(SSL) 技术通过加密信息和提供鉴权，保护你的网站安全。一份 SSL 证书包括一个公共密钥和一个私用密钥。公共密钥用于加密信息，私用密钥用于解译加密的信息。浏览器指向一个安全域时，SSL 同步确认服务器和客户端，并创建一种加密方式和一个唯一的会话密钥。它们可以启动一个保证消息的隐私性和完整性的安全会话
 :::
 
+SSL证书使用指南：[https://help.aliyun.com/zh/ssl-certificate/user-guide/user-guide-for-ssl-certificates](https://help.aliyun.com/zh/ssl-certificate/user-guide/user-guide-for-ssl-certificates)
+
 - 阿里云个人账号和企业账号均可申请，多个域名可以申请多个免费证书
 
 - 免费证书只能保护一个域名（带 www 和不带 www 可以通用）
 
-- 一个账户限制申请20个免费证书
+- 一个账户限制申请 20 个免费证书
 
-- 免费证书有效期为1年
+访问 [阿里云数字证书管理服务](https://www.aliyun.com/product/cas) 界面中点击 SSL证书申请免费证书
 
-访问 [阿里云数字证书管理服务](https://www.aliyun.com/product/cas) 界面中点击 SSL 证书申请免费证书
+[免费SSL证书使用指南](https://help.aliyun.com/zh/ssl-certificate/user-guide/user-guide-for-free-certificates)
 
 ![](https://img.sherry4869.com/blog/it/server/ecs/img_10.png)
 
@@ -166,7 +171,7 @@ CentOS 官方已计划停止维护 CentOS 7、CentOS 8 等 Linux 项目，如果
 
 [安装SSL证书到服务器](https://help.aliyun.com/zh/ssl-certificate/user-guide/install-certificates-to-servers/)
 
-## LNMP 开发环境搭建
+## LNMP开发环境搭建
 
 ::: info
 LNMP 是指一组通常一起使用来运行动态网站或者服务器的自由软件名称首字母缩写。L 指 Linux，N 指 Nginx，M 一般指 MySQL，也可以指 MariaDB，P 一般指 PHP，也可以指 Perl 或 Python
@@ -184,7 +189,7 @@ LNMP 是指一组通常一起使用来运行动态网站或者服务器的自由
 
 访问 [宝塔官网](https://www.bt.cn/new/download.html)：2 分钟装好面板，一键管理服务器，集成 LAMP/LNMP 环境安装，网站、FTP、数据库、文件管理、软件安装等功能
 
-[查看详细安装教程](https://www.bt.cn/bbs/thread-79460-1-1.html)
+查看详细安装教程：[https://www.bt.cn/bbs/thread-79460-1-1.html](https://www.bt.cn/bbs/thread-79460-1-1.html)
 
 ::: tip
 系统兼容性推荐：Centos7.x > Debian10 > Ubuntu 20.04 > Centos8 stream > Ubuntu 18.04 > 其它系统

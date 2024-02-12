@@ -59,6 +59,12 @@ article: false
 - [x] 蔻曼黄油可颂
 - [x] 贝果
 
+## 骏犇潮州兄弟牛肉火锅
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFI6I5ER" target="_blank">长兴路8号1楼东面</a>
+
+- [x] 雪花（推荐）
+
 ## 三两粉
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H1U90B35" target="_blank">天源路5号天河新天地B1</a>
@@ -111,12 +117,6 @@ article: false
 - [x] 蟹棒寿司
 - [x] 喜炙郎奶冻布丁
 - [x] 雪米糍
-
-## 骏犇潮州兄弟牛肉火锅
-
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFI6I5ER" target="_blank">长兴路8号1楼东面</a>
-
-- [x] 雪花（推荐）
 
 ## 江渔儿酸菜鱼
 

@@ -80,6 +80,15 @@ article: false
   - [x] 手打乌冬
   - [x] 无菌生鸡蛋
 
+## 认真食饭·海鲜大排档
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0J147XFET" target="_blank">府学西街81号</a>
+
+- [x] 金汤花胶鸡
+- [x] 咸蛋黄焗罗氏虾
+- [x] 上汤时令青菜
+- [x] 猪油捞饭
+
 ## 大喜居酒屋
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFIIKP20" target="_blank">教育路1号</a>

@@ -21,7 +21,7 @@ article: false
 
 @tab 大排档炒牛河
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/th/tyzx/cldpd/img_2.jpg)
+![炒出风味](https://img.sherry4869.com/blog/life/food/guangzhou/th/tyzx/cldpd/img_2.jpg)
 
 :::
 
@@ -169,6 +169,20 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFKX3B93" target="_blank">天河路218号天环广场西塔B1层</a>
 
+## 虾饺妹富竹一生
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFK0NJBQ" target="_blank">天河东路163号2层</a>
+
+- [x] 招牌虾饺妹
+- [x] 鲍汁蒸腐皮卷
+- [x] 泰国榴莲酥
+- [x] 炭烧蜜汁叉烧酥
+- [x] 鲜虾红米肠
+- [x] 鲜虾炸春卷
+- [x] 港式菠萝包
+- [x] 冷水猪肚（吃不惯用芥末汁浸泡的猪肚:see_no_evil:）
+- [x] 不一样的双皮奶
+
 ## 龙井湖
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0JAT7QM2I" target="_blank">天河路228号正佳广场5F-5A031-33号</a>
@@ -190,17 +204,3 @@ article: false
 - [x] 杭州绿茶饼
 - [x] 杭州小笼包
 - [x] 竹笙炖鸡汤
-
-## 虾饺妹富竹一生
-
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFK0NJBQ" target="_blank">天河东路163号2层</a>
-
-- [x] 招牌虾饺妹
-- [x] 鲍汁蒸腐皮卷
-- [x] 泰国榴莲酥
-- [x] 炭烧蜜汁叉烧酥
-- [x] 鲜虾红米肠
-- [x] 鲜虾炸春卷
-- [x] 港式菠萝包
-- [x] 冷水猪肚（吃不惯用芥末汁浸泡的猪肚:see_no_evil:）
-- [x] 不一样的双皮奶

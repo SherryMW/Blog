@@ -1,4 +1,5 @@
 import yaml from 'js-yaml'
+// @ts-ignore
 import type Token from 'markdown-it/lib/token.js'
 
 export const withBase = (path: string) => {
@@ -53,7 +54,7 @@ export const renderProjects = (tokens: Token[], idx: number) => {
                 ) => {
                     const isFriends = type === 'friends'
                     return `
-              <a class="vp-project-card project${index % 9}"
+              <a class="vp-project-card project${index % 9}" style="text-decoration: none"
                 href="${withBase(project.link)}"
                 ${isFriends ? '' : 'rel="noopener noreferrer"'}
                 target="_blank">
