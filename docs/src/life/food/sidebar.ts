@@ -41,6 +41,8 @@ export const FoodSidebar = arraySidebar([
                 collapsible: true,
                 children: "structure"
             },
+            "bread-desserts",
+            "beverage"
         ]
     },
     {
@@ -53,6 +55,7 @@ export const FoodSidebar = arraySidebar([
                 collapsible: true,
                 children: "structure"
             },
+            "bread-desserts"
         ]
     }
 ])

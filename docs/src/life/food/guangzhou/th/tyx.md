@@ -5,13 +5,46 @@ article: false
 
 # 体育西
 
+## 大同酒家
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H60UIOZ5" target="_blank">华强路3号富力盈力大厦北塔1-2楼</a>
+
+::: tabs
+
+@tab 大同鸡蛋挞
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyx/dtjj/img.jpg)
+
+@tab 宫廷笋尖虾饺
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyx/dtjj/img_2.jpg)
+
+@tab 空气炸春卷
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyx/dtjj/img_3.jpg)
+
+@tab 蜂巢炸芋角
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyx/dtjj/img_4.jpg)
+
+@tab 沙爹金钱肚
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyx/dtjj/img_5.jpg)
+
+:::
+
+- [x] 大同鸡蛋挞（推荐）
+- [x] 宫廷笋尖虾饺（推荐）
+- [x] 空气炸春卷
+- [x] 蜂巢炸芋角
+- [x] 沙爹金钱肚
+
 ## 小炳胜
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFJ9SWK8" target="_blank">天河路218号天环广场B2-19b铺</a>
 
 - [x] 始创黑叉烧（推荐）
-- [x] 黑松露烧鹅（推荐）
-- [ ] 招牌窑土鸡
+- [x] 黑松露脆皮文昌鸡（推荐）
 - [x] 招积茄子（推荐）
 - [x] 鱼香肉汁蒸山水豆腐
 - [x] 西洋参炖老鸡汤

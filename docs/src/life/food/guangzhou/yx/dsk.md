@@ -13,24 +13,20 @@ article: false
 
 @tab 秃黄油拌饭
 
-![需要等待20分钟制作时间](https://img.sherry4869.com/blog/life/food/guangzhou/yx/dsk/clx/img_2.jpg)
+![需要等待20分钟制作时间](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/dsk/clx/img_2.jpg)
 
 @tab 蟹粉小笼包
 
-![当心别被小笼包给咬了哦](https://img.sherry4869.com/blog/life/food/guangzhou/yx/dsk/clx/img_3.jpg)
+![当心别被小笼包给咬了哦](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/dsk/clx/img_3.jpg)
 
 @tab 菜单
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/yx/dsk/clx/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/dsk/clx/img.jpg)
 
 :::
 
 - [x] 秃黄油拌饭（推荐）
 - [x] 蟹粉小笼包（推荐）
-- [ ] 啫啫蟹煲
-- [ ] 蟹王
-- [ ] 蟹后
-- [ ] 头手黄油蟹
 
 ## 澳泰美食
 

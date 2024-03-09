@@ -15,15 +15,15 @@
     "personal-blog"
   ],
   "devDependencies": {
-    "@vuepress/bundler-vite": "2.0.0-rc.2",
-    "@vuepress/plugin-container": "2.0.0-rc.7",
+    "@vuepress/bundler-vite": "2.0.0-rc.8",
+    "@vuepress/plugin-container": "2.0.0-rc.15",
     "@waline/client": "3.0.0-alpha.11",
-    "echarts": "^5.4.3",
-    "element-plus": "^2.5.4",
-    "js-yaml": "^4.1.0",
-    "vue": "^3.4.15",
-    "vuepress": "2.0.0-rc.2",
-    "vuepress-plugin-search-pro": "2.0.0-rc.19",
-    "vuepress-theme-hope": "2.0.0-rc.19"
+    "echarts": "5.4.3",
+    "element-plus": "2.5.5",
+    "js-yaml": "4.1.0",
+    "vue": "^3.4.21",
+    "vuepress": "2.0.0-rc.8",
+    "vuepress-plugin-search-pro": "2.0.0-rc.27",
+    "vuepress-theme-hope": "2.0.0-rc.27"
   }
 }

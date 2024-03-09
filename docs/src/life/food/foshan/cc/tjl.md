@@ -13,15 +13,15 @@ article: false
 
 @tab 白切猪手
 
-![](https://img.sherry4869.com/blog/life/food/foshan/cc/tjl/yjct/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/foshan/cc/tjl/yjct/img.jpg)
 
 @tab 招积冰川茄子
 
-![](https://img.sherry4869.com/blog/life/food/foshan/cc/tjl/yjct/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/foshan/cc/tjl/yjct/img_2.jpg)
 
 @tab 椰子冰
 
-![](https://img.sherry4869.com/blog/life/food/foshan/cc/tjl/yjct/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/foshan/cc/tjl/yjct/img_3.jpg)
 
 :::
 

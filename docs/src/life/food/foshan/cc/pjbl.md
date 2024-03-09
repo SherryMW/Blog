@@ -13,15 +13,15 @@ article: false
 
 @tab 红烧乳鸽
 
-![](https://img.sherry4869.com/blog/life/food/foshan/cc/pjbl/ytj/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/foshan/cc/pjbl/ytj/img.jpg)
 
 @tab 金牌鱼饼
 
-![](https://img.sherry4869.com/blog/life/food/foshan/cc/pjbl/ytj/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/foshan/cc/pjbl/ytj/img_2.jpg)
 
 @tab 金牌鱼皮
 
-![](https://img.sherry4869.com/blog/life/food/foshan/cc/pjbl/ytj/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/foshan/cc/pjbl/ytj/img_3.jpg)
 
 :::
 
@@ -37,13 +37,13 @@ article: false
 
 @tab 早餐
 
-![](https://img.sherry4869.com/blog/life/food/foshan/cc/pjbl/dbx/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/foshan/cc/pjbl/dbx/img.jpg)
 
 @tab 菜单
 
-![](https://img.sherry4869.com/blog/life/food/foshan/cc/pjbl/dbx/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/foshan/cc/pjbl/dbx/img_2.jpg)
 
-![](https://img.sherry4869.com/blog/life/food/foshan/cc/pjbl/dbx/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/foshan/cc/pjbl/dbx/img_3.jpg)
 
 :::
 
@@ -54,9 +54,3 @@ article: false
 - [x] 三丝炒瘦肉河粉
 - [x] 菊花冻（推荐）
 - [x] 芝麻糊
-
-## 民信老铺
-
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFG0YH02" target="_blank">岭南天地商业中心文会里13号</a>
-
-- [x] 椰汁双皮奶

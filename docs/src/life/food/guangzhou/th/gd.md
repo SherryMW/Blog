@@ -21,12 +21,12 @@ article: false
 - [x] 红烧鸽（推荐）
 - [x] 蜂糖烤鸽
 - [x] 香煎金鲳鱼（推荐）
-- [x] 红葱头焗排骨
 - [x] 头菜蒸肉饼
-- [x] 椰奶冻糕三宝
+- [x] 红葱头焗排骨
 - [x] 元气猪猪宝宝套餐
+- [x] 椰奶冻糕三宝
 
-## 野味经典火锅
+## 野妹经典火锅
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFK8MWS5" target="_blank">天河路598号百脑汇A座5楼</a>
 
@@ -41,29 +41,6 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFI8YYA2" target="_blank">龙口西路3号保利中辰广场1号2层</a>
 
-## 今之味
-
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0GKSBCUID" target="_blank">天河路621号天娱广场西塔楼F4层</a>
-
-::: tabs
-
-@tab 咖喱面包鸡
-![](https://img.sherry4869.com/blog/life/food/guangzhou/th/gd/jzw/img.jpg)
-
-@tab 泰式炭烧猪颈肉
-![](https://img.sherry4869.com/blog/life/food/guangzhou/th/gd/jzw/img_2.jpg)
-
-@tab 泰式烧元贝
-![](https://img.sherry4869.com/blog/life/food/guangzhou/th/gd/jzw/img_3.jpg)
-
-:::
-
-- [x] 咖喱面包鸡
-- [x] 泰式烧元贝
-- [x] 泰式炭烧猪颈肉
-- [x] 蒜蓉法包
-- [x] 越式鲜虾芒果沙拉
-
 ## 点都德
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFGHE53M" target="_blank">天河路598号百脑汇大厦4层</a>
@@ -73,3 +50,43 @@ article: false
 - [x] 豉油皇砂锅猪肠粉
 - [x] 韭菜扒猪红
 - [x] 凤爪排骨蒸饭
+
+## 遇见小面
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFJ9HE0P" target="_blank">天河路603号莱福广场F1层</a>
+
+- [x] 软骨丸子番茄汤面（推荐）
+- [x] 川式红烧牛肉面
+- [x] 红豌豆杂面
+- [x] 卤肉面
+- [x] 焦香烤猪蹄（推荐）
+- [x] 原味酥脆鸡排
+- [x] 白玉厚椰乳
+- [x] 甘蔗马蹄爽
+- [x] 杨枝甘露
+
+## 今之味
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0GKSBCUID" target="_blank">天河路621号天娱广场西塔楼F4层</a>
+
+::: tabs
+
+@tab 咖喱面包鸡
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/gd/jzw/img.jpg)
+
+@tab 泰式炭烧猪颈肉
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/gd/jzw/img_2.jpg)
+
+@tab 泰式烧元贝
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/gd/jzw/img_3.jpg)
+
+:::
+
+- [x] 咖喱面包鸡
+- [x] 泰式烧元贝
+- [x] 泰式炭烧猪颈肉
+- [x] 蒜蓉法包
+- [x] 越式鲜虾芒果沙拉

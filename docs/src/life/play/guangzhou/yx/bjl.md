@@ -5,6 +5,16 @@ article: false
 
 # 北京路
 
+## 乃汐DIY烘焙工作室
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0G345S3N2" target="_blank">大南路108号万晟商都808室</a>
+
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/yx/bjl/nx/img.jpg)
+
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/yx/bjl/nx/img_2.jpg)
+
+- [x] DIY卡通饼干
+
 ## 森林人实景娱乐剧场密室
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0IGSR3UQF" target="_blank">西湖路63号光明广场904</a>
@@ -28,6 +38,10 @@ article: false
 运动量：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
 
 沉浸式互动主题，可以在密室里吃烤鸡、唱K、打麻将等
+
+## 布吉岛电玩店
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFIAN90G" target="_blank">北京路广百新翼商务中心24楼18室</a>
 
 ## THE ONE CLUB
 

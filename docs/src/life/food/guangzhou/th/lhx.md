@@ -13,17 +13,17 @@ article: false
 
 @tab 北岛长脚蟹（一蟹三吃）
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/th/lhx/79fish/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/lhx/79fish/img.jpg)
 
-![399/斤](https://img.sherry4869.com/blog/life/food/guangzhou/th/lhx/79fish/img_2.jpg)
+![399/斤](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/lhx/79fish/img_2.jpg)
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/th/lhx/79fish/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/lhx/79fish/img_3.jpg)
 
-![一蟹三吃里最中意干焗蟹肉，一定要趁热吃，如果凉了可以让服务员拿给后厨加热一下](https://img.sherry4869.com/blog/life/food/guangzhou/th/lhx/79fish/img_4.jpg)
+![一蟹三吃里最中意干焗蟹肉，一定要趁热吃，如果凉了可以让服务员拿给后厨加热一下](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/lhx/79fish/img_4.jpg)
 
 @tab 账单
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/th/lhx/79fish/img_5.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/lhx/79fish/img_5.jpg)
 
 :::
 
@@ -41,11 +41,11 @@ article: false
 
 @tab 乐队演出
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/th/lhx/rocky/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/lhx/rocky/img.jpg)
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/th/lhx/rocky/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/lhx/rocky/img_2.jpg)
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/th/lhx/rocky/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/lhx/rocky/img_3.jpg)
 
 :::
 
@@ -80,7 +80,7 @@ article: false
 - [x] 章鱼小丸子
 - [x] 土豆沙拉
 - [x] 芥末章鱼
-- [x] 两人份啤酒放题90分钟
+- [x] 啤酒放题
 
 ## NurBOSTAN 努尔博斯坦
 

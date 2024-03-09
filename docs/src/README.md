@@ -8,10 +8,10 @@ heroFullScreen: true
 tagline: ""
 bgImage: /banner.jpg
 projects:
-  - name: Java
-    desc: 笔记
-    link: /it/java/
-    icon: project
+#  - name: Java
+#    desc: 笔记
+#    link: /it/java/
+#    icon: project
 #  - name: Database
 #    desc: 笔记
 #    link: /it/database/

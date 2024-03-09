@@ -13,8 +13,8 @@ article: false
 
 小卓老师：有手就行
 
-![](https://img.sherry4869.com/blog/life/play/guangzhou/th/mhy/xzhs/img.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/th/mhy/xzhs/img.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/guangzhou/th/mhy/xzhs/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/th/mhy/xzhs/img_2.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/guangzhou/th/mhy/xzhs/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/th/mhy/xzhs/img_3.jpg)

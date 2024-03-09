@@ -11,7 +11,7 @@ article: false
 
 得闲饮茶！
 
-## 凤园椰珍·臻品椰子鸡
+## 凤园椰珍
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFF35AYJ" target="_blank">天河南二路34号天河花园大厦1-3层</a>
 
@@ -28,15 +28,15 @@ article: false
 
 @tab 招牌蒸耗
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/th/spq/hsfs/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/spq/hsfs/img.jpg)
 
 @tab 蒜香烤生蚝
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/th/spq/hsfs/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/spq/hsfs/img_2.jpg)
 
 @tab 烤鸡翼
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/th/spq/hsfs/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/spq/hsfs/img_3.jpg)
 
 :::
 
@@ -58,19 +58,19 @@ article: false
 
 @tab 招牌爆膏奶油虾
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/th/spq/dwssm/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/spq/dwssm/img_2.jpg)
 
 @tab 紫苏炒圣子
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/th/spq/dwssm/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/spq/dwssm/img.jpg)
 
 @tab 爆炒厚鱿鱼筒
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/th/spq/dwssm/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/spq/dwssm/img_3.jpg)
 
 @tab 复古菠萝冰
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/th/spq/dwssm/img_4.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/spq/dwssm/img_4.jpg)
 
 :::
 
@@ -87,22 +87,22 @@ article: false
 
 @tab 酥皮山楂叉烧包
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/th/spq/cl/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/spq/cl/img.jpg)
 
 @tab 赛螃蟹凤眼饺
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/th/spq/cl/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/spq/cl/img_2.jpg)
 
 @tab 黄金蟹甲
-![](https://img.sherry4869.com/blog/life/food/guangzhou/th/spq/cl/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/spq/cl/img_3.jpg)
 
 @tab 豉汁凤爪
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/th/spq/cl/img_4.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/spq/cl/img_4.jpg)
 
 @tab 白玉琉璃
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/th/spq/cl/img_5.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/spq/cl/img_5.jpg)
 
 :::
 
@@ -121,15 +121,15 @@ article: false
 
 @tab 话梅焖猪手
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/th/spq/xy/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/spq/xy/img.jpg)
 
 @tab 五指毛桃啫鸡
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/th/spq/xy/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/spq/xy/img_2.jpg)
 
 @tab 焦糖冰川茄子
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/th/spq/xy/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/spq/xy/img_3.jpg)
 
 :::
 

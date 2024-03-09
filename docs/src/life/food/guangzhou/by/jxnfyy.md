@@ -10,8 +10,8 @@ article: false
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFJ5LK6U" target="_blank">广州大道北1811号嘉裕太阳城2楼2053/2058号铺</a>
 
 - [x] 绿茶烤鸡
-- [x] 白玉金汤煨羊肉（推荐）
 - [x] 东坡草扎肉（推荐）
+- [x] 白玉金汤煨羊肉（推荐）
 - [x] 招牌粉丝裹虾
 - [x] 石锅鸡汤豆腐
 - [x] 蒜蓉粉丝蒸凤尾虾
@@ -30,6 +30,12 @@ article: false
 - [x] 鹅肝三明治
 - [x] 明太子地瓜烧
 - [x] 玉米刺身
+
+## 周沫
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0IG6SDGZD" target="_blank">广州大道北1811号嘉裕太阳城广场一层1062</a>
+
+- [x] 蟹籽猪颈肉炒饭（推荐）
 
 ## 稻香酒家
 

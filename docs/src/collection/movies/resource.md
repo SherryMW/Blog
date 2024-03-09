@@ -37,12 +37,6 @@ article: false
 
 官网：[https://hdmoli.fun](https://hdmoli.fun/)
 
----
-
-**歪歪影院**
-
-官网：[https://www.whyxt.com](https://www.whyxt.com/)
-
 ## 资源下载
 
 **云盘分享**

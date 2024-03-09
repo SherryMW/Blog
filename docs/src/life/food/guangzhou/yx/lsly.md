@@ -9,7 +9,7 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0IBHCJQHO" target="_blank">中山三路33号中华广场7楼</a>
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/yx/lsly/ty/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/lsly/ty/img.jpg)
 
 - 双人套餐
   - [x] 雪花牛板腱

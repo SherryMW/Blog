@@ -9,7 +9,7 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFIMXLSX" target="_blank">北京路168号仰忠汇7层A707-A708</a>
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/yx/bjl/ttj/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/bjl/ttj/img.jpg)
 
 - [x] 经典白切鸡
 - [x] 广府豉油鸡
@@ -39,29 +39,21 @@ article: false
 
 @tab 秘制黑叉烧
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/yx/bjl/xbs/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/bjl/xbs/img.jpg)
 
 @tab 秘制脆皮灌汤烧鹅
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/yx/bjl/xbs/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/bjl/xbs/img_2.jpg)
 
 @tab 招积茄子
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/yx/bjl/xbs/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/bjl/xbs/img_3.jpg)
 
 :::
 
 - [x] 秘制黑叉烧
 - [x] 秘制脆皮灌汤烧鹅
 - [x] 招积茄子
-
-## 海底捞火锅
-
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00141VVZW" target="_blank">中山四路395号城壹汇F5层</a>
-
-- [x] 参鲍鸡金汤锅（推荐）
-- [x] 番茄锅底
-- [x] 牛油麻辣锅底
 
 ## 摩打食堂
 
@@ -71,21 +63,21 @@ article: false
 
 @tab 摩摩超级爆汁炸鸡
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/yx/bjl/mdst/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/bjl/mdst/img.jpg)
 
 @tab 明太子烤土豆
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/yx/bjl/mdst/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/bjl/mdst/img_2.jpg)
 
 @tab 富贵嫩鱼天妇罗
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/yx/bjl/mdst/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/bjl/mdst/img_3.jpg)
 
 :::
 
 - [x] 摩摩超级爆汁炸鸡（推荐）
-- [x] 明太子烤土豆
 - [x] 澳洲铺天盖地火牛大满贯
+- [x] 明太子烤土豆
 - [x] 富贵嫩鱼天妇罗
 - [x] 火焰牛肉寿司
 - [x] 火炙牛舌
@@ -94,7 +86,7 @@ article: false
 - [x] 北极贝
 - [x] 芥末八爪鱼
 
-## 凤园椰珍·臻品椰子鸡
+## 凤园椰珍
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0GK7146CJ" target="_blank">西湖路63号光明广场三楼北区B06铺</a>
 
@@ -104,11 +96,27 @@ article: false
   - [x] 娃娃菜
   - [x] 响铃卷
 
+## 海底捞火锅
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00141VVZW" target="_blank">中山四路395号城壹汇F5层</a>
+
+- [x] 参鲍鸡金汤锅（推荐）
+- [x] 番茄锅底
+- [x] 牛油麻辣锅底
+
 ## 陈添记
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0J1COEOXQ" target="_blank">惠福东路612号</a>
 
 - [x] 陈添记鱼皮（推荐）
+
+## 刘福记
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFH8I8GG" target="_blank">文德路45号（35路车总站对面）</a>
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/bjl/lfj/img.jpg)
+
+- [x] 招牌四色面
 
 ## 麺屋猪一
 
@@ -116,18 +124,26 @@ article: false
 
 - [x] 豚骨王拉面
 
-## 仁信老铺甜品
+## 御前十七
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFFPAIUH" target="_blank">北京路362号</a>
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0GKJ6VYW6" target="_blank">北京路168号粤海仰忠汇8楼</a>
 
-- [x] 原味双皮奶（推荐）
+::: tabs
 
-## 霸王茶姬
+@tab 云朵寿喜烧
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFJ8JP89" target="_blank">北京路182号粤潮NEW-IN-PARK-LG-M-层LG104-M104</a>
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/bjl/yqsq/img.jpg)
 
-- [x] 伯牙绝铉（推荐）
-- [x] 万山红金丝小种
-- [x] 玫瑰普洱
-- [x] 白雾红尘
-- [x] 桂馥兰香
+@tab 香煎带子
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/bjl/yqsq/img_2.jpg)
+
+@tab 黄金蟹壳烧
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/bjl/yqsq/img_3.jpg)
+
+:::
+
+- [x] 云朵寿喜烧
+- [x] 香煎带子
+- [x] 黄金蟹壳烧

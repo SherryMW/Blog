@@ -9,9 +9,9 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00140UBQ1" target="_blank">惠福西路199号</a>
 
+- [x] 穗香原味鸡（推荐）
 - [x] 脆皮烧鹅
 - [x] 豉油鸡
-- [x] 白切鸡
 - [x] 澳门烧肉（推荐）
 - [x] 蜜汁叉烧
 - [x] 烧鹅/叉烧/烧肉三拼
@@ -19,7 +19,9 @@ article: false
 - [x] 砂锅黄鳝煲
 - [x] 煎酿尖椒
 - [x] 孜然扇骨
+- [x] 白切猪手
 - [x] 秘制猪手皇
+- [x] 红腰豆焖猪尾（推荐）
 - [x] 凉瓜炒牛肉
 - [x] 家乡味道炒粗斋
 - [x] 紫苏茄子炒豆角
@@ -42,26 +44,30 @@ article: false
 :::tabs
 
 @tab 松子鱼
-![](https://img.sherry4869.com/blog/life/food/guangzhou/yx/gyq/kfsj/img.jpg)
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/gyq/kfsj/img.jpg)
 
 @tab 脆皮炸大肠
-![](https://img.sherry4869.com/blog/life/food/guangzhou/yx/gyq/kfsj/img_2.jpg)
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/gyq/kfsj/img_2.jpg)
 
 @tab 白切鸡
-![](https://img.sherry4869.com/blog/life/food/guangzhou/yx/gyq/kfsj/img_4.jpg)
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/gyq/kfsj/img_4.jpg)
 
 @tab 凉拌鱼皮
-![](https://img.sherry4869.com/blog/life/food/guangzhou/yx/gyq/kfsj/img_3.jpg)
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/gyq/kfsj/img_3.jpg)
 
 :::
 
+- [x] 白切鸡
 - [x] 松子鱼（推荐）
 - [x] 脆皮炸大肠（推荐）
 - [ ] 豉汁牛心顶
 - [ ] 豉汁蒸钳鱼
 - [ ] 啫啫鱼卟
 - [ ] 韭黄煎面
-- [x] 白切鸡
 - [x] 凉拌鱼皮
 - [ ] 筒骨莲藕煲
 
@@ -69,9 +75,7 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H2H1K16K" target="_blank">惠福东路522号首层</a>
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/yx/gyq/jqs/img.jpg)
-
-- 真的上脑寿喜烧双人餐
+- 真的上脑寿喜烧双人餐（推荐）
   - [x] 美国安格斯牛上脑×2
   - [x] 澳洲霜降牛肉×2
   - [x] 松阪黑毛豚五花
@@ -79,6 +83,10 @@ article: false
   - [x] 野菜拼盘
   - [x] 手打乌冬
   - [x] 无菌生鸡蛋
+
+## 大喜居酒屋
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFIIKP20" target="_blank">教育路1号</a>
 
 ## 认真食饭·海鲜大排档
 
@@ -88,10 +96,6 @@ article: false
 - [x] 咸蛋黄焗罗氏虾
 - [x] 上汤时令青菜
 - [x] 猪油捞饭
-
-## 大喜居酒屋
-
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFIIKP20" target="_blank">教育路1号</a>
 
 ## 粽香园
 
@@ -115,13 +119,6 @@ article: false
 - [x] 大片牛肉手工拉面
 - [x] 招牌烤包子（推荐）
 - [x] 红柳羊肉大串
-
-## 巴打茶记
-
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0JDY7YWYO" target="_blank">惠福东路451号101首层-4</a>
-
-- [x] 港式丝袜奶茶
-- [x] 港式鸳鸯
 
 ## 麦提烤馕美食店
 

@@ -33,8 +33,8 @@ export default hopeTheme({
     lastUpdated: false, // 是否显示页面最后更新时间
     editLink: false, // 是否展示编辑此页链接
     encrypt: {
-        global: true,
-        admin: "MW8888",
+        // global: true,
+        // admin: "MW8888",
     },
     blog: {
         avatar: "/avatar.jpg", // 头像

@@ -13,19 +13,19 @@ article: false
 
 @tab 特色葱油飞鱼
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/hz/hyl/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/hz/lj/hyl/img.jpg)
 
 @tab 金牌烧鹅
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/hz/hyl/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/hz/lj/hyl/img_2.jpg)
 
 @tab 豆酥脆豆腐
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/hz/hyl/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/hz/lj/hyl/img_3.jpg)
 
 @tab 南瓜忌廉海鲜汤
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/hz/hyl/img_4.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/hz/lj/hyl/img_4.jpg)
 
 :::
 

@@ -11,4 +11,4 @@ article: false
 
 官网：[https://www.cantontower.com](https://www.cantontower.com/)
 
-![](https://img.sherry4869.com/blog/life/play/guangzhou/hz/gzt/img.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hz/gzt/img.jpg)

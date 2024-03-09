@@ -23,41 +23,36 @@ article: false
 
 有段时间每当心情不太好的时候总会过来这里，美食是治愈心灵的最佳方式
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/th/thkyz/xxj/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/thkyz/xxj/img_2.jpg)
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/th/thkyz/xxj/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/thkyz/xxj/img_3.jpg)
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/th/thkyz/xxj/img_4.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/thkyz/xxj/img_4.jpg)
 
 @tab 菜单
 
-![2023-10-20](https://img.sherry4869.com/blog/life/food/guangzhou/th/thkyz/xxj/img_5.png)
+![2023-10-20](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/thkyz/xxj/img_5.png)
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/th/thkyz/xxj/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/thkyz/xxj/img.jpg)
 
 :::
 
 - [x] 大盘鸡盖面（推荐）
 - [x] 卤水猪手盖面（推荐）
+- [x] 肥肠盖面
+- [x] 板栗烧鸡盖面
 - [x] 大盘鸡砂锅粉煲（推荐）
 
 ## 二次方空间小吃
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFKTDTCX" target="_blank">下元岗西街三巷2号</a>
 
+薄如蝉翼的肠粉
+
 - [x] 鸡蛋瘦肉肠（推荐）
+- [x] 普宁肠粉
 - [x] 豆花
 - [x] 豆浆
-
-## Moos Coffee（歇业）
-
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFFOBIXZ" target="_blank">元岗路310号</a>
-
-- [x] 生榨椰乳拿铁（推荐）
-- [x] 牛油果拿铁
-- [x] 北海道吐司（推荐）
-- [x] 蔻曼黄油可颂
-- [x] 贝果
 
 ## 骏犇潮州兄弟牛肉火锅
 
@@ -69,7 +64,7 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H1U90B35" target="_blank">天源路5号天河新天地B1</a>
 
-![卤猪手 + 老长沙肉沫拌面 ](https://img.sherry4869.com/blog/life/food/guangzhou/th/thkyz/slf/img.jpg)
+![卤猪手 + 老长沙肉沫拌面 ](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/thkyz/slf/img.jpg)
 
 - [x] 老长沙土猪肉粉
 - [x] 农家杀猪粉
@@ -107,22 +102,16 @@ article: false
 - [x] 番茄牛肉拉面
 - [x] 猪豚骨汤拉面
 - [x] 京都爆汁炸鸡
-- [x] 喜炙郎招牌土豆泥
-- [x] 章鱼小丸子
 - [x] 焦糖凤梨鹅肝烧
 - [x] 明太子玉子烧
 - [x] 特色火炙寿司拼盘
 - [x] 超级鳗鱼粉丝脆脆卷
 - [x] 牛郎爱寿司
 - [x] 蟹棒寿司
+- [x] 章鱼小丸子
+- [x] 喜炙郎招牌土豆泥
 - [x] 喜炙郎奶冻布丁
 - [x] 雪米糍
-
-## 江渔儿酸菜鱼
-
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H36HYRHC" target="_blank">天源路5号天河新天地4楼</a>
-
-- [x] 老坛酸菜鱼
 
 ## 蛙小侠
 
@@ -149,6 +138,12 @@ article: false
 - [x] 超级香锅鸭宝
 - [x] 红糖糍粑
 
+## 江渔儿酸菜鱼
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H36HYRHC" target="_blank">天源路5号天河新天地4楼</a>
+
+- [x] 老坛酸菜鱼
+
 ## 揸哥茶餐厅
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0HDROU73Q" target="_blank">天源路5号天河新天地大厦商场负一楼</a>
@@ -160,13 +155,3 @@ article: false
 ## 潮燚盛荟牛肉店
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFIRS1DD" target="_blank">元岗横路16号A座103-104、201-205一楼</a>
-
-## 茶理宜世
-
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0HBGAF1Z5" target="_blank">元岗横路23号天汇创意园A座一楼</a>
-
-- [x] 长乐未央
-- [x] 郁郁幽兰
-- [x] 翠枝玉露
-- [x] 烟雨乌龙
-- [x] 莺莺

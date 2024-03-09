@@ -13,15 +13,15 @@ article: false
 
 @tab 红烧乳鸽
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/hz/wjg/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/hz/zd/wjg/img.jpg)
 
 @tab 鸽肾饭
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/hz/wjg/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/hz/zd/wjg/img_2.jpg)
 
 @tab 虾米粉丝煲
 
-![](https://img.sherry4869.com/blog/life/food/guangzhou/hz/wjg/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/hz/zd/wjg/img_3.jpg)
 
 :::
 

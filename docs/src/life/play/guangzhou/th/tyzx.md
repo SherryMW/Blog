@@ -31,7 +31,7 @@ article: false
 
 店里的两只猫猫一只叫“福福”，另一只叫“莫莫”
 
-![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/dyg/img.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/th/tyzx/dyg/img.jpg)
 
 ## 怪诞小镇原创剧情密室
 
@@ -57,7 +57,7 @@ article: false
 
 广州变格推理主题密室天花板
 
-![CPU干烧了](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/gdxz/img.jpg)
+![CPU干烧了](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/th/tyzx/gdxz/img.jpg)
 
 ## 头号玩家剧情密室
 
@@ -85,7 +85,7 @@ article: false
 
 在保安大哥奋力踹门时调戏了一句：“晚饭是不是没吃饱阿” 后果有点严重:scream:
 
-![一刷抽到了雪莉的身份牌 OMG](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/thwj/img.jpg)
+![一刷抽到了雪莉的身份牌 OMG](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/th/tyzx/thwj/img.jpg)
 
 ## 关你鬼室大型密室逃脱
 
@@ -185,47 +185,47 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00141V5TB" target="_blank">天河路228号正佳广场2层2D126</a>
 
-![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/th/tyzx/hysj/img.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/th/tyzx/hysj/img_2.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/th/tyzx/hysj/img_3.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_4.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/th/tyzx/hysj/img_4.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_5.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/th/tyzx/hysj/img_5.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_6.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/th/tyzx/hysj/img_6.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_7.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/th/tyzx/hysj/img_7.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_8.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/th/tyzx/hysj/img_8.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_9.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/th/tyzx/hysj/img_9.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_10.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/th/tyzx/hysj/img_10.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_11.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/th/tyzx/hysj/img_11.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_12.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/th/tyzx/hysj/img_12.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_13.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/th/tyzx/hysj/img_13.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_14.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/th/tyzx/hysj/img_14.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_15.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/th/tyzx/hysj/img_15.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_16.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/th/tyzx/hysj/img_16.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_17.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/th/tyzx/hysj/img_17.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_18.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/th/tyzx/hysj/img_18.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_19.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/th/tyzx/hysj/img_19.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_20.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/th/tyzx/hysj/img_20.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/guangzhou/th/tyzx/hysj/img_21.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/th/tyzx/hysj/img_21.jpg)
 
 ## 速马赫卡丁车
 

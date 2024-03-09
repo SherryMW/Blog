@@ -15,7 +15,7 @@ article: false
 
 剧情：<el-rate model-value="4" disabled text-color="#ff9900" show-score />
 
-场景：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
+场景：<el-rate model-value="1" disabled text-color="#ff9900" show-score />
 
 道具：<el-rate model-value="2" disabled text-color="#ff9900" show-score />
 
