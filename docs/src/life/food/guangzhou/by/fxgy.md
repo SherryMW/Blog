@@ -43,7 +43,7 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFGX31NC" target="_blank">远景路22号B68档</a>
 
-![第一次见这种形态的煎饺](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/jj/img.jpg)
+![第一次见这种形状的煎饺](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/jj/img.jpg)
 
 - [x] 精肉韭菜煎饺
 - [x] 精肉香菇水饺

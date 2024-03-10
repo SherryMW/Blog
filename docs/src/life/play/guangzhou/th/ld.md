@@ -20,7 +20,7 @@ article: false
 
 ### 逃避可耻但有效
 
-密室里的香薰味道让我以及朋友都觉得非常难受:see_no_evil:
+密室里的香薰味道让我和朋友都觉得非常难受:see_no_evil:
 
 沉浸：<el-rate model-value="2" disabled text-color="#ff9900" show-score />
 
