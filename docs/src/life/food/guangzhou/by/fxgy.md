@@ -21,6 +21,16 @@ article: false
 - [x] 班尼迪蛋（里头的荷兰酱酸的我头皮发麻:see_no_evil:）
 - [x] 薯条鸡翅拼盘
 
+## 好彩米芝莲港式茶餐厅
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0GUPNXC57" target="_blank">机场路601号银鹰大酒店一楼1O1铺</a>
+
+- [x] 鸡扒饭
+- [x] 生炒牛肉饭
+- [x] 干炒牛河
+- [x] 特色炒米粉
+- [x] 鲜虾云吞面
+
 ## 广笼记
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0G3RDBNCR" target="_blank">云城东路501号万达广场F3</a>

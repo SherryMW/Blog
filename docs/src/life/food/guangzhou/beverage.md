@@ -5,6 +5,8 @@ article: false
 
 # 饮品
 
+生椰拿铁：在抛开咖啡豆的品质来讲，目前大多数的咖啡店都是使用便于存储的瓶装椰乳，味道上都大差不差且回味会有点涩涩的口感。如果用的是海南椰乳，对于存储条件要求会高点，需要冷冻解冻，喝起来口感上会更加丝滑，回味也不会出现涩涩的口感
+
 ## Moos Coffee（歇业）
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFFOBIXZ" target="_blank">元岗路310号</a>
@@ -75,6 +77,10 @@ article: false
 
 - [x] 港式丝袜奶茶
 - [x] 港式鸳鸯
+
+## 方块咖啡
+
+- [x] 生椰拿铁
 
 ## 路环咖啡
 
