@@ -26,10 +26,11 @@ article: false
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0GUPNXC57" target="_blank">机场路601号银鹰大酒店一楼1O1铺</a>
 
 - [x] 鸡扒饭
-- [x] 生炒牛肉饭
+- [x] 叉烧虾仁滑蛋炒饭
 - [x] 干炒牛河
 - [x] 特色炒米粉
 - [x] 鲜虾云吞面
+- [x] 鸡扒公仔面
 
 ## 广笼记
 

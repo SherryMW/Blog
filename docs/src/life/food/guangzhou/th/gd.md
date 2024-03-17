@@ -65,6 +65,13 @@ article: false
 - [x] 甘蔗马蹄爽
 - [x] 杨枝甘露
 
+## 阿强家酸菜鱼
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0G0TAEIIH" target="_blank">天河路603号莱福广场一楼</a>
+
+- [x] 酸菜鲈鱼
+- [x] 炭烧猪颈肉
+
 ## 今之味
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0GKSBCUID" target="_blank">天河路621号天娱广场西塔楼F4层</a>

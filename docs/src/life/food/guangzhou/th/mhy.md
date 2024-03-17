@@ -33,7 +33,7 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0I12MZD0C" target="_blank">VLAB181负一楼123铺</a>
 
-![玛格丽特披萨](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/mhy/forza/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/mhy/forza/img.jpg)
 
 - [x] 玛格丽特披萨
 - [x] 意面

@@ -5,11 +5,9 @@ article: false
 
 # 饮品
 
-生椰拿铁：在抛开咖啡豆的品质来讲，目前大多数的咖啡店都是使用便于存储的瓶装椰乳，味道上都大差不差且回味会有点涩涩的口感。如果用的是海南椰乳，对于存储条件要求会高点，需要冷冻解冻，喝起来口感上会更加丝滑，回味也不会出现涩涩的口感
-
 ## Moos Coffee（歇业）
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFFOBIXZ" target="_blank">元岗路310号</a>
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFFOBIXZ" target="_blank">天河区元岗路310号</a>
 
 - [x] 生榨椰乳拿铁（推荐）
 - [x] 摩卡
@@ -49,7 +47,7 @@ article: false
 
 ## UG咖啡
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0I1D5OREN" target="_blank">云城南三路396号万达广场121房一楼</a>
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0I1D5OREN" target="_blank">白云区云城南三路396号万达广场121房一楼</a>
 
 - [x] 鲜冰萃生椰拿铁
 
@@ -72,6 +70,12 @@ article: false
 ## 煲珠公
 
 - [x] 老红糖珍珠奶茶
+
+## YOLOCAFE
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0JD6C19MD" target="_blank">白云区机场路康益街1号107铺</a>
+
+- [x] 生椰拿铁
 
 ## 巴打茶记
 

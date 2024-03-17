@@ -27,7 +27,7 @@ article: false
 
 运动量：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
 
-不愧是招牌弥生，第一次体验大型真人 NPC 的密室主题，彻底给我打开了密室逃（不）脱的大门
+不愧是招牌弥生，第一次体验大型真人 NPC 的密室主题，彻底给我打开了密室逃不脱的大门
 
 ### 弥生贰
 

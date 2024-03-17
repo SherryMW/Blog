@@ -29,7 +29,7 @@ article: false
 
 **低端影视**
 
-官网：[https://ddys.one](https://ddys.one/) / [https://ddys.pro](https://ddys.pro/)
+官网：[https://ddys.pro](https://ddys.pro/) / [https://ddys.one](https://ddys.one/)
 
 ---
 
@@ -38,12 +38,6 @@ article: false
 官网：[https://hdmoli.fun](https://hdmoli.fun/)
 
 ## 资源下载
-
-**云盘分享**
-
-[阿里云盘资源列表](https://verbena-sword-b01.notion.site/doc-ba3935a873154742b3343218342132d4)
-
----
 
 **音范丝**
 

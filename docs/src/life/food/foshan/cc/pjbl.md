@@ -43,8 +43,6 @@ article: false
 
 ![](https://img.sherry4869.com/blog/life/food/china/guangdong/foshan/cc/pjbl/dbx/img_2.jpg)
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/foshan/cc/pjbl/dbx/img_3.jpg)
-
 :::
 
 - [x] 金牌马仔

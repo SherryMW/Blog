@@ -38,3 +38,14 @@ article: false
 ![](https://cdn.chimelong.com/upload/afc10433ac721bd2/bae5ca9b363e5300.jpg)
 
 :::
+
+- 2022年玩圣至尊快速通行
+  - [x] 迷雾月台
+  - [x] 慌地求生
+  - [x] 暗黑惊悚
+  - [x] 恶魔集中营
+  - [x] 木偶戏院
+  - [x] 黑化实验室
+  - [x] 古宅探灵
+  - [x] 森林神庙
+  - [x] 6号上座

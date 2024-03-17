@@ -93,7 +93,7 @@ article: false
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0J147XFET" target="_blank">府学西街81号</a>
 
 - [x] 金汤花胶鸡
-- [x] 咸蛋黄焗罗氏虾
+- [x] 咸蛋黄焗罗氏虾（推荐）
 - [x] 上汤时令青菜
 - [x] 猪油捞饭
 
