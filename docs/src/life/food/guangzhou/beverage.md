@@ -5,6 +5,13 @@ article: false
 
 # 饮品
 
+## 莲城 Lotus Lounge
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFHBYPRP" target="_blank">兴盛路七号107铺</a>
+
+- [x] daydream
+- [x] 死亡的性感解释
+
 ## Moos Coffee（歇业）
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFFOBIXZ" target="_blank">天河区元岗路310号</a>
@@ -36,24 +43,29 @@ article: false
 
 ## 喜茶
 
+- [x] 多肉青提
 - [x] 芋泥波波鲜奶
 - [x] 烤黑糖波波牛乳茶
 - [x] 冰蓝生打椰（emm）
+
+## 沪上阿姨
+
+- [x] 杨枝甘露
 
 ## 茶百道
 
 - [x] 多芒杨枝甘露
 - [x] 厚芋泥奶绿
 
+## 茶救星球
+
+- [x] 苦瓜柠檬茶
+
 ## UG咖啡
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0I1D5OREN" target="_blank">白云区云城南三路396号万达广场121房一楼</a>
 
 - [x] 鲜冰萃生椰拿铁
-
-## 茶救星球
-
-- [x] 苦瓜柠檬茶
 
 ## 古茗
 
@@ -62,6 +74,10 @@ article: false
 ## 一点点
 
 - [x] 茉香奶绿
+
+## CoCo都可
+
+- [x] 双倍鲜芋奶绿
 
 ## 凑凑火锅
 

@@ -24,6 +24,12 @@ export const PlaySidebar = arraySidebar([
                 children: "structure"
             },
             {
+                text: "白云",
+                prefix: "by/",
+                collapsible: true,
+                children: "structure"
+            },
+            {
                 text: "海珠",
                 prefix: "hz/",
                 collapsible: true,

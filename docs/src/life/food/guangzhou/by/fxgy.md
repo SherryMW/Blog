@@ -12,6 +12,7 @@ article: false
 ![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/syx/img.jpg)
 
 - [x] 招牌柠檬粉（推荐）
+- [x] 油条（推荐）
 
 ## BE BRIGHT CAFFE
 
@@ -32,24 +33,6 @@ article: false
 - [x] 鲜虾云吞面
 - [x] 鸡扒公仔面
 
-## 广笼记
-
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0G3RDBNCR" target="_blank">云城东路501号万达广场F3</a>
-
-- [x] 虾饺
-- [x] 酱皇凤爪
-- [x] 香煎韭菜饺
-- [x] 香煎萝卜糕
-- [x] 豉油皇炒面
-
-## 士达乐冰室
-
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H2THNIBS" target="_blank">棠下远景路152号119-120</a>
-
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/sdl/img.jpg)
-
-- [x] 滑蛋瑞士鸡腿饭
-
 ## 饺家传统手工饺子
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFGX31NC" target="_blank">远景路22号B68档</a>
@@ -59,3 +42,21 @@ article: false
 - [x] 精肉韭菜煎饺
 - [x] 精肉香菇水饺
 - [x] 红烧排骨面
+
+## 士达乐冰室
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H2THNIBS" target="_blank">棠下远景路152号119-120</a>
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/sdl/img.jpg)
+
+- [x] 滑蛋瑞士鸡腿饭
+
+## 广笼记
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0G3RDBNCR" target="_blank">云城东路501号万达广场F3</a>
+
+- [x] 虾饺
+- [x] 酱皇凤爪
+- [x] 香煎韭菜饺
+- [x] 香煎萝卜糕
+- [x] 豉油皇炒面

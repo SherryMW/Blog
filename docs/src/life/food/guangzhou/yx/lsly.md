@@ -11,10 +11,10 @@ article: false
 
 ![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/lsly/ty/img.jpg)
 
-- 双人套餐
-  - [x] 雪花牛板腱
-  - [x] 雪花牛
-  - [x] 牛肋条
-  - [x] 牛五花
-  - [x] 霜降松板肉
-  - [x] 鱼饼汤
+双人套餐
+- [x] 雪花牛板腱
+- [x] 雪花牛
+- [x] 牛肋条
+- [x] 牛五花
+- [x] 霜降松板肉
+- [x] 鱼饼汤

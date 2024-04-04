@@ -38,5 +38,3 @@ article: false
 ## 辣辣寿司
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00141R25J" target="_blank">解放南路173-183号香榭丽舍商业街</a>
-
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/hzgc/llss/img.jpg)

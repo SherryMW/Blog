@@ -75,14 +75,14 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H2H1K16K" target="_blank">惠福东路522号首层</a>
 
-- 真的上脑寿喜烧双人餐（推荐）
-  - [x] 美国安格斯牛上脑×2
-  - [x] 澳洲霜降牛肉×2
-  - [x] 松阪黑毛豚五花
-  - [x] 墨鱼肠片
-  - [x] 野菜拼盘
-  - [x] 手打乌冬
-  - [x] 无菌生鸡蛋
+真的上脑寿喜烧双人套餐（推荐）
+- [x] 美国安格斯牛上脑×2
+- [x] 澳洲霜降牛肉×2
+- [x] 松阪黑毛豚五花
+- [x] 墨鱼肠片
+- [x] 野菜拼盘
+- [x] 手打乌冬
+- [x] 无菌生鸡蛋
 
 ## 大喜居酒屋
 
@@ -119,12 +119,3 @@ article: false
 - [x] 大片牛肉手工拉面
 - [x] 招牌烤包子（推荐）
 - [x] 红柳羊肉大串
-
-## 麦提烤馕美食店
-
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0JGU1KSGV" target="_blank">惠福西路324号</a>
-
-- [x] 羊肉串
-- [x] 牛肉串
-- [x] 羊肋排
-- [x] 烤包子

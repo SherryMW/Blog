@@ -47,7 +47,7 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFKTDTCX" target="_blank">下元岗西街三巷2号</a>
 
-薄如蝉翼的肠粉
+薄如蝉翼的肠粉，推荐！
 
 - [x] 鸡蛋瘦肉肠（推荐）
 - [x] 普宁肠粉

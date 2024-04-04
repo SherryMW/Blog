@@ -22,7 +22,7 @@ article: false
 
 密室里的香薰味道让我和朋友都觉得非常难受:see_no_evil:
 
-沉浸：<el-rate model-value="2" disabled text-color="#ff9900" show-score />
+沉浸：<el-rate model-value="0.5" disabled text-color="#ff9900" show-score />
 
 剧情：<el-rate model-value="2" disabled text-color="#ff9900" show-score />
 

@@ -177,6 +177,13 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFKX3B93" target="_blank">天河路218号天环广场西塔B1层</a>
 
+## 汉拿山（歇业）
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00140TFHO" target="_blank">天河路228号正佳广场5层南街</a>
+
+- [x] 荣升全牛八拼
+- [x] 石锅牛肉拌饭
+
 ## 龙井湖
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0JAT7QM2I" target="_blank">天河路228号正佳广场5F-5A031-33号</a>

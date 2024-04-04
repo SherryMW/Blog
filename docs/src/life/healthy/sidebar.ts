@@ -13,5 +13,5 @@ export const HealthySidebar = arraySidebar([
         collapsible: true,
         children: "structure"
     },
-    // "ill"
+    "ill"
 ])

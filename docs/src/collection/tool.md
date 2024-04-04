@@ -63,6 +63,11 @@ article: false
 
 ::: projects
 ```yaml
+- icon: https://img.sherry4869.com/blog/collection/tools/axure.svg
+  name: Axure
+  desc: Axure RP 是唯一一款让 UX 专业人员能够构建逼真的功能原型的 UX 工具
+  link: https://www.axure.com/
+  
 - icon: https://img.sherry4869.com/blog/collection/tools/processon.svg
   name: ProcessOn
   desc: 免费在线流程图思维导图
