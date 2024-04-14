@@ -90,11 +90,10 @@ article: false
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0GK7146CJ" target="_blank">西湖路63号光明广场三楼北区B06铺</a>
 
-- 臻品双人餐
-  - [x] 五指毛桃椰子鸡
-  - [x] 精品肥牛
-  - [x] 娃娃菜
-  - [x] 响铃卷
+- [x] 五指毛桃椰子鸡
+- [x] 精品肥牛
+- [x] 娃娃菜
+- [x] 响铃卷
 
 ## 海底捞火锅
 

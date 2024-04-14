@@ -38,3 +38,17 @@ article: false
 ## 辣辣寿司
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00141R25J" target="_blank">解放南路173-183号香榭丽舍商业街</a>
+
+## 粽香园
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFHFHFI6" target="_blank">大德路298号之1号</a>
+
+- [x] 绿豆咸肉蛋黄粽（推荐）
+- [x] 牛腩布拉肠
+
+## 勿理堂
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0JKOKKQVC" target="_blank">大德路282号之一首层</a>
+
+- [x] 紫菜肉松包
+- [x] 罗汉果菊花茶

@@ -12,7 +12,16 @@ article: false
 ![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/syx/img.jpg)
 
 - [x] 招牌柠檬粉（推荐）
-- [x] 油条（推荐）
+- [x] 油条
+- [x] 小酥肉
+
+## 越广越南牛肉粉
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0G305KEQX" target="_blank">乐嘉路96号101房</a>
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/ygyn/img.jpg)
+
+- [x] 越式番茄虾蟹酱粉
 
 ## BE BRIGHT CAFFE
 

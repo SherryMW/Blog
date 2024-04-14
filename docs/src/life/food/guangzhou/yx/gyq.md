@@ -84,10 +84,6 @@ article: false
 - [x] 手打乌冬
 - [x] 无菌生鸡蛋
 
-## 大喜居酒屋
-
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFIIKP20" target="_blank">教育路1号</a>
-
 ## 认真食饭·海鲜大排档
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0J147XFET" target="_blank">府学西街81号</a>
@@ -97,12 +93,9 @@ article: false
 - [x] 上汤时令青菜
 - [x] 猪油捞饭
 
-## 粽香园
+## 大喜居酒屋
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFHFHFI6" target="_blank">大德路298号之1号</a>
-
-- [x] 绿豆咸肉蛋黄粽（推荐）
-- [x] 牛腩布拉肠
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFIIKP20" target="_blank">教育路1号</a>
 
 ## 绿茶餐厅
 
