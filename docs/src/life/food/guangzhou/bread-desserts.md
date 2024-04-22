@@ -59,20 +59,6 @@ article: false
 - [x] 原味酥皮泡芙（推荐）
 - [x] 原味脆皮奶棒
 
-## 奈雪的茶
-
-- [x] 奶酪芋头山（推荐）
-- [x] 松松芋泥麻薯包
-- [x] 咸蛋黄嘟嘟
-
-## Moos Coffee（歇业）
-
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFFOBIXZ" target="_blank">天河区元岗路310号</a>
-
-- [x] 北海道吐司（推荐）
-- [x] 蔻曼黄油可颂
-- [x] 贝果
-
 ## 仁信老铺甜品
 
 - [x] 原味双皮奶（推荐）
