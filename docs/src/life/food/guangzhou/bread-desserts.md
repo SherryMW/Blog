@@ -77,6 +77,13 @@ article: false
 
 - [x] 原味双皮奶（推荐）
 
+## 老香港手工蛋糕
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0J2YBGZXD" target="_blank">惠福西路与诗书路交叉口西20米</a>
+
+- [x] 浓香芝士蛋糕
+- [x] 香草/巧克力泡芙
+
 ## 美喝喝糖水铺
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFFZS28T" target="_blank">越秀区诗书路113号</a>

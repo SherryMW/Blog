@@ -8,7 +8,6 @@ export const NavbarConfig = navbar([
     },
     {
         text: "生活",
-        icon: "creative",
         prefix: "/life/",
         children: [
             {
@@ -27,17 +26,14 @@ export const NavbarConfig = navbar([
     },
     {
         text: "收藏",
-        icon: "box",
         link: "/collection/developers"
     },
     {
         text: "友情链接",
-        icon: "link",
         link: "/friends"
     },
     {
         text: "关于",
-        icon: "info",
         link: "/intro"
     }
 ]);

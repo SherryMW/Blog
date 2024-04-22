@@ -19,7 +19,6 @@ export default hopeTheme({
         name: "MW",// 作者名称
         url: "https://blog.sherry4869.com"
     },
-    iconAssets: "iconfont",
     logo: "/logo.svg", // 网站 Logo
     repo: "SherryMW/Blog", // 仓库配置，默认为 GitHub 同时也可以是一个完整的 URL
     repoDisplay: false, // 是否在导航栏内显示仓库链接入口，默认为 true
@@ -33,12 +32,11 @@ export default hopeTheme({
     lastUpdated: false, // 是否显示页面最后更新时间
     editLink: false, // 是否展示编辑此页链接
     encrypt: {
-        // global: true,
-        // admin: "MW8888",
+        global: true,
+        admin: "MW8888",
     },
     blog: {
         avatar: "/avatar.jpg", // 头像
-        roundAvatar: true, // 是否剪裁头像为圆形形状
         description: "过往不恋 未来不迎 <br/><br/> 上次更新：" + commitDate + "<br/><br/>更新内容：" + commitMessage, // 主页口号、座右铭或介绍语
         intro: "", // 填写后点击头像或作者名称进入个人介绍页的界面地址
         // 主页媒体链接配置
@@ -74,8 +72,6 @@ export default hopeTheme({
         mdEnhance: {
             tabs: true, // 选项卡,
             figure: true, // 图片描述
-            // imgSize: true, // 图片尺寸
-            // imgLazyload: true, // 图片懒加载
             tasklist: true, // 任务列表
             echarts: true, // ECharts图表配置
         },
