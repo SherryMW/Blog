@@ -54,6 +54,12 @@ article: false
 
 - [ ] 牛角包
 
+## 高桥面包店
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0HDHCDUKA" target="_blank">荔湾区龙津中路540号之一首层</a>
+
+- [x] 菠萝火焰芝士猪扒包（推荐）
+
 ## 西树泡芙
 
 - [x] 原味酥皮泡芙（推荐）
@@ -65,7 +71,7 @@ article: false
 
 ## 老香港手工蛋糕
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0J2YBGZXD" target="_blank">惠福西路与诗书路交叉口西20米</a>
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0J2YBGZXD" target="_blank">越秀区惠福西路与诗书路交叉口西20米</a>
 
 - [x] 浓香芝士蛋糕
 - [x] 香草/巧克力泡芙

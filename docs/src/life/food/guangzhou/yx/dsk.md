@@ -13,7 +13,7 @@ article: false
 
 @tab 秃黄油拌饭
 
-![需要等待20分钟制作时间](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/dsk/clx/img_2.jpg)
+![耐心等待20分钟制作时间](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/dsk/clx/img_2.jpg)
 
 @tab 蟹粉小笼包
 

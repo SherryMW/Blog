@@ -73,11 +73,7 @@ article: false
   name: Animate.css
   desc: Just-add-water CSS animations
   link: https://animate.style/
-```
-:::
 
-::: projects
-```yaml
 - icon: https://img.sherry4869.com/blog/collection/developers/gsap_logo.png
   name: GSAP
   desc: 适用于现代 Web 的专业级 JavaScript 动画

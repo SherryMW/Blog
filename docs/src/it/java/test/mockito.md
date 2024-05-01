@@ -25,51 +25,59 @@ Mockito 是一个流行的 Java 测试框架，用于创建和管理 Mock 对象
 
 - 创建 Mock 对象：Mockito 允许你轻松地创建 Mock 对象，以模拟真实对象的行为。你可以使用 `mock()` 方法来创建一个 Mock 对象，然后使用 Mockito 提供的方法来配置 Mock 对象的行为和预期调用
 
-- 设置 Mock 对象行为：你可以使用 Mockito 提供的 `when()` 和 `thenReturn()` 方法来设置 Mock 对象的行为。这允许你指定当某个方法被调用时应该返回什么值，或者抛出什么异常
+- 设置 Mock 对象行为：你可以使用 Mockito 提供的 `when()` 和 `thenReturn()`、`thenThrow()` 方法来设置 Mock 对象的行为。这允许你指定当某个方法被调用时应该返回什么值，或者抛出什么异常
 
-- 验证 Mock 对象方法调用：Mockito 提供了丰富的验证功能，用于验证 Mock 对象的方法是否按照预期进行了调用。你可以使用 `verify()` 方法来验证方法的调用次数、参数值等
-
-- Spy 对象：Mockito 还支持创建 Spy 对象，它是真实对象的代理，可以部分模拟其行为。与 Mock 对象不同，Spy 对象保留了被代理对象的真实行为，但也可以进行部分替换
-
-- 注解支持：Mockito 提供了一些注解来简化测试代码的编写，例如 `@Mock` 用于标记 Mock 对象，`@InjectMocks` 用于标记被测试对象等
-
-- 清晰的错误信息：Mockito 提供了清晰和友好的错误消息，当测试失败时，它会给出有用的提示，帮助你快速定位问题所在
-
-- 与 JUnit 和其他测试框架集成：Mockito 可以与 JUnit 和其他流行的测试框架（如 TestNG）无缝集成，使得在单元测试中使用 Mockito 变得更加方便
+- 注解支持：Mockito 提供了一些注解来简化测试代码的编写，例如 `@Mock` 用于标记 Mock 模拟对象，`@InjectMocks` 用于标记被测试对象等
 
 ## 相关依赖
-
-mockito-core：[https://mvnrepository.com/artifact/org.mockito/mockito-core](https://mvnrepository.com/artifact/org.mockito/mockito-core)
-
-junit-jupiter-api：[https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api](https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api)
 
 ```xml
 <dependencies>
     <dependency>
-        <groupId>org.mockito</groupId>
-        <artifactId>mockito-core</artifactId>
-        <version>4.5.1</version>
-        <scope>test</scope>
-    </dependency>
-    <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter-api</artifactId>
-        <version>5.8.2</version>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-test</artifactId>
         <scope>test</scope>
     </dependency>
 </dependencies>
 ```
 
+在 spring-boot-starter-test 里已经默认引入了 Mockito 的相关依赖：
+
+```xml
+<dependencies>
+    <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter</artifactId>
+        <version>5.8.2</version>
+        <scope>compile</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.mockito</groupId>
+        <artifactId>mockito-core</artifactId>
+        <version>4.5.1</version>
+        <scope>compile</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.mockito</groupId>
+        <artifactId>mockito-junit-jupiter</artifactId>
+        <version>4.5.1</version>
+        <scope>compile</scope>
+    </dependency>
+</dependencies>
+```
+
+::: tip
+
+在 IDEA 中可以在当前类任意代码块中点击鼠标右键 ->【Generate】（或者使用快捷键 Alt+Insert）->【Test】创建测试用例
+
 ```java
 public class Demo {
-
+    
     public int add(int a, int b) {
         return a + b;
     }
 }
 ```
-
-IDEA 中可以在当前类任意代码块中点击鼠标右键 ->【Generate】（或者使用快捷键 Alt+Insert）->【Test】创建测试用例
 
 ![](https://img.sherry4869.com/blog/it/java/test/mockito/img.png)
 
@@ -77,7 +85,7 @@ IDEA 中可以在当前类任意代码块中点击鼠标右键 ->【Generate】�
 import org.junit.jupiter.api.Test;
 
 class DemoTest {
-
+    
     @Test
     void add() {
 
@@ -85,35 +93,17 @@ class DemoTest {
 }
 ```
 
-## Assertions
+:::
 
-Assertions 是 Java 提供的一组断言（assertion）工具，用于在测试中进行条件检查和结果验证。它们位于 `org.junit.jupiter.api.Assertions` 包中，用于编写 JUnit5 测试
+## 基本使用
 
-下面是一些常见的 Assertions 方法及其用法：
-
-- `Assertions.assertEquals(expected, actual);`：验证两个值是否相等
-
-- `Assertions.assertTrue(condition);`：验证条件是否为 true
-
-- `Assertions.assertFalse(condition);`：验证条件是否为 false
-
-- `Assertions.assertNull(obj);`：验证对象是否为 null
-
-- `Assertions.assertNotNull(obj);`：验证对象是否不为 null
-
-- `Assertions.assertSame(expected, actual);`：验证两个对象引用是否指向不同的对象
-
-- `Assertions.assertThrows(ExpectedException.class, () -> { // 执行可能抛出异常的代码块 });`：验证执行代码块是否抛出了指定类型的异常
-
-- `Assertions.assertArrayEquals(expectedArray, actualArray);`：验证两个数组是否相等
-
-## mock
+### mock
 
 ```java
 public static <T> T mock(Class<T> classToMock)
 ```
 
-mock 方法接受一个 Class 对象作为参数，并返回一个模拟的类型为 T 的对象。这个对象是传入类的一个虚拟实现，可以用于测试中模拟真实对象的行为
+`mock()` 方法接受一个 Class 对象作为参数，并返回一个模拟的类型为 `T` 的对象。这个对象是传入类的一个虚拟实现，可以用于测试中模拟真实对象的行为
 
 ```java
 import org.junit.jupiter.api.Test;
@@ -124,18 +114,18 @@ import java.util.Random;
 class DemoTest {
 
     @Test
-    void mockTest() {
+    public void mockTest() {
         Random mock = Mockito.mock(Random.class);
         System.out.println(mock.nextInt());
     }
 }
 ```
 
-在上述的测试代码中，使用 Mockito 创建了一个 Random 类的 Mock 对象，并调用了它的 `nextInt()` 方法。由于 `nextInt()` 方法是一个虚拟的方法调用，Mockito 默认情况下会返回类型的默认值。对于 `nextInt()` 方法，它的默认返回值是 0
+在上述的测试代码中，使用 Mockito 创建了一个 Random 类的 Mock 对象，并调用了它的 `nextInt()` 方法。由于 `nextInt()` 方法是一个虚拟的方法调用，Mockito 默认情况下会返回类型的默认值。对于 `nextInt()` 方法，它的默认返回值是 0。如果方法返回值是布尔类型，那么默认值就是 false，如此类推
 
 所以，无论你运行多少次测试，结果都会是 0。这并不表示 Mockito 创建的 Mock 对象出现了问题，而是因为你没有为 `nextInt()` 方法指定具体的行为，它默认返回了 0
 
-如果你希望 `nextInt()` 方法返回不同的值，你可以使用 Mockito 提供的 [when](#when) 方法来配置 Mock 对象的行为。例如：
+如果你希望 `nextInt()` 方法返回不同的值，你可以使用 Mockito 提供的 [when()](#when) 方法来配置 Mock 对象的行为。例如：
 
 ```java
 import org.junit.jupiter.api.Test;
@@ -146,7 +136,7 @@ import java.util.Random;
 class DemoTest {
 
     @Test
-    void mockTest() {
+    public void mockTest() {
         Random mock = Mockito.mock(Random.class);
         Mockito.when(mock.nextInt()).thenReturn(123);
         System.out.println(mock.nextInt());
@@ -154,205 +144,23 @@ class DemoTest {
 }
 ```
 
-在这个示例中，我们使用 `when(mock.nextInt()).thenReturn(123)` 来指定当调用 `nextInt()` 方法时应该返回 123。这样，输出就不再是 0，而是 123
+在这个示例中，我们使用 `when(mock.nextInt()).thenReturn(123)` 来指定当调用 `nextInt()` 方法时应该返回值 123。这样，输出结果就不再是 0，而是 123
 
-再来看一个相似例子：
+### when
 
-::: tabs
-
-@tab Demo.java
-
-```java
-public class Demo {
-
-    public int add(int a, int b) {
-        System.out.println(123);
-        return a + b;
-    }
-}
-```
-
-@tab DemoTest.java
-
-```java
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
-import org.mockito.MockitoAnnotations;
-
-class DemoTest {
-
-    @BeforeEach
-    void setUp() {
-        System.out.println("----------测试开始----------");
-        MockitoAnnotations.openMocks(this);
-    }
-
-    @AfterEach
-    void after() {
-        System.out.println("----------测试结束----------");
-    }
-
-    @Test
-    void mockTest() {
-        Demo demo = Mockito.mock(Demo.class);
-        System.out.println(demo.add(1, 2));
-    }
-}
-```
-
-控制台打印结果：
-
-```text
-----------测试开始----------
-0
-----------测试结束----------
-```
-
-:::
-
-## spy
-
-`spy()` 是 Mockito 框架提供的一个方法，用于创建一个 Spy 对象。在 Mockito 中，Spy 对象是一个真实对象的代理，它保留了被代理对象的真实行为，但也可以进行部分替换
-
-`spy()` 与 `mock()` 不同的是：
-
-1. 被 spy 的对象会走真实的方法，而 mock 对象不会
-
-2. spy 方法的参数是对象实例，mock 的参数是 class
-
-::: tabs
-
-@tab Demo.java
-
-```java
-public class Demo {
-
-    public int add(int a, int b) {
-        System.out.println(123);
-        return a + b;
-    }
-}
-```
-
-@tab DemoTest.java
-
-```java
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
-import org.mockito.MockitoAnnotations;
-
-class DemoTest {
-
-    @BeforeEach
-    void setUp() {
-        System.out.println("----------测试开始----------");
-        MockitoAnnotations.openMocks(this);
-    }
-
-    @AfterEach
-    void after() {
-        System.out.println("----------测试结束----------");
-    }
-
-    @Test
-    void mockTest() {
-        Demo demo = Mockito.spy(new Demo());
-        System.out.println(demo.add(1, 2));
-    }
-}
-```
-
-控制台打印结果：
-
-```text
-----------测试开始----------
-123
-3
-----------测试结束----------
-```
-
-:::
-
-## when
-
-`when()` 是 Mockito 框架提供的一个静态方法，用于指定 Mock 对象方法的行为。它通常与 `thenReturn()`、`thenThrow()` 等方法一起使用，用于为 Mock 对象的方法调用设置返回值、抛出异常等行为
+`when()` 用于指定 Mock 对象方法的行为。它通常与 `thenReturn()`、`thenThrow()` 等方法一起使用，用于为 Mock 对象的方法调用设置返回值、抛出异常等行为
 
 下面是一些关于 `when()` 方法的示例用法：
 
-1. 设置方法返回值：
+1. 模拟返回值：
 
     ```java
     Mockito.when(mockObject.method()).thenReturn(expectedValue);
     ```
     
-    这个语法表示当调用 `mockObject` 对象的 `method()` 方法时，应该返回 `expectedValue`。可以使用 `thenReturn()` 方法指定返回值，可以是任意类型的值
+    这个语法表示当调用 `mockObject` 对象的 `method()` 方法时，可以使用 `thenReturn()` 方法指定返回预设值，可以是任意类型的值
 
-2. 抛出异常：
-
-    ```java
-    Mockito.when(mockObject.method()).thenThrow(Exception.class);
-    ```
-    
-    通过 `thenThrow()` 方法可以指定当调用 `mockObject` 对象的 `method()` 方法时抛出异常
-
-    ```java
-    import org.junit.jupiter.api.AfterEach;
-    import org.junit.jupiter.api.BeforeEach;
-    import org.junit.jupiter.api.Test;
-    import org.mockito.Mock;
-    import org.mockito.MockitoAnnotations;
-    
-    import java.util.List;
-    
-    import static org.mockito.Mockito.*;
-    
-    class DemoTest {
-    
-        @Mock
-        private List<String> mockList;
-    
-        @BeforeEach
-        void setUp() {
-            System.out.println("----------测试开始----------");
-            MockitoAnnotations.openMocks(this);
-        }
-    
-        @AfterEach
-        void after() {
-            System.out.println("----------测试结束----------");
-        }
-    
-        @Test
-        void mockTest() {
-            when(mockList.add("hello")).thenThrow(new RuntimeException());
-            mockList.add("hello");
-        }
-    }
-    ```
-    
-    ```text
-    ----------测试开始----------
-    ----------测试结束----------
-    
-    java.lang.RuntimeException
-    ```
-
-3. 使用 Answer 设置自定义行为：
-
-    ```java
-    Mockito.when(mockObject.method(Mockito.anyString())).thenAnswer(invocation -> {
-        String argument = invocation.getArgument(0);
-        return argument.length();
-    });
-    ```
-    
-    可以使用 `thenAnswer()` 方法结合 Answer 接口来设置自定义行为。在这个示例中，我们根据方法的参数计算返回值
-
-4. 模拟 void 方法：
+2. 模拟 void 方法：
 
     ```java
     Mockito.doNothing().when(mockObject).voidMethod();
@@ -360,160 +168,29 @@ class DemoTest {
     
     对于 `void` 方法，Mockito 不支持直接使用 `when()` 方法，而是使用 `doNothing()` 方法结合 `when()` 方法来模拟 `void` 方法
 
-5. Mock 对象在触发指定行为后调用真实的方法
+3. 模拟抛出异常：
 
     ```java
-    Mockito.when(mockObject.method()).thenCallRealMethod();
+    Mockito.when(mockObject.method()).thenThrow(Exception.class);
     ```
-    
-    当调用 `mockObject` 对象的 `method()` 方法时，应该调用真实对象的实现。这意味着 Mockito 不会返回预设的值或执行其他模拟的行为，而是调用真实对象的 `method()` 方法
 
-    ::: tabs
-    
-    @tab Demo.java
-    
-    ```java
-    public class Demo {
-    
-        public int add(int a, int b) {
-            System.out.println(123);
-            return a + b;
-        }
-    }
-    ```
-    
-    @tab DemoTest.java
-    
-    ```java
-    import org.junit.jupiter.api.AfterEach;
-    import org.junit.jupiter.api.Assertions;
-    import org.junit.jupiter.api.BeforeEach;
-    import org.junit.jupiter.api.Test;
-    import org.mockito.Mock;
-    import org.mockito.MockitoAnnotations;
-    
-    import static org.mockito.Mockito.*;
-    
-    class DemoTest {
-    
-        @Mock
-        private Demo demo;
-    
-        @BeforeEach
-        void setUp() {
-            System.out.println("----------测试开始----------");
-            MockitoAnnotations.openMocks(this);
-        }
-    
-        @AfterEach
-        void after() {
-            System.out.println("----------测试结束----------");
-        }
-    
-        @Test
-        void mockTest() {
-            when(demo.add(1, 2)).thenCallRealMethod();
-            Assertions.assertEquals(3, demo.add(1, 2));
-        }
-    }
-    ```
-    
-    控制台打印结果：
-    
-    ```text
-    ----------测试开始----------
-    123
-    ----------测试结束----------
-    ```
-    
-    :::
+   通过 `thenThrow()` 方法可以指定当调用 `mockObject` 对象的 `method()` 方法时抛出异常
 
-## verify
-
-Mockito 的 verify 方法用于验证 Mock 对象的方法是否被正确调用。它允许你检查 Mock 对象的方法是否按照预期进行了调用，并且可以验证方法的调用次数、调用顺序、参数值等
-
-verify 方法的常见用法有两种：
-
-- 验证方法的调用次数：使用 `Mockito.verify(mock对象).方法名(参数)` 来验证方法在测试过程中被调用的次数。例如 `Mockito.verify(mockList).add("hello")` 用于验证 add 方法是否被调用，并且只调用了一次
-
-- 验证方法的参数值：使用 `Mockito.verify(mock对象).方法名(参数)` 结合 `times(int n)` 方法来验证方法的参数值。例如，`Mockito.verify(mockList, times(2)).add("hello")` 用于验证 add 方法是否被调用了两次，并且每次调用时参数为 "hello"
-
-```java
-import org.junit.jupiter.api.Test;
-import org.mockito.Mockito;
-
-import java.util.List;
-
-class DemoTest {
-
-    @Test
-    void mockTest() {
-        List<String> mockList = Mockito.mock(List.class);
-        // 调用被测试对象的方法
-        mockList.add("hello");
-        mockList.add("world");
-        // 验证方法是否被调用
-        Mockito.verify(mockList).add("hello"); // 验证 add 方法被调用过
-        Mockito.verify(mockList, Mockito.times(2)).add(Mockito.anyString()); // 验证 add 方法被调用了两次，并且参数可以是任意字符串
-        Mockito.verify(mockList, Mockito.never()).remove(Mockito.anyString()); // 验证 remove 方法没有被调用过
-    }
-}
-```
-
-::: tip
-在 Java 中，使用 `static import` 语法可以将静态成员（字段或方法）导入到当前类中，从而可以直接使用它们，而不需要使用类名限定符
-
-通过 `import static org.mockito.Mockito.*;` 语句，你可以将 `org.mockito.Mockito` 类中的所有静态方法和字段导入到当前类中。这意味着在当前类中，你可以直接使用 Mockito 类的所有静态方法，而不需要使用 `Mockito.` 前缀
-:::
-
-```java
-import org.junit.jupiter.api.Test;
-
-import java.util.List;
-
-import static org.mockito.Mockito.*;
-
-class DemoTest {
-
-    @Test
-    void mockTest() {
-        List<String> mockList = mock(List.class);
-        // 调用被测试对象的方法
-        mockList.add("hello");
-        mockList.add("world");
-        // 验证方法是否被调用
-        verify(mockList).add("hello"); // 验证 add 方法被调用过
-        verify(mockList, times(2)).add(anyString()); // 验证 add 方法被调用了两次，并且参数可以是任意字符串
-        verify(mockList, never()).remove(anyString()); // 验证 remove 方法没有被调用过
-    }
-}
-```
-
-## @Mock
-
-`@Mock` 是 Mockito 框架提供的一个注解，用于在测试中创建 Mock 对象。它的作用类似于使用 `Mockito.mock()` 方法手动创建 Mock 对象，但是更加简洁方便
-
-使用 `@Mock` 注解的主要步骤如下：
-
-1. 导入 `@Mock` 注解：
+   如果方法的返回是 void，则需要使用 `doThrow()`抛出异常
 
     ```java
-    import org.mockito.Mock;
+    Mockito.doThrow(Exception.class).when(mockObject).method();
     ```
 
-2. 在测试类中，使用 `@Mock` 注解来标记需要创建 Mock 对象的字段
+### @Mock
 
-3. 在测试方法运行之前通常是使用 `@BeforeEach` 注解的方法，调用 `MockitoAnnotations.initMocks(this)`/ `MockitoAnnotations.openMocks(this)` 方法，以初始化标记了 `@Mock` 注解的字段，并创建对应的 Mock 对象
-
-    - 在 Junit5 中，`@Before` 和 `@After` 注解被 `@BeforeEach` 和 `@AfterEach` 所替代
-
-4. 使用初始化后的 Mock 对象进行测试
+`@Mock` 注解用于在测试中创建 Mock 对象。它的作用类似于使用 `Mockito.mock()` 方法手动创建 Mock 对象，但是更加简洁方便
 
 下面是一个使用 `@Mock` 注解的示例：
 
 ::: tabs
 
-@tab Demo.java
+@tab Demo
 
 ```java
 public class Demo {
@@ -525,142 +202,42 @@ public class Demo {
 }
 ```
 
-@tab DemoTest.java
+@tab DemoTest
 
 ```java
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
 
 class DemoTest {
 
     @Mock
     private Demo demo;
 
-    @BeforeEach
-    void setUp() {
-        System.out.println("----------测试开始----------");
-        MockitoAnnotations.openMocks(this);
-    }
-
-    @AfterEach
-    void after() {
-        System.out.println("----------测试结束----------");
-    }
-
     @Test
-    void mockTest() {
-        System.out.println(demo.add(1,2));
+    public void mockTest() {
+        System.out.println(demo.add(1,2).thenReturn(3));
     }
 }
-```
-
-控制台打印结果：
-
-```text
-----------测试开始----------
-0
-----------测试结束----------
 ```
 
 :::
 
-## @Spy
+### @InjectMocks
 
-`@Spy` 是 Mockito 框架提供的一个注解，用于在测试中创建 Spy 对象。Spy 对象是真实对象的代理，它保留了被代理对象的真实行为，并允许部分方法的替换
+`@InjectMocks` 注解用于自动注入被测试类（被测对象）中的依赖。它可以将被测类中标记了 `@Mock` 注解的字段自动注入到被测试对象中
 
-使用 `@Spy` 注解的主要步骤如下：
-
-1. 导入 `@Spy` 注解：
-
-    ```java
-    import org.mockito.Spy;
-    ```
-
-2. 在测试类中，使用 `@Spy` 注解来标记需要创建 Spy 对象的字段
-
-3. 在测试方法运行之前通常是使用 `@BeforeEach` 注解的方法，调用 `MockitoAnnotations.initMocks(this)`/ `MockitoAnnotations.openMocks(this)` 方法，以初始化标记了 @Spy 注解的字段，并创建对应的 Spy 对象
-
-4. 使用初始化后的 Spy 对象进行测试
-
-下面是一个使用 `@Spy` 注解的示例：
-
-::: tabs
-
-@tab Demo.java
-
-```java
-public class Demo {
-
-    public int add(int a, int b) {
-        System.out.println(123);
-        return a + b;
-    }
-}
-```
-
-@tab DemoTest.java
-
-```java
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import org.mockito.Spy;
-import org.mockito.MockitoAnnotations;
-
-class DemoTest {
-
-    @Spy
-    private Demo demo;
-
-    @BeforeEach
-    void setUp() {
-        System.out.println("----------测试开始----------");
-        MockitoAnnotations.openMocks(this);
-    }
-
-    @AfterEach
-    void after() {
-        System.out.println("----------测试结束----------");
-    }
-
-    @Test
-    void mockTest() {
-        System.out.println(demo.add(1,2));
-    }
-}
-```
-
-控制台打印结果：
-
-```text
-----------测试开始----------
-123
-3
-----------测试结束----------
-```
-
-:::
-
-## @InjectMocks
-
-`@InjectMocks` 是 Mockito 框架提供的一个注解，用于自动注入被测试类（被测对象）中的依赖。它可以将被测类中标记了 `@Mock` 或 `@Spy` 注解的字段自动注入到被测试对象中
-
-具体来说，使用 `@InjectMocks` 注解的场景通常是这样的：你有一个类需要进行单元测试，这个类中依赖了其他类（例如服务、工具类等），你使用 `@Mock` 或 `@Spy` 注解创建了这些依赖的模拟对象或间谍对象，然后使用 `@InjectMocks` 注解标记被测试类，Mockito 将自动将模拟对象或间谍对象注入到被测试对象中
+具体来说，使用 `@InjectMocks` 注解的场景通常是这样的：你有一个类需要进行单测/单测覆盖率，这个类中依赖了其他类（例如服务、工具类等），你使用 `@Mock` 注解创建了这些依赖的模拟对象，然后使用 `@InjectMocks` 注解标记被测试类，Mockito 将自动将模拟对象注入到被测试对象中
 
 下面是一个使用 `@InjectMocks` 注解的示例：
 
-假设我们有一个 `Calculator` 类，它依赖了一个 `MathService` 类：
+假设我们有一个 CalculatorServiceImpl 类，它依赖了一个 MathService 服务：
 
 ```java
-public class Calculator {
-    private MathService mathService;
+@Service
+public class CalculatorServiceImpl {
 
-    public Calculator(MathService mathService) {
-        this.mathService = mathService;
-    }
+    @Autowired
+    private MathService mathService;
 
     public int add(int a, int b) {
         return mathService.add(a, b);
@@ -668,87 +245,69 @@ public class Calculator {
 }
 ```
 
-我们想要对 `Calculator` 类进行单元测试，但是 `Calculator` 类依赖了 `MathService`，我们可以使用 `@Mock` 注解创建 `MathService` 的模拟对象，并使用 `@InjectMocks` 注解自动注入到 `Calculator` 类中：
+我们想要对 CalculatorServiceImpl 类进行单元测试，但是 CalculatorServiceImpl 类依赖了 MathService，我们可以使用 `@Mock` 注解创建 MathService 的模拟对象，并使用 `@InjectMocks` 注解让模拟对象注入到 CalculatorServiceImpl 中：
 
 ```java
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.Mockito.when;
 
 class CalculatorTest {
 
-    @Mock
-    private MathService mathService;
-
     @InjectMocks
-    private Calculator calculator;
-
-    @BeforeEach
-    void setUp() {
-        MockitoAnnotations.openMocks(this);
-    }
+    private CalculatorServiceImpl calculatorServiceImplMock;
+    
+    @Mock
+    private MathService mathServiceMock;
 
     @Test
-    void testAdd() {
+    public void testAdd() {
         // 设置 mathService.add() 方法的返回值
-        when(mathService.add(2, 3)).thenReturn(5);
-
-        // 调用 calculator.add() 方法进行测试
-        int result = calculator.add(2, 3);
-
-        // 验证计算结果是否正确
-        assertEquals(5, result);
+        Mockito.when(mathServiceMock.add(2, 3)).thenReturn(5);
+        calculatorServiceImplMock.add(2, 3);
     }
 }
 ```
 
-在这个示例中，我们使用 `@Mock` 注解创建了 `MathService` 的模拟对象，并使用 `@InjectMocks` 注解标记了 `Calculator` 类。在 `@BeforeEach` 注解的方法中，我们调用了 `MockitoAnnotations.openMocks(this)` 来初始化模拟对象和被测试对象。在测试方法 `testAdd()` 中，我们设置了 `mathService.add()` 方法的返回值，并调用 `calculator.add()` 方法进行测试。通过使用 `@InjectMocks` 注解，`Calculator` 类中的 `mathService` 字段被自动注入，并且可以在测试中正常使用
+## 模拟静态方法
 
-## Mock 静态方法
+::: info
 
-Mock 静态方法：[https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#48](https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#48)
+org.mockito.exceptions.base.MockitoException:
+The used MockMaker SubclassByteBuddyMockMaker does not support the creation of static mocks
+
+Mockito's inline mock maker supports static mocks based on the Instrumentation API.
+You can simply enable this mock mode, by placing the 'mockito-inline' artifact where you are currently using 'mockito-core'.
+Note that Mockito's inline mock maker is not supported on Android.
+
+:::
+
+如果我们使用的 Mockito 版本低于 5，我们还需要显示的添加 Mockito 的 mock maker 内联依赖关系
 
 ::: tip
+
 Starting with version 2.7.6, we offer the 'mockito-inline' artifact that enables inline mock making without configuring the MockMaker extension file. To use this, add the `mockito-inline` instead of the `mockito-core` artifact as follows:
 
-从 2.7.6 版开始，我们提供了 "mockito-inline "工具，无需配置 MockMaker 扩展文件即可进行内联模拟制作。要使用它，请添加 "mockito-inline "而不是 "mockito-core "工具，如下所示：
+从 2.7.6 版开始，我们提供了 mockito-inline 工具，无需配置 MockMaker 扩展文件即可进行内联模拟制作。要使用它，请添加 mockito-inline 依赖
+
 :::
+
+[https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#48](https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#48)
 
 ```xml
 <dependencies>
-    <!--
-    <dependency>
-        <groupId>org.mockito</groupId>
-        <artifactId>mockito-core</artifactId>
-        <version>4.5.1</version>
-        <scope>test</scope>
-    </dependency>
-    -->
     <dependency>
         <groupId>org.mockito</groupId>
         <artifactId>mockito-inline</artifactId>
         <version>4.5.1</version>
         <scope>test</scope>
     </dependency>
-    <dependency>
-        <groupId>org.junit.jupiter</groupId>
-        <artifactId>junit-jupiter-api</artifactId>
-        <version>5.8.2</version>
-        <scope>test</scope>
-    </dependency>
 </dependencies>
 ```
 
-请注意，`mockito-core` 与 `mockito-inline` 依赖只能存在一个，不能同时引用
-
 ::: tabs
 
-@tab StaticUtils.java
+@tab StaticUtils
 
 ```java
 import java.util.List;
@@ -775,10 +334,9 @@ public class StaticUtils {
 }
 ```
 
-@tab StaticUtilsTest.java
+@tab StaticUtilsTest
 
 ```java
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.MockedStatic;
 import org.mockito.Mockito;
@@ -788,24 +346,22 @@ import java.util.Arrays;
 class StaticUtilsTest {
 
     @Test
-    void rangeTest() {
-        MockedStatic<StaticUtils> demo = Mockito.mockStatic(StaticUtils.class);
-        demo.when(() -> StaticUtils.range(1, 5)).thenReturn(Arrays.asList(10, 11, 12));
-        Assertions.assertTrue(StaticUtils.range(1, 5).contains(10));
+    public void rangeTest() {
+        MockedStatic<StaticUtils> mockStatic = Mockito.mockStatic(StaticUtils.class);
+        mockStatic.when(() -> StaticUtils.range(1, 5)).thenReturn(Arrays.asList(10, 11, 12));
     }
 
     @Test
-    void nameTest() {
-        MockedStatic<StaticUtils> demo = Mockito.mockStatic(StaticUtils.class);
-        demo.when(StaticUtils::name).thenReturn("lisi");
-        Assertions.assertEquals("lisi", StaticUtils.name());
+    public void nameTest() {
+        MockedStatic<StaticUtils> mockStatic = Mockito.mockStatic(StaticUtils.class);
+        mockStatic.when(StaticUtils::name).thenReturn("lisi");
     }
 }
 ```
 
 :::
 
-如果是单个测试方法运行的话是不会报错的，但运行 `Run StaticUtilsTest`，会发现第二个测试方法 `nameTest()` 会报错： 
+以上的测试用例中，运行单个测试方法的话是不会报错的，例如【Run 'rangeTest()' with Coverage】或者【Run 'nameTest()' with Coverage】。但如果运行整个测试类【Run 'StaticUtilsTest' with Coverage】，那么第二个测试方法 `nameTest()` 将会报错：
 
 ```text
 org.mockito.exceptions.base.MockitoException: 
@@ -814,12 +370,9 @@ For com.mw.mockito.StaticUtils, static mocking is already registered in the curr
 To create a new mock, the existing static mock registration must be deregistered
 ```
 
-在使用 `mockStatic()` 的时候，我们要对 mock 出来的对象在使用完毕后进行关闭。因为 `mockStatic()` 的源码里面其实是用了 Thread 去开启 mock
-
-使用 try-with-resources 对声明的 mock 对象在其使用结束后自动关闭资源：
+在使用 `mockStatic()` 的时候，我们要对 Mock 出来的对象在使用完毕后进行关闭。因为 `mockStatic()` 的源码里面其实是用了 Thread 去开启 Mock。因此要使用 try-with-resources 对声明的 Mock 对象在其使用结束后自动关闭资源：
 
 ```java
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.MockedStatic;
 import org.mockito.Mockito;
@@ -829,157 +382,440 @@ import java.util.Arrays;
 class StaticUtilsTest {
 
     @Test
-    void rangeTest() {
-        try (MockedStatic<StaticUtils> demo = Mockito.mockStatic(StaticUtils.class)) {
-            demo.when(() -> StaticUtils.range(1, 5)).thenReturn(Arrays.asList(10, 11, 12));
-            Assertions.assertTrue(StaticUtils.range(1, 5).contains(10));
+    public void rangeTest() {
+        try (MockedStatic<StaticUtils> mockStatic = Mockito.mockStatic(StaticUtils.class)) {
+            mockStatic.when(() -> StaticUtils.range(1, 5)).thenReturn(Arrays.asList(10, 11, 12));
         }
     }
 
     @Test
-    void nameTest() {
-        try (MockedStatic<StaticUtils> demo = Mockito.mockStatic(StaticUtils.class)) {
-            demo.when(StaticUtils::name).thenReturn("lisi");
-            Assertions.assertEquals("lisi", StaticUtils.name());
+    public void nameTest() {
+        try (MockedStatic<StaticUtils> mockStatic = Mockito.mockStatic(StaticUtils.class)) {
+            mockStatic.when(StaticUtils::name).thenReturn("lisi");
         }
     }
 }
 ```
 
-## 单测覆盖率
+## 模拟构造
+
+在 Mockito 3.4.0 及更高版本中引入了 `MockConstruction` 功能，它允许在测试代码中临时修改和控制对象的构造函数行为。这对于测试依赖于外部资源或需要模拟复杂对象构建过程的情况非常有用
+
+### 模拟构造函数
+
+让我们先创建一个简单的 Fruit 类，这将是我们第一个单元测试的重点：
+
+```java
+public class Fruit {
+
+    public String getName() {
+        return "Apple";
+    }
+
+    public String getColour() {
+        return "Red";
+    }
+}
+```
+
+现在，让我们继续编写测试，在测试中模拟调用 Fruit 类的构造函数：
+
+```java
+class FruitTest {
+    
+    @Test
+    public void givenMockedContructor_whenFruitCreated_thenMockIsReturned() {
+        try (MockedConstruction<Fruit> mock = Mockito.mockConstruction(Fruit.class)) {
+            Fruit fruit = new Fruit();
+            Mockito.when(fruit.getName()).thenReturn("Banana");
+            Mockito.when(fruit.getColour()).thenReturn("Yellow");
+
+            List<Fruit> constructed = mock.constructed();
+            System.out.println(constructed.get(0).getName()); // Banana
+            System.out.println(constructed.get(0).getColour()); // Yellow
+        }
+    }
+}
+```
+
+为了模拟对象构造，我们使用 `Mockito.mockConstruction()` 方法。该方法使用一个非抽象 Java 类来表示我们将要模拟的构造。在本例中，它是一个 Fruit 类
+
+我们在 `try-with-resources` 块中定义了这一点。这意味着，当我们的代码在 `try` 语句中调用 Fruit 对象的构造函数时，它将返回一个 Mock 对象。我们需要注意的是，在我们的作用域代码块之外，构造函数不会被 Mockito 模拟
+
+### 在另一个类中模拟构造函数
+
+更现实的情况是，我们有一个正在测试的类，该类内部创建了一些我们想要模拟的对象。通常情况下，我们会在被测类的构造函数中创建新对象的实例，以便在测试中模拟这些对象。在本例中，我们将了解如何做到这一点
+
+让我们先来定义一个简单的咖啡制作应用程序：
 
 ::: tabs
 
-@tab RegistrationServiceImpl.java
+@tab CoffeeMachine
 
 ```java
-public class RegistrationServiceImpl implements RegistrationService {
+public class CoffeeMachine {
 
-    SalesDao salesDao = new SalesDao();
-    UserDao userDao = new UserDao();
+    private Grinder grinder;
+    
+    private WaterTank tank;
 
-    @Override
-    public User register(String name, String phone) throws Exception {
-        // 参数校验
-        if (name == null || name.length() == 0) {
-            throw new ValidationException("number 不能为空");
-        }
-        if (phone == null || !isValid(phone)) {
-            throw new ValidationException("phone 格式错误");
-        }
-        // 获取手机号归属地编号和运营商编号 然后通过编号找到区域内是 SalesRep
-        String areaCode = FindUtils.getAreaCode(phone);
-        String operatorCode = FindUtils.getOperatorCode(phone);
-
-        User user;
-        try {
-            SalesRep rep = salesDao.findRep(areaCode, operatorCode);
-            // 最后创建用户，落盘，然后返回
-            user = userDao.save(name, phone, rep.getRepId());
-        } catch (SQLException e) {
-            throw new DAOException("SQLException thrown " + e.getMessage());
-        }
-        return user;
+    public CoffeeMachine() {
+        this.grinder = new Grinder();
+        this.tank = new WaterTank();
     }
 
-    private boolean isValid(String phone) {
-        String pattern = "^(13[0-9]|14[5|7]|15[0|1|2|3|4|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\\d{8}$";
-        boolean flag = phone.matches(pattern);
-        return flag;
+    public String makeCoffee() {
+        String type = this.tank.isEspresso() ? "Espresso" : "Americano";
+        return String.format("Finished making a delicious %s made with %s beans", type, this.grinder.getBeans());
     }
 }
 ```
 
-@tab FindUtils.java
+@tab Grinder
 
 ```java
-public class FindUtils {
+public class Grinder {
 
-    public static String getAreaCode(String number) {
-        // 具体实现逻辑
-        return "a";
+    private String beans;
+
+    public Grinder() {
+        this.beans = "Guatemalan";
     }
 
-    public static String getOperatorCode(String number) {
-        // 具体实现逻辑
-        return "b";
+    public String getBeans() {
+        return beans;
+    }
+
+    public void setBeans(String beans) {
+        this.beans = beans;
     }
 }
 ```
 
-@tab SalesDao.java
+@tab WaterTank
 
 ```java
-public class SalesDao {
+public class WaterTank {
 
-    public SalesRep findRep(String areaCode, String operatorCode) {
-        // 伪代码
-        if ("a".equals(areaCode) && "b".equals(operatorCode)) {
-            return new SalesRep("Echo");
-        }
-        return null;
-    }
-}
-```
+    private int mils;
 
-@tab RegistrationServiceImplTest.java
-
-```java
-class RegistrationServiceImplTest {
-
-    @InjectMocks
-    @Spy
-    private RegistrationServiceImpl registrationService;
-    @Mock
-    private UserDao userDao;
-    @Mock
-    private SalesDao salesDao;
-
-    @BeforeEach
-    void setUp() {
-        MockitoAnnotations.openMocks(this);
+    public WaterTank() {
+        this.mils = 25;
     }
 
-    @Test
-    void register() throws Exception {
-        String name = null;
-        String phone = "15071271412";
-        try {
-            registrationService.register(name, phone);
-            Assertions.fail("这里会挂掉");
-        } catch (Exception e) {
-            Assertions.assertTrue(e instanceof ValidationException);
-        }
+    public boolean isEspresso() {
+        return getMils() < 50;
+    }
 
-        name = "一直游到海水变蓝";
-        phone = null;
-        try {
-            registrationService.register(name, phone);
-            Assertions.fail("这里会挂掉");
-        } catch (Exception e) {
-            Assertions.assertTrue(e instanceof ValidationException);
-        }
+    public int getMils() {
+        return mils;
+    }
 
-        phone = "15071271412";
-        MockedStatic<FindUtils> staticService = Mockito.mockStatic(FindUtils.class);
-        staticService.when(() -> FindUtils.getAreaCode(phone)).thenReturn("a");
-        staticService.when(() -> FindUtils.getOperatorCode(phone)).thenReturn("b");
-        
-        // 1.数据库操作正常
-        Mockito.when(salesDao.findRep("a", "b")).thenCallRealMethod();
-        Mockito.when(userDao.save(name, phone, "Echo")).thenCallRealMethod();
-        User user = registrationService.register(name, phone);
-        Assertions.assertEquals("Echo", user.getRepId());
-
-        // 2.数据库操作异常
-        Mockito.when(userDao.save(name, phone, "Echo")).thenThrow(new SQLException());
-        try {
-            registrationService.register(name, phone);
-        } catch (Exception e) {
-            Assertions.assertTrue(e instanceof DAOException);
-        }
+    public void setMils(int mils) {
+        this.mils = mils;
     }
 }
 ```
 
 :::
+
+在这个示例中，我们的 CoffeeMachine 会在构建时创建磨豆机和咖啡罐。我们有一个 `makeCoffee()` 方法，该方法会打印出关于冲泡咖啡的信息
+
+现在，我们可以继续编写几个测试：
+
+```java
+@SpringBootTest
+class CoffeeMachineTest {
+
+    @Test
+    public void givenNoMockedContructor_whenCoffeeMade_thenRealDependencyReturned() {
+        CoffeeMachine machine = new CoffeeMachine();
+        System.out.println(coffeeMachine.makeCoffee()); // Finished making a delicious Espresso made with Guatemalan beans
+    }
+}
+```
+
+在第一个测试中，我们将检查当我们不使用 `mockConstruction` 时，我们的咖啡机是否会返回内部的真实依赖关系
+
+现在让我们看看如何返回这些依赖项的模拟：
+
+```java
+@SpringBootTest
+class CoffeeMachineTest{
+
+    @Test
+    public void givenMockedContructor_whenCoffeeMade_thenMockDependencyReturned() {
+        try (MockedConstruction<WaterTank> mockTank = Mockito.mockConstruction(WaterTank.class);
+             MockedConstruction<Grinder> mockGrinder = Mockito.mockConstruction(Grinder.class)) {
+
+            CoffeeMachine coffeeMachine = new CoffeeMachine();
+            WaterTank waterTank = mockTank.constructed().get(0);
+            Grinder grinder = mockGrinder.constructed().get(0);
+
+            Mockito.when(waterTank.isEspresso()).thenReturn(false);
+            Mockito.when(grinder.getBeans()).thenReturn("Peruvian");
+            System.out.println(coffeeMachine.makeCoffee()); // Finished making a delicious Americano made with Peruvian beans
+        }
+    }
+}
+```
+
+在此测试中，当我们调用 Grinder 和 WaterTank 的构造函数时，我们使用 `mockConstruction()` 返回模拟实例。然后，我们使用标准的 `when` 符号指定这些模拟的期望值
+
+这一次，当我们运行测试时，Mockito 会确保 Grinder 和 WaterTank 的构造函数返回具有指定行为的模拟实例，从而允许我们隔离测试 `makeCoffee()` 方法
+
+### 处理构造函数参数
+
+另一个常见的用例是能够处理需要参数的构造函数
+
+值得庆幸的是，`mockedConstruction` 提供了一种机制，允许我们访问传递给构造函数的参数，让我们为 WaterTank 添加一个新的构造函数：
+
+```java {9-11}
+public class WaterTank {
+
+    private int mils;
+
+    public WaterTank() {
+        this.mils = 25;
+    }
+
+    public WaterTank(int mils) {
+        this.mils = mils;
+    }
+
+    public boolean isEspresso() {
+        return getMils() < 50;
+    }
+
+    public int getMils() {
+        return mils;
+    }
+
+    public void setMils(int mils) {
+        this.mils = mils;
+    }
+}
+```
+
+同样，让我们为 Coffee 应用程序添加一个新的构造函数：
+
+```java {12-15}
+public class CoffeeMachine {
+
+    private Grinder grinder;
+
+    private WaterTank tank;
+
+    public CoffeeMachine() {
+        this.grinder = new Grinder();
+        this.tank = new WaterTank();
+    }
+
+    public CoffeeMachine(int mils) {
+        this.grinder = new Grinder();
+        this.tank = new WaterTank(mils);
+    }
+
+    public String makeCoffee() {
+        String type = this.tank.isEspresso() ? "Espresso" : "Americano";
+        return String.format("Finished making a delicious %s made with %s beans", type, this.grinder.getBeans());
+    }
+}
+```
+
+最后，我们可以再增加一个测试：
+
+```java
+@SpringBootTest
+class CoffeeMachineTest{
+    
+    @Test
+    public void givenMockedContructorWithArgument_whenCoffeeMade_thenMockDependencyReturned() {
+        try (MockedConstruction<WaterTank> mockTank = Mockito.mockConstruction(WaterTank.class,
+                (mock, context) -> {
+                    Mockito.when(mock.getMils()).thenReturn((Integer) context.arguments().get(0));
+                });
+             MockedConstruction<Grinder> mockGrinder = Mockito.mockConstruction(Grinder.class)) {
+
+            CoffeeMachine machine = new CoffeeMachine(100);
+
+            WaterTank waterTank = mockTank.constructed().get(0);
+            Grinder grinder = mockGrinder.constructed().get(0);
+
+            Mockito.when(waterTank.isEspresso()).thenReturn(false);
+            Mockito.when(grinder.getBeans()).thenReturn("Kenyan");
+
+            System.out.println(mockTank.constructed().get(0).getMils()); // 100
+            System.out.println(machine.makeCoffee()); // Finished making a delicious Americano made with Kenyan beans
+        }
+    }
+}
+```
+
+这次，我们使用 lambda 表达式来处理带有参数的 WaterTank 构造函数。lambda 接收 Mock 实例和构造上下文，允许我们访问传递给构造函数的参数。这样我们可以使用这些参数为 `getMils()` 方法设置所需的行为
+
+## 私有方法
+
+在实际开发中我们在编写单测覆盖率时可能会遇到私有方法的代码块代难以被覆盖
+
+```java
+public class CoffeeMachine {
+
+    private void machine(Grinder grinder, WaterTank waterTank) {
+        // ...
+    }
+}
+```
+
+```java
+@SpringBootTest
+class CoffeeMachineTest {
+
+    private static final Logger log = LoggerFactory.getLogger(CoffeeMachineTest.class);
+
+    @Test
+    public void privateTest() {
+        try {
+            Class<CoffeeMachine> coffeeMachineClass = CoffeeMachine.class;
+            Method getSSLSocketFactory = coffeeMachineClass.getDeclaredMethod("machine", Grinder.class, WaterTank.class);
+            getSSLSocketFactory.setAccessible(true);
+            Grinder grinder = new Grinder();
+            WaterTank waterTank = new WaterTank();
+            // ...
+            getSSLSocketFactory.invoke(coffeeMachineClass.newInstance(), grinder, waterTank);
+        } catch (Exception e) {
+            log.error("异常", e);
+        }
+    }
+}
+```
+
+假如私有方法里还依赖了其他的服务：
+
+```java
+@Service
+public class CoffeeMachineServiceImpl {
+
+    @Autowired
+    private CoffeeMachineRepository coffeeMachineRepository;
+
+    private void infoSave(Grinder grinder, WaterTank waterTank) {
+        // ...
+        int result = coffeeMachineRepository.save(grinder, waterTank);
+    }
+}
+```
+
+```java
+@SpringBootTest
+class CoffeeMachineTest {
+
+    private static final Logger log = LoggerFactory.getLogger(CoffeeMachineTest.class);
+
+    @InjectMocks
+    private CoffeeMachineServiceImpl coffeeMachineServiceImplMock;
+    
+    @Mock
+    private CoffeeMachineRepository coffeeMachineRepositoryMock;
+
+    @Test
+    public void privateTest() {
+        try {
+            Class<CoffeeMachine> coffeeMachineClass = CoffeeMachine.class;
+            Method getSSLSocketFactory = coffeeMachineClass.getDeclaredMethod("infoSave", Grinder.class, WaterTank.class);
+            getSSLSocketFactory.setAccessible(true);
+            Grinder grinder = new Grinder();
+            WaterTank waterTank = new WaterTank();
+            // ...
+            Mockito.when(coffeeMachineRepositoryMock.save(grinder,waterTank)).thenReturn(0);
+            getSSLSocketFactory.invoke(coffeeMachineServiceImplMock, grinder, waterTank);
+        } catch (Exception e) {
+            log.error("异常", e);
+        }
+    }
+}
+```
+
+## 重复调用问题
+
+在实际开发中，一个实现类可能会重复调用同一个服务，且每次返回不同的结果：
+
+```java
+@Service
+public class CoffeeMachineServiceImpl {
+
+    @Autowired
+    private CoffeeMachineRepository coffeeMachineRepository;
+
+    public Grinder updateGrinder(String bean) {
+        // ...
+        Grinder grinder = coffeeMachineRepository.selectGrinderByBean(bean);
+        coffeeMachineRepository.updateGrinder(bean);
+        Grinder grinder2 = coffeeMachineRepository.selectGrinderByBean(bean);
+        // ...
+    }
+}
+```
+
+```java
+@SpringBootTest
+class CoffeeMachineTest {
+
+    private static final Logger log = LoggerFactory.getLogger(CoffeeMachineTest.class);
+
+    @InjectMocks
+    private CoffeeMachineServiceImpl coffeeMachineServiceImplMock;
+
+    @Mock
+    private CoffeeMachineRepository coffeeMachineRepositoryMock;
+    
+    @Test
+    public void privateTest() {
+        try {
+            Grinder grinder = new Grinder();
+            grinder.setBean("Peruvian");
+            Mockito.when(coffeeMachineRepositoryMock.selectGrinderByBean(Mockito.anyString())).thenReturn(grinder);
+            Grinder grinder2 = new Grinder();
+            grinder2.setBean("Guatemalan");
+            Mockito.when(coffeeMachineRepositoryMock.selectGrinderByBean(Mockito.anyString())).thenReturn(grinder2);
+            coffeeMachineServiceImplMock.updateGrinder("test");
+        } catch (Exception e) {
+            log.error("异常", e);
+        }
+    }
+}
+```
+
+如果我们采用以上的 Mock 做法则达不到预期结果，因为程序只会采用最后一次的模拟结果 grinder2，因此我们需要修改成以下的写法，第一次模拟对象返回值是 grinder，第二次则是 grinder2：
+
+```java
+@SpringBootTest
+class CoffeeMachineTest {
+
+    private static final Logger log = LoggerFactory.getLogger(CoffeeMachineTest.class);
+
+    @InjectMocks
+    private CoffeeMachineServiceImpl coffeeMachineServiceImplMock;
+
+    @Mock
+    private CoffeeMachineRepository coffeeMachineRepositoryMock;
+
+    @Test
+    public void privateTest() {
+        try {
+            Grinder grinder = new Grinder();
+            grinder.setBean("Peruvian");
+            Grinder grinder2 = new Grinder();
+            grinder2.setBean("Guatemalan");
+            Mockito.when(coffeeMachineRepositoryMock.selectGrinderByBean(Mockito.anyString())).thenReturn(grinder, grinder2);
+            coffeeMachineServiceImplMock.updateGrinder("test");
+        } catch (Exception e) {
+            log.error("异常", e);
+        }
+    }
+}
+```
+
+## 返回值为空的问题
+
+在实际开发中，可能会遇到 Mock 对象返回值为空的问题。因此我们需要检查 Mock 对象调用方法的入参值在断点调试中是否为空。其次如果方法的返回值为对象，先查看 Mock 对象方法入参类型，如果是对象，则需要使用 `Mockito.any()`，如果参数是 String 类型，使用 `Mockito.anyString()`，如此类推

@@ -150,15 +150,6 @@ article: false
 - [x] 红豆雪山冰
 - [x] 冰粉
 
-## 陶陶居酒家
-
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFG2O3RL" target="_blank">天河路228号正佳广场6层C059铺</a>
-
-- [x] 蒜香骨
-- [x] 酸菜肥牛
-- [x] 冰镇咕噜肉
-- [x] 海皇鸡火炒饭
-
 ## 虾饺妹富竹一生
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFK0NJBQ" target="_blank">天河东路163号2层</a>
@@ -173,6 +164,15 @@ article: false
 - [x] 港式菠萝包
 - [x] 不一样的双皮奶
 
+## 陶陶居酒家
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFG2O3RL" target="_blank">天河路228号正佳广场6层C059铺</a>
+
+- [x] 蒜香骨
+- [x] 酸菜肥牛
+- [x] 冰镇咕噜肉
+- [x] 海皇鸡火炒饭
+
 ## 凑凑火锅
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFKX3B93" target="_blank">天河路218号天环广场西塔B1层</a>
@@ -180,6 +180,8 @@ article: false
 ## 汉拿山（歇业）
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00140TFHO" target="_blank">天河路228号正佳广场5层南街</a>
+
+40元的拌饭比268元的拼盘要好吃的多:see_no_evil:
 
 - [x] 荣升全牛八拼
 - [x] 石锅牛肉拌饭

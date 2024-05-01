@@ -13,7 +13,7 @@ article: false
 
 自从换了两波人接手后，出品逐渐下降，蛮可惜的
 
-2023年10月20日刚好路过天河客运站，想着很久没过来吃了，结果到店后老板娘告知今天是最后一天营业，她还以为我看到她发的朋友圈特地过来吃的，没想到会如此巧合。打听了一下一开始掌管店铺的那对夫妻回老家武汉继续开了家谢小匠，等以后去武汉时一定过去品尝下
+2023年10月20日刚好路过天河客运站，想着很久没过来吃了，结果到店后老板娘告知今天是最后一天营业，她还以为我看到她发的朋友圈特地过来吃的，没想到会如此巧合。打听了一下一开始掌管店铺的那对夫妻回老家武汉继续开了家谢小匠，等将来去武汉时一定过去帮衬下
 
 ::: tabs
 
@@ -21,13 +21,13 @@ article: false
 
 去店里基本点的都是：大盘鸡/卤水猪手盖面 + 煎蛋 + 维他奶
 
-有段时间每当心情不太好的时候总会来这家店，美食是治愈心灵的最佳方式
+美食是治愈心灵的最佳方式，有段时间每当心情糟糕的时候总会来这家店吃碗盖面
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/thkyz/xxj/img_4.jpg)
 
 ![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/thkyz/xxj/img_2.jpg)
 
 ![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/thkyz/xxj/img_3.jpg)
-
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/thkyz/xxj/img_4.jpg)
 
 @tab 菜单
 

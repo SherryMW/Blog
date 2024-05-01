@@ -15,6 +15,12 @@ article: false
 - [x] 油条
 - [x] 小酥肉
 
+## 国安路老南昌拌粉
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0HRHS1HS8" target="_blank">云城东路501号万达广场金街154铺子固路拌粉店</a>
+
+- [x] 牛肉拌粉
+
 ## 越广越南牛肉粉
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0G305KEQX" target="_blank">乐嘉路96号101房</a>

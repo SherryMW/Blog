@@ -7,17 +7,19 @@ import {HealthySidebar} from "../../life/healthy/sidebar";
 
 export const SidebarConfig = sidebar({
 
+    "/collection/": CollectionSidebar,
+
     // ----- Life -----
 
     "/life/healthy/": HealthySidebar,
-
-    "/collection/": CollectionSidebar,
 
     "/life/food/": FoodSidebar,
 
     "/life/play/": PlaySidebar,
 
     // ----- IT -----
+
+    "/it/java/": JavaSidebar,
 
     // "/it/es6/": [{
     //     text: "ECMAScript 6",
@@ -33,8 +35,6 @@ export const SidebarConfig = sidebar({
     // "/it/pinia/": PiniaSidebar,
 
     // "/it/database/": DatabaseSidebar,
-
-    "/it/java/": JavaSidebar,
 
     // "/it/database/mysql/": MySQLSidebar,
 

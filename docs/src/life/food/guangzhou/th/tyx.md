@@ -13,11 +13,11 @@ article: false
 
 @tab 大同鸡蛋挞
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyx/dtjj/img.jpg)
+![OMG](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyx/dtjj/img.jpg)
 
 @tab 宫廷笋尖虾饺
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyx/dtjj/img_2.jpg)
+![OMG×2](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyx/dtjj/img_2.jpg)
 
 @tab 空气炸春卷
 

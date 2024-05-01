@@ -91,6 +91,10 @@ article: false
 
 ::: tabs
 
+@tab 2024
+
+- [x] 九龙城寨之围城
+
 @tab 2023
 
 - [x] 命案
@@ -313,7 +317,7 @@ article: false
 
 @tab 2017
 
-- [x] 血观音 [【影评】](https://www.bilibili.com/video/BV1VY411H71W/)
+- [x] 血观音 [【影评】](https://www.bilibili.com/video/BV1he411g7Ty/)
 
 :::
 

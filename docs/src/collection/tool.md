@@ -68,7 +68,7 @@ article: false
   desc: Axure RP 是唯一一款让 UX 专业人员能够构建逼真的功能原型的 UX 工具
   link: https://www.axure.com/
   
-- icon: https://img.sherry4869.com/blog/collection/tools/processon.svg
+- icon: https://img.sherry4869.com/blog/collection/tools/processon.png
   name: ProcessOn
   desc: 免费在线流程图思维导图
   link: https://www.processon.com/
@@ -77,6 +77,12 @@ article: false
   name: MindLine
   desc: 快速高效制作思维导图工具
   link: https://www.mindline.cn/webapp
+
+- icon: https://img.sherry4869.com/blog/collection/tools/diagrams.png
+  name: diagrams
+  desc: 在线绘图
+  link: https://app.diagrams.net
+  
 ```
 :::
 
@@ -115,5 +121,16 @@ article: false
   name: Squoosh
   desc: Small Simple Secure
   link: https://squoosh.app/
+```
+:::
+
+---
+
+::: projects
+```yaml
+- icon: https://img.sherry4869.com/blog/collection/tools/apkpure.webp
+  name: apkpure
+  desc: APP分发平台
+  link: https://apkpure.com
 ```
 :::

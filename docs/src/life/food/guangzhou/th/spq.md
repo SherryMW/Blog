@@ -11,15 +11,6 @@ article: false
 
 得闲饮茶！
 
-## 凤园椰珍
-
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFF35AYJ" target="_blank">天河南二路34号天河花园大厦1-3层</a>
-
-- [x] 木瓜椰子鸡（推荐）
-- [x] 生蚝
-- [x] 鲍鱼
-- [x] 泰国椰青
-
 ## 蚝事发生
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0IRV5SRRG" target="_blank">天河南二路19-21号06铺</a>
@@ -45,6 +36,15 @@ article: false
 - [x] 烤鸡翼
 - [x] 烤韭菜苔
 - [x] 菜谱拌饭
+
+## 凤园椰珍
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFF35AYJ" target="_blank">天河南二路34号天河花园大厦1-3层</a>
+
+- [x] 木瓜椰子鸡（推荐）
+- [x] 生蚝
+- [x] 鲍鱼
+- [x] 泰国椰青
 
 ## 等我送上门
 
