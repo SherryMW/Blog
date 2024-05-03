@@ -59,6 +59,8 @@ article: false
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0HDHCDUKA" target="_blank">荔湾区龙津中路540号之一首层</a>
 
 - [x] 菠萝火焰芝士猪扒包（推荐）
+- [x] 蟹肉牛角包
+- [x] 粒粒鲜橙茶（推荐）
 
 ## 西树泡芙
 

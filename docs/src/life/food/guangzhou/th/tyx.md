@@ -31,6 +31,14 @@ article: false
 
 ![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyx/dtjj/img_5.jpg)
 
+@tab 津梨咸水角
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyx/dtjj/img_6.jpg)
+
+@tab 月牙南瓜烙
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyx/dtjj/img_7.jpg)
+
 :::
 
 - [x] 大同鸡蛋挞（推荐）
@@ -38,6 +46,9 @@ article: false
 - [x] 空气炸春卷
 - [x] 蜂巢炸芋角
 - [x] 沙爹金钱肚
+- [x] 荔湾艇仔粥（推荐）
+- [x] 津梨咸水角
+- [x] 月牙南瓜烙
 
 ## 小炳胜
 
