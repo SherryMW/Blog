@@ -5,6 +5,15 @@ article: false
 
 # 面包甜点
 
+## 高桥面包店
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0HDHCDUKA" target="_blank">荔湾区龙津中路540号之一首层</a>
+
+- [x] 菠萝火焰芝士猪扒包（推荐）
+- [x] 照烧鸡扒包（推荐）
+- [x] 蟹肉牛角包
+- [x] 粒粒鲜橙茶（推荐）
+
 ## 天井丑面包搭咖啡
 
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0GUX59WHL" target="_blank">越秀区广州大道中229号左边</a>
@@ -53,14 +62,6 @@ article: false
 ## PAPER STONE BAKERY
 
 - [ ] 牛角包
-
-## 高桥面包店
-
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0HDHCDUKA" target="_blank">荔湾区龙津中路540号之一首层</a>
-
-- [x] 菠萝火焰芝士猪扒包（推荐）
-- [x] 蟹肉牛角包
-- [x] 粒粒鲜橙茶（推荐）
 
 ## 西树泡芙
 

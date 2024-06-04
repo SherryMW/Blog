@@ -1,12 +1,36 @@
 import {arraySidebar} from "vuepress-theme-hope";
 
 export const JavaSidebar = arraySidebar([
-    // {
-    //     text: "基础",
-    //     prefix: "basics/",
-    //     collapsible: true,
-    //     children: "structure"
-    // },
+    {
+        text: "Java SE",
+        prefix: "javase/",
+        collapsible: true,
+        children: [
+            "computer-basics",
+            "overview",
+            "download-install",
+            "first-java",
+            {
+                text: "基础语法",
+                prefix: "basic-grammar/",
+                collapsible: true,
+                children: "structure"
+            },
+        ]
+    },
+    {
+        text: "Spring",
+        prefix: "spring/",
+        collapsible: true,
+        children: [
+            {
+                text: "Spring AI",
+                prefix: "spring-ai/",
+                collapsible: true,
+                children: "structure"
+            },
+        ]
+    },
     {
         text: "测试",
         prefix: "test/",

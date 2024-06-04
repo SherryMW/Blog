@@ -52,3 +52,14 @@ article: false
 <span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0JA6LJTAA" target="_blank">广州大道北1811-1813号</a>
 
 - [x] 大片牛腱子兰州牛肉面（推荐）
+
+## 正宗潮汕绿豆饼
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0JA6LJTAA" target="_blank">京溪街道京溪大街8号</a>
+
+- [x] 绿豆饼（推荐）
+- [x] 肉松海苔卷
+- [x] 黑芝麻花生酥
+- [x] 咸蛋黄沙琪玛
+- [x] 紫薯牛轧酥
+- [x] 核桃酥

@@ -35,9 +35,18 @@ article: false
 - [x] 白切咸猪手
 - [x] 椒丝付乳炒通菜
 
-## 辣辣寿司
+## 新疆阿凡提新鲜羊肉串
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00141R25J" target="_blank">解放南路173-183号香榭丽舍商业街</a>
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0HK0SGIWA" target="_blank">解放中路177号自编A6</a>
+
+- [x] 脖烤肉
+- [x] 红柳羊肉
+- [x] 大葱烤肉
+- [x] 羊排
+- [x] 羊腰子
+- [x] 鸡翅
+- [x] 鸡中翅
+- [x] 火腿肠
 
 ## 粽香园
 
@@ -45,6 +54,10 @@ article: false
 
 - [x] 绿豆咸肉蛋黄粽（推荐）
 - [x] 牛腩布拉肠
+
+## 辣辣寿司
+
+<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00141R25J" target="_blank">解放南路173-183号香榭丽舍商业街</a>
 
 ## 勿理堂
 

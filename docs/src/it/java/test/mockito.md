@@ -401,7 +401,7 @@ class StaticUtilsTest {
 
 在 Mockito 3.4.0 及更高版本中引入了 `MockConstruction` 功能，它允许在测试代码中临时修改和控制对象的构造函数行为。这对于测试依赖于外部资源或需要模拟复杂对象构建过程的情况非常有用
 
-### 模拟构造函数
+### 模拟无参构造
 
 让我们先创建一个简单的 Fruit 类，这将是我们第一个单元测试的重点：
 
@@ -442,7 +442,97 @@ class FruitTest {
 
 我们在 `try-with-resources` 块中定义了这一点。这意味着，当我们的代码在 `try` 语句中调用 Fruit 对象的构造函数时，它将返回一个 Mock 对象。我们需要注意的是，在我们的作用域代码块之外，构造函数不会被 Mockito 模拟
 
-### 在另一个类中模拟构造函数
+### 模拟有参构造
+
+另一个常见的用例是能够处理需要参数的构造函数
+
+值得庆幸的是，`mockedConstruction` 提供了一种机制，允许我们访问传递给构造函数的参数，让我们为 WaterTank 添加一个新的构造函数：
+
+```java {9-11}
+public class WaterTank {
+
+    private int mils;
+
+    public WaterTank() {
+        this.mils = 25;
+    }
+
+    public WaterTank(int mils) {
+        this.mils = mils;
+    }
+
+    public boolean isEspresso() {
+        return getMils() < 50;
+    }
+
+    public int getMils() {
+        return mils;
+    }
+
+    public void setMils(int mils) {
+        this.mils = mils;
+    }
+}
+```
+
+同样，让我们为 Coffee 应用程序添加一个新的构造函数：
+
+```java {12-15}
+public class CoffeeMachine {
+
+    private Grinder grinder;
+
+    private WaterTank tank;
+
+    public CoffeeMachine() {
+        this.grinder = new Grinder();
+        this.tank = new WaterTank();
+    }
+
+    public CoffeeMachine(int mils) {
+        this.grinder = new Grinder();
+        this.tank = new WaterTank(mils);
+    }
+
+    public String makeCoffee() {
+        String type = this.tank.isEspresso() ? "Espresso" : "Americano";
+        return String.format("Finished making a delicious %s made with %s beans", type, this.grinder.getBeans());
+    }
+}
+```
+
+最后，我们可以再增加一个测试：
+
+```java
+@SpringBootTest
+class CoffeeMachineTest{
+    
+    @Test
+    public void givenMockedContructorWithArgument_whenCoffeeMade_thenMockDependencyReturned() {
+        try (MockedConstruction<WaterTank> mockTank = Mockito.mockConstruction(WaterTank.class,
+                (mock, context) -> {
+                    Mockito.when(mock.getMils()).thenReturn((Integer) context.arguments().get(0));
+                });
+             MockedConstruction<Grinder> mockGrinder = Mockito.mockConstruction(Grinder.class)) {
+
+            CoffeeMachine machine = new CoffeeMachine(100);
+
+            WaterTank waterTank = mockTank.constructed().get(0);
+            Grinder grinder = mockGrinder.constructed().get(0);
+
+            Mockito.when(waterTank.isEspresso()).thenReturn(false);
+            Mockito.when(grinder.getBeans()).thenReturn("Kenyan");
+
+            System.out.println(mockTank.constructed().get(0).getMils()); // 100
+            System.out.println(machine.makeCoffee()); // Finished making a delicious Americano made with Kenyan beans
+        }
+    }
+}
+```
+
+这次，我们使用 lambda 表达式来处理带有参数的 WaterTank 构造函数。lambda 接收 Mock 实例和构造上下文，允许我们访问传递给构造函数的参数。这样我们可以使用这些参数为 `getMils()` 方法设置所需的行为
+
+### 在另一个类中模拟构造
 
 更现实的情况是，我们有一个正在测试的类，该类内部创建了一些我们想要模拟的对象。通常情况下，我们会在被测类的构造函数中创建新对象的实例，以便在测试中模拟这些对象。在本例中，我们将了解如何做到这一点
 
@@ -563,96 +653,6 @@ class CoffeeMachineTest{
 在此测试中，当我们调用 Grinder 和 WaterTank 的构造函数时，我们使用 `mockConstruction()` 返回模拟实例。然后，我们使用标准的 `when` 符号指定这些模拟的期望值
 
 这一次，当我们运行测试时，Mockito 会确保 Grinder 和 WaterTank 的构造函数返回具有指定行为的模拟实例，从而允许我们隔离测试 `makeCoffee()` 方法
-
-### 处理构造函数参数
-
-另一个常见的用例是能够处理需要参数的构造函数
-
-值得庆幸的是，`mockedConstruction` 提供了一种机制，允许我们访问传递给构造函数的参数，让我们为 WaterTank 添加一个新的构造函数：
-
-```java {9-11}
-public class WaterTank {
-
-    private int mils;
-
-    public WaterTank() {
-        this.mils = 25;
-    }
-
-    public WaterTank(int mils) {
-        this.mils = mils;
-    }
-
-    public boolean isEspresso() {
-        return getMils() < 50;
-    }
-
-    public int getMils() {
-        return mils;
-    }
-
-    public void setMils(int mils) {
-        this.mils = mils;
-    }
-}
-```
-
-同样，让我们为 Coffee 应用程序添加一个新的构造函数：
-
-```java {12-15}
-public class CoffeeMachine {
-
-    private Grinder grinder;
-
-    private WaterTank tank;
-
-    public CoffeeMachine() {
-        this.grinder = new Grinder();
-        this.tank = new WaterTank();
-    }
-
-    public CoffeeMachine(int mils) {
-        this.grinder = new Grinder();
-        this.tank = new WaterTank(mils);
-    }
-
-    public String makeCoffee() {
-        String type = this.tank.isEspresso() ? "Espresso" : "Americano";
-        return String.format("Finished making a delicious %s made with %s beans", type, this.grinder.getBeans());
-    }
-}
-```
-
-最后，我们可以再增加一个测试：
-
-```java
-@SpringBootTest
-class CoffeeMachineTest{
-    
-    @Test
-    public void givenMockedContructorWithArgument_whenCoffeeMade_thenMockDependencyReturned() {
-        try (MockedConstruction<WaterTank> mockTank = Mockito.mockConstruction(WaterTank.class,
-                (mock, context) -> {
-                    Mockito.when(mock.getMils()).thenReturn((Integer) context.arguments().get(0));
-                });
-             MockedConstruction<Grinder> mockGrinder = Mockito.mockConstruction(Grinder.class)) {
-
-            CoffeeMachine machine = new CoffeeMachine(100);
-
-            WaterTank waterTank = mockTank.constructed().get(0);
-            Grinder grinder = mockGrinder.constructed().get(0);
-
-            Mockito.when(waterTank.isEspresso()).thenReturn(false);
-            Mockito.when(grinder.getBeans()).thenReturn("Kenyan");
-
-            System.out.println(mockTank.constructed().get(0).getMils()); // 100
-            System.out.println(machine.makeCoffee()); // Finished making a delicious Americano made with Kenyan beans
-        }
-    }
-}
-```
-
-这次，我们使用 lambda 表达式来处理带有参数的 WaterTank 构造函数。lambda 接收 Mock 实例和构造上下文，允许我们访问传递给构造函数的参数。这样我们可以使用这些参数为 `getMils()` 方法设置所需的行为
 
 ## 私有方法
 
