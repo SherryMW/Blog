@@ -22,18 +22,18 @@ article: false
 
 密室里的香薰味道让我和朋友都觉得非常难受:see_no_evil:
 
-沉浸：<el-rate model-value="0.5" disabled text-color="#ff9900" show-score />
+沉浸：<el-rate :model-value="0.5" disabled text-color="#ff9900" show-score />
 
-剧情：<el-rate model-value="2" disabled text-color="#ff9900" show-score />
+剧情：<el-rate :model-value="2" disabled text-color="#ff9900" show-score />
 
-场景：<el-rate model-value="1.5" disabled text-color="#ff9900" show-score />
+场景：<el-rate :model-value="1.5" disabled text-color="#ff9900" show-score />
 
-道具：<el-rate model-value="1" disabled text-color="#ff9900" show-score />
+道具：<el-rate :model-value="1" disabled text-color="#ff9900" show-score />
 
-谜题：<el-rate model-value="2" disabled text-color="#ff9900" show-score />
+谜题：<el-rate :model-value="2" disabled text-color="#ff9900" show-score />
 
-恐怖：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
+恐怖：<el-rate :model-value="0" disabled text-color="#ff9900" show-score />
 
-温情：<el-rate model-value="1" disabled text-color="#ff9900" show-score />
+温情：<el-rate :model-value="1" disabled text-color="#ff9900" show-score />
 
-运动量：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
+运动量：<el-rate :model-value="0" disabled text-color="#ff9900" show-score />

@@ -81,7 +81,7 @@ CREATE TABLE user_hobbies (
 
 使用 `\d` 命令查看 user_hobbies 表的定义：
 
-```postgresql
+```shell
 \d user_hobbies
 ```
 
@@ -133,7 +133,7 @@ ALTER TABLE
 
 我们可以通过 `\d` 命令查看 user_id 列否被删除，如下：
 
-```postgresql
+```shell
 \d users
 ```
 
@@ -149,7 +149,7 @@ ALTER TABLE
 
 我们可以通过 `\d` 命令查看表定义以验证是否外键是否被删除，如下：
 
-```postgresql
+```shell
 \d user_hobbies
 ```
 

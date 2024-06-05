@@ -9,7 +9,7 @@ article: false
 
 要查看数据库中所有关联列表，请使用 `\d` 命令
 
-```postgresql
+```shell
 \d
 ```
 
@@ -25,7 +25,7 @@ article: false
 
 如果要查看更详细的关联列表信息，请使用 `\d+` 命令
 
-```postgresql
+```shell
 \d+
 ```
 
@@ -43,7 +43,7 @@ article: false
 
 要查看一张表的结构或定义，比如 person 表的列，约束等信息，请使用如下命令：
 
-```postgresql
+```shell
 \d person
 ```
 
@@ -65,7 +65,7 @@ article: false
 
 如果要查看数据表的更多相关信息，请使用如下命令：
 
-```postgresql
+```shell
 \d+ person
 ```
 
@@ -90,7 +90,7 @@ article: false
 
 information_schema 是一个系统级的 Schema, 其中提供了一些视图可以查看表、列、索引、函数等信息，该 information_schema.columns 目录包含有关所有表的列的信息。以下语句从 information_schema.columns 中查询 person 表的所有的列：
 
-```postgresql
+```shell
 SELECT column_name, data_type, column_default 
 FROM information_schema.columns 
 WHERE table_name = 'person';

@@ -17,7 +17,7 @@ article: false
 
 如果你使用 psql 工具管理 PostgreSQL 数据库，您可以使用 `\d` psql 命令 查看指定表中的索引：
 
-```postgresql
+```shell
 \d table_name
 ```
 
@@ -25,7 +25,7 @@ article: false
 
 例如，以下语句返回 Sakila 示例数据库中的 customer 表的详细信息：
 
-```postgresql
+```shell
 \d customer
 ```
 

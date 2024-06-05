@@ -333,11 +333,11 @@ Sakila 数据库为 DVD 租赁商店业务建模，其中包含影片、演员�
 
 3. 找到你下载的 sql 文件的路径，使用 `\i ${filePath}` 命令从文件中执行 SQL。注意：Windows 上文件路径要使用 `/` 路径符号
 
-   ```postgresql
+   ```shell
    \i C:/Users/MW/Downloads/sakila-main/postgres-sakila-db/postgres-sakila-schema.sql
    ```
    
-   ```postgresql
+   ```shell
    \i C:/Users/MW/Downloads/sakila-main/postgres-sakila-db/postgres-sakila-insert-data.sql
    ```
    
@@ -379,6 +379,6 @@ Sakila 数据库为 DVD 租赁商店业务建模，其中包含影片、演员�
 
 找到你下载的 sql 文件的路径，使用 `\i ${filePath}` 命令从文件中执行 SQL。注意：Windows 上文件路径要使用 `/` 路径符号
 
-```postgresql
+```shell
 \i C:/Users/MW/Downloads/person.sql
 ```

@@ -74,7 +74,7 @@ ADD PRIMARY KEY(id);
 
 1. 使用 `\d` 命令查找主键约束的名称：
 
-    ```postgresql
+    ```shell
     \d users
     ```
     

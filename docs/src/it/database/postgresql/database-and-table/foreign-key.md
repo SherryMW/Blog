@@ -96,7 +96,7 @@ CREATE TABLE table_name (
 
 让我们看一下 city 表定义的外键约束：
 
-```postgresql
+```shell
 \d city
 ```
 
@@ -178,7 +178,7 @@ DROP CONSTRAINT constraint_name;
 
 2. 使用以下语句连接 testdb 数据库：
 
-    ```postgresql
+    ```shell
     \c testdb
     ```
     

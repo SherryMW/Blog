@@ -82,7 +82,7 @@ CREATE DATABASE db_name;
 
 3. 最后，使用 `\c` 命令切换到刚刚创建的 testdb 数据库:
 
-```postgresql
+```shell
 \c testdb;
 ```
 

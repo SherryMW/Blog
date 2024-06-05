@@ -62,7 +62,7 @@ CREATE TABLE test_serial(
 
 要查看表的定义，请使用以下 `\d` 命令：
 
-```postgresql
+```shell
 \d test_serial
 ```
 

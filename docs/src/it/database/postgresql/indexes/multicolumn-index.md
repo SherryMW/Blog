@@ -58,7 +58,7 @@ WHERE b = v2 and c = v3;
 
 通过下面的语句查看 customer 表的信息：
 
-```postgresql
+```shell
 \d customer
 ```
 
@@ -98,7 +98,7 @@ CREATE INDEX ON customer (last_name, first_name);
 
 再次通过下面的语句查看 customer 表的信息：
 
-```postgresql
+```shell
 \d customer
 ```
 

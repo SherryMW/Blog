@@ -11,45 +11,45 @@ article: false
 
 ### 弥生壹
 
-沉浸：<el-rate model-value="3" disabled text-color="#ff9900" show-score />
+沉浸：<el-rate :model-value="3" disabled text-color="#ff9900" show-score />
 
-剧情：<el-rate model-value="3.5" disabled text-color="#ff9900" show-score />
+剧情：<el-rate :model-value="3.5" disabled text-color="#ff9900" show-score />
 
-场景：<el-rate model-value="4" disabled text-color="#ff9900" show-score />
+场景：<el-rate :model-value="4" disabled text-color="#ff9900" show-score />
 
-道具：<el-rate model-value="4" disabled text-color="#ff9900" show-score />
+道具：<el-rate :model-value="4" disabled text-color="#ff9900" show-score />
 
-谜题：<el-rate model-value="3.5" disabled text-color="#ff9900" show-score />
+谜题：<el-rate :model-value="3.5" disabled text-color="#ff9900" show-score />
 
-恐怖：<el-rate model-value="0.5" disabled text-color="#ff9900" show-score />
+恐怖：<el-rate :model-value="0.5" disabled text-color="#ff9900" show-score />
 
-温情：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
+温情：<el-rate :model-value="0" disabled text-color="#ff9900" show-score />
 
-运动量：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
+运动量：<el-rate :model-value="0" disabled text-color="#ff9900" show-score />
 
 不愧是招牌弥生，第一次体验大型真人 NPC 的密室主题，彻底给我打开了密室逃不脱的大门
 
 ### 弥生贰
 
-沉浸：<el-rate model-value="2" disabled text-color="#ff9900" show-score />
+沉浸：<el-rate :model-value="2" disabled text-color="#ff9900" show-score />
 
-剧情：<el-rate model-value="3" disabled text-color="#ff9900" show-score />
+剧情：<el-rate :model-value="3" disabled text-color="#ff9900" show-score />
 
-场景：<el-rate model-value="3.5" disabled text-color="#ff9900" show-score />
+场景：<el-rate :model-value="3.5" disabled text-color="#ff9900" show-score />
 
-道具：<el-rate model-value="3" disabled text-color="#ff9900" show-score />
+道具：<el-rate :model-value="3" disabled text-color="#ff9900" show-score />
 
-谜题：<el-rate model-value="3" disabled text-color="#ff9900" show-score />
+谜题：<el-rate :model-value="3" disabled text-color="#ff9900" show-score />
 
-恐怖：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
+恐怖：<el-rate :model-value="0" disabled text-color="#ff9900" show-score />
 
-温情：<el-rate model-value="3" disabled text-color="#ff9900" show-score />
+温情：<el-rate :model-value="3" disabled text-color="#ff9900" show-score />
 
-运动量：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
+运动量：<el-rate :model-value="0" disabled text-color="#ff9900" show-score />
 
 ### 找到你了
 
-沉浸：<el-rate model-value="2" disabled text-color="#ff9900" show-score />
+沉浸：<el-rate :model-value="2" disabled text-color="#ff9900" show-score />
 
 剧情：<el-rate model-value="3.5" disabled text-color="#ff9900" show-score />
 

@@ -52,7 +52,7 @@ DROP DATABASE [IF EXISTS] database_name;
 
 3. 然后，使用 `\c` 命令切换到刚刚创建的 test_db 数据库:
 
-    ```postgresql
+    ```shell
     \c test_db;
     ```
 

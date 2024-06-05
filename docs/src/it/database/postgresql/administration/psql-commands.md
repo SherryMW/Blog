@@ -11,13 +11,13 @@ article: false
 
 要使用当前用户连接到新的数据库请使用 `\c` 命令，也可以使用 `\connect` 命令，他们是等效的
 
-```postgresql
+```shell
 \c postgres
 ```
 
 要使用新的用户连接到当前数据库，请使用如下命令：
 
-```postgresql
+```shell
 \c - username
 ```
 
@@ -25,7 +25,7 @@ article: false
 
 要查看当前数据库中的数据表，请使用 `\dt` 命令
 
-```postgresql
+```shell
 \dt
 ```
 
@@ -39,7 +39,7 @@ article: false
 
 如果要查看更多关于表的信息，请使用 `\dt+` 命令
 
-```postgresql
+```shell
 \dt+
 ```
 
@@ -63,7 +63,7 @@ WHERE schemaname = 'public';
 
 要查看当前连接的数据库的所有模式，请使用 `\dn` 命令
 
-```postgresql
+```shell
 \dn
 ```
 
@@ -78,7 +78,7 @@ WHERE schemaname = 'public';
 
 要查看当前数据库中的可用函数，请使用 `\df` 命令
 
-```postgresql
+```shell
 \df
 ```
 
@@ -92,7 +92,7 @@ WHERE schemaname = 'public';
 
 要查看当前数据库中的可用视图，请使用 `\dv` 命令
 
-```postgresql
+```shell
 \dv
 ```
 
@@ -104,7 +104,7 @@ WHERE schemaname = 'public';
 
 要查看所有用户及其分配的角色，请使用 `\du` 命令
 
-```postgresql
+```shell
 \du
 ```
 
@@ -119,7 +119,7 @@ WHERE schemaname = 'public';
 
 如果要从文件执行 psql 命令，请使用 `\i` 命令。注意：Windows 上文件路径要使用 `/` 路径符号，例如：
 
-```postgresql
+```shell
 \i C:/Users/MW/Downloads/person.sql
 ```
 
@@ -127,7 +127,7 @@ WHERE schemaname = 'public';
 
 要打开查询执行时间，请使用 `\timing` 命令
 
-```postgresql
+```shell
 \timing
 ```
 
@@ -155,7 +155,7 @@ postgres=# \timing
 
 要显示命令历史记录，请使用 `\s` 命令
 
-```postgresql
+```shell
 \s
 ```
 
@@ -165,7 +165,7 @@ postgres=# \timing
 
 如果要将命令历史保存到文件中，则需要在 `\s` 命令后指定文件名
 
-```postgresql
+```shell
 \s filename
 ```
 
@@ -173,7 +173,7 @@ postgres=# \timing
 
 要为 [SELECT](../basic/select.md) 语句的结果集打开扩展显示，请使用 `\x` 命令
 
-```postgresql
+```shell
 \x
 ```
 
@@ -208,7 +208,7 @@ car_id           |
 
 比如，要获取 `TRUNCATE` 的帮助说明，请使用如下的命令：
 
-```postgresql
+```shell
 \h TRUNCATE
 ```
 

@@ -2243,7 +2243,7 @@ $ sudo cp -Rf gitweb /var/www/
 </VirtualHost>
 ```
 
-再次提醒，GitWeb 可以通过任何一个支持 CGI 或 Perl 的网络服务器架设；如果你需要的话，架设起来应该不会很困难。现在，你可以访问 [http://gitserver/](http://gitserver/) 在线查看你的版本库
+再次提醒，GitWeb 可以通过任何一个支持 CGI 或 Perl 的网络服务器架设；如果你需要的话，架设起来应该不会很困难。现在，你可以访问 [http://gitserver](http://gitserver/) 在线查看你的版本库
 
 ### GitLab
 

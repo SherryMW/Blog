@@ -145,7 +145,7 @@ ALTER TABLE user_hobby
 
 你需要提供约束名称以供删除。如果你不知道它的名字或者创建唯一约束的时候未指定约束名，请使用 `\d` 命令显示一个表中的所有的索引名：
 
-```postgresql
+```shell
 \d user_hobby
 ```
 

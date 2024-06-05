@@ -57,7 +57,7 @@ ADD [COLUMN] [IF NOT EXISTS] column_name data_type column_contraint
 
 `\d` 命令的用法如下：
 
-```postgresql
+```shell
 \d table_name
 ```
 
@@ -91,13 +91,13 @@ CREATE TABLE users (
 CREATE DATABASE testdb;
 ```
 
-```postgresql
+```shell
 \c testdb;
 ```
 
 创建表后，您可以使用 `\d` 命令查看此表中的所有列：
 
-```postgresql
+```shell
 \d users;
 ```
 
@@ -179,7 +179,7 @@ SELECT * FROM users;
 
 最后，让我们使用 `\d` 命令查看此表中的所有列：
 
-```postgresql
+```shell
 \d users;
 ```
 

@@ -9,7 +9,7 @@ article: false
 
 要查看当前 PostgreSQL 数据库服务器中的所有数据库，请使用 `\l` 命令
 
-```postgresql
+```shell
 \l
 ```
 
@@ -26,7 +26,7 @@ article: false
 
 如果要查看更多关于数据库的信息，请使用 `\l+` 命令
 
-```postgresql
+```shell
 \l+
 ```
 
@@ -44,7 +44,7 @@ article: false
 
 pg_database 表是 PostgreSQL 内置表，它存储了所有的数据库
 
-```postgresql
+```shell
 SELECT datname FROM pg_database;
 ```
 

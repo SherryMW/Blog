@@ -17,21 +17,21 @@ article: false
 
 ### 三更
 
-沉浸：<el-rate model-value="4" disabled text-color="#ff9900" show-score />
+沉浸：<el-rate :model-value="4" disabled text-color="#ff9900" show-score />
 
-剧情：<el-rate model-value="4" disabled text-color="#ff9900" show-score />
+剧情：<el-rate :model-value="4" disabled text-color="#ff9900" show-score />
 
-场景：<el-rate model-value="4.5" disabled text-color="#ff9900" show-score />
+场景：<el-rate :model-value="4.5" disabled text-color="#ff9900" show-score />
 
-道具：<el-rate model-value="2" disabled text-color="#ff9900" show-score />
+道具：<el-rate :model-value="2" disabled text-color="#ff9900" show-score />
 
-谜题：<el-rate model-value="2" disabled text-color="#ff9900" show-score />
+谜题：<el-rate :model-value="2" disabled text-color="#ff9900" show-score />
 
-恐怖：<el-rate model-value="5" disabled text-color="#ff9900" show-score />
+恐怖：<el-rate :model-value="5" disabled text-color="#ff9900" show-score />
 
-温情：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
+温情：<el-rate :model-value="0" disabled text-color="#ff9900" show-score />
 
-运动量：<el-rate model-value="4" disabled text-color="#ff9900" show-score />
+运动量：<el-rate :model-value="4" disabled text-color="#ff9900" show-score />
 
 给沈家姐妹的精彩演绎点赞！
 

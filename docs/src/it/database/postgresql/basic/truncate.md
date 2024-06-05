@@ -59,7 +59,7 @@ SELECT generate_series(1, 10000000) v;
 
 为了观察查询语句消耗的时间，请先使用下面的命令打开计时：
 
-```postgresql
+```shell
 \timing
 ```
 

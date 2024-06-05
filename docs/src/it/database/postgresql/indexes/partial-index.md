@@ -19,7 +19,7 @@ WHERE column_name = constant_value;
 
 我们将使用 [PostgreSQL Sakila 示例数据库](../start.md#sakila) 里的数据表进行演示
 
-```postgresql
+```shell
 \d customer
 ```
 

@@ -52,7 +52,7 @@ CREATE TEMP TABLE test_temp (
 
 使用 `\dt` 命令查看数据库中的表：
 
-```postgresql
+```shell
 \dt
 ```
 
@@ -75,7 +75,7 @@ CREATE TEMP TABLE test_temp (
 
 在创建临时表 users 之前，我们先看以下常规表 users 的结构：
 
-```postgresql
+```shell
 \d users
 ```
 
@@ -104,7 +104,7 @@ CREATE TEMP TABLE users (
 
 使用 `\dt` 命令查看数据库中的表：
 
-```postgresql
+```shell
 \dt
 ```
 
@@ -125,7 +125,7 @@ CREATE TEMP TABLE users (
 
 以下语句使用 `\d` 查看 users 的表结构：
 
-```postgresql
+```shell
 \d users
 ```
 
@@ -148,7 +148,7 @@ DROP TABLE users;
 
 然后，再次使用 `\dt` 命令查看数据库中的表：
 
-```postgresql
+```shell
 \dt
 ```
 

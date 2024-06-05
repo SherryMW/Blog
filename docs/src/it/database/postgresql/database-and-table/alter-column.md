@@ -90,7 +90,7 @@ CREATE TABLE user_hobbies (
 
 使用 `\d` 命令查看 users 表的定义：
 
-```postgresql
+```shell
 \d users
 ```
 
@@ -111,7 +111,7 @@ Referenced by:
 
 使用 `\d` 命令查看 user_hobbies 表的定义：
 
-```postgresql
+```shell
 \d user_hobbies
 ```
 
@@ -142,7 +142,7 @@ RENAME COLUMN user_id TO id;
 
 我们可以通过 `\d` 命令查看表定义以验证 user_hobbies 表中外键是否被更新，如下：
 
-```postgresql
+```shell
 \d user_hobbies
 ```
 

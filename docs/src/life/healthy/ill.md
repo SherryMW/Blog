@@ -15,11 +15,11 @@ article: false
 
 - [x] 2022-7-11 ~ 2022-7-14
 
-打喷嚏：<el-rate model-value="5" disabled text-color="#ff9900" show-score />
+打喷嚏：<el-rate :model-value="5" disabled text-color="#ff9900" show-score />
 
-流鼻涕：<el-rate model-value="3" disabled text-color="#ff9900" show-score />
+流鼻涕：<el-rate :model-value="3" disabled text-color="#ff9900" show-score />
 
-咽痛：<el-rate model-value="0.5" disabled text-color="#ff9900" show-score />
+咽痛：<el-rate :model-value="0.5" disabled text-color="#ff9900" show-score />
 
 用药：风寒感冒颗粒
 
@@ -33,17 +33,17 @@ article: false
 
 @tab 2022-12-28
 
-咽痛：<el-rate model-value="2" disabled text-color="#ff9900" show-score />
+咽痛：<el-rate :model-value="2" disabled text-color="#ff9900" show-score />
 
 今天感觉喉咙不太舒服，吞口水有轻微疼痛感，但喝了一杯热水后症状缓解的差不多了，怀疑是吃了昨天中午外卖点的玉米煎饺导致上火了
 
 @tab 2022-12-29
 
-咳嗽：<el-rate model-value="2.5" disabled text-color="#ff9900" show-score />
+咳嗽：<el-rate :model-value="2.5" disabled text-color="#ff9900" show-score />
 
-咽痛：<el-rate model-value="2" disabled text-color="#ff9900" show-score />
+咽痛：<el-rate :model-value="2" disabled text-color="#ff9900" show-score />
 
-恶寒：<el-rate model-value="3" disabled text-color="#ff9900" show-score />
+恶寒：<el-rate :model-value="3" disabled text-color="#ff9900" show-score />
 
 凌晨1点多才上床睡觉，感觉有困意但翻来覆去好久才入睡，早上7点多被吵醒了，喉咙有点痒想咳嗽
 
@@ -51,19 +51,19 @@ article: false
 
 @tab 2022-12-30
 
-咳嗽：<el-rate model-value="2" disabled text-color="#ff9900" show-score />
+咳嗽：<el-rate :model-value="2" disabled text-color="#ff9900" show-score />
 
-咽痛：<el-rate model-value="1" disabled text-color="#ff9900" show-score />
+咽痛：<el-rate :model-value="1" disabled text-color="#ff9900" show-score />
 
-恶寒：<el-rate model-value="3" disabled text-color="#ff9900" show-score />
+恶寒：<el-rate :model-value="3" disabled text-color="#ff9900" show-score />
 
 咽痛症状已经消失，恶寒症状没有减退多少 ，晚上睡前冲了一杯风寒感冒颗粒喝
 
 @tab 2022-12-31
 
-打喷嚏：<el-rate model-value="2" disabled text-color="#ff9900" show-score />
+打喷嚏：<el-rate :model-value="2" disabled text-color="#ff9900" show-score />
 
-咳嗽：<el-rate model-value="1" disabled text-color="#ff9900" show-score />
+咳嗽：<el-rate :model-value="1" disabled text-color="#ff9900" show-score />
 
 早上起床后喉咙有点痒，吞口水没有疼痛感，有轻微咳嗽并开始有打喷嚏症状，自我感觉声线变沉闷了，中午去客厅装水碰见室友，在唠嗑期间询问声线是否变的明显，室友给予肯定答复并提议测一下抗原（两位室友已经阳康了）
 
@@ -75,7 +75,7 @@ article: false
 
 @tab 2023-1-1
 
-咳嗽：<el-rate model-value="3" disabled text-color="#ff9900" show-score />
+咳嗽：<el-rate :model-value="3" disabled text-color="#ff9900" show-score />
 
 打喷嚏的症状没有了，但咳嗽症状比昨天严重一点，并不是前两天的干咳，而是能咳出些许黄痰
 
@@ -83,7 +83,7 @@ article: false
 
 @tab 2023-1-2
 
-咳嗽：<el-rate model-value="2" disabled text-color="#ff9900" show-score />
+咳嗽：<el-rate :model-value="2" disabled text-color="#ff9900" show-score />
 
 中午测了两次核酸
 
@@ -91,7 +91,7 @@ article: false
 
 @tab 2023-1-3
 
-咳嗽：<el-rate model-value="2" disabled text-color="#ff9900" show-score />
+咳嗽：<el-rate :model-value="2" disabled text-color="#ff9900" show-score />
 
 晚上测了一次核酸
 
@@ -99,7 +99,7 @@ article: false
 
 @tab 2023-1-4
 
-咳嗽：<el-rate model-value="0.5" disabled text-color="#ff9900" show-score />
+咳嗽：<el-rate :model-value="0.5" disabled text-color="#ff9900" show-score />
 
 晚上测了一次核酸，彻底转阴了
 

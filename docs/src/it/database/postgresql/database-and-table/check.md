@@ -41,7 +41,7 @@ CHECK(expr)
 
 - 在创建表的时候在约束定义中使用 `CHECK` 约束
 
-    ```sqs
+    ```sql
     CREATE TABLE users (
         id INTEGER PRIMARY KEY,
         age INTEGER NOT NULL,
@@ -94,7 +94,7 @@ CREATE TABLE users (
 
 通过以下 `\d` 命令查看表 users 上的约束：
 
-```postgresql
+```shell
 \d users
 ```
 

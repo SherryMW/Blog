@@ -42,7 +42,7 @@ CREATE DATABASE testdb;
 
 选择 testdb 数据库为当前数据库：
 
-```postgresql
+```shell
 \c testdb;
 ```
 

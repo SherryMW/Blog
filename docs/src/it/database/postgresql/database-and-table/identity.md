@@ -100,7 +100,7 @@ CREATE TABLE test_identity (
 
 您可以通过 `\d` 命令查看 test_identity 中标识列的情况：
 
-```postgresql
+```shell
 \d test_identity
 ```
 

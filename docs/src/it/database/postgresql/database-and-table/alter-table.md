@@ -73,7 +73,7 @@ CREATE TABLE user_hobbies (
 
 要查看 user_hobbies 表的定义，请使用 `\d` 命令：
 
-```postgresql
+```shell
 \d user_hobbies;
 ```
 
@@ -103,7 +103,7 @@ ALTER TABLE users RENAME TO t_users;
 
 再次使用 `\d` 命令查看 user_hobbies 表的定义：
 
-```postgresql
+```shell
 \d user_hobbies;
 ```
 

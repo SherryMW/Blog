@@ -21,21 +21,21 @@ article: false
 
 ### 顶针Plus
 
-沉浸：<el-rate model-value="3" disabled text-color="#ff9900" show-score />
+沉浸：<el-rate :model-value="3" disabled text-color="#ff9900" show-score />
 
-剧情：<el-rate model-value="2" disabled text-color="#ff9900" show-score />
+剧情：<el-rate :model-value="2" disabled text-color="#ff9900" show-score />
 
-场景：<el-rate model-value="2.5" disabled text-color="#ff9900" show-score />
+场景：<el-rate :model-value="2.5" disabled text-color="#ff9900" show-score />
 
-道具：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
+道具：<el-rate :model-value="0" disabled text-color="#ff9900" show-score />
 
-谜题：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
+谜题：<el-rate :model-value="0" disabled text-color="#ff9900" show-score />
 
-恐怖：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
+恐怖：<el-rate :model-value="0" disabled text-color="#ff9900" show-score />
 
-温情：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
+温情：<el-rate :model-value="0" disabled text-color="#ff9900" show-score />
 
-运动量：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
+运动量：<el-rate :model-value="0" disabled text-color="#ff9900" show-score />
 
 沉浸式互动主题，可以在密室里吃烤鸡、唱K、打麻将等
 

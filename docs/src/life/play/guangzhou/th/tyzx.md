@@ -11,21 +11,21 @@ article: false
 
 ### 福尔摩斯·记忆宫殿
 
-沉浸：<el-rate model-value="4.5" disabled text-color="#ff9900" show-score />
+沉浸：<el-rate :model-value="4.5" disabled text-color="#ff9900" show-score />
 
-剧情：<el-rate model-value="5" disabled text-color="#ff9900" show-score />
+剧情：<el-rate :model-value="5" disabled text-color="#ff9900" show-score />
 
-场景：<el-rate model-value="5" disabled text-color="#ff9900" show-score />
+场景：<el-rate :model-value="5" disabled text-color="#ff9900" show-score />
 
-道具：<el-rate model-value="5" disabled text-color="#ff9900" show-score />
+道具：<el-rate :model-value="5" disabled text-color="#ff9900" show-score />
 
-谜题：<el-rate model-value="5" disabled text-color="#ff9900" show-score />
+谜题：<el-rate :model-value="5" disabled text-color="#ff9900" show-score />
 
-恐怖：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
+恐怖：<el-rate :model-value="0" disabled text-color="#ff9900" show-score />
 
-温情：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
+温情：<el-rate :model-value="0" disabled text-color="#ff9900" show-score />
 
-运动量：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
+运动量：<el-rate :model-value="0" disabled text-color="#ff9900" show-score />
 
 广州本格推理主题密室天花板
 
@@ -39,21 +39,21 @@ article: false
 
 ### 精怪物语
 
-沉浸：<el-rate model-value="4" disabled text-color="#ff9900" show-score />
+沉浸：<el-rate :model-value="4" disabled text-color="#ff9900" show-score />
 
-剧情：<el-rate model-value="5" disabled text-color="#ff9900" show-score />
+剧情：<el-rate :model-value="5" disabled text-color="#ff9900" show-score />
 
-场景：<el-rate model-value="3.5" disabled text-color="#ff9900" show-score />
+场景：<el-rate :model-value="3.5" disabled text-color="#ff9900" show-score />
 
-道具：<el-rate model-value="4" disabled text-color="#ff9900" show-score />
+道具：<el-rate :model-value="4" disabled text-color="#ff9900" show-score />
 
-谜题：<el-rate model-value="5" disabled text-color="#ff9900" show-score />
+谜题：<el-rate :model-value="5" disabled text-color="#ff9900" show-score />
 
-恐怖：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
+恐怖：<el-rate :model-value="0" disabled text-color="#ff9900" show-score />
 
-温情：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
+温情：<el-rate :model-value="0" disabled text-color="#ff9900" show-score />
 
-运动量：<el-rate model-value="0" disabled text-color="#ff9900" show-score />
+运动量：<el-rate :model-value="0" disabled text-color="#ff9900" show-score />
 
 广州变格推理主题密室天花板
 
@@ -65,7 +65,7 @@ article: false
 
 ### 瞳灵人
 
-沉浸：<el-rate model-value="4" disabled text-color="#ff9900" show-score />
+沉浸：<el-rate :model-value="4" disabled text-color="#ff9900" show-score />
 
 剧情：<el-rate model-value="3" disabled text-color="#ff9900" show-score />
 

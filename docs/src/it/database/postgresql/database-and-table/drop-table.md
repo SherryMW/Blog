@@ -101,7 +101,7 @@ DROP TABLE
 
 我们可以通过 `\d` 命令查看表定义以验证是否外键是否被删除，如下：
 
-```postgresql
+```shell
 \d user_hobbies
 ```
 

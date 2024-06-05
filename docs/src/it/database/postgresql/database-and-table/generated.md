@@ -103,7 +103,7 @@ ALTER TABLE order_item
 
 使用 `\d` 命令看一下 order_item 的结构：
 
-```postgresql
+```shell
 \d order_item
 ```
 

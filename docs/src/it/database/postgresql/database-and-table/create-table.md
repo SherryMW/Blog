@@ -80,7 +80,7 @@ CREATE TABLE [IF NOT EXISTS] table_name (
 
 2. 使用以下语句选择 testdb 数据库：
 
-    ```postgresql
+    ```shell
     \c testdb;
     ```
 
