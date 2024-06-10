@@ -7,7 +7,7 @@ article: false
 
 ## 旺金鸽
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00141RT98" target="_blank">江怡路258号科教大厦F1层</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B00141RT98" target="_blank">江怡路258号科教大厦F1层</a>
 
 ::: tabs
 

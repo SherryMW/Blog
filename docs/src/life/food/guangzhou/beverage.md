@@ -9,14 +9,14 @@ article: false
 
 ### 莲城 Lotus Lounge
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFHBYPRP" target="_blank">天河区兴盛路七号107铺</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFHBYPRP" target="_blank">天河区兴盛路七号107铺</a>
 
 - [x] daydream
 - [x] 死亡的性感解释
 
 ### BRASSTON
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFJNAY1S" target="_blank">天河区花城大道南天广场D01铺</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFJNAY1S" target="_blank">天河区花城大道南天广场D01铺</a>
 
 - 传统鸡尾酒：
 
@@ -31,7 +31,7 @@ article: false
 
 ### Moos Coffee（歇业）
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFFOBIXZ" target="_blank">天河区元岗路310号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFFOBIXZ" target="_blank">天河区元岗路310号</a>
 
 - [x] 生榨椰乳拿铁（推荐）
 - [x] 摩卡
@@ -42,7 +42,7 @@ article: false
 
 ### T1COFFEE·TEA
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0JKB7C6CY" target="_blank">白云区三元里大道与南天东街交叉口北40米</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0JKB7C6CY" target="_blank">白云区三元里大道与南天东街交叉口北40米</a>
 
 - [x] 美式
 - [x] 橙香美式
@@ -53,19 +53,19 @@ article: false
 
 ### 缇里咖啡
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0HR4R1AKF" target="_blank">白云区云城东路569号云璟汇栋102铺</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0HR4R1AKF" target="_blank">白云区云城东路569号云璟汇栋102铺</a>
 
 - [x] 生椰拿铁
 
 ### UG咖啡
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0I1D5OREN" target="_blank">白云区云城南三路396号万达广场121房一楼</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0I1D5OREN" target="_blank">白云区云城南三路396号万达广场121房一楼</a>
 
 - [x] 鲜冰萃生椰拿铁
 
 ### YOLOCAFE
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0JD6C19MD" target="_blank">白云区机场路康益街1号107铺</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0JD6C19MD" target="_blank">白云区机场路康益街1号107铺</a>
 
 - [x] 生椰拿铁
 
@@ -108,6 +108,7 @@ article: false
 - [x] 厚芋泥鲜奶茶（推荐）
 - [x] 霸气香水橙子
 - [x] 杨枝甘露
+- [x] 霸气栀子蜜瓜
 - [x] 奶酪芋头山（推荐）
 - [x] 松松芋泥麻薯包
 - [x] 咸蛋黄嘟嘟

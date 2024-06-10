@@ -7,7 +7,7 @@ article: false
 
 ## 小拙画舍
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0JB95W288" target="_blank">广州大道北986号信达金茂公寓C座13栋1013室</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0JB95W288" target="_blank">广州大道北986号信达金茂公寓C座13栋1013室</a>
 
 我：老师我零基础哦
 

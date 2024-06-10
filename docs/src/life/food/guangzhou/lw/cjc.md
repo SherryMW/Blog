@@ -7,7 +7,7 @@ article: false
 
 ## TRIO（歇业）
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFLHI667" target="_blank">荔湾路78号唐铭广场A-06</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFLHI667" target="_blank">荔湾路78号唐铭广场A-06</a>
 
 - [x] 意面
 - [x] 炸鸡蛋

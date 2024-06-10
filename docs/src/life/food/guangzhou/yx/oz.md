@@ -7,7 +7,7 @@ article: false
 
 ## 惠食佳
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00140NDXU" target="_blank">东风东路760号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B00140NDXU" target="_blank">东风东路760号</a>
 
 - [x] 啫黄鳝
 - [x] 烤乳鸽

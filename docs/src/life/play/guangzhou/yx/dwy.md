@@ -7,7 +7,7 @@ article: false
 
 ## 广州动物园
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00140UEO1" target="_blank">先烈中路120号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B00140UEO1" target="_blank">先烈中路120号</a>
 
 ![大火烈鸟](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/yx/dwy/img.jpg)
 
@@ -27,7 +27,7 @@ article: false
 
 ![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/yx/dwy/img_9.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/yx/dwy/img_10.jpg)
+![认真干饭中](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/yx/dwy/img_10.jpg)
 
 ![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/yx/dwy/img_11.jpg)
 

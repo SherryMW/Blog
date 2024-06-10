@@ -7,7 +7,7 @@ article: false
 
 ## 谢小匠（歇业）
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFKPHPIY" target="_blank">下元岗西大街11巷1号102铺</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFKPHPIY" target="_blank">下元岗西大街11巷1号102铺</a>
 
 春夏吃盖面 秋冬嗦粉煲
 
@@ -45,7 +45,7 @@ article: false
 
 ## 二次方空间小吃
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFKTDTCX" target="_blank">下元岗西街三巷2号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFKTDTCX" target="_blank">下元岗西街三巷2号</a>
 
 薄如蝉翼的肠粉，推荐！
 
@@ -56,13 +56,13 @@ article: false
 
 ## 骏犇潮州兄弟牛肉火锅
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFI6I5ER" target="_blank">长兴路8号1楼东面</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFI6I5ER" target="_blank">长兴路8号1楼东面</a>
 
 - [x] 雪花（推荐）
 
 ## 三两粉
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H1U90B35" target="_blank">天源路5号天河新天地B1</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0H1U90B35" target="_blank">天源路5号天河新天地B1</a>
 
 ![卤猪手 + 老长沙肉沫拌面 ](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/thkyz/slf/img.jpg)
 
@@ -78,7 +78,7 @@ article: false
 
 ## TURBO 德保餐厅
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0HUV94AUX" target="_blank">长兴路13号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0HUV94AUX" target="_blank">长兴路13号</a>
 
 - [x] 经典牛腩饭（推荐）
 - [x] 美式经典肉酱意面（推荐）
@@ -95,7 +95,7 @@ article: false
 
 ## 喜炙郎
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0HA7PYK76" target="_blank">元岗横路16号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0HA7PYK76" target="_blank">元岗横路16号</a>
 
 - [x] 大满贯肥牛饭（推荐）
 - [x] 特色鳗鱼炒饭
@@ -115,7 +115,7 @@ article: false
 
 ## 蛙小侠
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFKQOQ0T" target="_blank">天源路5号天河新天地四楼</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFKQOQ0T" target="_blank">天源路5号天河新天地四楼</a>
 
 - [x] 青椒紫苏牛蛙（推荐）
 - [x] 蒜香牛蛙
@@ -124,7 +124,7 @@ article: false
 
 ## 豫江南
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFJA1VJG" target="_blank">元岗横路16号天汇创意园</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFJA1VJG" target="_blank">元岗横路16号天汇创意园</a>
 
 - [x] 浓汤黄骨鱼
 - [x] 无刺酸菜鱼
@@ -140,18 +140,18 @@ article: false
 
 ## 江渔儿酸菜鱼
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H36HYRHC" target="_blank">天源路5号天河新天地4楼</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0H36HYRHC" target="_blank">天源路5号天河新天地4楼</a>
 
 - [x] 老坛酸菜鱼
 
 ## 揸哥茶餐厅
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0HDROU73Q" target="_blank">天源路5号天河新天地大厦商场负一楼</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0HDROU73Q" target="_blank">天源路5号天河新天地大厦商场负一楼</a>
 
 ## 以饭湘许
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFKT4454" target="_blank">天源路5号天河新天地大厦商场四楼L404</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFKT4454" target="_blank">天源路5号天河新天地大厦商场四楼L404</a>
 
 ## 潮燚盛荟牛肉店
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFIRS1DD" target="_blank">元岗横路16号A座103-104、201-205一楼</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFIRS1DD" target="_blank">元岗横路16号A座103-104、201-205一楼</a>

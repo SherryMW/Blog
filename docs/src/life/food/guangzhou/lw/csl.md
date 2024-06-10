@@ -7,7 +7,7 @@ article: false
 
 ## 文记壹心鸡
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00140UXW3" target="_blank">宝华路旋源桥10号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B00140UXW3" target="_blank">宝华路旋源桥10号</a>
 
 ::: tabs
 

@@ -7,7 +7,7 @@ article: false
 
 ## 笃·TOKU居酒屋
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFIG9VK4" target="_blank">马场路珠光新城国际商务中心B座首层104</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFIG9VK4" target="_blank">马场路珠光新城国际商务中心B座首层104</a>
 
 ![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tc/toku/img.jpg)
 
@@ -22,7 +22,7 @@ article: false
 
 ## 大榕树下
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0IDB7NTBF" target="_blank">太阳新天地6楼601房</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0IDB7NTBF" target="_blank">太阳新天地6楼601房</a>
 
 - [x] 顺德豉味碌鹅
 - [x] 啫啫小黄鱼

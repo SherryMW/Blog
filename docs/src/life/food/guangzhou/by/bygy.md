@@ -7,7 +7,7 @@ article: false
 
 ## 融富来酒家
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0J3F76LNU" target="_blank">白云大道南668号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0J3F76LNU" target="_blank">白云大道南668号</a>
 
 ::: tabs
 
@@ -37,6 +37,7 @@ article: false
 - [x] 蒜蓉粉丝蒸元贝
 
 龙虾双人套餐（推荐）
+
 - [x] 砂锅煮海钓黄花鱼
 - [x] 百搭酱烤澳洲青龙仔
 - [x] 鲜竹根炒牛肉

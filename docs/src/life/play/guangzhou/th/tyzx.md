@@ -7,7 +7,7 @@ article: false
 
 ## 渡鸦馆原创剧情密室
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0HDKAELJ4" target="_blank">天河路365号天俊阁2703室</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0HDKAELJ4" target="_blank">天河路365号天俊阁2703室</a>
 
 ### 福尔摩斯·记忆宫殿
 
@@ -35,7 +35,7 @@ article: false
 
 ## 怪诞小镇原创剧情密室
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0G0SU10Q0" target="_blank">天河路365号天俊国际大厦24楼01户</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0G0SU10Q0" target="_blank">天河路365号天俊国际大厦24楼01户</a>
 
 ### 精怪物语
 
@@ -61,7 +61,7 @@ article: false
 
 ## 头号玩家剧情密室
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0GKJ9ZC0W" target="_blank">时尚天河东区负2层停车场F3</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0GKJ9ZC0W" target="_blank">时尚天河东区负2层停车场F3</a>
 
 ### 瞳灵人
 
@@ -89,7 +89,7 @@ article: false
 
 ## 关你鬼室大型密室逃脱
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0G3JY24KV" target="_blank">时尚天河东区负2层停车场F5</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0G3JY24KV" target="_blank">时尚天河东区负2层停车场F5</a>
 
 ### 拐卖
 
@@ -115,7 +115,7 @@ article: false
 
 ## 逃之妖妖原创剧情密室
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0I64CZ3RO" target="_blank">时尚天河3号门中区B2层演播厅</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0I64CZ3RO" target="_blank">时尚天河3号门中区B2层演播厅</a>
 
 ### 走尸
 
@@ -159,7 +159,7 @@ article: false
 
 ## 森林人沉浸式密室剧场
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0IGSR3UQF" target="_blank">时尚天河3号门中区B2层演播厅</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0IGSR3UQF" target="_blank">时尚天河3号门中区B2层演播厅</a>
 
 ### Hush
 
@@ -183,7 +183,7 @@ article: false
 
 ## 正佳极地海洋世界
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00141V5TB" target="_blank">天河路228号正佳广场2层2D126</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B00141V5TB" target="_blank">天河路228号正佳广场2层2D126</a>
 
 ![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/th/tyzx/hysj/img.jpg)
 
@@ -229,18 +229,18 @@ article: false
 
 ## 速马赫卡丁车
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0G1KA1NWT" target="_blank">时尚天河地下负一层中五街026(A区停车场)</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0G1KA1NWT" target="_blank">时尚天河地下负一层中五街026(A区停车场)</a>
 
 ## 天弓社·射箭
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFKUT6NL" target="_blank">时尚天河东一街负二层F6</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFKUT6NL" target="_blank">时尚天河东一街负二层F6</a>
 
 ## 沉浸世界大空间VR游戏体验馆（歇业）
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H2F1LL6O" target="_blank">时尚天河中区中二街（夜上海）011号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0H2F1LL6O" target="_blank">时尚天河中区中二街（夜上海）011号</a>
 
 - [x] 丧尸围攻VR
 
 ## 叁高空娱乐KTV
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0I3J42VJ1" target="_blank">天河路228号正佳金殿33楼</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0I3J42VJ1" target="_blank">天河路228号正佳金殿33楼</a>

@@ -7,7 +7,7 @@ article: false
 
 ## 粤·向群饭店
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0I2JZ4YIS" target="_blank">广州大道北920号信达金茂广场L3层301-302</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0I2JZ4YIS" target="_blank">广州大道北920号信达金茂广场L3层301-302</a>
 
 ::: tabs
 
@@ -31,7 +31,7 @@ article: false
 
 ## Pizza Forza 意式窑烤披萨
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0I12MZD0C" target="_blank">VLAB181负一楼123铺</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0I12MZD0C" target="_blank">VLAB181负一楼123铺</a>
 
 ![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/mhy/forza/img.jpg)
 

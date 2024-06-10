@@ -7,7 +7,7 @@ article: false
 
 ## 东山小厨
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFKY7XWI" target="_blank">起义路12-14号首层之一</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFKY7XWI" target="_blank">起义路12-14号首层之一</a>
 
 ::: tabs
 
@@ -35,9 +35,45 @@ article: false
 - [x] 白切咸猪手
 - [x] 椒丝付乳炒通菜
 
+## haxnbauer 海森堡德国餐厅
+
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0JAAUE45P" target="_blank">侨光西路11号星寰国际商业中心六层05号</a>
+
+::: tabs
+
+@tab 黑胡椒猪小肘
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/hzgc/hsb/1.jpg)
+
+@tab 纽伦堡香肠/BBQ鸡肉串烧
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/hzgc/hsb/2.jpg)
+
+@tab 黑松露菌菇火焰薄饼
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/hzgc/hsb/3.jpg)
+
+@tab 熔岩芝士鸡肉蓝带
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/hzgc/hsb/4.jpg)
+
+@tab 深海金枪鱼色拉
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/hzgc/hsb/5.jpg)
+
+:::
+
+- [x] 黑胡椒猪小肘
+- [x] 纽伦堡香肠
+- [x] 黑松露菌菇火焰薄饼
+- [x] 熔岩芝士鸡肉蓝带
+- [x] BBQ鸡肉串烧
+- [x] 深海金枪鱼色拉
+- [x] 橙汁
+
 ## 新疆阿凡提新鲜羊肉串
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0HK0SGIWA" target="_blank">解放中路177号自编A6</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0HK0SGIWA" target="_blank">解放中路177号自编A6</a>
 
 - [x] 脖烤肉
 - [x] 红柳羊肉
@@ -50,18 +86,18 @@ article: false
 
 ## 粽香园
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFHFHFI6" target="_blank">大德路298号之1号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFHFHFI6" target="_blank">大德路298号之1号</a>
 
 - [x] 绿豆咸肉蛋黄粽（推荐）
 - [x] 牛腩布拉肠
 
 ## 辣辣寿司
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00141R25J" target="_blank">解放南路173-183号香榭丽舍商业街</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B00141R25J" target="_blank">解放南路173-183号香榭丽舍商业街</a>
 
 ## 勿理堂
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0JKOKKQVC" target="_blank">大德路282号之一首层</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0JKOKKQVC" target="_blank">大德路282号之一首层</a>
 
 - [x] 紫菜肉松包
 - [x] 罗汉果菊花茶

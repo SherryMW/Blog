@@ -7,7 +7,7 @@ article: false
 
 ## 国际体育文化演艺中心
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFIIJZ6B" target="_blank">裕和路95号(新城东地铁站D口步行50米)</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFIIJZ6B" target="_blank">裕和路95号(新城东地铁站D口步行50米)</a>
 
 ### AGA ONEDERFUL LIVE
 

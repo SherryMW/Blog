@@ -7,7 +7,7 @@ article: false
 
 ## MRX·X先生密室逃脱
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H63M6721" target="_blank">天河路502号N116天河电脑城负一层</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0H63M6721" target="_blank">天河路502号N116天河电脑城负一层</a>
 
 ### 弥生壹
 
@@ -145,7 +145,7 @@ article: false
 
 ## 大迷局实景原创密室（歇业）
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H2PSP36Z" target="_blank">天河路603号莱福广场F4层</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0H2PSP36Z" target="_blank">天河路603号莱福广场F4层</a>
 
 ### 庄园
 
@@ -191,4 +191,4 @@ article: false
 
 ## 超级大快活量贩KTV
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFFA9UB2" target="_blank">石牌东路自编36号大快活二三楼</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFFA9UB2" target="_blank">石牌东路自编36号大快活二三楼</a>

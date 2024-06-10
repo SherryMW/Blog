@@ -7,7 +7,7 @@ article: false
 
 ## 花和尚·湘西小串烧烤
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0HKYDTY2G" target="_blank">百顺南路15号岭南新世界五区云门·云里B1层20A号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0HKYDTY2G" target="_blank">百顺南路15号岭南新世界五区云门·云里B1层20A号</a>
 
 - [x] 烤鸡全翅
 - [x] 烤掌中宝
@@ -16,7 +16,7 @@ article: false
 
 ## 一龙拉面
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H1D7O5OQ" target="_blank">百顺北路1号云门New ParkMU层</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0H1D7O5OQ" target="_blank">百顺北路1号云门New ParkMU层</a>
 
 ![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/jhwg/yllm/img.jpg)
 

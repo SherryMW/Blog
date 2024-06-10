@@ -7,7 +7,7 @@ article: false
 
 ## 大同酒家
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H60UIOZ5" target="_blank">华强路3号富力盈力大厦北塔1-2楼</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0H60UIOZ5" target="_blank">华强路3号富力盈力大厦北塔1-2楼</a>
 
 ::: tabs
 
@@ -52,7 +52,7 @@ article: false
 
 ## 小炳胜
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFJ9SWK8" target="_blank">天河路218号天环广场B2-19b铺</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFJ9SWK8" target="_blank">天河路218号天环广场B2-19b铺</a>
 
 - [x] 始创黑叉烧（推荐）
 - [x] 黑松露脆皮文昌鸡（推荐）
@@ -62,14 +62,14 @@ article: false
 
 ## 敏华冰厅
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFKU8QTY" target="_blank">天河城购物中心6层609号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFKU8QTY" target="_blank">天河城购物中心6层609号</a>
 
 - [x] Big Men 菠萝包（推荐）
 - [x] 香滑奶茶
 
 ## 秘密旅行
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFG63HJJ" target="_blank">体育西横街144号104</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFG63HJJ" target="_blank">体育西横街144号104</a>
 
 - [x] 黑松露温泉蛋奶油意大利扁面
 - [x] 招牌吞拿鱼薯仔头（推荐）

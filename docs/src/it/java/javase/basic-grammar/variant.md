@@ -163,36 +163,110 @@ public class VarTest {
 
 5. 变量值的数据类型必须和变量的数据类型一致，这样是不允许的：`String name = 100;`
 
+```java
+public class VarTest {
 
+    public static void main(String[] args) {
 
+        // 变量必须先声明，再赋值，才能访问
+        int age;
+        // 错误：可能尚未初始化变量 age
+        //System.out.println(age);
 
+        //方法体当中的代码遵循自上而下的顺序依次逐行执行，变量先访问，再声明肯定是不行的
+        // 错误: 找不到符号
+        //System.out.println("name = " + name);
+        String name = "jack";
 
+        // 一行代码上可以同时声明多个变量
+        // 以下代码含义：声明三个 int 类型的变量 a b c，其中 a 和 b 没有赋值，c 赋值 300
+        int a, b, c = 300;
+        a = 50;
+        System.out.println(a);
+        b = 80;
+        System.out.println(b);
+        System.out.println(c);
 
+        int x = 500, y = 600, z = 700;
+        System.out.println(x + y + z);
 
+        // 在同一个作用域当中，变量名不能重名，可以重新赋值
+        // 作用域就是有效范围。在 java 中，一个 {} 就是一个作用域
+        int i = 100;
+        // 错误: 已在方法 main(String[]) 中定义了变量 i
+        //int i = 200;
 
+        // 可以重新赋值。
+        i = 200;
+        System.out.println(i);
+    }
+}
+```
 
+## 变量的作用域
 
+1. 作用域就是变量的有效范围。变量的作用域是怎样的呢？用一句大白话就可以概况了：出了大括号就不认识了
 
+2. 作用域的不同主要是因为声明在不同位置的变量具有不同的生命周期。所谓的生命周期是：从内存开辟到内存释放
 
+3. Java 遵循就近原则
 
+```java
+public class VarTest {
 
+    public static void main(String[] args) {
 
+        // age 是 main 方法中声明的。所以作用域是整个 main 方法
+        // 在 main 方法体当中是有效的变量
+        int age = 20;
+        System.out.println("age = " + age);
 
+        int num = 100;
 
+        if (num > 50) {
+            int i = 666;
+            System.out.println("i = " + (i + age));
+        }
 
+        // 错误: 找不到符号
+        //System.out.println("i = " + i);
+    }
 
+    // 另一个方法
+    public static void doSome() {
+        // 错误: 找不到符号
+        //System.out.println("age = " + age);
+    }
 
+}
+```
 
+## 变量的分类
 
+变量可以根据定义的/声明的位置来进行分类，可以分为两大类：
 
+- 局部变量
 
+- 成员变量
 
+    - 静态变量
 
+    - 实例变量
 
+```java
+public class VarTest {
 
+    public static void main(String[] args) {
+        // 凡是在方法体当中定义的变量，一定是局部变量
+        // 局部变量只在当前方法体当中有效
+        int a = 100;
+    }
+    
+    // 在类体当中定义的变量叫做成员变量
+    // 实例变量
+    int b = 200;
 
-
-
-
-
-
+    // 静态变量
+    static int c = 300;
+}
+```

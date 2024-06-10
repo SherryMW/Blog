@@ -7,7 +7,9 @@ article: false
 
 ## 常用 DOS 命令
 
-- cd：change directory 切换目录 `cd 绝对路径或相对路径`
+- cd（change directory）：切换目录 `cd 绝对路径或相对路径`
+
+    - 当前目录 `cd .`
 
     - 回到上级目录 `cd ..`
 
@@ -15,21 +17,21 @@ article: false
 
 - 切换盘符：盘符 + 冒号 `d:`
 
-- dir：列出当前路径下的所有文件和目录
+- dir（directory）：列出当前路径下的所有文件和目录
 
-- mkdir：在当前路径下创建一个新的目录 `mkdir abc`
+- mkdir（make directory）：在当前路径下创建一个新的目录 `mkdir abc`
 
-- ren：重命名目录名 `ren abc xyz` 表示将当前路径下的 abc 目录名修改为 xyz
+- ren（rename）：重命名目录名 `ren abc xyz` 表示将当前路径下的 abc 目录名修改为 xyz
 
-- rd：删除当前路径下的目录 `rd xyz`
+- rd（remove directory）：删除当前路径下的目录 `rd xyz`
 
-- del：删除文件 `del 文件名`
+- del（delete）：删除文件 `del 文件名`
 
     - 删除多个文件：`del "新建 文本文档.txt" "新建 文本文档 (2).txt"`
 
     - 删除当前目录所有 txt 格式的文件 `del *.txt`
 
-- cls：clear screen 清屏
+- cls（clear screen）：清屏
 
 - 终止 DOS 命令窗口中某个命令的执行：ctrl + c
 

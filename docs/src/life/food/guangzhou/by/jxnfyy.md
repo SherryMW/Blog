@@ -7,7 +7,7 @@ article: false
 
 ## 绿茶餐厅
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFJ5LK6U" target="_blank">广州大道北1811号嘉裕太阳城2楼2053/2058号铺</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFJ5LK6U" target="_blank">广州大道北1811号嘉裕太阳城2楼2053/2058号铺</a>
 
 - [x] 绿茶烤鸡
 - [x] 东坡草扎肉（推荐）
@@ -22,7 +22,7 @@ article: false
 
 ## 秋枫媚料理
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H2MS3VO5" target="_blank">广州大道北1811号嘉裕太阳城广场F1层</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0H2MS3VO5" target="_blank">广州大道北1811号嘉裕太阳城广场F1层</a>
 
 - [x] 唐扬爆浆炸鸡（推荐）
 - [x] 金针菇牛肉卷（推荐）
@@ -33,13 +33,13 @@ article: false
 
 ## 周沫
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0IG6SDGZD" target="_blank">广州大道北1811号嘉裕太阳城广场一层1062</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0IG6SDGZD" target="_blank">广州大道北1811号嘉裕太阳城广场一层1062</a>
 
 - [x] 蟹籽猪颈肉炒饭（推荐）
 
 ## 稻香酒家
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0JRHCG94T" target="_blank">沙太南路538号二楼</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0JRHCG94T" target="_blank">沙太南路538号二楼</a>
 
 - [x] 榴莲天鹅酥
 - [x] 豉汁蒸排骨
@@ -49,13 +49,13 @@ article: false
 
 ## 马记永·兰州牛肉面
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0JA6LJTAA" target="_blank">广州大道北1811-1813号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0JA6LJTAA" target="_blank">广州大道北1811-1813号</a>
 
 - [x] 大片牛腱子兰州牛肉面（推荐）
 
 ## 正宗潮汕绿豆饼
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0JA6LJTAA" target="_blank">京溪街道京溪大街8号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0JA6LJTAA" target="_blank">京溪街道京溪大街8号</a>
 
 - [x] 绿豆饼（推荐）
 - [x] 肉松海苔卷

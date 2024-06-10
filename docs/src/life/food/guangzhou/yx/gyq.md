@@ -7,7 +7,7 @@ article: false
 
 ## 穗香食府
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00140UBQ1" target="_blank">惠福西路199号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B00140UBQ1" target="_blank">惠福西路199号</a>
 
 - [x] 穗香原味鸡（推荐）
 - [x] 脆皮烧鹅
@@ -39,7 +39,7 @@ article: false
 
 ## 口福食家
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B001402D72s" target="_blank">惠福西路264号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B001402D72s" target="_blank">惠福西路264号</a>
 
 :::tabs
 
@@ -64,18 +64,14 @@ article: false
 - [x] 白切鸡
 - [x] 松子鱼（推荐）
 - [x] 脆皮炸大肠（推荐）
-- [ ] 豉汁牛心顶
-- [ ] 豉汁蒸钳鱼
-- [ ] 啫啫鱼卟
-- [ ] 韭黄煎面
 - [x] 凉拌鱼皮
-- [ ] 筒骨莲藕煲
 
 ## 今崎烧·寿喜烧专门店
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H2H1K16K" target="_blank">惠福东路522号首层</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0H2H1K16K" target="_blank">惠福东路522号首层</a>
 
 真的上脑寿喜烧双人套餐（推荐）
+
 - [x] 美国安格斯牛上脑×2
 - [x] 澳洲霜降牛肉×2
 - [x] 松阪黑毛豚五花
@@ -86,7 +82,7 @@ article: false
 
 ## 认真食饭·海鲜大排档
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0J147XFET" target="_blank">府学西街81号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0J147XFET" target="_blank">府学西街81号</a>
 
 - [x] 金汤花胶鸡
 - [x] 咸蛋黄焗罗氏虾（推荐）
@@ -95,11 +91,11 @@ article: false
 
 ## 大喜居酒屋
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFIIKP20" target="_blank">教育路1号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFIIKP20" target="_blank">教育路1号</a>
 
 ## 绿茶餐厅
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B001402D72" target="_blank">中山五路68号五月花商场5楼</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B001402D72" target="_blank">中山五路68号五月花商场5楼</a>
 
 - [x] 东坡肉
 - [x] 咖喱面包鸡
@@ -107,7 +103,7 @@ article: false
 
 ## 马小火牛肉面
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0IU5R4JEM" target="_blank">中山五路中旅商业城1楼103号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0IU5R4JEM" target="_blank">中山五路中旅商业城1楼103号</a>
 
 - [x] 大片牛肉手工拉面
 - [x] 招牌烤包子（推荐）

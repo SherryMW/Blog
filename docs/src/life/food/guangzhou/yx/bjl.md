@@ -7,7 +7,7 @@ article: false
 
 ## 陶陶居酒家
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFIMXLSX" target="_blank">北京路168号仰忠汇7层A707-A708</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFIMXLSX" target="_blank">北京路168号仰忠汇7层A707-A708</a>
 
 ![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/bjl/ttj/img.jpg)
 
@@ -20,7 +20,7 @@ article: false
 - [x] 陶陶居大虾饺（推荐）
 - [x] 鲜果榴莲天鹅酥
 - [x] 菜谱金钩咸水角
-- [x] 惹味金钱肚（推荐）
+- [x] 惹味金钱肚
 - [x] 陈皮红豆马蹄糕
 - [x] 百搭酱皇蒸凤爪
 - [x] 山竹陈皮牛肉球
@@ -33,7 +33,7 @@ article: false
 
 ## 小炳胜
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFIWT9NM" target="_blank">北京路168号北京路天河城A区6层B605号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFIWT9NM" target="_blank">北京路168号北京路天河城A区6层B605号</a>
 
 ::: tabs
 
@@ -57,7 +57,7 @@ article: false
 
 ## 摩打食堂
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFLMYA6N" target="_blank">中山四路395号城壹汇F4层</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFLMYA6N" target="_blank">中山四路395号城壹汇F4层</a>
 
 ::: tabs
 
@@ -88,7 +88,7 @@ article: false
 
 ## 凤园椰珍
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0GK7146CJ" target="_blank">西湖路63号光明广场三楼北区B06铺</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0GK7146CJ" target="_blank">西湖路63号光明广场三楼北区B06铺</a>
 
 - [x] 五指毛桃椰子鸡
 - [x] 精品肥牛
@@ -97,7 +97,7 @@ article: false
 
 ## 海底捞火锅
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00141VVZW" target="_blank">中山四路395号城壹汇F5层</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B00141VVZW" target="_blank">中山四路395号城壹汇F5层</a>
 
 - [x] 参鲍鸡金汤锅（推荐）
 - [x] 番茄锅底
@@ -105,13 +105,13 @@ article: false
 
 ## 陈添记
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0J1COEOXQ" target="_blank">惠福东路612号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0J1COEOXQ" target="_blank">惠福东路612号</a>
 
 - [x] 陈添记鱼皮（推荐）
 
 ## 刘福记
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFH8I8GG" target="_blank">文德路45号（35路车总站对面）</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFH8I8GG" target="_blank">文德路45号（35路车总站对面）</a>
 
 ![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/bjl/lfj/img.jpg)
 
@@ -119,13 +119,13 @@ article: false
 
 ## 麺屋猪一
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0J1COEOXQ" target="_blank">西湖路63号光明广场B1层</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0J1COEOXQ" target="_blank">西湖路63号光明广场B1层</a>
 
 - [x] 豚骨王拉面
 
 ## 御前十七
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0GKJ6VYW6" target="_blank">北京路168号粤海仰忠汇8楼</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0GKJ6VYW6" target="_blank">北京路168号粤海仰忠汇8楼</a>
 
 ::: tabs
 

@@ -7,7 +7,7 @@ article: false
 
 ## 喵惊灵沉浸式剧场（歇业）
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0H3YC71BS" target="_blank">荔湾路100号4层</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0H3YC71BS" target="_blank">荔湾路100号4层</a>
 
 ### 魔窟
 

@@ -736,6 +736,37 @@ class CoffeeMachineTest {
 }
 ```
 
+## 私有变量
+
+`ReflectionTestUtils.setField` 是 Spring 框架提供的一个工具方法，主要用于在测试过程中通过反射设置对象的字段值
+
+假设有一个类 `MyClass`，其中有一个私有字段 `privateField`：
+
+```java
+public class MyClass {
+    
+    private String privateField;
+
+    public String getPrivateField() {
+        return privateField;
+    }
+}
+```
+
+在测试类中，可以使用 `ReflectionTestUtils.setField` 来设置这个私有字段的值：
+
+```java
+public class MyClassTest {
+
+    @Test
+    public void testSetPrivateField() {
+        MyClass myObject = new MyClass();
+        // 设置私有字段的值
+        ReflectionTestUtils.setField(myObject, "privateField", "new value");
+    }
+}
+```
+
 ## 重复调用问题
 
 在实际开发中，一个实现类可能会重复调用同一个服务，且每次返回不同的结果：

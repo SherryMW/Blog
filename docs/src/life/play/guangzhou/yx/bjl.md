@@ -5,9 +5,15 @@ article: false
 
 # 北京路
 
+## Ballers棒球网球高尔夫体验馆
+
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0GR1AXGTD" target="_blank">大南路2号合润广场20楼2001/02/18室</a>
+
+- [x] 棒球
+
 ## 乃汐DIY烘焙工作室
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0G345S3N2" target="_blank">大南路108号万晟商都808室</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0G345S3N2" target="_blank">大南路108号万晟商都808室</a>
 
 ![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/yx/bjl/nx/img.jpg)
 
@@ -17,7 +23,7 @@ article: false
 
 ## 森林人实景娱乐剧场密室
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0IGSR3UQF" target="_blank">西湖路63号光明广场904</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0IGSR3UQF" target="_blank">西湖路63号光明广场904</a>
 
 ### 顶针Plus
 
@@ -41,8 +47,8 @@ article: false
 
 ## 布吉岛电玩店
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFIAN90G" target="_blank">北京路广百新翼商务中心24楼18室</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFIAN90G" target="_blank">北京路广百新翼商务中心24楼18室</a>
 
 ## THE ONE CLUB
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0GUOB3BP8" target="_blank">北京南路24-26号首层</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0GUOB3BP8" target="_blank">北京南路24-26号首层</a>

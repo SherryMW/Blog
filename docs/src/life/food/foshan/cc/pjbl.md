@@ -7,7 +7,7 @@ article: false
 
 ## 顺德杨廷记
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0GU9OVEWS" target="_blank">福贤路岭南天地钟楼旁</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0GU9OVEWS" target="_blank">福贤路岭南天地钟楼旁</a>
 
 ::: tabs
 
@@ -31,7 +31,7 @@ article: false
 
 ## 大笨象小吃店
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B02F50W3ZH" target="_blank">福宁路142-144号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B02F50W3ZH" target="_blank">福宁路142-144号</a>
 
 ::: tabs
 

@@ -5,9 +5,39 @@ article: false
 
 # 体育中心
 
+## 大同酒家
+
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0IGTZEJMY" target="_blank">体育东路136-138号金利来数码网络大厦5层</a>
+
+::: tabs
+
+@tab 大同脆皮鸡
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/dtjj/1.jpg)
+
+@tab 啫啫黄鳝煲
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/dtjj/2.jpg)
+
+@tab 清蒸多宝鱼
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/dtjj/3.jpg)
+
+@tab 了能炒面
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/dtjj/4.jpg)
+
+:::
+
+- [x] 大同脆皮鸡（推荐）
+- [x] 啫啫黄鳝煲
+- [x] 清蒸多宝鱼
+- [x] 了能炒面（推荐）
+- [x] 大同蛋挞（推荐）
+
 ## 常来大牌档
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0I1VMXOCO" target="_blank">林和东路121号中怡商务港二层自编201</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0I1VMXOCO" target="_blank">林和东路121号中怡商务港二层自编201</a>
 
 ::: tabs
 
@@ -30,10 +60,6 @@ article: false
 - [x] 常来豉油鸡（推荐）
 - [x] 鸿运烧香猪
 - [x] 特色脆皮乳鸽（推荐）
-- [ ] 荔枝木招牌烧鹅
-- [ ] 清蒸龙趸
-- [ ] 生焗多宝鱼
-- [ ] 招牌手抓烧排骨
 - [x] 生啫田鸡黄鳝
 - [x] 盐焗北海元贝
 - [x] 蒜蓉粉丝蒸北海元贝（推荐）
@@ -45,7 +71,7 @@ article: false
 
 ## 富士喜日式猪扒店（歇业）
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0IDSRMT99" target="_blank">天河南二路26号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0IDSRMT99" target="_blank">天河南二路26号</a>
 
 ::: tabs
 
@@ -70,7 +96,7 @@ article: false
 
 ## 鲜潭蒸汽石锅鱼
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0I6B1025W" target="_blank">天河路228号正佳广场6层C058铺</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0I6B1025W" target="_blank">天河路228号正佳广场6层C058铺</a>
 
 ![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/xtzqsgy/img.jpg)
 
@@ -78,7 +104,6 @@ article: false
 
 - [x] 养生菌菇锅（推荐）
 - [x] 江团鱼（推荐）
-- [ ] 桂鱼仔
 - [x] 鱼籽福袋
 - [x] 鲜潭手打虾滑
 - [x] 鲜奶浸羔羊肉（会影响汤底味道，点的话留到最后下锅）
@@ -88,7 +113,7 @@ article: false
 
 ## 肥韬茶餐厅
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0IA9MLZIL" target="_blank">体育东路39号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0IA9MLZIL" target="_blank">体育东路39号</a>
 
 - [x] 招牌黯然销魂饭
 - [x] 黑松露虾仁滑蛋饭
@@ -97,20 +122,15 @@ article: false
 - [x] 漏奶华（推荐）
 - [x] 蒜香鸡翅
 - [x] 蜂蜜芥末酱薯条
-- [ ] 酥皮包
-- [ ] 老婆饼
-- [ ] 港式蛋挞
-- [ ] 甜甜圈
 - [x] 白灼生菜
 - [x] 小吃拼盘
 - [x] 港式鸳鸯
 - [x] 招牌熊仔奶茶（推荐）
 - [x] 恐龙美禄脆脆冰
-- [ ] 杨枝甘露熊仔冰
 
 ## 吴系茶餐厅
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00141J13M" target="_blank">天河东路75号汇坊负一楼</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B00141J13M" target="_blank">天河东路75号汇坊负一楼</a>
 
 ::: tabs
 
@@ -124,19 +144,15 @@ article: false
 
 :::
 
-- [ ] 烤乳猪
 - [x] 叉烧例牌
 - [x] 南乳猪手
-- [ ] 玫瑰露豉油鸡
 - [x] 冰镇菠萝油（推荐）
-- [ ] 港式碗仔翅
 - [x] 芝麻糊汤圆（推荐）
 - [x] 杏仁茶汤圆
-- [ ] 原味冰镇奶茶
 
 ## 珮姐老火锅
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0I1F4EXRB" target="_blank">宏发大厦北门一楼10号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0I1F4EXRB" target="_blank">宏发大厦北门一楼10号</a>
 
 ![番茄鸳鸯锅（微微辣）](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/pj/img.jpg)
 
@@ -152,7 +168,7 @@ article: false
 
 ## 虾饺妹富竹一生
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFK0NJBQ" target="_blank">天河东路163号2层</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFK0NJBQ" target="_blank">天河东路163号2层</a>
 
 - [x] 招牌虾饺妹
 - [x] 泰国榴莲酥
@@ -166,7 +182,7 @@ article: false
 
 ## 陶陶居酒家
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFG2O3RL" target="_blank">天河路228号正佳广场6层C059铺</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFG2O3RL" target="_blank">天河路228号正佳广场6层C059铺</a>
 
 - [x] 蒜香骨
 - [x] 酸菜肥牛
@@ -175,20 +191,20 @@ article: false
 
 ## 凑凑火锅
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFKX3B93" target="_blank">天河路218号天环广场西塔B1层</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFKX3B93" target="_blank">天河路218号天环广场西塔B1层</a>
 
 ## 汉拿山（歇业）
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00140TFHO" target="_blank">天河路228号正佳广场5层南街</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B00140TFHO" target="_blank">天河路228号正佳广场5层南街</a>
 
-40元的拌饭比268元的拼盘要好吃的多:see_no_evil:
+40 元的拌饭比 268 元的拼盘要好吃的多:see_no_evil:
 
 - [x] 荣升全牛八拼
 - [x] 石锅牛肉拌饭
 
 ## 龙井湖
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0JAT7QM2I" target="_blank">天河路228号正佳广场5F-5A031-33号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0JAT7QM2I" target="_blank">天河路228号正佳广场5F-5A031-33号</a>
 
 ::: tabs
 
@@ -213,4 +229,4 @@ article: false
 
 ## 乐焰烤肉·和牛海鲜放题（歇业）
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B001401AEE" target="_blank">体育东路112号百福广场二层201号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B001401AEE" target="_blank">体育东路112号百福广场二层201号</a>

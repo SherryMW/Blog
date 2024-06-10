@@ -52,7 +52,7 @@ public class HelloWorld {
         // 方法体
     }
     
-    // System.out.println("Hello World"); // 编译报错，类体中不能直接编写 Java 语句
+    // System.out.println("Hello World"); // 编译报错，类体中不能直接编写 Java 语句。除定义成员变量以外
     
     // 类体
 }

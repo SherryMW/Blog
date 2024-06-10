@@ -7,7 +7,7 @@ article: false
 
 ## 明记海鲜城
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00140NICE" target="_blank">昌岗中路172号星都大酒店2层</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B00140NICE" target="_blank">昌岗中路172号星都大酒店2层</a>
 
 - [x] 烧鹅
 - [x] 明记一品鸡

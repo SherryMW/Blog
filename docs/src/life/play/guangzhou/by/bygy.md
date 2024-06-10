@@ -7,7 +7,7 @@ article: false
 
 ## 广州体育馆-1号馆
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFG9J5OA" target="_blank">白云大道南783号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFG9J5OA" target="_blank">白云大道南783号</a>
 
 ### 勇士的荣耀
 

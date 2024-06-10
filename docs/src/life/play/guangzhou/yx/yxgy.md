@@ -7,7 +7,7 @@ article: false
 
 ## 越秀公园
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00140BNNF" target="_blank">解放北路988号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B00140BNNF" target="_blank">解放北路988号</a>
 
 ![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/yx/yxgy/img.jpg)
 

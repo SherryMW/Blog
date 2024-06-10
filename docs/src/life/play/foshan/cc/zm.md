@@ -7,7 +7,7 @@ article: false
 
 ## 渡鸦馆原创剧情密室
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0HDX7AKM7" target="_blank">祖庙路35号百花总汇B馆F4层</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0HDX7AKM7" target="_blank">祖庙路35号百花总汇B馆F4层</a>
 
 ### 阁楼
 

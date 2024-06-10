@@ -7,7 +7,7 @@ article: false
 
 ## 鲜达摩海鲜专门店
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFJG1AQK" target="_blank">洛浦街洛溪村康宁西路1号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFJG1AQK" target="_blank">洛浦街洛溪村康宁西路1号</a>
 
 ::: tabs
 

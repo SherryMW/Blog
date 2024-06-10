@@ -7,7 +7,7 @@ article: false
 
 ## 富盈酒家
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00141I8AJ" target="_blank">中山大道西140号华港商务大厦三楼</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B00141I8AJ" target="_blank">中山大道西140号华港商务大厦三楼</a>
 
 ![午餐饭堂](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/hjxc/fyjj/img.jpg)
 
@@ -33,7 +33,7 @@ article: false
 
 ## 渔乡米坊
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0G2GKJW4O" target="_blank">华景路91号105铺</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0G2GKJW4O" target="_blank">华景路91号105铺</a>
 
 - [x] 豉汁排骨饭
 - [x] 梅菜肉饼饭
@@ -51,7 +51,7 @@ article: false
 
 ## 佬麻雀
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFI6K7Z4" target="_blank">中山大道西140号华港商务大厦二层</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFI6K7Z4" target="_blank">中山大道西140号华港商务大厦二层</a>
 
 - [x] 脆皮鸡（推荐）
 - [x] 豆浆一锅鲜
@@ -60,13 +60,13 @@ article: false
 
 ## 顺德正宗煲仔饭
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFHX49R7" target="_blank">华景路32号肉菜一条街</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFHX49R7" target="_blank">华景路32号肉菜一条街</a>
 
 - [x] 煲仔饭（推荐）
 
 ## 麻溜炭火烤肉
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0HU6A19ND" target="_blank">华景路31-33号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0HU6A19ND" target="_blank">华景路31-33号</a>
 
 ![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/hjxc/mlthkr/img.jpg)
 
@@ -75,19 +75,19 @@ article: false
 
 ## 渔棠里
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0HR6U9AWY" target="_blank">中山大道西138号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0HR6U9AWY" target="_blank">中山大道西138号</a>
 
 - [x] 回头鱼
 - [x] 鸭嘴鱼
 
 ## 一欣筒骨粉
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0IAT123DD" target="_blank">华景路33号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0IAT123DD" target="_blank">华景路33号</a>
 
 - [x] 酱香筒骨粉
 
 ## 煲仔正
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0JAUSR1AA" target="_blank">华景路30号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0JAUSR1AA" target="_blank">华景路30号</a>
 
 - [x] 香菇滑鸡煲仔饭

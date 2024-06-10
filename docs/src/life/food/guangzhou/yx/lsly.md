@@ -7,7 +7,7 @@ article: false
 
 ## 炭焱·炭火烤肉
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0IBHCJQHO" target="_blank">中山三路33号中华广场7楼</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0IBHCJQHO" target="_blank">中山三路33号中华广场7楼</a>
 
 ![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/lsly/ty/img.jpg)
 

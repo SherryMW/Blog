@@ -7,18 +7,16 @@ article: false
 
 ## 炳胜品味
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00140UVX2" target="_blank">冼村路2号博雅首府大厦1-4层</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B00140UVX2" target="_blank">冼村路2号博雅首府大厦1-4层</a>
 
-- [ ] 水晶鸡
 - [x] 蟹黄豆腐
 - [x] 秘制黑叉烧
-- [ ] 首创灌汤烧鹅
 - [x] 和味猪手-伊比利亚黑猪（没想到花400多来考验牙口:see_no_evil:）
 - [x] 招牌菠萝包（推荐）
 
 ## 常来小聚
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFLQFDXL" target="_blank">临江大道359号天德广场天德街</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFLQFDXL" target="_blank">临江大道359号天德广场天德街</a>
 
 ::: tabs
 
@@ -42,7 +40,7 @@ article: false
 
 ## 太艮堡毋米粥·粥底火锅
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00140TZ3W" target="_blank">金穗路72号盈嘉花园103号-201号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B00140TZ3W" target="_blank">金穗路72号盈嘉花园103号-201号</a>
 
 - [x] 海蚬
 - [x] 生蚝
@@ -53,15 +51,12 @@ article: false
 
 ## 木棉·醉心粤味
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0GROY2454" target="_blank">珠江东路16号高德置地广场·冬F4层407</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0GROY2454" target="_blank">珠江东路16号高德置地广场·冬F4层407</a>
 
 ![海报与实物对比:see_no_evil:](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/ld/mmzx/img.jpg)
 
 - [x] 初恋咕噜肉
 - [x] 龙眼蜜叉烧
 - [x] 香蒜炒肉蟹（没有去壳服务，分量少，炒了个寂寞:see_no_evil:）
-- [ ] 龙井烟熏太爷鸡
-- [ ] 威士忌无骨猪手
 - [x] 菜胆炖花胶
 - [x] 桃胶节瓜炖螺头
-- [ ] 一颗柠檬

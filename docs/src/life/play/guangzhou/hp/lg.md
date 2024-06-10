@@ -7,7 +7,7 @@ article: false
 
 ## 宝能广州国际体育演艺中心
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFLBXH0M" target="_blank">大塱村开创大道2666号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFLBXH0M" target="_blank">大塱村开创大道2666号</a>
 
 ### 张学友 60+
 

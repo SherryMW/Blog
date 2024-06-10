@@ -7,7 +7,7 @@ article: false
 
 ## 莲城剧场
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFHBYPRP" target="_blank">兴盛路七号107铺2楼</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFHBYPRP" target="_blank">兴盛路七号107铺2楼</a>
 
 藏在莲城酒吧里的近景魔术剧场
 
@@ -16,7 +16,7 @@ article: false
 
 ## 不易逃脱脑洞密室
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0I1BDY5OP" target="_blank">兴安路15号天空别墅313</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0I1BDY5OP" target="_blank">兴安路15号天空别墅313</a>
 
 ### 逃避可耻但有效
 

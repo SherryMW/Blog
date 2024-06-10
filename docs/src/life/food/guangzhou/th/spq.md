@@ -7,13 +7,13 @@ article: false
 
 ## 金牌陶陶居
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFKBM4CQ" target="_blank">天河路383号太古汇商场M52</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFKBM4CQ" target="_blank">天河路383号太古汇商场M52</a>
 
 得闲饮茶！
 
 ## 蚝事发生
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0IRV5SRRG" target="_blank">天河南二路19-21号06铺</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0IRV5SRRG" target="_blank">天河南二路19-21号06铺</a>
 
 ::: tabs
 
@@ -39,7 +39,7 @@ article: false
 
 ## 凤园椰珍
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFF35AYJ" target="_blank">天河南二路34号天河花园大厦1-3层</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFF35AYJ" target="_blank">天河南二路34号天河花园大厦1-3层</a>
 
 - [x] 木瓜椰子鸡（推荐）
 - [x] 生蚝
@@ -48,11 +48,11 @@ article: false
 
 ## 等我送上门
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFLM2917" target="_blank">金穗路28号华忆丽晶广场F1层</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFLM2917" target="_blank">金穗路28号华忆丽晶广场F1层</a>
 
 菜品不多，放眼望去每桌点的都是那几道菜
 
-17点开始就要排队，基本都要等位40分钟以上
+17点开始就要排队，平均等位40分钟以上
 
 ::: tabs
 
@@ -81,7 +81,7 @@ article: false
 
 ## 蔡澜港式点心
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0J6GBF964" target="_blank">天河路232号万菱汇B1-44号铺</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0J6GBF964" target="_blank">天河路232号万菱汇B1-44号铺</a>
 
 ::: tabs
 
@@ -115,7 +115,7 @@ article: false
 
 ## 晓粤
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0GKTSO2ZH" target="_blank">天河路232号万菱汇B1层50号铺</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0GKTSO2ZH" target="_blank">天河路232号万菱汇B1层50号铺</a>
 
 ::: tabs
 

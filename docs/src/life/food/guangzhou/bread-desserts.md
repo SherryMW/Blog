@@ -7,7 +7,7 @@ article: false
 
 ## 高桥面包店
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0HDHCDUKA" target="_blank">荔湾区龙津中路540号之一首层</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0HDHCDUKA" target="_blank">荔湾区龙津中路540号之一首层</a>
 
 - [x] 菠萝火焰芝士猪扒包（推荐）
 - [x] 照烧鸡扒包（推荐）
@@ -16,45 +16,45 @@ article: false
 
 ## 天井丑面包搭咖啡
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0GUX59WHL" target="_blank">越秀区广州大道中229号左边</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0GUX59WHL" target="_blank">越秀区广州大道中229号左边</a>
 
 - [ ] 抹茶肉桂卷
 - [ ] 红豆碱水面包
 
 ## Seoi6 Bakehouse 陆穗
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0IA4AMHCI" target="_blank">越秀区北京路323号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0IA4AMHCI" target="_blank">越秀区北京路323号</a>
 
 - [ ] 土豆泥火腿丹麦
 
 ## Perma bakery 樸門
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B00141P0SU" target="_blank">越秀区建设五马路38号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B00141P0SU" target="_blank">越秀区建设五马路38号</a>
 
 - [ ] 抹茶可露丽
 - [ ] 土豆派
 
 ## 六六宇治抹茶
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFK6E8F0" target="_blank">越秀区建设中马路27时光里建设大马路店F1层</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFK6E8F0" target="_blank">越秀区建设中马路27时光里建设大马路店F1层</a>
 
 - [ ] 抹茶千层
 
 ## 敬茶屋 keichaya
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFIIN6YK" target="_blank">天河区天河南一路六运三街7号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFIIN6YK" target="_blank">天河区天河南一路六运三街7号</a>
 
 - [ ] 宇治抹茶重芝士
 
 ## 柴田冰寮
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0G1AMXPN3" target="_blank">天河区天河南六运二街37号102之二</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0G1AMXPN3" target="_blank">天河区天河南六运二街37号102之二</a>
 
 - [ ] 愤怒的老板刨冰
 
 ## 百昂 BREAD ON
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0JACZRPA2" target="_blank">天河区兴民路222号天汇广场商场地下负一层114A号商铺</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0JACZRPA2" target="_blank">天河区兴民路222号天汇广场商场地下负一层114A号商铺</a>
 
 - [ ] 白昂蛋挞
 - [ ] 碧根果枫糖布里欧
@@ -74,13 +74,13 @@ article: false
 
 ## 老香港手工蛋糕
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0J2YBGZXD" target="_blank">越秀区惠福西路与诗书路交叉口西20米</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0J2YBGZXD" target="_blank">越秀区惠福西路与诗书路交叉口西20米</a>
 
 - [x] 浓香芝士蛋糕
 - [x] 香草/巧克力泡芙
 
 ## 美喝喝糖水铺
 
-<span class="icon iconfont icon-locate"></span> 位置：<a href="https://ditu.amap.com/place/B0FFFZS28T" target="_blank">越秀区诗书路113号</a>
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFFZS28T" target="_blank">越秀区诗书路113号</a>
 
 - [x] 芋泥双皮奶
