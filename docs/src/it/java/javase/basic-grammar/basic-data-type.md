@@ -35,6 +35,7 @@ long：极大或极小的整数，如果超过 long 使用 `BigInteger`（引用
 public class IntTest {
     
     public static void main(String[] args) {
+        
         int a = 10;
         int b = 0b10;
         int c = 010;
@@ -695,6 +696,7 @@ char 类型变量定义有三种方式：
 public class CharTest {
 
     public static void main(String[] args) {
+        
         /**
          * 有一个运算规则需要记住：
          * byte short char 做混合运算的时候，各自先转换成 int 类型再做运算
@@ -771,6 +773,7 @@ public class DataTypeHomework {
 public class DataTypeHomework {
     
     public static void main(String[] args) {
+        
         int a = 100;
         int b = 200;
 
@@ -805,6 +808,7 @@ public class DataTypeHomework {
 public class DataTypeHomework {
     
     public static void main(String[] args) {
+        
         // 通过
         short s = 100;
         // 大容量不能直接赋值给小容量。s - 99 是 int 类型，int 类型不能直接赋值给 short 类型

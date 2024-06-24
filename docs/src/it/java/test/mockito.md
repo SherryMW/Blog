@@ -269,6 +269,83 @@ class CalculatorTest {
 }
 ```
 
+### @MockBean
+
+在集成测试中，你可能需要启动整个 Spring 应用上下文，并希望替换其中的一些 bean 以进行隔离测试。`@MockBean` 能够在 Spring 上下文中创建和注入模拟对象，替换实际的 bean
+
+如果你的测试依赖于 Spring 框架，那么 `@MockBean` 是最佳选择
+
+```java
+@Configuration
+public class UcsRocketMqProducersConfiguration {
+
+    @Bean(name = "userBehaviorOneidDataFactory")
+    public MQProduceFactory userBehaviorOneidDataProducers(UcsRocketMessageMqConfigProperties ucsRocketMessageMqConfigProperties) {
+        MQProduceFactory mqProduceFactory = new MQProduceFactory();
+        mqProduceFactory.setConfigUrl(ucsRocketMessageMqConfigProperties.getRocketUrl());
+        mqProduceFactory.setAppName(ucsRocketMessageMqConfigProperties.getUserBehaviorOneidData().getAppName());
+        mqProduceFactory.setTopicName(ucsRocketMessageMqConfigProperties.getUserBehaviorOneidData().getTopicName());
+        mqProduceFactory.setClientVersion(ucsRocketMessageMqConfigProperties.getUserBehaviorOneidData().getClientVersion());
+        return mqProduceFactory;
+    }
+}
+```
+
+目前要单测覆盖 `sendUserBehaviorTimeDataMsg()` 方法，主要就是要获取到注入的 userBehaviorOneidDataFactory 对象
+
+```java {15}
+@Service
+public class UcsRocketMqProductManager {
+
+    @Autowired
+    @Qualifier(value = "userBehaviorOneidDataFactory")
+    MQProduceFactory userBehaviorOneidDataFactory;
+
+    public void sendUserBehaviorTimeDataMsg(UcsBehaviorStreamDto ucsBehaviorStreamDto) {
+        if (ucsBehaviorStreamDto == null) {
+            return;
+        }
+        String jsonString = null;
+        try {
+            jsonString = BehaviorJSON.toJSONString(ucsBehaviorStreamDto);
+            SendResult send = userBehaviorOneidDataFactory.send(jsonString, ucsRocketMessageMqConfigProperties.getUserBehaviorOneidData().getTimeOut());
+            log.info("用户行为最新时间数据发MQ，结果：{}", send.getSendStatus());
+        } catch (Exception e) {
+            log.error("sendUserBehaviorTimeDataMsg发送失败：{}", LogSecrecyUtils.logEncrypt(jsonString), e);
+        }
+    }
+}
+```
+
+这里需要使用到 @MockBean 注解
+
+```java {9-11}
+import org.springframework.boot.test.mock.mockito.MockBean;
+
+@SpringBootTest
+public class JacocoTest {
+
+    @Autowired
+    UcsRocketMqProductManager ucsRocketMqProductManager;
+
+    @MockBean
+    @Qualifier(value = "userBehaviorOneidDataFactory")
+    MQProduceFactory userBehaviorOneidDataFactory;
+
+    @Test
+    public void sendUserBehaviorTimeDataMsgTest() {
+        try {
+            SendResult sendResult = new SendResult();
+            Mockito.when(userBehaviorOneidDataFactory.send(anyString(), anyLong())).thenReturn(sendResult);
+            UcsBehaviorStreamDto ucsBehaviorStreamDto = new UcsBehaviorStreamDto();
+            ucsRocketMqProductManager.sendUserBehaviorTimeDataMsg(ucsBehaviorStreamDto);
+        } catch (Exception e) {
+            log.error("异常", e);
+        }
+    }
+}
+```
+
 ## 模拟静态方法
 
 ::: info

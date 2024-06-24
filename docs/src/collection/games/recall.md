@@ -66,3 +66,13 @@ Windows 10 或者 Windows 11 点击下载时可能会出现【无法下载-检�
 
 变量值：~0x200000200000000
 :::
+
+## 七龙珠Z 卡卡罗特
+
+![](https://img.sherry4869.com/blog/collection/game/dragonball-z/1.png)
+
+![](https://img.sherry4869.com/blog/collection/game/dragonball-z/2.png)
+
+![](https://img.sherry4869.com/blog/collection/game/dragonball-z/3.png)
+
+![](https://img.sherry4869.com/blog/collection/game/dragonball-z/4.png)

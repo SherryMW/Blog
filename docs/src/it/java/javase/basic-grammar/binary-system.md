@@ -59,6 +59,7 @@ order: 5
 public class BinaryTest {
     
     public static void main(String[] args) {
+        
         // 这是一个二进制的字面量
         // 二进制的字面量需要以 0b 开头，JDK 7 才开始支持 0b 写法，在这之前的版本都不支持
         System.out.println(0b1001011); // 75

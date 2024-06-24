@@ -105,6 +105,7 @@ public class VarTest {
 public class VarTest {
 
     public static void main(String[] args) {
+        
 		/*		
 		System.out.println(100 + 456);
 		System.out.println(100 + 111);
@@ -257,6 +258,7 @@ public class VarTest {
 public class VarTest {
 
     public static void main(String[] args) {
+    
         // 凡是在方法体当中定义的变量，一定是局部变量
         // 局部变量只在当前方法体当中有效
         int a = 100;

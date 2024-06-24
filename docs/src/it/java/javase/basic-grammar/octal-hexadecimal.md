@@ -92,8 +92,9 @@ public class hexadecimalTest {
 /*
 	二进制和十六进制之间的转换。
 */
-public class ShiLiuJinZhiTest02 {
+public class hexadecimalTest {
     public static void main(String[] args) {
+        
         System.out.println(0b10111111); // 191 
         System.out.println(0xbf); // 191
 
