@@ -10,6 +10,7 @@ article: false
 ```java
 public class HelloWorld {
     public static void main(String[] args) {
+        
         System.out.println("Hello World");
     }
 }
@@ -33,6 +34,7 @@ public class HelloWorld {
      * @param args 参数
      */
     public static void main(String[] args) {
+        
         // 方法体
         
         /**
@@ -78,7 +80,7 @@ A.class 类名是 A
 
 HelloWorld.class 类名是 HelloWorld
 
-- `java 类名`
+使用 `java 类名` 命令运行
 
 ## Java 的加载与运行
 
@@ -125,6 +127,7 @@ JVM：Java Virtual Machine 是 Java 虚拟机，是运行所有 Java 程序的�
 ```java
 public class HelloWorld {
     public static void main(String[] args) {
+        
         System.out.println("你好世界");
     }
 }

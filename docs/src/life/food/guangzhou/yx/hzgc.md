@@ -94,10 +94,3 @@ article: false
 ## 辣辣寿司
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B00141R25J" target="_blank">解放南路173-183号香榭丽舍商业街</a>
-
-## 勿理堂
-
-<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0JKOKKQVC" target="_blank">大德路282号之一首层</a>
-
-- [x] 紫菜肉松包
-- [x] 罗汉果菊花茶

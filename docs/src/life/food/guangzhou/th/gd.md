@@ -55,10 +55,10 @@ article: false
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFJ9HE0P" target="_blank">天河路603号莱福广场F1层</a>
 
-- [x] 软骨丸子番茄汤面（推荐）
-- [x] 川式红烧牛肉面
-- [x] 红豌豆杂面
 - [x] 卤肉面
+- [x] 红豌豆杂面
+- [x] 川式红烧牛肉面
+- [x] 软骨丸子番茄汤面（推荐）
 - [x] 焦香烤猪蹄（推荐）
 - [x] 原味酥脆鸡排
 - [x] 白玉厚椰乳

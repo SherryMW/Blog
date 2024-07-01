@@ -90,15 +90,15 @@ article: false
 
 ::: projects
 ```yaml
-- icon: https://img.sherry4869.com/blog/collection/tools/duolingo.ico
-  name: 多邻国
-  desc: 好玩高效的英语学习途径
-  link: https://www.duolingo.cn/
-
 - icon: https://img.sherry4869.com/blog/collection/tools/deepl.svg
   name: DeepL 翻译器
   desc: 全世界最准的翻译
   link: https://www.deepl.com/translator
+
+- icon: https://img.sherry4869.com/blog/collection/tools/duolingo.ico
+  name: 多邻国
+  desc: 好玩高效的英语学习途径
+  link: https://www.duolingo.cn/
 ```
 :::
 

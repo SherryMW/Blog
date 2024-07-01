@@ -180,6 +180,10 @@ article: false
 - [x] 港式菠萝包
 - [x] 不一样的双皮奶
 
+## 凑凑火锅
+
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFKX3B93" target="_blank">天河路218号天环广场西塔B1层</a>
+
 ## 陶陶居酒家
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFG2O3RL" target="_blank">天河路228号正佳广场6层C059铺</a>
@@ -189,15 +193,11 @@ article: false
 - [x] 冰镇咕噜肉
 - [x] 海皇鸡火炒饭
 
-## 凑凑火锅
-
-<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFKX3B93" target="_blank">天河路218号天环广场西塔B1层</a>
-
 ## 汉拿山（歇业）
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B00140TFHO" target="_blank">天河路228号正佳广场5层南街</a>
 
-40 元的拌饭比 268 元的拼盘要好吃的多:see_no_evil:
+40 块的拌饭比 268 块的拼盘要好吃的多:see_no_evil:
 
 - [x] 荣升全牛八拼
 - [x] 石锅牛肉拌饭

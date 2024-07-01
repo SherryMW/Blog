@@ -85,7 +85,7 @@ article: false
 
 在保安大哥奋力踹门时调戏了一句：“晚饭是不是没吃饱阿” 后果有点严重:scream:
 
-![一刷抽到了雪莉的身份牌 OMG](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/th/tyzx/thwj/img.jpg)
+![一刷抽到了雪莉的身份牌 “啊，雪莉”](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/th/tyzx/thwj/img.jpg)
 
 ## 关你鬼室大型密室逃脱
 

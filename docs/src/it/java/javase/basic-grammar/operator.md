@@ -173,8 +173,6 @@ public class OperatorTest {
 }
 ```
 
-### 练习题
-
 ```java
 public class OperatorHomework {
 
@@ -235,42 +233,6 @@ public class OperatorHomework {
         int j = 10;
         j = ++j;
         System.out.println(j); // 11
-    }
-}
-```
-
-从键盘上接收一个整数三位数，请分别输出它的个位、十位、百位：
-
-```java
-public class OperatorHomework {
-    
-    public static void main(String[] args) {
-        
-        java.util.Scanner scanner = new java.util.Scanner(System.in);
-        System.out.print("请输入一个三位数："); // 123
-        int num = scanner.nextInt();
-
-        System.out.println("个位：" + num % 10); // 3
-        System.out.println("十位：" + num / 10 % 10); // 2
-        System.out.println("百位：" + num / 100); // 1
-    }
-}
-```
-
-681 分钟是多少个小时+多少分钟：
-
-```java
-public class OperatorHomework {
-    
-    public static void main(String[] args) {
-        
-        int total = 681;
-
-        int h = total / 60;
-
-        int m = total % 60;
-
-        System.out.println(total + "分钟是" + h + "小时" + m + "分钟");
     }
 }
 ```
@@ -1280,7 +1242,43 @@ public class ReadClass {
 
 ![](https://img.sherry4869.com/blog/it/java/javase/12.png)
 
-## 练习
+## 练习题
+
+从键盘上接收一个整数三位数，请分别输出它的个位、十位、百位：
+
+```java
+public class OperatorHomework {
+    
+    public static void main(String[] args) {
+        
+        java.util.Scanner scanner = new java.util.Scanner(System.in);
+        System.out.print("请输入一个三位数："); // 123
+        int num = scanner.nextInt();
+
+        System.out.println("个位：" + num % 10); // 3
+        System.out.println("十位：" + num / 10 % 10); // 2
+        System.out.println("百位：" + num / 100); // 1
+    }
+}
+```
+
+681 分钟是多少个小时+多少分钟：
+
+```java
+public class OperatorHomework {
+    
+    public static void main(String[] args) {
+        
+        int total = 681;
+
+        int h = total / 60;
+
+        int m = total % 60;
+
+        System.out.println(total + "分钟是" + h + "小时" + m + "分钟");
+    }
+}
+```
 
 编写 Java 代码，输入一个半径值，计算圆的面积和周长，并输出结果。注意：圆的面积公式为 π * r * r，周长公式为 2 * π * r，其中 π 取 3.14
 
