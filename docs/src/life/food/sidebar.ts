@@ -12,14 +12,14 @@ export const FoodSidebar = arraySidebar([
                 children: "structure"
             },
             {
-                text: "荔湾",
-                prefix: "lw/",
+                text: "天河",
+                prefix: "th/",
                 collapsible: true,
                 children: "structure"
             },
             {
-                text: "天河",
-                prefix: "th/",
+                text: "荔湾",
+                prefix: "lw/",
                 collapsible: true,
                 children: "structure"
             },

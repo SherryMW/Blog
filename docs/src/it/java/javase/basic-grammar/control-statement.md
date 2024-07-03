@@ -261,7 +261,7 @@ public class IfTest {
         }
         */
         
-        // 第一次改进，如果 score >= 90 布尔表达式为 false，那么 score 一定小于 90，因此 第二个布尔表达式就不需要写 score < 90 了，如此类推
+        // 第一次改进，如果 score >= 90 布尔表达式为 false，那么 score 一定小于 90，因此 第二个布尔表达式就不需要写 score < 90 了，以此类推
         /**
         if (score >= 90) {
             System.out.println("你的成绩很优秀");
@@ -1280,7 +1280,7 @@ public class ContinueTest {
 
 ## 练习题
 
-打印九九乘法表：
+打印九九乘法表
 
 ```java
 public class ForTest {
@@ -1393,7 +1393,7 @@ public class ControlTest {
 }
 ```
 
-找出 100 以内的所有质数（能被1和自身整除，不能被其他数字整除的数称之为质数，也叫素数）：
+找出 100 以内的所有质数（能被1和自身整除，不能被其他数字整除的数称之为质数，也叫素数）
 
 ```java
 public class ForTest {
@@ -1492,7 +1492,7 @@ public class ForTest {
 }
 ```
 
-找出 1000 以内的所有质数，输出时每 8 个换一行：
+找出 1000 以内的所有质数，输出时每 8 个换一行
 
 ```java
 public class ForTest {
@@ -1522,7 +1522,7 @@ public class ForTest {
 }
 ```
 
-输入一个正整数 n，计算 1 - 2 + 3 - 4 + 5 - 6 + ... - (n-1) + n 的和：
+输入一个正整数 n，计算 1 - 2 + 3 - 4 + 5 - 6 + ... - (n-1) + n 的和
 
 ```java
 public class ForTest {
@@ -1543,7 +1543,7 @@ public class ForTest {
 }
 ```
 
-输出 1 到 1000 之间既能被 5 整除又能被 3 整除的数，并且每行输出 5 个：
+输出 1 到 1000 之间既能被 5 整除又能被 3 整除的数，并且每行输出 5 个
 
 ```java
 public class ForTest {
@@ -1564,7 +1564,7 @@ public class ForTest {
 }
 ```
 
-求 100 到 999 之间的水仙花数。水仙花数的每个位上的数字的 3 次幂之和等于它本身：
+求 100 到 999 之间的水仙花数。水仙花数的每个位上的数字的 3 次幂之和等于它本身
 
 ```java
 public class ForTest {
@@ -1583,7 +1583,7 @@ public class ForTest {
 }
 ```
 
-找 1~100 之间的质数，并输出两两相邻的质数差值等于 2 的质数对：
+找 1~100 之间的质数，并输出两两相邻的质数差值等于 2 的质数对
 
 ```java
 public class ForTest {
@@ -1659,12 +1659,11 @@ public class ForTest {
             }
         }
         
-        
     }
 }
 ```
 
-打印指定图形：
+打印指定图形
 
 ```java
 public class ForTest {
