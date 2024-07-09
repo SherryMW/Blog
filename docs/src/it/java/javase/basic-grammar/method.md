@@ -322,7 +322,7 @@ JVM 在方法调用时会给该方法在栈内存中分配空间，此时发生�
 方法执行结束时，该栈帧弹栈，方法内存空间释放
 
 ```java
-public class MethodTest {
+public class MethodTest08 {
 
     public static void main(String[] args) {
         
@@ -540,7 +540,7 @@ public class RecursionTest {
 先不使用递归，计算 1+2+3+4+5+...n 的和
 
 ```java
-public class RecursionTest {
+public class RecursionTest01 {
 
     public static void main(String[] args) {
         
@@ -564,7 +564,7 @@ public class RecursionTest {
 使用递归，计算 1+2+3+4+5+...n 的和
 
 ```java
-public class RecursionTest {
+public class RecursionTest02 {
 
     public static void main(String[] args) {
         
@@ -587,7 +587,7 @@ public class RecursionTest {
 伪代码来解释递归流程：
 
 ```java
-public class RecursionTest {
+public class RecursionTest03 {
 
     public static void main(String[] args) {
         

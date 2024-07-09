@@ -10,9 +10,16 @@ export const JavaSidebar = arraySidebar([
             "overview",
             "download-install",
             "first-java",
+            "intellij-idea",
             {
                 text: "基础语法",
                 prefix: "basic-grammar/",
+                collapsible: true,
+                children: "structure"
+            },
+            {
+                text: "面向对象",
+                prefix: "object-oriented/",
                 collapsible: true,
                 children: "structure"
             },

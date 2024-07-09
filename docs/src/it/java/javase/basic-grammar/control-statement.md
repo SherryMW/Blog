@@ -1831,6 +1831,36 @@ public class ForTest {
     
     public static void main(String[] args) {
 
+        /**
+        // 打印上半部分
+        for (int i = 5; i >= 1; i--) {
+            // 打印空格
+            for (int j = 0; j < 5 - i; j++) {
+                System.out.print(" ");
+            }
+            // 打印 *
+            for (int j = 1; j <= i * 2 - 1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        // 打印下半部分
+        // 1 3  2 2  3  1   4  0
+        for (int i = 1; i <= 4; i++) {
+            // 打印空格
+            for (int j = 0; j < 4 - i; j++) {
+                System.out.print(" ");
+            }
+            // 打印 *
+            for (int j = 1; j <= i * 2 + 1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        */
+        
+        // 第二种实现方式
+
         for (int i = 1; i <= 9; i++) {
             if (i < 5) {
                 /**
@@ -1862,6 +1892,96 @@ public class ForTest {
                     }
                 }
                 System.out.println();
+            }
+        }
+    }
+}
+```
+
+猴子第一天摘下若干个桃子，当即吃了一半，还不过瘾，又吃了一个，第二天早上又将剩下的桃子吃了一半，又多吃了一个，以后每天早上都是吃了前一天剩下的一半零一个，到第 10 天早上再吃的时候，发现只剩一个桃子了，问一共有多少个桃子
+
+```java
+public class ForTest {
+
+    /**
+     假设桃子的总数量是：count
+     第1天：count = count / 2 - 1
+     第2天：count = count / 2 - 1
+     第3天：count = count / 2 - 1
+     第4天：count = count / 2 - 1
+     第5天：count = count / 2 - 1
+     第6天：count = count / 2 - 1
+     第7天：count = count / 2 - 1
+     第8天：count = count / 2 - 1
+     第9天：count = count / 2 - 1
+     第10天：1
+     */
+    public static void main(String[] args) {
+        int count = 1; // 第10天的桃子数量
+        // 因为知道第10天桃子的数量，因此倒推的话只需要循环9次就可以知道桃子总数是多少
+        for (int i = 1; i <= 9; i++) {
+            count = (count + 1) * 2;
+        }
+        System.out.println("桃子总数" + count);
+    }
+}
+```
+
+100 个和尚吃了 100 个馒头，100 和尚有大和尚和小和尚，一个大和尚能吃 3 个馒头，三个小和尚吃 1 个馒头，问大和尚和小和尚分别有多少个
+
+```java
+public class ForTest {
+
+    public static void main(String[] args) {
+
+        /**
+        int steamed = 100; // 馒头总数
+        int big = 0; // 大和尚
+        int small = 0; // 小和尚
+        while (true) {
+            if (steamed != 0 && big + small != 100) {
+                steamed -= 4; // 1个大和尚吃了3个馒头，3个小和尚吃了1个馒头
+                big += 1; // 大和尚+1
+                small += 3; // 小和尚+3
+            } else {
+                break;
+            }
+        }
+        System.out.println("大和尚数量：" + big + "，小和尚数量：" + small);
+        */
+
+        // 第二种实现方式
+        
+        for (int i = 1; i <= 33; i++) { // 大和尚最多只能有33个，因为一共有100个和尚和100个馒头 33*3=99，33个大和尚可以吃99个馒头
+            int j = 100 - i; // 小和尚数量
+            if (i * 3 + j / 3 == 100) { // 1个大和尚吃3个馒头，三个小和尚吃1个馒头
+                System.out.println("大和尚数量：" + i + "，小和尚数量：" + j);
+            }
+        }
+    }
+}
+```
+
+已知 1 只公鸡 5 元，母鸡 3 元，小鸡 1 元 3 只，问 100 元买 100 只鸡有哪些方案
+
+```java
+public class ForTest {
+
+    /**
+     如果拿 100 元买公鸡，最多买 20 只公鸡
+     如果拿 100 元买母鸡，最多买 33 只母鸡
+     如果拿 100 元买小鸡，最多买 300 只小鸡
+     */
+    public static void main(String[] args) {
+
+        for (int i = 0; i <= 20; i++) { // i 是公鸡的数量，公鸡最多 20 个
+            for (int j = 0; j <= 33; j++) { // j 是母鸡的数量，母鸡最多 33 个
+                int k = 100 - i - j; // 小鸡的数量
+                if (k % 3 == 0) {
+                    if (i * 5 + j * 3 + k / 3 == 100) {
+                        System.out.println("公鸡数量：" + i + "，母鸡数量：" + j + "，小鸡数量：" + k);
+                    }
+                }
             }
         }
     }
