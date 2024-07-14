@@ -67,6 +67,10 @@ Windows 10 或者 Windows 11 点击下载时可能会出现【无法下载-检�
 变量值：~0x200000200000000
 :::
 
+## Chained Together
+
+![](https://img.sherry4869.com/blog/collection/game/chained-together/1.jpg)
+
 ## 七龙珠Z 卡卡罗特
 
 ![](https://img.sherry4869.com/blog/collection/game/dragonball-z/0-2.png)
@@ -142,3 +146,7 @@ Windows 10 或者 Windows 11 点击下载时可能会出现【无法下载-检�
 ![](https://img.sherry4869.com/blog/collection/game/dragonball-z/28.png)
 
 ![](https://img.sherry4869.com/blog/collection/game/dragonball-z/29.png)
+
+## Cat Quest II
+
+![](https://img.sherry4869.com/blog/collection/game/cat-quest2/1.jpg)

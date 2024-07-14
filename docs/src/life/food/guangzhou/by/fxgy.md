@@ -5,6 +5,20 @@ article: false
 
 # 飞翔公园
 
+## 点都德
+
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0JKD96GXH" target="_blank">云城东路501号万达广场3层点都德(2号门电梯直上三楼)</a>
+
+![朋友单点的一个凤爪中奖了，以后叫他凤爪哥](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/ddd/1.jpg)
+
+- [x] 金莎红米肠（推荐）
+- [x] 招牌虾饺皇
+- [x] 百合酱蒸凤爪
+- [x] 招牌烧卖
+- [x] 松化鸡蛋挞
+- [x] 荔湾艇仔粥
+- [x] 香芒夹心椰汁糕
+
 ## 食又鲜
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0JKBRR89H" target="_blank">乐嘉路56号5号铺</a>

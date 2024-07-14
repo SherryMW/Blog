@@ -165,9 +165,7 @@ public class MethodTest {
 
 - 个数要一一对应
 
-调用方法时，【类名.】 什么情况下可以省略
-
-调用者和被调用者在同一个类中时，可以省略
+调用方法时，“类名.”什么情况下可以省略？调用者和被调用者在同一个类中时，可以省略
 
 ```java
 public class MethodTest {
@@ -177,7 +175,7 @@ public class MethodTest {
         // 调用方法 m1
         MethodTest04.m1();
 
-        // 省略 类名.
+        // 省略“类名.”
         m1();
 
         // 调用 m2 方法

@@ -23,6 +23,13 @@ export const JavaSidebar = arraySidebar([
                 collapsible: true,
                 children: "structure"
             },
+            "jvm-system",
+            {
+                text: "设计模式",
+                prefix: "design-pattern/",
+                collapsible: true,
+                children: "structure"
+            }
         ]
     },
     {
