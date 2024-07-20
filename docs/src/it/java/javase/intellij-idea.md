@@ -30,3 +30,7 @@ article: false
 查看类的结构列表：ctrl + F12
 
 查看类的继承关系列表：ctrl + H
+
+快速覆盖/重写方法：ctrl + O
+
+快速向下转型，并同时生成变量名：变量名.castvar

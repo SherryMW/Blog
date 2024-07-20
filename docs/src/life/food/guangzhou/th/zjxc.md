@@ -27,6 +27,12 @@ article: false
 - [x] 树莓车厘子梳乎厘（梳乎厘是好吃的，个人口味吃不惯树莓酱）
 - [x] 南瓜汤
 
+## BRASSTON
+
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFJNAY1S" target="_blank">花城大道南天广场D01铺</a>
+
+- [x] BAMBOO（强化型干性葡萄酒，干型雪莉酒，苦艾酒）
+
 ## 星龙吟日料放题
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0IUHAMNB8" target="_blank">临江大道57号中和广场F33层</a>

@@ -31,6 +31,12 @@ article: false
 - [x] 明炉香滑靓葡挞（推荐）
 - [x] 木瓜炖雪蛤（推荐）
 
+## 仁信老铺甜品
+
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFFPAIUH" target="_blank">北京路362号</a>
+
+- [x] 原味双皮奶（推荐）
+
 ## 小炳胜
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFIWT9NM" target="_blank">北京路168号北京路天河城A区6层B605号</a>

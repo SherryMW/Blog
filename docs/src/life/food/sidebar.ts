@@ -40,9 +40,7 @@ export const FoodSidebar = arraySidebar([
                 prefix: "py/",
                 collapsible: true,
                 children: "structure"
-            },
-            "bread-desserts",
-            "beverage"
+            }
         ]
     },
     {
@@ -54,8 +52,7 @@ export const FoodSidebar = arraySidebar([
                 prefix: "cc/",
                 collapsible: true,
                 children: "structure"
-            },
-            "bread-desserts"
+            }
         ]
     }
 ])

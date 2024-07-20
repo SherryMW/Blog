@@ -43,6 +43,17 @@ article: false
 - [x] 板栗烧鸡盖面
 - [x] 大盘鸡砂锅粉煲（推荐）
 
+## Moos Coffee（歇业）
+
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFFOBIXZ" target="_blank">元岗路310号</a>
+
+- [x] 生榨椰乳拿铁（推荐）
+- [x] 摩卡
+- [x] 牛油果拿铁
+- [x] 北海道吐司（推荐）
+- [x] 蔻曼黄油可颂
+- [x] 贝果
+
 ## 二次方空间小吃
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFKTDTCX" target="_blank">下元岗西街三巷2号</a>

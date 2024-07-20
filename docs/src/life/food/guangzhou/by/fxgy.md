@@ -5,6 +5,32 @@ article: false
 
 # 飞翔公园
 
+## 东湖酒楼
+
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0J06DHOQH" target="_blank">机场路276号</a>
+
+- [x] 深井烧鹅
+- [x] 煎酿豆腐（推荐）
+- [x] 玻璃脆皮乳鸽
+- [x] 东湖靓虾饺（推荐）
+- [x] 拿破仑叉烧酥饼
+- [x] 白酱蒸凤爪
+- [x] 锦绣红米肠
+- [x] 豉油皇炒面
+- [x] 干炒牛河
+
+## T1COFFEE·TEA
+
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0JKB7C6CY" target="_blank">三元里大道与南天东街交叉口北40米</a>
+
+- [x] 菠萝鸡扒包（推荐）
+- [x] 菠萝猪扒包（推荐）
+- [x] 美式猪扒包
+- [x] 美式
+- [x] 橙香美式
+- [x] 茉莉鲜乳茶
+- [x] 生椰拿铁
+
 ## 点都德
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0JKD96GXH" target="_blank">云城东路501号万达广场3层点都德(2号门电梯直上三楼)</a>

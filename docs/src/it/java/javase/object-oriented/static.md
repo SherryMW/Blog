@@ -18,6 +18,8 @@ order: 6
 
 静态方法中不能使用 `this` 关键字，因此无法直接访问实例变量和调用实例方法
 
+在 [单例模式](../design-pattern/singleton-pattern.md) 中，`static` 关键字是实现单例对象的核心思想
+
 ## 静态变量方法
 
 ```java
@@ -54,6 +56,8 @@ public class ChineseTest {
 ```
 
 ![](https://img.sherry4869.com/blog/it/java/javase/22.png)
+
+严格意义来讲 idCard、name、country 是引用数据类型，存的是内存地址，实际上的值存在了字符串常量池
 
 静态变量存储在哪里？静态变量在什么时候初始化？（什么时候开辟空间）
 
@@ -288,3 +292,206 @@ public class StaticTest01 {
     }
 }
 ```
+
+## 练习题
+
+设计一个人类（Person），拥有姓名、年龄、性别三个属性，需要统计总人口数。在每次创建 Person 对象时，需要将总人口数加 1，实现这个功能需要使用 `static` 关键字
+
+```java
+public class Person {
+
+    private static int count; // 总数
+
+    private String name; // 姓名
+
+    private int age; // 年龄
+
+    private boolean gender; // 性别
+
+    public Student(String name, int age, boolean gender) {
+        this.name = name;
+        this.age = age;
+        this.gender = gender;
+        count++;
+    }
+
+    public static int getCount() {
+        return count;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public boolean isGender() {
+        return gender;
+    }
+
+    public void setGender(boolean gender) {
+        this.gender = gender;
+    }
+}
+```
+
+```java
+public class PersonTest {
+
+    public static void main(String[] args) {
+
+        System.out.println("目前总人口数：" + Person.getCount());
+        new Person("zhangsan", 20, true);
+        new Person("lisi", 22, true);
+        System.out.println("目前总人口数：" + Person.getCount());
+    }
+}
+```
+
+设计一个学生选课系统，有两个类，一个是学生类（Student），一个是课程类（Course）。学生类包含姓名、学号、已选课程三个属性（目前只让学生选择一门课），课程类包含课程名称、授课老师两个属性。需要设计学生选课和退课的方法，再设计一个打印某学生具体地选课信息的方法
+
+```java
+public class Student {
+
+    private String name; // 姓名
+
+    private String no; // 学号
+
+    private Course course; // 已选课程
+
+    public Student(String name, String no) {
+        this.name = name;
+        this.no = no;
+    }
+
+    public Student(String name, String no, Course course) {
+        this.name = name;
+        this.no = no;
+        this.course = course;
+    }
+
+    /**
+     * 选课
+     *
+     * @param course 选择的课程
+     */
+    public void selection(Course course) {
+        this.course = course;
+        System.out.println(name + " 选课成功，课程是：" + course.getName());
+    }
+
+    /**
+     * 退课
+     */
+    public void cancel() {
+        System.out.println(name + " 退课成功，所退课程是：" + course.getName());
+        this.course = null;
+    }
+
+    public void display() {
+        System.out.print("学号：" + no + "，姓名：" + name);
+        if (course == null) {
+            System.out.println("，还未选课");
+        } else {
+            System.out.println("，所选课程名称：" + course.getName() + "，授课老师：" + course.getTeacher());
+        }
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getNo() {
+        return no;
+    }
+
+    public void setNo(String no) {
+        this.no = no;
+    }
+
+    public Course getCourse() {
+        return course;
+    }
+
+    public void setCourse(Course course) {
+        this.course = course;
+    }
+}
+```
+
+```java
+public class Course {
+
+    private String name; // 课程名称
+
+    private String teacher; // 授课老师
+
+    public Course(String name, String teacher) {
+        this.name = name;
+        this.teacher = teacher;
+    }
+
+    public void display() {
+        System.out.println("课程名称：" + name + "，授课老师：" + teacher);
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getTeacher() {
+        return teacher;
+    }
+
+    public void setTeacher(String teacher) {
+        this.teacher = teacher;
+    }
+
+}
+```
+
+```java
+public class StudentTest {
+
+    public static void main(String[] args) {
+
+        // 创建课程
+        Course course = new Course("java", "动力节点老杜");
+
+        // 创建学生
+        Student zhangsan = new Student("zhangsan", "001");
+
+        // 打印学生信息
+        zhangsan.display();
+
+        // 选课
+        zhangsan.selection(course);
+
+        // 打印学生信息
+        zhangsan.display();
+
+        // 退课
+        zhangsan.cancel();
+    }
+}
+```
+
+![](https://img.sherry4869.com/blog/it/java/javase/29.png)

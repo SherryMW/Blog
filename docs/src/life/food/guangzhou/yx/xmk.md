@@ -46,3 +46,16 @@ article: false
 
 - [x] 牛肉炒滑蛋
 - [x] 鸡蛋炒米粉
+
+## 老香港手工蛋糕
+
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0J2YBGZXD" target="_blank">惠福西路与诗书路交叉口西20米</a>
+
+- [x] 浓香芝士蛋糕
+- [x] 香草/巧克力泡芙
+
+## 美喝喝糖水铺
+
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFFZS28T" target="_blank">诗书路113号</a>
+
+- [x] 芋泥双皮奶

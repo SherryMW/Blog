@@ -14,6 +14,13 @@ article: false
 - [x] 和味猪手-伊比利亚黑猪（没想到花400多来考验牙口:see_no_evil:）
 - [x] 招牌菠萝包（推荐）
 
+## 莲城 Lotus Lounge
+
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFHBYPRP" target="_blank">兴盛路七号107铺</a>
+
+- [x] daydream
+- [x] 死亡的性感解释
+
 ## 常来小聚
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFLQFDXL" target="_blank">临江大道359号天德广场天德街</a>
