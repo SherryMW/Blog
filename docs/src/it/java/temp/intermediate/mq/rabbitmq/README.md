@@ -61,7 +61,7 @@ import java.util.concurrent.TimeoutException;
 
 public class Producer {
     
-    private final static String QUEUE_NAME = "hello"; // 声明一个名为QUEUE_NAME的常量，其值为"hello"。这是要发送消息的队列的名称
+    private static final String QUEUE_NAME = "hello"; // 声明一个名为QUEUE_NAME的常量，其值为"hello"。这是要发送消息的队列的名称
 
     public static void main(String[] args) throws IOException, TimeoutException {
         ConnectionFactory factory = new ConnectionFactory(); // 创建一个ConnectionFactory实例，用于配置连接参数
@@ -101,7 +101,7 @@ import java.util.concurrent.TimeoutException;
 
 public class Consumer {
     
-    private final static String QUEUE_NAME = "hello"; // 声明一个名为 QUEUE_NAME 的常量，其值为 "hello"。这是要监听的队列的名称
+    private static final String QUEUE_NAME = "hello"; // 声明一个名为 QUEUE_NAME 的常量，其值为 "hello"。这是要监听的队列的名称
 
     public static void main(String[] args) throws IOException, TimeoutException {
         ConnectionFactory factory = new ConnectionFactory(); // 创建一个 ConnectionFactory 实例，用于配置连接参数

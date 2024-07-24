@@ -661,7 +661,7 @@ public class Constant {
     public static final int ASYNC_PAGE_CURRENT = 50000;
 
     // 操作状态值
-    public final static String EXCEL_OPERATION_TASK_KEY = "MW:EXCEL:OPERATION:TASK:KEY:";
+    public static final String EXCEL_OPERATION_TASK_KEY = "MW:EXCEL:OPERATION:TASK:KEY:";
 }
 ```
 

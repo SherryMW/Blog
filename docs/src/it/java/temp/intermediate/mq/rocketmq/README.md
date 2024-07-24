@@ -9,6 +9,11 @@ article: false
 
 RocketMQ 是由阿里捐赠给 Apache 的一款低延迟、高并发、高可用、高可靠的分布式消息中间件。经历了淘宝双十一的洗礼。RocketMQ 既可为分布式应用系统提供异步解耦和削峰填谷的能力，同时也具备互联网应用所需的海量消息堆积、高吞吐、可靠重试等特性
 
+storePathCommitLog：C:\Users\your\store\commitlog
+
+System.setProperty("rocketmq.client.log.loadconfig","false");
+
+
 ## 核心概念
 
 - Topic：消息主题，一级消息类型，生产者向其发送消息

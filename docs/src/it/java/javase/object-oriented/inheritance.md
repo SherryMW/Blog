@@ -296,7 +296,9 @@ class A {
 
 6. 私有方法和构造方法因为不能继承，因此私有方法和构造方法不存在方法覆盖
 
-7. 方法覆盖针对的是实例方法，和实例变量以及静态方法无关
+7. 方法覆盖针对的是实例方法，和静态方法无关
+
+8. 方法覆盖针对的是实例方法，和实例变量无关
 
 ::: tabs
 
@@ -353,7 +355,7 @@ public class Test {
 
 `Bird` 类继承了 `Animal` 类，调用了从 `Animal` 类继承过来的 `eat()` 方法和 `move()` 方法。对于 `move()` 方法，对于鸟儿来说更合适的是输出“鸟儿在飞翔”这句话，而不是“正在移动” 
 
-子类对继承过来的方法不满意的话，有权力将方法进行覆盖/重写
+子类对继承过来的方法不满意的话，有权利将方法进行覆盖/重写
 
 ```java
 public class Bird extends Animal {
@@ -451,3 +453,84 @@ public class Bird extends Animal {
 ```
 
 :::
+
+方法覆盖针对的是实例方法，和静态方法无关，静态代码不存在方法覆盖（方法的覆盖和多态机制联合起来才有意义）
+
+::: tabs
+
+@tab Animal
+
+```java
+public class Animal {
+
+    public static void test() {
+        System.out.println("Animal test method invoke");
+    }
+}
+```
+
+@tab Cat
+
+```java
+public class Cat extends Animal {
+
+    // @Override // Static methods cannot be annotated with `@Override`
+    public static void test() {
+        System.out.println("Cat test method invoke");
+    }
+
+}
+```
+
+@tab Test
+
+```java
+public class Test {
+
+    public static void main(String[] args) {
+
+        Animal.test();
+        Cat.test(); // 这里给人一种感觉像是方法覆盖（重写），但其实并不是，因为方法覆盖和多态机制联合起来才有意义
+
+        Animal animal = new Cat();
+        /**
+         虽然可以使用“引用.”来调用，但实际运行时和对象无关，所以不建议这样写，因为这样写会给其他人造成疑惑。这里只是为了展示静态方法和多态没有关系
+         这里调用的是 Animal 类的 test 方法，不会去调用 Cat 类的 test 方法
+         多态：父类型引用指向子类型对象
+         静态方法本身和多态没有关系，因为多态机制需要对象的参与
+         静态方法既然和多态没有关系，那么静态方法也就和方法覆盖没有关系了
+         */
+        animal.test(); 
+        
+    }
+}
+```
+
+:::
+
+方法覆盖针对的是实例方法，和实例变量没有关系
+
+变量在编译的时候绑定是哪个类，那么运行的结果就是对应类中定义的值
+
+```java
+public class Test {
+
+    public static void main(String[] args) {
+
+        A a = new B();
+        /**
+         实例变量不存在覆盖这一说法
+         a.name 编译阶段绑定的是 A 类的 name 属性，运行的时候也会输出 A 类的 name 属性
+         */
+        System.out.println(a.name); // 张三
+    }
+}
+
+class A {
+    String name = "张三";
+}
+
+class B extends A {
+    String name = "李四";
+}
+```
