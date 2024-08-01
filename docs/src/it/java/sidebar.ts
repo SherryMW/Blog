@@ -24,6 +24,7 @@ export const JavaSidebar = arraySidebar([
                 children: "structure"
             },
             "jvm-system",
+            "uml",
             {
                 text: "设计模式",
                 prefix: "design-pattern/",

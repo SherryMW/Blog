@@ -1,7 +1,7 @@
 ---
 category: IT
 article: false
-order: 6
+order: 7
 ---
 
 # static 关键字

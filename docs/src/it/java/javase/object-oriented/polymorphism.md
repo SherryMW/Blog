@@ -1,7 +1,7 @@
 ---
 category: IT
 article: false
-order: 8
+order: 9
 ---
 
 # 多态

@@ -1,7 +1,7 @@
 ---
 category: IT
 article: false
-order: 11
+order: 12
 ---
 
 # 抽象类

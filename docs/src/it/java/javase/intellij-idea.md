@@ -34,3 +34,5 @@ article: false
 快速覆盖/重写方法：ctrl + O
 
 快速向下转型，并同时生成变量名：变量名.castvar
+
+查看方法的参数列表类型：ctrl + p
