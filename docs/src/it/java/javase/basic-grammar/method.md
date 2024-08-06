@@ -96,29 +96,23 @@ public class MethodTest {
     }
 
     // 编译器启动报错：缺少返回语句。因为返回值类型是 int，那么方法结束的时候必须返回一个整数，但是没有写 return 返回语句来完成数据的返回
-    /**
-    public static void sum(int a, int b) {
-
-    }
-    */
+//    public static void sum(int a, int b) {
+//
+//    }
 
     public static void sum(int a, int b) {
         return a + b;
     }
 
     // 不兼容的类型：int 无法转换为 boolean
-    /**
-    public static boolean flag() {
-        return 1;
-    }
-    */
+//    public static boolean flag() {
+//        return 1;
+//    }
     
     // Cannot return a value from a method with void result type
-    /**
-     public static void test() {
-        return 1;
-     }
-     */
+//     public static void test() {
+//        return 1;
+//     }
 
     // 在返回值为 void 的方法里写 return; 是可以的，因为 return 后面没有跟一个值。写 return; 语句就是为了让方法直接结束
     public static void test() {
@@ -201,26 +195,24 @@ class A {
 public class MethodTest {
 
     // 编译阶段报错，缺少返回语句。编译器只知道 i > 99 是一个 boolean 类型，可能返回 true 或者 false，如果返回 false 的时候，有返回值的 m1 方法就缺少了 return 返回语句
-    /**
-    public static int m1() {
-        int i = 100;
-        if (i > 99) {
-            return 1;
-        }
-    }
-    */
+    
+//    public static int m1() {
+//        int i = 100;
+//        if (i > 99) {
+//            return 1;
+//        }
+//    }
 
     // 编译通过，因为 if-else 语句，百分之百会执行其中一个分支，因此编译器会认为这种语法是合规的
-    /**
-    public static int m1() {
-        int i = 100;
-        if (i > 99) {
-            return 1;
-        } else {
-            return 0;
-        }
-    }
-    */
+    
+//    public static int m1() {
+//        int i = 100;
+//        if (i > 99) {
+//            return 1;
+//        } else {
+//            return 0;
+//        }
+//    }
 
     public static int m1() {
         int i = 100;
@@ -248,7 +240,6 @@ public class MethodTest {
     public static void main(String[] args) {
 
         login();
-
     }
 
     public static void login() {
@@ -311,7 +302,7 @@ public class MethodTest {
 
 ## 方法执行时的内存变化
 
-方法只定义不调用时不会分配内存的。（从 Java 8 开始，方法的字节码指令存储在元空间 metaspace 当中。元空间使用的时本地内存）
+方法只定义不调用时不会分配内存的。（从 Java8 开始，方法的字节码指令存储在元空间 metaspace 当中。元空间使用的时本地内存）
 
 JVM 在方法调用时会给该方法在栈内存中分配空间，此时发生压栈动作。这个方法的空间被称为栈帧
 
@@ -346,18 +337,16 @@ public class MethodTest08 {
         System.out.println("m3 over");
     }
 }
-
-/*
-main begin
-m1 begin
-m2 begin
-m3 begin
-m3 over
-m2 over
-m1 over
-main over
-*/
 ```
+
+main begin  
+m1 begin  
+m2 begin  
+m3 begin  
+m3 over  
+m2 over  
+m1 over  
+main over
 
 ![](https://img.sherry4869.com/blog/it/java/javase/13.png)
 
@@ -367,9 +356,9 @@ main over
 
 ```java
 /**
- 当前代码先不使用方法重载，分析一下这样写的代码有什么缺点：
- 代码不美观
- 不方便调用，程序员需要记忆更多的方法名
+ * 当前代码先不使用方法重载，分析一下这样写的代码有什么缺点：
+ * 代码不美观
+ * 不方便调用，开发者需要记忆更多的方法名
  */
 public class OverloadTest {
 
@@ -391,7 +380,6 @@ public class OverloadTest {
     public static void sumDouble(double a, double b) {
         System.out.println(a + " + " + b + " = " + (a + b));
     }
-    
 }
 ```
 
@@ -474,16 +462,13 @@ public class OverloadTest {
     }
 
     // 以下这两个方法没有构成方法重载，属于方法重复定义了。语法错误，编译器报错（已经在类 OverloadTest 中定义了方法 doSome(int,int)）
-    /**
-    public static void doSome(int a, int b) {
+//    public static void doSome(int a, int b) {
+//
+//    }
 
-    }
-
-    public static void doSome(int x, int y) {
-
-    }
-    */
-    
+//    public static void doSome(int x, int y) {
+//
+//    }
 }
 ```
 
@@ -535,7 +520,7 @@ public class RecursionTest {
 
 递归的应用场景：在后面要学习到的 IO 流中，写一个程序把电脑 F 盘下所有目录里的文件拷贝到 D 盘。你不知道磁盘中每个目录里有多少个文件以及子目录，因此需要写一个递归程序不断去找目录里头的文件，递归的结束条件是该目录下再也没有子目录了
 
-先不使用递归，计算 1+2+3+4+5+...n 的和
+先不使用递归，计算 1 + 2 + 3 + 4 + 5 + ...n 的和
 
 ```java
 public class RecursionTest01 {
@@ -688,10 +673,10 @@ public class RecursionTest {
     }
 
     /**
-     1 2 3 4 5 6 月份
-     1 1 2 3 5 8 兔子对数
-     规律：当前数字 = 前两个相邻的数字之和
-     这种数字被成为斐波那契数字，斐波那契数字组合起来叫做斐波那契数列
+     * 1 2 3 4 5 6 月份
+     * 1 1 2 3 5 8 兔子对数
+     * 规律：当前数字 = 前两个相邻的数字之和
+     * 这种数字被成为斐波那契数字，斐波那契数字组合起来叫做斐波那契数列
      */
     public static int rabbit(int n) {
         if (n < 3) {

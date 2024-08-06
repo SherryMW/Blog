@@ -23,6 +23,6 @@ public class PackageTest {
 }
 ```
 
-如果带包编译：javac -d 编译后的存放目录 源文件路径，例如：`javac -d . PackageTest.java` 运行后当前目录会生成一个 com 目录，里面有 PackageTest.class 字节码文件
+如果带包编译：`javac -d` 编译后的存放目录 源文件路径，例如：`javac -d . PackageTest.java` 运行后当前目录会生成一个 `com` 目录，里面有 `PackageTest.class` 字节码文件
 
 一旦定义了 `package` 之后，有了包机制之后，完整类名是包含包名的，所以运行的时候一定要添加包名：`java com.powernode.javase.chapter.PackageTest`

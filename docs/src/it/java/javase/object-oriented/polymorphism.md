@@ -142,7 +142,7 @@ public class Cat extends Animal {
     }
 
     /**
-     这个方法/行为是子类特有的，父类没有
+     * 这个方法/行为是子类特有的，父类没有
      */
     public void catchMouse() {
         System.out.println("猫在抓老鼠");
@@ -192,7 +192,7 @@ public class Test {
         cat.catchMouse();
 
         /**
-         大前提：不管是向上转型还是向下转型，两种类型之间必须要有继承关系，没有继承关系，编译器就会报错
+         * 大前提：不管是向上转型还是向下转型，两种类型之间必须要有继承关系，没有继承关系，编译器就会报错
          */
         Bird bird = new Bird();
 //        Cat cat2 = (Cat) bird;

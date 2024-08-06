@@ -230,7 +230,7 @@ class DemoTest {
 
 下面是一个使用 `@InjectMocks` 注解的示例：
 
-假设我们有一个 CalculatorServiceImpl 类，它依赖了一个 MathService 服务：
+假设我们有一个 `CalculatorServiceImpl` 类，它依赖了一个 `MathService` 服务：
 
 ```java
 @Service
@@ -245,7 +245,7 @@ public class CalculatorServiceImpl {
 }
 ```
 
-我们想要对 CalculatorServiceImpl 类进行单元测试，但是 CalculatorServiceImpl 类依赖了 MathService，我们可以使用 `@Mock` 注解创建 MathService 的模拟对象，并使用 `@InjectMocks` 注解让模拟对象注入到 CalculatorServiceImpl 中：
+我们想要对 `CalculatorServiceImpl` 类进行单元测试，但是 `CalculatorServiceImpl` 类依赖了 `MathService`，我们可以使用 `@Mock` 注解创建 `MathService` 的模拟对象，并使用 `@InjectMocks` 注解让模拟对象注入到 `CalculatorServiceImpl` 中：
 
 ```java
 import org.junit.jupiter.api.Test;
@@ -317,7 +317,7 @@ public class UcsRocketMqProductManager {
 }
 ```
 
-这里需要使用到 @MockBean 注解
+这里需要使用到 `@MockBean` 注解
 
 ```java {9-11}
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -480,7 +480,7 @@ class StaticUtilsTest {
 
 ### 模拟无参构造
 
-让我们先创建一个简单的 Fruit 类，这将是我们第一个单元测试的重点：
+让我们先创建一个简单的 `Fruit` 类，这将是我们第一个单元测试的重点：
 
 ```java
 public class Fruit {
@@ -495,7 +495,7 @@ public class Fruit {
 }
 ```
 
-现在，让我们继续编写测试，在测试中模拟调用 Fruit 类的构造函数：
+现在，让我们继续编写测试，在测试中模拟调用 `Fruit` 类的构造函数：
 
 ```java
 class FruitTest {
@@ -515,15 +515,15 @@ class FruitTest {
 }
 ```
 
-为了模拟对象构造，我们使用 `Mockito.mockConstruction()` 方法。该方法使用一个非抽象 Java 类来表示我们将要模拟的构造。在本例中，它是一个 Fruit 类
+为了模拟对象构造，我们使用 `Mockito.mockConstruction()` 方法。该方法使用一个非抽象 Java 类来表示我们将要模拟的构造。在本例中，它是一个 `Fruit` 类
 
-我们在 `try-with-resources` 块中定义了这一点。这意味着，当我们的代码在 `try` 语句中调用 Fruit 对象的构造函数时，它将返回一个 Mock 对象。我们需要注意的是，在我们的作用域代码块之外，构造函数不会被 Mockito 模拟
+我们在 `try-with-resources` 块中定义了这一点。这意味着，当我们的代码在 `try` 语句中调用 `Fruit` 对象的构造函数时，它将返回一个 Mock 对象。我们需要注意的是，在我们的作用域代码块之外，构造函数不会被 Mockito 模拟
 
 ### 模拟有参构造
 
 另一个常见的用例是能够处理需要参数的构造函数
 
-值得庆幸的是，`mockedConstruction` 提供了一种机制，允许我们访问传递给构造函数的参数，让我们为 WaterTank 添加一个新的构造函数：
+值得庆幸的是，`mockedConstruction` 提供了一种机制，允许我们访问传递给构造函数的参数，让我们为 `WaterTank` 添加一个新的构造函数：
 
 ```java {9-11}
 public class WaterTank {
@@ -552,7 +552,7 @@ public class WaterTank {
 }
 ```
 
-同样，让我们为 Coffee 应用程序添加一个新的构造函数：
+同样，让我们为 `Coffee` 应用程序添加一个新的构造函数：
 
 ```java {12-15}
 public class CoffeeMachine {
@@ -607,7 +607,7 @@ class CoffeeMachineTest{
 }
 ```
 
-这次，我们使用 lambda 表达式来处理带有参数的 WaterTank 构造函数。lambda 接收 Mock 实例和构造上下文，允许我们访问传递给构造函数的参数。这样我们可以使用这些参数为 `getMils()` 方法设置所需的行为
+这次，我们使用 lambda 表达式来处理带有参数的 `WaterTank` 构造函数。lambda 接收 Mock 实例和构造上下文，允许我们访问传递给构造函数的参数。这样我们可以使用这些参数为 `getMils()` 方法设置所需的行为
 
 ### 在另一个类中模拟构造
 
@@ -686,7 +686,7 @@ public class WaterTank {
 
 :::
 
-在这个示例中，我们的 CoffeeMachine 会在构建时创建磨豆机和咖啡罐。我们有一个 `makeCoffee()` 方法，该方法会打印出关于冲泡咖啡的信息
+在这个示例中，我们的 `CoffeeMachine` 会在构建时创建磨豆机和咖啡罐。我们有一个 `makeCoffee()` 方法，该方法会打印出关于冲泡咖啡的信息
 
 现在，我们可以继续编写几个测试：
 
@@ -727,9 +727,9 @@ class CoffeeMachineTest{
 }
 ```
 
-在此测试中，当我们调用 Grinder 和 WaterTank 的构造函数时，我们使用 `mockConstruction()` 返回模拟实例。然后，我们使用标准的 `when` 符号指定这些模拟的期望值
+在此测试中，当我们调用 `Grinder` 和 `WaterTank` 的构造函数时，我们使用 `mockConstruction()` 返回模拟实例。然后，我们使用标准的 `when` 符号指定这些模拟的期望值
 
-这一次，当我们运行测试时，Mockito 会确保 Grinder 和 WaterTank 的构造函数返回具有指定行为的模拟实例，从而允许我们隔离测试 `makeCoffee()` 方法
+这一次，当我们运行测试时，Mockito 会确保 `Grinder` 和 `WaterTank` 的构造函数返回具有指定行为的模拟实例，从而允许我们隔离测试 `makeCoffee()` 方法
 
 ## 私有方法
 

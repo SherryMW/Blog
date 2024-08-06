@@ -16,7 +16,7 @@ order: 13
 
 - 抽象类是半抽象的，接口是完全抽象的。接口没有构造方法，也无法实例化
 
-- JDK8 之前接口中只能定义：常量 + 抽象方法。接口中常量的 `public static final` 可以省略。接口中抽象方法的 `abstract` 可以省略。接口中所有的方法和变量都是 `public` 修饰的
+- Java8 之前接口中只能定义：常量 + 抽象方法。接口中常量的 `public static final` 可以省略。接口中抽象方法的 `abstract` 可以省略。接口中所有的方法和变量都是 `public` 修饰的
 
 - 接口和接口之间可以多继承
 
@@ -80,7 +80,7 @@ public class Test {
 
 ---
 
-JDK8 之前接口中只能定义：常量 + 抽象方法。接口中常量的 `public static final` 可以省略。接口中抽象方法的 `abstract` 可以省略。接口中所有的方法和变量都是 `public` 修饰的
+Java8 之前接口中只能定义：常量 + 抽象方法。接口中常量的 `public static final` 可以省略。接口中抽象方法的 `abstract` 可以省略。接口中所有的方法和变量都是 `public` 修饰的
 
 ```java
 public interface MyInterface {
@@ -228,9 +228,9 @@ public class Test {
         
         // 编译器只知道 myInterface 的类型是 MyInterface，因此会去 MyInterface 里找，但该接口只有 m1 和 m2 方法，因此报错也是正常的。如果就是想调用的话，就得做向下转型
         /**
-        myInterface.a();
-        myInterface.b();
-        myInterface.c();
+        * myInterface.a();
+        * myInterface.b();
+        * myInterface.c();
         */
         
         // 面向接口去调用的，接口里面有的就可以调用，接口里面没有的就不能调用
@@ -278,16 +278,16 @@ public class Test {
 
         MyInterfaceImpl myInterface = new MyInterfaceImpl();
         /**
-         调用默认方法，执行结果：
-         MyInterface 接口中的默认方法 defaultMethod 执行了
-         MyInterfaceImpl 实现类中的默认方法 defaultMethod 执行了
+         * 调用默认方法，执行结果：
+         * MyInterface 接口中的默认方法 defaultMethod 执行了
+         * MyInterfaceImpl 实现类中的默认方法 defaultMethod 执行了
          */
         myInterface.defaultMethod();
 
         /**
-         实现类不主动重写接口定义的默认方法也可以调用
-         执行结果：
-         MyInterface 接口中的默认方法 defaultMethod2 执行了
+         * 实现类不主动重写接口定义的默认方法也可以调用
+         * 执行结果：
+         * MyInterface 接口中的默认方法 defaultMethod2 执行了
          */
         myInterface.defaultMethod2();
         
@@ -555,11 +555,11 @@ public class Test {
 
 ```java
 /**
- 这是一个抽象的 Usb 接口
- 调用者是 Computer
- 实现者是 HardDrive 和 Printer
- 调用者和实现者都是面向 Usb 接口写代码的
- 接口将 Computer 和具体的设备解耦合了
+ * 这是一个抽象的 Usb 接口
+ * 调用者是 Computer
+ * 实现者是 HardDrive 和 Printer
+ * 调用者和实现者都是面向 Usb 接口写代码的
+ * 接口将 Computer 和具体的设备解耦合了
  */
 public interface Usb {
 

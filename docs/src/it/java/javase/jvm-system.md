@@ -71,7 +71,7 @@ JDK7 是一个过渡版本，该版本相对于 JDK6 来说，变化如下：
 
 ![](https://img.sherry4869.com/blog/it/java/javase/27.png)
 
-## JDK8 HotSpot
+## Java8 HotSpot
 
 彻底删除永久代（为了避免 OOM 错误的发生）
 

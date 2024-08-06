@@ -380,10 +380,8 @@ public class Account {
 
     double balance;
 
-    /**
-    public Account() {
-    }
-    */
+//    public Account() {
+//    }
 
     public Account(String actno, double balance) {
         this.actno = actno;

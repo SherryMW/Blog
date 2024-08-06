@@ -140,11 +140,11 @@ public class ConstructorTest01 {
     public static void main(String[] args) {
 
         /**
-         调用 Student 类的构造方法来完成 Student 类型对象的创建
-         以下代码本质上是：通过 new 运算符调用无参数的构造方法来完成对象的实例化
-         s1 是一个引用。保存了内存地址指向了堆内存当中的 Student 类型的对象
-         这样就完成了学生对象的创建以及初始化
-         无参数构造方法没有给属性手动赋值，但是系统会赋默认值
+         * 调用 Student 类的构造方法来完成 Student 类型对象的创建
+         * 以下代码本质上是：通过 new 运算符调用无参数的构造方法来完成对象的实例化
+         * s1 是一个引用。保存了内存地址指向了堆内存当中的 Student 类型的对象
+         * 这样就完成了学生对象的创建以及初始化
+         * 无参数构造方法没有给属性手动赋值，但是系统会赋默认值
          */
         Student s1 = new Student();
 
@@ -177,7 +177,7 @@ public class ConstructorTest01 {
     }
 }
 ```
-请定义一个交通工具 Vehicle 类，属性：品牌 brand，速度 speed，尺寸长 length，宽 width，高 height 等。方法：移动 move()，加速 speedUp()，减速 speedDown() 等。最后在测试类中实例化一个交通工具对象，并通过构造方法给它初始化 brand，speed，length，width，height 的值，调用加速，减速的方法对速度进行改变
+请定义一个交通工具 `Vehicle` 类，属性：品牌 `brand`，速度 `speed`，尺寸长 `length`，宽 `width`，高 `height` 等。方法：移动 `move()`，加速 `speedUp()`，减速 `speedDown()` 等。最后在测试类中实例化一个交通工具对象，并通过构造方法给它初始化 brand，speed，length，width，height 的值，调用加速，减速的方法对速度进行改变
 
 ```java
 public class Vehicle {

@@ -60,15 +60,15 @@ public class StudentTest {
         System.out.println(s2); // com.mw.javase.Student@4e50df2e
 
         /**
-         使用 == 关系运算符可以判断两个对象是否为同一个对象
-         int a = 10;
-         int b = 10;
-         System.out.println(a == b);
-
-         s1 和 s2 实际上有 4 个地址。s1 和 s2 本身有自己的局部变量地址，加上 s1 和 s2 保存的对象地址 
-         不管是基本数据类型还是引用数据类型的比较，== 关系运算符比较的是两个变量具体存的值
-         a 和 b 存的值都是 10，因此 a == b 为 true
-         s1 和 s2 存的是对象的地址，两个地址不一样，不是指向同一个对象，因此 s1 == s2 为 false
+         * 使用 == 关系运算符可以判断两个对象是否为同一个对象
+         * int a = 10;
+         * int b = 10;
+         * System.out.println(a == b);
+         *
+         * s1 和 s2 实际上有 4 个地址。s1 和 s2 本身有自己的局部变量地址，加上 s1 和 s2 保存的对象地址 
+         * 不管是基本数据类型还是引用数据类型的比较，== 关系运算符比较的是两个变量具体存的值
+         * a 和 b 存的值都是 10，因此 a == b 为 true
+         * s1 和 s2 存的是对象的地址，两个地址不一样，不是指向同一个对象，因此 s1 == s2 为 false
          */
         System.out.println(s1 == s2); // false
     }

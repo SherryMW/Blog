@@ -106,29 +106,26 @@ public class VarTest {
 
     public static void main(String[] args) {
         
-		/*		
-		System.out.println(100 + 456);
-		System.out.println(100 + 111);
-		System.out.println(100 + 222);
-		System.out.println(100 + 235);
-		System.out.println(100 + 789);
-		System.out.println(100 + 999);
-		System.out.println(100 + 666);
-		System.out.println(100 + 888);
-		*/
+//		System.out.println(100 + 456);
+//		System.out.println(100 + 111);
+//		System.out.println(100 + 222);
+//		System.out.println(100 + 235);
+//		System.out.println(100 + 789);
+//		System.out.println(100 + 999);
+//		System.out.println(100 + 666);
+//		System.out.println(100 + 888);
 
         // 新的需求来了：要计算 50 和后面数字的和
         // 问题：修改的位置太多了。不好维护
-		/*
-		System.out.println(50 + 456);
-		System.out.println(50 + 111);
-		System.out.println(50 + 222);
-		System.out.println(50 + 235);
-		System.out.println(50 + 789);
-		System.out.println(50 + 999);
-		System.out.println(50 + 666);
-		System.out.println(50 + 888);
-		*/
+        
+//		System.out.println(50 + 456);
+//		System.out.println(50 + 111);
+//		System.out.println(50 + 222);
+//		System.out.println(50 + 235);
+//		System.out.println(50 + 789);
+//		System.out.println(50 + 999);
+//		System.out.println(50 + 666);
+//		System.out.println(50 + 888);
 
         int num = 50;
         System.out.println(num + 456);

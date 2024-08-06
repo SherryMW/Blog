@@ -42,8 +42,8 @@ public class UserTest {
         System.out.println("年龄：" + user.age); // 50
 
         /**
-         目前 User 类没有进行封装，在外部程序中可以对 User 对象的 age 属性进行随意的访问
-         这样非常不安全的，因为现实世界中 age 不可能是负数。如果是真正的业务，-100 不应该能够赋值给 age 变量
+         * 目前 User 类没有进行封装，在外部程序中可以对 User 对象的 age 属性进行随意的访问
+         * 这样非常不安全的，因为现实世界中 age 不可能是负数。如果是真正的业务，-100 不应该能够赋值给 age 变量
          */
         user.age = -100;
 
@@ -68,16 +68,16 @@ public class User {
     private int age;
 
     /**
-     读取 age 属性的值
-     getter 方法是绝对安全的。因为这个方法是读取属性的值，不会涉及修改操作
+     * 读取 age 属性的值
+     * getter 方法是绝对安全的。因为这个方法是读取属性的值，不会涉及修改操作
      */
     public int getAge() {
         return age;
     }
 
     /**
-     修改 age 属性的值
-     setter 方法当中就需要编写拦截过滤代码，来保证属性的安全
+     * 修改 age 属性的值
+     * setter 方法当中就需要编写拦截过滤代码，来保证属性的安全
      */
     public void setAge(int age) {
         if (age < 0 || age > 100) {
@@ -85,9 +85,9 @@ public class User {
             return;
         }
         /**
-         this. 大部分情况下可以省略
-         this. 什么时候不能省略？用来区分局部变量和实例变量的时候
-         Java 有就近原则，此时有两个 age，一个是局部变量 age，一个是实例变量 age，因此需要用 this 来指定实例变量值，如果不用 this，那么程序会使用最近的局部变量 age
+         * this. 大部分情况下可以省略
+         * this. 什么时候不能省略？用来区分局部变量和实例变量的时候
+         * Java 有就近原则，此时有两个 age，一个是局部变量 age，一个是实例变量 age，因此需要用 this 来指定实例变量值，如果不用 this，那么程序会使用最近的局部变量 age
          */
         this.age = age;
     }
@@ -344,8 +344,8 @@ public class Customer {
     }
 
     /**
-     以下代码报错的原因是什么
-     带 static 关键字的方法，得用 类名. 调用。用类名调的话，就没使用到对象了，没有当前对象，因此就无法使用实例方法和实例变量
+     * 以下代码报错的原因是什么
+     * 带 static 关键字的方法，得用 类名. 调用。用类名调的话，就没使用到对象了，没有当前对象，因此就无法使用实例方法和实例变量
      */
 //    public static void test() {
 //        System.out.println(this.name + "正在疯狂购物!!!");
