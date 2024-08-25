@@ -23,6 +23,12 @@ export const JavaSidebar = arraySidebar([
                 collapsible: true,
                 children: "structure"
             },
+            {
+                text: "数组",
+                prefix: "arrays/",
+                collapsible: true,
+                children: "structure"
+            },
             "jvm-system",
             "uml",
             {
@@ -52,6 +58,21 @@ export const JavaSidebar = arraySidebar([
         collapsible: true,
         children: "structure"
     },
+    "xxl-job",
+    {
+        text: "消息中间件",
+        prefix: "messaging/",
+        collapsible: true,
+        children: [
+            "README.md",
+            {
+                text: "Kafka",
+                prefix: "kafka/",
+                collapsible: true,
+                children: "structure"
+            },
+        ]
+    }
 ])
 
 // export const JavaSidebar = arraySidebar([

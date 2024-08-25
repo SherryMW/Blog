@@ -109,12 +109,6 @@ article: false
 - [x] 番茄锅底
 - [x] 牛油麻辣锅底
 
-## 陈添记
-
-<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0J1COEOXQ" target="_blank">惠福东路612号</a>
-
-- [x] 陈添记鱼皮（推荐）
-
 ## 刘福记
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFH8I8GG" target="_blank">文德路45号（35路车总站对面）</a>
@@ -122,6 +116,13 @@ article: false
 ![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/bjl/lfj/img.jpg)
 
 - [x] 招牌四色面
+
+## 陈添记
+
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0J1COEOXQ" target="_blank">惠福东路612号</a>
+
+- [x] 陈添记鱼皮
+- [x] 鲜虾云吞竹升面
 
 ## 麺屋猪一
 

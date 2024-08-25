@@ -32,10 +32,10 @@ export default hopeTheme({
     contributors: false, // 是否显示页面贡献者
     lastUpdated: false, // 是否显示页面最后更新时间
     editLink: false, // 是否展示编辑此页链接
-    encrypt: {
-        global: true,
-        admin: "MW8888",
-    },
+    // encrypt: {
+    //     global: true,
+    //     admin: "MW8888",
+    // },
     blog: {
         avatar: "/avatar.jpg", // 头像
         description: "过往不恋 未来不迎 <br/><br/> 上次更新：" + commitDate + "<br/><br/>更新内容：" + commitMessage, // 主页口号、座右铭或介绍语

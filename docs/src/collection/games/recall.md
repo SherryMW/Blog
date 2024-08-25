@@ -147,6 +147,10 @@ Windows 10 或者 Windows 11 点击下载时可能会出现【无法下载-检�
 
 ![](https://img.sherry4869.com/blog/collection/game/dragonball-z/29.png)
 
-## Cat Quest II
+## 猫咪斗恶龙2
 
-![](https://img.sherry4869.com/blog/collection/game/cat-quest2/1.jpg)
+![](https://img.sherry4869.com/blog/collection/game/cat-quest/1.png)
+
+## 猫咪斗恶龙3
+
+![](https://img.sherry4869.com/blog/collection/game/cat-quest/2.png)
