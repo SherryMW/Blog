@@ -736,7 +736,7 @@ public class Test {
 
 ## finalize
 
-`@Deprecated(since="9", forRemoval=true)`：从 JDK 9 开始该方法已经过时了，不建议使用
+`@Deprecated(since="9", forRemoval=true)`：从 JDK9 开始该方法已经过时了，不建议使用
 
 该方法不需要开发者手动去调用，而是由 GC 垃圾回收器负责调用。当一个对象没有引用去指向它的时候，该对象就会在后续被 GC 垃圾回收器给回收释放掉内存空间。在该对象即将被回收时，GC 调用该对象的 `finalize` 方法。
 

@@ -27,7 +27,7 @@ article: false
 - [x] 酥炸鸡米花
 - [x] 停不下来香脆薯
 
-## 融富来酒家
+## 融富来酒家（歇业）
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0J3F76LNU" target="_blank">白云大道南668号</a>
 

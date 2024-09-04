@@ -12,17 +12,20 @@ article: false
 - [x] 深井烧鹅
 - [x] 煎酿豆腐（推荐）
 - [x] 玻璃脆皮乳鸽
-- [x] 东湖靓虾饺（推荐）
 - [x] 生蚝粉丝煲
-- [x] 拿破仑叉烧酥饼
+- [x] 东湖靓虾饺（推荐）
+- [x] 东湖小笼包（推荐）
 - [x] 白酱蒸凤爪
+- [x] 沙爹金钱肚
+- [x] 香菇滑烧卖
 - [x] 金汤腐皮卷
 - [x] 锦绣红米肠
 - [x] 蜜汁叉烧肠
 - [x] 腊味萝卜糕
-- [x] 香煎甜薄撑 
-- [x] 豉油皇炒面
+- [x] 香煎甜薄撑
+- [x] 拿破仑叉烧酥饼
 - [x] 干炒牛河
+- [x] 豉油皇炒面
 - [x] 咸骨菜干粥
 
 ## T1COFFEE·TEA
@@ -61,6 +64,56 @@ article: false
 - [x] 油条
 - [x] 小酥肉
 
+## 佬麻雀
+
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0HAP7VQ68" target="_blank">云城东路501号万达广场3F层</a>
+
+::: tabs
+
+@tab 脆皮鸡
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/lmq/1.jpg)
+
+@tab 闸蟹凤爪煲
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/lmq/2.jpg)
+
+:::
+
+- [x] 脆皮鸡（推荐）
+- [x] 闸蟹凤爪煲
+- [x] 佬长沙臭豆腐（推荐）
+- [x] 酱油鸡蛋炒饭
+
+## 绿茶餐厅
+
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFK090AO" target="_blank">云城东路501号万达广场3F层</a>
+
+::: tabs
+
+@tab 龙井烤鸡
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/lcct/1.jpg)
+
+@tab 东坡仔排
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/lcct/2.jpg)
+
+@tab 客家茄子煲
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/lcct/3.jpg)
+
+@tab 绿茶招牌炒饭
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/lcct/4.jpg)
+
+:::
+
+- [x] 龙井烤鸡
+- [x] 东坡仔排
+- [x] 客家茄子煲
+- [x] 绿茶招牌炒饭
+
 ## 国安路老南昌拌粉
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0HRHS1HS8" target="_blank">云城东路501号万达广场金街154铺子固路拌粉店</a>
@@ -87,17 +140,6 @@ article: false
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0JDPGPJTX" target="_blank">云城东路501号万达广场广州白云店3F层</a>
 
-## 好彩米芝莲港式茶餐厅
-
-<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0GUPNXC57" target="_blank">机场路601号银鹰大酒店一楼1O1铺</a>
-
-- [x] 鸡扒饭
-- [x] 叉烧虾仁滑蛋炒饭
-- [x] 干炒牛河
-- [x] 特色炒米粉
-- [x] 鲜虾云吞面
-- [x] 鸡扒公仔面
-
 ## 饺家传统手工饺子
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFGX31NC" target="_blank">远景路22号B68档</a>
@@ -115,6 +157,17 @@ article: false
 ![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/sdl/img.jpg)
 
 - [x] 滑蛋瑞士鸡腿饭
+
+## 好彩米芝莲港式茶餐厅
+
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0GUPNXC57" target="_blank">机场路601号银鹰大酒店一楼1O1铺</a>
+
+- [x] 鸡扒饭
+- [x] 叉烧虾仁滑蛋炒饭
+- [x] 干炒牛河
+- [x] 特色炒米粉
+- [x] 鲜虾云吞面
+- [x] 鸡扒公仔面
 
 ## 广笼记
 

@@ -193,15 +193,6 @@ article: false
 - [x] 冰镇咕噜肉
 - [x] 海皇鸡火炒饭
 
-## 汉拿山（歇业）
-
-<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B00140TFHO" target="_blank">天河路228号正佳广场5层南街</a>
-
-40 块的拌饭比 268 块的拼盘要好吃的多:see_no_evil:
-
-- [x] 荣升全牛八拼
-- [x] 石锅牛肉拌饭
-
 ## 龙井湖
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0JAT7QM2I" target="_blank">天河路228号正佳广场5F-5A031-33号</a>
@@ -226,6 +217,15 @@ article: false
 - [x] 杭州绿茶饼
 - [x] 杭州小笼包
 - [x] 竹笙炖鸡汤
+
+## 汉拿山（歇业）
+
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B00140TFHO" target="_blank">天河路228号正佳广场5层南街</a>
+
+40 块的拌饭比 268 块的拼盘要好吃的多:see_no_evil:
+
+- [x] 荣升全牛八拼
+- [x] 石锅牛肉拌饭
 
 ## 乐焰烤肉·和牛海鲜放题（歇业）
 

@@ -19,6 +19,14 @@ Steam 工具箱 Watt Toolkit（原名 Steam++）：[https://steampp.net](https:/
 
 ![](https://img.sherry4869.com/blog/collection/game/lol/img_4.png)
 
+## 黑神话悟空
+
+![](https://img.sherry4869.com/blog/collection/game/blackmyth-wukong/1.jpg)
+
+今生有求 若下一世相遇 请记得回眸
+
+![](https://img.sherry4869.com/blog/collection/game/blackmyth-wukong/2.jpg)
+
 ## 双人成行
 
 游戏所表达的爱与浪漫终归是现实世界美好一面的映射
@@ -37,7 +45,7 @@ Steam 工具箱 Watt Toolkit（原名 Steam++）：[https://steampp.net](https:/
 
 ## 逃出生天
 
-对唔住，我系差人
+对唔住 我系差人
 
 ![](https://img.sherry4869.com/blog/collection/game/awayout/img.jpg)
 
@@ -66,10 +74,6 @@ Windows 10 或者 Windows 11 点击下载时可能会出现【无法下载-检�
 
 变量值：~0x200000200000000
 :::
-
-## Chained Together
-
-![](https://img.sherry4869.com/blog/collection/game/chained-together/1.jpg)
 
 ## 七龙珠Z 卡卡罗特
 
@@ -146,6 +150,10 @@ Windows 10 或者 Windows 11 点击下载时可能会出现【无法下载-检�
 ![](https://img.sherry4869.com/blog/collection/game/dragonball-z/28.png)
 
 ![](https://img.sherry4869.com/blog/collection/game/dragonball-z/29.png)
+
+## Chained Together
+
+![](https://img.sherry4869.com/blog/collection/game/chained-together/1.jpg)
 
 ## 猫咪斗恶龙2
 

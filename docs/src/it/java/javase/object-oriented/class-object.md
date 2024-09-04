@@ -36,7 +36,7 @@ order: 2
 | double  |  0.0d  |
 | boolean | false  |
 |  char   | \u0000 |
-| 引用数据类型  |  null  |
+| 引用数据类型  |  NULL  |
 
 ```java
 public class Student {

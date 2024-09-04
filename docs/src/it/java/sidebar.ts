@@ -59,20 +59,20 @@ export const JavaSidebar = arraySidebar([
         children: "structure"
     },
     "xxl-job",
-    {
-        text: "消息中间件",
-        prefix: "messaging/",
-        collapsible: true,
-        children: [
-            "README.md",
-            {
-                text: "Kafka",
-                prefix: "kafka/",
-                collapsible: true,
-                children: "structure"
-            },
-        ]
-    }
+    // {
+    //     text: "消息中间件",
+    //     prefix: "messaging/",
+    //     collapsible: true,
+    //     children: [
+    //         "README.md",
+    //         {
+    //             text: "Kafka",
+    //             prefix: "kafka/",
+    //             collapsible: true,
+    //             children: "structure"
+    //         },
+    //     ]
+    // }
 ])
 
 // export const JavaSidebar = arraySidebar([

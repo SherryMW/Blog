@@ -35,12 +35,12 @@ Windows Path 环境变量的作用：
 
 ---
 
-一台电脑上需要安装多个不同版本的 JDK，例如 Windows 上已经安装了 JDK 1.8，想安装多一个 JDK 21：
+一台电脑上需要安装多个不同版本的 JDK，例如 Windows 上已经安装了 JDK8，想安装多一个 JDK21：
 
 1. 新建系统环境变量【JAVA_HOME8】值为【C:\Program Files\Java\jdk-1.8】
 
 2. 新建系统环境变量【JAVA_HOME21】值为【C:\Program Files\Java\jdk-21】
 
-3. 新建系统环境变量【JAVA_HOME】值为【%JAVA_HOME21%】如果想用 JDK 8 的话，就把值修改成【%JAVA_HOME8%】
+3. 新建系统环境变量【JAVA_HOME】值为【%JAVA_HOME21%】如果想用 JDK8 的话，就把值修改成【%JAVA_HOME8%】
 
 4. 编辑系统环境变量【Path】，新增值【%JAVA_HOME%\bin】

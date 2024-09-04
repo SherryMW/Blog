@@ -26,33 +26,6 @@ article: false
 
 - [ ] 康斯坦丁
 
-#### 梦境旅人·沉浸映像剧场
-
-<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0IRMAK7CC" target="_blank">江南大道中102号3楼</a>
-
-- [ ] 蒙太奇 Dreamer
-
-#### 灵厦714
-
-<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0HGSC6ABJ" target="_blank">繁华路57号金口岸大厦二层203</a>
-
-- [ ] 马家花园
-- [ ] 昆池盐
-
-#### 幻剧·魔术沉浸剧场
-
-<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0I63HYJVD" target="_blank">天河路611号摩登百货二楼201</a>
-
-- [ ] 人头饭
-
-#### UMEPLAY 逃脱艺术
-
-<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0I16UUU41" target="_blank">广州大道南1601号之二至之四101房自编第一层</a>
-
-- [ ] ENOLA
-- [ ] INSANE
-- [ ] REVIVER
-
 #### 十二时辰探案局
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0I3ASRK8I" target="_blank">沙湾古镇容光巷横巷5号</a>

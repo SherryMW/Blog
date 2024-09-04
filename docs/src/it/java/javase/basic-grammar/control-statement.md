@@ -733,9 +733,9 @@ public class SwitchTest {
 }
 ```
 
-### JDK 12 新特性
+### JDK12 新特性
 
-JDK 12 `switch` 语句不需要书写 `break` 语句，该格式无 `case` 穿透现象
+JDK12 `switch` 语句不需要书写 `break` 语句，该格式无 `case` 穿透现象
 
 ```text
 switch (expression) {
