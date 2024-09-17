@@ -33,4 +33,3 @@ article: false
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFGFKMHI" target="_blank">庙前直街14号</a>
 
 - [x] 金牌海鲜冬阴功贵刁粉
-- [x] 热牛奶

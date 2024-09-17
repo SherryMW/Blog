@@ -71,6 +71,15 @@ article: false
 - [x] 深海金枪鱼色拉
 - [x] 橙汁
 
+## 金旺旺酒家
+
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B00140U18H" target="_blank">解放中路306号1-2层</a>
+
+- [x] 湛江大扇鸡
+- [x] 白切三色拼
+- [x] 客家煎酿豆腐
+- [x] 湛江特色捞粉（推荐）
+
 ## 新疆阿凡提新鲜羊肉串
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0HK0SGIWA" target="_blank">解放中路177号自编A6</a>
@@ -90,7 +99,3 @@ article: false
 
 - [x] 绿豆咸肉蛋黄粽（推荐）
 - [x] 牛腩布拉肠
-
-## 辣辣寿司
-
-<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B00141R25J" target="_blank">解放南路173-183号香榭丽舍商业街</a>

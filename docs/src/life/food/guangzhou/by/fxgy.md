@@ -19,6 +19,7 @@ article: false
 - [x] 沙爹金钱肚
 - [x] 香菇滑烧卖
 - [x] 金汤腐皮卷
+- [x] 高筒葡式蛋挞
 - [x] 锦绣红米肠
 - [x] 蜜汁叉烧肠
 - [x] 腊味萝卜糕
@@ -44,7 +45,7 @@ article: false
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0JKD96GXH" target="_blank">云城东路501号万达广场3层点都德(2号门电梯直上三楼)</a>
 
-![朋友单点的一个凤爪中奖了，以后叫他凤爪哥](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/ddd/1.jpg)
+![朋友单点的一个凤爪中奖了](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/ddd/1.jpg)
 
 - [x] 金莎红米肠（推荐）
 - [x] 招牌虾饺皇
@@ -63,6 +64,14 @@ article: false
 - [x] 招牌柠檬粉（推荐）
 - [x] 油条
 - [x] 小酥肉
+
+## 尬图有料海鲜肠粉
+
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0KDYCZLVH" target="_blank">云城东路337号</a>
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/gtyl/1.jpg)
+
+- [x] 蒸面（推荐）
 
 ## 佬麻雀
 
@@ -84,6 +93,20 @@ article: false
 - [x] 闸蟹凤爪煲
 - [x] 佬长沙臭豆腐（推荐）
 - [x] 酱油鸡蛋炒饭
+
+## 国安路老南昌拌粉
+
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0HRHS1HS8" target="_blank">云城东路501号万达广场金街154铺子固路拌粉店</a>
+
+- [x] 牛肉拌粉
+
+## 越广越南牛肉粉
+
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0G305KEQX" target="_blank">乐嘉路96号101房</a>
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/ygyn/img.jpg)
+
+- [x] 越式番茄虾蟹酱粉
 
 ## 绿茶餐厅
 
@@ -113,20 +136,6 @@ article: false
 - [x] 东坡仔排
 - [x] 客家茄子煲
 - [x] 绿茶招牌炒饭
-
-## 国安路老南昌拌粉
-
-<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0HRHS1HS8" target="_blank">云城东路501号万达广场金街154铺子固路拌粉店</a>
-
-- [x] 牛肉拌粉
-
-## 越广越南牛肉粉
-
-<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0G305KEQX" target="_blank">乐嘉路96号101房</a>
-
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/ygyn/img.jpg)
-
-- [x] 越式番茄虾蟹酱粉
 
 ## BE BRIGHT CAFFE
 

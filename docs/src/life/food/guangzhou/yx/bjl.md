@@ -117,18 +117,18 @@ article: false
 
 - [x] 招牌四色面
 
+## 麺屋猪一
+
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0J1COEOXQ" target="_blank">西湖路63号光明广场B1层</a>
+
+- [x] 豚骨王拉面
+
 ## 陈添记
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0J1COEOXQ" target="_blank">惠福东路612号</a>
 
 - [x] 陈添记鱼皮
 - [x] 鲜虾云吞竹升面
-
-## 麺屋猪一
-
-<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0J1COEOXQ" target="_blank">西湖路63号光明广场B1层</a>
-
-- [x] 豚骨王拉面
 
 ## 御前十七
 

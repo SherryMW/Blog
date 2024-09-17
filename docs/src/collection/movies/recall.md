@@ -204,6 +204,7 @@ article: false
 
 @tab 2009
 
+- [x] 新宿事件
 - [x] 机动部队 伙伴
 
 @tab 2008
@@ -442,6 +443,7 @@ article: false
 
 @tab 1998
 
+- [x] 国家公敌
 - [x] 尖峰时刻
 
 @tab 1997
@@ -459,6 +461,10 @@ article: false
 @tab 1993
 
 - [ ] 土拨鼠之日
+
+@tab 1983
+
+- [x] 疤面煞星
 
 :::
 

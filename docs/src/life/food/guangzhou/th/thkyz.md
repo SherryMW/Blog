@@ -21,7 +21,7 @@ article: false
 
 去店里基本点的都是：大盘鸡/卤水猪手盖面 + 煎蛋 + 维他奶
 
-美食是治愈心灵的最佳方式，有段时间每当心情糟糕的时候总会来这家店吃碗盖面
+美食是治愈心灵的最佳方式，每当心情糟糕的时候总想着来这家店吃碗盖面
 
 ![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/thkyz/xxj/img_4.jpg)
 
