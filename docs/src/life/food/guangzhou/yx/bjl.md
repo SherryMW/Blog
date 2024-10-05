@@ -92,6 +92,15 @@ article: false
 - [x] 北极贝
 - [x] 芥末八爪鱼
 
+## 粤·向群饭店
+
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0JRAANRT4" target="_blank">天河城B区3楼</a>
+
+- [x] 始创葱油淋鸡（推荐）
+- [x] 五杯财神猪手
+- [x] 咸蛋黄焗罗氏虾
+- [x] 椰青桃胶炖蛋白奶
+
 ## 凤园椰珍
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0GK7146CJ" target="_blank">西湖路63号光明广场三楼北区B06铺</a>

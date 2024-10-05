@@ -15,16 +15,18 @@
     "personal-blog"
   ],
   "devDependencies": {
-    "@vuepress/bundler-vite": "2.0.0-rc.13",
+    "@vuepress/bundler-vite": "2.0.0-rc.15",
     "@vuepress/plugin-container": "2.0.0-rc.28",
+    "@vuepress/plugin-redirect": "2.0.0-rc.51",
     "@waline/client": "3.0.0-alpha.11",
     "echarts": "5.4.3",
     "element-plus": "2.5.5",
     "js-yaml": "4.1.0",
-    "vue": "^3.4.27",
-    "vuepress": "2.0.0-rc.13",
-    "vuepress-plugin-search-pro": "2.0.0-rc.48",
-    "vuepress-theme-hope": "2.0.0-rc.48"
+    "sass-embedded": "1.79.4",
+    "vue": "^3.5.10",
+    "vuepress": "2.0.0-rc.15",
+    "vuepress-plugin-search-pro": "2.0.0-rc.54",
+    "vuepress-theme-hope": "2.0.0-rc.56"
   },
   "packageManager": "pnpm@9.8.0"
 }

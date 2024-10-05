@@ -12,7 +12,7 @@ export const NavbarConfig = navbar([
         children: [
             {
                 text: "健康",
-                link: "healthy/rest/2024"
+                link: "healthy/rest"
             },
             {
                 text: "美食",
@@ -21,6 +21,10 @@ export const NavbarConfig = navbar([
             {
                 text: "娱乐",
                 link: "play/"
+            },
+            {
+                text: "购物",
+                link: "shop/sm"
             }
         ]
     },

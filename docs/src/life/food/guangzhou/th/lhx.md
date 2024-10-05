@@ -36,17 +36,11 @@ article: false
 
 20:00 有庆生嗨趴，需要提前一天预约。19:30/20:30/21:30/22:30/23:30 有驻场乐队演出
 
-::: tabs
-
-@tab 乐队演出
-
 ![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/lhx/rocky/img.jpg)
 
 ![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/lhx/rocky/img_2.jpg)
 
 ![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/lhx/rocky/img_3.jpg)
-
-:::
 
 - [x] 果木烤安格斯谷饲牛扒
 - [x] 果木烤纽西兰SFF珍藏级战斧牛扒

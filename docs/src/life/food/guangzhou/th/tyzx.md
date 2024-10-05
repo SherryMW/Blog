@@ -15,6 +15,10 @@ article: false
 
 ![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/dtjj/1.jpg)
 
+@tab 了能炒面
+
+![这碟炒面无敌了](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/dtjj/4.jpg)
+
 @tab 啫啫黄鳝煲
 
 ![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/dtjj/2.jpg)
@@ -22,10 +26,6 @@ article: false
 @tab 清蒸多宝鱼
 
 ![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/dtjj/3.jpg)
-
-@tab 了能炒面
-
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/dtjj/4.jpg)
 
 :::
 
@@ -222,7 +222,7 @@ article: false
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B00140TFHO" target="_blank">天河路228号正佳广场5层南街</a>
 
-40 块的拌饭比 268 块的拼盘要好吃的多:see_no_evil:
+40 元的拌饭比 268 元的拼盘要好吃的多:see_no_evil:
 
 - [x] 荣升全牛八拼
 - [x] 石锅牛肉拌饭

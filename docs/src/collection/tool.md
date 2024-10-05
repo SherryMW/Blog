@@ -128,14 +128,3 @@ article: false
   link: https://squoosh.app/
 ```
 :::
-
----
-
-::: projects
-```yaml
-- icon: https://img.sherry4869.com/blog/collection/tools/apkpure.webp
-  name: apkpure
-  desc: APP分发平台
-  link: https://apkpure.com
-```
-:::

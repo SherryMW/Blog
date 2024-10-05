@@ -2,8 +2,10 @@ import {sidebar} from "vuepress-theme-hope";
 import {CollectionSidebar} from "../../collection/sidebar"
 import {FoodSidebar} from "../../life/food/sidebar";
 import {PlaySidebar} from "../../life/play/sidebar";
-import {JavaSidebar} from "../../it/java/sidebar";
 import {HealthySidebar} from "../../life/healthy/sidebar";
+import {JavaSidebar} from "../../it/java/sidebar";
+import {ProjectSidebar} from "../../it/project/sidebar";
+import {ShopSidebar} from "../../life/shop/sidebar";
 
 export const SidebarConfig = sidebar({
 
@@ -17,9 +19,13 @@ export const SidebarConfig = sidebar({
 
     "/life/play/": PlaySidebar,
 
+    "/life/shop": ShopSidebar,
+
     // ----- IT -----
 
     "/it/java/": JavaSidebar,
+
+    "/it/project/": ProjectSidebar,
 
     // "/it/es6/": [{
     //     text: "ECMAScript 6",

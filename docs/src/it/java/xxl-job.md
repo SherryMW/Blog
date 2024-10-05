@@ -244,7 +244,7 @@ docker run -e PARAMS="--spring.datasource.url=jdbc:mysql://127.0.0.1:3306/xxl_jo
 
 ### 配置部署“执行器项目”
 
-创建 SpringBoot 项目并确认 pom 文件中引入了 xxl-job-core 的依赖：
+创建 Spring Boot 项目并确认 pom 文件中引入了 xxl-job-core 的依赖：
 
 ```xml
 <!-- http://repo1.maven.org/maven2/com/xuxueli/xxl-job-core/ -->
@@ -389,7 +389,7 @@ public class DemoGlueJobHandler extends IJobHandler {
 }
 ```
 
-此时我们可以执行任务调度测试一下。如果执行器的控制台出现 `Exception in thread "xxl-job, EmbedServer bizThreadPool-41653061" java.lang.NoClassDefFoundError: javax/annotation/Resource` 的错误，说明当前你项目中的 JDK 版本在 17 以上，JDK17 已经移除了 `@Resource` 注解（SpringBoot3 要求 JDK17 作为最低版本），因此 xxl-job 会引用不到，需要手动在项目里添加依赖：
+此时我们可以执行任务调度测试一下。如果执行器的控制台出现 `Exception in thread "xxl-job, EmbedServer bizThreadPool-41653061" java.lang.NoClassDefFoundError: javax/annotation/Resource` 的错误，说明当前你项目中的 JDK 版本在 17 以上，JDK17 已经移除了 `@Resource` 注解（Spring Boot3 要求 JDK17 作为最低版本），因此 xxl-job 会引用不到，需要手动在项目里添加依赖：
 
 ```xml
 <dependency>
@@ -401,7 +401,7 @@ public class DemoGlueJobHandler extends IJobHandler {
 
 ## 执行器集群
 
-在 IDEA 中设置 SpringBoot 项目运行开启多个集群。启动两个 SpringBoot 程序，需要修改 Tomcat 端口和执行器端口：
+在 IDEA 中设置 Spring Boot 项目运行开启多个集群。启动两个 Spring Boot 程序，需要修改 Tomcat 端口和执行器端口：
 
 Tomcat 端口 8082 程序的命令行参数如下：
 
@@ -485,7 +485,7 @@ Tomcat 端口 8083 程序的命令行参数如下：
 </dependency>
 ```
 
-如果你使用的是 SpringBoot3，那么 `mybatis-spring-boot-starter` 依赖需要升级到 3.0 以上
+如果你使用的是 Spring Boot3，那么 `mybatis-spring-boot-starter` 依赖需要升级到 3.0 以上
 
 添加配置：
 

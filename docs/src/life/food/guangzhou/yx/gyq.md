@@ -91,6 +91,26 @@ article: false
 - [x] 上汤时令青菜
 - [x] 猪油捞饭
 
+## 何里玉
+
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0J3FXEOT5" target="_blank">中山五路70号捷登都会B1层</a>
+
+::: tabs
+
+@tab 巨蟹柳手作奶油芝士天使意粉
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/gyq/hly/1.jpg)
+
+@tab 独有藤椒脆鸡翅
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/gyq/hly/2.jpg)
+
+:::
+
+- [x] 巨蟹柳手作奶油芝士天使意粉（推荐）
+- [x] 独有藤椒脆鸡翅
+- [x] 花生友冰沙
+
 ## 大喜居酒屋
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFIIKP20" target="_blank">教育路1号</a>

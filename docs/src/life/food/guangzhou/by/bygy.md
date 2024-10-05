@@ -52,11 +52,50 @@ article: false
 
 ![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/bygy/hsfs/3.jpg)
 
+@tab 烤肉肠
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/bygy/hsfs/4.jpg)
+
+@tab 潮汕酸梅烤鳗鱼
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/bygy/hsfs/5.jpg)
+
+@tab 香滑冰豆花
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/bygy/hsfs/6.jpg)
+
 :::
 
-- [x] 招牌蒸蚝
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/bygy/hsfs/0.jpg)
+
+- [x] 招牌蒸蚝（推荐）
 - [x] 香煎蚝仔烙
 - [x] 四点金拼猪蹄
+- [x] 烤肉肠（推荐）
+- [x] 烤韭菜苔
+- [x] 避风塘炒玉米
+- [x] 潮汕酸梅烤鳗鱼
+- [x] 干炒牛河
+- [x] 香滑冰豆花
+
+## 达美乐比萨
+
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0KBTHXBHR" target="_blank">云城西路890号凯德广场云尚B2层</a>
+
+::: tabs
+
+@tab 金沙咸蛋黄嫩鸡
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/bygy/dml/1.png)
+
+@tab 培根多多肉香粉松土豆
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/bygy/dml/2.png)
+
+:::
+
+- [x] 金沙咸蛋黄嫩鸡比萨（推荐）
+- [x] 培根多多肉香粉松土豆比萨
 
 ## 融富来酒家（歇业）
 

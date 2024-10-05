@@ -53,9 +53,3 @@ article: false
 
 - [x] 浓香芝士蛋糕
 - [x] 香草/巧克力泡芙
-
-## 美喝喝糖水铺
-
-<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFFZS28T" target="_blank">诗书路113号</a>
-
-- [x] 芋泥双皮奶

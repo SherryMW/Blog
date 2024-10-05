@@ -11,6 +11,7 @@ article: false
 
 - [x] 深井烧鹅
 - [x] 煎酿豆腐（推荐）
+- [x] 酸菜豆腐煲（推荐）
 - [x] 玻璃脆皮乳鸽
 - [x] 生蚝粉丝煲
 - [x] 东湖靓虾饺（推荐）
@@ -28,6 +29,7 @@ article: false
 - [x] 干炒牛河
 - [x] 豉油皇炒面
 - [x] 咸骨菜干粥
+- [x] 杨枝甘露（推荐）
 
 ## T1COFFEE·TEA
 
@@ -41,11 +43,50 @@ article: false
 - [x] 茉莉鲜乳茶
 - [x] 生椰拿铁
 
+## 川小馆
+
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFKSA1XW" target="_blank">飞云东街10号</a>
+
+::: tabs
+
+@tab 香干炒肉饭
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/cxg/1.jpg)
+
+@tab 番茄炒蛋饭
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/cxg/2.png)
+
+@tab 霸王炒鸡饭
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/cxg/3.jpg)
+
+:::
+
+- [x] 香干炒肉饭（推荐）
+- [x] 番茄炒蛋饭
+- [x] 霸王炒鸡饭
+- [x] 秘制牛腩面
+- [x] 红糖糍粑
+
+## 小潘烧烤
+
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0G2AC65XO" target="_blank">云城东路501号万达广场B区白云店F1层</a>
+
+- [x] 酱烧鸡煲
+- [x] 爆炒花甲
+- [x] 锡纸金针菇
+- [x] 锡纸鸭血
+- [x] 锡纸豆腐
+- [x] 烤猪蹄
+- [x] 羊肉串
+- [x] 扇贝
+
 ## 点都德
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0JKD96GXH" target="_blank">云城东路501号万达广场3层点都德(2号门电梯直上三楼)</a>
 
-![朋友单点的一个凤爪中奖了](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/ddd/1.jpg)
+![同事单点的一个凤爪中奖了](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/ddd/1.jpg)
 
 - [x] 金莎红米肠（推荐）
 - [x] 招牌虾饺皇
@@ -72,6 +113,16 @@ article: false
 ![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/gtyl/1.jpg)
 
 - [x] 蒸面（推荐）
+
+## 饺家传统手工饺子
+
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFGX31NC" target="_blank">远景路22号B68档</a>
+
+![第一次见这种形状的煎饺](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/jj/img.jpg)
+
+- [x] 精肉韭菜煎饺
+- [x] 精肉香菇水饺
+- [x] 红烧排骨面
 
 ## 佬麻雀
 
@@ -148,16 +199,6 @@ article: false
 ## 苏格里岛海鲜火锅烤肉自助
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0JDPGPJTX" target="_blank">云城东路501号万达广场广州白云店3F层</a>
-
-## 饺家传统手工饺子
-
-<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFGX31NC" target="_blank">远景路22号B68档</a>
-
-![第一次见这种形状的煎饺](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/jj/img.jpg)
-
-- [x] 精肉韭菜煎饺
-- [x] 精肉香菇水饺
-- [x] 红烧排骨面
 
 ## 士达乐冰室
 

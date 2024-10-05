@@ -41,8 +41,6 @@ export const renderProjects = (tokens: Token[], idx: number) => {
                 // 正确解析出数据对象
                 if (Array.isArray(dataObj)) {
                     dataList = dataObj
-                } else {
-                    dataList = dataObj.data
                 }
             }
             // 判断是否有数据
@@ -54,15 +52,18 @@ export const renderProjects = (tokens: Token[], idx: number) => {
                 ) => {
                     const isFriends = type === 'friends'
                     return `
-              <a class="vp-project-card project${index % 9}" style="text-decoration: none"
-                href="${withBase(project.link)}"
-                ${isFriends ? '' : 'rel="noopener noreferrer"'}
-                target="_blank">
-                <img src="${withBase(project.icon)}" alt="${project.name}" class="vp-project-image" />
-                <div class="vp-project-name">${project.name}</div>
-                <div class="vp-project-desc">${project.desc ? project.desc : ''}</div>
-              </a>
-            `
+                    <div class="vp-project-card color${index % 4}">
+                        <a href="${withBase(project.link)}"
+                        class="no-external-link-icon"
+                        style="text-decoration: none"
+                        ${isFriends ? '' : 'rel="noopener noreferrer"'}
+                        target="_blank">
+                        <img src="${withBase(project.icon)}" alt="${project.name}" class="vp-project-image" />
+                        <div class="vp-project-name">${project.name}</div>
+                        <div class="vp-project-desc">${project.desc ? project.desc : ''}</div>
+                        </a>
+                    </div>
+                    `
                 }
                 const getProjects = (projects: Project[], type?: string) => {
                     let projectsStr = ''
