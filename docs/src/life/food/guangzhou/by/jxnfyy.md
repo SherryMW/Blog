@@ -35,7 +35,7 @@ article: false
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0IG6SDGZD" target="_blank">广州大道北1811号嘉裕太阳城广场一层1062</a>
 
-- [x] 蟹籽猪颈肉炒饭（推荐）
+- [x] 蟹籽猪颈肉炒饭
 
 ## 稻香酒家
 

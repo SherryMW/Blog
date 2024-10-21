@@ -12,6 +12,12 @@ export const ProjectSidebar = arraySidebar([
                 collapsible: true,
                 children: [
                     {
+                        text: "聚焦Java性能优化 打造亿级流量秒杀系统",
+                        prefix: "spike-optimal/",
+                        collapsible: true,
+                        children: "structure"
+                    },
+                    {
                         text: "SpringBoot构建电商基础秒杀项目",
                         prefix: "spike-basic/",
                         collapsible: true,

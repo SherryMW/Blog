@@ -14,6 +14,12 @@ order: 6
 
 ![](https://img.sherry4869.com/blog/it/project/imooc/lxss/spike-basic/3.png)
 
+![](https://img.sherry4869.com/blog/it/project/imooc/lxss/spike-basic/4.png)
+
+![](https://img.sherry4869.com/blog/it/project/imooc/lxss/spike-basic/5.png)
+
+![](https://img.sherry4869.com/blog/it/project/imooc/lxss/spike-basic/6.png)
+
 ## 出错调试
 
 - 先确认问题点：环境问题、UI展示问题、接口问题、服务问题、配置问题
@@ -48,4 +54,4 @@ order: 6
 
 [源码下载](https://img.sherry4869.com/blog/it/project/imooc/lxss/spike-basic/spike.zip)
 
-[SQL下载](https://img.sherry4869.com/blog/it/project/imooc/lxss/spike-basic/miaosha.sql)
+[SQL下载](https://img.sherry4869.com/blog/it/project/imooc/lxss/spike-basic/spike.sql)

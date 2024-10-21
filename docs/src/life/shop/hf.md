@@ -5,6 +5,14 @@ article: false
 
 # 护肤
 
+## 洗面奶
+
+理肤泉特安洗面奶
+
+购入价：184 125ml*2
+
+![](https://img.sherry4869.com/blog/life/shop/hf/5.png)
+
 ## 水乳
 
 碧欧泉 男士动力套装（爽肤水200ML + 保湿乳75ML）
@@ -35,6 +43,6 @@ article: false
 
 购入价：59.8/5片
 
-朴朴超市上购买优惠力度大，并且1小时内送达
+朴朴超市上购买优惠力度大，且1小时内送达
 
 ![](https://img.sherry4869.com/blog/life/shop/hf/4.png)

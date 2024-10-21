@@ -12,7 +12,7 @@ API：[https://poi.apache.org/apidocs/index.html](https://poi.apache.org/apidocs
 
 HSSF 是我们对 Microsoft Excel 97 (-2003) 文件格式 (BIFF8) 的纯 Java 移植。XSSF 是我们对 Microsoft Excel XML (2007+)文件格式（OOXML）的纯 Java 移植。SS 是一个包，用一个共同的 API 为这两种格式提供共同的支持。它们都支持读和写的能力
 
-从 4.0.1 版本开始 POI 需要 Java 8 或更高版本
+从 4.0.1 版本开始 POI 需要 JDK8 或更高版本
 
 ## 相关依赖
 

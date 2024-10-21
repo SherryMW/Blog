@@ -35,6 +35,8 @@ article: false
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0JKB7C6CY" target="_blank">三元里大道与南天东街交叉口北40米</a>
 
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/t1/1.png)
+
 - [x] 菠萝鸡扒包（推荐）
 - [x] 菠萝猪扒包（推荐）
 - [x] 美式猪扒包
@@ -67,6 +69,7 @@ article: false
 - [x] 番茄炒蛋饭
 - [x] 霸王炒鸡饭
 - [x] 秘制牛腩面
+- [x] 骨汤鸡蛋面
 - [x] 红糖糍粑
 
 ## 小潘烧烤
@@ -123,6 +126,13 @@ article: false
 - [x] 精肉韭菜煎饺
 - [x] 精肉香菇水饺
 - [x] 红烧排骨面
+
+## 好蒸彩
+
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0K3M7PMHR" target="_blank">港路与航云北街交叉口东北20米</a>
+
+- [x] 牛腩河粉（推荐）
+- [x] 猪脚河粉
 
 ## 佬麻雀
 

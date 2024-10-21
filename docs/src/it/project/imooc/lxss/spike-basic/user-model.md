@@ -11,7 +11,7 @@ order: 2
 ```java
 @RestController
 @RequestMapping("/user")
-public class UserController extends BaseController {
+public class UserController {
 
     @Autowired
     private UserService userService;
@@ -130,7 +130,7 @@ Access to XMLHttpRequest at 'http://localhost:8090/user/getotp' from origin 'nul
 @RestController
 @RequestMapping("/user")
 @CrossOrigin(allowCredentials = "true", allowedHeaders = "*")
-public class UserController extends BaseController {
+public class UserController {
 
     @Autowired
     private UserService userService;
@@ -177,7 +177,7 @@ public class UserController extends BaseController {
 @RestController
 @RequestMapping("/user")
 @CrossOrigin(allowCredentials = "true", allowedHeaders = "*")
-public class UserController extends BaseController {
+public class UserController {
 
     @Autowired
     private UserService userService;
@@ -634,7 +634,7 @@ register.html
 
   - 火狐：没问题
 
-  - Safari：默认是禁止跨域 Session 的，要在设置里去掉阻止跨域传 Session
+  - Safari：默认是禁止跨域 Session 的，要在隐私设置中的【网站跟踪】->【阻止跨站跟踪】以及【Cookie和网站数据】->【阻止所有Cookie】的勾选项全部去掉
 
   - Chrome：拷贝一个新的 Chrome 快捷方式，右键【属性】，【目录】添加 `chrome.exe --args --disable-web-security --user-data-dir="C:/ChromeDevSession"` 命令
 
@@ -648,7 +648,7 @@ register.html
 @RestController
 @RequestMapping("/user")
 @CrossOrigin(allowCredentials = "true", allowedHeaders = "*")
-public class UserController extends BaseController {
+public class UserController {
 
     @Autowired
     private UserService userService;
@@ -790,7 +790,7 @@ login.html
 
     <body class="login">
         <div class="content">
-            <h3 class="form-title">用户登陆</h3>
+            <h3 class="form-title">用户登录</h3>
             <div class="form-group">
                 <label class="control-label">手机号</label>
                 <div>
@@ -805,7 +805,7 @@ login.html
             </div>
             <div class="form-actions">
                 <button class="btn blue" id="login" type="submit">
-                    登陆
+                    登录
                 </button>
                 <button class="btn green" id="register" type="submit">
                     注册
@@ -840,14 +840,14 @@ login.html
                     xhrFields: {withCredentials: true},
                     success: function (data) {
                         if (data.status == "success") {
-                            alert("登陆成功");
+                            alert("登录成功");
                             window.location.href = "listitem.html";
                         } else {
-                            alert("登陆失败，原因为" + data.data.errMsg);
+                            alert("登录失败，原因为" + data.data.errMsg);
                         }
                     },
                     error: function (data) {
-                        alert("登陆失败，原因为" + data.responseText);
+                        alert("登录失败，原因为" + data.responseText);
                     }
                 });
                 return false;

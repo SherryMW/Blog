@@ -98,4 +98,5 @@ article: false
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFHFHFI6" target="_blank">大德路298号之1号</a>
 
 - [x] 绿豆咸肉蛋黄粽（推荐）
+- [x] 濑粉（推荐）
 - [x] 牛腩布拉肠

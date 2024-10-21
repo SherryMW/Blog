@@ -204,7 +204,7 @@ VALUES('order_info', 0, 1);
 @RestController
 @RequestMapping("/order")
 @CrossOrigin(allowCredentials = "true", allowedHeaders = "*")
-public class OrderController extends BaseController {
+public class OrderController {
 
     @Autowired
     private OrderService orderService;

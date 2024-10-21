@@ -100,7 +100,7 @@ rocketmq-console 这个是官方提供的一个 WEB 项目，可以查看 Rocket
 
 **消除偏向锁**
 
-大家了解，在 JDK 1.8 sync 有偏向锁，但是在 RocketMQ 都是多线程的执行，所以竞争比较激烈，建议把偏向锁取消，以免没有必要的开销
+大家了解，在 JDK8 sync 有偏向锁，但是在 RocketMQ 都是多线程的执行，所以竞争比较激烈，建议把偏向锁取消，以免没有必要的开销
 
 `-XX:-UseBiasedLocking`：禁用偏向锁
 

@@ -166,7 +166,7 @@ CREATE TABLE `item_stock` (
 @RestController
 @RequestMapping("/item")
 @CrossOrigin(allowCredentials = "true", allowedHeaders = "*")
-public class ItemController extends BaseController {
+public class ItemController {
 
     @Autowired
     private ItemService itemService;
@@ -690,7 +690,7 @@ createitem.html
 @RestController
 @RequestMapping("/item")
 @CrossOrigin(allowCredentials = "true", allowedHeaders = "*")
-public class ItemController extends BaseController {
+public class ItemController {
 
     @Autowired
     private ItemService itemService;
@@ -730,7 +730,7 @@ localhost:8090/item/get?id=1
 @RestController
 @RequestMapping("/item")
 @CrossOrigin(allowCredentials = "true", allowedHeaders = "*")
-public class ItemController extends BaseController {
+public class ItemController {
 
     @Autowired
     private ItemService itemService;

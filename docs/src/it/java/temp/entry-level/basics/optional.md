@@ -5,7 +5,7 @@ article: false
 
 # Optional
 
-Optional 在 JDK 8 中引入
+Optional 在 JDK8 中引入
 
 ## 为什么要引入 Optional
 
@@ -119,7 +119,7 @@ public class Main {
 
 使用 `isPresent` 方法来检查 `Optional` 中是否有值，方法返回一个 `boolean` 值，如果 `Optional` 包含非空值，则返回 `true`，否则返回 `false`
 
-在 Java 11 中引入了 `isEmpty` 方法，允许更自然地检查 `Optional` 是否为空，方法返回一个 `boolean` 值，如果是空值则返回 `true`，如果不为空就返回 `false`
+在 JDK11 中引入了 `isEmpty` 方法，允许更自然地检查 `Optional` 是否为空，方法返回一个 `boolean` 值，如果是空值则返回 `true`，如果不为空就返回 `false`
 
 我们来创建一个包含值的 `Optional` 对象：
 
@@ -342,7 +342,7 @@ public class Main {
 
 ### ifPresentOrElse
 
-`ifPresentOrElse` 方法是在 JDK 9 中引入的
+`ifPresentOrElse` 方法是在 JDK9 中引入的
 
 ```java
 public final class Optional<T> {
@@ -493,7 +493,7 @@ public class Main {
 
 通常情况下如果你只需要对 `Optional` 对象中的值进行转换而不需要嵌套的 `Optional`，那么使用 `map` 方法是更合适的选择。但如果你需要进行一些操作，可能会返回另外一个 `Optional` 对象，那么 `flatMap` 方法更适合
 
-另外在 JDK 9 中 `Optional` 还提供了 `stream` 方法，它可以将 `Optional` 对象转换为一个 `Stream` 对象，然后对其中的值进行流操作。如果 `Optional` 对象包含值，那么就将这个值封装到一个 `Stream` 流中；如果 `Optional` 对象为空，那么将创建一个空的 `Stream` 流
+另外在 JDK9 中 `Optional` 还提供了 `stream` 方法，它可以将 `Optional` 对象转换为一个 `Stream` 对象，然后对其中的值进行流操作。如果 `Optional` 对象包含值，那么就将这个值封装到一个 `Stream` 流中；如果 `Optional` 对象为空，那么将创建一个空的 `Stream` 流
 
 ```java
 public class Main {

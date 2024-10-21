@@ -330,7 +330,7 @@ public class ItemModel {
 @RestController
 @RequestMapping("/item")
 @CrossOrigin(allowCredentials = "true", allowedHeaders = "*")
-public class ItemController extends BaseController {
+public class ItemController {
 
     private ItemVO convertVOFromModel(ItemModel itemModel) {
         if (itemModel == null) {
@@ -616,7 +616,7 @@ ALTER TABLE spike.order_info ADD promo_id int DEFAULT 0 NOT NULL COMMENT '秒杀
 @RestController
 @RequestMapping("/order")
 @CrossOrigin(allowCredentials = "true", allowedHeaders = "*")
-public class OrderController extends BaseController {
+public class OrderController {
 
     @Autowired
     private OrderService orderService;

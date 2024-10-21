@@ -944,3 +944,72 @@ public class UserController extends BaseController {
 测试地址：[http://localhost:8090/user/get?id=2](http://localhost:8090/user/get?id=2)
 
 :::
+
+但这里会有一个 404 和 405 的问题：
+
+使用 GET 请求 [localhost:8090/item/get1?id=1](localhost:8090/item/get1?id=1) 出现的 404 异常：
+
+```json
+{
+    "timestamp": "2020-10-11T08:49:29.787+0000",
+    "status": 404,
+    "error": "Not Found",
+    "message": "No message available",
+    "path": "/item/get1"
+}
+```
+
+使用 POST 请求 [localhost:8090/item/get?id=1](localhost:8090/item/get?id=1) 出现的 405 异常：
+
+```json
+{
+    "timestamp": "2020-10-11T08:50:37.912+0000",
+    "status": 405,
+    "error": "Method Not Allowed",
+    "message": "Request method 'POST' not supported",
+    "path": "/item/get"
+}
+```
+
+配置文件新增配置项：
+
+```properties
+# 设置为true时，当Spring MVC找不到一个能够处理特定请求的处理器（即Controller中的方法）时，它会抛出一个异常（通常是NoHandlerFoundException）。默认情况下，这个属性是false，这意味着如果没有找到处理器，Spring MVC将返回404状态码，而不会抛出异常
+# 当请求到达应用时，如果请求没有匹配到任何控制器处理器，并且没有静态资源与之对应，就会立即抛出NoHandlerFoundException
+spring.mvc.throw-exception-if-no-handler-found=true
+
+# 这个属性控制着Spring是否自动添加资源处理器到DispatcherServlet中。如果你将其设置为false，那么Spring将不会自动处理静态资源（如CSS, JavaScript, 图片等），这些资源通常位于/static, /public, /resources, 或者/META-INF/resources目录下
+# 默认情况下，这个属性是true，意味着Spring Boot会自动配置处理静态资源的映射。如果关闭了这个特性，你需要自己配置资源处理器，或者确保你的web服务器（比如Tomcat）直接提供这些资源
+# 由于静态资源映射被禁用了，所以需要确保有其他机制来提供静态内容，否则所有对静态资源的请求也会导致异常
+spring.resources.add-mappings=false
+```
+
+新增全局异常处理器，能够处理整个 Spring MVC 应用中抛出的所有控制器相关的异常：
+
+```java
+@ControllerAdvice
+public class GlobalException {
+
+    @ExceptionHandler(Exception.class)
+    @ResponseBody
+    public CommonReturnType doError(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Exception exception) {
+        exception.printStackTrace();
+        Map<String, Object> responseData = new HashMap<>();
+        if (exception instanceof BusinessException) {
+            BusinessException businessException = (BusinessException) exception;
+            responseData.put("errCode", businessException.getErrCode());
+            responseData.put("errMsg", businessException.getErrCode());
+        } else if (exception instanceof ServletRequestBindingException) { // 如果必传的 @RequestParam 参数没有传递
+            responseData.put("errCode", EmBusinessError.UNKNOWN_ERROR.getErrCode());
+            responseData.put("errMsg", "URL绑定路由问题");
+        } else if (exception instanceof NoHandlerFoundException) { // 捕获 404 异常，例如请求：localhost:8090/item/get1?id=1
+            responseData.put("errCode", EmBusinessError.UNKNOWN_ERROR.getErrCode());
+            responseData.put("errMsg", "没有找到对应的访问路径");
+        } else {
+            responseData.put("errCode", EmBusinessError.UNKNOWN_ERROR.getErrCode());
+            responseData.put("errMsg", EmBusinessError.UNKNOWN_ERROR.getErrMsg());
+        }
+        return CommonReturnType.create(responseData);
+    }
+}
+```
