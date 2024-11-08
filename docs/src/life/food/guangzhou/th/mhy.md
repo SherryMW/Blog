@@ -13,15 +13,15 @@ article: false
 
 @tab 始创葱油淋鸡
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/mhy/xqfd/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/mhy/xqfd/1.jpg)
 
 @tab 油盐头菜蒸无骨鲩鱼
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/mhy/xqfd/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/mhy/xqfd/2.jpg)
 
 @tab 椰青雪蛤炖蛋白奶
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/mhy/xqfd/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/mhy/xqfd/3.jpg)
 
 :::
 
@@ -33,7 +33,7 @@ article: false
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0I12MZD0C" target="_blank">VLAB181负一楼123铺</a>
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/mhy/forza/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/mhy/forza/1.jpg)
 
 - [x] 玛格丽特披萨
 - [x] 意面

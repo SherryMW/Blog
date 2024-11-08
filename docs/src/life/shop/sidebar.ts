@@ -6,5 +6,7 @@ export const ShopSidebar = arraySidebar([
     "yy",
     "dq",
     "cj",
-    "sp"
+    "sp",
+    "fz",
+    "xz"
 ])

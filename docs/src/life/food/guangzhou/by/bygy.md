@@ -105,33 +105,57 @@ article: false
 
 @tab 蒜蓉粉丝蒸元贝
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/bygy/rfl/img_4.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/bygy/rfl/4.jpg)
 
 @tab 百搭酱烤澳洲青龙仔
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/bygy/rfl/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/bygy/rfl/2.jpg)
 
 @tab 砂锅煮海钓黄花鱼
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/bygy/rfl/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/bygy/rfl/1.jpg)
 
 @tab 鲜竹根炒牛肉
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/bygy/rfl/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/bygy/rfl/3.jpg)
 
 @tab 奇味啫啫生肠头
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/bygy/rfl/img_5.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/bygy/rfl/5.jpg)
 
 :::
 
-- [x] 奇味啫啫生肠头
-- [x] 蒜蓉粉丝蒸元贝
-
-龙虾双人套餐
-
 - [x] 百搭酱烤澳洲青龙仔
 - [x] 砂锅煮海钓黄花鱼
+- [x] 奇味啫啫生肠头
+- [x] 蒜蓉粉丝蒸元贝
 - [x] 鲜竹根炒牛肉
 - [x] 生炒菜心
 - [x] 原盅炖汤
+
+## 独锅酒见
+
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0KUZ5HVFN" target="_blank">白云大道南668号</a>
+
+::: tabs
+
+@tab 脆皮吊炉烧鸡
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/bygy/dgjj/1.JPEG)
+
+@tab 蜜汁烧大排骨
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/bygy/dgjj/2.JPEG)
+
+@tab 飘香猪尾
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/bygy/dgjj/3.JPEG)
+
+:::
+
+- [x] 脆皮吊炉烧鸡
+- [x] 蜜汁烧大排骨
+- [x] 鸡中翅
+- [x] 飘香猪尾
+- [x] 北海道大干鱿
+- [x] 5°桂花米酒

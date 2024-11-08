@@ -43,19 +43,19 @@ article: false
 
 @tab 鸿运烧香猪
 
-![这半只乳猪不是现烤的，皮脆但肉有点肥腻](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/cldpd/img_3.jpg)
+![这半只乳猪不是现烤的，皮脆但肉有点肥腻](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/cldpd/3.jpg)
 
 @tab 香煎手打墨鱼饼
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/cldpd/img_4.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/cldpd/4.jpg)
 
 @tab 大排档炒牛河
 
-![炒出风味](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/cldpd/img_2.jpg)
+![炒出风味](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/cldpd/2.jpg)
 
 :::
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/cldpd/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/cldpd/1.jpg)
 
 - [x] 常来豉油鸡（推荐）
 - [x] 鸿运烧香猪
@@ -77,15 +77,15 @@ article: false
 
 @tab 腰内猪排套餐
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/fsx/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/fsx/1.jpg)
 
 @tab 里脊猪排套餐
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/fsx/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/fsx/2.jpg)
 
 @tab 炸虾
 
-![这个炸虾好吃的一批](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/fsx/img_3.jpg)
+![这个炸虾好吃的一批](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/fsx/3.jpg)
 
 :::
 
@@ -98,9 +98,9 @@ article: false
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0I6B1025W" target="_blank">天河路228号正佳广场6层C058铺</a>
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/xtzqsgy/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/xtzqsgy/1.jpg)
 
-![养生菌菇锅 + 两斤几嘅江团鱼](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/xtzqsgy/img_2.jpg)
+![养生菌菇锅 + 两斤几嘅江团鱼](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/xtzqsgy/2.jpg)
 
 - [x] 养生菌菇锅（推荐）
 - [x] 江团鱼（推荐）
@@ -136,11 +136,11 @@ article: false
 
 @tab 南乳猪手
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/wx/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/wx/1.jpg)
 
 @tab 芝麻糊汤圆
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/wx/img_1.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/wx/2.jpg)
 
 :::
 
@@ -154,7 +154,7 @@ article: false
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0I1F4EXRB" target="_blank">宏发大厦北门一楼10号</a>
 
-![番茄鸳鸯锅（微微辣）](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/pj/img.jpg)
+![番茄鸳鸯锅（微微辣）](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/pj/1.jpg)
 
 - [x] 屠场鲜毛肚（推荐）
 - [x] 精品鸭肠
@@ -201,15 +201,15 @@ article: false
 
 @tab 松鼠鲈鱼
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/ljh/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/ljh/1.jpg)
 
 @tab 杭州绿茶饼
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/ljh/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/ljh/2.jpg)
 
 @tab 杭州小笼包
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/ljh/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyzx/ljh/3.jpg)
 
 :::
 

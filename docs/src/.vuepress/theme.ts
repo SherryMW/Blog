@@ -79,7 +79,6 @@ export default hopeTheme({
             // size: true // 图片大小
         },
         mdEnhance: {
-            echarts: true, // ECharts图表配置
             tasklist: true // 任务列表
         },
     },

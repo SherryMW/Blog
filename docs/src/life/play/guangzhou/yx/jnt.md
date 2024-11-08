@@ -9,7 +9,7 @@ article: false
 
 ### 25th Anniversary 倉木麻衣 Live Project 2024 “Be alright!” in Asia
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/yx/jnt/1.jpg)
+![摩天轮平台+561（位置很差！）](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/yx/jnt/1.jpg)
 
 ![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/yx/jnt/2.jpg)
 

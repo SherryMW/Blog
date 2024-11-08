@@ -29,15 +29,15 @@ article: false
 
 @tab 始创招牌豉油碌鹅
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/ld/clxj/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/ld/clxj/1.jpg)
 
 @tab 啫啫田鸡煲
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/ld/clxj/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/ld/clxj/2.jpg)
 
 @tab 蒜蓉粉丝蒸元贝
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/ld/clxj/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/ld/clxj/3.jpg)
 
 :::
 
@@ -60,7 +60,7 @@ article: false
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0GROY2454" target="_blank">珠江东路16号高德置地广场·冬F4层407</a>
 
-![海报与实物对比:see_no_evil:](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/ld/mmzx/img.jpg)
+![海报与实物对比:see_no_evil:](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/ld/mmzx/1.jpg)
 
 - [x] 初恋咕噜肉
 - [x] 龙眼蜜叉烧

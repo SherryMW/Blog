@@ -58,8 +58,10 @@ article: false
 - [x] 卤肉面
 - [x] 红豌豆杂面
 - [x] 川式红烧牛肉面
+- [x] 番茄牛肉面
 - [x] 软骨丸子番茄汤面（推荐）
 - [x] 焦香烤猪蹄（推荐）
+- [x] 香酥葱油饼（推荐）
 - [x] 原味酥脆鸡排
 - [x] 白玉厚椰乳
 - [x] 甘蔗马蹄爽
@@ -80,15 +82,15 @@ article: false
 
 @tab 咖喱面包鸡
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/gd/jzw/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/gd/jzw/1.jpg)
 
 @tab 泰式炭烧猪颈肉
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/gd/jzw/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/gd/jzw/2.jpg)
 
 @tab 泰式烧元贝
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/gd/jzw/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/gd/jzw/3.jpg)
 
 :::
 

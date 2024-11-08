@@ -23,17 +23,17 @@ article: false
 
 美食是治愈心灵的最佳方式，每当心情糟糕的时候总想着来这家店吃碗盖面
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/thkyz/xxj/img_4.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/thkyz/xxj/4.jpg)
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/thkyz/xxj/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/thkyz/xxj/2.jpg)
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/thkyz/xxj/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/thkyz/xxj/3.jpg)
 
 @tab 菜单
 
-![2023-10-20](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/thkyz/xxj/img_5.png)
+![2023-10-20](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/thkyz/xxj/5.png)
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/thkyz/xxj/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/thkyz/xxj/1.jpg)
 
 :::
 
@@ -75,7 +75,7 @@ article: false
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0H1U90B35" target="_blank">天源路5号天河新天地B1</a>
 
-![卤猪手 + 老长沙肉沫拌面 ](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/thkyz/slf/img.jpg)
+![卤猪手 + 老长沙肉沫拌面](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/thkyz/slf/1.jpg)
 
 - [x] 老长沙土猪肉粉
 - [x] 农家杀猪粉

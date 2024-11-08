@@ -13,37 +13,37 @@ article: false
 
 @tab 元贝
 
-![蒜蓉粉丝蒸元贝（6只）](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/py/lx/xdm/img_7.jpg)
+![蒜蓉粉丝蒸元贝（6只）](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/py/lx/xdm/7.jpg)
 
 @tab 湛江生蚝
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/py/lx/xdm/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/py/lx/xdm/3.jpg)
 
 @tab 台山五味鹅
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/py/lx/xdm/img_4.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/py/lx/xdm/4.jpg)
 
 @tab 腐竹焖羊肉
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/py/lx/xdm/img_5.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/py/lx/xdm/5.jpg)
 
 @tab 姜葱炒圣子
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/py/lx/xdm/img_6.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/py/lx/xdm/6.jpg)
 
 @tab 濑尿虾
 
-![椒盐濑尿虾1斤](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/py/lx/xdm/img_8.jpg)
+![椒盐濑尿虾1斤](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/py/lx/xdm/8.jpg)
 
 @tab 小北极贝刺身
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/py/lx/xdm/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/py/lx/xdm/2.jpg)
 
 @tab 菜单
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/py/lx/xdm/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/py/lx/xdm/1.jpg)
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/py/lx/xdm/img_9.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/py/lx/xdm/9.jpg)
 
 :::
 

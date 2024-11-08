@@ -13,31 +13,31 @@ article: false
 
 @tab 大同鸡蛋挞
 
-![OMG](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyx/dtjj/img.jpg)
+![OMG](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyx/dtjj/1.jpg)
 
 @tab 宫廷笋尖虾饺
 
-![OMG×2](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyx/dtjj/img_2.jpg)
+![OMG×2](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyx/dtjj/2.jpg)
 
 @tab 空气炸春卷
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyx/dtjj/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyx/dtjj/3.jpg)
 
 @tab 蜂巢炸芋角
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyx/dtjj/img_4.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyx/dtjj/4.jpg)
 
 @tab 沙爹金钱肚
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyx/dtjj/img_5.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyx/dtjj/5.jpg)
 
 @tab 津梨咸水角
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyx/dtjj/img_6.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyx/dtjj/6.jpg)
 
 @tab 月牙南瓜烙
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyx/dtjj/img_7.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyx/dtjj/7.jpg)
 
 :::
 
@@ -66,6 +66,32 @@ article: false
 
 - [x] Big Men 菠萝包（推荐）
 - [x] 香滑奶茶
+
+## 侨美食家
+
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0G0OZV2Z7" target="_blank">体育西路101号VT101维多利广场6层</a>
+
+::: tabs
+
+@tab 秘制脆皮黑叉烧
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyx/qmsj/1.JPEG)
+
+@tab 红烧乳鸽
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyx/qmsj/2.JPEG)
+
+@tab 台山黄鳝炒饭
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/th/tyx/qmsj/3.JPEG)
+
+:::
+
+- [x] 秘制脆皮黑叉烧
+- [x] 红烧乳鸽（推荐）
+- [x] 台山黄鳝炒饭
+- [x] 牛肉卤水花生
+- [x] 生磨杏仁茶
 
 ## 秘密旅行
 

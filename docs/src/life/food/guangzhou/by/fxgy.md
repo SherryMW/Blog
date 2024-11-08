@@ -9,9 +9,33 @@ article: false
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0J06DHOQH" target="_blank">机场路276号</a>
 
+::: tabs
+
+@tab 深井烧鹅
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/dh/1.JPEG)
+
+@tab 酸菜豆腐煲
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/dh/2.JPEG)
+
+@tab 东湖小笼包
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/dh/3.JPEG)
+
+@tab 东湖靓虾饺
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/dh/4.JPEG)
+
+@tab 沙爹金钱肚
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/dh/5.JPEG)
+
+:::
+
 - [x] 深井烧鹅
 - [x] 煎酿豆腐（推荐）
-- [x] 酸菜豆腐煲（推荐）
+- [x] 酸菜豆腐煲
 - [x] 玻璃脆皮乳鸽
 - [x] 生蚝粉丝煲
 - [x] 东湖靓虾饺（推荐）
@@ -66,7 +90,7 @@ article: false
 :::
 
 - [x] 香干炒肉饭（推荐）
-- [x] 番茄炒蛋饭
+- [x] 番茄炒蛋饭（推荐）
 - [x] 霸王炒鸡饭
 - [x] 秘制牛腩面
 - [x] 骨汤鸡蛋面
@@ -103,7 +127,7 @@ article: false
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0JKBRR89H" target="_blank">乐嘉路56号5号铺</a>
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/syx/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/syx/1.jpg)
 
 - [x] 招牌柠檬粉（推荐）
 - [x] 油条
@@ -121,7 +145,7 @@ article: false
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFGX31NC" target="_blank">远景路22号B68档</a>
 
-![第一次见这种形状的煎饺](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/jj/img.jpg)
+![第一次见这种形状的煎饺](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/jj/1.jpg)
 
 - [x] 精肉韭菜煎饺
 - [x] 精肉香菇水饺
@@ -131,7 +155,7 @@ article: false
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0K3M7PMHR" target="_blank">港路与航云北街交叉口东北20米</a>
 
-- [x] 牛腩河粉（推荐）
+- [x] 牛腩河粉
 - [x] 猪脚河粉
 
 ## 佬麻雀
@@ -165,7 +189,7 @@ article: false
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0G305KEQX" target="_blank">乐嘉路96号101房</a>
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/ygyn/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/by/fxgy/ygyn/1.jpg)
 
 - [x] 越式番茄虾蟹酱粉
 

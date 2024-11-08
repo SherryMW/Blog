@@ -39,6 +39,35 @@ article: false
 - [x] 法式脆皮餐包
 - [x] 姬松茸炖鸡汤
 
+## 味食家
+
+<i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0FFKV9MOE" target="_blank">惠福西路264号</a>
+
+::: tabs
+
+@tab 手工捞粉
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/gyq/wsj/1.JPEG)
+
+@tab 陈皮白灼手打牛肉丸
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/gyq/wsj/2.JPEG)
+
+@tab 秘制客家猪手
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/gyq/wsj/3.JPEG)
+
+@tab 市师鸡
+
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/gyq/wsj/4.JPEG)
+
+:::
+
+- [x] 市师鸡
+- [x] 秘制客家猪手（推荐）
+- [x] 陈皮白灼手打牛肉丸（推荐）
+- [x] 手工捞粉（推荐）
+
 ## 口福食家
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B001402D72s" target="_blank">惠福西路264号</a>
@@ -47,19 +76,19 @@ article: false
 
 @tab 松子鱼
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/gyq/kfsj/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/gyq/kfsj/1.jpg)
 
 @tab 脆皮炸大肠
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/gyq/kfsj/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/gyq/kfsj/2.jpg)
 
 @tab 白切鸡
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/gyq/kfsj/img_4.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/gyq/kfsj/4.jpg)
 
 @tab 凉拌鱼皮
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/gyq/kfsj/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/gyq/kfsj/3.jpg)
 
 :::
 
@@ -107,7 +136,7 @@ article: false
 
 :::
 
-- [x] 巨蟹柳手作奶油芝士天使意粉（推荐）
+- [x] 巨蟹柳手作奶油芝士天使意粉
 - [x] 独有藤椒脆鸡翅
 - [x] 花生友冰沙
 

@@ -13,15 +13,15 @@ article: false
 
 @tab 秃黄油拌饭
 
-![耐心等待20分钟制作时间](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/dsk/clx/img_2.jpg)
+![耐心等待20分钟制作时间](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/dsk/clx/2.jpg)
 
 @tab 蟹粉小笼包
 
-![当心别被小笼包给咬了哦](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/dsk/clx/img_3.jpg)
+![当心别被小笼包给咬了哦！](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/dsk/clx/3.jpg)
 
 @tab 菜单
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/dsk/clx/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/dsk/clx/1.jpg)
 
 :::
 

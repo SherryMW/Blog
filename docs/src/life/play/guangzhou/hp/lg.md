@@ -41,134 +41,134 @@ Encore
 - 每天爱你多一些（清唱）
 - 吻别（摇滚版）
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_64.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/64.jpg)
 
-![黄牛代拍+1050](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img.jpg)
+![黄牛代拍+1050](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/1.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_0.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/0.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_1.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/1-1.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/2.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/3.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_4.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/4.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_5.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/5.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_6.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/6.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_7.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/7.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_8.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/8.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_9.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/9.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_10.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/10.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_11.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/11.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_12.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/12.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_13.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/13.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_14.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/14.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_15.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/15.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_16.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/16.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_17.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/17.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_18.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/18.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_19.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/19.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_20.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/20.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_21.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/21.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_22.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/22.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_23.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/23.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_24.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/24.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_25.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/25.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_26.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/26.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_27.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/27.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_28.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/28.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_29.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/29.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_30.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/30.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_31.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/31.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_32.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/32.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_33.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/33.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_34.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/34.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_35.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/35.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_36.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/36.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_37.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/37.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_38.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/38.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_39.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/39.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_40.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/40.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_41.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/41.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_42.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/42.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_43.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/43.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_44.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/44.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_45.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/45.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_46.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/46.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_47.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/47.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_48.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/48.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_49.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/49.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_50.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/50.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_51.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/51.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_52.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/52.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_53.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/53.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_54.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/54.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_55.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/55.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_56.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/56.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_57.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/57.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_58.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/58.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_59.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/59.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_60.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/60.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_61.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/61.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_62.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/62.jpg)
 
-![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/img_63.jpg)
+![](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/hp/lg/bn/jacky60%2B/63.jpg)

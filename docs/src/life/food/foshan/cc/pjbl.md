@@ -13,15 +13,15 @@ article: false
 
 @tab 红烧乳鸽
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/foshan/cc/pjbl/ytj/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/foshan/cc/pjbl/ytj/1.jpg)
 
 @tab 金牌鱼饼
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/foshan/cc/pjbl/ytj/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/foshan/cc/pjbl/ytj/2.jpg)
 
 @tab 金牌鱼皮
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/foshan/cc/pjbl/ytj/img_3.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/foshan/cc/pjbl/ytj/3.jpg)
 
 :::
 
@@ -37,11 +37,11 @@ article: false
 
 @tab 早餐
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/foshan/cc/pjbl/dbx/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/foshan/cc/pjbl/dbx/1.jpg)
 
 @tab 菜单
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/foshan/cc/pjbl/dbx/img_2.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/foshan/cc/pjbl/dbx/2.jpg)
 
 :::
 

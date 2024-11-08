@@ -37,4 +37,4 @@ article: false
 
 三种难度模式选择：天堂/人间/地狱，一刷玩的人间模式
 
-![我可真是幸运儿:ok_hand:](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/th/zwy/ydm/img.jpg)
+![我可真是幸运儿:ok_hand:](https://img.sherry4869.com/blog/life/play/china/guangdong/guangzhou/th/zwy/ydm/1.jpg)

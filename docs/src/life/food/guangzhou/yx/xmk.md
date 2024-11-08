@@ -9,7 +9,7 @@ article: false
 
 <i class="fa-solid fa-location-dot"></i> 位置：<a href="https://ditu.amap.com/place/B0IAFOBKKV" target="_blank">光复北路591号</a>
 
-![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/xmk/sgjcc/img.jpg)
+![](https://img.sherry4869.com/blog/life/food/china/guangdong/guangzhou/yx/xmk/sgjcc/1.jpg)
 
 海鲜双人餐（推荐）
 

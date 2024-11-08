@@ -40,6 +40,12 @@ export const FoodSidebar = arraySidebar([
                 prefix: "py/",
                 collapsible: true,
                 children: "structure"
+            },
+            {
+                text: "黄埔",
+                prefix: "hp/",
+                collapsible: true,
+                children: "structure"
             }
         ]
     },
